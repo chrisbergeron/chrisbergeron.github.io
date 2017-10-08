@@ -2,62 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://cbergeron.com/aspire_free_car.html</loc>
-    
-    <lastmod>2017-10-08T14:59:15.878Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/sysinfo.html</loc>
-    
-    <lastmod>2017-10-08T14:59:15.878Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/inxi.html</loc>
-    
-    <lastmod>2017-10-08T14:59:15.878Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/homebrew_generator.html</loc>
-    
-    <lastmod>2017-10-08T14:59:15.878Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/high_performance_sabnzbd.html</loc>
-    
-    <lastmod>2017-10-08T14:59:15.878Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/hexo_systemd_unit_file.html</loc>
-    
-    <lastmod>2017-10-08T14:59:15.878Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/ethanol_still.html</loc>
-    
-    <lastmod>2017-10-08T14:59:15.878Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/comma_panda.html</loc>
-    
-    <lastmod>2017-10-08T14:59:15.878Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://cbergeron.com/2017/10/09/high_performance_sabnzbd/</loc>
     
     <lastmod>2017-10-08T14:43:28.148Z</lastmod>
@@ -86,6 +30,13 @@
   </url>
   
   <url>
+    <loc>http://cbergeron.com/about/index.html</loc>
+    
+    <lastmod>2017-10-08T05:20:12.284Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cbergeron.com/2008/08/24/homebrew_generator/</loc>
     
     <lastmod>2017-10-07T21:32:48.343Z</lastmod>
@@ -110,6 +61,20 @@
     <loc>http://cbergeron.com/2017/10/08/sysinfo/</loc>
     
     <lastmod>2017-10-07T16:27:46.264Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/categories/index.html</loc>
+    
+    <lastmod>2017-10-06T23:06:40.776Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/tags/index.html</loc>
+    
+    <lastmod>2017-10-06T23:06:40.776Z</lastmod>
     
   </url>
   
