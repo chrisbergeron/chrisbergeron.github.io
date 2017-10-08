@@ -3,15 +3,22 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Tag: grafana | The Berge Blog</title>
+    <title>Record and playback terminal sessions with Showterm | The Berge Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="The Berge Blog">
-<meta property="og:url" content="http://cbergeron.com/tags/grafana/index.html">
+    <meta name="description" content="ShowtermI just found a neat tool that will let you record a bash session for playback / site linking.  It’s called Showterm.  Adding the playback video is as simple as adding an iframe to your page:1&amp;">
+<meta name="keywords" content="showterm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Record and playback terminal sessions with Showterm">
+<meta property="og:url" content="http://cbergeron.com/2017/10/08/showterm/index.html">
 <meta property="og:site_name" content="The Berge Blog">
+<meta property="og:description" content="ShowtermI just found a neat tool that will let you record a bash session for playback / site linking.  It’s called Showterm.  Adding the playback video is as simple as adding an iframe to your page:1&amp;">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://img.stackshare.io/service/1136/showterm.png">
+<meta property="og:updated_time" content="2017-10-08T20:44:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Berge Blog">
+<meta name="twitter:title" content="Record and playback terminal sessions with Showterm">
+<meta name="twitter:description" content="ShowtermI just found a neat tool that will let you record a bash session for playback / site linking.  It’s called Showterm.  Adding the playback video is as simple as adding an iframe to your page:1&amp;">
+<meta name="twitter:image" content="https://img.stackshare.io/service/1136/showterm.png">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -213,50 +220,161 @@
 </aside>
 
             
-            <section id="main">
-<div class="timeline timeline-wrap">
-    <div class="timeline-row timeline-row-major">
-        <span class="node"><i class="fa fa-tag"></i></span>
-        <h1 class="title">#grafana</h1>
-    </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-showterm" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/08/grafana_dashboard/">Building an executive dashboard with Grafana</a>
+        <h1 class="article-title" itemprop="name">
+            Record and playback terminal sessions with Showterm
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/10/08/grafana_dashboard/">
-            <time datetime="2017-10-08T17:19:00.000Z" itemprop="datePublished">2017-10-08</time>
+        <a href="/2017/10/08/showterm/">
+            <time datetime="2017-10-08T20:39:00.000Z" itemprop="datePublished">2017-10-08</time>
         </a>
     </div>
 
 
-                    
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/dashboards/">dashboards</a>
+        <a class="article-category-link" href="/categories/linux/">linux</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/influxdb/">influxdb</a>
+        <a class="tag-link" href="/tags/showterm/">showterm</a>
     </div>
 
-                </div>
-            </div>
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="Showterm"><a href="#Showterm" class="headerlink" title="Showterm"></a>Showterm</h2><p>I just found a neat tool that will let you record a bash session for playback / site linking.  It’s called <a href="http://showterm.io/" target="_blank" rel="external">Showterm</a>.  Adding the playback video is as simple as adding an iframe to your page:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"http://showterm.io/7b5f8d42ba021511e627e"</span> <span class="attr">width</span>=<span class="string">"640"</span> <span class="attr">height</span>=<span class="string">"480"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>or pasting the url:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://showterm.io/7b5f8d42ba021511e627e</div></pre></td></tr></table></figure></p>
+<p>Here’s a sample:</p>
+<iframe src="http://showterm.io/9b8d315c5f5cb12de7b63" width="640"></iframe>
+        
         </div>
-    
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
 </div>
+
+    <a data-url="http://cbergeron.com/2017/10/08/showterm/" data-id="cj8j81qin0000a79detwuzjlk" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2017/10/08/showterm/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/08/showterm/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/10/08/grafana_dashboard/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Building an executive dashboard with Grafana</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
 </section>
             
                 
@@ -446,11 +564,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://cbergeron.com/2017/10/08/showterm/';
+        
+        this.page.identifier = 'showterm';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'cbergeron' + '.disqus.com/count.js';
+        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
