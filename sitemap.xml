@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cbergeron.com/2017/10/07/inxi/</loc>
+    
+    <lastmod>2017-10-08T20:51:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cbergeron.com/2017/10/08/showterm/</loc>
     
-    <lastmod>2017-10-08T20:44:17.000Z</lastmod>
+    <lastmod>2017-10-08T20:49:58.000Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://cbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
     
     <lastmod>2017-10-08T20:25:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/07/inxi/</loc>
-    
-    <lastmod>2017-10-08T19:47:31.000Z</lastmod>
     
   </url>
   
