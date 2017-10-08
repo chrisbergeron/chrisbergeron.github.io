@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cbergeron.com/2017/10/07/inxi/</loc>
+    
+    <lastmod>2017-10-08T19:33:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/07/sysinfo/</loc>
+    
+    <lastmod>2017-10-08T19:33:15.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cbergeron.com/2017/10/08/grafana_dashboard/</loc>
     
     <lastmod>2017-10-08T19:05:22.000Z</lastmod>
@@ -44,28 +58,14 @@
   </url>
   
   <url>
-    <loc>http://cbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
-    
-    <lastmod>2017-10-07T22:08:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/07/sysinfo/</loc>
-    
-    <lastmod>2017-10-07T22:08:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/07/inxi/</loc>
-    
-    <lastmod>2017-10-07T22:08:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://cbergeron.com/2008/08/24/homebrew_generator/</loc>
+    
+    <lastmod>2017-10-07T22:08:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
     
     <lastmod>2017-10-07T22:08:50.000Z</lastmod>
     
