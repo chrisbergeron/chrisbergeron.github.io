@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    
+    <title>The Berge Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta property="og:type" content="website">
+<meta property="og:title" content="The Berge Blog">
+<meta property="og:url" content="http://cbergeron.com/index.html">
+<meta property="og:site_name" content="The Berge Blog">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Berge Blog">
+<meta name="twitter:creator" content="@bergeron">
+    
+
+    
+
+    
+        <link rel="icon" href="/source/favicon.ico" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">The Berge Blog</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="https://www.gravatar.com/avatar/b10dd03ba21ebbcc6c589045295bc6f0" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="https://www.gravatar.com/avatar/b10dd03ba21ebbcc6c589045295bc6f0?s=128" />
+            <h2 id="name">Chris Bergeron</h2>
+            <h3 id="title">DevOps Infrastructure Engineer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Atlanta, GA</span>
+            <a id="follow" target="_blank" href="https://github.com/chrisbergeron/">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                8
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                17
+                <span>tags</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="http://github.com/chrisbergeron" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://twitter.com/bergeron" target="_blank" title="twitter" class=tooltip>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://reddit.com/u/cbergeron" target="_blank" title="reddit" class=tooltip>
+                            <i class="fa fa-reddit"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.linkedin.com/in/christopherbergeron1/" target="_blank" title="linkedin" class=tooltip>
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://blockchain.info/address/1L3f7e74htniX6by6R3WaYNvS8tM7kygK4" target="_blank" title="bitcoin" class=tooltip>
+                            <i class="fa fa-bitcoin"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://pages.news.digitalocean.com/dc/AyKQ30vur1Nt8H30LIWxk-j5xHmafGnoECQwn1ooO77yBt0FNL3mSORKe-qOjqAUuFeCU3DjjCwgDxcGj4qztQ==/v1U40XUb0V6DEYm0I03k000" target="_blank" title="digital_ocean" class=tooltip>
+                            <i class="fa fa-digital_ocean"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main">
+    <article id="post-comma_panda" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/10/09/comma_panda/">Comma.ai Panda</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/10/09/comma_panda/">
+            <time datetime="2017-10-09T00:46:25.000Z" itemprop="datePublished">2017-10-08</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/carputer/">carputer</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/carputer/">carputer</a>, <a class="tag-link" href="/tags/comma-ai/">comma.ai</a>, <a class="tag-link" href="/tags/dashpc/">dashpc</a>, <a class="tag-link" href="/tags/panda/">panda</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>Comma is shpping the <a href="http://comma.ai" target="_blank" rel="external">Panda</a> interface again.  I received mine last week.  It’s a wifi enabled OBDII interface.  The Panda is more than just a reader though.  It decodes and enables writing to the Media canbus.  It’s going to make for some fun projects.  Using <a href="https://community.comma.ai/cabana/?demo=1" target="_blank" rel="external">Cabana</a> I should be able to create a Database file of the Kia Optima’s CANbus protocol.</p>
+<h2 id="Panda"><a href="#Panda" class="headerlink" title="Panda"></a>Panda</h2><p><img src="/images/panda.png" alt="Panda"><br><img src="/images/panda2.png" alt="Panda in the 2016 Optima"><br><img src="/images/panda3.jpg" alt="Panda closeup"></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://cbergeron.com/2017/10/09/comma_panda/" data-id="cj8iux26f0000is7kz4xnnluv" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2017/10/09/comma_panda/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/09/comma_panda/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-high_performance_sabnzbd" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/10/09/high_performance_sabnzbd/">Using Ansible to build a high availablity Sabnzbd usenet downloader</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/10/09/high_performance_sabnzbd/">
+            <time datetime="2017-10-09T00:46:25.000Z" itemprop="datePublished">2017-10-08</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/linux/">linux</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/sabnzbd/">sabnzbd</a>, <a class="tag-link" href="/tags/usenet/">usenet</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>I’m limited to about 40MB/s on downloads on my VPC at Digital Ocean, but I run <a href="https://sabnzbd.org/" target="_blank" rel="external">Sabnzbd</a> for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted to see if I could parallelize this and download multiple files at the same.  I use Sonarr for searching usenet for freely distributable training videos which then sends them to SABnzbd for downloading.  Since Sonarr can send multiple files to sabnzbd which get queued up, I figured I can reduce the queue by downloading them at the same time.</p>
+<p>Using Ansible and Terraform (devops automation tools), I can spin up VPC on demand, provision them, configure them as sabnzbd download nodes and then destroy the instances when complete.</p>
+<p>The instances all run the same sabnzbd config and the instances use haproxy for round-robin distribution.  I will probably change this to <a href="https://www.consul.io/" target="_blank" rel="external">Consul</a>, but I just wanted something quick so I used a basic haproxy config.</p>
+<p>This is the terraform script that builds 4 sabnzbd instances and 1 haproxy instance.  It configures a VIP which I point Sonarr to:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">code snippet coming</div></pre></td></tr></table></figure>
+<p>Here is the ansible playbook that configuress the instances:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">code snippet coming</div></pre></td></tr></table></figure>
+<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><p><a href="/images/tech/terraform_logo.png"><img src="/images/tech/terraform_logo.png" alt="Sample Image Added via Markdown"></a><br><a href="/images/tech/ansible.png"><img src="/images/tech/ansible.png" alt="Sample Image Added via Markdown"></a></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://cbergeron.com/2017/10/09/high_performance_sabnzbd/" data-id="cj8iux28m000wis7kd9ppp01a" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2017/10/09/high_performance_sabnzbd/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/09/high_performance_sabnzbd/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-hexo_systemd_unit_file" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/10/08/hexo_systemd_unit_file/">A systemD unit file for Hexo</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/10/08/hexo_systemd_unit_file/">
+            <time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/blog/">blog</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/hexo/">hexo</a>, <a class="tag-link" href="/tags/systemd/">systemd</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> is a simple, lightweight node blog framework. It didn’t include a SystemD Unit file, so I created one:</p>
+<h2 id="Hexo-SystemD-Unit-File"><a href="#Hexo-SystemD-Unit-File" class="headerlink" title="Hexo SystemD Unit File"></a>Hexo SystemD Unit File</h2><h3 id="lib-system-systemd-hexo-service"><a href="#lib-system-systemd-hexo-service" class="headerlink" title="/lib/system/systemd/hexo.service"></a>/lib/system/systemd/hexo.service</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">[Service]</div><div class="line">WorkingDirectory=/home/[yourdirectory]/blog</div><div class="line">ExecStart=/bin/hexo server -p80</div><div class="line">Restart=always</div><div class="line">StandardOutput=syslog</div><div class="line">StandardError=syslog</div><div class="line">SyslogIdentifier=hexo</div><div class="line">User=root</div><div class="line">Group=root</div><div class="line">Environment=NODE_ENV=production</div><div class="line"></div><div class="line">[Install]</div><div class="line">WantedBy=multi-user.target</div></pre></td></tr></table></figure>
+<p>Obviously, you’ll want to replace [yourdirectory] with the location of your Hexo blog.</p>
+<h3 id="Start-Hexo"><a href="#Start-Hexo" class="headerlink" title="Start Hexo"></a>Start Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo systemctl start hexo</div></pre></td></tr></table></figure>
+<h3 id="View-status-of-Hexo"><a href="#View-status-of-Hexo" class="headerlink" title="View status of Hexo"></a>View status of Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$ sudo systemctl status hexo</div><div class="line">● hexo.service</div><div class="line">   Loaded: loaded (/usr/lib/systemd/system/hexo.service; disabled; vendor preset: disabled)</div><div class="line">   Active: active (running) since Sat 2017-10-07 02:27:36 UTC; 7min ago</div><div class="line"> Main PID: 8997 (hexo)</div><div class="line">   CGroup: /system.slice/hexo.service</div><div class="line">           └─8997 hexo</div><div class="line"></div><div class="line">Oct 07 02:27:36 centos-2gb-nyc1-01 systemd[1]: Started hexo.service.</div><div class="line">Oct 07 02:27:36 centos-2gb-nyc1-01 systemd[1]: Starting hexo.service...</div><div class="line">Oct 07 02:27:38 centos-2gb-nyc1-01 hexo[8997]: INFO  Start processing</div><div class="line">Oct 07 02:27:38 centos-2gb-nyc1-01 hexo[8997]: INFO  Hexo is running at http://localhost:80/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure>
+<p>I recommend <a href="http://pages.news.digitalocean.com/dc/AyKQ30vur1Nt8H30LIWxk-j5xHmafGnoECQwn1ooO77yBt0FNL3mSORKe-qOjqAUuFeCU3DjjCwgDxcGj4qztQ==/v1U40XUb0V6DEYm0I03k000" target="_blank" rel="external">Digital Ocean</a> for great cloud hosting.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://cbergeron.com/2017/10/08/hexo_systemd_unit_file/" data-id="cj8gq42mi0000aq7k4sydw3st" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2017/10/08/hexo_systemd_unit_file/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/08/hexo_systemd_unit_file/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-sysinfo" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/10/08/sysinfo/">System info bash script</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/10/08/sysinfo/">
+            <time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/linux/">linux</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/bash/">bash</a>, <a class="tag-link" href="/tags/devops/">devops</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>I put together a quick bash shell script to view system info at a glance.  I know there are existing tools for this like <a href="https://smxi.org/docs/inxi.htm" target="_blank" rel="external">inxi</a>, but I wanted to put something together I can copypasta.  This is specific to RHEL, Centos and Sci Linux but it can be easily adapted for other distros.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line"></div><div class="line"><span class="comment"># run as root</span></div><div class="line"></div><div class="line"><span class="comment">#echo "================================ Services: ================================"</span></div><div class="line"><span class="comment">#for i in `journalctl -F _SYSTEMD_UNIT | grep -v session | sed -e "s/.service//g"`; do echo "========= $i ========="; ps aux | grep -v grep | grep $i; done</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Service restarts today: ====================================="</span></div><div class="line">output=`journalctl --since today | grep -v slice | egrep <span class="string">"Starting|Stopping"</span> | grep -v systemd`</div><div class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$output</span>"</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ User logins today: =========================================="</span></div><div class="line">output=`journalctl --since today | grep -v slice | grep pam_unix`</div><div class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$output</span>"</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Non core processes: ========================================="</span></div><div class="line">pstree -n | grep -v lvmeta | grep -v systemd | grep -v rhn | grep -v dbus-daemon | grep -v crond | grep -v agetty | grep -v oddjobd | grep -v vmtoolsd | grep -v tuned | grep -v rsyslog | grep -v irqbalance | grep -v ntpd | grep -v sssd | grep -v qmgr | grep -v pickup | grep -v puppet | grep -v mcollectived | grep -v dhclient | grep -v sshd | grep -v nrpe | grep -v collectd | grep -v xinetd | grep -v consul | grep -v rpcbind | grep -v grep</div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Open ports: ================================================="</span></div><div class="line">sudo netstat -ntpl | grep -v ssh | grep -v nrpe | grep -v master | grep -v <span class="string">"rpc"</span> | grep -v Active | grep -v Proto | grep -v xinetd | grep -v systemd | sed -e <span class="string">"s/:::/0.0.0.0:/g"</span> | tr -s <span class="string">" "</span> | cut -f4,7- -d <span class="string">" "</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Open Sockets: ==============================================="</span></div><div class="line">sudo systemctl list-sockets</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Uptime: ====================================================="</span></div><div class="line">uptime</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Users: ======================================================"</span></div><div class="line">who</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Volume Info: ================================================“</span></div><div class="line"><span class="string">lvdisplay | grep "</span>LV Name<span class="string">"</span></div><div class="line"><span class="string">vgdisplay | grep "</span>VG Name<span class="string">"</span></div></pre></td></tr></table></figure>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://cbergeron.com/2017/10/08/sysinfo/" data-id="cj8iux26q0001is7ktttuh5ls" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2017/10/08/sysinfo/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/08/sysinfo/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-inxi" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/10/08/inxi/">Inxi - a utility for viewing system information</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/10/08/inxi/">
+            <time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/linux/">linux</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/devops/">devops</a>, <a class="tag-link" href="/tags/inxi/">inxi</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="Inxi"><a href="#Inxi" class="headerlink" title="Inxi"></a>Inxi</h2><p><a href="https://smxi.org/docs/inxi.htm" target="_blank" rel="external">inxi</a> is a super handy system info utility.  These days I typically work with ephemeral instances / microservers, so I just dispose of infrastructure that flakes out.  Occassionally I’ll need to see what’s up with a box so I’ve put together some common invocations of inxi below for reference:</p>
+<h3 id="Common-Invocations"><a href="#Common-Invocations" class="headerlink" title="Common Invocations"></a>Common Invocations</h3><p><strong>General system info:</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ ./inxi -c 5 -b</div><div class="line"></div><div class="line">System:    Host: mgmt-01.tools.atl.primedia.com Kernel: 3.10.0-229.el7.x86_64 x86_64 bits: 64 Console: tty 4</div><div class="line">           Distro: Scientific Linux release 7.1 (Nitrogen)</div><div class="line">Machine:   Device: vmware System: VMware product: VMware Virtual Platform serial: VMware-42 01 09 7b d7 cf ec <span class="built_in">cd</span>-a6 9a 79 d9 35 f5 0c 95</div><div class="line">           Mobo: Intel model: 440BX Desktop Reference Platform serial: N/A BIOS: Phoenix v: 6.00 date: 09/17/2015</div><div class="line">CPU(s):    2 Single core Intel Xeon E5-2698 v3s (-HT-SMP-) speed: 2294 MHz (max)</div><div class="line">Graphics:  Card: VMware SVGA II Adapter</div><div class="line">           Display Server: N/A driver: vmwgfx tty size: 180x50 Advanced Data: N/A <span class="keyword">for</span> root out of X</div><div class="line">Network:   Card: VMware VMXNET3 Ethernet Controller driver: vmxnet3</div><div class="line">Drives:    HDD Total Size: 96.6GB (20.1% used)</div><div class="line">Info:      Processes: 132 Uptime: 439 days Memory: 398.0/3792.0MB Init: systemd runlevel: 3</div><div class="line">           Client: Shell (bash) inxi: 2.3.39</div></pre></td></tr></table></figure></p>
+<p><strong>Full system info:</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">$ ./inxi -Fi</div><div class="line"></div><div class="line">System:    Host: mgmt-01.tools.atl.primedia.com Kernel: 3.10.0-229.el7.x86_64 x86_64 bits: 64 Console: tty 4</div><div class="line">           Distro: Scientific Linux release 7.1 (Nitrogen)</div><div class="line">Machine:   Device: vmware System: VMware product: VMware Virtual Platform serial: VMware-42 01 09 7b d7 cf ec <span class="built_in">cd</span>-a6 9a 79 d9 35 f5 0c 95</div><div class="line">           Mobo: Intel model: 440BX Desktop Reference Platform serial: N/A BIOS: Phoenix v: 6.00 date: 09/17/2015</div><div class="line">CPU(s):    2 Single core Intel Xeon E5-2698 v3s (-HT-SMP-) cache: 81920 KB</div><div class="line">           clock speeds: max: 2294 MHz 1: 2294 MHz 2: 2294 MHz</div><div class="line">Graphics:  Card: VMware SVGA II Adapter</div><div class="line">           Display Server: N/A driver: vmwgfx tty size: 180x50 Advanced Data: N/A <span class="keyword">for</span> root out of X</div><div class="line">Network:   Card: VMware VMXNET3 Ethernet Controller driver: vmxnet3</div><div class="line">           IF: eth0 state: up speed: 10000 Mbps duplex: full mac: 00:50:56:81:59:7e</div><div class="line">           WAN IP: 216.52.38.4</div><div class="line">           IF: eth0 ip-v4: 172.24.107.75 ip-v6-link: fe80::250:56ff:fe81:597e</div><div class="line">Drives:    HDD Total Size: 96.6GB (20.1% used)</div><div class="line">           ID-1: /dev/sda model: Virtual_disk size: 21.5GB</div><div class="line">           ID-2: /dev/sdb model: Virtual_disk size: 75.2GB</div><div class="line">Partition: ID-1: / size: 88G used: 17G (19%) fs: xfs dev: /dev/dm-1</div><div class="line">           ID-2: /boot size: 497M used: 89M (18%) fs: xfs dev: /dev/sda1</div><div class="line">           ID-3: swap-1 size: 2.15GB used: 0.10GB (5%) fs: swap dev: /dev/dm-0</div><div class="line">RAID:      No RAID devices: /proc/mdstat, md_mod kernel module present</div><div class="line">Sensors:   None detected - is lm-sensors installed and configured?</div><div class="line">Info:      Processes: 132 Uptime: 439 days Memory: 397.8/3792.0MB Init: systemd runlevel: 3</div><div class="line">           Client: Shell (bash) inxi: 2.3.39</div></pre></td></tr></table></figure></p>
+<p><strong>View repos:</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ./inxi -r</div></pre></td></tr></table></figure></p>
+<p>Repos:     Active yum sources in file: /etc/yum.repos.d/spacewalk-client.repo<br>           spacewalk-client ~ <a href="http://yum.spacewalkproject.org/2.2-client/RHEL/7/$basearch/" target="_blank" rel="external">http://yum.spacewalkproject.org/2.2-client/RHEL/7/$basearch/</a><br>```</p>
+<p>The inxi code base is (here)[<a href="https://github.com/smxi/inxi" target="_blank" rel="external">https://github.com/smxi/inxi</a>].</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://cbergeron.com/2017/10/08/inxi/" data-id="cj8iux27k0004is7kib5zq9jr" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2017/10/08/inxi/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/08/inxi/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-homebrew_generator" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2008/08/24/homebrew_generator/">Building a homebrew generator</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2008/08/24/homebrew_generator/">
+            <time datetime="2008-08-24T18:00:30.000Z" itemprop="datePublished">2008-08-24</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/projects/">projects</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/generator/">generator</a>, <a class="tag-link" href="/tags/home-improvement/">home improvement</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>A few years ago I built my own generator. I cobbled it together with some parts I had laying around the house. I found a free lawnmower on craigslist and I used the engine from it as a power source for the generator. I coupled the engine to an automobile alternator and a power inverter. The result is a cheap AC power generator. It only produces a few hundred watts of power, but it’s enough to power lights or emergency equipment in the event of power failure. I did this project for fun, not as a replacement for a real backup power generator. Here are some pictures:<br><a href="">The generator</a><br><a href="">The generator</a><br><a href="">Wood coupler panel</a><br><a href="">Belt and pulleys</a></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://cbergeron.com/2008/08/24/homebrew_generator/" data-id="cj8iux27o0005is7k60jmk0zq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2008/08/24/homebrew_generator/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2008/08/24/homebrew_generator/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-ethanol_still" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2007/08/08/ethanol_still/">Building an Ethanol Still</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2007/08/08/ethanol_still/">
+            <time datetime="2007-08-08T00:46:25.000Z" itemprop="datePublished">2007-08-07</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/alternate-energy/">alternate energy</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/ethanol/">ethanol</a>, <a class="tag-link" href="/tags/fuel/">fuel</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>A few years ago, when gas prices were exorbitant, I started to build my own Ethanol Still. In light of the global energy crisis, I figured that being able to produce my own fuel was a useful endeavor. Creating ethanol fuel requires distilling corn (or other vegetables/fruits) and extracting its potential liquid energy. I did some research on the web and discovered the <a href="http://running_on_alcohol.tripod.com/id2.html" target="_blank" rel="external">Charles 803</a>.<br>I bought plans and began building the still. I’ve put this project on hold for now but perhaps one day I’ll complete it. Until then, here are some pictures of the project:</p>
+<p><img src="http://chrisbergeron.com/wp-content/uploads/2009/08/DSC03676.JPG" alt="Laying out the copper pipe"><br><img src="http://chrisbergeron.com/wp-content/uploads/2009/08/DSC03679.JPG" alt="Reducer coupling between reflux and boiler"><br><img src="http://chrisbergeron.com/wp-content/uploads/2009/08/DSC03734.JPG" alt="Cutting the main copper pipe"><br><img src="http://chrisbergeron.com/wp-content/uploads/2009/08/DSC03741.JPG" alt="Drilling out the boiler"><br><img src="http://chrisbergeron.com/wp-content/uploads/2009/08/DSC03744.JPG" alt="Drilling out the boiler"><br><img src="http://chrisbergeron.com/wp-content/uploads/2009/08/DSC03745.JPG" alt="Boiler section"><br><img src="http://chrisbergeron.com/wp-content/uploads/2009/08/DSC03747.JPG" alt="Boiler section"><br><img src="http://chrisbergeron.com/wp-content/uploads/2009/08/DSC03751.JPG" alt="Boiler section"><br><img src="http://chrisbergeron.com/wp-content/uploads/2009/08/DSC03771.JPG" alt="The ethanol still"><br><img src="http://chrisbergeron.com/wp-content/uploads/2009/08/DSC03768.JPG" alt="The ethanol still"><br><img src="http://chrisbergeron.com/wp-content/uploads/2009/08/DSC03766.JPG" alt="The reflux column">)</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://cbergeron.com/2007/08/08/ethanol_still/" data-id="cj8ivrcyz0009rn7ksojx5bsd" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2007/08/08/ethanol_still/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2007/08/08/ethanol_still/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-aspire_free_car" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2007/07/17/aspire_free_car/">How high gas prices paid for my new (used) car</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2007/07/17/aspire_free_car/">
+            <time datetime="2007-07-17T18:46:25.000Z" itemprop="datePublished">2007-07-17</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/alternate-energy/">alternate energy</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/aspire/">aspire</a>, <a class="tag-link" href="/tags/hypermiling/">hypermiling</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="The-stage-is-set"><a href="#The-stage-is-set" class="headerlink" title="The stage is set:"></a>The stage is set:</h2><p>I drive my VW Jetta exactly 50 miles a day to and from work. When gas prices started going up in the Summer of 2006, I decided to figure out exactly how much fuel was costing me <em>each workday</em>.  So, one morning on the way to work, I stopped at the gas station nearest my home. I filled my tank and reset my trip counter to zero. I recorded the price per gallon ($3 something a gallon!). Then, I drove directly to work, worked, and drove back to the same gas station. I pulled up to the same pump I filled up at that morning. I took note of how many miles I had driven, and sure enough it read almost exactly 50 miles. Next, I refilled my gas tank. It cost me $7. <strong><em>I had burned $7 dollars worth of fuel just going to work and back!</em></strong> That came as quite a shock. I knew gas prices were high, but I never thought that I was spending that much each day. $3 a Gallon?!? Somethings gotta give! After doing some homework on the web (fueleconomy.gov), et al., I decided to buy a much more fuel efficient car (and a soon to be FREE CAR).</p>
+<h2 id="Enter-the-1-000-commuter-car-The-1995-Ford-Aspire"><a href="#Enter-the-1-000-commuter-car-The-1995-Ford-Aspire" class="headerlink" title="Enter the $1,000 commuter car: The 1995 Ford Aspire"></a>Enter the $1,000 commuter car: The 1995 Ford Aspire</h2><p><img src="image: /images/aspire.jpg" alt="1995 Ford Aspire"></p>
+<p><strong>40</strong> + MPG of pure road worthy goodness. This was to be my new commuter car. It’s safer than a motorcycle (it has airbags). It was designed to be affordable, and it was: I only paid $1,000 cash for it. As a bonus, the owner was a mechanic whom had just just rebuilt the miniscule 1.3L engine and had it purring like a kitten.</p>
+<p><strong><em>Perfect!!!</em></strong> A cheap car, with a good engine and high MPG rating. I decided to tidy the car up a bit, so I ripped out all the seats except for the drivers’ (afterall, I wasn’t going to be toting anyone around it; hell I doubt anyone would even want to be seen it). It even has ICY cold A/C. I installed a car alarm (without the siren) for the remote doorlocks. I ripped out the carpet and put subwoofer carpet all around. It has a neat contour to it. I don’t need pretty, I need functional and ultra fuel efficient.</p>
+<h2 id="But-how-did-you-get-it-for-free"><a href="#But-how-did-you-get-it-for-free" class="headerlink" title="But how did you get it for free?"></a>But how did you get it for free?</h2><p>After much calculation, I bought the Aspire and decided to see how much money it was costing me to drive to work each day. I performed the same routine as with my Volkswagen. I even used the same pump at the same station.<br>I drove the 50 miles as normal and stopped back at the gas station on my way home. I took a deep breath and topped off the gas tank.</p>
+<p><strong><em>It cost me two dollars. Yes, only $2 to go to work and back!?!</em></strong></p>
+<p>I was paying <strong>$7 A DAY</strong> the week before. I was stunned!<br>That’s a savings of $5 each day that I work. I work 20 days a month, so that’s $100/month I saved on gas! And all I have to do is get used to driving this little car. Wait a second, considering that this car was only $1,000 dollars, if I save $100 per month, it will pay for itself in 10 months.<br>Oh, it paid for itself alright – with dividends!</p>
+<h3 id="1-It-uses-the-cheapest-gas-and-less-of-it"><a href="#1-It-uses-the-cheapest-gas-and-less-of-it" class="headerlink" title="1: It uses the cheapest gas and less of it."></a>1: It uses the cheapest gas and less of it.</h3><p>It’s a great feeling getting 300+ miles for about $20 dollars (in 2006)!</p>
+<h3 id="2-Patriotism"><a href="#2-Patriotism" class="headerlink" title="2: Patriotism!"></a>2: Patriotism!</h3><p>It’s a great feeling pulling into a gas station and driving right past the Hummers that are stopped at the pump. I love it when I catch them glancing over at my little microcar and then see them looking back the $$$$$$$ on their pump.</p>
+<h3 id="3-My-other-cars-maintain-their-value"><a href="#3-My-other-cars-maintain-their-value" class="headerlink" title="3: My other cars maintain their value."></a>3: My other cars maintain their value.</h3><p>My Volkswagen Jetta has about 60,000 miles on it. Putting a few hundred miles a week on it was certainly going to affect it’s value drastically in a short amount of time. Now, she just sits in the garage looking pretty. I also don’t need to pay for the car wash each month (there’s another $20 I save). Since I drive it much less, I put less wear-and-tear on the car. Less maintenance = less money out of my pocket = more money in the bank. Probably a few hundred dollars a year.</p>
+<h3 id="4-Easy-to-maintain"><a href="#4-Easy-to-maintain" class="headerlink" title="4: Easy to maintain."></a>4: Easy to maintain.</h3><p>Parts for this car are <em>cheap</em>. New tires on our BMW cost over $1,000. New tires on my Jetta cost around $500. New tires for the Aspire cost about $20 each.</p>
+<h3 id="5-Cheaper-car-insurance"><a href="#5-Cheaper-car-insurance" class="headerlink" title="5: Cheaper car insurance."></a>5: Cheaper car insurance.</h3><p>I now get a multi-car discount. My car insurance actually came DOWN when I added this car to my policy. I didn’t expect that at all. Nice!</p>
+<h3 id="6-The-benefit-of-having-multiple-cars"><a href="#6-The-benefit-of-having-multiple-cars" class="headerlink" title="6: The benefit of having multiple cars."></a>6: The benefit of having multiple cars.</h3><p>I remember when I only had one car and it needed repair. I was stuck. I couldn’t go anywhere – it was my only car and it was in the shop. That sucked. Owning more than 1 car is a great stress reliever. Got a nail in the tire of the Jetta? Throw the tire into the trunk of the Aspire, drop it off and pick it up later after it’s been fixed. No more sitting in tire shop lobby hell watching Martha Stewart and having to choose between Southern Living or Fishing Today magazines.</p>
+<h3 id="7-It’s-a-Micro-Utility-Vehicle"><a href="#7-It’s-a-Micro-Utility-Vehicle" class="headerlink" title="7: It’s a Micro Utility Vehicle."></a>7: It’s a Micro Utility Vehicle.</h3><p>After ripping out the rear seats and passenger seat, I was left with quite a bit of room in the car. So much in fact, that it’s like having a Micro SUV. I can load up lumber from Home Depot (remember theres no passenger seat so I can just push 2×4’s in all the way to the engine firewall. I don’t have to worry about cutting/scratching leather seats, scuffing the dashbaord, etc.</p>
+<h3 id="8-It’s-retro-tiny-and-fun-to-drive"><a href="#8-It’s-retro-tiny-and-fun-to-drive" class="headerlink" title="8: It’s retro, tiny and fun to drive!"></a>8: It’s retro, tiny and fun to drive!</h3><p>It’s incredibly fun to drive a small car and it’s retro old. I get funny looks from some people as if it’s a concept car.</p>
+<h3 id="9-It-makes-me-appreciate-my-other-cars"><a href="#9-It-makes-me-appreciate-my-other-cars" class="headerlink" title="9: It makes me appreciate my other cars."></a>9: It makes me appreciate my other cars.</h3><p>On the weekends when I take out my other cars, I can really appreciate the creature comforts: Leather seats, woodgrain dashes, sunroofs, horsepower etc. I used to take them for granted, but now I really appreciate just how nice my other cars are (relatively).</p>
+<h3 id="10-Goodbye-Speeding-Tickets"><a href="#10-Goodbye-Speeding-Tickets" class="headerlink" title="10: Goodbye Speeding Tickets."></a>10: Goodbye Speeding Tickets.</h3><p>Okay, so this one’s a bit of a stretch. Last year, I got a $300 speeding ticket in my Jetta. I’ve never had a speeding ticket in my Aspire, nor do I think I ever will. I know when I’m doing 55 in my Aspire. My foot is to the floor and I’m getting passed by UHaul trucks. In my Jetta I’ll get up to 70 without even knowing it. Since I’m in my Aspire 90% of the time, that’s only 10% of the time that I have consciously avoid speeding.</p>
+<h2 id="It-paid-for-itself-in-less-than-a-year-by"><a href="#It-paid-for-itself-in-less-than-a-year-by" class="headerlink" title="It paid for itself in less than a year by:"></a>It paid for itself in less than a year by:</h2><ul>
+<li>Using less fuel – a LOT LESS.<br>$100/month less.</li>
+<li>Preserves my other cars’ values and saves them on maintenance. At least a few $100/year.</li>
+<li>Lowers my car insurance premiums (multi-car discount): $80/year</li>
+<li>Is much more affordable to fix, repair, maintain – No expensive dealership repairs here baby! I can replace parts on this car using cheap junkyard parts. $15 for an alternator!?? I’ll take two!</li>
+</ul>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary:"></a>Summary:</h1><hr>
+<p>$1,400 total investment in the car<br>$100/month gas savings for 36 months = $3,600</p>
+<p>Net gain: $2,200 versus driving my Jetta to work for the same time period.</p>
+<p>Efficiency is the new cool. Feel free to ask questions or opine below.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://cbergeron.com/2007/07/17/aspire_free_car/" data-id="cj8ivrcyr0008rn7ks40j2izg" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2007/07/17/aspire_free_car/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2007/07/17/aspire_free_car/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">recent</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/10/09/comma_panda/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://comma.ai/comma.png)" alt="Comma.ai Panda" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/carputer/">carputer</a></p>
+                            <p class="item-title"><a href="/2017/10/09/comma_panda/" class="title">Comma.ai Panda</a></p>
+                            <p class="item-date"><time datetime="2017-10-09T00:46:25.000Z" itemprop="datePublished">2017-10-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/10/09/high_performance_sabnzbd/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static1.squarespace.com/static/5441db9ae4b0ea3fd727c19f/5441e39fe4b0c5dff241f1e5/54433308e4b0ea3fd7299c85/1419957053419/?format=80w)" alt="Using Ansible to build a high availablity Sabnzbd usenet downloader" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2017/10/09/high_performance_sabnzbd/" class="title">Using Ansible to build a high availablity Sabnzbd usenet downloader</a></p>
+                            <p class="item-date"><time datetime="2017-10-09T00:46:25.000Z" itemprop="datePublished">2017-10-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/10/08/hexo_systemd_unit_file/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://raw.githubusercontent.com/hexojs/awesome-hexo/master/hexo-logo.png)" alt="A systemD unit file for Hexo" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/blog/">blog</a></p>
+                            <p class="item-title"><a href="/2017/10/08/hexo_systemd_unit_file/" class="title">A systemD unit file for Hexo</a></p>
+                            <p class="item-date"><time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/10/08/sysinfo/" class="thumbnail">
+    
+    
+        <span style="background-image:url(images/tech/Bash-new.sh-600x600.png)" alt="System info bash script" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2017/10/08/sysinfo/" class="title">System info bash script</a></p>
+                            <p class="item-date"><time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/10/08/inxi/" class="thumbnail">
+    
+    
+        <span style="background-image:url(images/tech/Bash-new.sh-600x600.png)" alt="Inxi - a utility for viewing system information" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2017/10/08/inxi/" class="title">Inxi - a utility for viewing system information</a></p>
+                            <p class="item-date"><time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/alternate-energy/">alternate energy</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/carputer/">carputer</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/projects/">projects</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">August 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">August 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">July 2007</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/aspire/">aspire</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/">bash</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carputer/">carputer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/comma-ai/">comma.ai</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashpc/">dashpc</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/devops/">devops</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ethanol/">ethanol</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fuel/">fuel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/generator/">generator</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/home-improvement/">home improvement</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hypermiling/">hypermiling</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inxi/">inxi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/panda/">panda</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sabnzbd/">sabnzbd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/systemd/">systemd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/usenet/">usenet</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/aspire/" style="font-size: 10px;">aspire</a> <a href="/tags/bash/" style="font-size: 10px;">bash</a> <a href="/tags/carputer/" style="font-size: 10px;">carputer</a> <a href="/tags/comma-ai/" style="font-size: 10px;">comma.ai</a> <a href="/tags/dashpc/" style="font-size: 10px;">dashpc</a> <a href="/tags/devops/" style="font-size: 20px;">devops</a> <a href="/tags/ethanol/" style="font-size: 10px;">ethanol</a> <a href="/tags/fuel/" style="font-size: 10px;">fuel</a> <a href="/tags/generator/" style="font-size: 10px;">generator</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/home-improvement/" style="font-size: 10px;">home improvement</a> <a href="/tags/hypermiling/" style="font-size: 10px;">hypermiling</a> <a href="/tags/inxi/" style="font-size: 10px;">inxi</a> <a href="/tags/panda/" style="font-size: 10px;">panda</a> <a href="/tags/sabnzbd/" style="font-size: 10px;">sabnzbd</a> <a href="/tags/systemd/" style="font-size: 10px;">systemd</a> <a href="/tags/usenet/" style="font-size: 10px;">usenet</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://chrisbergeron.com">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2017 Chris Bergeron<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+        this.page.identifier = '';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'chrisbergeron' + '.disqus.com/count.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
