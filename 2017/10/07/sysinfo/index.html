@@ -3,15 +3,22 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Tag: bash | The Berge Blog</title>
+    <title>System info bash script | The Berge Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="The Berge Blog">
-<meta property="og:url" content="http://cbergeron.com/tags/bash/index.html">
+    <meta name="description" content="I put together a quick bash shell script to view system info at a glance.  I know there are existing tools for this like inxi, but I wanted to put something together I can copypasta.  This is specific">
+<meta name="keywords" content="devops,bash">
+<meta property="og:type" content="article">
+<meta property="og:title" content="System info bash script">
+<meta property="og:url" content="http://cbergeron.com/2017/10/07/sysinfo/index.html">
 <meta property="og:site_name" content="The Berge Blog">
+<meta property="og:description" content="I put together a quick bash shell script to view system info at a glance.  I know there are existing tools for this like inxi, but I wanted to put something together I can copypasta.  This is specific">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://cbergeron.com/2017/10/07/sysinfo/images/tech/Bash-new.sh-600x600.png">
+<meta property="og:updated_time" content="2017-10-07T22:08:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Berge Blog">
+<meta name="twitter:title" content="System info bash script">
+<meta name="twitter:description" content="I put together a quick bash shell script to view system info at a glance.  I know there are existing tools for this like inxi, but I wanted to put something together I can copypasta.  This is specific">
+<meta name="twitter:image" content="http://cbergeron.com/2017/10/07/sysinfo/images/tech/Bash-new.sh-600x600.png">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -213,25 +220,21 @@
 </aside>
 
             
-            <section id="main">
-<div class="timeline timeline-wrap">
-    <div class="timeline-row timeline-row-major">
-        <span class="node"><i class="fa fa-tag"></i></span>
-        <h1 class="title">#bash</h1>
-    </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-sysinfo" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/07/sysinfo/">System info bash script</a>
+        <h1 class="article-title" itemprop="name">
+            System info bash script
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2017/10/07/sysinfo/">
@@ -240,23 +243,146 @@
     </div>
 
 
-                    
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
         <a class="article-category-link" href="/categories/linux/">linux</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/bash/">bash</a>, <a class="tag-link" href="/tags/devops/">devops</a>
     </div>
 
-                </div>
-            </div>
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>I put together a quick bash shell script to view system info at a glance.  I know there are existing tools for this like <a href="https://smxi.org/docs/inxi.htm" target="_blank" rel="external">inxi</a>, but I wanted to put something together I can copypasta.  This is specific to RHEL, Centos and Sci Linux but it can be easily adapted for other distros.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line"></div><div class="line"><span class="comment"># run as root</span></div><div class="line"></div><div class="line"><span class="comment">#echo "================================ Services: ================================"</span></div><div class="line"><span class="comment">#for i in `journalctl -F _SYSTEMD_UNIT | grep -v session | sed -e "s/.service//g"`; do echo "========= $i ========="; ps aux | grep -v grep | grep $i; done</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Service restarts today: ====================================="</span></div><div class="line">output=`journalctl --since today | grep -v slice | egrep <span class="string">"Starting|Stopping"</span> | grep -v systemd`</div><div class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$output</span>"</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ User logins today: =========================================="</span></div><div class="line">output=`journalctl --since today | grep -v slice | grep pam_unix`</div><div class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$output</span>"</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Non core processes: ========================================="</span></div><div class="line">pstree -n | grep -v lvmeta | grep -v systemd | grep -v rhn | grep -v dbus-daemon | grep -v crond | grep -v agetty | grep -v oddjobd | grep -v vmtoolsd | grep -v tuned | grep -v rsyslog | grep -v irqbalance | grep -v ntpd | grep -v sssd | grep -v qmgr | grep -v pickup | grep -v puppet | grep -v mcollectived | grep -v dhclient | grep -v sshd | grep -v nrpe | grep -v collectd | grep -v xinetd | grep -v consul | grep -v rpcbind | grep -v grep</div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Open ports: ================================================="</span></div><div class="line">sudo netstat -ntpl | grep -v ssh | grep -v nrpe | grep -v master | grep -v <span class="string">"rpc"</span> | grep -v Active | grep -v Proto | grep -v xinetd | grep -v systemd | sed -e <span class="string">"s/:::/0.0.0.0:/g"</span> | tr -s <span class="string">" "</span> | cut -f4,7- -d <span class="string">" "</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Open Sockets: ==============================================="</span></div><div class="line">sudo systemctl list-sockets</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Uptime: ====================================================="</span></div><div class="line">uptime</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Users: ======================================================"</span></div><div class="line">who</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Volume Info: ================================================“</span></div><div class="line"><span class="string">lvdisplay | grep "</span>LV Name<span class="string">"</span></div><div class="line"><span class="string">vgdisplay | grep "</span>VG Name<span class="string">"</span></div></pre></td></tr></table></figure>
+
+        
         </div>
-    
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
 </div>
+
+    <a data-url="http://cbergeron.com/2017/10/07/sysinfo/" data-id="cj8j0e98r000fn89dhm2f013z" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2017/10/07/sysinfo/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/07/sysinfo/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/10/07/inxi/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Inxi - a utility for viewing system information
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2008/08/24/homebrew_generator/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Building a homebrew generator</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
 </section>
             
                 
@@ -446,11 +572,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://cbergeron.com/2017/10/07/sysinfo/';
+        
+        this.page.identifier = 'sysinfo';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'cbergeron' + '.disqus.com/count.js';
+        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

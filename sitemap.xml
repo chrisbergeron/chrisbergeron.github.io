@@ -2,79 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://cbergeron.com/2017/10/09/high_performance_sabnzbd/</loc>
+    <loc>http://cbergeron.com/2017/10/08/grafana_dashboard/</loc>
     
-    <lastmod>2017-10-08T14:43:28.148Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2007/08/08/ethanol_still/</loc>
-    
-    <lastmod>2017-10-08T14:43:28.147Z</lastmod>
+    <lastmod>2017-10-08T18:54:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://cbergeron.com/2017/10/09/comma_panda/</loc>
+    <loc>http://cbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
     
-    <lastmod>2017-10-08T14:43:28.134Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2007/07/17/aspire_free_car/</loc>
-    
-    <lastmod>2017-10-08T14:43:28.133Z</lastmod>
+    <lastmod>2017-10-08T14:05:19.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://cbergeron.com/about/index.html</loc>
     
-    <lastmod>2017-10-08T05:20:12.284Z</lastmod>
+    <lastmod>2017-10-08T05:20:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2007/07/17/aspire_free_car/</loc>
+    
+    <lastmod>2017-10-08T04:24:15.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2007/08/07/ethanol_still/</loc>
+    
+    <lastmod>2017-10-08T02:40:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/08/comma_panda/</loc>
+    
+    <lastmod>2017-10-08T00:31:25.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
+    
+    <lastmod>2017-10-07T22:08:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/07/sysinfo/</loc>
+    
+    <lastmod>2017-10-07T22:08:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/07/inxi/</loc>
+    
+    <lastmod>2017-10-07T22:08:50.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://cbergeron.com/2008/08/24/homebrew_generator/</loc>
     
-    <lastmod>2017-10-07T21:32:48.343Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/08/hexo_systemd_unit_file/</loc>
-    
-    <lastmod>2017-10-07T16:31:35.428Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/08/inxi/</loc>
-    
-    <lastmod>2017-10-07T16:28:32.776Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/08/sysinfo/</loc>
-    
-    <lastmod>2017-10-07T16:27:46.264Z</lastmod>
+    <lastmod>2017-10-07T22:08:50.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://cbergeron.com/categories/index.html</loc>
     
-    <lastmod>2017-10-06T23:06:40.776Z</lastmod>
+    <lastmod>2017-10-06T23:06:40.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://cbergeron.com/tags/index.html</loc>
     
-    <lastmod>2017-10-06T23:06:40.776Z</lastmod>
+    <lastmod>2017-10-06T23:06:40.000Z</lastmod>
     
   </url>
   

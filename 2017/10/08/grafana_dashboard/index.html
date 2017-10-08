@@ -3,15 +3,22 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Tag: bash | The Berge Blog</title>
+    <title>Building an executive dashboard with Grafana | The Berge Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="The Berge Blog">
-<meta property="og:url" content="http://cbergeron.com/tags/bash/index.html">
+    <meta name="description" content="Building an executive dashboard with GrafanaI have many interests and some of them have metrics that are useful or fun to watch.  For example, I have investment in Bitcoin so it’s nice to be able to k">
+<meta name="keywords" content="grafana,influxdb">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Building an executive dashboard with Grafana">
+<meta property="og:url" content="http://cbergeron.com/2017/10/08/grafana_dashboard/index.html">
 <meta property="og:site_name" content="The Berge Blog">
+<meta property="og:description" content="Building an executive dashboard with GrafanaI have many interests and some of them have metrics that are useful or fun to watch.  For example, I have investment in Bitcoin so it’s nice to be able to k">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://www.spamphobia.com/panorama/public/img/grafana_icon.svg">
+<meta property="og:updated_time" content="2017-10-08T18:54:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Berge Blog">
+<meta name="twitter:title" content="Building an executive dashboard with Grafana">
+<meta name="twitter:description" content="Building an executive dashboard with GrafanaI have many interests and some of them have metrics that are useful or fun to watch.  For example, I have investment in Bitcoin so it’s nice to be able to k">
+<meta name="twitter:image" content="https://www.spamphobia.com/panorama/public/img/grafana_icon.svg">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -213,50 +220,169 @@
 </aside>
 
             
-            <section id="main">
-<div class="timeline timeline-wrap">
-    <div class="timeline-row timeline-row-major">
-        <span class="node"><i class="fa fa-tag"></i></span>
-        <h1 class="title">#bash</h1>
-    </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-grafana_dashboard" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/07/sysinfo/">System info bash script</a>
+        <h1 class="article-title" itemprop="name">
+            Building an executive dashboard with Grafana
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/10/07/sysinfo/">
-            <time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time>
+        <a href="/2017/10/08/grafana_dashboard/">
+            <time datetime="2017-10-08T17:19:00.000Z" itemprop="datePublished">2017-10-08</time>
         </a>
     </div>
 
 
-                    
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/linux/">linux</a>
+        <a class="article-category-link" href="/categories/dashboards/">dashboards</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/bash/">bash</a>, <a class="tag-link" href="/tags/devops/">devops</a>
+        <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/influxdb/">influxdb</a>
     </div>
 
-                </div>
-            </div>
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="Building-an-executive-dashboard-with-Grafana"><a href="#Building-an-executive-dashboard-with-Grafana" class="headerlink" title="Building an executive dashboard with Grafana"></a>Building an executive dashboard with Grafana</h2><p>I have many interests and some of them have metrics that are useful or fun to watch.  For example, I have investment in Bitcoin so it’s nice to be able to keep an eye on it periodically.<br>I decided to create a graphical “at a glance” dashboard for myself.  I chose Grafana as the user interface / front end and InfluxDB a the time-series backend database to store the metrics.  I use various scripts and applets to populate the data into Influx and Grafana makes it easy to<br>render them into a user friendly dashboard.  Here’s my dashboard:</p>
+<p><img src="/images/grafana_dashboard1.png alt text=&quot;Grafana Dashboard&quot;" alt="Grafana Dashboard"></p>
+
+        
         </div>
-    
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
 </div>
+
+    <a data-url="http://cbergeron.com/2017/10/08/grafana_dashboard/" data-id="cj8j419zu0000bm9dphgeses2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2017/10/08/grafana_dashboard/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/08/grafana_dashboard/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/10/08/high_performance_sabnzbd/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Using Ansible to build a high availablity Sabnzbd usenet downloader
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2017/10/07/hexo_systemd_unit_file/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">A systemD unit file for Hexo</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
 </section>
             
                 
@@ -446,11 +572,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://cbergeron.com/2017/10/08/grafana_dashboard/';
+        
+        this.page.identifier = 'grafana_dashboard';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'cbergeron' + '.disqus.com/count.js';
+        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

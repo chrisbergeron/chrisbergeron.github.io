@@ -155,11 +155,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                8
+                9
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                17
+                19
                 <span>tags</span>
             </div>
         </div>
@@ -222,7 +222,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2017/10/09/comma_panda/">Comma.ai Panda</a>
+            <a class="article-title" href="/2017/10/08/comma_panda/">Comma.ai Panda</a>
         </h1>
     
 
@@ -231,7 +231,7 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/10/09/comma_panda/">
+        <a href="/2017/10/08/comma_panda/">
             <time datetime="2017-10-09T00:46:25.000Z" itemprop="datePublished">2017-10-08</time>
         </a>
     </div>
@@ -269,7 +269,7 @@
 
 </div>
 
-    <a data-url="http://cbergeron.com/2017/10/09/comma_panda/" data-id="cj8iux26f0000is7kz4xnnluv" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://cbergeron.com/2017/10/08/comma_panda/" data-id="cj8j0e98b0002n89dv5s3ztcf" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -337,7 +337,7 @@
 
             
     
-        <a href="http://cbergeron.com/2017/10/09/comma_panda/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/09/comma_panda/">Comments</a>
+        <a href="http://cbergeron.com/2017/10/08/comma_panda/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/08/comma_panda/">Comments</a>
     
 
         </footer>
@@ -355,7 +355,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2017/10/09/high_performance_sabnzbd/">Using Ansible to build a high availablity Sabnzbd usenet downloader</a>
+            <a class="article-title" href="/2017/10/08/high_performance_sabnzbd/">Using Ansible to build a high availablity Sabnzbd usenet downloader</a>
         </h1>
     
 
@@ -364,7 +364,7 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/10/09/high_performance_sabnzbd/">
+        <a href="/2017/10/08/high_performance_sabnzbd/">
             <time datetime="2017-10-09T00:46:25.000Z" itemprop="datePublished">2017-10-08</time>
         </a>
     </div>
@@ -408,7 +408,7 @@
 
 </div>
 
-    <a data-url="http://cbergeron.com/2017/10/09/high_performance_sabnzbd/" data-id="cj8iux28m000wis7kd9ppp01a" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://cbergeron.com/2017/10/08/high_performance_sabnzbd/" data-id="cj8j0e98k0007n89dpsvxywvz" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -476,7 +476,140 @@
 
             
     
-        <a href="http://cbergeron.com/2017/10/09/high_performance_sabnzbd/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/09/high_performance_sabnzbd/">Comments</a>
+        <a href="http://cbergeron.com/2017/10/08/high_performance_sabnzbd/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/08/high_performance_sabnzbd/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-grafana_dashboard" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/10/08/grafana_dashboard/">Building an executive dashboard with Grafana</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/10/08/grafana_dashboard/">
+            <time datetime="2017-10-08T17:19:00.000Z" itemprop="datePublished">2017-10-08</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/dashboards/">dashboards</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/influxdb/">influxdb</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="Building-an-executive-dashboard-with-Grafana"><a href="#Building-an-executive-dashboard-with-Grafana" class="headerlink" title="Building an executive dashboard with Grafana"></a>Building an executive dashboard with Grafana</h2><p>I have many interests and some of them have metrics that are useful or fun to watch.  For example, I have investment in Bitcoin so it’s nice to be able to keep an eye on it periodically.<br>I decided to create a graphical “at a glance” dashboard for myself.  I chose Grafana as the user interface / front end and InfluxDB a the time-series backend database to store the metrics.  I use various scripts and applets to populate the data into Influx and Grafana makes it easy to<br>render them into a user friendly dashboard.  Here’s my dashboard:</p>
+<p><img src="/images/grafana_dashboard1.png alt text=&quot;Grafana Dashboard&quot;" alt="Grafana Dashboard"></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://cbergeron.com/2017/10/08/grafana_dashboard/" data-id="cj8j419zu0000bm9dphgeses2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2017/10/08/grafana_dashboard/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/08/grafana_dashboard/">Comments</a>
     
 
         </footer>
@@ -494,7 +627,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2017/10/08/hexo_systemd_unit_file/">A systemD unit file for Hexo</a>
+            <a class="article-title" href="/2017/10/07/hexo_systemd_unit_file/">A systemD unit file for Hexo</a>
         </h1>
     
 
@@ -503,7 +636,7 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/10/08/hexo_systemd_unit_file/">
+        <a href="/2017/10/07/hexo_systemd_unit_file/">
             <time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time>
         </a>
     </div>
@@ -545,7 +678,7 @@
 
 </div>
 
-    <a data-url="http://cbergeron.com/2017/10/08/hexo_systemd_unit_file/" data-id="cj8gq42mi0000aq7k4sydw3st" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://cbergeron.com/2017/10/07/hexo_systemd_unit_file/" data-id="cj8j0e98j0006n89d2ztg66fv" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -613,140 +746,7 @@
 
             
     
-        <a href="http://cbergeron.com/2017/10/08/hexo_systemd_unit_file/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/08/hexo_systemd_unit_file/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-sysinfo" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/10/08/sysinfo/">System info bash script</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/10/08/sysinfo/">
-            <time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/linux/">linux</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/bash/">bash</a>, <a class="tag-link" href="/tags/devops/">devops</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>I put together a quick bash shell script to view system info at a glance.  I know there are existing tools for this like <a href="https://smxi.org/docs/inxi.htm" target="_blank" rel="external">inxi</a>, but I wanted to put something together I can copypasta.  This is specific to RHEL, Centos and Sci Linux but it can be easily adapted for other distros.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line"></div><div class="line"><span class="comment"># run as root</span></div><div class="line"></div><div class="line"><span class="comment">#echo "================================ Services: ================================"</span></div><div class="line"><span class="comment">#for i in `journalctl -F _SYSTEMD_UNIT | grep -v session | sed -e "s/.service//g"`; do echo "========= $i ========="; ps aux | grep -v grep | grep $i; done</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Service restarts today: ====================================="</span></div><div class="line">output=`journalctl --since today | grep -v slice | egrep <span class="string">"Starting|Stopping"</span> | grep -v systemd`</div><div class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$output</span>"</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ User logins today: =========================================="</span></div><div class="line">output=`journalctl --since today | grep -v slice | grep pam_unix`</div><div class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$output</span>"</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Non core processes: ========================================="</span></div><div class="line">pstree -n | grep -v lvmeta | grep -v systemd | grep -v rhn | grep -v dbus-daemon | grep -v crond | grep -v agetty | grep -v oddjobd | grep -v vmtoolsd | grep -v tuned | grep -v rsyslog | grep -v irqbalance | grep -v ntpd | grep -v sssd | grep -v qmgr | grep -v pickup | grep -v puppet | grep -v mcollectived | grep -v dhclient | grep -v sshd | grep -v nrpe | grep -v collectd | grep -v xinetd | grep -v consul | grep -v rpcbind | grep -v grep</div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Open ports: ================================================="</span></div><div class="line">sudo netstat -ntpl | grep -v ssh | grep -v nrpe | grep -v master | grep -v <span class="string">"rpc"</span> | grep -v Active | grep -v Proto | grep -v xinetd | grep -v systemd | sed -e <span class="string">"s/:::/0.0.0.0:/g"</span> | tr -s <span class="string">" "</span> | cut -f4,7- -d <span class="string">" "</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Open Sockets: ==============================================="</span></div><div class="line">sudo systemctl list-sockets</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Uptime: ====================================================="</span></div><div class="line">uptime</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Users: ======================================================"</span></div><div class="line">who</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Volume Info: ================================================“</span></div><div class="line"><span class="string">lvdisplay | grep "</span>LV Name<span class="string">"</span></div><div class="line"><span class="string">vgdisplay | grep "</span>VG Name<span class="string">"</span></div></pre></td></tr></table></figure>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://cbergeron.com/2017/10/08/sysinfo/" data-id="cj8iux26q0001is7ktttuh5ls" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://cbergeron.com/2017/10/08/sysinfo/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/08/sysinfo/">Comments</a>
+        <a href="http://cbergeron.com/2017/10/07/hexo_systemd_unit_file/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/07/hexo_systemd_unit_file/">Comments</a>
     
 
         </footer>
@@ -764,7 +764,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2017/10/08/inxi/">Inxi - a utility for viewing system information</a>
+            <a class="article-title" href="/2017/10/07/inxi/">Inxi - a utility for viewing system information</a>
         </h1>
     
 
@@ -773,7 +773,7 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/10/08/inxi/">
+        <a href="/2017/10/07/inxi/">
             <time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time>
         </a>
     </div>
@@ -815,7 +815,7 @@
 
 </div>
 
-    <a data-url="http://cbergeron.com/2017/10/08/inxi/" data-id="cj8iux27k0004is7kib5zq9jr" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://cbergeron.com/2017/10/07/inxi/" data-id="cj8j0e98o000bn89dkjf6o0xq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -883,7 +883,140 @@
 
             
     
-        <a href="http://cbergeron.com/2017/10/08/inxi/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/08/inxi/">Comments</a>
+        <a href="http://cbergeron.com/2017/10/07/inxi/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/07/inxi/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-sysinfo" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/10/07/sysinfo/">System info bash script</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/10/07/sysinfo/">
+            <time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/linux/">linux</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/bash/">bash</a>, <a class="tag-link" href="/tags/devops/">devops</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>I put together a quick bash shell script to view system info at a glance.  I know there are existing tools for this like <a href="https://smxi.org/docs/inxi.htm" target="_blank" rel="external">inxi</a>, but I wanted to put something together I can copypasta.  This is specific to RHEL, Centos and Sci Linux but it can be easily adapted for other distros.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line"></div><div class="line"><span class="comment"># run as root</span></div><div class="line"></div><div class="line"><span class="comment">#echo "================================ Services: ================================"</span></div><div class="line"><span class="comment">#for i in `journalctl -F _SYSTEMD_UNIT | grep -v session | sed -e "s/.service//g"`; do echo "========= $i ========="; ps aux | grep -v grep | grep $i; done</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Service restarts today: ====================================="</span></div><div class="line">output=`journalctl --since today | grep -v slice | egrep <span class="string">"Starting|Stopping"</span> | grep -v systemd`</div><div class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$output</span>"</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ User logins today: =========================================="</span></div><div class="line">output=`journalctl --since today | grep -v slice | grep pam_unix`</div><div class="line"><span class="built_in">echo</span> <span class="string">"<span class="variable">$output</span>"</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Non core processes: ========================================="</span></div><div class="line">pstree -n | grep -v lvmeta | grep -v systemd | grep -v rhn | grep -v dbus-daemon | grep -v crond | grep -v agetty | grep -v oddjobd | grep -v vmtoolsd | grep -v tuned | grep -v rsyslog | grep -v irqbalance | grep -v ntpd | grep -v sssd | grep -v qmgr | grep -v pickup | grep -v puppet | grep -v mcollectived | grep -v dhclient | grep -v sshd | grep -v nrpe | grep -v collectd | grep -v xinetd | grep -v consul | grep -v rpcbind | grep -v grep</div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Open ports: ================================================="</span></div><div class="line">sudo netstat -ntpl | grep -v ssh | grep -v nrpe | grep -v master | grep -v <span class="string">"rpc"</span> | grep -v Active | grep -v Proto | grep -v xinetd | grep -v systemd | sed -e <span class="string">"s/:::/0.0.0.0:/g"</span> | tr -s <span class="string">" "</span> | cut -f4,7- -d <span class="string">" "</span></div><div class="line"></div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Open Sockets: ==============================================="</span></div><div class="line">sudo systemctl list-sockets</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Uptime: ====================================================="</span></div><div class="line">uptime</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Users: ======================================================"</span></div><div class="line">who</div><div class="line"><span class="built_in">echo</span> <span class="string">"================================ Volume Info: ================================================“</span></div><div class="line"><span class="string">lvdisplay | grep "</span>LV Name<span class="string">"</span></div><div class="line"><span class="string">vgdisplay | grep "</span>VG Name<span class="string">"</span></div></pre></td></tr></table></figure>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://cbergeron.com/2017/10/07/sysinfo/" data-id="cj8j0e98r000fn89dhm2f013z" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://cbergeron.com/2017/10/07/sysinfo/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/10/07/sysinfo/">Comments</a>
     
 
         </footer>
@@ -947,7 +1080,7 @@
 
 </div>
 
-    <a data-url="http://cbergeron.com/2008/08/24/homebrew_generator/" data-id="cj8iux27o0005is7k60jmk0zq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://cbergeron.com/2008/08/24/homebrew_generator/" data-id="cj8j0e98m000an89dcu59mih2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1033,7 +1166,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2007/08/08/ethanol_still/">Building an Ethanol Still</a>
+            <a class="article-title" href="/2007/08/07/ethanol_still/">Building an Ethanol Still</a>
         </h1>
     
 
@@ -1042,7 +1175,7 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2007/08/08/ethanol_still/">
+        <a href="/2007/08/07/ethanol_still/">
             <time datetime="2007-08-08T00:46:25.000Z" itemprop="datePublished">2007-08-07</time>
         </a>
     </div>
@@ -1080,7 +1213,7 @@
 
 </div>
 
-    <a data-url="http://cbergeron.com/2007/08/08/ethanol_still/" data-id="cj8ivrcyz0009rn7ksojx5bsd" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://cbergeron.com/2007/08/07/ethanol_still/" data-id="cj8j0e98g0005n89d69k7riik" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1148,7 +1281,7 @@
 
             
     
-        <a href="http://cbergeron.com/2007/08/08/ethanol_still/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2007/08/08/ethanol_still/">Comments</a>
+        <a href="http://cbergeron.com/2007/08/07/ethanol_still/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2007/08/07/ethanol_still/">Comments</a>
     
 
         </footer>
@@ -1238,7 +1371,7 @@
 
 </div>
 
-    <a data-url="http://cbergeron.com/2007/07/17/aspire_free_car/" data-id="cj8ivrcyr0008rn7ks40j2izg" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://cbergeron.com/2007/07/17/aspire_free_car/" data-id="cj8j0e9850000n89daexh9h7k" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1329,7 +1462,7 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/10/09/comma_panda/" class="thumbnail">
+                            <a href="/2017/10/08/comma_panda/" class="thumbnail">
     
     
         <span style="background-image:url(https://comma.ai/comma.png)" alt="Comma.ai Panda" class="thumbnail-image"></span>
@@ -1340,7 +1473,7 @@
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/carputer/">carputer</a></p>
-                            <p class="item-title"><a href="/2017/10/09/comma_panda/" class="title">Comma.ai Panda</a></p>
+                            <p class="item-title"><a href="/2017/10/08/comma_panda/" class="title">Comma.ai Panda</a></p>
                             <p class="item-date"><time datetime="2017-10-09T00:46:25.000Z" itemprop="datePublished">2017-10-08</time></p>
                         </div>
                     </li>
@@ -1348,7 +1481,7 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/10/09/high_performance_sabnzbd/" class="thumbnail">
+                            <a href="/2017/10/08/high_performance_sabnzbd/" class="thumbnail">
     
     
         <span style="background-image:url(http://static1.squarespace.com/static/5441db9ae4b0ea3fd727c19f/5441e39fe4b0c5dff241f1e5/54433308e4b0ea3fd7299c85/1419957053419/?format=80w)" alt="Using Ansible to build a high availablity Sabnzbd usenet downloader" class="thumbnail-image"></span>
@@ -1359,7 +1492,7 @@
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
-                            <p class="item-title"><a href="/2017/10/09/high_performance_sabnzbd/" class="title">Using Ansible to build a high availablity Sabnzbd usenet downloader</a></p>
+                            <p class="item-title"><a href="/2017/10/08/high_performance_sabnzbd/" class="title">Using Ansible to build a high availablity Sabnzbd usenet downloader</a></p>
                             <p class="item-date"><time datetime="2017-10-09T00:46:25.000Z" itemprop="datePublished">2017-10-08</time></p>
                         </div>
                     </li>
@@ -1367,7 +1500,26 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/10/08/hexo_systemd_unit_file/" class="thumbnail">
+                            <a href="/2017/10/08/grafana_dashboard/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://www.spamphobia.com/panorama/public/img/grafana_icon.svg)" alt="Building an executive dashboard with Grafana" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/dashboards/">dashboards</a></p>
+                            <p class="item-title"><a href="/2017/10/08/grafana_dashboard/" class="title">Building an executive dashboard with Grafana</a></p>
+                            <p class="item-date"><time datetime="2017-10-08T17:19:00.000Z" itemprop="datePublished">2017-10-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/10/07/hexo_systemd_unit_file/" class="thumbnail">
     
     
         <span style="background-image:url(https://raw.githubusercontent.com/hexojs/awesome-hexo/master/hexo-logo.png)" alt="A systemD unit file for Hexo" class="thumbnail-image"></span>
@@ -1378,7 +1530,7 @@
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/blog/">blog</a></p>
-                            <p class="item-title"><a href="/2017/10/08/hexo_systemd_unit_file/" class="title">A systemD unit file for Hexo</a></p>
+                            <p class="item-title"><a href="/2017/10/07/hexo_systemd_unit_file/" class="title">A systemD unit file for Hexo</a></p>
                             <p class="item-date"><time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time></p>
                         </div>
                     </li>
@@ -1386,26 +1538,7 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/10/08/sysinfo/" class="thumbnail">
-    
-    
-        <span style="background-image:url(images/tech/Bash-new.sh-600x600.png)" alt="System info bash script" class="thumbnail-image"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
-                            <p class="item-title"><a href="/2017/10/08/sysinfo/" class="title">System info bash script</a></p>
-                            <p class="item-date"><time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2017/10/08/inxi/" class="thumbnail">
+                            <a href="/2017/10/07/inxi/" class="thumbnail">
     
     
         <span style="background-image:url(images/tech/Bash-new.sh-600x600.png)" alt="Inxi - a utility for viewing system information" class="thumbnail-image"></span>
@@ -1416,7 +1549,7 @@
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
-                            <p class="item-title"><a href="/2017/10/08/inxi/" class="title">Inxi - a utility for viewing system information</a></p>
+                            <p class="item-title"><a href="/2017/10/07/inxi/" class="title">Inxi - a utility for viewing system information</a></p>
                             <p class="item-date"><time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time></p>
                         </div>
                     </li>
@@ -1430,7 +1563,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/alternate-energy/">alternate energy</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/carputer/">carputer</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/projects/">projects</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/alternate-energy/">alternate energy</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/carputer/">carputer</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/dashboards/">dashboards</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/projects/">projects</a><span class="category-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1439,7 +1572,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">August 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">August 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">July 2007</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">August 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">August 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">July 2007</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1448,7 +1581,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/aspire/">aspire</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/">bash</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carputer/">carputer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/comma-ai/">comma.ai</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashpc/">dashpc</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/devops/">devops</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ethanol/">ethanol</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fuel/">fuel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/generator/">generator</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/home-improvement/">home improvement</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hypermiling/">hypermiling</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inxi/">inxi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/panda/">panda</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sabnzbd/">sabnzbd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/systemd/">systemd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/usenet/">usenet</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/aspire/">aspire</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/">bash</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carputer/">carputer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/comma-ai/">comma.ai</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashpc/">dashpc</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/devops/">devops</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ethanol/">ethanol</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fuel/">fuel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/generator/">generator</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/grafana/">grafana</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/home-improvement/">home improvement</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hypermiling/">hypermiling</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/influxdb/">influxdb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inxi/">inxi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/panda/">panda</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sabnzbd/">sabnzbd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/systemd/">systemd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/usenet/">usenet</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1457,7 +1590,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/aspire/" style="font-size: 10px;">aspire</a> <a href="/tags/bash/" style="font-size: 10px;">bash</a> <a href="/tags/carputer/" style="font-size: 10px;">carputer</a> <a href="/tags/comma-ai/" style="font-size: 10px;">comma.ai</a> <a href="/tags/dashpc/" style="font-size: 10px;">dashpc</a> <a href="/tags/devops/" style="font-size: 20px;">devops</a> <a href="/tags/ethanol/" style="font-size: 10px;">ethanol</a> <a href="/tags/fuel/" style="font-size: 10px;">fuel</a> <a href="/tags/generator/" style="font-size: 10px;">generator</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/home-improvement/" style="font-size: 10px;">home improvement</a> <a href="/tags/hypermiling/" style="font-size: 10px;">hypermiling</a> <a href="/tags/inxi/" style="font-size: 10px;">inxi</a> <a href="/tags/panda/" style="font-size: 10px;">panda</a> <a href="/tags/sabnzbd/" style="font-size: 10px;">sabnzbd</a> <a href="/tags/systemd/" style="font-size: 10px;">systemd</a> <a href="/tags/usenet/" style="font-size: 10px;">usenet</a>
+            <a href="/tags/aspire/" style="font-size: 10px;">aspire</a> <a href="/tags/bash/" style="font-size: 10px;">bash</a> <a href="/tags/carputer/" style="font-size: 10px;">carputer</a> <a href="/tags/comma-ai/" style="font-size: 10px;">comma.ai</a> <a href="/tags/dashpc/" style="font-size: 10px;">dashpc</a> <a href="/tags/devops/" style="font-size: 20px;">devops</a> <a href="/tags/ethanol/" style="font-size: 10px;">ethanol</a> <a href="/tags/fuel/" style="font-size: 10px;">fuel</a> <a href="/tags/generator/" style="font-size: 10px;">generator</a> <a href="/tags/grafana/" style="font-size: 10px;">grafana</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/home-improvement/" style="font-size: 10px;">home improvement</a> <a href="/tags/hypermiling/" style="font-size: 10px;">hypermiling</a> <a href="/tags/influxdb/" style="font-size: 10px;">influxdb</a> <a href="/tags/inxi/" style="font-size: 10px;">inxi</a> <a href="/tags/panda/" style="font-size: 10px;">panda</a> <a href="/tags/sabnzbd/" style="font-size: 10px;">sabnzbd</a> <a href="/tags/systemd/" style="font-size: 10px;">systemd</a> <a href="/tags/usenet/" style="font-size: 10px;">usenet</a>
         </div>
     </div>
 
