@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://cbergeron.com/2007/07/17/aspire_free_car/</loc>
+    <loc>http://cbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
     
-    <lastmod>2017-10-09T02:23:18.000Z</lastmod>
+    <lastmod>2017-10-09T02:45:10.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://cbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
+    <loc>http://cbergeron.com/2007/07/17/aspire_free_car/</loc>
     
-    <lastmod>2017-10-09T02:07:38.000Z</lastmod>
+    <lastmod>2017-10-09T02:37:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/06/comma_panda/</loc>
+    
+    <lastmod>2017-10-09T02:35:54.000Z</lastmod>
     
   </url>
   
@@ -47,13 +54,6 @@
     <loc>http://cbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
     
     <lastmod>2017-10-08T19:47:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/06/comma_panda/</loc>
-    
-    <lastmod>2017-10-08T19:45:24.000Z</lastmod>
     
   </url>
   
