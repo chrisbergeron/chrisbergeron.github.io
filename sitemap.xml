@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
+    
+    <lastmod>2017-10-09T04:09:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cbergeron.com/2017/10/06/comma_panda/</loc>
     
     <lastmod>2017-10-09T04:06:28.000Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://cbergeron.com/2017/10/07/sysinfo/</loc>
     
     <lastmod>2017-10-09T03:15:54.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
-    
-    <lastmod>2017-10-09T03:01:49.000Z</lastmod>
     
   </url>
   
