@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://cbergeron.com/2017/10/07/inxi/</loc>
+    <loc>http://cbergeron.com/2017/10/06/comma_panda/</loc>
     
-    <lastmod>2017-10-09T03:41:52.000Z</lastmod>
+    <lastmod>2017-10-09T04:06:28.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://cbergeron.com/2017/10/08/grafana_dashboard/</loc>
     
-    <lastmod>2017-10-09T03:32:15.000Z</lastmod>
+    <lastmod>2017-10-09T04:04:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/07/inxi/</loc>
+    
+    <lastmod>2017-10-09T03:41:52.000Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>http://cbergeron.com/2007/07/17/aspire_free_car/</loc>
     
     <lastmod>2017-10-09T02:49:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/06/comma_panda/</loc>
-    
-    <lastmod>2017-10-09T02:35:54.000Z</lastmod>
     
   </url>
   
