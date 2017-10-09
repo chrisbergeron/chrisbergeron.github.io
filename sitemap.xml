@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cbergeron.com/2017/10/08/grafana_dashboard/</loc>
+    
+    <lastmod>2017-10-09T03:32:15.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cbergeron.com/about/index.html</loc>
     
     <lastmod>2017-10-09T03:18:04.000Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://cbergeron.com/2017/10/07/sysinfo/</loc>
     
     <lastmod>2017-10-09T03:15:54.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/08/grafana_dashboard/</loc>
-    
-    <lastmod>2017-10-09T03:14:41.000Z</lastmod>
     
   </url>
   
