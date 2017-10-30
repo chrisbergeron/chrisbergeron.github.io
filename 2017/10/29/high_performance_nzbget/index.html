@@ -5,19 +5,19 @@
     
     <title>Using Ansible to build a high availablity Nzbget usenet downloader | The Berge Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="I’m limited to about 40MB/s on downloads on my VPC at Digital Ocean, but I run Nzbget for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted t">
+    <meta name="description" content="I’m limited to about 80MB/s on downloads on my VPC at Digital Ocean, but I run Nzbget for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted t">
 <meta name="keywords" content="usenet,nzbget">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Using Ansible to build a high availablity Nzbget usenet downloader">
 <meta property="og:url" content="http://cbergeron.com/2017/10/29/high_performance_nzbget/index.html">
 <meta property="og:site_name" content="The Berge Blog">
-<meta property="og:description" content="I’m limited to about 40MB/s on downloads on my VPC at Digital Ocean, but I run Nzbget for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted t">
+<meta property="og:description" content="I’m limited to about 80MB/s on downloads on my VPC at Digital Ocean, but I run Nzbget for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted t">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://cbergeron.com/images/tech/nzbget.png">
-<meta property="og:updated_time" content="2017-10-30T03:19:24.000Z">
+<meta property="og:updated_time" content="2017-10-30T03:22:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Using Ansible to build a high availablity Nzbget usenet downloader">
-<meta name="twitter:description" content="I’m limited to about 40MB/s on downloads on my VPC at Digital Ocean, but I run Nzbget for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted t">
+<meta name="twitter:description" content="I’m limited to about 80MB/s on downloads on my VPC at Digital Ocean, but I run Nzbget for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted t">
 <meta name="twitter:image" content="http://cbergeron.com/images/tech/nzbget.png">
 <meta name="twitter:creator" content="@bergeron">
     
@@ -263,7 +263,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>I’m limited to about 40MB/s on downloads on my VPC at Digital Ocean, but I run <a href="https://nzbget.net/" target="_blank" rel="external">Nzbget</a> for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted to see if I could parallelize this and download multiple files at the same.  I use Sonarr for searching usenet for freely distributable training videos which then sends them to NZBget for downloading.  Since Sonarr can send multiple files to nzbget which get queued up, I figured I can reduce the queue by downloading them at the same time.</p>
+            <p>I’m limited to about 80MB/s on downloads on my VPC at Digital Ocean, but I run <a href="https://nzbget.net/" target="_blank" rel="external">Nzbget</a> for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted to see if I could parallelize this and download multiple files at the same.  I use Sonarr for searching usenet for freely distributable training videos which then sends them to NZBget for downloading.  Since Sonarr can send multiple files to nzbget which get queued up, I figured I can reduce the queue by downloading them at the same time.</p>
 <p>Using Ansible and Terraform (devops automation tools), I can spin up VPC on demand, provision them, configure them as nzbget download nodes and then destroy the instances when complete.</p>
 <p>The instances all run the same nzbget config and the instances use haproxy for round-robin distribution.  I will probably change this to <a href="https://www.consul.io/" target="_blank" rel="external">Consul</a>, but I just wanted something quick so I used a basic haproxy config.</p>
 <p>Terraform builds 4 nzbget, 1 haproxy, and 1 ELK instance.  It configures a VIP which I point Sonarr to.  Here’s the terraform config that builds an nzbget server:</p>
