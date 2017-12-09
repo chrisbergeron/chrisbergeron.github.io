@@ -257,7 +257,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h3 id="Using-Grafana-with-pfSense"><a href="#Using-Grafana-with-pfSense" class="headerlink" title="Using Grafana with pfSense"></a>Using Grafana with pfSense</h3><p>I this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of your influxdb data source and your username and password.</p>
+            <h3 id="Using-Grafana-with-pfSense"><a href="#Using-Grafana-with-pfSense" class="headerlink" title="Using Grafana with pfSense"></a>Using Grafana with pfSense</h3><p>I put this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of your influxdb data source and your username and password.</p>
 <p>The data flow is as follows:<br>pfSense -&gt; Telegraf (gather metrics) -&gt; InfluxDB (store metrics) -&gt; Grafana (render graphs)</p>
 <p>Step 1 - Install Telegraf on pfSense</p>
 <p>ssh in to pfsense and select option 8 to get a shell<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh pfsense-01.chrisbergeron.com</div></pre></td></tr></table></figure></p>
