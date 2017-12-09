@@ -3,15 +3,22 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Tag: panda | The Berge Blog</title>
+    <title>pfSense graphs in Grafana | The Berge Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="The Berge Blog">
-<meta property="og:url" content="http://cbergeron.com/tags/panda/index.html">
+    <meta name="description" content="Using Grafana with pfSenseI this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of">
+<meta name="keywords" content="grafana,influxdb,pfsense,telegraf">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pfSense graphs in Grafana">
+<meta property="og:url" content="http://cbergeron.com/2017/12/09/pfsense_grafana/index.html">
 <meta property="og:site_name" content="The Berge Blog">
+<meta property="og:description" content="Using Grafana with pfSenseI this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://cbergeron.com/images/grafana_icon.png">
+<meta property="og:updated_time" content="2017-12-09T19:09:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Berge Blog">
+<meta name="twitter:title" content="pfSense graphs in Grafana">
+<meta name="twitter:description" content="Using Grafana with pfSenseI this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of">
+<meta name="twitter:image" content="http://cbergeron.com/images/grafana_icon.png">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -213,50 +220,162 @@
 </aside>
 
             
-            <section id="main">
-<div class="timeline timeline-wrap">
-    <div class="timeline-row timeline-row-major">
-        <span class="node"><i class="fa fa-tag"></i></span>
-        <h1 class="title">#panda</h1>
-    </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-pfsense_grafana" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/06/comma_panda/">Comma.ai Panda</a>
+        <h1 class="article-title" itemprop="name">
+            pfSense graphs in Grafana
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/10/06/comma_panda/">
-            <time datetime="2017-10-07T00:46:25.000Z" itemprop="datePublished">2017-10-06</time>
+        <a href="/2017/12/09/pfsense_grafana/">
+            <time datetime="2017-12-09T18:51:00.000Z" itemprop="datePublished">2017-12-09</time>
         </a>
     </div>
 
 
-                    
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/carputer/">carputer</a>
+        <a class="article-category-link" href="/categories/dashboards/">dashboards</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/carputer/">carputer</a>, <a class="tag-link" href="/tags/comma-ai/">comma.ai</a>, <a class="tag-link" href="/tags/dashpc/">dashpc</a>, <a class="tag-link" href="/tags/panda/">panda</a>
+        <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/influxdb/">influxdb</a>, <a class="tag-link" href="/tags/pfsense/">pfsense</a>, <a class="tag-link" href="/tags/telegraf/">telegraf</a>
     </div>
 
-                </div>
-            </div>
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="Using-Grafana-with-pfSense"><a href="#Using-Grafana-with-pfSense" class="headerlink" title="Using Grafana with pfSense"></a>Using Grafana with pfSense</h3><p>I this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of your influxdb data source and your username and password.</p>
+<p>The data flow is as follows:<br>pfSense -&gt; Telegraf (gather metrics) -&gt; InfluxDB (store metrics) -&gt; Grafana (render graphs)</p>
+<p>Step 1 - Install Telegraf on pfSense</p>
+<p>ssh in to pfsense and select option 8 to get a shell<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh pfsense-01.chrisbergeron.com</div></pre></td></tr></table></figure></p>
+<p>Select option 8 to get a shell.</p>
+<p>Download telegraf<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pkg add wget http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/telegraf-1.4.4.txz</div></pre></td></tr></table></figure></p>
+<p>I’m mainly graphing bandwidth, but you can graph any of the following:</p>
+<ul>
+<li>cpu</li>
+<li>disk</li>
+<li>diskio</li>
+<li>net</li>
+<li>processes</li>
+<li>swap</li>
+<li>system</li>
+</ul>
+<h3 id="Graph-example"><a href="#Graph-example" class="headerlink" title="Graph example:"></a>Graph example:</h3><p><img src="/images/pfsense_grafana.png" alt="Grafana Dashboard"></p>
+<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><br><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/grafana_icon.png" width="80" height="80" alt="Grafana"></a></td><td><a href="https://www.influxdata.com/" target="_blank" rel="external"><img src="/images/tech/influxdb.png" width="80" height="80" alt="InfluxDB"></a></td><br><td><a href="https://www.pfsense.org/" target="_blank" rel="external"><img src="/images/tech/pfsense_new.png" width="80" height="80" alt="pfSense"></a></td><td><a href="https://www.influxdata.com/time-series-platform/telegraf/" target="_blank" rel="external">Telegraf</a></td></tr></table>
+        
         </div>
-    
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
 </div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="http://cbergeron.com/2017/12/09/pfsense_grafana/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/12/09/pfsense_grafana/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/10/29/high_performance_nzbget/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Using Ansible to build a high availablity Nzbget usenet downloader</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
 </section>
             
                 
@@ -446,11 +565,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://cbergeron.com/2017/12/09/pfsense_grafana/';
+        
+        this.page.identifier = 'pfsense_grafana';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'cbergeron' + '.disqus.com/count.js';
+        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
