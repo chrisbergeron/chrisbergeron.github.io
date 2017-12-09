@@ -13,12 +13,12 @@
 <meta property="og:site_name" content="The Berge Blog">
 <meta property="og:description" content="Using Grafana with pfSenseI this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://cbergeron.com/images/grafana_icon.png">
-<meta property="og:updated_time" content="2017-12-09T20:17:57.000Z">
+<meta property="og:image" content="http://cbergeron.com/images/pfsense_new.png">
+<meta property="og:updated_time" content="2017-12-09T20:25:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pfSense graphs in Grafana">
 <meta name="twitter:description" content="Using Grafana with pfSenseI this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of">
-<meta name="twitter:image" content="http://cbergeron.com/images/grafana_icon.png">
+<meta name="twitter:image" content="http://cbergeron.com/images/pfsense_new.png">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -268,7 +268,11 @@
 <p>Step 1 - Install Telegraf on pfSense</p>
 <p>ssh in to pfsense and select option 8 to get a shell<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh pfsense-01.chrisbergeron.com</div></pre></td></tr></table></figure></p>
 <p>Select option 8 to get a shell.</p>
-<p>Download telegraf<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pkg add wget http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/telegraf-1.4.4.txz</div></pre></td></tr></table></figure></p>
+<p>Download telegraf:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pkg add wget http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/telegraf-1.4.4.txz</div></pre></td></tr></table></figure></p>
+<p>Enable telegraf:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">'telegraf_enable=YES'</span> &gt;&gt; /etc/rc.conf</div></pre></td></tr></table></figure></p>
+<p>Edit the telegraf config file:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/etc</div><div class="line">vi telegraf.conf</div></pre></td></tr></table></figure></p>
+<p>Make the following changes:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[[outputs.influxdb]]</div><div class="line">  urls = [<span class="string">"http://10.5.5.40:8089"</span>]</div><div class="line">  ...</div><div class="line">  database = <span class="string">"pfsense"</span></div><div class="line">  ...</div><div class="line">  username = <span class="string">"your_username"</span></div><div class="line">  password = <span class="string">"your_password"</span></div></pre></td></tr></table></figure></p>
+<p>You won’t need to restart anything on the pfSense box.</p>
 <p>I’m mainly graphing bandwidth, but you can graph any of the following:</p>
 <ul>
 <li>cpu</li>
@@ -393,7 +397,7 @@
                             <a href="/2017/12/09/pfsense_grafana/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/grafana_icon.png)" alt="pfSense graphs in Grafana" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/pfsense_new.png)" alt="pfSense graphs in Grafana" class="thumbnail-image"></span>
     
 </a>
 
