@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cbergeron.com/2017/10/08/howtheyvoted/</loc>
+    
+    <lastmod>2017-12-14T19:54:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cbergeron.com/2017/12/09/pfsense_grafana/</loc>
     
     <lastmod>2017-12-09T20:54:17.000Z</lastmod>
