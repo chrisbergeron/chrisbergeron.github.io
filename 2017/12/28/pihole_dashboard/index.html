@@ -3,15 +3,22 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Archive: 2017 | The Berge Blog</title>
+    <title>A Dashboard for Pihole Stats | The Berge Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="The Berge Blog">
-<meta property="og:url" content="http://cbergeron.com/archives/2017/index.html">
+    <meta name="description" content="Pihole + Grafana + InfluxDB DashboardI wanted to add the metrics from my ad-blocker, the great Pihole to my executive dashboard.  To create the dashboard I used Grafana to display the graphs and Influ">
+<meta name="keywords" content="grafana,influxdb,pihole">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A Dashboard for Pihole Stats">
+<meta property="og:url" content="http://cbergeron.com/2017/12/28/pihole_dashboard/index.html">
 <meta property="og:site_name" content="The Berge Blog">
+<meta property="og:description" content="Pihole + Grafana + InfluxDB DashboardI wanted to add the metrics from my ad-blocker, the great Pihole to my executive dashboard.  To create the dashboard I used Grafana to display the graphs and Influ">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://cbergeron.com/images/tech/pihole.png">
+<meta property="og:updated_time" content="2017-12-28T22:02:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Berge Blog">
+<meta name="twitter:title" content="A Dashboard for Pihole Stats">
+<meta name="twitter:description" content="Pihole + Grafana + InfluxDB DashboardI wanted to add the metrics from my ad-blocker, the great Pihole to my executive dashboard.  To create the dashboard I used Grafana to display the graphs and Influ">
+<meta name="twitter:image" content="http://cbergeron.com/images/tech/pihole.png">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -213,25 +220,21 @@
 </aside>
 
             
-            <section id="main"><div class="timeline timeline-wrap">
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title">2017</h1>
-            </div>
+            <section id="main"><article id="post-pihole_dashboard" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/12/28/pihole_dashboard/">A Dashboard for Pihole Stats</a>
+        <h1 class="article-title" itemprop="name">
+            A Dashboard for Pihole Stats
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2017/12/28/pihole_dashboard/">
@@ -240,351 +243,125 @@
     </div>
 
 
-                    
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
         <a class="article-category-link" href="/categories/dashboards/">dashboards</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/influxdb/">influxdb</a>, <a class="tag-link" href="/tags/pihole/">pihole</a>
     </div>
 
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+                    </div>
                 
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/12/14/howtheyvoted/">Here&#39;s how they voted</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/12/14/howtheyvoted/">
-            <time datetime="2017-12-14T21:56:00.000Z" itemprop="datePublished">2017-12-14</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/politics/">politics</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/democrats-republicans/">democrats, republicans</a>
-    </div>
-
-                </div>
-            </div>
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="Pihole-Grafana-InfluxDB-Dashboard"><a href="#Pihole-Grafana-InfluxDB-Dashboard" class="headerlink" title="Pihole + Grafana + InfluxDB Dashboard"></a>Pihole + Grafana + InfluxDB Dashboard</h3><p>I wanted to add the metrics from my ad-blocker, the great <a href="https://pi-hole.net" target="_blank" rel="external">Pihole</a> to my executive dashboard.  To create the dashboard I used Grafana to display the graphs and InfluxDB a the time-series backend database.  I use a simple python script to get the metrics from pihole and record them in influxdb.<br>Grafana makes it easy to render them into a user friendly dashboard.</p>
+<p>Installing Grafana and Influxdb is beyond the scope of this blog post but here is the scipt that I use to get the data from pihole and insert it into Influx.</p>
+<h3 id="Here’s-a-sample-of-the-Pihole-metrics-on-my-dashboard"><a href="#Here’s-a-sample-of-the-Pihole-metrics-on-my-dashboard" class="headerlink" title="Here’s a sample of the Pihole metrics on my dashboard:"></a>Here’s a sample of the Pihole metrics on my dashboard:</h3><p><img src="/images/pihole_dashboard.png" alt="Grafana Dashboard"></p>
+<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><a href="https://pi-hole.net/" target="_blank" rel="external"><img src="/images/tech/pihole.png" width="80" height="80" alt="PiHole"></a></td><td><br><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/grafana_icon.png" width="80" height="80" alt="Grafana"></a></td><td><a href="https://www.influxdata.com/" target="_blank" rel="external"><img src="/images/tech/influxdb.png" width="80" height="80" alt="InfluxDB"></a></td><br></tr></table>
+        
         </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/12/09/pfsense_grafana/">pfSense graphs in Grafana</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/12/09/pfsense_grafana/">
-            <time datetime="2017-12-09T18:51:00.000Z" itemprop="datePublished">2017-12-09</time>
-        </a>
-    </div>
+        <footer class="article-footer">
+            <div class="share-container">
 
 
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/dashboards/">dashboards</a>
-    </div>
 
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/influxdb/">influxdb</a>, <a class="tag-link" href="/tags/pfsense/">pfsense</a>, <a class="tag-link" href="/tags/telegraf/">telegraf</a>
-    </div>
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
 
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/29/high_performance_nzbget/">Using Ansible to build a high availablity Nzbget usenet downloader</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/10/29/high_performance_nzbget/">
-            <time datetime="2017-10-30T01:53:25.000Z" itemprop="datePublished">2017-10-29</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/linux/">linux</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/nzbget/">nzbget</a>, <a class="tag-link" href="/tags/usenet/">usenet</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/08/showterm/">Record and playback terminal sessions with Showterm</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/10/08/showterm/">
-            <time datetime="2017-10-08T20:39:00.000Z" itemprop="datePublished">2017-10-08</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/linux/">linux</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/showterm/">showterm</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/08/grafana_dashboard/">Building an executive dashboard with Grafana</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/10/08/grafana_dashboard/">
-            <time datetime="2017-10-08T17:19:00.000Z" itemprop="datePublished">2017-10-08</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/dashboards/">dashboards</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/influxdb/">influxdb</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/08/high_performance_sabnzbd/">Using Ansible to build a high availablity Sabnzbd usenet downloader</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/10/08/high_performance_sabnzbd/">
-            <time datetime="2017-10-08T16:46:25.000Z" itemprop="datePublished">2017-10-08</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/linux/">linux</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/sabnzbd/">sabnzbd</a>, <a class="tag-link" href="/tags/usenet/">usenet</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/07/sysinfo/">System info bash script</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/10/07/sysinfo/">
-            <time datetime="2017-10-08T00:46:25.000Z" itemprop="datePublished">2017-10-07</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/linux/">linux</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/bash/">bash</a>, <a class="tag-link" href="/tags/devops/">devops</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/07/inxi/">Inxi - a utility for viewing system information</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/10/07/inxi/">
-            <time datetime="2017-10-07T18:46:25.000Z" itemprop="datePublished">2017-10-07</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/linux/">linux</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/devops/">devops</a>, <a class="tag-link" href="/tags/inxi/">inxi</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/07/nzbget_systemd_unit_file/">A systemD unit file for Hexo</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/10/07/nzbget_systemd_unit_file/">
-            <time datetime="2017-10-07T16:46:25.000Z" itemprop="datePublished">2017-10-07</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/blog/">blog</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/hexo/">hexo</a>, <a class="tag-link" href="/tags/systemd/">systemd</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
 </div>
 
-    <nav id="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/archives/2017/page/2/">2</a><a class="extend next" rel="next" href="/archives/2017/page/2/">Next &raquo;</a>
-    </nav>
+            
+    
+        <a href="http://cbergeron.com/2017/12/28/pihole_dashboard/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/12/28/pihole_dashboard/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/12/14/howtheyvoted/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Here&#39;s how they voted</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
 </section>
             
                 
@@ -774,11 +551,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://cbergeron.com/2017/12/28/pihole_dashboard/';
+        
+        this.page.identifier = 'pihole_dashboard';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'cbergeron' + '.disqus.com/count.js';
+        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
