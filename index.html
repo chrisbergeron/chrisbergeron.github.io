@@ -257,10 +257,18 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h3 id="Pihole-Grafana-InfluxDB-Dashboard"><a href="#Pihole-Grafana-InfluxDB-Dashboard" class="headerlink" title="Pihole + Grafana + InfluxDB Dashboard"></a>Pihole + Grafana + InfluxDB Dashboard</h3><p>I wanted to add the metrics from my ad-blocker, the great <a href="https://pi-hole.net" target="_blank" rel="external">Pihole</a> to my executive dashboard.  To create the dashboard I used Grafana to display the graphs and InfluxDB a the time-series backend database.  I use a simple python script to get the metrics from pihole and record them in influxdb.<br>Grafana makes it easy to render them into a user friendly dashboard.</p>
-<p>Installing Grafana and Influxdb is beyond the scope of this blog post but here is the scipt that I use to get the data from pihole and insert it into Influx.</p>
-<h3 id="Here’s-a-sample-of-the-Pihole-metrics-on-my-dashboard"><a href="#Here’s-a-sample-of-the-Pihole-metrics-on-my-dashboard" class="headerlink" title="Here’s a sample of the Pihole metrics on my dashboard:"></a>Here’s a sample of the Pihole metrics on my dashboard:</h3><p><img src="/images/pihole_dashboard.png" alt="Grafana Dashboard"></p>
-<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><a href="https://pi-hole.net/" target="_blank" rel="external"><img src="/images/tech/pihole.png" width="80" height="80" alt="PiHole"></a></td><td><br><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/grafana_icon.png" width="80" height="80" alt="Grafana"></a></td><td><a href="https://www.influxdata.com/" target="_blank" rel="external"><img src="/images/tech/influxdb.png" width="80" height="80" alt="InfluxDB"></a></td><br></tr></table>
+            <h2 id="Pihole-Grafana-InfluxDB-Dashboard"><a href="#Pihole-Grafana-InfluxDB-Dashboard" class="headerlink" title="Pihole + Grafana + InfluxDB Dashboard"></a>Pihole + Grafana + InfluxDB Dashboard</h2><p><img src="/images/pihole_dashboard.png" alt="Grafana Dashboard"><br>I wanted to add the metrics from my ad-blocker, the great <a href="https://pi-hole.net" target="_blank" rel="external">Pihole</a> to my executive dashboard.  To create the dashboard I used <a href="https://grafana.com/" target="_blank" rel="external">Grafana</a> to display the graphs and <a href="https://www.influxdata.com/" target="_blank" rel="external">InfluxDB</a> a the time-series backend database.  I use a simple python script to get the metrics from pihole and record them in influxdb.<br>Grafana makes it easy to render them into a user friendly dashboard.</p>
+<p>Installing Grafana and Influxdb is beyond the scope of this blog post but <a href="https://github.com/chrisbergeron/pihole_influx" target="_blank" rel="external">here is the scipt</a> that I use to get the data from pihole and insert it into Influx.</p>
+<p>After the values in influxdb, you’ll have to create a grafana dashboard.</p>
+<h3 id="An-overview-of-the-steps-are"><a href="#An-overview-of-the-steps-are" class="headerlink" title="An overview of the steps are:"></a>An overview of the steps are:</h3><ul>
+<li>Install Grafana</li>
+<li>Create a Datasource - in Grafana, type InfluxDB</li>
+<li>Create a Dashboard - Name it whatever you want</li>
+<li>Add a ROW to your Dashboard - Give it a name if you want (optional)</li>
+<li>Add some panels - In the example (above) I used Singlestat, Gauge, Graph, Gauge and Singlestat</li>
+</ul>
+<h3 id="Here-are-the-values-I-used-for-the-graph-panel"><a href="#Here-are-the-values-I-used-for-the-graph-panel" class="headerlink" title="Here are the values I used for the graph panel:"></a>Here are the values I used for the <strong>graph</strong> panel:</h3><p><img src="/images/grafana_graph_panel_config.png" alt="Grafana Dashboard"></p>
+<table><th>Technology Used:</th><th></th><th></th><tr><td><a href="https://pi-hole.net/" target="_blank" rel="external"><img src="/images/tech/pihole.png" width="80" height="80" alt="PiHole"></a></td><td><br><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/grafana_icon.png" width="80" height="80" alt="Grafana"></a></td><td><a href="https://www.influxdata.com/" target="_blank" rel="external"><img src="/images/tech/influxdb.png" width="80" height="80" alt="InfluxDB"></a></td><br></tr></table>
         
         </div>
         <footer class="article-footer">
