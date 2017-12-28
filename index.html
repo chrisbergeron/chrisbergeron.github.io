@@ -259,7 +259,7 @@
             
             <h2 id="Pihole-Grafana-InfluxDB-Dashboard"><a href="#Pihole-Grafana-InfluxDB-Dashboard" class="headerlink" title="Pihole + Grafana + InfluxDB Dashboard"></a>Pihole + Grafana + InfluxDB Dashboard</h2><p><img src="/images/pihole_dashboard.png" alt="Grafana Dashboard"><br>I wanted to add the metrics from my ad-blocker, the great <a href="https://pi-hole.net" target="_blank" rel="external">Pihole</a> to my executive dashboard.  To create the dashboard I used <a href="https://grafana.com/" target="_blank" rel="external">Grafana</a> to display the graphs and <a href="https://www.influxdata.com/" target="_blank" rel="external">InfluxDB</a> a the time-series backend database.  I use a simple python script to get the metrics from pihole and record them in influxdb.<br>Grafana makes it easy to render them into a user friendly dashboard.</p>
 <p>Installing Grafana and Influxdb is beyond the scope of this blog post but <a href="https://github.com/chrisbergeron/pihole_influx" target="_blank" rel="external">here is the scipt</a> that I use to get the data from pihole and insert it into Influx.</p>
-<p>After the values in influxdb, you’ll have to create a grafana dashboard.</p>
+<p>After you’re getting data in your influx db you’ll have to create a grafana dashboard.</p>
 <h3 id="An-overview-of-the-steps-are"><a href="#An-overview-of-the-steps-are" class="headerlink" title="An overview of the steps are:"></a>An overview of the steps are:</h3><ul>
 <li>Install Grafana</li>
 <li>Create a Datasource - in Grafana, type InfluxDB</li>
