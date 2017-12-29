@@ -3,15 +3,22 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Tag: usenet | The Berge Blog</title>
+    <title>A super simple Ansible playbook for updating DNS | The Berge Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="The Berge Blog">
-<meta property="og:url" content="http://cbergeron.com/tags/usenet/index.html">
+    <meta name="description" content="Update_dns.ymlI wrote a very simple little playbook for updating my local DNS records for my piholes.  For me it’s easier than manually ssh’ing onto each node and editing a file and restarting the ser">
+<meta name="keywords" content="pihole,ansible,dnsmasq">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A super simple Ansible playbook for updating DNS">
+<meta property="og:url" content="http://cbergeron.com/2017/12/29/pihole_update_dns/index.html">
 <meta property="og:site_name" content="The Berge Blog">
+<meta property="og:description" content="Update_dns.ymlI wrote a very simple little playbook for updating my local DNS records for my piholes.  For me it’s easier than manually ssh’ing onto each node and editing a file and restarting the ser">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://cbergeron.com/images/tech/pihole.png">
+<meta property="og:updated_time" content="2017-12-29T15:01:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Berge Blog">
+<meta name="twitter:title" content="A super simple Ansible playbook for updating DNS">
+<meta name="twitter:description" content="Update_dns.ymlI wrote a very simple little playbook for updating my local DNS records for my piholes.  For me it’s easier than manually ssh’ing onto each node and editing a file and restarting the ser">
+<meta name="twitter:image" content="http://cbergeron.com/images/tech/pihole.png">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -213,86 +220,153 @@
 </aside>
 
             
-            <section id="main">
-<div class="timeline timeline-wrap">
-    <div class="timeline-row timeline-row-major">
-        <span class="node"><i class="fa fa-tag"></i></span>
-        <h1 class="title">#usenet</h1>
-    </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-pihole_update_dns" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/29/high_performance_nzbget/">Using Ansible to build a high availablity Nzbget usenet downloader</a>
+        <h1 class="article-title" itemprop="name">
+            A super simple Ansible playbook for updating DNS
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/10/29/high_performance_nzbget/">
-            <time datetime="2017-10-30T01:53:25.000Z" itemprop="datePublished">2017-10-29</time>
+        <a href="/2017/12/29/pihole_update_dns/">
+            <time datetime="2017-12-29T14:46:25.000Z" itemprop="datePublished">2017-12-29</time>
         </a>
     </div>
 
 
-                    
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
         <a class="article-category-link" href="/categories/linux/">linux</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/nzbget/">nzbget</a>, <a class="tag-link" href="/tags/usenet/">usenet</a>
+        <a class="tag-link" href="/tags/ansible/">ansible</a>, <a class="tag-link" href="/tags/dnsmasq/">dnsmasq</a>, <a class="tag-link" href="/tags/pihole/">pihole</a>
     </div>
 
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+                    </div>
                 
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/08/high_performance_sabnzbd/">Using Ansible to build a high availablity Sabnzbd usenet downloader</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/10/08/high_performance_sabnzbd/">
-            <time datetime="2017-10-08T16:46:25.000Z" itemprop="datePublished">2017-10-08</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/linux/">linux</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/sabnzbd/">sabnzbd</a>, <a class="tag-link" href="/tags/usenet/">usenet</a>
-    </div>
-
-                </div>
-            </div>
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="Update-dns-yml"><a href="#Update-dns-yml" class="headerlink" title="Update_dns.yml"></a>Update_dns.yml</h2><p>I wrote a very simple little playbook for updating my local DNS records for my piholes.  For me it’s easier than manually ssh’ing onto each node and editing a file and restarting the service.  Here’s the playbook:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/env ansible-playbook</span></div><div class="line">---</div><div class="line">- hosts: ns-01, ns-02</div><div class="line">  gather_facts: yes</div><div class="line">  sudo: yes</div><div class="line"></div><div class="line">  tasks:</div><div class="line">    - name: TASK | Copy dnsmasq config <span class="keyword">for</span> cbnet</div><div class="line">      template: src=templates/02-localnet.conf.j2 dest=/etc/dnsmasq.d/02-localnet.conf force=yes</div><div class="line"></div><div class="line">    - name: TASK | Copy updated dns file</div><div class="line">      template: src=templates/localnet.list.j2 dest=/etc/pihole/localnet.local.list force=yes</div><div class="line"></div><div class="line">    - name: TASK | Restart dnsmasq</div><div class="line">      service:</div><div class="line">        name: dnsmasq</div><div class="line">        state: restarted</div></pre></td></tr></table></figure></p>
+<p>This playbook adds a DNSmasq config file for my local network and copies a template file (dnsmasq include file for my local network) and restarts DNSmasq.  Here is the template (sample):</p>
+<h1 id="templates-02-localnet-conf-j2"><a href="#templates-02-localnet-conf-j2" class="headerlink" title="templates/02-localnet.conf.j2"></a>templates/02-localnet.conf.j2</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Chris Local Network</span></div><div class="line"><span class="comment"># &#123;&#123; ansible_managed &#125;&#125;</span></div><div class="line"></div><div class="line"><span class="comment"># Gateway</span></div><div class="line">192.168.35.1			pfsense-01</div><div class="line"></div><div class="line"><span class="comment"># Static DHCP Reservations</span></div><div class="line">192.168.35.64		gitlab-ce-01</div><div class="line">192.168.35.66		dockerhost-01</div><div class="line">192.168.35.70		nextcloud-01</div><div class="line">192.168.35.72		win2012-01</div><div class="line">192.168.35.73		win2016-01</div><div class="line">192.168.35.74		elk-01</div><div class="line">192.168.35.76		checkmk-01</div><div class="line">192.168.35.86		homeassistant-01</div><div class="line"></div><div class="line"><span class="comment"># DHCP Range - 5 - 25</span></div><div class="line">192.168.35.5			cbguest-05</div><div class="line">192.168.35.6			cbguest-06</div><div class="line">192.168.35.7			cbguest-07</div><div class="line">192.168.35.8			cbguest-08</div><div class="line">192.168.35.9			cbguest-09</div><div class="line"><span class="comment"># VPN Reservations</span></div><div class="line">192.168.2.2			vpn-01</div><div class="line">192.168.2.3			vpn-02</div><div class="line"></div><div class="line"><span class="comment"># Split DNS Entries192.30.252.153	www.chrisbergeron.com</span></div><div class="line">192.30.252.154	www.chrisbergeron.com</div><div class="line">192.30.252.153	chrisbergeron.com</div><div class="line">192.30.252.154	chrisbergeron.com</div></pre></td></tr></table></figure>
+<p>This is the DNSmasq config file:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Local network dnsmasq config</span></div><div class="line"><span class="comment"># &#123;&#123; ansible_managed &#125;&#125;</span></div><div class="line"></div><div class="line">addn-hosts=/etc/pihole/.list</div><div class="line">localise-queries</div><div class="line">no-resolv</div></pre></td></tr></table></figure></p>
+<p>You’ll also need an <em>Ansible</em> hosts file with entries for your piholes.  Here’s a sample:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[vms]</div><div class="line">checkmk-01 ansible_ssh_host=checkmk-01 ansible_ssh_user=cbergeron ansible_ssh_pass=<span class="string">"&#123;&#123; USER_PW &#125;&#125;"</span> host_key_checking=<span class="literal">false</span></div><div class="line">db-01 ansible_ssh_host=db-01 ansible_ssh_user=cbergeron ansible_ssh_pass=<span class="string">"&#123;&#123; USER_PW &#125;&#125;"</span> host_key_checking=<span class="literal">false</span></div><div class="line">dockerhost-01 ansible_ssh_host=dockerhost-01 ansible_ssh_user=cbergeron ansible_ssh_pass=<span class="string">"&#123;&#123; USER_PW &#125;&#125;"</span> host_key_checking=<span class="literal">false</span></div></pre></td></tr></table></figure></p>
+<h3 id="Running-the-playbook"><a href="#Running-the-playbook" class="headerlink" title="Running the playbook"></a>Running the playbook</h3><p>To update my local DNS, I just edit the templates/localnet.conf.j2 Jinja2 YAML file.  I then run the playbook like so:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ansible-playbook update_dns.yml -e @vault/vault.yml --vault-password-file ~/.somefile.password.txt</div></pre></td></tr></table></figure></p>
+<p>I get the following output when it’s complete:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">PLAY [ns-01, ns-02] ****************************************************************************************</div><div class="line"></div><div class="line">TASK [Gathering Facts] *************************************************************************************</div><div class="line">ok: [ns-02]</div><div class="line">ok: [ns-01]</div><div class="line"></div><div class="line">TASK [TASK | Copy dnsmasq config <span class="keyword">for</span> cbnet] ****************************************************************</div><div class="line">ok: [ns-02]</div><div class="line">ok: [ns-01]</div><div class="line"></div><div class="line">TASK [TASK | Copy updated dns file] ************************************************************************</div><div class="line">changed: [ns-02]</div><div class="line">changed: [ns-01]</div><div class="line"></div><div class="line">TASK [TASK | Restart dnsmasq] ******************************************************************************</div><div class="line">changed: [ns-02]</div><div class="line">changed: [ns-01]</div><div class="line"></div><div class="line">PLAY RECAP *************************************************************************************************</div><div class="line">ns-01                      : ok=4    changed=2    unreachable=0    failed=0</div><div class="line">ns-02                      : ok=4    changed=2    unreachable=0    failed=0</div><div class="line"></div><div class="line">real	0m14.294s</div><div class="line">user	0m2.977s</div><div class="line">sys	0m1.437s</div></pre></td></tr></table></figure></p>
+<p>It takes 15 seconds to run this on 1 Pihole as a VM and 1 Pihole on a Raspberry Pi.</p>
+<table><br><th>Technology Used:</th><th></th><tr><td><a href="https://pi-hole.net/" target="_blank" rel="external"><img src="/images/tech/pihole.png" width="80" height="80" alt="PiHole"></a></td><td></td></tr><tr><td><a href="https://www.ansible.com" target="_blank" rel="external"><img src="/images/tech/ansible.png" width="80" height="80" alt="Ansible"></a></td></tr></table>
+        
         </div>
-    
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
 </div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="http://cbergeron.com/2017/12/29/pihole_update_dns/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2017/12/29/pihole_update_dns/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/12/28/pihole_dashboard/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">A Dashboard for Pihole Stats</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
 </section>
             
                 
@@ -482,11 +556,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://cbergeron.com/2017/12/29/pihole_update_dns/';
+        
+        this.page.identifier = 'pihole_update_dns';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'cbergeron' + '.disqus.com/count.js';
+        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
