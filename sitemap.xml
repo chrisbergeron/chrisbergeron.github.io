@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cbergeron.com/2017/10/29/high_performance_nzbget/</loc>
+    
+    <lastmod>2018-01-27T04:49:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cbergeron.com/2017/12/29/pihole_update_dns/</loc>
     
     <lastmod>2017-12-29T16:00:58.000Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://cbergeron.com/2017/10/07/nzbget_systemd_unit_file/</loc>
     
     <lastmod>2017-10-30T15:13:01.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/29/high_performance_nzbget/</loc>
-    
-    <lastmod>2017-10-30T05:21:50.000Z</lastmod>
     
   </url>
   
