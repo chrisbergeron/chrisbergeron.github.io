@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
+    
+    <lastmod>2018-02-19T20:08:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cbergeron.com/2017/10/06/quieting_dell_r710/</loc>
     
     <lastmod>2018-02-19T20:04:39.000Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>http://cbergeron.com/2017/10/08/grafana_dashboard/</loc>
     
     <lastmod>2017-10-09T20:56:32.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
-    
-    <lastmod>2017-10-09T20:51:02.000Z</lastmod>
     
   </url>
   
