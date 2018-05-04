@@ -5,19 +5,19 @@
     
     <title>Dynamic DNS via Digital Ocean API | The Berge Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="DIY Dynamic DNS with Digital OceanThis tutorial assumes you have your own Top Level Domain (TLD) and that you’ve configured it to use Digital Ocean as the authoritative DNS for it. Here, I’ll use “exa">
+    <meta name="description" content="This is a quick tutorial about setting up a simple shell script that runs periodically to update a DNS record on the internet with the IP address of your network.  If you’ve ever wanted to have myhome">
 <meta name="keywords" content="devops,digital ocean,dns">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dynamic DNS via Digital Ocean API">
 <meta property="og:url" content="http://cbergeron.com/2018/05/04/diy_dynamic_dns_digital_ocean/index.html">
 <meta property="og:site_name" content="The Berge Blog">
-<meta property="og:description" content="DIY Dynamic DNS with Digital OceanThis tutorial assumes you have your own Top Level Domain (TLD) and that you’ve configured it to use Digital Ocean as the authoritative DNS for it. Here, I’ll use “exa">
+<meta property="og:description" content="This is a quick tutorial about setting up a simple shell script that runs periodically to update a DNS record on the internet with the IP address of your network.  If you’ve ever wanted to have myhome">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://cbergeron.com/images/tech/bash.png">
-<meta property="og:updated_time" content="2018-05-04T05:06:47.000Z">
+<meta property="og:updated_time" content="2018-05-04T05:10:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dynamic DNS via Digital Ocean API">
-<meta name="twitter:description" content="DIY Dynamic DNS with Digital OceanThis tutorial assumes you have your own Top Level Domain (TLD) and that you’ve configured it to use Digital Ocean as the authoritative DNS for it. Here, I’ll use “exa">
+<meta name="twitter:description" content="This is a quick tutorial about setting up a simple shell script that runs periodically to update a DNS record on the internet with the IP address of your network.  If you’ve ever wanted to have myhome">
 <meta name="twitter:image" content="http://cbergeron.com/images/tech/bash.png">
 <meta name="twitter:creator" content="@bergeron">
     
@@ -269,7 +269,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h1 id="DIY-Dynamic-DNS-with-Digital-Ocean"><a href="#DIY-Dynamic-DNS-with-Digital-Ocean" class="headerlink" title="DIY Dynamic DNS with Digital Ocean"></a>DIY Dynamic DNS with Digital Ocean</h1><p>This tutorial assumes you have your own Top Level Domain (TLD) and that you’ve configured it to use Digital Ocean as the authoritative DNS for it. Here, I’ll use “example.com” as the top level domain.</p>
+            <p>This is a quick tutorial about setting up a simple shell script that runs periodically to update a DNS record on the internet with the IP address of your network.  If you’ve ever wanted to have <code>myhome.mydomain.com</code> always updated with your home IP address, this is one way you can do it.  There are paid and free services that offer this functionality, but I choose to use this method because it gives me ultimate flexibility over my domain.<br>This tutorial assumes you have your own Top Level Domain (TLD) and that you’ve configured it to use Digital Ocean as the authoritative DNS for it. Here, I’ll use “example.com” as the top level domain.</p>
 <h2 id="Generate-a-Personal-Access-Token"><a href="#Generate-a-Personal-Access-Token" class="headerlink" title="Generate a Personal Access Token"></a>Generate a Personal Access Token</h2><p>Log in to Digital Ocean and click on <code>API</code> from the top Menu.  Click the <code>Generate New Token</code> button and give it a name.  The name is not parsed, it’s just for your own reference.  I like to give it something descriptive to my application.  For this example, I’ll use <code>MyDNS</code>.  Be sure to check the box next to <code>Write</code> so we can update the records using this API Key.</p>
 <p>Once you have the API Key, save it somewhere for reference.  It’s one of the 3 variables we’ll need to update in the update_do_dns.sh script.</p>
 <p>The API Key will look something like this:<br><code>fe3aeda96b7wer8wer1e6bb5erae528sdf3a6120dfrf7e492bwer6343fsdf</code></p>
