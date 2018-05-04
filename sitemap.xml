@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/2017/12/09/pfsense_grafana/</loc>
+    
+    <lastmod>2018-05-04T05:21:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/2018/05/04/diy_dynamic_dns_digital_ocean/</loc>
     
     <lastmod>2018-05-04T05:12:49.000Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://chrisbergeron.com/2017/12/14/howtheyvoted/</loc>
     
     <lastmod>2017-12-14T20:46:25.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2017/12/09/pfsense_grafana/</loc>
-    
-    <lastmod>2017-12-09T20:54:17.000Z</lastmod>
     
   </url>
   

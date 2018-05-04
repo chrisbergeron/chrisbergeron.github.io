@@ -14,7 +14,7 @@
 <meta property="og:description" content="Using Grafana with pfSenseI put this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://chrisbergeron.com/images/tech/pfsense_thumb.png">
-<meta property="og:updated_time" content="2017-12-09T20:54:17.000Z">
+<meta property="og:updated_time" content="2018-05-04T05:21:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pfSense graphs in Grafana">
 <meta name="twitter:description" content="Using Grafana with pfSenseI put this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname">
@@ -273,6 +273,7 @@
 <p>The data flow is as follows:<br>pfSense -&gt; Telegraf (gather metrics) -&gt; InfluxDB (store metrics) -&gt; Grafana (render graphs)</p>
 <h3 id="Step-1-Install-Telegraf-on-pfSense"><a href="#Step-1-Install-Telegraf-on-pfSense" class="headerlink" title="Step 1 - Install Telegraf on pfSense"></a>Step 1 - Install Telegraf on pfSense</h3><p>ssh in to pfsense and select option 8 to get a shell<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh pfsense-01.chrisbergeron.com</div></pre></td></tr></table></figure></p>
 <p>Select option 8 to get a shell.</p>
+<a id="more"></a>
 <p>Download telegraf:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pkg add wget http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/telegraf-1.4.4.txz</div></pre></td></tr></table></figure></p>
 <p>Enable telegraf:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">'telegraf_enable=YES'</span> &gt;&gt; /etc/rc.conf</div></pre></td></tr></table></figure></p>
 <p>Edit the telegraf config file:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/etc</div><div class="line">vi telegraf.conf</div></pre></td></tr></table></figure></p>
