@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/about/index.html</loc>
+    
+    <lastmod>2018-05-06T16:36:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/2018/05/04/diy_dynamic_dns_digital_ocean/</loc>
     
     <lastmod>2018-05-04T19:25:22.000Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>http://chrisbergeron.com/2017/10/07/inxi/</loc>
     
     <lastmod>2017-10-09T03:41:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/about/index.html</loc>
-    
-    <lastmod>2017-10-09T03:18:04.000Z</lastmod>
     
   </url>
   
