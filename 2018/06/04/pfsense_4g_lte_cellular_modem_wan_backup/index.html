@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Pfsense WAN with Cellular LTE/4G | Chris Bergeron&#39;s Berge Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Using pfsense for WAN Redundancy with Cellular LTE/4G  I work from home a lot and I need reliable internet connectivity to workplace.  As a result, I decided to implement a failover WAN connection int">
+<meta name="keywords" content="pfsense,netgear,4G,LTE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pfsense WAN with Cellular LTE&#x2F;4G">
+<meta property="og:url" content="http://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/index.html">
+<meta property="og:site_name" content="Chris Bergeron&#39;s Berge Blog">
+<meta property="og:description" content="Using pfsense for WAN Redundancy with Cellular LTE/4G  I work from home a lot and I need reliable internet connectivity to workplace.  As a result, I decided to implement a failover WAN connection int">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://chrisbergeron.com/images/tech/pfsense_thumb.png">
+<meta property="og:updated_time" content="2018-06-04T22:53:39.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pfsense WAN with Cellular LTE&#x2F;4G">
+<meta name="twitter:description" content="Using pfsense for WAN Redundancy with Cellular LTE/4G  I work from home a lot and I need reliable internet connectivity to workplace.  As a result, I decided to implement a failover WAN connection int">
+<meta name="twitter:image" content="http://chrisbergeron.com/images/tech/pfsense_thumb.png">
+<meta name="twitter:creator" content="@bergeron">
+    
+
+    
+
+    
+        <link rel="icon" href="/source/favicon.ico" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Chris Bergeron&#39;s Berge Blog</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="https://www.gravatar.com/avatar/b10dd03ba21ebbcc6c589045295bc6f0" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="https://www.gravatar.com/avatar/b10dd03ba21ebbcc6c589045295bc6f0?s=128" />
+            <h2 id="name">Chris Bergeron</h2>
+            <h3 id="title">Sr. DevOps Infrastructure Engineer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Atlanta, GA</span>
+            <a id="follow" target="_blank" href="https://github.com/chrisbergeron/">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                19
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                35
+                <span>tags</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/chrisbergeron" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://twitter.com/bergeron" target="_blank" title="twitter" class=tooltip>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="http://reddit.com/u/cbergeron" target="_blank" title="reddit" class=tooltip>
+                            <i class="fa fa-reddit"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://www.linkedin.com/in/christopherbergeron1/" target="_blank" title="linkedin" class=tooltip>
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://blockchain.info/address/1L3f7e74htniX6by6R3WaYNvS8tM7kygK4" target="_blank" title="bitcoin" class=tooltip>
+                            <i class="fa fa-bitcoin"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://keybase.io/bergeron" target="_blank" title="keybase" class=tooltip>
+                            <i class="fa fa-keybase"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://pages.news.digitalocean.com/dc/AyKQ30vur1Nt8H30LIWxk-j5xHmafGnoECQwn1ooO77yBt0FNL3mSORKe-qOjqAUuFeCU3DjjCwgDxcGj4qztQ==/v1U40XUb0V6DEYm0I03k000" target="_blank" title="digital-ocean" class=tooltip>
+                            <i class="fa fa-digital-ocean"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-pfsense_4g_lte_cellular_modem_wan_backup" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Pfsense WAN with Cellular LTE/4G
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/">
+            <time datetime="2018-06-04T22:19:00.000Z" itemprop="datePublished">2018-06-04</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/networking/">networking</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/4G/">4G</a>, <a class="tag-link" href="/tags/LTE/">LTE</a>, <a class="tag-link" href="/tags/netgear/">netgear</a>, <a class="tag-link" href="/tags/pfsense/">pfsense</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p><strong>Using pfsense for WAN Redundancy with Cellular LTE/4G</strong> </p>
+<p>I work from home a lot and I need reliable internet connectivity to workplace.  As a result, I decided to implement a failover WAN connection into my firewall.  I use <a href="https://pfsense.org" target="_blank" rel="external">pfSense</a> as my firewall which combines power and flexibility with easy of configuration.</p>
+<h2 id="The-Hardware-NetGear-2220-LTE-Modem"><a href="#The-Hardware-NetGear-2220-LTE-Modem" class="headerlink" title="The Hardware: NetGear 2220 LTE Modem"></a>The Hardware: NetGear 2220 LTE Modem</h2><p>While researching options, I decided on the Netgear 2220 4G LTE modem since it has Gigabit port(s) and can be used with external antennae.  </p>
+<p>[ PICTURE OF MODEM ]<br><a id="more"></a></p>
+<h2 id="The-Cellular-Service-Ting-Wireless"><a href="#The-Cellular-Service-Ting-Wireless" class="headerlink" title="The Cellular Service: Ting Wireless"></a>The Cellular Service: Ting Wireless</h2><p>I heard about an affordable Cellular pay-as-you-go cellular service on a linux podcast called <a href="https://ting.com" target="_blank" rel="external">ting.com</a>.  The basic service is $6 / month for network access and fees.  Data is charged in 1GB blocks on top of that.  Since I’m only using this during brief periods when my primary internet provider is unavailable, it works out to be a cost effect backup service.  </p>
+<p><strong>Performance</strong></p>
+<p>I was quite surprised when I ran a <a href="http://speedtest.net" target="_blank" rel="external">speed test</a>.  I get 60Mbit/s down and 20Mbit/s up.  The latency is high which is expected because of wireless frequency hopping and other characteristics.  Overall, it’s very usable as a backup.</p>
+<p>[ IMAGE of 4G LTE SPEEDTEST RESULT ]</p>
+<h2 id="Configuring-pfSense"><a href="#Configuring-pfSense" class="headerlink" title="Configuring pfSense"></a>Configuring pfSense</h2><p>Most folks on the team are probably familiar with <a href="https://jenkins.io/" target="_blank" rel="external">Jenkins</a> as a build tool. We have been using it for quite sometime on IDG. So, we know that<br>deployinator uses Ansible, and that the way we have set up our Ansible config requires a Jenkins build artifact, so how do we get that? Within<br>Jenkins, we create a new build (the format for this has been <code>&lt;app_name&gt;_build</code>) and configure it to run ruby tests, compile JS, etc. Once the configuration is complete, we can <code>Build with parameters</code>. If you click this in Jenkins, it will ask you for a <code>ref</code>. This ref is just a GitHub Ref, so it could be <code>dev</code>, <code>master</code>, <code>release_branch_1</code>, etc. Once the build is completed, it creates a Jenkins artifact that can then be used by <code>Deployinator</code> to deploy to a certain <code>ENV</code>.</p>
+<h2 id="Advanced-Configuration"><a href="#Advanced-Configuration" class="headerlink" title="Advanced Configuration"></a>Advanced Configuration</h2><p>Using firewall and routing rules within pfsense, you can deny certain traffic if you’re on the WAN.  If you don’t want to stream movies or use other high-bandwidth services while on your failover connection, you use create DENY rules to certain things or you can DENY everything and only allow certain traffic (like a connection to the office VPN) over the LTE tunnel.  This will reduce your cost and it can all be managed within pfsense.</p>
+<ul>
+<li>Backup VPN endpoint<br>Using Dynamic DNS I update the A record for my backup_home.chrisbergeron.com endpoint address.  This way if I’m not at home and my primary VPN endpoint into home becomes unavailable, I can simply VPN in to the secondary endpoint.  This allows me to check my home network to make sure other services are up and running.</li>
+</ul>
+<h2 id="Costs"><a href="#Costs" class="headerlink" title="Costs"></a>Costs</h2><p>Like many things this setup isn’t free.  These are the costs:</p>
+<ul>
+<li>Modem: $140 USD</li>
+<li>SIM Card: $20 USD</li>
+<li>Monthly service minimum: $6/month</li>
+</ul>
+<hr>
+<p>So for $160 up front, a bit of configuration and at least $6 a month I have peace of mind knowing that I’ll be able to connect to my workplace VPN.  It beats driving into the office or having to take an unscheduled day off from work.</p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Using an LTE Modem is a great way to have a backup internet connection.  As an added bonus, if you ever travel </p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<p><strong>Table of Contents</strong>  <em>generated with <a href="https://github.com/thlorenz/doctoc" target="_blank" rel="external">DocToc</a></em></p>
+<ul>
+<li><a href="#the-hardware-netgear-1220-lte-modem">The Hardware: NetGear 2220 LTE Modem</a></li>
+<li><a href="#the-cellular-service-ting-wireless">The Cellular Service: Ting Wireless</a></li>
+<li><a href="#configuring-pfsense">Configuring pfSense:</a></li>
+<li><a href="#advanced-configuration">Advanced Configuration</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="http://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/05/04/diy_dynamic_dns_digital_ocean/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Dynamic DNS via Digital Ocean API</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">recent</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/pfsense_thumb.png)" alt="Pfsense WAN with Cellular LTE/4G" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/networking/">networking</a></p>
+                            <p class="item-title"><a href="/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/" class="title">Pfsense WAN with Cellular LTE/4G</a></p>
+                            <p class="item-date"><time datetime="2018-06-04T22:19:00.000Z" itemprop="datePublished">2018-06-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/04/diy_dynamic_dns_digital_ocean/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/bash.png)" alt="Dynamic DNS via Digital Ocean API" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2018/05/04/diy_dynamic_dns_digital_ocean/" class="title">Dynamic DNS via Digital Ocean API</a></p>
+                            <p class="item-date"><time datetime="2018-05-04T05:06:25.000Z" itemprop="datePublished">2018-05-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/02/19/quieting_dell_r710/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/dell.png)" alt="Quieting a Dell R710" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/homelab/">homelab</a></p>
+                            <p class="item-title"><a href="/2018/02/19/quieting_dell_r710/" class="title">Quieting a Dell R710</a></p>
+                            <p class="item-date"><time datetime="2018-02-19T20:10:25.000Z" itemprop="datePublished">2018-02-19</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/12/29/pihole_update_dns/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/pihole.png)" alt="A simple Ansible playbook for updating multiple Pihole DNS" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2017/12/29/pihole_update_dns/" class="title">A simple Ansible playbook for updating multiple Pihole DNS</a></p>
+                            <p class="item-date"><time datetime="2017-12-29T14:46:25.000Z" itemprop="datePublished">2017-12-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/12/28/pihole_dashboard/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/pihole.png)" alt="A Dashboard for Pihole Stats" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/dashboards/">dashboards</a></p>
+                            <p class="item-title"><a href="/2017/12/28/pihole_dashboard/" class="title">A Dashboard for Pihole Stats</a></p>
+                            <p class="item-date"><time datetime="2017-12-28T21:50:00.000Z" itemprop="datePublished">2017-12-28</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/alternate-energy/">alternate energy</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/carputer/">carputer</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/dashboards/">dashboards</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/homelab/">homelab</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/networking/">networking</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/politics/">politics</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/projects/">projects</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">August 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">August 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">July 2007</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/4G/">4G</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LTE/">LTE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ansible/">ansible</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aspire/">aspire</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/">bash</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carputer/">carputer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/comma-ai/">comma.ai</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashpc/">dashpc</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dell/">dell</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/democrats-republicans/">democrats, republicans</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/devops/">devops</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/digital-ocean/">digital ocean</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dns/">dns</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dnsmasq/">dnsmasq</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ethanol/">ethanol</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fuel/">fuel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/generator/">generator</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/grafana/">grafana</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/home-improvement/">home improvement</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hypermiling/">hypermiling</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/influxdb/">influxdb</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inxi/">inxi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ipmi/">ipmi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/netgear/">netgear</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nzbget/">nzbget</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/panda/">panda</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pfsense/">pfsense</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pihole/">pihole</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/r710/">r710</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sabnzbd/">sabnzbd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/showterm/">showterm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/systemd/">systemd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telegraf/">telegraf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/usenet/">usenet</a><span class="tag-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/4G/" style="font-size: 10px;">4G</a> <a href="/tags/LTE/" style="font-size: 10px;">LTE</a> <a href="/tags/ansible/" style="font-size: 10px;">ansible</a> <a href="/tags/aspire/" style="font-size: 10px;">aspire</a> <a href="/tags/bash/" style="font-size: 10px;">bash</a> <a href="/tags/carputer/" style="font-size: 10px;">carputer</a> <a href="/tags/comma-ai/" style="font-size: 10px;">comma.ai</a> <a href="/tags/dashpc/" style="font-size: 10px;">dashpc</a> <a href="/tags/dell/" style="font-size: 10px;">dell</a> <a href="/tags/democrats-republicans/" style="font-size: 10px;">democrats, republicans</a> <a href="/tags/devops/" style="font-size: 20px;">devops</a> <a href="/tags/digital-ocean/" style="font-size: 10px;">digital ocean</a> <a href="/tags/dns/" style="font-size: 10px;">dns</a> <a href="/tags/dnsmasq/" style="font-size: 10px;">dnsmasq</a> <a href="/tags/ethanol/" style="font-size: 10px;">ethanol</a> <a href="/tags/fuel/" style="font-size: 10px;">fuel</a> <a href="/tags/generator/" style="font-size: 10px;">generator</a> <a href="/tags/grafana/" style="font-size: 20px;">grafana</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/home-improvement/" style="font-size: 10px;">home improvement</a> <a href="/tags/hypermiling/" style="font-size: 10px;">hypermiling</a> <a href="/tags/influxdb/" style="font-size: 20px;">influxdb</a> <a href="/tags/inxi/" style="font-size: 10px;">inxi</a> <a href="/tags/ipmi/" style="font-size: 10px;">ipmi</a> <a href="/tags/netgear/" style="font-size: 10px;">netgear</a> <a href="/tags/nzbget/" style="font-size: 10px;">nzbget</a> <a href="/tags/panda/" style="font-size: 10px;">panda</a> <a href="/tags/pfsense/" style="font-size: 15px;">pfsense</a> <a href="/tags/pihole/" style="font-size: 15px;">pihole</a> <a href="/tags/r710/" style="font-size: 10px;">r710</a> <a href="/tags/sabnzbd/" style="font-size: 10px;">sabnzbd</a> <a href="/tags/showterm/" style="font-size: 10px;">showterm</a> <a href="/tags/systemd/" style="font-size: 15px;">systemd</a> <a href="/tags/telegraf/" style="font-size: 10px;">telegraf</a> <a href="/tags/usenet/" style="font-size: 15px;">usenet</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://chrisbergeron.com">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://consul.io">Consul</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://terraform.io">Terraform</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Chris Bergeron<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'http://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/';
+        
+        this.page.identifier = 'pfsense_4g_lte_cellular_modem_wan_backup';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
