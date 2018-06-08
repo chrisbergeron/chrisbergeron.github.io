@@ -5,19 +5,19 @@
     
     <title>Speeding up Ansible Playbook runs | Chris Bergeron&#39;s Berge Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Speeding up Ansible Playbook runsAnsible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or">
+    <meta name="description" content="Ansible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or Puppet.  This is because Ansible">
 <meta name="keywords" content="devops,ansible">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Speeding up Ansible Playbook runs">
 <meta property="og:url" content="http://chrisbergeron.com/2018/06/08/ansible_performance_tuning/index.html">
 <meta property="og:site_name" content="Chris Bergeron&#39;s Berge Blog">
-<meta property="og:description" content="Speeding up Ansible Playbook runsAnsible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or">
+<meta property="og:description" content="Ansible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or Puppet.  This is because Ansible">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://chrisbergeron.com/images/tech/ansible.png">
-<meta property="og:updated_time" content="2018-06-08T23:13:33.000Z">
+<meta property="og:updated_time" content="2018-06-08T23:14:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Speeding up Ansible Playbook runs">
-<meta name="twitter:description" content="Speeding up Ansible Playbook runsAnsible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or">
+<meta name="twitter:description" content="Ansible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or Puppet.  This is because Ansible">
 <meta name="twitter:image" content="http://chrisbergeron.com/images/tech/ansible.png">
 <meta name="twitter:creator" content="@bergeron">
     
@@ -269,7 +269,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h2 id="Speeding-up-Ansible-Playbook-runs"><a href="#Speeding-up-Ansible-Playbook-runs" class="headerlink" title="Speeding up Ansible Playbook runs"></a>Speeding up Ansible Playbook runs</h2><p>Ansible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or Puppet.  This is because Ansible doesn’t have an agent that listens (although it can) on a host and uses a different type of deployment methodology that is based on SSH.  This post isn’t about the pros and cons of each tool, but rather about ways to improve upon Ansible’s default configuration values.  By default Ansible ships with very conservative default values.  This is smart in my opinion because it offers greater compatibility out-of-the-box.  Here I highlight some safe adjustments that can be made to the default configuration for improved performance (speed!)</p>
+            <p>Ansible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or Puppet.  This is because Ansible doesn’t have an agent that listens (although it can) on a host and uses a different type of deployment methodology that is based on SSH.  This post isn’t about the pros and cons of each tool, but rather about ways to improve upon Ansible’s default configuration values.  By default Ansible ships with very conservative default values.  This is smart in my opinion because it offers greater compatibility out-of-the-box.  Here I highlight some safe adjustments that can be made to the default configuration for improved performance (speed!)</p>
 <h3 id="Real-World-Playbook-Test"><a href="#Real-World-Playbook-Test" class="headerlink" title="Real World Playbook Test"></a>Real World Playbook Test</h3><p>For this test I’m using a real-world playbook that I use in my homelab when provisioning a new CentOS VM.  It configures some basic things (hostname, ssh keys, etc), installs common packages/utilities and tunes some OS configurations.</p>
 <p>The VM I’m running the playbook from is on a Centos 7 VM running on an ESXi 6.5 Host.  The playbook will be running against <strong>12 target VMs.</strong>  The VMs it will be talking to are on the same VMNetwork.  The VM has 4 vCPUs and 8GB of ram.</p>
 <p>Before tuning Ansible, we’ll need to gather some metrics about how each playbook run performs.  Fortunately in Ansible v2.0 and higher there are two built in callbacks that can be enabled: <code>timer</code> and <code>profile_tasks</code>  Timer will output the total playbook run time, similar to running the <code>time</code> command before an <code>ansible-playbook</code> command.  The second and more interesting of the two IMO is <code>profile_tasks</code>.  This callback displays a nice summary of each TASK and how long it took to execute.  To enable these settings edit (or create) an <code>ansible.cfg</code> file.  You can check to see if you already have an Ansible config file by running:</p>
