@@ -155,7 +155,7 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                19
+                20
                 <span>posts</span>
             </div>
             <div class="article-info-block">
@@ -220,6 +220,95 @@
 
             
             <section id="main">
+    <article id="post-ansible_performance_tuning" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><h2 id="Speeding-up-Ansible-Playbooks"><a href="#Speeding-up-Ansible-Playbooks" class="headerlink" title="Speeding up Ansible Playbooks"></a>Speeding up Ansible Playbooks</h2><p>Ansible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or Puppet.  This is because Ansible doesn’t have an agent that listens (although it can) on a host and uses a different type of deployment methodology that is based on SSH.  This post isn’t about the pros and cons of each tool, but rather about ways to improve upon Ansible’s default configuration values.  By default Ansible ships with very conservative default values.  This is smart in my opinion because it offers greater compatibility out-of-the-box.<br>Here I highlight some safe adjustments that can be made to the default configuration for improved performance (speed!)</p>
+<h3 id="Real-World-Playbook-Test"><a href="#Real-World-Playbook-Test" class="headerlink" title="Real World Playbook Test"></a>Real World Playbook Test</h3><p>For this test I’m using a real-world playbook that I use in my homelab when provisioning a new CentOS VM.  It configures some basic things (hostname, ssh keys, etc), installs common packages/utilities and tunes some OS configurations.</p>
+<p>The VM I’m running the playbook from is on a Centos 7 VM running on an ESXi 6.5 Host.  The playbook will be running against <strong>12 target VMs.</strong>  The VMs it will be talking to are on the same VMNetwork.  The VM has 4 vCPUs and 8GB of ram.</p>
+<p>Before tuning Ansible, we’ll need to gather some metrics about how each playbook run performs.  Fortunately in Ansible v2.0 and higher there’s are two built in callbacks that can be<br>enabled: <code>timer</code> and <code>profile_tasks</code>  Timer will output the total playbook run time, similar to running the <code>time</code> command before an <code>ansible-playbook</code> command.  The second and more interesting of the two IMO is <code>profile_tasks</code>.  This callback displays a nice summary of each TASK and how long it took to execute.  To enable these settings<br>edit (or create) an <code>ansible.cfg</code> file.  You can check to see if you already have an Ansible config file by running:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ ansible --version</div><div class="line">ansible 2.5.3</div><div class="line">  config file = /home/directory/ansible/ansible.cfg</div></pre></td></tr></table></figure></p>
+            <p class="article-more-link">
+                <a href="/2018/06/08/ansible_performance_tuning/#more">Read More</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="http://chrisbergeron.com/2018/06/08/ansible_performance_tuning/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://chrisbergeron.com/2018/06/08/ansible_performance_tuning/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-pfsense_4g_lte_cellular_modem_wan_backup" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1361,127 +1450,6 @@
 
 
 
-    <article id="post-grafana_dashboard" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/10/08/grafana_dashboard/">Building an executive dashboard with Grafana</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/10/08/grafana_dashboard/">
-            <time datetime="2017-10-08T17:19:00.000Z" itemprop="datePublished">2017-10-08</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/dashboards/">dashboards</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/influxdb/">influxdb</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h3 id="Grafana-InfluxDB-scripts-Awesome"><a href="#Grafana-InfluxDB-scripts-Awesome" class="headerlink" title="Grafana + InfluxDB + scripts = Awesome"></a>Grafana + InfluxDB + scripts = Awesome</h3><p>I have many interests and some of them have metrics that are useful or fun to watch.  For example, I have investment in Bitcoin so it’s nice to be able to keep an eye on it periodically.<br>I decided to create a graphical “at a glance” dashboard for myself.  I chose Grafana as the user interface / front end and InfluxDB a the time-series backend database to store the metrics.  I use various scripts and applets to populate the data into Influx and Grafana makes it easy to<br>render them into a user friendly dashboard.</p>
-<p>Some of the metrics I monitor are <a href="https://pi-hole.net" target="_blank" rel="external">Pihole</a> stats, the price of bitcoin, how many IPs get banned from my webservers and my network throughput.</p>
-<h3 id="Here’s-my-dashboard"><a href="#Here’s-my-dashboard" class="headerlink" title="Here’s my dashboard:"></a>Here’s my dashboard:</h3><p><img src="/images/grafana_dashboard1.png" alt="Grafana Dashboard"></p>
-<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><br><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/grafana_icon.png" width="80" height="80" alt="Grafana"></a></td><td><a href="https://www.influxdata.com/" target="_blank" rel="external"><img src="/images/tech/influxdb.png" width="80" height="80" alt="InfluxDB"></a></td><br><td><a href="https://pi-hole.net/" target="_blank" rel="external"><img src="/images/tech/pihole.png" width="80" height="80" alt="PiHole"></a></td></tr></table>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-    <div class="a2a_kit a2a_default_style">
-    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
-    <span class="a2a_divider"></span>
-    <a class="a2a_button_facebook"></a>
-    <a class="a2a_button_twitter"></a>
-    <a class="a2a_button_google_plus"></a>
-    <a class="a2a_button_pinterest"></a>
-    <a class="a2a_button_tumblr"></a>
-</div>
-<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
-<style>
-    .a2a_menu {
-        border-radius: 4px;
-    }
-    .a2a_menu a {
-        margin: 2px 0;
-        font-size: 14px;
-        line-height: 16px;
-        border-radius: 4px;
-        color: inherit !important;
-        font-family: 'Microsoft Yahei';
-    }
-    #a2apage_dropdown {
-        margin: 10px 0;
-    }
-    .a2a_mini_services {
-        padding: 10px;
-    }
-    a.a2a_i,
-    i.a2a_i {
-        width: 122px;
-        line-height: 16px;
-    }
-    a.a2a_i .a2a_svg,
-    a.a2a_more .a2a_svg {
-        width: 16px;
-        height: 16px;
-        line-height: 16px;
-        vertical-align: top;
-        background-size: 16px;
-    }
-    a.a2a_i {
-        border: none !important;
-    }
-    a.a2a_menu_show_more_less {
-        margin: 0;
-        padding: 10px 0;
-        line-height: 16px;
-    }
-    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-    .a2a_mini_services{*+height:1%;}
-</style>
-
-</div>
-
-            
-    
-        <a href="http://chrisbergeron.com/2017/10/08/grafana_dashboard/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://chrisbergeron.com/2017/10/08/grafana_dashboard/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <nav id="page-nav">
         <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
@@ -1495,6 +1463,25 @@
         <h3 class="widget-title">recent</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/08/ansible_performance_tuning/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/06/08/ansible_performance_tuning/" class="title"></a></p>
+                            <p class="item-date"><time datetime="2018-06-08T21:50:42.000Z" itemprop="datePublished">2018-06-08</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -1572,25 +1559,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2017/12/28/pihole_dashboard/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/tech/pihole.png)" alt="A Dashboard for Pihole Stats" class="thumbnail-image"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/dashboards/">dashboards</a></p>
-                            <p class="item-title"><a href="/2017/12/28/pihole_dashboard/" class="title">A Dashboard for Pihole Stats</a></p>
-                            <p class="item-date"><time datetime="2017-12-28T21:50:00.000Z" itemprop="datePublished">2017-12-28</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -1609,7 +1577,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">August 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">August 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">July 2007</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">August 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">August 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">July 2007</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 

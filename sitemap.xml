@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
+    
+    <lastmod>2018-06-08T23:00:45.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
     
     <lastmod>2018-06-07T04:42:31.000Z</lastmod>
