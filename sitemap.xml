@@ -2,161 +2,147 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
+    <loc>http://cbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
     
     <lastmod>2018-06-09T02:17:35.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
+    <loc>http://cbergeron.com/2018/02/19/quieting_dell_r710/</loc>
     
-    <lastmod>2018-06-07T04:42:31.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2018/02/19/quieting_dell_r710/</loc>
-    
-    <lastmod>2018-06-04T22:50:31.000Z</lastmod>
+    <lastmod>2018-02-19T20:15:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/about/index.html</loc>
-    
-    <lastmod>2018-05-06T16:36:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2018/05/04/diy_dynamic_dns_digital_ocean/</loc>
-    
-    <lastmod>2018-05-04T19:25:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2017/12/09/pfsense_grafana/</loc>
-    
-    <lastmod>2018-05-04T05:21:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
+    <loc>http://cbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
     
     <lastmod>2018-02-19T20:10:17.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/10/29/high_performance_nzbget/</loc>
+    <loc>http://cbergeron.com/2017/10/29/high_performance_nzbget/</loc>
     
     <lastmod>2018-01-27T04:56:31.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/12/29/pihole_update_dns/</loc>
+    <loc>http://cbergeron.com/2017/12/29/pihole_update_dns/</loc>
     
     <lastmod>2017-12-29T16:00:58.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/12/28/pihole_dashboard/</loc>
+    <loc>http://cbergeron.com/2017/12/28/pihole_dashboard/</loc>
     
     <lastmod>2017-12-28T23:37:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/12/14/howtheyvoted/</loc>
+    <loc>http://cbergeron.com/2017/12/14/howtheyvoted/</loc>
     
     <lastmod>2017-12-14T20:46:25.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/10/07/nzbget_systemd_unit_file/</loc>
+    <loc>http://cbergeron.com/2017/12/09/pfsense_grafana/</loc>
+    
+    <lastmod>2017-12-09T20:54:17.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/07/nzbget_systemd_unit_file/</loc>
     
     <lastmod>2017-10-30T15:13:01.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/10/08/grafana_dashboard/</loc>
+    <loc>http://cbergeron.com/2017/10/08/grafana_dashboard/</loc>
     
     <lastmod>2017-10-09T20:56:32.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2007/08/07/ethanol_still/</loc>
+    <loc>http://cbergeron.com/2007/08/07/ethanol_still/</loc>
     
     <lastmod>2017-10-09T20:17:32.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/10/06/comma_panda/</loc>
+    <loc>http://cbergeron.com/2017/10/06/comma_panda/</loc>
     
     <lastmod>2017-10-09T04:06:28.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/10/07/inxi/</loc>
+    <loc>http://cbergeron.com/2017/10/07/inxi/</loc>
     
     <lastmod>2017-10-09T03:41:52.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/10/07/sysinfo/</loc>
+    <loc>http://cbergeron.com/about/index.html</loc>
+    
+    <lastmod>2017-10-09T03:18:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/07/sysinfo/</loc>
     
     <lastmod>2017-10-09T03:15:54.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2007/07/17/aspire_free_car/</loc>
+    <loc>http://cbergeron.com/2007/07/17/aspire_free_car/</loc>
     
     <lastmod>2017-10-09T02:49:04.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/10/08/showterm/</loc>
+    <loc>http://cbergeron.com/2017/10/08/showterm/</loc>
     
     <lastmod>2017-10-08T20:49:58.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
+    <loc>http://cbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
     
     <lastmod>2017-10-08T19:47:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2008/08/24/homebrew_generator/</loc>
+    <loc>http://cbergeron.com/2008/08/24/homebrew_generator/</loc>
     
     <lastmod>2017-10-07T22:08:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/categories/index.html</loc>
+    <loc>http://cbergeron.com/categories/index.html</loc>
     
     <lastmod>2017-10-06T23:06:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/tags/index.html</loc>
+    <loc>http://cbergeron.com/tags/index.html</loc>
     
     <lastmod>2017-10-06T23:06:40.000Z</lastmod>
     
