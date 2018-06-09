@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://cbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
+    <loc>http://cbergeron.com/2017/12/14/howtheyvoted/</loc>
     
-    <lastmod>2018-06-09T02:17:35.000Z</lastmod>
+    <lastmod>2018-06-09T03:41:29.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://cbergeron.com/2018/02/19/quieting_dell_r710/</loc>
     
-    <lastmod>2018-02-19T20:15:49.000Z</lastmod>
+    <lastmod>2018-06-09T03:20:33.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
+    
+    <lastmod>2018-06-09T02:17:35.000Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>http://cbergeron.com/2017/12/28/pihole_dashboard/</loc>
     
     <lastmod>2017-12-28T23:37:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/12/14/howtheyvoted/</loc>
-    
-    <lastmod>2017-12-14T20:46:25.000Z</lastmod>
     
   </url>
   
