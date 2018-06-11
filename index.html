@@ -220,6 +220,127 @@
 
             
             <section id="main">
+    <article id="post-ansible_performance_tuning" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/06/08/ansible_performance_tuning/">Speeding up Ansible Playbook runs</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/06/08/ansible_performance_tuning/">
+            <time datetime="2018-06-08T23:13:25.000Z" itemprop="datePublished">2018-06-08</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/linux/">linux</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/ansible/">ansible</a>, <a class="tag-link" href="/tags/devops/">devops</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><p>Ansible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or Puppet.  This is because Ansible doesn’t have an agent that listens (although it can) on a host and uses a different type of deployment methodology that is based on SSH.  This post isn’t about the pros and cons of each tool, but rather about ways to improve upon Ansible’s default configuration values.  By default Ansible ships with very conservative default values.  This is smart in my opinion because it offers greater compatibility out-of-the-box.  Here I highlight some safe adjustments that can be made to the default configuration for improved performance (speed!)</p>
+<h3 id="Real-World-Playbook-Test"><a href="#Real-World-Playbook-Test" class="headerlink" title="Real World Playbook Test"></a>Real World Playbook Test</h3><p>For this test I’m using a real-world playbook that I use in my homelab when provisioning a new CentOS VM.  It configures some basic things (hostname, ssh keys, etc), installs common packages/utilities and tunes some OS configurations.<br></p>
+            <p class="article-more-link">
+                <a href="/2018/06/08/ansible_performance_tuning/#more">Read More</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="http://cbergeron.com/2018/06/08/ansible_performance_tuning/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2018/06/08/ansible_performance_tuning/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-nzbget_elasticsearch_script" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -333,127 +454,6 @@
             
     
         <a href="http://cbergeron.com/2018/06/08/nzbget_elasticsearch_script/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2018/06/08/nzbget_elasticsearch_script/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-ansible_performance_tuning" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/06/08/ansible_performance_tuning/">Speeding up Ansible Playbook runs</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/06/08/ansible_performance_tuning/">
-            <time datetime="2018-06-08T23:13:25.000Z" itemprop="datePublished">2018-06-08</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/linux/">linux</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/ansible/">ansible</a>, <a class="tag-link" href="/tags/devops/">devops</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><p>Ansible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or Puppet.  This is because Ansible doesn’t have an agent that listens (although it can) on a host and uses a different type of deployment methodology that is based on SSH.  This post isn’t about the pros and cons of each tool, but rather about ways to improve upon Ansible’s default configuration values.  By default Ansible ships with very conservative default values.  This is smart in my opinion because it offers greater compatibility out-of-the-box.  Here I highlight some safe adjustments that can be made to the default configuration for improved performance (speed!)</p>
-<h3 id="Real-World-Playbook-Test"><a href="#Real-World-Playbook-Test" class="headerlink" title="Real World Playbook Test"></a>Real World Playbook Test</h3><p>For this test I’m using a real-world playbook that I use in my homelab when provisioning a new CentOS VM.  It configures some basic things (hostname, ssh keys, etc), installs common packages/utilities and tunes some OS configurations.<br></p>
-            <p class="article-more-link">
-                <a href="/2018/06/08/ansible_performance_tuning/#more">Read More</a>
-            </p>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-    <div class="a2a_kit a2a_default_style">
-    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
-    <span class="a2a_divider"></span>
-    <a class="a2a_button_facebook"></a>
-    <a class="a2a_button_twitter"></a>
-    <a class="a2a_button_google_plus"></a>
-    <a class="a2a_button_pinterest"></a>
-    <a class="a2a_button_tumblr"></a>
-</div>
-<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
-<style>
-    .a2a_menu {
-        border-radius: 4px;
-    }
-    .a2a_menu a {
-        margin: 2px 0;
-        font-size: 14px;
-        line-height: 16px;
-        border-radius: 4px;
-        color: inherit !important;
-        font-family: 'Microsoft Yahei';
-    }
-    #a2apage_dropdown {
-        margin: 10px 0;
-    }
-    .a2a_mini_services {
-        padding: 10px;
-    }
-    a.a2a_i,
-    i.a2a_i {
-        width: 122px;
-        line-height: 16px;
-    }
-    a.a2a_i .a2a_svg,
-    a.a2a_more .a2a_svg {
-        width: 16px;
-        height: 16px;
-        line-height: 16px;
-        vertical-align: top;
-        background-size: 16px;
-    }
-    a.a2a_i {
-        border: none !important;
-    }
-    a.a2a_menu_show_more_less {
-        margin: 0;
-        padding: 10px 0;
-        line-height: 16px;
-    }
-    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-    .a2a_mini_services{*+height:1%;}
-</style>
-
-</div>
-
-            
-    
-        <a href="http://cbergeron.com/2018/06/08/ansible_performance_tuning/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2018/06/08/ansible_performance_tuning/">Comments</a>
     
 
         </footer>
@@ -1454,25 +1454,6 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/06/08/nzbget_elasticsearch_script/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/tech/elastic.png)" alt="NZBGet ElasticSearch Plugin" class="thumbnail-image"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/devops/">devops</a></p>
-                            <p class="item-title"><a href="/2018/06/08/nzbget_elasticsearch_script/" class="title">NZBGet ElasticSearch Plugin</a></p>
-                            <p class="item-date"><time datetime="2018-06-08T23:13:25.000Z" itemprop="datePublished">2018-06-08</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
                             <a href="/2018/06/08/ansible_performance_tuning/" class="thumbnail">
     
     
@@ -1485,6 +1466,25 @@
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
                             <p class="item-title"><a href="/2018/06/08/ansible_performance_tuning/" class="title">Speeding up Ansible Playbook runs</a></p>
+                            <p class="item-date"><time datetime="2018-06-08T23:13:25.000Z" itemprop="datePublished">2018-06-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/08/nzbget_elasticsearch_script/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/elastic.png)" alt="NZBGet ElasticSearch Plugin" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/devops/">devops</a></p>
+                            <p class="item-title"><a href="/2018/06/08/nzbget_elasticsearch_script/" class="title">NZBGet ElasticSearch Plugin</a></p>
                             <p class="item-date"><time datetime="2018-06-08T23:13:25.000Z" itemprop="datePublished">2018-06-08</time></p>
                         </div>
                     </li>

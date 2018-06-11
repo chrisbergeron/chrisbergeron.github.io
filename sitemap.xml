@@ -100,6 +100,13 @@
   </url>
   
   <url>
+    <loc>http://cbergeron.com/about/index.html</loc>
+    
+    <lastmod>2018-06-09T02:18:22.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
     
     <lastmod>2018-06-09T02:17:35.000Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>http://cbergeron.com/2017/12/28/pihole_dashboard/</loc>
     
     <lastmod>2017-12-28T23:37:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/about/index.html</loc>
-    
-    <lastmod>2017-10-09T03:18:04.000Z</lastmod>
     
   </url>
   
