@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
+    
+    <lastmod>2018-06-10T13:59:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/07/sysinfo/</loc>
+    
+    <lastmod>2018-06-10T13:36:20.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2007/07/17/aspire_free_car/</loc>
+    
+    <lastmod>2018-06-10T13:35:55.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2017/10/06/comma_panda/</loc>
+    
+    <lastmod>2018-06-10T13:35:30.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2007/08/07/ethanol_still/</loc>
+    
+    <lastmod>2018-06-10T13:34:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
     
     <lastmod>2018-06-10T13:32:37.000Z</lastmod>
@@ -44,13 +79,6 @@
   </url>
   
   <url>
-    <loc>http://cbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
-    
-    <lastmod>2018-06-10T13:23:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://cbergeron.com/2018/02/19/quieting_dell_r710/</loc>
     
     <lastmod>2018-06-09T03:20:33.000Z</lastmod>
@@ -86,37 +114,9 @@
   </url>
   
   <url>
-    <loc>http://cbergeron.com/2007/08/07/ethanol_still/</loc>
-    
-    <lastmod>2017-10-09T20:17:32.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/06/comma_panda/</loc>
-    
-    <lastmod>2017-10-09T04:06:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://cbergeron.com/about/index.html</loc>
     
     <lastmod>2017-10-09T03:18:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2017/10/07/sysinfo/</loc>
-    
-    <lastmod>2017-10-09T03:15:54.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://cbergeron.com/2007/07/17/aspire_free_car/</loc>
-    
-    <lastmod>2017-10-09T02:49:04.000Z</lastmod>
     
   </url>
   
