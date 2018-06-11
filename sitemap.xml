@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cbergeron.com/2018/05/04/diy_dynamic_dns_digital_ocean/</loc>
+    
+    <lastmod>2018-06-11T03:54:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://cbergeron.com/2018/06/08/nzbget_elasticsearch_script/</loc>
+    
+    <lastmod>2018-06-11T03:47:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
     
     <lastmod>2018-06-10T13:59:34.000Z</lastmod>
