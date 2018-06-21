@@ -12,15 +12,22 @@
 </script>
     <meta charset="utf-8">
     
-    <title>Archive: 2008/8 | Chris Bergeron</title>
+    <title>Using curl with the Pihole API | Chris Bergeron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Chris Bergeron">
-<meta property="og:url" content="http://cbergeron.com/archives/2008/08/index.html">
+    <meta name="description" content="I couldn’t find any quick references about accessing the Pihole API so I created this page. Pihole is a great app for blocking internet advertising that was originally designed to be run on a raspberr">
+<meta name="keywords" content="pihole,raspberry pi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Using curl with the Pihole API">
+<meta property="og:url" content="http://cbergeron.com/2018/06/21/pihole_api/index.html">
 <meta property="og:site_name" content="Chris Bergeron">
+<meta property="og:description" content="I couldn’t find any quick references about accessing the Pihole API so I created this page. Pihole is a great app for blocking internet advertising that was originally designed to be run on a raspberr">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://cbergeron.com/images/tech/pihole.png">
+<meta property="og:updated_time" content="2018-06-21T05:55:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chris Bergeron">
+<meta name="twitter:title" content="Using curl with the Pihole API">
+<meta name="twitter:description" content="I couldn’t find any quick references about accessing the Pihole API so I created this page. Pihole is a great app for blocking internet advertising that was originally designed to be run on a raspberr">
+<meta name="twitter:image" content="http://cbergeron.com/images/tech/pihole.png">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -228,50 +235,157 @@
 </aside>
 
             
-            <section id="main"><div class="timeline timeline-wrap">
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title">2008</h1>
-            </div>
+            <section id="main"><article id="post-pihole_api" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2008/08/24/homebrew_generator/">Building a homebrew generator</a>
+        <h1 class="article-title" itemprop="name">
+            Using curl with the Pihole API
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2008/08/24/homebrew_generator/">
-            <time datetime="2008-08-24T18:00:30.000Z" itemprop="datePublished">2008-08-24</time>
+        <a href="/2018/06/21/pihole_api/">
+            <time datetime="2018-06-21T05:13:25.000Z" itemprop="datePublished">2018-06-21</time>
         </a>
     </div>
 
 
-                    
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/projects/">projects</a>
+        <a class="article-category-link" href="/categories/devops/">devops</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/generator/">generator</a>, <a class="tag-link" href="/tags/home-improvement/">home improvement</a>
+        <a class="tag-link" href="/tags/pihole/">pihole</a>, <a class="tag-link" href="/tags/raspberry-pi/">raspberry pi</a>
     </div>
 
-                </div>
-            </div>
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>I couldn’t find any quick references about accessing the Pihole API so I created this page.</p>
+<p><a href="https://pi-hole.net" target="_blank" rel="external">Pihole</a> is a great app for blocking internet advertising that was originally designed to be run on a raspberry pi.  It blocks known advertisers’ domains at the DNS level by effectively null routing requests destined to serve ads.  It can be run on VMs, Raspberry Pis and bare metal servers.</p>
+<p>Here are the steps to access the pihole’s rest api.  I’m using curl in this example, but you can integrate it with OpenHAB or any other system that can talk REST.</p>
+<h2 id="Step-1-Obtaining-the-web-password"><a href="#Step-1-Obtaining-the-web-password" class="headerlink" title="Step 1: Obtaining the web password"></a>Step 1: Obtaining the web password</h2><p>Most of the useful API endpoints the pihole provides wisely require authentication.  After searching around the net I found that I could pass <code>&amp;token=A_VALID_SESSION_TOKEN</code> to authenticate to the pihole for a session.  Unfortunately, this is a temporary auth token and wasn’t suitable for my needs.  After more digging, I found the gem I needed: <code>&amp;auth=WEBPASSWORD</code>.  Sounds great, but where do I obtain this password?  You simply log onto your pihole instance or server and run:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo cat /etc/pihole/setupVars.conf | grep PASSWORD</div><div class="line">17d1ce58eb420998d69dfd2850e7c639706715335d78447f78723489df78234</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>How convenient.  It’s stored right there in the Piholes vars config file.  Copy this password (hash, base64encoded string, whatever you want to call it)</p>
+<h2 id="Step-2-Create-an-API-call-using-the-password"><a href="#Step-2-Create-an-API-call-using-the-password" class="headerlink" title="Step 2: Create an API call using the password"></a>Step 2: Create an API call using the password</h2><p>I’m using <code>curl</code> and the ultra useful <code>jq</code> commands in my scripts.  If you don’t have <code>jq</code> and work with anything JSON you should probably install it.</p>
+<p>Refer to the official pihole api documentation <a href="https://discourse.pi-hole.net/t/pi-hole-api/1863" target="_blank" rel="external">here</a>.</p>
+<h3 id="Sample-curls-and-output-the-password-has-been-obfuscated"><a href="#Sample-curls-and-output-the-password-has-been-obfuscated" class="headerlink" title="Sample curls and output (the password has been obfuscated)"></a>Sample curls and output (the password has been obfuscated)</h3><p>Substitute <code>your.pihole.address</code> with the IP or hostname of your Pihole and the <code>auth=956e54...</code> with your Pihole’s WEBPASSWORD</p>
+<p><strong>overTimeData10mins</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">curl -ks &quot;http://your.pihole.address/admin/api.php?overTimeData10mins&amp;auth=956e54sdfsd1ce58eb420998sdfd69dfd2839706715335d78447f7db4cd7f6e&quot;</div><div class="line">&#123;</div><div class="line">  &quot;domains_over_time&quot;: </div><div class="line">    &#123;</div><div class="line">      &quot;1529553900&quot;: 806,</div><div class="line">      &quot;1529554500&quot;: 810,</div><div class="line">      &quot;1529555100&quot;: 899,</div><div class="line">      &quot;1529555700&quot;: 145</div><div class="line">    &#125;,</div><div class="line"> &quot;ads_over_time&quot;: </div><div class="line">   &#123;</div><div class="line">     &quot;1529553900&quot;: 100,</div><div class="line">     &quot;1529554500&quot;: 209,</div><div class="line">     &quot;1529555100&quot;: 202,</div><div class="line">     &quot;1529555700&quot;: 51</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>View List of configured forward destinations</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">curl -ks <span class="string">"http://your.pihole.address/admin/api.php?getForwardDestinations&amp;auth=956e54sdfsd1ce58eb420998sdfd69dfd2839706715335d78447f7db4cd7f6e"</span></div><div class="line">&#123;</div><div class="line">  <span class="string">"forward_destinations"</span>: &#123;</div><div class="line">    <span class="string">"local|::1"</span>: 77.55,</div><div class="line">    <span class="string">"1dot1dot1dot1.cloudflare-dns.com|1.1.1.1"</span>: 19.3,</div><div class="line">    <span class="string">"dns.quad9.net|9.9.9.9"</span>: 3.16</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Now you can integrate shell scripts, your own apps or other services with the Pihole via it’s API.  I’m using it for <a href="http://localhost:4000/2017/10/08/grafana_dashboard/" target="_blank" rel="external">my executive dashboard</a>.</p>
+
+        
         </div>
-    
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
 </div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="http://cbergeron.com/2018/06/21/pihole_api/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://cbergeron.com/2018/06/21/pihole_api/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/06/11/nzbget_elasticsearch_script/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">NZBGet ElasticSearch Plugin</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
 </section>
             
                 
@@ -461,11 +575,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://cbergeron.com/2018/06/21/pihole_api/';
+        
+        this.page.identifier = 'pihole_api';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'cbergeron' + '.disqus.com/count.js';
+        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
