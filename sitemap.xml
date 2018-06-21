@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2017/12/28/pihole_dashboard/</loc>
+    
+    <lastmod>2018-06-21T23:58:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2018/06/21/pihole_api/</loc>
     
     <lastmod>2018-06-21T23:41:09.000Z</lastmod>
@@ -131,13 +138,6 @@
     <loc>https://chrisbergeron.com/2017/12/29/pihole_update_dns/</loc>
     
     <lastmod>2017-12-29T16:00:58.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2017/12/28/pihole_dashboard/</loc>
-    
-    <lastmod>2017-12-28T23:37:43.000Z</lastmod>
     
   </url>
   
