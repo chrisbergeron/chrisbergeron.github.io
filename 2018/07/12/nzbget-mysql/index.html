@@ -12,20 +12,20 @@
 </script>
     <meta charset="utf-8">
     
-    <title>NZBGet MySQL Extension | Chris Bergeron</title>
+    <title>NZBGet MySQL Extension Script | Chris Bergeron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="I wrote a simple plugin for NZBGet that inserts download history into a MySQL database.  Having my download list in a database makes operations on the data easier than groking text logs. I wanted to d">
 <meta name="keywords" content="grafana,nzbget,mariadb,mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NZBGet MySQL Extension">
+<meta property="og:title" content="NZBGet MySQL Extension Script">
 <meta property="og:url" content="https://chrisbergeron.com/2018/07/12/nzbget-mysql/index.html">
 <meta property="og:site_name" content="Chris Bergeron">
 <meta property="og:description" content="I wrote a simple plugin for NZBGet that inserts download history into a MySQL database.  Having my download list in a database makes operations on the data easier than groking text logs. I wanted to d">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://chrisbergeron.com/images/tech/mariadb.png">
-<meta property="og:updated_time" content="2018-07-13T02:37:51.000Z">
+<meta property="og:updated_time" content="2018-07-13T02:44:54.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NZBGet MySQL Extension">
+<meta name="twitter:title" content="NZBGet MySQL Extension Script">
 <meta name="twitter:description" content="I wrote a simple plugin for NZBGet that inserts download history into a MySQL database.  Having my download list in a database makes operations on the data easier than groking text logs. I wanted to d">
 <meta name="twitter:image" content="https://chrisbergeron.com/images/tech/mariadb.png">
 <meta name="twitter:creator" content="@bergeron">
@@ -243,7 +243,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            NZBGet MySQL Extension
+            NZBGet MySQL Extension Script
         </h1>
     
 
@@ -284,15 +284,19 @@
 <p>You can download the plugin on <a href="https://github.com/chrisbergeron/nzbget-mysql" target="_blank" rel="external">github</a><br><a id="more"></a></p>
 <p>This Plugin for NZBGet inserts a record into a user specified MySQL database.  It requires these configuration options:</p>
 <ul>
-<li>the <strong>hostname</strong> of the MySQL instance</li>
-<li>the <strong>port</strong> of the MySQL instance</li>
+<li>the <strong>hostname</strong> of the MySQL server</li>
+<li>the MySQL <strong>port</strong> (optional) </li>
+<li>the MySQL <strong>username</strong></li>
+<li>the MySQL <strong>password</strong></li>
+<li>the mysql <strong>database</strong> name</li>
+<li>the <strong>table</strong> to insert records into</li>
 </ul>
-<p>This script is written in python and it requires the installation of the <code>8888888</code> module: <code>sudo pip install mysql</code></p>
+<p>This script is written in python and it requires the installation of the <code>pymsql</code> module: <code>sudo pip install pymysql</code></p>
 <p>The purpose of this script is to allow you to create a dashboard or other reporting around your downloads.  Using Grafana or the Kibana dashboard you can create neat visualizations.</p>
 <p>Here’s a very simple example:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-mysql/master/screenshots/kibana_visualization.png" alt="Simple Kibana Visualization"><br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-mysql/master/screenshots/kibana_search.png" alt="Simple Kibana Search"></p>
 <p>Fell free to create a Pull Request (PR) and submit improvements.  I’m new to Python and there are a lot of areas for improvement in this plugin.</p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation:"></a>Installation:</h2><p>Download and copy the Mysql-Log.py file from this repo into your <code>NZBGet/scripts</code> directory.  Alternatively, you can clone this repo directly into the /scripts/ directory:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># This directory will be where YOUR NZBGet installation is</div><div class="line">cd /opt/nzbget/scripts</div><div class="line">git clone https://github.com/chrisbergeron/nzbget-mysql.git</div><div class="line">mv nzbget-mysql/Mysql-Log.py .</div></pre></td></tr></table></figure></p>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage:"></a>Usage:</h2><p>In NZBGet go into <code>Settings</code> and at the bottom left you should see <code>ESLOG</code>:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-mysql/master/screenshots/configuring-plugin.png" alt="Configuring Plugin"></p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation:"></a>Installation:</h2><p>Download and copy the <code>Mysql-Log.py</code> file from this repo into your <code>NZBGet/scripts</code> directory.  Alternatively, you can clone this repo directly into the /scripts/ directory:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># This directory will be where YOUR NZBGet installation is</div><div class="line">cd /opt/nzbget/scripts</div><div class="line">git clone https://github.com/chrisbergeron/nzbget-mysql.git</div><div class="line">mv nzbget-mysql/Mysql-Log.py .</div></pre></td></tr></table></figure></p>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage:"></a>Usage:</h2><p>In NZBGet go into <code>Settings</code> and at the bottom left you should see <code>MYSQL-LOG</code>:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-mysql/master/screenshots/configuring-plugin.png" alt="Configuring Plugin"></p>
 <p>Add the hostname of your MySQL server and optionally the port number (default is 3306), a username and password for the mysql server, the name of the database and the table to insert the download names into. </p>
 <p>After this, click on Categories and select which Categories you’d like to enable the extension on.</p>
 <p>If configured properly, you’ll see lines like this in your NZBGet <code>Messages</code>:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-mysql/master/screenshots/nzbget-mysql-example-log-entry.png" alt="Sample Log Output"></p>
@@ -412,7 +416,7 @@
                             <a href="/2018/07/12/nzbget-mysql/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/tech/mariadb.png)" alt="NZBGet MySQL Extension" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/tech/mariadb.png)" alt="NZBGet MySQL Extension Script" class="thumbnail-image"></span>
     
 </a>
 
@@ -420,7 +424,7 @@
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/usenet/">usenet</a></p>
-                            <p class="item-title"><a href="/2018/07/12/nzbget-mysql/" class="title">NZBGet MySQL Extension</a></p>
+                            <p class="item-title"><a href="/2018/07/12/nzbget-mysql/" class="title">NZBGet MySQL Extension Script</a></p>
                             <p class="item-date"><time datetime="2018-07-13T00:11:00.000Z" itemprop="datePublished">2018-07-12</time></p>
                         </div>
                     </li>
