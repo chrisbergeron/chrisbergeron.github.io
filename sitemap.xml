@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/about/index.html</loc>
+    
+    <lastmod>2018-07-13T03:41:32.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2018/06/11/nzbget_elasticsearch_script/</loc>
     
     <lastmod>2018-07-13T03:33:43.000Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</loc>
     
     <lastmod>2018-06-09T03:20:33.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/about/index.html</loc>
-    
-    <lastmod>2018-06-09T02:18:22.000Z</lastmod>
     
   </url>
   
