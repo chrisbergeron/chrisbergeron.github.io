@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/recent/index.html</loc>
+    
+    <lastmod>2018-07-13T04:29:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/projects/index.html</loc>
     
-    <lastmod>2018-07-13T03:55:09.000Z</lastmod>
+    <lastmod>2018-07-13T04:25:15.000Z</lastmod>
     
   </url>
   
@@ -170,14 +177,14 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/tags/index.html</loc>
+    <loc>https://chrisbergeron.com/categories/index.html</loc>
     
     <lastmod>2017-10-06T23:06:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/categories/index.html</loc>
+    <loc>https://chrisbergeron.com/tags/index.html</loc>
     
     <lastmod>2017-10-06T23:06:40.000Z</lastmod>
     
