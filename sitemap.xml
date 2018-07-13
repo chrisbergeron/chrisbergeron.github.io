@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2018/06/11/nzbget_elasticsearch_script/</loc>
+    
+    <lastmod>2018-07-13T03:33:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2018/07/12/nzbget-mysql/</loc>
     
     <lastmod>2018-07-13T03:32:53.000Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
     
     <lastmod>2018-06-14T16:42:47.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2018/06/11/nzbget_elasticsearch_script/</loc>
-    
-    <lastmod>2018-06-14T02:24:44.000Z</lastmod>
     
   </url>
   
