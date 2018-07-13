@@ -23,7 +23,7 @@
 <meta property="og:description" content="I wrote a simple plugin for NZBGet that inserts download history into a MySQL database.  Having my download list in a database makes operations on the data easier than groking text logs. I wanted to d">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://chrisbergeron.com/images/tech/mariadb.png">
-<meta property="og:updated_time" content="2018-07-13T03:30:30.000Z">
+<meta property="og:updated_time" content="2018-07-13T03:32:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NZBGet MySQL Extension Script">
 <meta name="twitter:description" content="I wrote a simple plugin for NZBGet that inserts download history into a MySQL database.  Having my download list in a database makes operations on the data easier than groking text logs. I wanted to d">
@@ -291,7 +291,7 @@
 <li>mysql <strong>database</strong> name</li>
 <li><strong>table</strong> to insert records into</li>
 </ul>
-<p>This script is written in python and it requires the installation of the <code>pymsql</code> module: <code>sudo pip install pymysql</code></p>
+<p>The script is written in python and requires the <code>pymsql</code> module: <code>sudo pip install pymysql</code></p>
 <p>The purpose of this script is to allow you to create a dashboard or other reporting around your downloads.  You can search or group by name or timestamp to create summaries, aggregate peak download times, or whatever you want to gauge.</p>
 <p>Fell free to submit improvements with a Pull Request (PR) or fork the project.  I’m new to Python and there is a lot of room for improvement in this extension script.</p>
 <h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation:"></a>Installation:</h2><p>Download and copy the <code>Mysql-Log.py</code> file from this repo into your <code>NZBGet/scripts</code> directory.  Alternatively, you can clone this repo directly into the /scripts/ directory:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># This directory will be where YOUR NZBGet installation is</div><div class="line">cd /opt/nzbget/scripts</div><div class="line">git clone https://github.com/chrisbergeron/nzbget-mysql.git</div><div class="line">mv nzbget-mysql/Mysql-Log.py .</div></pre></td></tr></table></figure></p>
