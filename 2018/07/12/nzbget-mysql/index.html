@@ -23,7 +23,7 @@
 <meta property="og:description" content="I wrote a simple plugin for NZBGet that inserts download history into a MySQL database.  Having my download list in a database makes operations on the data easier than groking text logs. I wanted to d">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://chrisbergeron.com/images/tech/mariadb.png">
-<meta property="og:updated_time" content="2018-07-13T02:30:28.000Z">
+<meta property="og:updated_time" content="2018-07-13T02:37:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NZBGet MySQL Extension">
 <meta name="twitter:description" content="I wrote a simple plugin for NZBGet that inserts download history into a MySQL database.  Having my download list in a database makes operations on the data easier than groking text logs. I wanted to d">
@@ -279,7 +279,7 @@
         
             
             <p>I wrote a simple plugin for NZBGet that inserts download history into a MySQL database.  Having my download list in a database makes operations on the data easier than groking text logs.</p>
-<p>I wanted to display my most recent downloads on a Grafana Dashboard:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-elasticsearch/master/screenshots/kibana_visualization.png" alt="Table of downloads"></p>
+<p>I wanted to display my most recent downloads on a Grafana Dashboard:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-mysql/master/screenshots/grafana-nzbget-table.png" alt="Table of downloads"></p>
 <p>To use simply copy the <code>Mysql-Log.py</code> script into your NZBGet/scripts directory.  In NZBGet, select settings and set the hostname of your MySQL instance.</p>
 <p>You can download the plugin on <a href="https://github.com/chrisbergeron/nzbget-mysql" target="_blank" rel="external">github</a><br><a id="more"></a></p>
 <p>This Plugin for NZBGet inserts a record into a user specified MySQL database.  It requires these configuration options:</p>
@@ -289,18 +289,17 @@
 </ul>
 <p>This script is written in python and it requires the installation of the <code>8888888</code> module: <code>sudo pip install mysql</code></p>
 <p>The purpose of this script is to allow you to create a dashboard or other reporting around your downloads.  Using Grafana or the Kibana dashboard you can create neat visualizations.</p>
-<p>Here’s a very simple example:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-elasticsearch/master/screenshots/kibana_visualization.png" alt="Simple Kibana Visualization"><br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-elasticsearch/master/screenshots/kibana_search.png" alt="Simple Kibana Search"></p>
+<p>Here’s a very simple example:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-mysql/master/screenshots/kibana_visualization.png" alt="Simple Kibana Visualization"><br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-mysql/master/screenshots/kibana_search.png" alt="Simple Kibana Search"></p>
 <p>Fell free to create a Pull Request (PR) and submit improvements.  I’m new to Python and there are a lot of areas for improvement in this plugin.</p>
 <h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation:"></a>Installation:</h2><p>Download and copy the Mysql-Log.py file from this repo into your <code>NZBGet/scripts</code> directory.  Alternatively, you can clone this repo directly into the /scripts/ directory:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># This directory will be where YOUR NZBGet installation is</div><div class="line">cd /opt/nzbget/scripts</div><div class="line">git clone https://github.com/chrisbergeron/nzbget-mysql.git</div><div class="line">mv nzbget-mysql/Mysql-Log.py .</div></pre></td></tr></table></figure></p>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage:"></a>Usage:</h2><p>In NZBGet go into <code>Settings</code> and at the bottom left you should see <code>ESLOG</code>:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-elasticsearch/master/screenshots/configuring-plugin.png" alt="Configuring Plugin"></p>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage:"></a>Usage:</h2><p>In NZBGet go into <code>Settings</code> and at the bottom left you should see <code>ESLOG</code>:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-mysql/master/screenshots/configuring-plugin.png" alt="Configuring Plugin"></p>
 <p>Add the hostname of your MySQL server and optionally the port number (default is 3306), a username and password for the mysql server, the name of the database and the table to insert the download names into. </p>
 <p>After this, click on Categories and select which Categories you’d like to enable the extension on.</p>
-<p>If configured properly, you’ll see lines like this in your NZBGet <code>Messages</code>:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-elasticsearch/master/screenshots/nzbget-example-log-entry.png" alt="Sample Log Output"></p>
+<p>If configured properly, you’ll see lines like this in your NZBGet <code>Messages</code>:<br><img src="https://raw.githubusercontent.com/chrisbergeron/nzbget-mysql/master/screenshots/nzbget-mysql-example-log-entry.png" alt="Sample Log Output"></p>
 <h2 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap:"></a>Roadmap:</h2><ul>
-<li style="list-style: none"><input type="checkbox"> Separate Show Name, Episode Name, Season and Episode info, Quality and Crew into separate index fields in Elastic.</li>
-<li style="list-style: none"><input type="checkbox"> Add case statement to parse and map NZBGet output codes into disposition names</li>
+<li style="list-style: none"><input type="checkbox"> Separate Show Name, Episode Name, Season and Episode info, Quality and Crew into separate columns in the DB.</li>
 </ul>
-<table><br><th>Technology Used:</th><th></th><tr><td><a href="https://nzbget.net/" target="_blank" rel="external"><img src="/images/tech/nzbget.png" width="80" height="80" alt="NZBGet"></a></td><br><td><a href="https://mariadb.org/" target="_blank" rel="external"><img src="/images/tech/mariadb.png" width="80" height="80" alt="MariaDB"></a></td><br><td><a href="https://mariadb.org/" target="_blank" rel="external"><img src="/images/tech/mysql.png" width="80" height="80" alt="MySQL"></a></td></tr></table>
+<table><br><th>Technology Used:</th><th></th><tr><td><a href="https://nzbget.net/" target="_blank" rel="external"><img src="/images/tech/nzbget.png" width="80" height="80" alt="NZBGet"></a></td><td><a href="https://mariadb.org/" target="_blank" rel="external"><img src="/images/tech/mariadb.png" width="80" height="80" alt="MariaDB"></a></td><td><a href="https://mariadb.org/" target="_blank" rel="external"><img src="/images/tech/mysql.png" width="80" height="80" alt="MySQL"></a></td></tr></table>
         
         </div>
         <footer class="article-footer">
