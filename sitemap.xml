@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2018/07/12/nzbget-mysql/</loc>
+    
+    <lastmod>2018-07-16T04:31:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/06/11/nzbget_elasticsearch_script/</loc>
+    
+    <lastmod>2018-07-16T04:30:38.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/12/28/pihole_dashboard/</loc>
+    
+    <lastmod>2018-07-16T04:29:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/recent/index.html</loc>
     
     <lastmod>2018-07-13T04:40:41.000Z</lastmod>
@@ -19,27 +40,6 @@
     <loc>https://chrisbergeron.com/about/index.html</loc>
     
     <lastmod>2018-07-13T03:41:32.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2018/06/11/nzbget_elasticsearch_script/</loc>
-    
-    <lastmod>2018-07-13T03:33:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2018/07/12/nzbget-mysql/</loc>
-    
-    <lastmod>2018-07-13T03:32:53.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2017/12/28/pihole_dashboard/</loc>
-    
-    <lastmod>2018-06-21T23:58:12.000Z</lastmod>
     
   </url>
   
