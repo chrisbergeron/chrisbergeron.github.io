@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/about/index.html</loc>
+    
+    <lastmod>2018-07-17T03:46:54.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2008/01/21/interviewed_for_release_2.0_magazine/</loc>
     
     <lastmod>2018-07-17T01:04:19.000Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>https://chrisbergeron.com/projects/index.html</loc>
     
     <lastmod>2018-07-13T04:25:15.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/about/index.html</loc>
-    
-    <lastmod>2018-07-13T03:41:32.000Z</lastmod>
     
   </url>
   
