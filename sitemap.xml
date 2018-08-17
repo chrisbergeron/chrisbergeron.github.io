@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/about/index.html</loc>
+    
+    <lastmod>2018-08-04T01:30:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2007/07/11/dashpc_carputer/</loc>
     
     <lastmod>2018-07-17T16:42:13.000Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://chrisbergeron.com/2008/01/21/metalcasting_furnace/</loc>
     
     <lastmod>2018-07-17T05:16:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/about/index.html</loc>
-    
-    <lastmod>2018-07-17T03:46:54.000Z</lastmod>
     
   </url>
   
