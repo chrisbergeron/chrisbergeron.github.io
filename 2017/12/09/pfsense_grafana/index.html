@@ -32,19 +32,19 @@
     
     <title>pfSense graphs in Grafana | Chris Bergeron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Using Grafana with pfSenseI put this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname">
+    <meta name="description" content="Using Grafana with pfSense Update: 2018-09-13pfSense has a plugin for telegraf which can be installed from the gui.  I recommend this method rather than what I figured out below.  I’m leaving these no">
 <meta name="keywords" content="grafana,influxdb,pfsense,telegraf">
 <meta property="og:type" content="article">
 <meta property="og:title" content="pfSense graphs in Grafana">
 <meta property="og:url" content="https://chrisbergeron.com/2017/12/09/pfsense_grafana/index.html">
 <meta property="og:site_name" content="Chris Bergeron">
-<meta property="og:description" content="Using Grafana with pfSenseI put this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname">
+<meta property="og:description" content="Using Grafana with pfSense Update: 2018-09-13pfSense has a plugin for telegraf which can be installed from the gui.  I recommend this method rather than what I figured out below.  I’m leaving these no">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://chrisbergeron.com/images/tech/pfsense_thumb.png">
-<meta property="og:updated_time" content="2018-06-10T13:28:00.000Z">
+<meta property="og:updated_time" content="2018-09-14T18:04:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pfSense graphs in Grafana">
-<meta name="twitter:description" content="Using Grafana with pfSenseI put this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname">
+<meta name="twitter:description" content="Using Grafana with pfSense Update: 2018-09-13pfSense has a plugin for telegraf which can be installed from the gui.  I recommend this method rather than what I figured out below.  I’m leaving these no">
 <meta name="twitter:image" content="https://chrisbergeron.com/images/tech/pfsense_thumb.png">
 <meta name="twitter:creator" content="@bergeron">
     
@@ -300,10 +300,13 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h2 id="Using-Grafana-with-pfSense"><a href="#Using-Grafana-with-pfSense" class="headerlink" title="Using Grafana with pfSense"></a>Using Grafana with pfSense</h2><p>I put this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of your influxdb data source and your username and password.</p>
-<p>The data flow is as follows:<br>pfSense -&gt; Telegraf (gather metrics) -&gt; InfluxDB (store metrics) -&gt; Grafana (render graphs)<br><a id="more"></a></p>
+            <h2 id="Using-Grafana-with-pfSense"><a href="#Using-Grafana-with-pfSense" class="headerlink" title="Using Grafana with pfSense"></a>Using Grafana with pfSense</h2><p><img src="http://res.cloudinary.com/cyberge/image/upload/v1536946941/icons/Screen_Shot_2018-09-14_at_1.41.52_PM_feqbkf.png" alt="Grafana Dashboard"></p>
+<p><strong><em>Update: 2018-09-13<br>pfSense has a plugin for telegraf which can be installed from the gui.  I recommend this method rather than what I figured out below.  I’m leaving these notes for manual installation reference.</em></strong></p>
+<p>I put this guide together using information from various other blogs.  This is current as of December 2017 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of your influxdb data source and your username and password.</p>
+<p>The data flow is as follows:</p>
+<p><strong>pfSense -&gt; Telegraf (gather metrics) -&gt; InfluxDB (store metrics) -&gt; Grafana (render graphs)</strong></p>
+<a id="more"></a>
 <h3 id="Step-1-Install-Telegraf-on-pfSense"><a href="#Step-1-Install-Telegraf-on-pfSense" class="headerlink" title="Step 1 - Install Telegraf on pfSense"></a>Step 1 - Install Telegraf on pfSense</h3><p>ssh in to pfsense and select option 8 to get a shell<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh pfsense-01.chrisbergeron.com</div></pre></td></tr></table></figure></p>
-<p>Select option 8 to get a shell.</p>
 <p>Download telegraf:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pkg add wget http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/telegraf-1.4.4.txz</div></pre></td></tr></table></figure></p>
 <p>Enable telegraf:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">'telegraf_enable=YES'</span> &gt;&gt; /etc/rc.conf</div></pre></td></tr></table></figure></p>
 <p>Edit the telegraf config file:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/etc</div><div class="line">vi telegraf.conf</div></pre></td></tr></table></figure></p>
@@ -321,8 +324,10 @@
 <li>swap</li>
 <li>system</li>
 </ul>
-<h3 id="Here’s-Graph-sample"><a href="#Here’s-Graph-sample" class="headerlink" title="Here’s Graph sample:"></a>Here’s Graph sample:</h3><p><img src="/images/pfsense_grafana.png" alt="Grafana Dashboard"></p>
-<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><br><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/grafana_icon.png" width="80" height="80" alt="Grafana"></a></td><td><a href="https://www.influxdata.com/" target="_blank" rel="external"><img src="/images/tech/influxdb.png" width="80" height="80" alt="InfluxDB"></a></td><br><td><a href="https://www.pfsense.org/" target="_blank" rel="external"><img src="/images/tech/pfsense_new.png" width="80" height="80" alt="pfSense"></a></td><td><a href="https://www.influxdata.com/time-series-platform/telegraf/" target="_blank" rel="external">Telegraf</a></td></tr></table>
+<p>One of the hurdles I encountered when building the dashboard panels is that Telegraf is reporting <strong>counters</strong> (or <em>accumulators</em>), so you have to massage the data to get anything useful.  The trick here is to use the <strong>DERIVATIVE</strong> function in the panel configuration.  This gives you the delta for a time series so you can actually see what is being sent or received:</p>
+<p><img src="http://res.cloudinary.com/cyberge/image/upload/v1536947037/icons/Screen_Shot_2018-09-14_at_1.43.34_PM_j6amvq.png" alt="Panel configuration with Derivative metric"></p>
+<p>Another thing I found useful was to add the <strong>MATH</strong> paramenter as: <strong>“*-1”</strong> (multiply by negative one) for sent data.  This inverts the sent data into the negative which makes the graph easier to view at a glance.</p>
+<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/grafana_icon.png" width="80" height="80" alt="Grafana"></a></td><td><a href="https://www.influxdata.com/" target="_blank" rel="external"><img src="/images/tech/influxdb.png" width="80" height="80" alt="InfluxDB"></a></td><td><a href="https://www.pfsense.org/" target="_blank" rel="external"><img src="/images/tech/pfsense_new.png" width="80" height="80" alt="pfSense"></a></td><td><a href="https://www.influxdata.com/time-series-platform/telegraf/" target="_blank" rel="external">Telegraf</a></td></tr></table>
         
         </div>
         <footer class="article-footer">

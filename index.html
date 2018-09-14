@@ -1514,8 +1514,11 @@
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><h2 id="Using-Grafana-with-pfSense"><a href="#Using-Grafana-with-pfSense" class="headerlink" title="Using Grafana with pfSense"></a>Using Grafana with pfSense</h2><p>I put this guide together using information from various other blogs.  This is current as of 2018 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of your influxdb data source and your username and password.</p>
-<p>The data flow is as follows:<br>pfSense -&gt; Telegraf (gather metrics) -&gt; InfluxDB (store metrics) -&gt; Grafana (render graphs)<br></p>
+            <p><h2 id="Using-Grafana-with-pfSense"><a href="#Using-Grafana-with-pfSense" class="headerlink" title="Using Grafana with pfSense"></a>Using Grafana with pfSense</h2><p><img src="http://res.cloudinary.com/cyberge/image/upload/v1536946941/icons/Screen_Shot_2018-09-14_at_1.41.52_PM_feqbkf.png" alt="Grafana Dashboard"></p>
+<p><strong><em>Update: 2018-09-13<br>pfSense has a plugin for telegraf which can be installed from the gui.  I recommend this method rather than what I figured out below.  I’m leaving these notes for manual installation reference.</em></strong></p>
+<p>I put this guide together using information from various other blogs.  This is current as of December 2017 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of your influxdb data source and your username and password.</p>
+<p>The data flow is as follows:</p>
+<p><strong>pfSense -&gt; Telegraf (gather metrics) -&gt; InfluxDB (store metrics) -&gt; Grafana (render graphs)</strong></p></p>
             <p class="article-more-link">
                 <a href="/2017/12/09/pfsense_grafana/#more">Read More</a>
             </p>
