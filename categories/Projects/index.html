@@ -30,22 +30,15 @@
 </script>
     <meta charset="utf-8">
     
-    <title>pfSense graphs in Grafana | Chris Bergeron</title>
+    <title>Category: Projects | Chris Bergeron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Using Grafana with pfSense Update: 2018/09/13pfSense has a plugin for telegraf which can be installed from the gui.  I recommend this method rather than what I figured out below.  I’m leaving these no">
-<meta name="keywords" content="grafana,influxdb,pfsense,telegraf">
-<meta property="og:type" content="article">
-<meta property="og:title" content="pfSense graphs in Grafana">
-<meta property="og:url" content="https://chrisbergeron.com/2018/09/13/pfsense_grafana/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Chris Bergeron">
+<meta property="og:url" content="https://chrisbergeron.com/categories/Projects/index.html">
 <meta property="og:site_name" content="Chris Bergeron">
-<meta property="og:description" content="Using Grafana with pfSense Update: 2018/09/13pfSense has a plugin for telegraf which can be installed from the gui.  I recommend this method rather than what I figured out below.  I’m leaving these no">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://chrisbergeron.com/images/tech/pfsense_thumb.png">
-<meta property="og:updated_time" content="2018-09-15T16:38:35.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="pfSense graphs in Grafana">
-<meta name="twitter:description" content="Using Grafana with pfSense Update: 2018/09/13pfSense has a plugin for telegraf which can be installed from the gui.  I recommend this method rather than what I figured out below.  I’m leaving these no">
-<meta name="twitter:image" content="https://chrisbergeron.com/images/tech/pfsense_thumb.png">
+<meta name="twitter:title" content="Chris Bergeron">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -257,171 +250,86 @@
 </aside>
 
             
-            <section id="main"><article id="post-pfsense_grafana" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
+            <section id="main">
+<div class="timeline timeline-wrap">
+    <div class="timeline-row timeline-row-major">
+        <span class="node"><i class="fa fa-folder"></i></span>
+        <h1 class="title">Projects</h1>
+    </div>
+    
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
                 
     
-        <h1 class="article-title" itemprop="name">
-            pfSense graphs in Grafana
+        <h1 itemprop="name">
+            <a class="timeline-article-title" href="/2008/08/24/homebrew_generator/">Building a homebrew generator</a>
         </h1>
     
 
-                
-                    <div class="article-meta">
-                        
+                <div class="article-meta">
+                    
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/09/13/pfsense_grafana/">
-            <time datetime="2018-09-13T18:01:00.000Z" itemprop="datePublished">2018-09-13</time>
+        <a href="/2008/08/24/homebrew_generator/">
+            <time datetime="2008-08-24T18:00:30.000Z" itemprop="datePublished">2008-08-24</time>
         </a>
     </div>
 
 
-                        
+                    
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/dashboards/">dashboards</a>
+        <a class="article-category-link" href="/categories/Projects/">Projects</a>
     </div>
 
-                        
+                    
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/influxdb/">influxdb</a>, <a class="tag-link" href="/tags/pfsense/">pfsense</a>, <a class="tag-link" href="/tags/telegraf/">telegraf</a>
+        <a class="tag-link" href="/tags/generator/">generator</a>, <a class="tag-link" href="/tags/home-improvement/">home improvement</a>
     </div>
 
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h2 id="Using-Grafana-with-pfSense"><a href="#Using-Grafana-with-pfSense" class="headerlink" title="Using Grafana with pfSense"></a>Using Grafana with pfSense</h2><p><img src="https://res.cloudinary.com/cyberge/image/upload/v1536946941/icons/Screen_Shot_2018-09-14_at_1.41.52_PM_feqbkf.png" alt="Grafana Dashboard"></p>
-<p><strong><em>Update: 2018/09/13<br>pfSense has a plugin for telegraf which can be installed from the gui.  I recommend this method rather than what I figured out below.  I’m leaving these notes for manual installation reference.</em></strong></p>
-<p>2017/12/09<br>I put this guide together using information from various other blogs.  This is current as of December 2017 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of your influxdb data source and your username and password.</p>
-<p>The data flow is as follows:<center><pre style="color:#000000;background:#f1f0f0;"><span style="color:#40015a; ">pfSense</span> <span style="color:#e60000; ">-</span>&gt; Telegraf (gather metrics) <span style="color:#e60000; ">-</span>&gt; InfluxDB (store metrics) <span style="color:#e60000; ">-</span>&gt; Grafana (render graphs)</pre></center></p>
-<a id="more"></a>
-<h3 id="Step-1-Install-Telegraf-on-pfSense"><a href="#Step-1-Install-Telegraf-on-pfSense" class="headerlink" title="Step 1 - Install Telegraf on pfSense"></a>Step 1 - Install Telegraf on pfSense</h3><p>ssh in to pfsense and select option 8 to get a shell<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh pfsense-01.chrisbergeron.com</div></pre></td></tr></table></figure></p>
-<p>Download telegraf:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pkg add wget http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/telegraf-1.4.4.txz</div></pre></td></tr></table></figure></p>
-<p>Enable telegraf:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">'telegraf_enable=YES'</span> &gt;&gt; /etc/rc.conf</div></pre></td></tr></table></figure></p>
-<p>Edit the telegraf config file:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/etc</div><div class="line">vi telegraf.conf</div></pre></td></tr></table></figure></p>
-<h3 id="Step-2-Configure-Telegraf"><a href="#Step-2-Configure-Telegraf" class="headerlink" title="Step 2 - Configure Telegraf"></a>Step 2 - Configure Telegraf</h3><p>Make the following changes:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">[[outputs.influxdb]]</div><div class="line">  urls = [<span class="string">"http://10.5.5.40:8089"</span>]</div><div class="line">  ...</div><div class="line">  database = <span class="string">"pfsense"</span></div><div class="line">  ...</div><div class="line">  username = <span class="string">"your_username"</span></div><div class="line">  password = <span class="string">"your_password"</span></div><div class="line">  </div><div class="line">[[inputs.net]]</div><div class="line">  interfaces = [<span class="string">"igb0"</span>, <span class="string">"igb1"</span>, <span class="string">"igb2"</span>, <span class="string">"ovpns1"</span>]</div></pre></td></tr></table></figure></p>
-<p>You’ll have to modify the inputs for your own setup.  In this example, I’ll be monitoring an OpenVPN tunnel and 3 interfaces: WAN, LAN and backup WAN.</p>
-<h3 id="Step-3-Start-Telegraf"><a href="#Step-3-Start-Telegraf" class="headerlink" title="Step 3 - Start Telegraf"></a>Step 3 - Start Telegraf</h3><p>Finally, start telegraf:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/etc/rc.d</div><div class="line">./telegraf start</div></pre></td></tr></table></figure></p>
-<p>You won’t need to restart anything on the pfSense box.  If you have any issues, you can look at the log file (/var/log/telegraf.log).  In a future blog post I’ll show how to create a data source in Grafana using the influx source and building a basic graph.</p>
-<p>I’m mainly graphing bandwidth, but you can graph any of the following:</p>
-<ul>
-<li>cpu</li>
-<li>disk</li>
-<li>diskio</li>
-<li>net</li>
-<li>processes</li>
-<li>swap</li>
-<li>system</li>
-</ul>
-<p>One of the hurdles I encountered when building the dashboard panels is that Telegraf is reporting <strong>counters</strong> (or <em>accumulators</em>), so you have to massage the data to get anything useful.  The trick here is to use the <strong>DERIVATIVE</strong> function in the panel configuration.  This gives you the delta for a time series so you can actually see what is being sent or received:</p>
-<p><img src="https://res.cloudinary.com/cyberge/image/upload/v1536947037/icons/Screen_Shot_2018-09-14_at_1.43.34_PM_j6amvq.png" alt="Panel configuration with Derivative metric"></p>
-<p>Another thing I found useful was to add the <strong>MATH</strong> paramenter as: <strong>“*-1”</strong> (multiply by negative one) for sent data.  This inverts the sent data into the negative which makes the graph easier to view at a glance.</p>
-<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/grafana_icon.png" width="80" height="80" alt="Grafana"></a></td><td><a href="https://www.influxdata.com/" target="_blank" rel="external"><img src="/images/tech/influxdb.png" width="80" height="80" alt="InfluxDB"></a></td><td><a href="https://www.pfsense.org/" target="_blank" rel="external"><img src="/images/tech/pfsense_new.png" width="80" height="80" alt="pfSense"></a></td><td><a href="https://www.influxdata.com/time-series-platform/telegraf/" target="_blank" rel="external">Telegraf</a></td></tr></table>
-        
+                </div>
+            </div>
         </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-    <div class="a2a_kit a2a_default_style">
-    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
-    <span class="a2a_divider"></span>
-    <a class="a2a_button_facebook"></a>
-    <a class="a2a_button_twitter"></a>
-    <a class="a2a_button_google_plus"></a>
-    <a class="a2a_button_pinterest"></a>
-    <a class="a2a_button_tumblr"></a>
-</div>
-<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
-<style>
-    .a2a_menu {
-        border-radius: 4px;
-    }
-    .a2a_menu a {
-        margin: 2px 0;
-        font-size: 14px;
-        line-height: 16px;
-        border-radius: 4px;
-        color: inherit !important;
-        font-family: 'Microsoft Yahei';
-    }
-    #a2apage_dropdown {
-        margin: 10px 0;
-    }
-    .a2a_mini_services {
-        padding: 10px;
-    }
-    a.a2a_i,
-    i.a2a_i {
-        width: 122px;
-        line-height: 16px;
-    }
-    a.a2a_i .a2a_svg,
-    a.a2a_more .a2a_svg {
-        width: 16px;
-        height: 16px;
-        line-height: 16px;
-        vertical-align: top;
-        background-size: 16px;
-    }
-    a.a2a_i {
-        border: none !important;
-    }
-    a.a2a_menu_show_more_less {
-        margin: 0;
-        padding: 10px 0;
-        line-height: 16px;
-    }
-    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-    .a2a_mini_services{*+height:1%;}
-</style>
-
-</div>
-
-            
     
-        <a href="https://chrisbergeron.com/2018/09/13/pfsense_grafana/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://chrisbergeron.com/2018/09/13/pfsense_grafana/">Comments</a>
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
+                
+    
+        <h1 itemprop="name">
+            <a class="timeline-article-title" href="/2008/01/21/metalcasting_furnace/">My Homemade Metalcasting Furnace</a>
+        </h1>
     
 
-        </footer>
-    </div>
-    
-        
-<nav id="article-nav">
-    
-    
-        <a href="/2018/07/12/nzbget-mysql/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Older</strong>
-            <div class="article-nav-title">NZBGet MySQL Extension Script</div>
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2008/01/21/metalcasting_furnace/">
+            <time datetime="2008-01-21T23:52:00.000Z" itemprop="datePublished">2008-01-21</time>
         </a>
-    
-</nav>
-
-
-    
-</article>
-
-
-    
-    
-        <section id="comments">
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</section>
-    
 
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Projects/">Projects</a>
+    </div>
+
+                    
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/aluminum/">aluminum</a>, <a class="tag-link" href="/tags/furnace/">furnace</a>, <a class="tag-link" href="/tags/metalcasting/">metalcasting</a>
+    </div>
+
+                </div>
+            </div>
+        </div>
+    
+</div>
 </section>
             
                 
@@ -611,13 +519,11 @@
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'https://chrisbergeron.com/2018/09/13/pfsense_grafana/';
-        
-        this.page.identifier = 'pfsense_grafana';
+        this.page.identifier = '';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
+        s.src = '//' + 'cbergeron' + '.disqus.com/count.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
