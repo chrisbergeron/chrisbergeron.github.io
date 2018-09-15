@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2017/12/29/pihole_update_dns/</loc>
+    
+    <lastmod>2018-09-15T01:41:45.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2018/09/13/pfsense_grafana/</loc>
     
-    <lastmod>2018-09-14T18:07:18.000Z</lastmod>
+    <lastmod>2018-09-15T00:41:30.000Z</lastmod>
     
   </url>
   
@@ -194,13 +201,6 @@
     <loc>https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
     
     <lastmod>2018-02-19T20:10:17.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2017/12/29/pihole_update_dns/</loc>
-    
-    <lastmod>2017-12-29T16:00:58.000Z</lastmod>
     
   </url>
   
