@@ -30,32 +30,22 @@
 </script>
     <meta charset="utf-8">
     
-    <title>Building an Ethanol Still | Chris Bergeron</title>
+    <title>Plex Grafana Dashboard | Chris Bergeron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="A few years ago, when gas prices were exorbitant, I started to build my own Ethanol Still. In light of the global energy crisis, I figured that being able to produce my own fuel was a useful endeavor.">
-<meta name="keywords" content="ethanol,fuel">
+    <meta name="description" content="I made a Grafana Dashboard for my Plex system at home.  I feed various system telemetry into an influx database as the data source and Plex-Data-Collector for inserting the data from plex.  Additiona">
+<meta name="keywords" content="grafana,influxdb,plex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Building an Ethanol Still">
-<meta property="og:url" content="https://chrisbergeron.com/2007/08/07/ethanol_still/index.html">
+<meta property="og:title" content="Plex Grafana Dashboard">
+<meta property="og:url" content="https://chrisbergeron.com/2018/10/28/plex_dashboard/index.html">
 <meta property="og:site_name" content="Chris Bergeron">
-<meta property="og:description" content="A few years ago, when gas prices were exorbitant, I started to build my own Ethanol Still. In light of the global energy crisis, I figured that being able to produce my own fuel was a useful endeavor.">
+<meta property="og:description" content="I made a Grafana Dashboard for my Plex system at home.  I feed various system telemetry into an influx database as the data source and Plex-Data-Collector for inserting the data from plex.  Additiona">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://chrisbergeron.com/images/DSC03676.JPG">
-<meta property="og:image" content="https://chrisbergeron.com/images/DSC03679.JPG">
-<meta property="og:image" content="https://chrisbergeron.com/images/DSC03734.JPG">
-<meta property="og:image" content="https://chrisbergeron.com/images/DSC03741.JPG">
-<meta property="og:image" content="https://chrisbergeron.com/images/DSC03744.JPG">
-<meta property="og:image" content="https://chrisbergeron.com/images/DSC03745.JPG">
-<meta property="og:image" content="https://chrisbergeron.com/images/DSC03747.JPG">
-<meta property="og:image" content="https://chrisbergeron.com/images/DSC03751.JPG">
-<meta property="og:image" content="https://chrisbergeron.com/images/DSC03771.JPG">
-<meta property="og:image" content="https://chrisbergeron.com/images/DSC03768.JPG">
-<meta property="og:image" content="https://chrisbergeron.com/images/DSC03766.JPG">
-<meta property="og:updated_time" content="2018-06-10T13:34:43.000Z">
+<meta property="og:image" content="https://chrisbergeron.com/images/tech/plex.png">
+<meta property="og:updated_time" content="2018-10-28T21:21:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Building an Ethanol Still">
-<meta name="twitter:description" content="A few years ago, when gas prices were exorbitant, I started to build my own Ethanol Still. In light of the global energy crisis, I figured that being able to produce my own fuel was a useful endeavor.">
-<meta name="twitter:image" content="https://chrisbergeron.com/images/DSC03676.JPG">
+<meta name="twitter:title" content="Plex Grafana Dashboard">
+<meta name="twitter:description" content="I made a Grafana Dashboard for my Plex system at home.  I feed various system telemetry into an influx database as the data source and Plex-Data-Collector for inserting the data from plex.  Additiona">
+<meta name="twitter:image" content="https://chrisbergeron.com/images/tech/plex.png">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -267,7 +257,7 @@
 </aside>
 
             
-            <section id="main"><article id="post-ethanol_still" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-plex_dashboard" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -275,7 +265,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            Building an Ethanol Still
+            Plex Grafana Dashboard
         </h1>
     
 
@@ -284,8 +274,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2007/08/07/ethanol_still/">
-            <time datetime="2007-08-08T00:46:25.000Z" itemprop="datePublished">2007-08-07</time>
+        <a href="/2018/10/28/plex_dashboard/">
+            <time datetime="2018-10-28T20:22:00.000Z" itemprop="datePublished">2018-10-28</time>
         </a>
     </div>
 
@@ -293,13 +283,13 @@
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/alternate-energy/">alternate energy</a>
+        <a class="article-category-link" href="/categories/dashboards/">dashboards</a>
     </div>
 
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/ethanol/">ethanol</a>, <a class="tag-link" href="/tags/fuel/">fuel</a>
+        <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/influxdb/">influxdb</a>, <a class="tag-link" href="/tags/plex/">plex</a>
     </div>
 
                     </div>
@@ -310,8 +300,15 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>A few years ago, when gas prices were exorbitant, I started to build my own Ethanol Still. In light of the global energy crisis, I figured that being able to produce my own fuel was a useful endeavor. Creating ethanol fuel requires distilling corn (or other vegetables/fruits) and extracting its potential liquid energy. I did some research on the web and discovered the <a href="http://running_on_alcohol.tripod.com/id2.html" target="_blank" rel="external">Charles 803</a>.<br>I bought plans and began building the still. I’ve put this project on hold for now but perhaps one day I’ll complete it. Until then, here are some pictures of the project:<br><a id="more"></a><br><img src="/images/DSC03676.JPG" alt="Laying out the copper pipe"><br><img src="/images/DSC03679.JPG" alt="Reducer coupling between reflux and boiler"><br><img src="/images/DSC03734.JPG" alt="Cutting the main copper pipe"><br><img src="/images/DSC03741.JPG" alt="Drilling out the boiler"><br><img src="/images/DSC03744.JPG" alt="Drilling out the boiler"><br><img src="/images/DSC03745.JPG" alt="Boiler section"><br><img src="/images/DSC03747.JPG" alt="Boiler section"><br><img src="/images/DSC03751.JPG" alt="Boiler section"><br><img src="/images/DSC03771.JPG" alt="The ethanol still"><br><img src="/images/DSC03768.JPG" alt="The ethanol still"><br><img src="/images/DSC03766.JPG" alt="The reflux column"></p>
-
+            <p><img src="http://res.cloudinary.com/cyberge/image/upload/v1540758052/icons/Screen_Shot_2018-10-27_at_10_36_42_AM_qmnrsc.png" alt="Plex Dashboard"></p>
+<p>I made a Grafana Dashboard for my Plex system at home.  I feed various system telemetry into an influx database as the data source and <a href="https://github.com/barrycarey/Plex-Data-Collector-For-InfluxDB" target="_blank" rel="external">Plex-Data-Collector</a> for inserting the data from plex.  Additionally, I wrote a python script for injecting logs from <a href="/2018/07/12/nzbget-mysql/">NZBGet into mysql</a>.  I then use Grafana to display the graphs.  I really love Grafana and I’ve created several <a href="/categories/dashboards/">dashboards</a>:<br><a id="more"></a></p>
+<ul>
+<li><a href="/2018/09/13/pfsense_grafana/">A dashboard of my firewall statistics</a></li>
+<li><a href="/2017/12/28/pihole_dashboard/">My Pihole ad-blocker stats</a></li>
+<li><a href="/2017/10/08/grafana_dashboard/">A general executive dashboard</a></li>
+<li>A private finance dashboard with Bitcoin and Tradier values and pricing</li>
+</ul>
+<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><br><td><a href="https://plex.tv/" target="_blank" rel="external"><img src="/images/tech/plex.png" width="80" height="80" alt="Plex"></a></td><td><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/tech/grafana_icon.png" width="80" height="80" alt="Grafana"></a></td><td><a href="https://www.influxdata.com/" target="_blank" rel="external"><img src="/images/tech/influxdb.png" width="80" height="80" alt="InfluxDB"></a></td></tr></table>
         
         </div>
         <footer class="article-footer">
@@ -376,7 +373,7 @@
 
             
     
-        <a href="https://chrisbergeron.com/2007/08/07/ethanol_still/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://chrisbergeron.com/2007/08/07/ethanol_still/">Comments</a>
+        <a href="https://chrisbergeron.com/2018/10/28/plex_dashboard/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://chrisbergeron.com/2018/10/28/plex_dashboard/">Comments</a>
     
 
         </footer>
@@ -385,19 +382,10 @@
         
 <nav id="article-nav">
     
-        <a href="/2008/01/21/metalcasting_furnace/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Newer</strong>
-            <div class="article-nav-title">
-                
-                    My Homemade Metalcasting Furnace
-                
-            </div>
-        </a>
     
-    
-        <a href="/2007/07/17/aspire_free_car/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/10/27/monitorr/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Older</strong>
-            <div class="article-nav-title">How high gas prices paid for my new (used) car</div>
+            <div class="article-nav-title">Service monitoring with Monitorr</div>
         </a>
     
 </nav>
@@ -605,9 +593,9 @@
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'https://chrisbergeron.com/2007/08/07/ethanol_still/';
+            this.page.url = 'https://chrisbergeron.com/2018/10/28/plex_dashboard/';
         
-        this.page.identifier = 'ethanol_still';
+        this.page.identifier = 'plex_dashboard';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
