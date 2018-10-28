@@ -2,16 +2,93 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://chrisbergeron.com/2018/10/28/plex_dashboard/</loc>
+    <loc>https://chrisbergeron.com/2017/10/08/showterm/</loc>
     
-    <lastmod>2018-10-28T21:21:01.000Z</lastmod>
+    <lastmod>2018-10-28T21:43:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
+    
+    <lastmod>2018-10-28T21:41:42.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/09/13/pfsense_grafana/</loc>
+    
+    <lastmod>2018-10-28T21:41:23.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/10/07/inxi/</loc>
+    
+    <lastmod>2018-10-28T21:40:23.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2008/01/21/interviewed_for_release_2.0_magazine/</loc>
+    
+    <lastmod>2018-10-28T21:39:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
+    
+    <lastmod>2018-10-28T21:36:41.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/</loc>
+    
+    <lastmod>2018-10-28T21:35:38.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/12/14/howtheyvoted/</loc>
+    
+    <lastmod>2018-10-28T21:34:38.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
+    
+    <lastmod>2018-10-28T21:33:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/06/21/pihole_api/</loc>
+    
+    <lastmod>2018-10-28T21:32:33.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/10/06/comma_panda/</loc>
+    
+    <lastmod>2018-10-28T21:31:14.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://chrisbergeron.com/2017/11/10/alexa_car/</loc>
     
-    <lastmod>2018-10-28T18:10:09.000Z</lastmod>
+    <lastmod>2018-10-28T21:31:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/10/28/plex_dashboard/</loc>
+    
+    <lastmod>2018-10-28T21:29:37.000Z</lastmod>
     
   </url>
   
@@ -33,13 +110,6 @@
     <loc>https://chrisbergeron.com/2018/10/27/monitorr/</loc>
     
     <lastmod>2018-10-27T18:57:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2018/09/13/pfsense_grafana/</loc>
-    
-    <lastmod>2018-09-15T16:38:35.000Z</lastmod>
     
   </url>
   
@@ -75,13 +145,6 @@
     <loc>https://chrisbergeron.com/2005/05/18/dashboard_linux/</loc>
     
     <lastmod>2018-07-17T16:41:48.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2008/01/21/interviewed_for_release_2.0_magazine/</loc>
-    
-    <lastmod>2018-07-17T12:58:55.000Z</lastmod>
     
   </url>
   
@@ -128,20 +191,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2018/06/21/pihole_api/</loc>
-    
-    <lastmod>2018-06-21T23:41:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
-    
-    <lastmod>2018-06-21T05:07:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
     
     <lastmod>2018-06-14T16:42:47.000Z</lastmod>
@@ -170,13 +219,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2017/10/06/comma_panda/</loc>
-    
-    <lastmod>2018-06-10T13:35:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2007/08/07/ethanol_still/</loc>
     
     <lastmod>2018-06-10T13:34:43.000Z</lastmod>
@@ -184,51 +226,9 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
-    
-    <lastmod>2018-06-10T13:32:37.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2017/10/07/inxi/</loc>
-    
-    <lastmod>2018-06-10T13:32:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2017/10/08/grafana_dashboard/</loc>
     
     <lastmod>2018-06-10T13:31:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/</loc>
-    
-    <lastmod>2018-06-10T13:30:01.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2017/12/14/howtheyvoted/</loc>
-    
-    <lastmod>2018-06-10T13:29:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
-    
-    <lastmod>2018-02-19T20:10:17.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2017/10/08/showterm/</loc>
-    
-    <lastmod>2017-10-08T20:49:58.000Z</lastmod>
     
   </url>
   
