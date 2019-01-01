@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2018/09/13/pfsense_grafana/</loc>
+    
+    <lastmod>2019-01-01T21:30:19.319Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2018/10/28/plex_dashboard/</loc>
     
     <lastmod>2018-12-04T05:55:57.039Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
     
     <lastmod>2018-10-28T21:41:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2018/09/13/pfsense_grafana/</loc>
-    
-    <lastmod>2018-10-28T21:41:23.000Z</lastmod>
     
   </url>
   
