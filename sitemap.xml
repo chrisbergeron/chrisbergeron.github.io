@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/2018/10/27/monitorr/</loc>
+    
+    <lastmod>2019-01-31T04:44:23.814Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/2018/09/13/pfsense_grafana/</loc>
     
     <lastmod>2019-01-01T21:30:19.319Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>http://chrisbergeron.com/2018/02/19/quieting_dell_r710/</loc>
     
     <lastmod>2018-10-27T19:02:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2018/10/27/monitorr/</loc>
-    
-    <lastmod>2018-10-27T18:57:28.000Z</lastmod>
     
   </url>
   
