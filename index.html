@@ -293,34 +293,11 @@
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <p>If you run a <a href="https://pi-hole.net/" target="_blank" rel="external">pihole</a> the odds are good that you’ve needed to disable it from time to time.  I wanted an easy way to disable my pihole(s) temporarily, so I wrote a simple shell script to do it for me.  I’m almost always on my Macbook, so this approach worked for a while.  I needed to disable it a few times while I was out of the room, so I figured I’d find an easier way to do it from my phone.<br>I already used an iOS app called <a href="https://itunes.apple.com/us/app/launcher-with-multiple-widgets/id905099592?mt=8" target="_blank" rel="external">Launcher</a> on my iphone, so integrating pihole api calls with it seemed like a no-brainer.</p>
-<p><img src="http://res.cloudinary.com/cyberge/image/upload/v1549595945/icons/launcher_widget_today_screen_mvaxki.png" alt="Using the Launcher Widget to disable pihole"></p>
-<h2 id="Get-the-Pihole-API-Key"><a href="#Get-the-Pihole-API-Key" class="headerlink" title="Get the Pihole API Key"></a>Get the Pihole API Key</h2><p>Obtain the API Keys for your pihole(s) using this command from a linux shell on your Pihole:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo cat /etc/pihole/setupVars.conf | grep PASSWORD</div><div class="line"></div><div class="line"># Output from that command is the API key (Copy this value):</div><div class="line">17d1ce58eb42099oiwerDDDf9sddfwder285w0ere7tce6t3723489df78234</div></pre></td></tr></table></figure>
-<p>This is our API Key: <code>17d1ce58eb42099oiwerDDDf9sddfwder285w0ere7tce6t3723489df78234</code></p>
-<h2 id="Install-and-Configure-Launcher-for-iOS"><a href="#Install-and-Configure-Launcher-for-iOS" class="headerlink" title="Install and Configure Launcher for iOS"></a>Install and Configure Launcher for iOS</h2><p>Install <a href="https://itunes.apple.com/us/app/launcher-with-multiple-widgets/id905099592?mt=8" target="_blank" rel="external">Launcher</a> on your iPhone or iOS device.</p>
-<p>Open Launcher and select the +    Give this Launcher widget a name like <code>Pihole Off</code>.  I chose a short name because the launcher icon has a character limit.</p>
-<p><strong>Important:</strong> Toggle the <code>Don&#39;t open Safari:</code> switch to <strong>ON</strong></p>
-<p>There are 3 important values that make up most of the URL.  The <code>hostname</code>, the Pihole <code>API Key</code> and the number of seconds to <code>disable</code>.  I used 300 seconds (5 minutes) in my setup.</p>
-<p>Now type in the following URL, substituting your own values for API_KEY and HOSTNAME for <strong>your</strong> pihole.  If you use TLS/SSL, you’ll need to change the HTTP schema to HTTPS.</p>
-<p><img src="http://res.cloudinary.com/cyberge/image/upload/v1549594680/icons/new_launcher_zomcex.png" alt="Create New Launcher Widget"></p>
-<p>Example URL:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://my.pi.hole/admin/api.php?disable=300&amp;auth=17d1ce58eb42099oiwerDDDf9sddfwder285w0ere7tce6t3723489df78234</div></pre></td></tr></table></figure></p>
-<p><strong>Tip:</strong>  <em>If you’re on iOS on a Mac, you can copy the URL for your pihole and on your iPhone just single tap and <code>Paste</code></em></p>
-<p>Optionally, you can add a Siri command by clicking <code>Add to Siri</code> and configuring it in Launcher.  Once you’ve set the options, click on the checkmark icon in the top right corner to save.</p>
-<p>Test the new launcher and make sure it works as you expect.  During testing, I had the pihole admin interface open in a browser.  After clicking the launcher icon, I reloaded the page saw that the pihole was in a temporary disable countdown:</p>
-<p><img src="http://res.cloudinary.com/cyberge/image/upload/v1549597464/icons/pihole_launcher_bgyzjw.png" alt="Our New Launcher Widget"></p>
-<p><img src="http://res.cloudinary.com/cyberge/image/upload/v1549594686/icons/pihole_disabled_k7zjsa.png" alt="Pihole Disabled"></p>
-<p>It Works!  Now that you have a working way to disable the pihole from a Launcher, let’s put the launcer widget in a useful spot on the phone.</p>
-<h2 id="The-Today-Screen"><a href="#The-Today-Screen" class="headerlink" title="The Today Screen"></a>The Today Screen</h2><p>The Today Screen on the iPhone is the screen that is accessed by swiping right from the lock screen or the home screen.  It looks like this:</p>
-<p><img src="http://res.cloudinary.com/cyberge/image/upload/v1549594698/icons/today_screen_kmlryp.png" alt="iPhone Today Screen"></p>
-<p>This is very handy and easy to access place for a useful button!  Let’s install our Launcher Widget there by scrolling to the bottom of the Today screen and clicking the <code>Edit</code> Icon.  Touch the Green <code>+</code> next to <code>Launcher</code>.  Tap and hold the right hamburger <code>=</code> icon and slide it into a convenient location up among your other widgets.  Tap <code>Done</code> and test your new widget again.</p>
-<h2 id="Final-thoughts"><a href="#Final-thoughts" class="headerlink" title="Final thoughts"></a>Final thoughts</h2><p>The only drawback that I’ve found with this method is that the Launcher widget doesn’t provide any feedback.</p>
-<p>As I’ve demonstrated here, Launcher is a great tool for putting REST API calls at your fingertips (literally).  There are probably similar ways to do the same thing on Andoid.  If someone shares a link with an Android how-to, I’ll link it here.</p>
-<p>Disable your pihole for a few minutes and leave a comment below if you’ve found this helpful or if you have any tips to share.</p>
-<table><br><th>Technology Used:</th><tr><td><a href="https://pi-hole.net/" target="_blank" rel="external"><img src="/images/tech/pihole.png" width="80" height="80" alt="PiHole"></a></td><br><td><a href="https://itunes.apple.com/us/app/launcher-with-multiple-widgets/id905099592?mt=8" target="_blank" rel="external"><img src="https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/d0/34/19/d0341991-550d-7483-3f1d-2134e878f198/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/230x0w.jpg" width="50" height="50" alt="Launcher"></a></td><br></tr></table>
-
-
+            <p><p>If you run a <a href="https://pi-hole.net/" target="_blank" rel="external">pihole</a> the odds are good that you’ve needed to disable it from time to time.  I wanted an easy way to disable my pihole(s) temporarily, so I wrote a simple shell script to do it for me.  I’m almost always on my Macbook, so this approach worked for a while.  I needed to disable it a few times while I was out of the room, so I figured I’d find an easier way to do it from my phone.<br>I already used an iOS app called <a href="https://itunes.apple.com/us/app/launcher-with-multiple-widgets/id905099592?mt=8" target="_blank" rel="external">Launcher</a> on my iphone, so integrating pihole api calls with it seemed like a no-brainer.</p>
+<p><img src="http://res.cloudinary.com/cyberge/image/upload/v1549595945/icons/launcher_widget_today_screen_mvaxki.png" alt="Using the Launcher Widget to disable pihole"><br></p>
+            <p class="article-more-link">
+                <a href="/2019/02/07/disable_pihole_iphone/#more">Read More</a>
+            </p>
         
         </div>
         <footer class="article-footer">

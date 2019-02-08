@@ -41,7 +41,7 @@
 <meta property="og:description" content="If you run a pihole the odds are good that you’ve needed to disable it from time to time.  I wanted an easy way to disable my pihole(s) temporarily, so I wrote a simple shell script to do it for me.">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://chrisbergeron.com/images/tech/pihole.png">
-<meta property="og:updated_time" content="2019-02-08T03:48:07.759Z">
+<meta property="og:updated_time" content="2019-02-08T03:50:37.338Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Easily disable Pihole from your iPhone (or iPad)">
 <meta name="twitter:description" content="If you run a pihole the odds are good that you’ve needed to disable it from time to time.  I wanted an easy way to disable my pihole(s) temporarily, so I wrote a simple shell script to do it for me.">
@@ -301,7 +301,7 @@
         
             
             <p>If you run a <a href="https://pi-hole.net/" target="_blank" rel="external">pihole</a> the odds are good that you’ve needed to disable it from time to time.  I wanted an easy way to disable my pihole(s) temporarily, so I wrote a simple shell script to do it for me.  I’m almost always on my Macbook, so this approach worked for a while.  I needed to disable it a few times while I was out of the room, so I figured I’d find an easier way to do it from my phone.<br>I already used an iOS app called <a href="https://itunes.apple.com/us/app/launcher-with-multiple-widgets/id905099592?mt=8" target="_blank" rel="external">Launcher</a> on my iphone, so integrating pihole api calls with it seemed like a no-brainer.</p>
-<p><img src="http://res.cloudinary.com/cyberge/image/upload/v1549595945/icons/launcher_widget_today_screen_mvaxki.png" alt="Using the Launcher Widget to disable pihole"></p>
+<p><img src="http://res.cloudinary.com/cyberge/image/upload/v1549595945/icons/launcher_widget_today_screen_mvaxki.png" alt="Using the Launcher Widget to disable pihole"><br><a id="more"></a></p>
 <h2 id="Get-the-Pihole-API-Key"><a href="#Get-the-Pihole-API-Key" class="headerlink" title="Get the Pihole API Key"></a>Get the Pihole API Key</h2><p>Obtain the API Keys for your pihole(s) using this command from a linux shell on your Pihole:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo cat /etc/pihole/setupVars.conf | grep PASSWORD</div><div class="line"></div><div class="line"># Output from that command is the API key (Copy this value):</div><div class="line">17d1ce58eb42099oiwerDDDf9sddfwder285w0ere7tce6t3723489df78234</div></pre></td></tr></table></figure>
 <p>This is our API Key: <code>17d1ce58eb42099oiwerDDDf9sddfwder285w0ere7tce6t3723489df78234</code></p>
