@@ -255,15 +255,71 @@
 
             
             <section id="main"><div class="Index">
-   <% site.categories.findOne({name: 'projects'}).posts.sort('date', -1).each(function(post, i){%>
-    <% if (i == 0) { %>
+   
+    
      <li class="first">
-    <% } else { %>
-    <li>
-    <% } %>
-    <%- partial('_partial/list-view', { post: post }) %>
+    
+    <article class='ListView'>
+    <header class="title">
+      
+        <h1>
+          <a href="/2017/11/10/alexa_car/">Amazon Alexa in the car</a>
+        </h1>
+      
+      
+    </header>
+    <div>
+      
+        <p></p><p>Since Alexa for Car is becoming available on Dec. 5th, 2018,  I thought I would throw some pictures up of my Alexa installation before it was productized.  It was novel at the time.  I used a Verizon LTE Jetpack for cellular connectivity.  I simply feed the audio into the Auxillary port in the car and tether wirelessly to the LTE modem. This is far from a noteworth project, it’s just something I did for fun and proof of concept.</p>
+<p><img src="https://res.cloudinary.com/cyberge/image/upload/v1540749280/icons/IMG_2293_unmqcz.jpg" alt="Perfect fit"><br>
+        
+      
+    </div>
+</article>
     </li>
-  <% }) %>
+  
+    
+    <li>
+    
+    <article class='ListView'>
+    <header class="title">
+      
+        <h1>
+          <a href="/2008/08/24/homebrew_generator/">Building a homebrew generator</a>
+        </h1>
+      
+      
+    </header>
+    <div>
+      
+        <p>A few years ago I built my own generator. I cobbled it together with some parts I had laying around the house. I found a free lawnmower on craigslist and I used the engine from it as a power source for the generator. I coupled the engine to an automobile alternator and a power inverter. The result is a cheap AC power generator. It only produces a few hundred watts of power, but it’s enough to power lights or emergency equipment in the event of power failure. I did this project for fun, not as a replacement for a real backup power generator. Here are some pictures:<br><a href="">The generator</a><br><a href="">The generator</a><br><a href="">Wood coupler panel</a><br><a href="">Belt and pulleys</a></p>
+
+      
+    </div>
+</article>
+    </li>
+  
+    
+    <li>
+    
+    <article class='ListView'>
+    <header class="title">
+      
+        <h1>
+          <a href="/2008/01/21/metalcasting_furnace/">My Homemade Metalcasting Furnace</a>
+        </h1>
+      
+      
+    </header>
+    <div>
+      
+        <p></p><p>On this page I highlight how I built my metal casting furnace.  It&#8217;s a propane furnace capable of melting metals at up to 1,300 degrees F (&deg;F).  There are 2 major assemblies:  The furnace housing and the burner.  The housing is composed of a combination of fireclay, sand and cement; equally mixed in thirds.<br><br><img src="/images/projects/furnace/DSC00772-1024x686.jpg" alt="An aluminum bar turning into liquid"><br>
+        
+      
+    </div>
+</article>
+    </li>
+  
 </div></section>
             
                 
@@ -274,6 +330,25 @@
         <h3 class="widget-title">recent</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/02/26/deluge_dashboard/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/deluge.png)" alt="A Dashboard for Pihole Stats" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/dashboards/">dashboards</a></p>
+                            <p class="item-title"><a href="/2019/02/26/deluge_dashboard/" class="title">A Dashboard for Pihole Stats</a></p>
+                            <p class="item-date"><time datetime="2019-02-26T05:08:00.000Z" itemprop="datePublished">2019-02-26</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -351,25 +426,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/09/13/pfsense_grafana/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/tech/pfsense_thumb.png)" alt="pfSense graphs in Grafana" class="thumbnail-image"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/dashboards/">dashboards</a></p>
-                            <p class="item-title"><a href="/2018/09/13/pfsense_grafana/" class="title">pfSense graphs in Grafana</a></p>
-                            <p class="item-date"><time datetime="2018-09-13T18:01:00.000Z" itemprop="datePublished">2018-09-13</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -388,7 +444,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">August 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/01/">January 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">August 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">July 2007</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2005/05/">May 2005</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">August 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/01/">January 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">August 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">July 2007</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2005/05/">May 2005</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
