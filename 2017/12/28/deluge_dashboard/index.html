@@ -30,15 +30,22 @@
 </script>
     <meta charset="utf-8">
     
-    <title>Archive: 2018/9 | Chris Bergeron</title>
+    <title>A Dashboard for Pihole Stats | Chris Bergeron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Chris Bergeron">
-<meta property="og:url" content="http://chrisbergeron.com/archives/2018/09/index.html">
+    <meta name="description" content="Deluge Grafana DashboardTonight I was introduced to a Deluge exporter for Prometheus so I figured I’d whip up a quick dashboard for visualizing the metrics. Deluge Dashboard is a very simple way to di">
+<meta name="keywords" content="grafana,prometheus,deluge">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A Dashboard for Pihole Stats">
+<meta property="og:url" content="http://chrisbergeron.com/2017/12/28/deluge_dashboard/index.html">
 <meta property="og:site_name" content="Chris Bergeron">
+<meta property="og:description" content="Deluge Grafana DashboardTonight I was introduced to a Deluge exporter for Prometheus so I figured I’d whip up a quick dashboard for visualizing the metrics. Deluge Dashboard is a very simple way to di">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://chrisbergeron.com/images/tech/deluge.png">
+<meta property="og:updated_time" content="2019-02-26T05:00:51.708Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chris Bergeron">
+<meta name="twitter:title" content="A Dashboard for Pihole Stats">
+<meta name="twitter:description" content="Deluge Grafana DashboardTonight I was introduced to a Deluge exporter for Prometheus so I figured I’d whip up a quick dashboard for visualizing the metrics. Deluge Dashboard is a very simple way to di">
+<meta name="twitter:image" content="http://chrisbergeron.com/images/tech/deluge.png">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -250,50 +257,158 @@
 </aside>
 
             
-            <section id="main"><div class="timeline timeline-wrap">
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title">2018</h1>
-            </div>
+            <section id="main"><article id="post-deluge_dashboard" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2018/09/13/pfsense_grafana/">pfSense graphs in Grafana</a>
+        <h1 class="article-title" itemprop="name">
+            A Dashboard for Pihole Stats
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/09/13/pfsense_grafana/">
-            <time datetime="2018-09-13T18:01:00.000Z" itemprop="datePublished">2018-09-13</time>
+        <a href="/2017/12/28/deluge_dashboard/">
+            <time datetime="2017-12-28T21:50:00.000Z" itemprop="datePublished">2017-12-28</time>
         </a>
     </div>
 
 
-                    
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
         <a class="article-category-link" href="/categories/dashboards/">dashboards</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/influxdb/">influxdb</a>, <a class="tag-link" href="/tags/pfsense/">pfsense</a>, <a class="tag-link" href="/tags/telegraf/">telegraf</a>
+        <a class="tag-link" href="/tags/deluge/">deluge</a>, <a class="tag-link" href="/tags/grafana/">grafana</a>, <a class="tag-link" href="/tags/prometheus/">prometheus</a>
     </div>
 
-                </div>
-            </div>
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="Deluge-Grafana-Dashboard"><a href="#Deluge-Grafana-Dashboard" class="headerlink" title="Deluge Grafana Dashboard"></a>Deluge Grafana Dashboard</h2><p><img src="https://res.cloudinary.com/cyberge/image/upload/v1551153412/screenshots/amkeucb9bhfveijastbd.png" alt="Deluge Dashboard"><br>Tonight I was introduced to a <a href="https://github.com/tobbez/deluge_exporter" target="_blank" rel="external">Deluge exporter</a> for <a href="https://prometheus.io" target="_blank" rel="external">Prometheus</a> so I figured I’d whip up a quick dashboard for visualizing the metrics.</p>
+<p>Deluge Dashboard is a very simple way to display <a href="https://deluge-torrent.org/" target="_blank" rel="external">Deluge</a> torrent metrics.  It uses the <a href="https://github.com/tobbez/deluge_exporter" target="_blank" rel="external">Deluge Exporter</a> to populate a <a href="https://prometheus.io/" target="_blank" rel="external">Prometheus</a> data source.  The panels in this dashboard can be copied into more comprehensive dashboards for a single pane of glass view of your network transfers or it can be used as a standalone glanceboard.</p>
+<a id="more"></a>
+<p>This is a very simple dashboard.  You’ll obviously have to customize this for your environment / requirements which is left an exercise for the reader.</p>
+<table><th>Technology Used:</th><th></th><th></th><tr><td><a href="https://deluge-torrent.org/" target="_blank" rel="external"><img src="/images/tech/deluge.png" width="80" height="80"></a></td><td><br><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/grafana_icon.png" width="80" height="80"></a></td><td><a href="https://prometheus.io/" target="_blank" rel="external"><img src="/images/tech/prometheus.png" width="80" height="80"></a></td><br></tr></table>
+        
         </div>
-    
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
 </div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="http://chrisbergeron.com/2017/12/28/deluge_dashboard/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://chrisbergeron.com/2017/12/28/deluge_dashboard/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/12/28/pihole_dashboard/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    A Dashboard for Pihole Stats
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2017/12/14/howtheyvoted/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Here&#39;s how they voted</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
 </section>
             
                 
@@ -483,11 +598,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://chrisbergeron.com/2017/12/28/deluge_dashboard/';
+        
+        this.page.identifier = 'deluge_dashboard';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'cbergeron' + '.disqus.com/count.js';
+        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
