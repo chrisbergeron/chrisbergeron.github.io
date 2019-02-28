@@ -255,71 +255,15 @@
 
             
             <section id="main"><div class="Index">
-   
-    
+   <% site.categories.findOne({name: 'projects'}).posts.sort('date', -1).each(function(post, i){%>
+    <% if (i == 0) { %>
      <li class="first">
-    
-    <article class='ListView'>
-    <header class="title">
-      
-        <h1>
-          <a href="/2017/11/10/alexa_car/">Amazon Alexa in the car</a>
-        </h1>
-      
-      
-    </header>
-    <div>
-      
-        <p></p><p>Since Alexa for Car is becoming available on Dec. 5th, 2018,  I thought I would throw some pictures up of my Alexa installation before it was productized.  It was novel at the time.  I used a Verizon LTE Jetpack for cellular connectivity.  I simply feed the audio into the Auxillary port in the car and tether wirelessly to the LTE modem. This is far from a noteworth project, it’s just something I did for fun and proof of concept.</p>
-<p><img src="https://res.cloudinary.com/cyberge/image/upload/v1540749280/icons/IMG_2293_unmqcz.jpg" alt="Perfect fit"><br>
-        
-      
-    </div>
-</article>
-    </li>
-  
-    
+    <% } else { %>
     <li>
-    
-    <article class='ListView'>
-    <header class="title">
-      
-        <h1>
-          <a href="/2008/08/24/homebrew_generator/">Building a homebrew generator</a>
-        </h1>
-      
-      
-    </header>
-    <div>
-      
-        <p>A few years ago I built my own generator. I cobbled it together with some parts I had laying around the house. I found a free lawnmower on craigslist and I used the engine from it as a power source for the generator. I coupled the engine to an automobile alternator and a power inverter. The result is a cheap AC power generator. It only produces a few hundred watts of power, but it’s enough to power lights or emergency equipment in the event of power failure. I did this project for fun, not as a replacement for a real backup power generator. Here are some pictures:<br><a href="">The generator</a><br><a href="">The generator</a><br><a href="">Wood coupler panel</a><br><a href="">Belt and pulleys</a></p>
-
-      
-    </div>
-</article>
+    <% } %>
+    <%- partial('_partial/list-view', { post: post }) %>
     </li>
-  
-    
-    <li>
-    
-    <article class='ListView'>
-    <header class="title">
-      
-        <h1>
-          <a href="/2008/01/21/metalcasting_furnace/">My Homemade Metalcasting Furnace</a>
-        </h1>
-      
-      
-    </header>
-    <div>
-      
-        <p></p><p>On this page I highlight how I built my metal casting furnace.  It&#8217;s a propane furnace capable of melting metals at up to 1,300 degrees F (&deg;F).  There are 2 major assemblies:  The furnace housing and the burner.  The housing is composed of a combination of fireclay, sand and cement; equally mixed in thirds.<br><br><img src="/images/projects/furnace/DSC00772-1024x686.jpg" alt="An aluminum bar turning into liquid"><br>
-        
-      
-    </div>
-</article>
-    </li>
-  
+  <% }) %>
 </div></section>
             
                 
