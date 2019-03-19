@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
+    
+    <lastmod>2019-03-19T16:22:25.547Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/2019/02/26/deluge_dashboard/</loc>
     
     <lastmod>2019-02-26T05:20:15.843Z</lastmod>
@@ -68,13 +75,6 @@
     <loc>http://chrisbergeron.com/2008/01/21/metalcasting_furnace/</loc>
     
     <lastmod>2018-10-28T21:49:29.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
-    
-    <lastmod>2018-10-28T21:41:42.000Z</lastmod>
     
   </url>
   
