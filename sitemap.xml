@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/2017/10/07/resume-theft/</loc>
+    
+    <lastmod>2019-08-01T18:39:32.597Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chrisbergeron.com/2017/10/08/showterm/</loc>
+    
+    <lastmod>2019-03-30T17:29:00.911Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
     
     <lastmod>2019-03-19T16:22:25.547Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://chrisbergeron.com/2019/02/07/disable_pihole_iphone/</loc>
     
     <lastmod>2019-02-08T03:56:41.960Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2017/10/08/showterm/</loc>
-    
-    <lastmod>2019-02-04T17:16:38.446Z</lastmod>
     
   </url>
   
