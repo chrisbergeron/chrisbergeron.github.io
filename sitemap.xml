@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://chrisbergeron.com/2019/08/01/resume_theft/</loc>
+    <loc>http://chrisbergeron.com/2008/01/21/slashdotted/</loc>
     
-    <lastmod>2019-08-01T19:03:46.233Z</lastmod>
+    <lastmod>2019-08-01T19:15:30.000Z</lastmod>
     
   </url>
   
@@ -257,6 +257,13 @@
     <loc>http://chrisbergeron.com/2017/10/08/grafana_dashboard/</loc>
     
     <lastmod>2018-06-10T13:31:18.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chrisbergeron.com/2017/10/07/nzbget_systemd_unit_file/</loc>
+    
+    <lastmod>2017-10-30T10:13:00.000Z</lastmod>
     
   </url>
   
