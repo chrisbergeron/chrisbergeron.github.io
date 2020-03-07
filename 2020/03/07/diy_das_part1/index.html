@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120870295-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120870295-1');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Atlanta",
+    "addressRegion": "GA",
+    "postalCode": "30303",
+    "streetAddress": "123 Sessame St."
+  },
+  "email": "mailto:blog@chrisbergeron.com",
+  "image": "chrisbergeron.jpg",
+  "jobTitle": "Sr. Infrastructure Engineer",
+  "name": "Chris Bergeron",
+  "url": "http://www.chrisbergeron.com"
+}
+</script>
+    <meta charset="utf-8">
+    
+    <title>DIY DAS for Media 2020 | Chris Bergeron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Why another NAS/DAS article?There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so">
+<meta name="keywords" content="supermicro,das,nas,sas">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DIY DAS for Media 2020">
+<meta property="og:url" content="http://chrisbergeron.com/2020/03/07/diy_das_part1/index.html">
+<meta property="og:site_name" content="Chris Bergeron">
+<meta property="og:description" content="Why another NAS/DAS article?There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://chrisbergeron.com/images/tech/das.png">
+<meta property="og:updated_time" content="2020-03-07T17:19:02.540Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DIY DAS for Media 2020">
+<meta name="twitter:description" content="Why another NAS/DAS article?There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so">
+<meta name="twitter:image" content="http://chrisbergeron.com/images/tech/das.png">
+<meta name="twitter:creator" content="@bergeron">
+    
+
+    
+
+    
+        <link rel="icon" href="/images/favicon.ico" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Chris Bergeron</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/recent">Index</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/recent">Index</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            <section id="main"><article id="post-diy_das_part1" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            DIY DAS for Media 2020
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2020/03/07/diy_das_part1/">
+            <time datetime="2020-03-07T20:10:25.000Z" itemprop="datePublished">2020-03-07</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/homelab/">homelab</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/das/">das</a>, <a class="tag-link" href="/tags/nas/">nas</a>, <a class="tag-link" href="/tags/sas/">sas</a>, <a class="tag-link" href="/tags/supermicro/">supermicro</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="Why-another-NAS-DAS-article"><a href="#Why-another-NAS-DAS-article" class="headerlink" title="Why another NAS/DAS article?"></a>Why another NAS/DAS article?</h3><p><img src="http://res.cloudinary.com/cyberge/image/upload/v1552194286/icons/supermicro_836a_chassis_enfq7x.png" alt="Supermicro 836A"><br>There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so I compiled the information that was useful for my specific 2019 build here.  The prices linked below are subject to market fluctuations and timing, so some of the components I found at a great price. Overall they should be roughly the same as what you can find.  Your mileage may vary.<br><a id="more"></a></p>
+<h3 id="What-is-DAS"><a href="#What-is-DAS" class="headerlink" title="What is DAS?"></a>What is DAS?</h3><p>Direct attached storage, sometimes referred to as a Disk Shelf.  Enterprise versions exist, such as the Dell MD1200.  They basically consist of a hot-swap disk caddies, power supply and SAS expander.  It’s basically a separate case designed for holding disks: a lot of them.  The DAS I built here is being used for media storage, so I don’t focus on performance features like you find with RAID.</p>
+<h3 id="My-DAS-Requirements"><a href="#My-DAS-Requirements" class="headerlink" title="My DAS Requirements"></a>My DAS Requirements</h3><p>I wanted the following for my DAS</p>
+<ul>
+<li>Quiet (controllable by software or manual fan control); this is in contrast to the MD1200 which is a great out of the box DAS, but I wasn’t able to silence it easily.</li>
+<li>Expandable - Using SAS Expanders allow me to upgrade a single component to add more storage or increase performance.  The cascadable nature of SAS allows me to link more units together</li>
+<li>Flexibility<ul>
+<li>ability to install motherboard or just use as JBOD DAS<ul>
+<li>optional PCI cards<ul>
+<li>10GBe</li>
+<li>Thunderbolt/USB-C</li>
+<li>future expansion</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Low to moderate cost<ul>
+<li>ability to buy components rather than single up front cost</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h3 id="The-Chassis"><a href="#The-Chassis" class="headerlink" title="The Chassis"></a>The Chassis</h3><p>I was just window shopping on eBay when I stumbled across a Supermicro 836A chassis for a really good price.  When I get an idea for a project, I’ll usually research it a bit and just stew on the idea for a while before actually doing it.  The chassis and the price ($142 USD) were right, so I purchased a pair of them.  32 disk bays (16 each) will house my existing disks and give me room for expansion.</p>
+<p><em>Note: If you’re shopping for this chassis, pay attention to the backplane.  Preferably, you’ll want one with SATA passthrough (TQ) or (A) backplanes.  Avoid a BPN-SAS-EL1 or BPN-SAS-EL2 backplane because they’re slow.  If you get one, you can replace it with an 836A or 836TQ backplane for around ($25 USD).</em></p>
+<h3 id="SAS-SAS2-SAS3-and-SAS4-whaaa"><a href="#SAS-SAS2-SAS3-and-SAS4-whaaa" class="headerlink" title="SAS, SAS2, SAS3 and SAS4 - whaaa?"></a>SAS, SAS2, SAS3 and SAS4 - whaaa?</h3><p>Similar to SATA, newer SAS versions have increased bandwidth along with other improvements to the specification.  The original SAS specification allowed for total bandwidth of 1.5Gbit/s.  This translates to 187.5 MB/s (megabytes per second).  This is fine for maxing out a single read/write to a single spinning disk (most top out at 125MBs), but with a dozen or more disks, this much bandwidth becomes a bottleneck (especially if RAID is involved).  The next SAS specification, SAS2, is currently (as of 2019) the best price/performance ratio for a homelabber or computer hobbyist.</p>
+<p>From Wikipedia HYPERLINK<br>SAS-1: 3 Gbit/s (2005)<br>SAS-2: 6 Gbit/s (2009)<br>SAS-3: 12 Gbit/s (2013)<br>SAS-4: 22.5 Gbit/s (2017)</p>
+<p>Approximate SAS backplane prices 2019:<br>SAS-EL2 backplane ~ $20 USD<br>SAS2-EL2 backplane ~ $400 USD<br>SAS3-EL2 backplane ~ $550 USD<br>SAS4 SAS backplane ~ ???</p>
+<h3 id="Backplanes"><a href="#Backplanes" class="headerlink" title="Backplanes"></a>Backplanes</h3><p>A backplane is essentially the board that disks plug directly in to in a server chassis.  Some backplanes have a SAS Expander built in (like the Supermicro SAS-ELx Series) and some are just physical passthrough (with some basic circuitry for power and hot swap capability).<br>The Supermicro Backplanes use the following numbering convention<br>SAS: SAS, SAS2 or SAS3<br>EL:  1 or 2 (the number of SAS input channels that can be used for redundancy or cascading to other DASes)<br>8x6: 2 3 or 4.  These seem to match the number of Rack “U”s of the chassis.  The 16 disk chassis I used are 3U (3 units tall), so the matching backplane is <code>836</code>.</p>
+<h3 id="Putting-it-all-together"><a href="#Putting-it-all-together" class="headerlink" title="Putting it all together"></a>Putting it all together</h3><p>The first thing I noticed when the Chassis’ arrived is that it’s longer than I thought.  If you’re planning on putting this DAS under your desk or somewhere similar make sure to accomodate for the depth.  It’s longer than an MD1200 and roughly the same length as a Dell R710/720 server.<br>The next major observation was a clear internal airflow dam.  I discarded it for the DAS since there is no CPU or RAM to cool.  I may reinstall it anyway because it helps with the airflow / thermodynamics, specifically the static pressure diferential between the front and rear fans.</p>
+<h3 id="Installing-the-HBA-in-the-host-computer"><a href="#Installing-the-HBA-in-the-host-computer" class="headerlink" title="Installing the HBA in the host computer"></a>Installing the HBA in the host computer</h3><p>(If you already have an HBA with external SF-8088 ports, you can skip this section)<br>The HBA just presents disks to the operating system as JBOD (Just a Bunch of Disks).  It’s similar to a RAID controller in that it connects a lot of disks to a computer/server using similar connectors, but that’s about where the similarlities end.  You can read more about the differences between a RAID controller and an HBA here. HYPERLINK<br>The HBA that I’ve found the best value with is the HYPERLINK <a href="https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=p2380057.m570.l1313.TR10.TRC0.A0.H0.Xdell+h200e.TRS0&amp;_nkw=dell+h200e&amp;_sacat=0" target="_blank" rel="external">https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=p2380057.m570.l1313.TR10.TRC0.A0.H0.Xdell+h200e.TRS0&amp;_nkw=dell+h200e&amp;_sacat=0</a> Dell H200 (H200e is a variant with external 8088 SAS ports).  It has a good balance between performance and price (~ $35 USD in 2019).  For media storage, which only streams at a few hundred megabits per second, it works fine.<br>The H200 allows you connect up to 192 (VERIFY THIS) disks to a computer using a single 8x PCI slot.  It’s a SAS2 controller, so it’s throughput is limited to 6Gbps (750 MB/s) - more than sufficient to stream media.<br>How do you connect 192 disks?<br>The H200e provides 2 SAS ports.  We’ll connect these ports to our DAS using a two port Mini SAS Adapter (HYPERLINK).  This bracket fits in a case PCI slot, but doesn’t require a motherboard PCI connection for data or power.  It’s simply a cable adapter.<br>The internal connections of this adapter connect to our SAS Expander.<br>SAS Expanders<br>One of the big benefits that SAS has over SATA, is that disks can be added in series and DAS devices can be cascaded together.  A SAS expander can either be built in to a backplane or a standalone card (often a PCI card).  The PCI form factor is very convienent because it provides power and a mounting bracket.  Powering the SAS expander without a motherboard can be accomplished using a Powered Riser Adapter Card (HYPERLINK: <a href="https://www.amazon.com/gp/product/B07C2TS4MV/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&amp;psc=1" target="_blank" rel="external">https://www.amazon.com/gp/product/B07C2TS4MV/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&amp;psc=1</a>   )  The SAS Expander plugs into the PCI Slot on this board.  It can be powered via the 8-pin ATX Molex connector or by a 4-pin Molex disk power connection.</p>
+<h3 id="Assembling-components"><a href="#Assembling-components" class="headerlink" title="Assembling components"></a>Assembling components</h3><p>JBOD board lifter for supermicro chassis</p>
+<ul>
+<li>had to hack<ul>
+<li>if someone knows of the threading or a source for the standoffs, please comment below</li>
+</ul>
+</li>
+<li>I had rack mount screws and they were a good thread fit, but they were too tall.  Additionally, they’re wider than the screw holes on the JBOD board, so I drilled them out slightly, but within the screw ring on the circuit board.</li>
+<li>used heat shrink tube to rise the board up</li>
+<li>cut slightly smaller than screws.</li>
+</ul>
+<h3 id="Parts-list"><a href="#Parts-list" class="headerlink" title="Parts list:"></a>Parts list:</h3><p>Case / Enclosure Supermicro<br><a href="https://www.servethehome.com/sas-expanders-diy-cheap-low-cost-jbod-enclosures-raid/" target="_blank" rel="external">https://www.servethehome.com/sas-expanders-diy-cheap-low-cost-jbod-enclosures-raid/</a><br>Power Supply (optional, very quiet; depends on Chassis purchase)<br>Quiet power supplies ($18)<br><a href="https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l1313&amp;_nkw=PWS-721P-1R+720W&amp;_sacat=0" target="_blank" rel="external">https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l1313&amp;_nkw=PWS-721P-1R+720W&amp;_sacat=0</a><br>SAS Expander<br>This part is where the magic happens.  Standalone SAS2 Expanders are relatively cheap these days, particularly when compared to buying a replacement backplane that has the SAS Expander built in ($400 USD).  The SAS Expander I use is the IBM 46M0997 ServeRAID Expander.  I paid about $26 dollars for a used one on eBay.<br><a href="https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l1313&amp;_nkw=NEW+IBM+46M0997&amp;_sacat=0" target="_blank" rel="external">https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l1313&amp;_nkw=NEW+IBM+46M0997&amp;_sacat=0</a></p>
+<p>H200<br>H200e<br>JBOD power board version 1 ($55):<br>Molex power extension (waste, could’ve used the 8 Pin power supply pin; oh well):<br> <a href="https://www.amazon.com/gp/product/B01LFBB07O/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&amp;psc=1" target="_blank" rel="external">https://www.amazon.com/gp/product/B01LFBB07O/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&amp;psc=1</a><br>cables</p>
+<ul>
+<li>SAS to SAS internal <ul>
+<li><a href="https://www.amazon.com/gp/product/B07L9TZJKB/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&amp;psc=1" target="_blank" rel="external">https://www.amazon.com/gp/product/B07L9TZJKB/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&amp;psc=1</a></li>
+</ul>
+</li>
+<li>8088 external to external (qty 2)</li>
+<li>SAS SFF-8088 Adapter - This provides the inputs to the DAS from the HBA in another computer/server<br><a href="https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l1313&amp;_nkw=Two+Ports+Mini+SAS+SFF-8088+To+SAS&amp;_sacat=0" target="_blank" rel="external">https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l1313&amp;_nkw=Two+Ports+Mini+SAS+SFF-8088+To+SAS&amp;_sacat=0</a></li>
+</ul>
+<h3 id="Power-Supplies"><a href="#Power-Supplies" class="headerlink" title="Power Supplies"></a>Power Supplies</h3><p>Optional Upgrades<br>Fans</p>
+<ul>
+<li>Noctua’s x 5 (include 50% reducers)<br>Power Supplies</li>
+<li>Worth it to replace stock PSU (part number) with quieter Gold one (part number)</li>
+</ul>
+<p>Disks<br>use your own</p>
+<h3 id="Cables"><a href="#Cables" class="headerlink" title="Cables"></a>Cables</h3><p>SF8087 - SF8087<br>SAS - SATA whips (qty 4)<br><a href="https://www.amazon.com/gp/product/B00S7KU5R8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&amp;psc=1" target="_blank" rel="external">https://www.amazon.com/gp/product/B00S7KU5R8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&amp;psc=1</a><br>1 per SAS disk</p>
+<p>Misc<br>cable to connect to power switch<br><a href="https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l1313&amp;_nkw=Supermicro+CBL-0068L&amp;_sacat=0" target="_blank" rel="external">https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l1313&amp;_nkw=Supermicro+CBL-0068L&amp;_sacat=0</a><br>supermicro screws<br><a href="https://www.amazon.com/gp/product/B00353EKR8/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;psc=1" target="_blank" rel="external">https://www.amazon.com/gp/product/B00353EKR8/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;psc=1</a></p>
+<h3 id="Total-cost-sans-disks"><a href="#Total-cost-sans-disks" class="headerlink" title="Total cost (sans disks):"></a>Total cost (sans disks):</h3><p>Supermicro Chassis - $142 + 40 Shipping = $182<br>Dell H200 - $36 (free shipping)</p>
+<p><strong>Final Notes / Considerations</strong><br>Power must stay on if in a RAID and used with another server/computer.  I highly recommend connecting the DAS to a UPS.  This Chassis has Dual redundant power supplies, but I found it’s worth it to upgrade the PSU to a quieter version for approx. $18 USD.</p>
+<h3 id="FAQ-Frequently-Asked-Questions"><a href="#FAQ-Frequently-Asked-Questions" class="headerlink" title="FAQ / Frequently Asked Questions"></a>FAQ / Frequently Asked Questions</h3><ul>
+<li><p>Does the H200 work with disks larger than 2TB?</p>
+<ul>
+<li>Yes - However, it may require flashing the firmware to a newer version.  These days most of the units I’ve found on eBay already have a recent firmware version.</li>
+</ul>
+</li>
+<li><p>Do I have to use more expensive SAS disks for this?</p>
+<ul>
+<li>No.  SAS is backwards compatible with SATA.  You can use a SATA disk in a SAS enclosure, but you cannot use a SAS disk in a SATA enclosure / port.</li>
+</ul>
+</li>
+<li>Do I have to use a SuperMicro Chassis / Case to make a DAS?<ul>
+<li>Nope.  You can use any computer case that provides disk bays and exposes SATA ports from the disks.  One of the major draws of using a DAS is the hot-swap capability, but using a high density disk chassis without hot-swap will work.</li>
+</ul>
+</li>
+<li>Can I install an HBA if I just want to add more SATA ports to my computer?<ul>
+<li>Yes.  HBAs provide higher density than SATA expansion cards because they typically use SAS ports and breakout to SATA via 4 to 1 adapter cables.  Often for the same price of a SATA Expansion card, you can add an equivalent HBA with more options for future expansion.<br>Resources / Further Reading<br>A really good (albeit old) article about DAS, SAS Expanders and JBOD<br><a href="https://www.servethehome.com/sas-expanders-diy-cheap-low-cost-jbod-enclosures-raid/" target="_blank" rel="external">https://www.servethehome.com/sas-expanders-diy-cheap-low-cost-jbod-enclosures-raid/</a></li>
+</ul>
+</li>
+</ul>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="http://chrisbergeron.com/2020/03/07/diy_das_part1/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://chrisbergeron.com/2020/03/07/diy_das_part1/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/02/26/deluge_dashboard/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Deluge Grafana Dashboard</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">recent</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/03/07/diy_das_part1/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/das.png)" alt="DIY DAS for Media 2020" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/homelab/">homelab</a></p>
+                            <p class="item-title"><a href="/2020/03/07/diy_das_part1/" class="title">DIY DAS for Media 2020</a></p>
+                            <p class="item-date"><time datetime="2020-03-07T20:10:25.000Z" itemprop="datePublished">2020-03-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/02/26/deluge_dashboard/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/deluge.png)" alt="Deluge Grafana Dashboard" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/dashboards/">dashboards</a></p>
+                            <p class="item-title"><a href="/2019/02/26/deluge_dashboard/" class="title">Deluge Grafana Dashboard</a></p>
+                            <p class="item-date"><time datetime="2019-02-26T05:08:00.000Z" itemprop="datePublished">2019-02-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/02/07/disable_pihole_iphone/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/pihole.png)" alt="Easily disable Pihole from your iPhone (or iPad)" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2019/02/07/disable_pihole_iphone/" class="title">Easily disable Pihole from your iPhone (or iPad)</a></p>
+                            <p class="item-date"><time datetime="2019-02-08T01:46:25.000Z" itemprop="datePublished">2019-02-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/11/10/grafana_dashboards/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/grafana_icon.png)" alt="Grafana Dashboards" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/homelab/">homelab</a></p>
+                            <p class="item-title"><a href="/2018/11/10/grafana_dashboards/" class="title">Grafana Dashboards</a></p>
+                            <p class="item-date"><time datetime="2018-11-10T20:57:00.000Z" itemprop="datePublished">2018-11-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/10/28/plex_dashboard/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/plex.png)" alt="Plex Grafana Dashboard" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/dashboards/">dashboards</a></p>
+                            <p class="item-title"><a href="/2018/10/28/plex_dashboard/" class="title">Plex Grafana Dashboard</a></p>
+                            <p class="item-date"><time datetime="2018-10-28T20:22:00.000Z" itemprop="datePublished">2018-10-28</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Professional/">Professional</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Projects/">Projects</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/alternate-energy/">alternate energy</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/carputer/">carputer</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/dashboards/">dashboards</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/">devops</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/homelab/">homelab</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/networking/">networking</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/politics/">politics</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/usenet/">usenet</a><span class="category-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">August 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/01/">January 2008</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">August 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">July 2007</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2005/05/">May 2005</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/404/">404</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/4G/">4G</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LTE/">LTE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/alexa/">alexa</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aluminum/">aluminum</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ansible/">ansible</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aspire/">aspire</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/">bash</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carputer/">carputer</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/comma-ai/">comma.ai</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/das/">das</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashboard/">dashboard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashboard-linux/">dashboard linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashpc/">dashpc</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashwerks/">dashwerks</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dell/">dell</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deluge/">deluge</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/democrats-republicans/">democrats, republicans</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/devops/">devops</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/digital-ocean/">digital ocean</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dns/">dns</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dnsmasq/">dnsmasq</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/elasticsearch/">elasticsearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ethanol/">ethanol</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fuel/">fuel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/furnace/">furnace</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/generator/">generator</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/grafana/">grafana</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/home-improvement/">home improvement</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hypermiling/">hypermiling</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/influxdb/">influxdb</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/">interview</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inxi/">inxi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iphone/">iphone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ipmi/">ipmi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kibana/">kibana</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mariadb/">mariadb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/metalcasting/">metalcasting</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monitorr/">monitorr</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nas/">nas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/netgear/">netgear</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nzbget/">nzbget</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/panda/">panda</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pfsense/">pfsense</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pihole/">pihole</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plex/">plex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prometheus/">prometheus</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/r710/">r710</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberry-pi/">raspberry pi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sabnzbd/">sabnzbd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sas/">sas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/showterm/">showterm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/supermicro/">supermicro</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/systemd/">systemd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telegraf/">telegraf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telematics/">telematics</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/usenet/">usenet</a><span class="tag-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/404/" style="font-size: 10px;">404</a> <a href="/tags/4G/" style="font-size: 10px;">4G</a> <a href="/tags/LTE/" style="font-size: 10px;">LTE</a> <a href="/tags/alexa/" style="font-size: 10px;">alexa</a> <a href="/tags/aluminum/" style="font-size: 10px;">aluminum</a> <a href="/tags/ansible/" style="font-size: 12px;">ansible</a> <a href="/tags/aspire/" style="font-size: 10px;">aspire</a> <a href="/tags/bash/" style="font-size: 10px;">bash</a> <a href="/tags/carputer/" style="font-size: 14px;">carputer</a> <a href="/tags/comma-ai/" style="font-size: 10px;">comma.ai</a> <a href="/tags/das/" style="font-size: 10px;">das</a> <a href="/tags/dashboard/" style="font-size: 10px;">dashboard</a> <a href="/tags/dashboard-linux/" style="font-size: 10px;">dashboard linux</a> <a href="/tags/dashpc/" style="font-size: 18px;">dashpc</a> <a href="/tags/dashwerks/" style="font-size: 16px;">dashwerks</a> <a href="/tags/dell/" style="font-size: 10px;">dell</a> <a href="/tags/deluge/" style="font-size: 10px;">deluge</a> <a href="/tags/democrats-republicans/" style="font-size: 10px;">democrats, republicans</a> <a href="/tags/devops/" style="font-size: 16px;">devops</a> <a href="/tags/digital-ocean/" style="font-size: 10px;">digital ocean</a> <a href="/tags/dns/" style="font-size: 10px;">dns</a> <a href="/tags/dnsmasq/" style="font-size: 12px;">dnsmasq</a> <a href="/tags/elasticsearch/" style="font-size: 10px;">elasticsearch</a> <a href="/tags/ethanol/" style="font-size: 10px;">ethanol</a> <a href="/tags/fuel/" style="font-size: 10px;">fuel</a> <a href="/tags/furnace/" style="font-size: 10px;">furnace</a> <a href="/tags/generator/" style="font-size: 10px;">generator</a> <a href="/tags/grafana/" style="font-size: 20px;">grafana</a> <a href="/tags/hexo/" style="font-size: 12px;">hexo</a> <a href="/tags/home-improvement/" style="font-size: 10px;">home improvement</a> <a href="/tags/hypermiling/" style="font-size: 10px;">hypermiling</a> <a href="/tags/influxdb/" style="font-size: 16px;">influxdb</a> <a href="/tags/interview/" style="font-size: 12px;">interview</a> <a href="/tags/inxi/" style="font-size: 10px;">inxi</a> <a href="/tags/ios/" style="font-size: 10px;">ios</a> <a href="/tags/iphone/" style="font-size: 10px;">iphone</a> <a href="/tags/ipmi/" style="font-size: 10px;">ipmi</a> <a href="/tags/kibana/" style="font-size: 10px;">kibana</a> <a href="/tags/linux/" style="font-size: 12px;">linux</a> <a href="/tags/mariadb/" style="font-size: 10px;">mariadb</a> <a href="/tags/metalcasting/" style="font-size: 10px;">metalcasting</a> <a href="/tags/monitorr/" style="font-size: 10px;">monitorr</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nas/" style="font-size: 10px;">nas</a> <a href="/tags/netgear/" style="font-size: 10px;">netgear</a> <a href="/tags/nzbget/" style="font-size: 14px;">nzbget</a> <a href="/tags/panda/" style="font-size: 10px;">panda</a> <a href="/tags/pfsense/" style="font-size: 12px;">pfsense</a> <a href="/tags/pihole/" style="font-size: 16px;">pihole</a> <a href="/tags/plex/" style="font-size: 10px;">plex</a> <a href="/tags/prometheus/" style="font-size: 10px;">prometheus</a> <a href="/tags/r710/" style="font-size: 10px;">r710</a> <a href="/tags/raspberry-pi/" style="font-size: 10px;">raspberry pi</a> <a href="/tags/sabnzbd/" style="font-size: 10px;">sabnzbd</a> <a href="/tags/sas/" style="font-size: 10px;">sas</a> <a href="/tags/showterm/" style="font-size: 10px;">showterm</a> <a href="/tags/supermicro/" style="font-size: 10px;">supermicro</a> <a href="/tags/systemd/" style="font-size: 12px;">systemd</a> <a href="/tags/telegraf/" style="font-size: 10px;">telegraf</a> <a href="/tags/telematics/" style="font-size: 10px;">telematics</a> <a href="/tags/usenet/" style="font-size: 12px;">usenet</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="https://hexo.io/">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://consul.io">Consul</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://terraform.io">Terraform</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2020 Chris Bergeron<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'http://chrisbergeron.com/2020/03/07/diy_das_part1/';
+        
+        this.page.identifier = 'diy_das_part1';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
