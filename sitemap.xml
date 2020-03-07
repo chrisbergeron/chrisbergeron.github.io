@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/2020/03/07/diy_das_part1/</loc>
+    
+    <lastmod>2020-03-07T21:38:26.604Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/2018/09/13/pfsense_grafana/</loc>
     
     <lastmod>2020-03-07T21:24:49.662Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://chrisbergeron.com/2017/10/08/showterm/</loc>
     
     <lastmod>2020-03-07T21:21:58.727Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2020/03/07/diy_das_part1/</loc>
-    
-    <lastmod>2020-03-07T20:40:51.925Z</lastmod>
     
   </url>
   
