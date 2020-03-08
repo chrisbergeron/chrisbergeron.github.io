@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/2020/03/08/creating_grafanan_annotations_with_webhooks/</loc>
+    
+    <lastmod>2020-03-08T19:24:45.980Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/2020/03/07/diy_das_part1/</loc>
     
     <lastmod>2020-03-07T23:22:03.017Z</lastmod>
