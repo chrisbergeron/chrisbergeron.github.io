@@ -32,20 +32,20 @@
     
     <title>Creating Grafana Annotations with Webhooks | Chris Bergeron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Grafana is a great tool for visualizing data. In this tutorial I’ll be putting annotations, or comments on points of interest, on graphs. Creating Annotations on GraphsTo create annotations on graphs">
+    <meta name="description" content="Grafana is a great tool for visualizing data. In this tutorial I’ll be putting annotations, or comments on points of interest overlayed on top of graph panels.">
 <meta name="keywords" content="devops,grafana,influxdb,annotations,webhooks,php">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Creating Grafana Annotations with Webhooks">
 <meta property="og:url" content="http://chrisbergeron.com/2020/03/08/creating_grafanan_annotations_with_webhooks/index.html">
 <meta property="og:site_name" content="Chris Bergeron">
-<meta property="og:description" content="Grafana is a great tool for visualizing data. In this tutorial I’ll be putting annotations, or comments on points of interest, on graphs. Creating Annotations on GraphsTo create annotations on graphs">
+<meta property="og:description" content="Grafana is a great tool for visualizing data. In this tutorial I’ll be putting annotations, or comments on points of interest overlayed on top of graph panels.">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://chrisbergeron.com/images/tech/grafana.png">
-<meta property="og:updated_time" content="2020-03-08T19:54:30.672Z">
+<meta property="og:image" content="http://chrisbergeron.com/images/tech/grafana_icon.png">
+<meta property="og:updated_time" content="2020-03-08T20:07:10.564Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Creating Grafana Annotations with Webhooks">
-<meta name="twitter:description" content="Grafana is a great tool for visualizing data. In this tutorial I’ll be putting annotations, or comments on points of interest, on graphs. Creating Annotations on GraphsTo create annotations on graphs">
-<meta name="twitter:image" content="http://chrisbergeron.com/images/tech/grafana.png">
+<meta name="twitter:description" content="Grafana is a great tool for visualizing data. In this tutorial I’ll be putting annotations, or comments on points of interest overlayed on top of graph panels.">
+<meta name="twitter:image" content="http://chrisbergeron.com/images/tech/grafana_icon.png">
 <meta name="twitter:creator" content="@bergeron">
     
 
@@ -214,15 +214,15 @@
         
             
             <p>Grafana is a great tool for visualizing data.<br><img src="https://grafana.com/static/img/grafana/showcase_visualize.jpg" alt="Grafana"></p>
-<p>In this tutorial I’ll be putting annotations, or comments on points of interest, on graphs.<br><img src="https://blog.octo.com/wp-content/uploads/2018/01/capture_d___e__cran_2017-12-27_a___11-30-31-1024x486.png" alt="Grafana with a time range annotation"></p>
+<p><strong>In this tutorial I’ll be putting annotations, or comments on points of interest overlayed on top of graph panels.</strong><a id="more"></a></p>
+<p><img src="https://blog.octo.com/wp-content/uploads/2018/01/capture_d___e__cran_2017-12-27_a___11-30-31-1024x486.png" alt="Grafana with a time range annotation"></p>
 <h3 id="Creating-Annotations-on-Graphs"><a href="#Creating-Annotations-on-Graphs" class="headerlink" title="Creating Annotations on Graphs"></a>Creating Annotations on Graphs</h3><p>To create annotations on graphs in Grafana, there are several components that need to be tied together: </p>
 <ul>
 <li>Grafana for the graph(s)</li>
 <li>A database / datasource for our annotations</li>
-<li>An application / webhook that listens for incoming data<a id="more"></a>
-<!-- https://blog.octo.com/wp-content/uploads/2018/01/capture_d___e__cran_2017-12-27_a___11-30-31-1024x486.png   https://grafana.com/static/img/docs/v46/annotations.png -->
-</li>
+<li>An application / webhook that listens for incoming data</li>
 </ul>
+<!-- https://blog.octo.com/wp-content/uploads/2018/01/capture_d___e__cran_2017-12-27_a___11-30-31-1024x486.png   https://grafana.com/static/img/docs/v46/annotations.png -->
 <p>The data flows as follows:<br>An event happens that creates some data that we want to become our annotation.  This data needs to be parsed/massaged into a few variables to become an annotation.  These values are:</p>
 <ul>
 <li>Start time</li>
@@ -238,12 +238,14 @@
 <p>If the request is formatted properly and Grafana parses it successfully, it will send the following <em>Response</em> header:<br><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">HTTP/1.1 200</div><div class="line">Content-Type: application/json</div><div class="line"></div><div class="line">&#123;</div><div class="line">    <span class="attr">"message"</span>:<span class="string">"Annotation added"</span>,</div><div class="line">    <span class="attr">"id"</span>: <span class="number">1</span>,</div><div class="line">    <span class="attr">"endId"</span>: <span class="number">2</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>If we break this down, we see the <em>Response Header</em> is <code>HTTP/1.1 200</code> which is the Status-Line.  The status-line has 2 parts: the protocol <code>HTTP 1/1</code> and the status code <code>200</code> (Success).</p>
 <p>Next is the <em>response</em> body.  This consists of 3 json key/value pairs that are the <code>message</code>, the annotation <code>id</code>, and the <code>endId</code>.</p>
-<h3 id="Configuring-Grafana"><a href="#Configuring-Grafana" class="headerlink" title="Configuring Grafana"></a>Configuring Grafana</h3><p>Annotations are only available on certain types of Grafana graphs.  In this example, I’m using a standard ‘graph panel’.  Fortunately, there is really nothing that needs to be done to Grafana itself to accept annotations.  I just added this section so the reader will know nothing was missed here.</p>
+<h3 id="Configuring-Grafana"><a href="#Configuring-Grafana" class="headerlink" title="Configuring Grafana"></a>Configuring Grafana</h3><p>Annotations are only available on certain types of Grafana graphs.  In this example, I’m using a standard ‘graph panel’.  To configure Grafana, we’ll go into the <code>Settings</code> of our Dashboard and select <code>Annotations</code>:<br><img src="https://miro.medium.com/max/1878/1*5fCkO382WyUegg7UTAPBmA.png" alt="Grafana annotations options for a dashboard"></p>
 <h3 id="The-Annotation-Datasource-Database"><a href="#The-Annotation-Datasource-Database" class="headerlink" title="The Annotation Datasource / Database"></a>The Annotation Datasource / Database</h3><p><img src="https://grafana.com/static/img/docs/v46/annotations.png" alt="Grafana with an annotation at a single point in time and a time range annotation"><br>When Grafana renders a graph, it displays the data from the dashboard datasource (a database backend) and it displays the annotations over top of that graph at the appropriate points in time or over a time range.</p>
-<h3 id="The-Webhook"><a href="#The-Webhook" class="headerlink" title="The Webhook"></a>The Webhook</h3><p>For this example, I’m using PHP to create the webhook that will listen for incoming data.  Once it receives the data that will become an annotation, it parses the data and inserts it into a database.  In this example, I’m using InfluxDB.  This database is mapped into Grafana as a Datasource.</p>
+<h3 id="The-Webhook"><a href="#The-Webhook" class="headerlink" title="The Webhook"></a>The Webhook</h3><p>For this example, I’m using PHP to create the webhook that will listen for incoming data.  Once it receives the data that will become an annotation, it parses the data and inserts it into a database.  In this example, I’m using InfluxDB.  This database is mapped into Grafana as an Annotation Datasource.</p>
+<center><strong>This section is still under construction.  More coming soon!</strong></center>
+
 <h3 id="Configuring-The-Webserver-nginx"><a href="#Configuring-The-Webserver-nginx" class="headerlink" title="Configuring The Webserver - nginx"></a>Configuring The Webserver - nginx</h3><p>Now we need to configure our webserver - nginx - for our webhook.  The webhook is a <code>.php</code> script that will parse the request (header and body).  It massages this data into a format suitable for our database and inserts it.  For this example, our webhook endpoint is: <code>/api/annotations</code> (as seen in the request example above).  To do this we’ll add the following <code>location</code> block to our <code>/etc/nginx/nginx.conf</code> file:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">location /api/ &#123;</div><div class="line">        alias     /usr/share/nginx/html; </div><div class="line">        try_files /index.php =404; </div><div class="line"></div><div class="line">        set $path $request_uri; </div><div class="line">        if ($request_uri ~ ^/annotations(.*)$ ) &#123; </div><div class="line">            set $path /$1; </div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
 <h2 id="Further-Reading"><a href="#Further-Reading" class="headerlink" title="Further Reading"></a>Further Reading</h2><p><a href="" _target="blank">Official Grafana Documentation on Annotations</a><br><a href="https://grafana.com/docs/grafana/latest/http_api/annotations/" _target="blank" target="_blank" rel="external">Official Grafana Annotation API Documentation</a><br><a href="https://medium.com/contentsquare-engineering-blog/from-events-to-grafana-annotation-f35aafe8bd3d" _target="blank" target="_blank" rel="external">Another blog post about Annotations</a></p>
-<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><br><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/grafana_icon.png" width="80" height="80" alt="Grafana"></a></td><td><a href="https://www.influxdata.com/" target="_blank" rel="external"><img src="/images/tech/influxdb.png" width="80" height="80" alt="InfluxDB"></a></td><br><td><a href="https://php.net/" target="_blank" rel="external"><img src="/images/tech/php.png" width="80" height="80" alt="PHP"></a></td></tr></table>
+<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><a href="https://grafana.com/" target="_blank" rel="external"><img src="/images/grafana_icon.png" width="80" height="80" alt="Grafana"></a></td><td><a href="https://www.influxdata.com/" target="_blank" rel="external"><img src="/images/tech/influxdb.png" width="80" height="80" alt="InfluxDB"></a></td><br><td><a href="https://php.net/" target="_blank" rel="external"><img src="/images/tech/php.png" width="80" height="80" alt="PHP"></a></td></tr></table>
         
         </div>
         <footer class="article-footer">
@@ -356,7 +358,7 @@
                             <a href="/2020/03/08/creating_grafanan_annotations_with_webhooks/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/tech/grafana.png)" alt="Creating Grafana Annotations with Webhooks" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/tech/grafana_icon.png)" alt="Creating Grafana Annotations with Webhooks" class="thumbnail-image"></span>
     
 </a>
 
