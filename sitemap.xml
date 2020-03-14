@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/2018/10/27/monitorr/</loc>
+    
+    <lastmod>2020-03-14T02:03:49.915Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/2020/03/13/cloudinary_bash/</loc>
     
-    <lastmod>2020-03-14T01:37:32.242Z</lastmod>
+    <lastmod>2020-03-14T01:57:53.006Z</lastmod>
     
   </url>
   
@@ -68,13 +75,6 @@
     <loc>http://chrisbergeron.com/2019/02/07/disable_pihole_iphone/</loc>
     
     <lastmod>2019-02-08T03:56:41.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2018/10/27/monitorr/</loc>
-    
-    <lastmod>2019-01-31T04:44:23.000Z</lastmod>
     
   </url>
   
