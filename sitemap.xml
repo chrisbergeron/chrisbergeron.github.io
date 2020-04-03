@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/2008/01/20/interviewed_for_release_2.0_magazine/</loc>
+    
+    <lastmod>2020-04-03T19:50:39.916Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chrisbergeron.com/2017/10/06/comma_panda/</loc>
+    
+    <lastmod>2020-04-03T09:23:04.967Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chrisbergeron.com/2017/10/08/showterm/</loc>
+    
+    <lastmod>2020-04-03T09:19:05.424Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chrisbergeron.com/2017/10/06/404.html/</loc>
+    
+    <lastmod>2020-04-03T07:17:18.697Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
+    
+    <lastmod>2020-04-03T06:49:11.886Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/2020/04/03/funny040220/</loc>
     
     <lastmod>2020-04-03T06:07:09.646Z</lastmod>
@@ -25,7 +60,7 @@
   <url>
     <loc>http://chrisbergeron.com/2020/03/08/creating_grafanan_annotations_with_webhooks/</loc>
     
-    <lastmod>2020-03-08T21:26:44.310Z</lastmod>
+    <lastmod>2020-03-10T02:59:44.958Z</lastmod>
     
   </url>
   
@@ -44,23 +79,9 @@
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/10/08/showterm/</loc>
-    
-    <lastmod>2020-03-07T21:21:58.727Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://chrisbergeron.com/2018/10/28/plex_dashboard/</loc>
     
     <lastmod>2020-03-07T19:50:09.751Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2008/01/21/slashdotted/</loc>
-    
-    <lastmod>2019-08-01T19:15:30.000Z</lastmod>
     
   </url>
   
@@ -121,13 +142,6 @@
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2008/01/21/interviewed_for_release_2.0_magazine/</loc>
-    
-    <lastmod>2018-10-28T21:39:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
     
     <lastmod>2018-10-28T21:36:41.000Z</lastmod>
@@ -149,23 +163,9 @@
   </url>
   
   <url>
-    <loc>http://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
-    
-    <lastmod>2018-10-28T21:33:48.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://chrisbergeron.com/2018/06/21/pihole_api/</loc>
     
     <lastmod>2018-10-28T21:32:33.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2017/10/06/comma_panda/</loc>
-    
-    <lastmod>2018-10-28T21:31:14.000Z</lastmod>
     
   </url>
   
@@ -187,13 +187,6 @@
     <loc>http://chrisbergeron.com/2017/12/29/pihole_update_dns/</loc>
     
     <lastmod>2018-09-15T04:48:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2017/10/06/404.html/</loc>
-    
-    <lastmod>2018-08-19T02:04:24.000Z</lastmod>
     
   </url>
   
