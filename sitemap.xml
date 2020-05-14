@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
+    
+    <lastmod>2020-05-14T18:22:13.694Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/2008/01/20/interviewed_for_release_2.0_magazine/</loc>
     
     <lastmod>2020-04-03T19:50:39.916Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>http://chrisbergeron.com/2018/10/28/plex_dashboard/</loc>
     
     <lastmod>2020-03-07T19:50:09.751Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
-    
-    <lastmod>2019-03-19T16:22:25.000Z</lastmod>
     
   </url>
   

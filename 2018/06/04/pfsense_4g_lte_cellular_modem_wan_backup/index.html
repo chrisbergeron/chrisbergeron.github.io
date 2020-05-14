@@ -41,7 +41,7 @@
 <meta property="og:description" content="Using pfsense for WAN Redundancy with Cellular LTE/4G  I work from home a lot and I need reliable internet connectivity to workplace.  As a result, I decided to implement a failover WAN connection int">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://chrisbergeron.com/images/tech/pfsense.png">
-<meta property="og:updated_time" content="2019-03-19T16:22:25.000Z">
+<meta property="og:updated_time" content="2020-05-14T18:22:13.694Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Pfsense WAN with Cellular LTE&#x2F;4G">
 <meta name="twitter:description" content="Using pfsense for WAN Redundancy with Cellular LTE/4G  I work from home a lot and I need reliable internet connectivity to workplace.  As a result, I decided to implement a failover WAN connection int">
@@ -216,7 +216,7 @@
             <p><strong>Using pfsense for WAN Redundancy with Cellular LTE/4G</strong> </p>
 <p>I work from home a lot and I need reliable internet connectivity to workplace.  As a result, I decided to implement a failover WAN connection into my firewall.  I use <a href="https://pfsense.org" target="_blank" rel="external">pfSense</a> as my firewall which combines power and flexibility with easy of configuration.</p>
 <h2 id="The-Hardware-NetGear-LB2120-LTE-Modem"><a href="#The-Hardware-NetGear-LB2120-LTE-Modem" class="headerlink" title="The Hardware: NetGear LB2120 LTE Modem"></a>The Hardware: NetGear LB2120 LTE Modem</h2><p>While researching options, I decided on the Netgear LB2120 4G LTE modem since it has Gigabit port(s) and can be used with external antennae.  </p>
-<p>[ PICTURE OF MODEM ]<br><a id="more"></a></p>
+<p><img src="/images/netgear-lb2120-modem.jpg" width="600" alt="Netgear LB2120"><br><a id="more"></a></p>
 <h2 id="The-Cellular-Service-Ting-Wireless"><a href="#The-Cellular-Service-Ting-Wireless" class="headerlink" title="The Cellular Service: Ting Wireless"></a>The Cellular Service: Ting Wireless</h2><p>I heard about an affordable Cellular pay-as-you-go cellular service on a linux podcast called <a href="https://ting.com" target="_blank" rel="external">ting.com</a>.  The basic service is $6 / month for network access and fees.  Data is charged in 1GB blocks on top of that.  Since I’m only using this during brief periods when my primary internet provider is unavailable, it works out to be a cost effective backup service.  </p>
 <h2 id="Performance"><a href="#Performance" class="headerlink" title="Performance"></a>Performance</h2><p>I was quite surprised when I ran a <a href="https://speedtest.net" target="_blank" rel="external">speed test</a>.  I get 60Mbit/s down and 20Mbit/s up.  The latency is high which is expected because of wireless frequency hopping and other characteristics.  Overall, it’s very usable as a backup.</p>
 <p>[ IMAGE of 4G LTE SPEEDTEST RESULT ]</p>
@@ -233,17 +233,7 @@
 <hr>
 <p>So for $160 up front, a bit of configuration and at least $6 a month I have peace of mind knowing that I’ll be able to connect to my workplace VPN.  It beats driving into the office or having to take an unscheduled day off from work.</p>
 <h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Using an LTE Modem is a great way to have a backup internet connection.  As an added bonus, if you ever travel it’s easy to bring the LTE modem with you.</p>
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<p><strong>Table of Contents</strong>  <em>generated with <a href="https://github.com/thlorenz/doctoc" target="_blank" rel="external">DocToc</a></em></p>
-<ul>
-<li><a href="#the-hardware-netgear-1220-lte-modem">The Hardware: NetGear 2220 LTE Modem</a></li>
-<li><a href="#the-cellular-service-ting-wireless">The Cellular Service: Ting Wireless</a></li>
-<li><a href="#configuring-pfsense">Configuring pfSense:</a></li>
-<li><a href="#advanced-configuration">Advanced Configuration</a></li>
-<li><a href="#summary">Summary</a></li>
-</ul>
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
         
         </div>
         <footer class="article-footer">
