@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chrisbergeron.com/2019/02/07/disable_pihole_iphone/</loc>
+    
+    <lastmod>2020-10-21T16:50:21.918Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chrisbergeron.com/resume/index.html</loc>
     
     <lastmod>2020-10-21T16:10:24.371Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>http://chrisbergeron.com/2019/02/26/deluge_dashboard/</loc>
     
     <lastmod>2019-02-26T05:20:15.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chrisbergeron.com/2019/02/07/disable_pihole_iphone/</loc>
-    
-    <lastmod>2019-02-08T03:56:41.000Z</lastmod>
     
   </url>
   

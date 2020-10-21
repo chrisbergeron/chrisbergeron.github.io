@@ -4,7 +4,7 @@ https://keybase.io/bergeron
 
 I hereby claim:
 
-  * I am an admin of http://chrisbergeron.com
+  * I am an admin of https://chrisbergeron.com
   * I am bergeron (https://keybase.io/bergeron) on keybase.
   * I have a public key ASBqEaTWw5OhUTaw4YVZuVx13JEUsdlNSM9gwIJjtMZbOwo
 
