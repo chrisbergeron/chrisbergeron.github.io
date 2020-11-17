@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120870295-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120870295-1');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Atlanta",
+    "addressRegion": "GA",
+    "postalCode": "30303",
+    "streetAddress": "123 Sessame St."
+  },
+  "email": "mailto:blog@chrisbergeron.com",
+  "image": "chrisbergeron.jpg",
+  "jobTitle": "Sr. Infrastructure Engineer",
+  "name": "Chris Bergeron",
+  "url": "https://www.chrisbergeron.com"
+}
+</script>
+    <meta charset="utf-8">
+    
+    <title>Using Ansible to build a high availablity Sabnzbd usenet downloader | Chris Bergeron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="I’m limited to about 40MB&#x2F;s on downloads on my VPC at Digital Ocean, but I run Sabnzbd for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Using Ansible to build a high availablity Sabnzbd usenet downloader">
+<meta property="og:url" content="https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/index.html">
+<meta property="og:site_name" content="Chris Bergeron">
+<meta property="og:description" content="I’m limited to about 40MB&#x2F;s on downloads on my VPC at Digital Ocean, but I run Sabnzbd for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://chrisbergeron.com/images/sabnzbd.png">
+<meta property="article:published_time" content="2017-10-08T16:46:25.000Z">
+<meta property="article:modified_time" content="2018-10-28T21:36:41.000Z">
+<meta property="article:author" content="Chris Bergeron">
+<meta property="article:tag" content="usenet">
+<meta property="article:tag" content="sabnzbd">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://chrisbergeron.com/images/sabnzbd.png">
+<meta name="twitter:creator" content="@bergeron">
+    
+
+    
+
+    
+        <link rel="icon" href="/images/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Chris Bergeron</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/recent">Index</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/recent">Index</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            <section id="main"><article id="post-high_performance_sabnzbd" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Using Ansible to build a high availablity Sabnzbd usenet downloader
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/10/08/high_performance_sabnzbd/">
+            <time datetime="2017-10-08T16:46:25.000Z" itemprop="datePublished">2017-10-08</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/linux/">linux</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/sabnzbd/" rel="tag">sabnzbd</a>, <a class="tag-link-link" href="/tags/usenet/" rel="tag">usenet</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>I’m limited to about 40MB/s on downloads on my VPC at Digital Ocean, but I run <a target="_blank" rel="noopener" href="https://sabnzbd.org/">Sabnzbd</a> for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted to see if I could parallelize this and download multiple files at the same.  I use Sonarr for searching usenet for freely distributable training videos which then sends them to SABnzbd for downloading.  Since Sonarr can send multiple files to sabnzbd which get queued up, I figured I can reduce the queue by downloading them at the same time.</p>
+<p>Using Ansible and Terraform (devops automation tools), I can spin up VPC on demand, provision them, configure them as sabnzbd download nodes and then destroy the instances when complete.</p>
+<p>The instances all run the same sabnzbd config and the instances use haproxy for round-robin distribution.  I will probably change this to <a target="_blank" rel="noopener" href="https://www.consul.io/">Consul</a>, but I just wanted something quick so I used a basic haproxy config.</p>
+<a id="more"></a>
+<p>Terraform builds 4 sabnzbd, 1 haproxy, and 1 ELK instance.  It configures a VIP which I point Sonarr to.  Here’s the terraform config that builds a sabnzbd server:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">resource &quot;digitalocean_droplet&quot; &quot;sab1&quot; &#123;</span><br><span class="line">    image &#x3D; &quot;centos-7-x64&quot;</span><br><span class="line">    name &#x3D; &quot;sab1&quot;</span><br><span class="line">    tags &#x3D; [&quot;sab&quot;]</span><br><span class="line">    region &#x3D; &quot;nyc1&quot;</span><br><span class="line">    size &#x3D; &quot;2gb&quot;</span><br><span class="line">    private_networking &#x3D; true</span><br><span class="line">    ssh_keys &#x3D; [</span><br><span class="line">      &quot;$&#123;var.ssh_fingerprint&#125;&quot;</span><br><span class="line">    ]</span><br><span class="line">connection &#123;</span><br><span class="line">      user &#x3D; &quot;root&quot;</span><br><span class="line">      type &#x3D; &quot;ssh&quot;</span><br><span class="line">      private_key &#x3D; &quot;$&#123;file(var.pvt_key)&#125;&quot;</span><br><span class="line">      timeout &#x3D; &quot;2m&quot;</span><br><span class="line">&#125;</span><br><span class="line">provisioner &quot;remote-exec&quot; &#123;</span><br><span class="line">    inline &#x3D; [</span><br><span class="line">      &quot;export PATH&#x3D;$PATH:&#x2F;usr&#x2F;bin&quot;,</span><br><span class="line">      &quot;sudo yum -y install epel-release&quot;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Here is a terraform play to provision 6 new hosts (1 Elasticsearch, 1 HAproxy and 4 Sabnzbd):</p>
+<p><a target="_blank" rel="noopener" href="https://showterm.io/9b8d315c5f5cb12de7b63"><img src="/images/terraform_terminal.png" width="600" alt="Click here to watch terraform build the instances"></a></p>
+<p>Here is the ansible playbook that configuress the sabnzbd instances:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;env ansible-playbook</span><br><span class="line">---</span><br><span class="line">- hosts: all</span><br><span class="line">  gather_facts: yes</span><br><span class="line">  become: yes</span><br><span class="line"></span><br><span class="line">  tasks:</span><br><span class="line">    - name: TASK | Create usenet group</span><br><span class="line">      group:</span><br><span class="line">        name: usenet</span><br><span class="line">        state: present</span><br><span class="line"></span><br><span class="line">    - name: TASK | Create usenet user</span><br><span class="line">      user:</span><br><span class="line">        name: usenet</span><br><span class="line">        shell: &#x2F;bin&#x2F;bash</span><br><span class="line">        groups: usenet</span><br><span class="line">        append: yes</span><br><span class="line">        password: [ removed ]</span><br><span class="line">        update_password: on_create</span><br><span class="line"></span><br><span class="line">    - name: TASK | Create &#x2F;apps directory</span><br><span class="line">      file:</span><br><span class="line">        path: &#x2F;apps</span><br><span class="line">        state: directory</span><br><span class="line">        owner: usenet</span><br><span class="line">        group: usenet</span><br><span class="line">        mode: 0755</span><br><span class="line"></span><br><span class="line">    - name: TASK | Create &#x2F;apps&#x2F;data&#x2F;.sabnzbd directory</span><br><span class="line">      file:</span><br><span class="line">        path: &#x2F;apps&#x2F;data&#x2F;.sabnzbd</span><br><span class="line">        state: directory</span><br><span class="line">        owner: usenet</span><br><span class="line">        group: usenet</span><br><span class="line">        mode: 0755</span><br><span class="line"></span><br><span class="line">    - name: TASK | Install EPEL Repo</span><br><span class="line">      action: &gt;</span><br><span class="line">        yum name&#x3D;epel-release state&#x3D;present update_cache&#x3D;yes</span><br><span class="line"></span><br><span class="line">    - name: TASK | Install packages</span><br><span class="line">      action: &gt;</span><br><span class="line">        yum name&#x3D;&#123;&#123; item &#125;&#125; state&#x3D;present update_cache&#x3D;yes</span><br><span class="line">      with_items:</span><br><span class="line">        - vim</span><br><span class="line">        - git</span><br><span class="line">        - mlocate</span><br><span class="line">        - par2cmdline</span><br><span class="line">        - p7zip</span><br><span class="line">        - unzip</span><br><span class="line">        - tar</span><br><span class="line">        - gcc</span><br><span class="line">        - python-feedparser</span><br><span class="line">        - python-configobj</span><br><span class="line">        - python-cheetah</span><br><span class="line">        - python-dbus</span><br><span class="line">        - python-devel</span><br><span class="line">        - screen</span><br><span class="line">        - vim</span><br><span class="line">        - htop</span><br><span class="line">        - iftop</span><br><span class="line">        - bind-utils</span><br><span class="line">        - tree</span><br><span class="line">        - jq</span><br><span class="line">        - telnet</span><br><span class="line">        - lsof</span><br><span class="line">        - tcpdump</span><br><span class="line">        - nload</span><br><span class="line"></span><br><span class="line">    - name: TASK | Install unrar</span><br><span class="line">      yum:</span><br><span class="line">        name: ftp:&#x2F;&#x2F;rpmfind.net&#x2F;linux&#x2F;dag&#x2F;redhat&#x2F;el7&#x2F;en&#x2F;x86_64&#x2F;dag&#x2F;RPMS&#x2F;unrar-5.0.3-1.el7.rf.x86_64.rpm</span><br><span class="line">        state: present</span><br><span class="line"></span><br><span class="line">    - name: TASK | Install yenc</span><br><span class="line">      yum:</span><br><span class="line">        name: https:&#x2F;&#x2F;archives.fedoraproject.org&#x2F;pub&#x2F;archive&#x2F;fedora&#x2F;linux&#x2F;releases&#x2F;22&#x2F;Everything&#x2F;x86_64&#x2F;os&#x2F;Packages&#x2F;p&#x2F;python-yenc-0.4.0-4.fc22.x86_64.rpm</span><br><span class="line">        state: present</span><br><span class="line"></span><br><span class="line">    - name: TASK | Clone SAB repo</span><br><span class="line">      git:</span><br><span class="line">        repo: &#39;https:&#x2F;&#x2F;github.com&#x2F;sabnzbd&#x2F;sabnzbd.git&#39;</span><br><span class="line">        dest: &#x2F;apps&#x2F;sabnzbd</span><br><span class="line">        version: master</span><br><span class="line">        clone: yes</span><br><span class="line">        update: yes</span><br><span class="line"></span><br><span class="line">    - name: TASK | Change owner of SAB to usenet</span><br><span class="line">      file:</span><br><span class="line">        path: &#x2F;apps</span><br><span class="line">        state: directory</span><br><span class="line">        owner: usenet</span><br><span class="line">        group: usenet</span><br><span class="line">        mode: 0755</span><br><span class="line"></span><br><span class="line">    - name: TASK | Install systemd unit file for SAB</span><br><span class="line">      template: src&#x3D;&quot;templates&#x2F;sabnzbd.service.j2&quot; dest&#x3D;&quot;&#x2F;etc&#x2F;systemd&#x2F;system&#x2F;sabnzbd.service&quot; mode&#x3D;0644</span><br><span class="line"></span><br><span class="line">    - name: TASK | Copy SAB config</span><br><span class="line">      template: src&#x3D;&quot;templates&#x2F;sabnzbd_config.ini.j2&quot; dest&#x3D;&quot;&#x2F;apps&#x2F;data&#x2F;.sabnzbd&#x2F;sabnzbd_config.ini&quot; mode&#x3D;0644</span><br><span class="line"></span><br><span class="line">    - name: TASK | Enable and start SAB service</span><br><span class="line">      systemd:</span><br><span class="line">        name: sabnzbd</span><br><span class="line">        enabled: yes</span><br><span class="line">        state: started</span><br><span class="line"></span><br><span class="line">    - name: TASK | Install filebeat</span><br><span class="line">      yum:</span><br><span class="line">        name: https:&#x2F;&#x2F;artifacts.elastic.co&#x2F;downloads&#x2F;beats&#x2F;filebeat&#x2F;filebeat-5.6.2-x86_64.rpm</span><br><span class="line">        state: present</span><br><span class="line">        update_cache: yes</span><br><span class="line"></span><br><span class="line">    - name: TASK | Copy filebeat config file</span><br><span class="line">      template: src&#x3D;&quot;templates&#x2F;filebeat.yml.j2&quot; dest&#x3D;&quot;&#x2F;etc&#x2F;filebeat&#x2F;filebeat.yml&quot; mode&#x3D;0644</span><br><span class="line"></span><br><span class="line">    - name: TASK | Enable and start filebeat</span><br><span class="line">      systemd:</span><br><span class="line">        name: filebeat</span><br><span class="line">        enabled: yes</span><br><span class="line">        state: restarted</span><br><span class="line"></span><br><span class="line">    - name: TASK | Start updatedb for locate</span><br><span class="line">      shell: &quot;updatedb &gt;&#x2F;dev&#x2F;null 2&gt;&amp;1 &amp;&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><a target="_blank" rel="noopener" href="https://terraform.io"><img src="/images/tech/terraform.png" width="80" height="80" alt="Terraform"></a></td><td><a target="_blank" rel="noopener" href="https://www.ansible.com"><img src="/images/tech/ansible.png" width="80" height="80" alt="Ansible"></a></td><td><a target="_blank" rel="noopener" href="https://sabnzbd.org"><img src="/images/tech/sabnzbd.png" width="80" height="80" alt="Sabnzbd"></a></td><td><a target="_blank" rel="noopener" href="https://www.elastic.co/"><img src="/images/tech/elastic.png" width="80" height="80" alt="Elasticsearch"></a></td><td><a target="_blank" rel="noopener" href="https://sonarr.tv/"><img src="/images/tech/sonarr.png" width="80" height="80" alt="Sonarr"></a></td></tr></table>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/10/08/grafana_dashboard/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Building an executive dashboard with Grafana
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2017/10/07/sysinfo/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">System info bash script</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">recent</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/03/13/cloudinary_bash/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/cloudinary_icon.png)" alt="Bash Scripts for Cloudinary" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2020/03/13/cloudinary_bash/" class="title">Bash Scripts for Cloudinary</a></p>
+                            <p class="item-date"><time datetime="2020-03-13T23:13:25.000Z" itemprop="datePublished">2020-03-13</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/03/08/creating_grafanan_annotations_with_webhooks/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/grafana_icon.png)" alt="Creating Grafana Annotations with Webhooks" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/grafana/">grafana</a></p>
+                            <p class="item-title"><a href="/2020/03/08/creating_grafanan_annotations_with_webhooks/" class="title">Creating Grafana Annotations with Webhooks</a></p>
+                            <p class="item-date"><time datetime="2020-03-08T23:13:25.000Z" itemprop="datePublished">2020-03-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/03/07/diy_das_part1/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/das3.png)" alt="DIY DAS and NAS for Media 2020" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/homelab/">homelab</a></p>
+                            <p class="item-title"><a href="/2020/03/07/diy_das_part1/" class="title">DIY DAS and NAS for Media 2020</a></p>
+                            <p class="item-date"><time datetime="2020-03-07T20:10:25.000Z" itemprop="datePublished">2020-03-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/02/26/deluge_dashboard/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/deluge.png)" alt="Deluge Grafana Dashboard" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/dashboards/">dashboards</a></p>
+                            <p class="item-title"><a href="/2019/02/26/deluge_dashboard/" class="title">Deluge Grafana Dashboard</a></p>
+                            <p class="item-date"><time datetime="2019-02-26T05:08:00.000Z" itemprop="datePublished">2019-02-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/02/07/disable_pihole_iphone/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/tech/pihole.png)" alt="Easily disable Pihole from your iPhone (or iPad)" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2019/02/07/disable_pihole_iphone/" class="title">Easily disable Pihole from your iPhone (or iPad)</a></p>
+                            <p class="item-date"><time datetime="2019-02-08T01:46:25.000Z" itemprop="datePublished">2019-02-07</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Professional/">Professional</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Projects/">Projects</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/alternate-energy/">alternate energy</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/carputer/">carputer</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/dashboards/">dashboards</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/">devops</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/grafana/">grafana</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/homelab/">homelab</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/networking/">networking</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/politics/">politics</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/usenet/">usenet</a><span class="category-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">August 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/01/">January 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">August 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">July 2007</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2005/05/">May 2005</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/4G/" rel="tag">4G</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LTE/" rel="tag">LTE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/alexa/" rel="tag">alexa</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aluminum/" rel="tag">aluminum</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/annotations/" rel="tag">annotations</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ansible/" rel="tag">ansible</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aspire/" rel="tag">aspire</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/" rel="tag">bash</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carputer/" rel="tag">carputer</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cloudinary/" rel="tag">cloudinary</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/comma-ai/" rel="tag">comma.ai</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/curl/" rel="tag">curl</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/das/" rel="tag">das</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashboard/" rel="tag">dashboard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashboard-linux/" rel="tag">dashboard linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashpc/" rel="tag">dashpc</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashwerks/" rel="tag">dashwerks</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dell/" rel="tag">dell</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deluge/" rel="tag">deluge</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/democrats-republicans/" rel="tag">democrats, republicans</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/devops/" rel="tag">devops</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/digital-ocean/" rel="tag">digital ocean</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dns/" rel="tag">dns</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dnsmasq/" rel="tag">dnsmasq</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/elasticsearch/" rel="tag">elasticsearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ethanol/" rel="tag">ethanol</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fuel/" rel="tag">fuel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/furnace/" rel="tag">furnace</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/generator/" rel="tag">generator</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/grafana/" rel="tag">grafana</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/home-improvement/" rel="tag">home improvement</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hypermiling/" rel="tag">hypermiling</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/influxdb/" rel="tag">influxdb</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/" rel="tag">interview</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inxi/" rel="tag">inxi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/" rel="tag">ios</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iphone/" rel="tag">iphone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ipmi/" rel="tag">ipmi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kibana/" rel="tag">kibana</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mariadb/" rel="tag">mariadb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/metalcasting/" rel="tag">metalcasting</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monitorr/" rel="tag">monitorr</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nas/" rel="tag">nas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/netgear/" rel="tag">netgear</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nzbget/" rel="tag">nzbget</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/panda/" rel="tag">panda</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pfsense/" rel="tag">pfsense</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/" rel="tag">php</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pihole/" rel="tag">pihole</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plex/" rel="tag">plex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prometheus/" rel="tag">prometheus</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/r710/" rel="tag">r710</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberry-pi/" rel="tag">raspberry pi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sabnzbd/" rel="tag">sabnzbd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sas/" rel="tag">sas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/showterm/" rel="tag">showterm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/supermicro/" rel="tag">supermicro</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/systemd/" rel="tag">systemd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telegraf/" rel="tag">telegraf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telematics/" rel="tag">telematics</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/usenet/" rel="tag">usenet</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webhooks/" rel="tag">webhooks</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/4G/" style="font-size: 10px;">4G</a> <a href="/tags/LTE/" style="font-size: 10px;">LTE</a> <a href="/tags/alexa/" style="font-size: 10px;">alexa</a> <a href="/tags/aluminum/" style="font-size: 10px;">aluminum</a> <a href="/tags/annotations/" style="font-size: 10px;">annotations</a> <a href="/tags/ansible/" style="font-size: 12px;">ansible</a> <a href="/tags/aspire/" style="font-size: 10px;">aspire</a> <a href="/tags/bash/" style="font-size: 12px;">bash</a> <a href="/tags/carputer/" style="font-size: 14px;">carputer</a> <a href="/tags/cloudinary/" style="font-size: 10px;">cloudinary</a> <a href="/tags/comma-ai/" style="font-size: 10px;">comma.ai</a> <a href="/tags/curl/" style="font-size: 10px;">curl</a> <a href="/tags/das/" style="font-size: 10px;">das</a> <a href="/tags/dashboard/" style="font-size: 10px;">dashboard</a> <a href="/tags/dashboard-linux/" style="font-size: 10px;">dashboard linux</a> <a href="/tags/dashpc/" style="font-size: 16px;">dashpc</a> <a href="/tags/dashwerks/" style="font-size: 14px;">dashwerks</a> <a href="/tags/dell/" style="font-size: 10px;">dell</a> <a href="/tags/deluge/" style="font-size: 10px;">deluge</a> <a href="/tags/democrats-republicans/" style="font-size: 10px;">democrats, republicans</a> <a href="/tags/devops/" style="font-size: 18px;">devops</a> <a href="/tags/digital-ocean/" style="font-size: 10px;">digital ocean</a> <a href="/tags/dns/" style="font-size: 10px;">dns</a> <a href="/tags/dnsmasq/" style="font-size: 12px;">dnsmasq</a> <a href="/tags/elasticsearch/" style="font-size: 10px;">elasticsearch</a> <a href="/tags/ethanol/" style="font-size: 10px;">ethanol</a> <a href="/tags/fuel/" style="font-size: 10px;">fuel</a> <a href="/tags/furnace/" style="font-size: 10px;">furnace</a> <a href="/tags/generator/" style="font-size: 10px;">generator</a> <a href="/tags/grafana/" style="font-size: 20px;">grafana</a> <a href="/tags/hexo/" style="font-size: 12px;">hexo</a> <a href="/tags/home-improvement/" style="font-size: 10px;">home improvement</a> <a href="/tags/hypermiling/" style="font-size: 10px;">hypermiling</a> <a href="/tags/influxdb/" style="font-size: 18px;">influxdb</a> <a href="/tags/interview/" style="font-size: 10px;">interview</a> <a href="/tags/inxi/" style="font-size: 10px;">inxi</a> <a href="/tags/ios/" style="font-size: 10px;">ios</a> <a href="/tags/iphone/" style="font-size: 10px;">iphone</a> <a href="/tags/ipmi/" style="font-size: 10px;">ipmi</a> <a href="/tags/kibana/" style="font-size: 10px;">kibana</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/mariadb/" style="font-size: 10px;">mariadb</a> <a href="/tags/metalcasting/" style="font-size: 10px;">metalcasting</a> <a href="/tags/monitorr/" style="font-size: 10px;">monitorr</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nas/" style="font-size: 10px;">nas</a> <a href="/tags/netgear/" style="font-size: 10px;">netgear</a> <a href="/tags/nzbget/" style="font-size: 14px;">nzbget</a> <a href="/tags/panda/" style="font-size: 10px;">panda</a> <a href="/tags/pfsense/" style="font-size: 12px;">pfsense</a> <a href="/tags/php/" style="font-size: 12px;">php</a> <a href="/tags/pihole/" style="font-size: 16px;">pihole</a> <a href="/tags/plex/" style="font-size: 10px;">plex</a> <a href="/tags/prometheus/" style="font-size: 10px;">prometheus</a> <a href="/tags/r710/" style="font-size: 10px;">r710</a> <a href="/tags/raspberry-pi/" style="font-size: 10px;">raspberry pi</a> <a href="/tags/sabnzbd/" style="font-size: 10px;">sabnzbd</a> <a href="/tags/sas/" style="font-size: 10px;">sas</a> <a href="/tags/showterm/" style="font-size: 10px;">showterm</a> <a href="/tags/supermicro/" style="font-size: 10px;">supermicro</a> <a href="/tags/systemd/" style="font-size: 12px;">systemd</a> <a href="/tags/telegraf/" style="font-size: 10px;">telegraf</a> <a href="/tags/telematics/" style="font-size: 10px;">telematics</a> <a href="/tags/usenet/" style="font-size: 12px;">usenet</a> <a href="/tags/webhooks/" style="font-size: 10px;">webhooks</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/chrisbergeron/">Github Repository</a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://consul.io">Consul</a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://terraform.io">Terraform</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2020 Chris Bergeron<br>
+            Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a target="_blank" rel="noopener" href="https://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/';
+        
+        this.page.identifier = 'high_performance_sabnzbd';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'cbergeron' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>

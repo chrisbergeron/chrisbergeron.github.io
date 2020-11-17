@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/bergeron
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://chrisbergeron.com
+  * I am bergeron (https://keybase.io/bergeron) on keybase.
+  * I have a public key ASBqEaTWw5OhUTaw4YVZuVx13JEUsdlNSM9gwIJjtMZbOwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a291e51c8395fdff0766098275194a1668330fa9968922e98261c16ab9b15ebd0a",
+      "host": "keybase.io",
+      "kid": "01206a11a4d6c393a15136b0e18559b95c75dc9114b1d94d48cf60c08263b4c65b3b0a",
+      "uid": "748dc7aeb96dd2ce3412817ea8a16819",
+      "username": "bergeron"
+    },
+    "merkle_root": {
+      "ctime": 1523836926,
+      "hash": "d9dbcfb0d2a8284f0d177886ecbc7e45a1f440baecae8f70e00ec4d11148d08f22a1f747395bd0f6805b86d3fb0619a024f9595d634e070b83e7eafd98e879fa",
+      "hash_meta": "ece803da95b446aa1978aa26ef6f50b351930a3fdb008ae6b2c0934c8430891d",
+      "seqno": 2393771
+    },
+    "service": {
+      "entropy": "bNr16Lp3M5d009FTfQweYFN3",
+      "hostname": "chrisbergeron.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1523837004,
+  "expire_in": 504576000,
+  "prev": "98df8033193e381b80900dd70e7acf7d3bbbfa357ad2ad9b0abb97e3264575ef",
+  "seqno": 22,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgahGk1sOToVE2sOGFWblcddyRFLHZTUjPYMCCY7TGWzsKp3BheWxvYWTESpcCFsQgmN+AMxk+OBuAkA3XDnrPfTu7+jV60q2bCruX4yZFde/EIM6ODVu+3oDTTChsNGmrllCK9kXmBarvQlV/DAH5L935AgHCo3NpZ8RATSaRHJQajnKfFL03ETp0j4SUmWirpKAoiA1iCQMMoZyAC9HLznecw1JcvRgzHMlz8d6wSHTTFFSjlIJaZQ1MBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGMCT6I7TPPi8lsi6sNyfzmODYT5otJNQgdwNFcSqfVwo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bergeron
+
+==================================================================
