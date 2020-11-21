@@ -32,20 +32,19 @@
     
     <title>Using Ansible to build a high availablity Nzbget usenet downloader | Chris Bergeron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="I’m limited to about 80MB&#x2F;s on downloads on my VPC at Digital Ocean, but I run Nzbget for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted t">
+    <meta name="description" content="I’m limited to about 80MB/s on downloads on my VPC at Digital Ocean, but I run Nzbget for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted t">
+<meta name="keywords" content="nzbget,usenet">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Using Ansible to build a high availablity Nzbget usenet downloader">
 <meta property="og:url" content="https://chrisbergeron.com/2017/10/29/high_performance_nzbget/index.html">
 <meta property="og:site_name" content="Chris Bergeron">
-<meta property="og:description" content="I’m limited to about 80MB&#x2F;s on downloads on my VPC at Digital Ocean, but I run Nzbget for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted t">
-<meta property="og:locale" content="en_US">
+<meta property="og:description" content="I’m limited to about 80MB/s on downloads on my VPC at Digital Ocean, but I run Nzbget for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted t">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="https://chrisbergeron.com/images/tech/nzbget.png">
-<meta property="article:published_time" content="2017-10-30T01:53:25.000Z">
-<meta property="article:modified_time" content="2020-10-21T17:45:59.233Z">
-<meta property="article:author" content="Chris Bergeron">
-<meta property="article:tag" content="nzbget">
-<meta property="article:tag" content="usenet">
+<meta property="og:updated_time" content="2020-10-21T17:45:59.233Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Using Ansible to build a high availablity Nzbget usenet downloader">
+<meta name="twitter:description" content="I’m limited to about 80MB/s on downloads on my VPC at Digital Ocean, but I run Nzbget for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted t">
 <meta name="twitter:image" content="https://chrisbergeron.com/images/tech/nzbget.png">
 <meta name="twitter:creator" content="@bergeron">
     
@@ -56,40 +55,26 @@
         <link rel="icon" href="/images/favicon.ico" />
     
 
-    
-<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
 
-    
-<link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/css/style.css">
 
-    
-<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
-
-
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    
-<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
-
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
     
     
-        
-<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
-
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
     
     
-        
-<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
-
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
     
     
     
     
 
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+</head>
 
 <body>
     <div id="container">
@@ -150,9 +135,7 @@
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
 })(window);
 </script>
-
 <script src="/js/insight.js"></script>
-
 
 </div>
         </div>
@@ -219,7 +202,7 @@
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/nzbget/" rel="tag">nzbget</a>, <a class="tag-link-link" href="/tags/usenet/" rel="tag">usenet</a>
+        <a class="tag-link" href="/tags/nzbget/">nzbget</a>, <a class="tag-link" href="/tags/usenet/">usenet</a>
     </div>
 
                     </div>
@@ -230,14 +213,14 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>I’m limited to about 80MB/s on downloads on my VPC at <a target="_blank" rel="noopener" href="https://m.do.co/c/efe82c337904">Digital Ocean</a>, but I run <a target="_blank" rel="noopener" href="https://nzbget.net/">Nzbget</a> for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted to see if I could parallelize this and download multiple files at the same.  I use Sonarr for searching usenet for freely distributable training videos which then sends them to NZBget for downloading.  Since Sonarr can send multiple files to nzbget which get queued up, I figured I can reduce the queue by downloading them at the same time.</p>
-<p>Using <a target="_blank" rel="noopener" href="https://www.ansible.com">Ansible</a> and <a target="_blank" rel="noopener" href="https://terraform.io">Terraform</a> (devops automation tools), I can spin up VPC on demand, provision them, configure them as nzbget download nodes and then destroy the instances when complete.</p>
+            <p>I’m limited to about 80MB/s on downloads on my VPC at <a href="https://m.do.co/c/efe82c337904">Digital Ocean</a>, but I run <a href="https://nzbget.net/">Nzbget</a> for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted to see if I could parallelize this and download multiple files at the same.  I use Sonarr for searching usenet for freely distributable training videos which then sends them to NZBget for downloading.  Since Sonarr can send multiple files to nzbget which get queued up, I figured I can reduce the queue by downloading them at the same time.</p>
+<p>Using <a href="https://www.ansible.com">Ansible</a> and <a href="https://terraform.io">Terraform</a> (devops automation tools), I can spin up VPC on demand, provision them, configure them as nzbget download nodes and then destroy the instances when complete.</p>
 <a id="more"></a>
-<p>The instances all run the same nzbget config and the instances use haproxy for round-robin distribution.  I will probably change this to <a target="_blank" rel="noopener" href="https://www.consul.io/">Consul</a>, but I just wanted something quick so I used a basic haproxy config.</p>
+<p>The instances all run the same nzbget config and the instances use haproxy for round-robin distribution.  I will probably change this to <a href="https://www.consul.io/">Consul</a>, but I just wanted something quick so I used a basic haproxy config.</p>
 <p>Terraform builds 4 nzbget, 1 haproxy, and 1 ELK instance.  It configures a VIP which I point Sonarr to.  Here’s the terraform config that builds an nzbget server:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">resource &quot;digitalocean_droplet&quot; &quot;nzbget1&quot; &#123;s</span><br><span class="line">    image &#x3D; &quot;centos-7-x64&quot;</span><br><span class="line">    name &#x3D; &quot;nzbget1&quot;</span><br><span class="line">    tags &#x3D; [&quot;nzbget&quot;]</span><br><span class="line">    region &#x3D; &quot;nyc1&quot;</span><br><span class="line">    size &#x3D; &quot;2gb&quot;</span><br><span class="line">    private_networking &#x3D; true</span><br><span class="line">    ssh_keys &#x3D; [</span><br><span class="line">      &quot;$&#123;var.ssh_fingerprint&#125;&quot;</span><br><span class="line">    ]</span><br><span class="line">connection &#123;</span><br><span class="line">      user &#x3D; &quot;root&quot;</span><br><span class="line">      type &#x3D; &quot;ssh&quot;</span><br><span class="line">      private_key &#x3D; &quot;$&#123;file(var.pvt_key)&#125;&quot;</span><br><span class="line">      timeout &#x3D; &quot;2m&quot;</span><br><span class="line">&#125;</span><br><span class="line">provisioner &quot;remote-exec&quot; &#123;</span><br><span class="line">    inline &#x3D; [</span><br><span class="line">      &quot;export PATH&#x3D;$PATH:&#x2F;usr&#x2F;bin&quot;,</span><br><span class="line">      &quot;sudo yum -y install epel-release&quot;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Here is a terraform play to provision 6 new hosts (1 Elasticsearch, 1 HAproxy and 4 Nzbget nodes):</p>
-<p><a target="_blank" rel="noopener" href="https://showterm.io/c6234e7009125e5e46590#fast"><img src="/images/terraform_terminal.png" width="600" alt="Click here to watch terraform build the instances"></a></p>
+<p><a href="https://showterm.io/c6234e7009125e5e46590#fast"><img src="/images/terraform_terminal.png" width="600" alt="Click here to watch terraform build the instances"></a></p>
 <p>I run a script which takes the IPs/node names from the terraform output and updates my local /etc/hosts file, my ansible hosts file, the haproxy.cfg.j2 ansible template and my ssh_config file (optional, for convenience).</p>
 <img src="/images/nzbget_digitalocean.png" width="600" alt="A few minutes later droplets are available and ready.">
 
@@ -245,8 +228,8 @@
 <p>Here is the ansible playbook that configuress the nzbget instances:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;env ansible-playbook</span><br><span class="line">---</span><br><span class="line">- hosts: all</span><br><span class="line">  gather_facts: yes</span><br><span class="line">  become: yes</span><br><span class="line"></span><br><span class="line">  tasks:</span><br><span class="line">    - name: TASK | Create usenet group</span><br><span class="line">      group:</span><br><span class="line">        name: usenet</span><br><span class="line">        state: present</span><br><span class="line"></span><br><span class="line">    - name: TASK | Create usenet user</span><br><span class="line">      user:</span><br><span class="line">        name: usenet</span><br><span class="line">        shell: &#x2F;bin&#x2F;bash</span><br><span class="line">        groups: usenet</span><br><span class="line">        append: yes</span><br><span class="line">        password: *** REMOVED ***</span><br><span class="line">        update_password: on_create</span><br><span class="line"></span><br><span class="line">    - name: TASK | Create &#x2F;apps directory</span><br><span class="line">      file:</span><br><span class="line">        path: &#x2F;apps</span><br><span class="line">        state: directory</span><br><span class="line">        owner: usenet</span><br><span class="line">        group: usenet</span><br><span class="line">        mode: 0755</span><br><span class="line"></span><br><span class="line">    - name: TASK | Create &#x2F;apps&#x2F;data&#x2F;nzbget directory</span><br><span class="line">      file:</span><br><span class="line">        path: &#x2F;apps&#x2F;data&#x2F;nzbget</span><br><span class="line">        state: directory</span><br><span class="line">        owner: usenet</span><br><span class="line">        group: usenet</span><br><span class="line">        mode: 0755</span><br><span class="line"></span><br><span class="line">    - name: TASK | Install EPEL Repo</span><br><span class="line">      action: &gt;</span><br><span class="line">        yum name&#x3D;epel-release state&#x3D;present update_cache&#x3D;yes</span><br><span class="line"></span><br><span class="line">    - name: TASK | Install packages</span><br><span class="line">      action: &gt;</span><br><span class="line">        yum name&#x3D;&#123;&#123; item &#125;&#125; state&#x3D;present update_cache&#x3D;yes</span><br><span class="line">      with_items:</span><br><span class="line">        - vim</span><br><span class="line">        - git</span><br><span class="line">        - mlocate</span><br><span class="line">        - par2cmdline</span><br><span class="line">        - p7zip</span><br><span class="line">        - unzip</span><br><span class="line">        - tar</span><br><span class="line">        - gcc</span><br><span class="line">        - python-feedparser</span><br><span class="line">        - python-configobj</span><br><span class="line">        - python-cheetah</span><br><span class="line">        - python-dbus</span><br><span class="line">        - python-devel</span><br><span class="line">        - screen</span><br><span class="line">        - vim</span><br><span class="line">        - htop</span><br><span class="line">        - iftop</span><br><span class="line">        - bind-utils</span><br><span class="line">        - tree</span><br><span class="line">        - jq</span><br><span class="line">        - telnet</span><br><span class="line">        - lsof</span><br><span class="line">        - tcpdump</span><br><span class="line">        - nload</span><br><span class="line">        </span><br><span class="line">    - name: TASK | Install unrar</span><br><span class="line">      yum:</span><br><span class="line">        name: ftp:&#x2F;&#x2F;rpmfind.net&#x2F;linux&#x2F;dag&#x2F;redhat&#x2F;el7&#x2F;en&#x2F;x86_64&#x2F;dag&#x2F;RPMS&#x2F;unrar-5.0.3-1.el7.rf.x86_64.rpm</span><br><span class="line">        state: present</span><br><span class="line"></span><br><span class="line">    - name: TASK | Install yenc</span><br><span class="line">      yum:</span><br><span class="line">        name: https:&#x2F;&#x2F;archives.fedoraproject.org&#x2F;pub&#x2F;archive&#x2F;fedora&#x2F;linux&#x2F;releases&#x2F;22&#x2F;Everything&#x2F;x86_64&#x2F;os&#x2F;Packages&#x2F;p&#x2F;python-yenc-0.4.0-4.fc22.x86_64.rpm</span><br><span class="line">        state: present</span><br><span class="line"></span><br><span class="line">    - name: TASK | Change owner of Nzbget to usenet</span><br><span class="line">      file:</span><br><span class="line">        path: &#x2F;apps</span><br><span class="line">        state: directory</span><br><span class="line">        owner: usenet</span><br><span class="line">        group: usenet</span><br><span class="line">        mode: 0755</span><br><span class="line"></span><br><span class="line">    - name: TASK | Install systemd unit file for Nzbget</span><br><span class="line">      template: src&#x3D;&quot;templates&#x2F;nzbget.service.j2&quot; dest&#x3D;&quot;&#x2F;etc&#x2F;systemd&#x2F;system&#x2F;nzbget.service&quot; mode&#x3D;0644</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    - name: TASK | Copy Nzbget config</span><br><span class="line">      template: src&#x3D;&quot;templates&#x2F;nzbget.conf.j2&quot; dest&#x3D;&quot;&#x2F;apps&#x2F;nzbget&#x2F;nzbget.conf&quot; mode&#x3D;0644</span><br><span class="line"></span><br><span class="line">    - name: TASK | Enable and start Nzbget</span><br><span class="line">      systemd:</span><br><span class="line">        name: nzbget</span><br><span class="line">        enabled: yes</span><br><span class="line">        state: started</span><br><span class="line"></span><br><span class="line">    - name: TASK | Install filebeat</span><br><span class="line">      yum: </span><br><span class="line">        name: https:&#x2F;&#x2F;artifacts.elastic.co&#x2F;downloads&#x2F;beats&#x2F;filebeat&#x2F;filebeat-5.6.2-x86_64.rpm</span><br><span class="line">        state: present</span><br><span class="line">        update_cache: yes</span><br><span class="line"></span><br><span class="line">    - name: TASK | Copy filebeat config file</span><br><span class="line">      template: src&#x3D;&quot;templates&#x2F;filebeat.yml.j2&quot; dest&#x3D;&quot;&#x2F;etc&#x2F;filebeat&#x2F;filebeat.yml&quot; mode&#x3D;0644</span><br><span class="line"></span><br><span class="line">    - name: TASK | Enable and start filebeat</span><br><span class="line">      systemd:</span><br><span class="line">        name: filebeat</span><br><span class="line">        enabled: yes</span><br><span class="line">        state: restarted</span><br></pre></td></tr></table></figure>
 
-<p><strong>Next steps</strong><br>The next part of this post will be automatically provisioning a <a target="_blank" rel="noopener" href="https://m.do.co/c/efe82c337904">Digital Ocean</a> volume and setting it up as an NFS share.  Then I can mount the volume on all of the nzbget nodes for centralized storage.  Since I pay by the minute for the VPC instances, I want to be able to quickly provision them, download as much as I can as quickly as I can and then destroy the infrastructure.  I’ll keep the volume around, but I can destroy the nzbget downloaders once they’ve finished their queues.<br><a target="_blank" rel="noopener" href="//www.reddit.com/submit?url=https%3A%2F%2Fchrisbergeron.com%2F2017%2F10%2F29%2Fhigh_performance_nzbget%2F"><img src="//www.redditstatic.com/spreddit8.gif" alt="submit to reddit" border="0" /></p>
-<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><a target="_blank" rel="noopener" href="https://terraform.io"><img src="/images/tech/terraform.png" width="80" height="80" alt="Terraform"></a></td><td><a target="_blank" rel="noopener" href="https://www.ansible.com"><img src="/images/tech/ansible.png" width="80" height="80" alt="Ansible"></a></td><td><a target="_blank" rel="noopener" href="https://nzbget.net"><img src="/images/tech/nzbget.png" width="80" height="80" alt="Nzbget"></a></td><td><a target="_blank" rel="noopener" href="https://www.elastic.co/"><img src="/images/tech/elastic.png" width="80" height="80" alt="Elasticsearch"></a></td><td><a target="_blank" rel="noopener" href="https://sonarr.tv/"><img src="/images/tech/sonarr.png" width="80" height="80" alt="Sonarr"></a></td></tr></table>
+<p><strong>Next steps</strong><br>The next part of this post will be automatically provisioning a <a href="https://m.do.co/c/efe82c337904">Digital Ocean</a> volume and setting it up as an NFS share.  Then I can mount the volume on all of the nzbget nodes for centralized storage.  Since I pay by the minute for the VPC instances, I want to be able to quickly provision them, download as much as I can as quickly as I can and then destroy the infrastructure.  I’ll keep the volume around, but I can destroy the nzbget downloaders once they’ve finished their queues.<br><a href="//www.reddit.com/submit?url=https%3A%2F%2Fchrisbergeron.com%2F2017%2F10%2F29%2Fhigh_performance_nzbget%2F"><img src="//www.redditstatic.com/spreddit8.gif" alt="submit to reddit" border="0" /></p>
+<h3 id="Technology-used"><a href="#Technology-used" class="headerlink" title="Technology used:"></a>Technology used:</h3><table><tr><td><a href="https://terraform.io"><img src="/images/tech/terraform.png" width="80" height="80" alt="Terraform"></a></td><td><a href="https://www.ansible.com"><img src="/images/tech/ansible.png" width="80" height="80" alt="Ansible"></a></td><td><a href="https://nzbget.net"><img src="/images/tech/nzbget.png" width="80" height="80" alt="Nzbget"></a></td><td><a href="https://www.elastic.co/"><img src="/images/tech/elastic.png" width="80" height="80" alt="Elasticsearch"></a></td><td><a href="https://sonarr.tv/"><img src="/images/tech/sonarr.png" width="80" height="80" alt="Sonarr"></a></td></tr></table>
 
         
         </div>
@@ -256,7 +239,7 @@
 
 
     <div class="a2a_kit a2a_default_style">
-    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share">Share</a>
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
     <span class="a2a_divider"></span>
     <a class="a2a_button_facebook"></a>
     <a class="a2a_button_twitter"></a>
@@ -347,7 +330,7 @@
     
         <section id="comments">
     <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 </section>
     
@@ -485,7 +468,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/4G/" rel="tag">4G</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LTE/" rel="tag">LTE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/alexa/" rel="tag">alexa</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aluminum/" rel="tag">aluminum</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/annotations/" rel="tag">annotations</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ansible/" rel="tag">ansible</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aspire/" rel="tag">aspire</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/" rel="tag">bash</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carputer/" rel="tag">carputer</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cloudinary/" rel="tag">cloudinary</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/comma-ai/" rel="tag">comma.ai</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/curl/" rel="tag">curl</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/das/" rel="tag">das</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashboard/" rel="tag">dashboard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashboard-linux/" rel="tag">dashboard linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashpc/" rel="tag">dashpc</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashwerks/" rel="tag">dashwerks</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dell/" rel="tag">dell</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deluge/" rel="tag">deluge</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/democrats-republicans/" rel="tag">democrats, republicans</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/devops/" rel="tag">devops</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/digital-ocean/" rel="tag">digital ocean</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dns/" rel="tag">dns</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dnsmasq/" rel="tag">dnsmasq</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/elasticsearch/" rel="tag">elasticsearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/elderly/" rel="tag">elderly</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ethanol/" rel="tag">ethanol</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fuel/" rel="tag">fuel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/furnace/" rel="tag">furnace</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/generator/" rel="tag">generator</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/grafana/" rel="tag">grafana</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/home-improvement/" rel="tag">home improvement</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hypermiling/" rel="tag">hypermiling</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/influxdb/" rel="tag">influxdb</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/" rel="tag">interview</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inxi/" rel="tag">inxi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/" rel="tag">ios</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iphone/" rel="tag">iphone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ipmi/" rel="tag">ipmi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kibana/" rel="tag">kibana</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lift-chair/" rel="tag">lift chair</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mariadb/" rel="tag">mariadb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/metalcasting/" rel="tag">metalcasting</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monitorr/" rel="tag">monitorr</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nas/" rel="tag">nas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/netgear/" rel="tag">netgear</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nzbget/" rel="tag">nzbget</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/panda/" rel="tag">panda</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pfsense/" rel="tag">pfsense</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/" rel="tag">php</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pihole/" rel="tag">pihole</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plex/" rel="tag">plex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prometheus/" rel="tag">prometheus</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/r710/" rel="tag">r710</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberry-pi/" rel="tag">raspberry pi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sabnzbd/" rel="tag">sabnzbd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sas/" rel="tag">sas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/showterm/" rel="tag">showterm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/supermicro/" rel="tag">supermicro</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/systemd/" rel="tag">systemd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telegraf/" rel="tag">telegraf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telematics/" rel="tag">telematics</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/usenet/" rel="tag">usenet</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webhooks/" rel="tag">webhooks</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/4G/">4G</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LTE/">LTE</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/alexa/">alexa</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aluminum/">aluminum</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/annotations/">annotations</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ansible/">ansible</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aspire/">aspire</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/">bash</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/carputer/">carputer</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cloudinary/">cloudinary</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/comma-ai/">comma.ai</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/curl/">curl</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/das/">das</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashboard/">dashboard</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashboard-linux/">dashboard linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashpc/">dashpc</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dashwerks/">dashwerks</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dell/">dell</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deluge/">deluge</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/democrats-republicans/">democrats, republicans</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/devops/">devops</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/digital-ocean/">digital ocean</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dns/">dns</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dnsmasq/">dnsmasq</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/elasticsearch/">elasticsearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/elderly/">elderly</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ethanol/">ethanol</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fuel/">fuel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/furnace/">furnace</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/generator/">generator</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/grafana/">grafana</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/home-improvement/">home improvement</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hypermiling/">hypermiling</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/influxdb/">influxdb</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/">interview</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inxi/">inxi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ios/">ios</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iphone/">iphone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ipmi/">ipmi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kibana/">kibana</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lift-chair/">lift chair</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mariadb/">mariadb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/metalcasting/">metalcasting</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monitorr/">monitorr</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nas/">nas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/netgear/">netgear</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nzbget/">nzbget</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/panda/">panda</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pfsense/">pfsense</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pihole/">pihole</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plex/">plex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prometheus/">prometheus</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/r710/">r710</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberry-pi/">raspberry pi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sabnzbd/">sabnzbd</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sas/">sas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/showterm/">showterm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/supermicro/">supermicro</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/systemd/">systemd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telegraf/">telegraf</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telematics/">telematics</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/usenet/">usenet</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webhooks/">webhooks</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -506,19 +489,19 @@
             <ul>
                 
                     <li>
-                        <a target="_blank" rel="noopener" href="https://github.com/chrisbergeron/">Github Repository</a>
+                        <a href="https://github.com/chrisbergeron/">Github Repository</a>
                     </li>
                 
                     <li>
-                        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+                        <a href="https://hexo.io/">Hexo</a>
                     </li>
                 
                     <li>
-                        <a target="_blank" rel="noopener" href="https://consul.io">Consul</a>
+                        <a href="https://consul.io">Consul</a>
                     </li>
                 
                     <li>
-                        <a target="_blank" rel="noopener" href="https://terraform.io">Terraform</a>
+                        <a href="https://terraform.io">Terraform</a>
                     </li>
                 
             </ul>
@@ -536,7 +519,7 @@
     <div class="outer">
         <div id="footer-info" class="inner">
             &copy; 2020 Chris Bergeron<br>
-            Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a target="_blank" rel="noopener" href="https://github.com/ppoffice">PPOffice</a>
+            Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice">PPOffice</a>
         </div>
     </div>
 </footer>
@@ -561,47 +544,25 @@
 
 
     
-        
-<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
-
-        
-<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
-
-        
-<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
-
-        
-<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
-
-        
-<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
-
-        
-<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
-
-        
-<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
-
-        
-<script src="/libs/lightgallery/js/lg-share.min.js"></script>
-
-        
-<script src="/libs/lightgallery/js/lg-video.min.js"></script>
-
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
     
     
-        
-<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
-
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
     
     
 
 
 
 <!-- Custom Scripts -->
-
 <script src="/js/main.js"></script>
-
 
     </div>
 </body>
