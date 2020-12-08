@@ -95,11 +95,11 @@
     
     <item>
       <title>Creating Grafana Annotations with Webhooks</title>
-      <link>https://chrisbergeron.com/2020/03/08/creating_grafanan_annotations_with_webhooks/</link>
-      <guid>https://chrisbergeron.com/2020/03/08/creating_grafanan_annotations_with_webhooks/</guid>
+      <link>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</link>
+      <guid>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</guid>
       <pubDate>Sun, 08 Mar 2020 23:13:25 GMT</pubDate>
       
-      <description>&lt;p&gt;Grafana is a great tool for visualizing data.&lt;br&gt;&lt;img src=&quot;/images/showcase_visualize.jpg&quot; alt=&quot;Grafana&quot;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Grafana is a great tool for visualizing data.&lt;br&gt;&lt;img src=&quot;https://chrisbergeron.com/images/showcase_visualize.jpg&quot; alt=&quot;Grafana&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;In this tutorial I’ll be putting annotations, or comments on points of interest overlayed on top of graph panels.&lt;/strong&gt;</description>
       
       
@@ -121,7 +121,7 @@
       <category domain="https://chrisbergeron.com/tags/webhooks/">webhooks</category>
       
       
-      <comments>https://chrisbergeron.com/2020/03/08/creating_grafanan_annotations_with_webhooks/#disqus_thread</comments>
+      <comments>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/#disqus_thread</comments>
       
     </item>
     

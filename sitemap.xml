@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</loc>
+    
+    <lastmod>2020-12-08T17:02:11.933Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote/</loc>
     
     <lastmod>2020-12-08T16:59:26.054Z</lastmod>
@@ -103,13 +110,6 @@
     <loc>https://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
     
     <lastmod>2020-04-03T06:49:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2020/03/08/creating_grafanan_annotations_with_webhooks/</loc>
-    
-    <lastmod>2020-03-10T02:59:44.000Z</lastmod>
     
   </url>
   
