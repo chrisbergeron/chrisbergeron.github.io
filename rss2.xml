@@ -15,8 +15,32 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 21 Nov 2020 05:54:14 GMT</pubDate>
+    <pubDate>Mon, 30 Nov 2020 04:02:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Disassembling a DirecTV RC Remote</title>
+      <link>https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote/</link>
+      <guid>https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote/</guid>
+      <pubDate>Sun, 29 Nov 2020 23:35:11 GMT</pubDate>
+      
+      <description>&lt;p&gt;&lt;a href=&quot;#Short-Version&quot;&gt;Click here if you want the short version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;While visiting with family, I came across an old DirecTV remote that wasn’t working entirely.  Some buttons wouldn’t register even after replacing the batteries, so I figured a quick cleaning was in order.  I snapped a few pictures of the disassembly so they might be useful to others (you).&lt;br&gt;</description>
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/electronics/">electronics</category>
+      
+      <category domain="https://chrisbergeron.com/tags/directv/">directv</category>
+      
+      
+      <comments>https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Mcombo 7040 Lift Chair Manual</title>
@@ -488,8 +512,7 @@
       <guid>https://chrisbergeron.com/2017/12/29/pihole_update_dns/</guid>
       <pubDate>Fri, 29 Dec 2017 14:46:25 GMT</pubDate>
       
-      <description>&lt;p&gt;I wrote a very simple little playbook for updating my local DNS records for my piholes.  For me it’s easier than manually ssh’ing onto each node and editing a file and restarting the service.  Here’s the playbook:&lt;/p&gt;
-&lt;h3 id=&quot;update-dns-yml&quot;&gt;&lt;a href=&quot;#update-dns-yml&quot; class=&quot;headerlink&quot; title=&quot;update_dns.yml&quot;&gt;&lt;/a&gt;update_dns.yml&lt;/h3&gt;&lt;!-- HTML generated using hilite.me --&gt;&lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;&lt;span style=&quot;color: #408080; font-style: italic&quot;&gt;#!/usr/bin/env ansible-playbook&lt;/span&gt;&lt;br&gt;&lt;br&gt;- hosts: ns-01, ns-02&lt;br&gt;  gather_facts: yes&lt;br&gt;  sudo: yes&lt;br&gt;  tasks:&lt;br&gt;    - name: TASK | Copy dnsmasq config for cbnet&lt;br&gt;      template: src=templates/02-localnet.conf.j2 dest=/etc/dnsmasq.d/02-localnet.conf force=yes&lt;br&gt;    - name: TASK | Copy updated dns file&lt;br&gt;      template: src=templates/localnet.list.j2 dest=/etc/pihole/localnet.list force=yes&lt;br&gt;    - name: TASK | Restart dnsmasq&lt;br&gt;      service:&lt;br&gt;        name: dnsmasq&lt;br&gt;        state: restarted&lt;br&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;This playbook adds a DNSmasq config file for my local network and copies a template file (dnsmasq include file for my local network) and restarts DNSmasq.  Here is the template (sample):&lt;br&gt;</description>
+      <description>&lt;p&gt;I wrote a very simple little playbook for updating my local DNS records for my piholes.  For me it’s easier than manually sshing onto each node and editing a file and restarting the service.  Here’s the playbook:&lt;br&gt;</description>
       
       
       
