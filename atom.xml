@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2020-12-08T23:26:00.035Z</updated>
+  <updated>2020-12-08T16:59:26.054Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>My NextRocketLaunch MagicMirror Module</title>
-    <link href="https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/"/>
-    <id>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</id>
-    <published>2020-12-04T17:07:39.000Z</published>
-    <updated>2020-12-08T23:26:00.035Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;I started exploring MagicMirror recently and I find it incredibly cool and useful.  After familiarizing myself with it, I decided to</summary>
-        
-      
-    
-    
-    
-    <category term="Software" scheme="https://chrisbergeron.com/categories/Software/"/>
-    
-    
-    <category term="software" scheme="https://chrisbergeron.com/tags/software/"/>
-    
-    <category term="magicmirror" scheme="https://chrisbergeron.com/tags/magicmirror/"/>
-    
-  </entry>
   
   <entry>
     <title>Disassembling a DirecTV RC Remote</title>

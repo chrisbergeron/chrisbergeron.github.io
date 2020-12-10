@@ -15,37 +15,8 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 08 Dec 2020 23:26:00 GMT</pubDate>
+    <pubDate>Tue, 08 Dec 2020 16:59:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>My NextRocketLaunch MagicMirror Module</title>
-      <link>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</link>
-      <guid>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</guid>
-      <pubDate>Fri, 04 Dec 2020 17:07:39 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;I started exploring MagicMirror recently and I find it incredibly cool and useful.  After familiarizing myself with it, I decided to</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://chrisbergeron.com/categories/Software/">Software</category>
-      
-      
-      <category domain="https://chrisbergeron.com/tags/software/">software</category>
-      
-      <category domain="https://chrisbergeron.com/tags/magicmirror/">magicmirror</category>
-      
-      
-      <comments>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/#disqus_thread</comments>
-      
-    </item>
     
     <item>
       <title>Disassembling a DirecTV RC Remote</title>
