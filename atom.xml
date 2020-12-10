@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2020-12-08T16:59:26.054Z</updated>
+  <updated>2020-12-08T23:26:00.035Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My NextRocketLaunch MagicMirror Module</title>
+    <link href="https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/"/>
+    <id>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</id>
+    <published>2020-12-04T17:07:39.000Z</published>
+    <updated>2020-12-08T23:26:00.035Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;I started exploring MagicMirror recently and I find it incredibly cool and useful.  After familiarizing myself with it, I decided to</summary>
+        
+      
+    
+    
+    
+    <category term="Software" scheme="https://chrisbergeron.com/categories/Software/"/>
+    
+    
+    <category term="software" scheme="https://chrisbergeron.com/tags/software/"/>
+    
+    <category term="magicmirror" scheme="https://chrisbergeron.com/tags/magicmirror/"/>
+    
+  </entry>
   
   <entry>
     <title>Disassembling a DirecTV RC Remote</title>
@@ -197,11 +224,11 @@
     <link href="https://chrisbergeron.com/2018/11/10/grafana_dashboards/"/>
     <id>https://chrisbergeron.com/2018/11/10/grafana_dashboards/</id>
     <published>2018-11-10T20:57:00.000Z</published>
-    <updated>2018-11-10T21:52:13.000Z</updated>
+    <updated>2020-12-08T17:04:41.512Z</updated>
     
     
     <summary type="html">&lt;p&gt;Grafana is a really great tool for visualizing data.  In my homelab, I have obviously have a lot of data so what better than to use than the right tool for the job.  Below, you can find some screenshots of my dashboards.  I use a raspberry pi that just runs a full screen browser for viewing the dashboard slideshow in addition to a few other glance boards (DAKBoard, Monitorr, et al).&lt;/p&gt;
-&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1541879171/Dashboards/VMWare%20Cluster%20Health.png&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/c_thumb,w_200,g_face/v1541879171/Dashboards/VMWare%20Cluster%20Health.png&quot; width=&quot;200&quot; alt=&quot;VMWare Cluster Health Dashboard&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;br&gt;&lt;td&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1541879169/Dashboards/ESXI%20Datastores.png&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/c_thumb,w_200,g_face/v1541879169/Dashboards/ESXI%20Datastores.png&quot; width=&quot;200&quot; alt=&quot;ESXi Datastores Overview&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br&gt;&lt;strong&gt;Here’s the Gallery&lt;/strong&gt;</summary>
+&lt;table&gt;&lt;br&gt;  &lt;tr&gt;&lt;br&gt;    &lt;td&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1541879171/Dashboards/VMWare%20Cluster%20Health.png&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/c_thumb,w_200,g_face/v1541879171/Dashboards/VMWare%20Cluster%20Health.png&quot; width=&quot;200&quot; alt=&quot;VMWare Cluster Health Dashboard&quot;&gt;&lt;/a&gt;&lt;br&gt;    &lt;/td&gt;&lt;br&gt;    &lt;td&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1541879169/Dashboards/ESXI%20Datastores.png&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/c_thumb,w_200,g_face/v1541879169/Dashboards/ESXI%20Datastores.png&quot; width=&quot;200&quot; alt=&quot;ESXi Datastores Overview&quot;&gt;&lt;/a&gt;&lt;br&gt;    &lt;/td&gt;&lt;br&gt;  &lt;/tr&gt;&lt;br&gt;&lt;/table&gt;&lt;br&gt;&lt;strong&gt;Here’s the Gallery&lt;/strong&gt;</summary>
     
     
     

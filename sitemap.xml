@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</loc>
+    
+    <lastmod>2020-12-08T23:26:00.035Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/11/10/grafana_dashboards/</loc>
+    
+    <lastmod>2020-12-08T17:04:41.512Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</loc>
     
     <lastmod>2020-12-08T17:02:11.933Z</lastmod>
@@ -124,13 +138,6 @@
     <loc>https://chrisbergeron.com/2019/02/26/deluge_dashboard/</loc>
     
     <lastmod>2019-02-26T05:20:15.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2018/11/10/grafana_dashboards/</loc>
-    
-    <lastmod>2018-11-10T21:52:13.000Z</lastmod>
     
   </url>
   
