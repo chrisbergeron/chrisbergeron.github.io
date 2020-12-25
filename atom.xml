@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2020-12-25T01:24:16.227Z</updated>
+  <updated>2020-12-25T01:28:53.251Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/"/>
     <id>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</id>
     <published>2020-12-24T23:36:08.000Z</published>
-    <updated>2020-12-25T01:24:16.227Z</updated>
+    <updated>2020-12-25T01:28:53.251Z</updated>
     
     
-    <summary type="html">&lt;p&gt;If you’re having trouble with Hexo not generating files, check for symbolic links in the &lt;code&gt;source&lt;/code&gt; directory tree:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;find ./ -&lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt; l -&lt;span class=&quot;built_in&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt; ! -e &amp;#123;&amp;#125; \; -&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;If you’re having trouble with Hexo not generating files, check for &lt;strong&gt;broken symbolic links&lt;/strong&gt; in the &lt;code&gt;source&lt;/code&gt; directory tree:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;find ./ -&lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt; l -&lt;span class=&quot;built_in&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt; ! -e &amp;#123;&amp;#125; \; -&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;</summary>
     
     
     
@@ -40,10 +40,10 @@
     <link href="https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/"/>
     <id>https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/</id>
     <published>2020-12-24T21:13:25.000Z</published>
-    <updated>2020-12-25T01:19:38.948Z</updated>
+    <updated>2020-12-25T01:25:15.595Z</updated>
     
     
-    <summary type="html">&lt;p&gt;There are several existing resources that document strategies for migrating infrastructure to code.  This post is about my experience(s) - the reality, the challenges and best practices.&lt;/p&gt;
+    <summary type="html">&lt;p&gt;There are several existing resources that document strategies for migrating infrastructure to code.  This post is about my experiences based on the reality, the challenges and best practices.&lt;/p&gt;
 &lt;h3 id=&quot;The-Setting&quot;&gt;&lt;a href=&quot;#The-Setting&quot; class=&quot;headerlink&quot; title=&quot;The Setting&quot;&gt;&lt;/a&gt;The Setting&lt;/h3&gt;&lt;p&gt;You’re in charge of the infrastructure that the entire organization relies upon.  Your product is a 24/7 web application, service or destination.  The internet property is secure and five nines of uptime is expected.  During a meeting with Sr. Leadership, a directive comes down:  &lt;em&gt;“We’re moving to the cloud”&lt;/em&gt;.&lt;br&gt;</summary>
     
     
