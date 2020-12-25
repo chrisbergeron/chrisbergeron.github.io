@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</loc>
+    
+    <lastmod>2020-12-25T01:23:19.102Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/</loc>
+    
+    <lastmod>2020-12-25T01:19:38.948Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2018/11/10/grafana_dashboards/</loc>
     
     <lastmod>2020-12-08T17:04:41.512Z</lastmod>

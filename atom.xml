@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2020-12-08T16:59:26.054Z</updated>
+  <updated>2020-12-25T01:23:19.102Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fixing Hexo Not Generating Files</title>
+    <link href="https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/"/>
+    <id>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</id>
+    <published>2020-12-24T23:36:08.000Z</published>
+    <updated>2020-12-25T01:23:19.102Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;If you’re having trouble with Hexo not generating files, check for symbolic links in the &lt;code&gt;source&lt;/code&gt; directory tree:&lt;br&gt;&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="software" scheme="https://chrisbergeron.com/categories/software/"/>
+    
+    
+    <category term="hexo" scheme="https://chrisbergeron.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Strategy for Migrating to Infrastructure as Code</title>
+    <link href="https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/"/>
+    <id>https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/</id>
+    <published>2020-12-24T21:13:25.000Z</published>
+    <updated>2020-12-25T01:19:38.948Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;There are several existing resources that document strategies for migrating infrastructure to code.  This post is about my experience(s) - the reality, the challenges and best practices.&lt;/p&gt;
+&lt;h3 id=&quot;The-Setting&quot;&gt;&lt;a href=&quot;#The-Setting&quot; class=&quot;headerlink&quot; title=&quot;The Setting&quot;&gt;&lt;/a&gt;The Setting&lt;/h3&gt;&lt;p&gt;You’re in charge of the infrastructure that the entire organization relies upon.  Your product is a 24/7 web application, service or destination.  The internet property is secure and five nines of uptime is expected.  During a meeting with Sr. Leadership, a directive comes down:  &lt;em&gt;“We’re moving to the cloud”&lt;/em&gt;.&lt;br&gt;</summary>
+    
+    
+    
+    <category term="devops" scheme="https://chrisbergeron.com/categories/devops/"/>
+    
+    
+    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
+    
+    <category term="architecture" scheme="https://chrisbergeron.com/tags/architecture/"/>
+    
+  </entry>
   
   <entry>
     <title>Disassembling a DirecTV RC Remote</title>
