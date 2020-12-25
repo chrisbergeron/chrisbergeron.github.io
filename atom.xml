@@ -40,7 +40,7 @@
     <link href="https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/"/>
     <id>https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/</id>
     <published>2020-12-24T21:13:25.000Z</published>
-    <updated>2020-12-25T01:35:26.536Z</updated>
+    <updated>2020-12-25T01:39:59.772Z</updated>
     
     
     <summary type="html">&lt;p&gt;There are several existing resources that document strategies for migrating infrastructure to code.  This post is about my experiences based on the reality, the challenges and best practices.&lt;/p&gt;
