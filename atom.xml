@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2020-12-25T01:28:53.251Z</updated>
+  <updated>2020-12-25T01:30:55.271Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/"/>
     <id>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</id>
     <published>2020-12-24T23:36:08.000Z</published>
-    <updated>2020-12-25T01:28:53.251Z</updated>
+    <updated>2020-12-25T01:30:55.271Z</updated>
     
     
-    <summary type="html">&lt;p&gt;If you’re having trouble with Hexo not generating files, check for &lt;strong&gt;broken symbolic links&lt;/strong&gt; in the &lt;code&gt;source&lt;/code&gt; directory tree:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;find ./ -&lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt; l -&lt;span class=&quot;built_in&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt; ! -e &amp;#123;&amp;#125; \; -&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;If you’re having trouble with Hexo not generating files, check for &lt;strong&gt;broken symbolic links&lt;/strong&gt; in the &lt;code&gt;source&lt;/code&gt; directory tree:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;find ./ -&lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt; l -&lt;span class=&quot;built_in&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt; ! -e &amp;#123;&amp;#125; \; -&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;</summary>
     
     
     
