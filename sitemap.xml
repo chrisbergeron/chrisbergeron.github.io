@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</loc>
+    <loc>https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/</loc>
     
-    <lastmod>2020-12-25T01:30:55.271Z</lastmod>
+    <lastmod>2020-12-25T01:35:26.536Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/</loc>
+    <loc>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</loc>
     
-    <lastmod>2020-12-25T01:25:15.595Z</lastmod>
+    <lastmod>2020-12-25T01:30:55.271Z</lastmod>
     
   </url>
   
