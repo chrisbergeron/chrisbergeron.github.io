@@ -15,7 +15,7 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 08 Feb 2021 03:02:30 GMT</pubDate>
+    <pubDate>Mon, 08 Feb 2021 03:03:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -24,14 +24,8 @@
       <guid>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</guid>
       <pubDate>Sun, 31 Jan 2021 03:25:11 GMT</pubDate>
       
-        
-        
-          
-          
       <description>&lt;p&gt;Watch local broadcast TV on Plex without an antenna.&lt;/p&gt;
-&lt;p&gt;Download locast2plex from this git repo:&lt;br&gt;&lt;figure class=&quot;highlight</description>
-          
-        
+&lt;p&gt;Download locast2plex from this git repo:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/tgorgdotcom/locast2plex.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Change ownership to your user&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chown -R pi:pi locast&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;python3 main.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;</description>
       
       
       

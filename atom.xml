@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2021-02-08T03:02:30.925Z</updated>
+  <updated>2021-02-08T03:03:12.027Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/"/>
     <id>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</id>
     <published>2021-01-31T03:25:11.000Z</published>
-    <updated>2021-02-08T03:02:30.925Z</updated>
+    <updated>2021-02-08T03:03:12.027Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;Watch local broadcast TV on Plex without an antenna.&lt;/p&gt;
-&lt;p&gt;Download locast2plex from this git repo:&lt;br&gt;&lt;figure class=&quot;highlight</summary>
-        
-      
+&lt;p&gt;Download locast2plex from this git repo:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/tgorgdotcom/locast2plex.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Change ownership to your user&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chown -R pi:pi locast&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;python3 main.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;</summary>
     
     
     
