@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2020-12-25T01:30:55.271Z</updated>
+  <updated>2021-01-31T03:32:10.131Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Locast Plex - Local TV on Plex with Raspberry Pi</title>
+    <link href="https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/"/>
+    <id>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</id>
+    <published>2021-01-31T03:25:11.000Z</published>
+    <updated>2021-01-31T03:32:10.131Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Watch local broadcast TV on Plex without an antenna.&lt;/p&gt;
+&lt;p&gt;Download locast2plex from this git repo:&lt;br&gt;&lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
+    
+    
+    <category term="plex, locast, live, tv" scheme="https://chrisbergeron.com/tags/plex-locast-live-tv/"/>
+    
+  </entry>
   
   <entry>
     <title>Fixing Hexo Not Generating Files</title>
@@ -284,7 +310,7 @@
     <link href="https://chrisbergeron.com/2018/10/27/monitorr/"/>
     <id>https://chrisbergeron.com/2018/10/27/monitorr/</id>
     <published>2018-10-27T17:43:00.000Z</published>
-    <updated>2020-10-21T17:56:12.543Z</updated>
+    <updated>2021-02-08T02:59:33.062Z</updated>
     
     
       
@@ -329,6 +355,25 @@
     <category term="pfsense" scheme="https://chrisbergeron.com/tags/pfsense/"/>
     
     <category term="telegraf" scheme="https://chrisbergeron.com/tags/telegraf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to Style Images With Markdown</title>
+    <link href="https://chrisbergeron.com/2018/08/13/formatting-markdown/"/>
+    <id>https://chrisbergeron.com/2018/08/13/formatting-markdown/</id>
+    <published>2018-08-14T02:38:17.000Z</published>
+    <updated>2021-01-21T21:02:24.764Z</updated>
+    
+    
+    <summary type="html">This post presents a variety of ways to format images with Markdown, from brute force to proprietary syntax extensions, unwise hacks, and everything in between.</summary>
+    
+    
+    <content src="https://chrisbergeron.com/assets/photo-1459767129954-1b1c1f9b9ace.webp" type="image"/>
+    
+    
+    <category term="Markdown" scheme="https://chrisbergeron.com/categories/Markdown/"/>
+    
     
   </entry>
   

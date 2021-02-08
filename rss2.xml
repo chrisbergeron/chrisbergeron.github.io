@@ -15,8 +15,36 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 25 Dec 2020 01:30:55 GMT</pubDate>
+    <pubDate>Sun, 31 Jan 2021 03:32:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Locast Plex - Local TV on Plex with Raspberry Pi</title>
+      <link>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</link>
+      <guid>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</guid>
+      <pubDate>Sun, 31 Jan 2021 03:25:11 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;Watch local broadcast TV on Plex without an antenna.&lt;/p&gt;
+&lt;p&gt;Download locast2plex from this git repo:&lt;br&gt;&lt;figure class=&quot;highlight</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/plex-locast-live-tv/">plex, locast, live, tv</category>
+      
+      
+      <comments>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Fixing Hexo Not Generating Files</title>
@@ -357,6 +385,27 @@
       
       
       <comments>https://chrisbergeron.com/2018/09/13/pfsense_grafana/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>How to Style Images With Markdown</title>
+      <link>https://chrisbergeron.com/2018/08/13/formatting-markdown/</link>
+      <guid>https://chrisbergeron.com/2018/08/13/formatting-markdown/</guid>
+      <pubDate>Tue, 14 Aug 2018 02:38:17 GMT</pubDate>
+      
+      <description>This post presents a variety of ways to format images with Markdown, from brute force to proprietary syntax extensions, unwise hacks, and everything in between.</description>
+      
+      
+      <enclosure url="https://chrisbergeron.com//assets/photo-1459767129954-1b1c1f9b9ace.webp" type="image"/>
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/Markdown/">Markdown</category>
+      
+      
+      
+      <comments>https://chrisbergeron.com/2018/08/13/formatting-markdown/#disqus_thread</comments>
       
     </item>
     
