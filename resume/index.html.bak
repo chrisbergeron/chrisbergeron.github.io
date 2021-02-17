@@ -2,18 +2,24 @@
 <!-- saved from url=(0029)https://holdingco.com/resume/ -->
 <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style type="text/css">
+.fa {
+color: #0099CC
+}
+</style>
   
   <title>Chris Bergeron's Resume</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="description" content="Chris Bergeron&#39;s Resume 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	              	 	  	 	 		 	        	   	              	 	        	 	 	 	 	 	 	     	 		Chris Bergeron&#39;s Resume">
+  <meta name="description" content="Chris Bergeron&#39;s Resume">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Chris Bergeron's Resume">
+<meta property="og:title" content="Chris Bergeron&#39;s Resume">
 <meta property="og:url" content="https://holdingco.com/resume/index.html">
-<meta property="og:site_name" content="Chris Bergeron's Resume">
-<meta property="og:description" content="Chris Bergeron&#39;s Resume 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	              	 	  	 	 		 	        	   	              	 	        	 	 	 	 	 	 	     	 		Chris Bergeron&#39;s Resume">
+<meta property="og:site_name" content="Chris Bergeron&#39;s Resume">
+<meta property="og:description" content="Chris Bergeron&#39;s Resume">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://holdingco.com/metronic/assets/pages/img/people/img1-small.jpg">
 <meta property="og:image" content="https://holdingco.com/metronic/assets/pages/img/people/img6-small.jpg">
@@ -300,7 +306,7 @@
 	</li>
 	
 	<li class="">
-	  <a href="https://chrisbergeron.com/projects/">Projects</a>
+	  <a href="https://holdingco.com/projects/">Projects</a>
 	</li>
 	
 	<li class="">
@@ -320,12 +326,7 @@
 <!-- Header END -->
 
   <div class="container">
-  <ul class="breadcrumb">
-    <li><a href="https://chrisbergeron.com/">Home</a></li>
-    <li class="active"></li>
-  </ul>
   <div class="main">
-    <h1></h1>
     
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -333,7 +334,6 @@
 
 <!--<![endif]-->
 
-	
 	<title>Chris Bergeron's Resume</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -394,7 +394,6 @@
 
 
 	<div class="main">
-		<h1>Chris Bergeron's Resume</h1>
     	<!-- BEGIN SIDEBAR & CONTENT -->
 		<div class="row margin-bottom-40">
   			<!-- BEGIN CONTENT -->
@@ -403,7 +402,8 @@
 					<div class="main">
 						<h3 id="SUMMARY"><a href="https://holdingco.com/resume/#SUMMARY" class="headerlink" title="SUMMARY"></a>SUMMARY</h3><p></p>IT Professional with over 25 years of experience including: Cloud, Infrastructure, Virtualization, Systems Administration, Network and DB Administration. Seeking an organization where I can contribute by building new infrastructure and optimizing existing infrastructure, preferably with a career path to a leadership role.<p></p>
 						<h3 id="EXPERIENCE"><a href="https://holdingco.com/resume/#EXPERIENCE" class="headerlink" title="EXPERIENCE"></a>EXPERIENCE</h3>
-						<h4 id="Senior-Linux-Infrastructure-Engineer-DevOps"><a href="https://holdingco.com/resume/#Senior-Linux-Infrastructure-Engineer-DevOps" class="headerlink" title="Senior Linux Infrastructure Engineer (DevOps)"></a>Senior Linux Infrastructure Engineer (DevOps)</h4><p><strong>RentPath</strong><em>May 2017 - August 2019, Atlanta, GA</em>
+						
+						<h4 id="Senior-Linux-Infrastructure-Engineer-DevOps"><a href="https://holdingco.com/resume/#Senior-Linux-Infrastructure-Engineer-DevOps" class="headerlink" title="Devops Architect"></a>Devops Architect</h4><p><strong>Orasi Software, Inc.</strong> • <em>October 2020 - Present, Atlanta, GA</em>
 						</p><ul>
 							<li>Performed complete migration of on-prem VMWare ESXi to Azure Cloud Infrastructure (multi region) via Terraform.<br>
 							</li><li>Created complete suite of Grafana dashboards for metrics analysis.<br>
@@ -413,6 +413,19 @@
 							</li><li>Performed deployment of application code to Production environments<br>
 							</li><li>Collaborated  with application developers, database admins on troubleshooting and optimizing the infrastructure.
 						</li></ul>
+						
+
+						<h4 id="Senior-Linux-Infrastructure-Engineer-DevOps"><a href="https://holdingco.com/resume/#Senior-Linux-Infrastructure-Engineer-DevOps" class="headerlink" title="Senior Linux Infrastructure Engineer (DevOps)"></a>Senior Linux Infrastructure Engineer (DevOps)</h4><p><strong>RentPath, Inc.</strong> • <em>May 2017 - August 2019, Atlanta, GA</em>
+						</p><ul>
+							<li>Performed complete migration of on-prem VMWare ESXi to Azure Cloud Infrastructure (multi region) via Terraform.<br>
+							</li><li>Created complete suite of Grafana dashboards for metrics analysis.<br>
+							</li><li>Wrote PHP backend webhooks for various integrations (Catchpoint, Slack, Pingdom).<br>
+							</li><li>Managed day to day operations to maintain the Production Operations infrastructure.<br>
+							</li><li>Performed DNS and CDN cutovers from CDNetworks / Dynect to Cloudflare.<br>
+							</li><li>Performed deployment of application code to Production environments<br>
+							</li><li>Collaborated  with application developers, database admins on troubleshooting and optimizing the infrastructure.
+						</li></ul>
+						
 						<h4 id="Linux-DevOps-Engineer"><a href="https://holdingco.com/resume/#Linux-DevOps-Engineer" class="headerlink" title="Linux DevOps Engineer"></a>Linux DevOps Engineer</h4><p><strong>Ionic Security</strong> • <em>June 2016 – March 2017, Atlanta, GA</em>
 						</p><ul>
 							<li>Responsible for the entire Production Operations environment in a team structure.<br>
@@ -426,7 +439,7 @@
 							</li><li>Managed VPCs in AWS and GCE clouds.<br>
 							</li><li>Resolved Jira (tickets) from any departments requiring the assistance of Production Operations.
 						</li></ul>
-						<h4 id="Senior-Linux-Systems-Administrator-3"><a href="https://holdingco.com/resume/#Senior-Linux-Systems-Administrator-3" class="headerlink" title="Senior Linux Systems Administrator 3"></a>Senior Linux Systems Administrator 3</h4><p><strong>Cogeco Peer 1 Hosting</strong><em>September 2009 – July 2015, Atlanta, GA</em>
+						<h4 id="Senior-Linux-Systems-Administrator-3"><a href="https://holdingco.com/resume/#Senior-Linux-Systems-Administrator-3" class="headerlink" title="Senior Linux Systems Administrator 3"></a>Senior Linux Systems Administrator 3</h4><p><strong>Cogeco Peer 1 Hosting</strong> • <em>September 2009 – July 2015, Atlanta, GA</em>
 							</p><ul>
 								<li>Promoted to this position in Jun of 2012.<br>
 								</li><li>I am the final escalation point for complex, non-routine technical challenges to our external customers.<br>
@@ -705,8 +718,7 @@
         <div class="row">
           <!-- BEGIN COPYRIGHT -->
           <div class="col-md-6 col-sm-6 padding-top-10">
-                  © 2020 Chris Bergeron<br>
- <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
+                  © 2021 Chris Bergeron<br>
           </div>
           <!-- END COPYRIGHT -->
 	  <!-- BEGIN SOCIAL -->
