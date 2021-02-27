@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2021-02-27T06:24:47.131Z</updated>
+  <updated>2021-02-27T06:25:58.929Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/"/>
     <id>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</id>
     <published>2021-02-27T02:25:10.000Z</published>
-    <updated>2021-02-27T06:24:47.131Z</updated>
+    <updated>2021-02-27T06:25:58.929Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;Bitcoin&quot;&gt;&lt;a href=&quot;#Bitcoin&quot; class=&quot;headerlink&quot; title=&quot;Bitcoin&quot;&gt;&lt;/a&gt;Bitcoin&lt;/h3&gt;&lt;center&gt;&lt;img src=&quot;/assets/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/armory-title-cb.png&quot; alt=&quot;Bitcoin Armory&quot;&gt;&lt;/center&gt;&lt;br&gt;The recent surge in crypto prices brought my old Bitcoin stash back to mind.  I decided to load up an old digital wallet to check it for consistency, but when I tried to load it, the software, Bitcoin Armory, wouldn’t run.  I’m running macOS Catalina 10.15.7, so I figured something changed during my miscellaneous software updates or upgrade from Mojave to Catalina.&lt;br&gt;</summary>
