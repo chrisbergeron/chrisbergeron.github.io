@@ -15,8 +15,33 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 08 Feb 2021 03:03:12 GMT</pubDate>
+    <pubDate>Sat, 27 Feb 2021 05:56:14 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Fixing Bitcoin Armory on macOS Catalina 10.15</title>
+      <link>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</link>
+      <guid>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</guid>
+      <pubDate>Sat, 27 Feb 2021 02:25:10 GMT</pubDate>
+      
+      <description>&lt;center&gt;&lt;img src=&quot;/assets/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/armory-title-cb.png&quot; alt=&quot;Bitcoin Armory&quot;&gt;&lt;/center&gt;&lt;br&gt;The recent surge in crypto prices brought my old Bitcoin stash back to mind.  I decided to load up an old digital wallet to check it for consistency, but when I tried to load it, the software, Bitcoin Armory, wouldn’t run.  I’m running macOS Catalina 10.15.7, so I figured something changed during my miscellaneous software updates or upgrade from Mojave to Catalina.&lt;br&gt;</description>
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/macos/">macos</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/bitcoin/">bitcoin</category>
+      
+      <category domain="https://chrisbergeron.com/tags/armory/">armory</category>
+      
+      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
+      
+      
+      <comments>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Locast Plex - Local TV on Plex with Raspberry Pi4</title>
