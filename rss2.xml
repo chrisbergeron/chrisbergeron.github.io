@@ -15,7 +15,7 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 27 Feb 2021 06:32:53 GMT</pubDate>
+    <pubDate>Sat, 27 Feb 2021 07:32:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -24,7 +24,9 @@
       <guid>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</guid>
       <pubDate>Sat, 27 Feb 2021 02:25:10 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;Bitcoin&quot;&gt;&lt;a href=&quot;#Bitcoin&quot; class=&quot;headerlink&quot; title=&quot;Bitcoin&quot;&gt;&lt;/a&gt;Bitcoin&lt;/h3&gt;&lt;center&gt;&lt;img src=&quot;/assets/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/armory-title-cb.png&quot; alt=&quot;Bitcoin Armory&quot;&gt;&lt;/center&gt;&lt;br&gt;The recent surge in crypto prices brought my old Bitcoin stash back to mind.  I decided to load up an old digital wallet to check it for consistency, but when I tried to load it, the software, Bitcoin Armory, wouldn’t run.  I’m running macOS Catalina 10.15.7, so I figured something changed during my miscellaneous software updates or upgrade from Mojave to Catalina.&lt;br&gt;&lt;br&gt;</description>
+      <description>&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/assets/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/armory-title-cb.png&quot; alt=&quot;Bitcoin Armory&quot; title=&quot;Bitcoin Armory&quot;&gt;&lt;br&gt;&lt;/center&gt;
+
+&lt;p&gt;The recent surge in crypto prices brought my old Bitcoin stash back to mind.  I decided to load up an old digital wallet to check it for consistency, but when I tried to load it, the software, Bitcoin Armory, wouldn’t run.  I’m running macOS Catalina 10.15.7, so I figured something changed during my miscellaneous software updates or upgrade from Mojave to Catalina.&lt;br&gt;</description>
       
       
       
@@ -64,6 +66,23 @@
       
       
       <comments>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://chrisbergeron.com/2021/01/21/formatting-markdown/</link>
+      <guid>https://chrisbergeron.com/2021/01/21/formatting-markdown/</guid>
+      <pubDate>Thu, 21 Jan 2021 20:57:11 GMT</pubDate>
+      
+      <description>&lt;p&gt;Markdown is a convenient HTML-focused shorthand syntax for formatting content such as documentation and blog articles, but it lacks basic features for image formatting, such as alignment and sizing.&lt;br&gt;This post presents a variety of ways to format images with Markdown, from brute force to proprietary syntax extensions, unwise hacks, and everything in between.&lt;br&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>https://chrisbergeron.com/2021/01/21/formatting-markdown/#disqus_thread</comments>
       
     </item>
     
@@ -406,27 +425,6 @@
       
       
       <comments>https://chrisbergeron.com/2018/09/13/pfsense_grafana/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>How to Style Images With Markdown</title>
-      <link>https://chrisbergeron.com/2018/08/13/formatting-markdown/</link>
-      <guid>https://chrisbergeron.com/2018/08/13/formatting-markdown/</guid>
-      <pubDate>Tue, 14 Aug 2018 02:38:17 GMT</pubDate>
-      
-      <description>This post presents a variety of ways to format images with Markdown, from brute force to proprietary syntax extensions, unwise hacks, and everything in between.</description>
-      
-      
-      <enclosure url="https://chrisbergeron.com//assets/photo-1459767129954-1b1c1f9b9ace.webp" type="image"/>
-      
-      
-      
-      <category domain="https://chrisbergeron.com/categories/Markdown/">Markdown</category>
-      
-      
-      
-      <comments>https://chrisbergeron.com/2018/08/13/formatting-markdown/#disqus_thread</comments>
       
     </item>
     
