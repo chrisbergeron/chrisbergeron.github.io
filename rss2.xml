@@ -54,7 +54,17 @@
       <pubDate>Sun, 31 Jan 2021 03:25:11 GMT</pubDate>
       
       <description>&lt;p&gt;Watch local broadcast TV on Plex without an antenna.&lt;/p&gt;
-&lt;p&gt;Download locast2plex from this git repo:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/tgorgdotcom/locast2plex.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Change ownership to your user&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chown -R pi:pi locast&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;python3 main.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;</description>
+&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/assets/Locast-Plex---Local-TV-on-Plex/locast-logo.85557c57.svg&quot; width=&quot;128&quot;&gt;&lt;br&gt;&lt;/center&gt;
+
+&lt;h3 id=&quot;What-is-it&quot;&gt;&lt;a href=&quot;#What-is-it&quot; class=&quot;headerlink&quot; title=&quot;What is it?&quot;&gt;&lt;/a&gt;What is it?&lt;/h3&gt;&lt;p&gt;Locast is a free service that receives over the air (OTA) broadcast television signals and encodes and legally distributes them digitally across the internet.  Using the program &lt;code&gt;locast2plex&lt;/code&gt; you can receive this digital content and send it to a Plex Media Server.  Plex will allow you to record, time-shift and save this content.  It works exactly like a Cablebox / DVR.&lt;/p&gt;
+&lt;h3 id=&quot;Setup&quot;&gt;&lt;a href=&quot;#Setup&quot; class=&quot;headerlink&quot; title=&quot;Setup&quot;&gt;&lt;/a&gt;Setup&lt;/h3&gt;&lt;p&gt;The overall steps are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a free locast.org account&lt;/li&gt;
+&lt;li&gt;Download locast2plex to a Raspberry Pi or similar Linux computer&lt;/li&gt;
+&lt;li&gt;Configure Plex to use the locast2plex software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Download locast2plex from this git repo:&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/tgorgdotcom/locast2plex.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Change ownership to your user&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chown -R pi:pi locast&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;python3 main.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</description>
       
       
       
