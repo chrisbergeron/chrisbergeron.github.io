@@ -3,18 +3,18 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Chris Bergeron</title>
+    <title>Chris Bergeron | Tech Blog</title>
     <link>https://chrisbergeron.com/</link>
     
     <image>
       <url>https://chrisbergeron.com/icon.png</url>
-      <title>Chris Bergeron</title>
+      <title>Chris Bergeron | Tech Blog</title>
       <link>https://chrisbergeron.com/</link>
     </image>
     
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
-    <description></description>
+    <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
     <pubDate>Sat, 27 Feb 2021 07:37:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
