@@ -15,25 +15,8 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Mon, 15 Mar 2021 04:42:58 GMT</pubDate>
+    <pubDate>Mon, 15 Mar 2021 02:35:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>Chris loves Shannon</title>
-      <link>https://chrisbergeron.com/2021/03/15/Chris-loves-Shannon/</link>
-      <guid>https://chrisbergeron.com/2021/03/15/Chris-loves-Shannon/</guid>
-      <pubDate>Mon, 15 Mar 2021 04:38:21 GMT</pubDate>
-      
-      <description>&lt;h2 id=&quot;How-I-love-thee&quot;&gt;&lt;a href=&quot;#How-I-love-thee&quot; class=&quot;headerlink&quot; title=&quot;How I love thee&quot;&gt;&lt;/a&gt;How I love thee&lt;/h2&gt;&lt;p&gt;I have a paper wallet and it wouldn’t be difficult to spin up a VM with an older Windows or macOS version, but that’s time consuming and tedious - even with Terraform provisioning, PXEbooting and Ansible post-provisioning in my arsenal.&lt;br&gt;&lt;img src=&quot;Chris-loves-Shannon-1-small.png&quot; alt=&quot;A picture we rendered&quot; title=&quot;Something we rendered&quot;&gt;&lt;br&gt;</description>
-      
-      
-      
-      
-      
-      
-      <comments>https://chrisbergeron.com/2021/03/15/Chris-loves-Shannon/#disqus_thread</comments>
-      
-    </item>
     
     <item>
       <title>Debris - Art with Blockchain Provenance by Bəɹʤəɹɑn</title>
