@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2021-02-27T07:37:40.780Z</updated>
+  <updated>2021-03-15T04:42:58.661Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chris loves Shannon</title>
+    <link href="https://chrisbergeron.com/2021/03/15/Chris-loves-Shannon/"/>
+    <id>https://chrisbergeron.com/2021/03/15/Chris-loves-Shannon/</id>
+    <published>2021-03-15T04:38:21.000Z</published>
+    <updated>2021-03-15T04:42:58.661Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;How-I-love-thee&quot;&gt;&lt;a href=&quot;#How-I-love-thee&quot; class=&quot;headerlink&quot; title=&quot;How I love thee&quot;&gt;&lt;/a&gt;How I love thee&lt;/h2&gt;&lt;p&gt;I have a paper wallet and it wouldn’t be difficult to spin up a VM with an older Windows or macOS version, but that’s time consuming and tedious - even with Terraform provisioning, PXEbooting and Ansible post-provisioning in my arsenal.&lt;br&gt;&lt;img src=&quot;Chris-loves-Shannon-1-small.png&quot; alt=&quot;A picture we rendered&quot; title=&quot;Something we rendered&quot;&gt;&lt;br&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Debris - Art with Blockchain Provenance by Bəɹʤəɹɑn</title>
+    <link href="https://chrisbergeron.com/2021/03/14/Debris-Art:-Art-with-Blockchain-Provenance/"/>
+    <id>https://chrisbergeron.com/2021/03/14/Debris-Art:-Art-with-Blockchain-Provenance/</id>
+    <published>2021-03-14T16:27:56.000Z</published>
+    <updated>2021-03-15T02:35:36.222Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;I was working on my latest project - &lt;a href=&quot;https://debris-art.com&quot;&gt;Debris Art&lt;/a&gt; when NFT Blockchain Digital Ownership hit the news.  I instantly realized the potential impact and decided to mint some of my works in the space.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/four.png&quot; alt=&quot;Four - from the Debris Collection&quot; title=&quot;Four&quot;&gt;&lt;br&gt;</summary>
+    
+    
+    
+    <category term="crypto" scheme="https://chrisbergeron.com/categories/crypto/"/>
+    
+    
+    <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
+    
+    <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
+    
+    <category term="ethereum" scheme="https://chrisbergeron.com/tags/ethereum/"/>
+    
+    <category term="debris" scheme="https://chrisbergeron.com/tags/debris/"/>
+    
+    <category term="art" scheme="https://chrisbergeron.com/tags/art/"/>
+    
+  </entry>
   
   <entry>
     <title>Fixing Bitcoin Armory on macOS Catalina 10.15</title>
@@ -203,7 +246,7 @@
     <link href="https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/"/>
     <id>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</id>
     <published>2020-03-08T23:13:25.000Z</published>
-    <updated>2020-12-08T17:02:11.933Z</updated>
+    <updated>2021-03-14T17:45:30.129Z</updated>
     
     
     <summary type="html">&lt;p&gt;Grafana is a great tool for visualizing data.&lt;br&gt;&lt;img src=&quot;https://chrisbergeron.com/images/showcase_visualize.jpg&quot; alt=&quot;Grafana&quot;&gt;&lt;/p&gt;
@@ -822,9 +865,9 @@
     <category term="blog" scheme="https://chrisbergeron.com/categories/blog/"/>
     
     
-    <category term="systemd" scheme="https://chrisbergeron.com/tags/systemd/"/>
-    
     <category term="hexo" scheme="https://chrisbergeron.com/tags/hexo/"/>
+    
+    <category term="systemd" scheme="https://chrisbergeron.com/tags/systemd/"/>
     
   </entry>
   
@@ -849,9 +892,9 @@
     <category term="blog" scheme="https://chrisbergeron.com/categories/blog/"/>
     
     
-    <category term="systemd" scheme="https://chrisbergeron.com/tags/systemd/"/>
-    
     <category term="hexo" scheme="https://chrisbergeron.com/tags/hexo/"/>
+    
+    <category term="systemd" scheme="https://chrisbergeron.com/tags/systemd/"/>
     
   </entry>
   
@@ -870,13 +913,13 @@
     <category term="carputer" scheme="https://chrisbergeron.com/categories/carputer/"/>
     
     
-    <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
-    
-    <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
-    
     <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
     
     <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
+    
+    <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
+    
+    <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
   </entry>
   
@@ -1026,9 +1069,9 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
-    
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
+    
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
   </entry>
   
@@ -1055,9 +1098,9 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
-    
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
+    
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
     <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
     

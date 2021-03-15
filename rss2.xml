@@ -15,8 +15,55 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Sat, 27 Feb 2021 07:37:40 GMT</pubDate>
+    <pubDate>Mon, 15 Mar 2021 04:42:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Chris loves Shannon</title>
+      <link>https://chrisbergeron.com/2021/03/15/Chris-loves-Shannon/</link>
+      <guid>https://chrisbergeron.com/2021/03/15/Chris-loves-Shannon/</guid>
+      <pubDate>Mon, 15 Mar 2021 04:38:21 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;How-I-love-thee&quot;&gt;&lt;a href=&quot;#How-I-love-thee&quot; class=&quot;headerlink&quot; title=&quot;How I love thee&quot;&gt;&lt;/a&gt;How I love thee&lt;/h2&gt;&lt;p&gt;I have a paper wallet and it wouldn’t be difficult to spin up a VM with an older Windows or macOS version, but that’s time consuming and tedious - even with Terraform provisioning, PXEbooting and Ansible post-provisioning in my arsenal.&lt;br&gt;&lt;img src=&quot;Chris-loves-Shannon-1-small.png&quot; alt=&quot;A picture we rendered&quot; title=&quot;Something we rendered&quot;&gt;&lt;br&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>https://chrisbergeron.com/2021/03/15/Chris-loves-Shannon/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Debris - Art with Blockchain Provenance by Bəɹʤəɹɑn</title>
+      <link>https://chrisbergeron.com/2021/03/14/Debris-Art:-Art-with-Blockchain-Provenance/</link>
+      <guid>https://chrisbergeron.com/2021/03/14/Debris-Art:-Art-with-Blockchain-Provenance/</guid>
+      <pubDate>Sun, 14 Mar 2021 16:27:56 GMT</pubDate>
+      
+      <description>&lt;p&gt;I was working on my latest project - &lt;a href=&quot;https://debris-art.com&quot;&gt;Debris Art&lt;/a&gt; when NFT Blockchain Digital Ownership hit the news.  I instantly realized the potential impact and decided to mint some of my works in the space.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/four.png&quot; alt=&quot;Four - from the Debris Collection&quot; title=&quot;Four&quot;&gt;&lt;br&gt;</description>
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/crypto/">crypto</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/nft/">nft</category>
+      
+      <category domain="https://chrisbergeron.com/tags/blockchain/">blockchain</category>
+      
+      <category domain="https://chrisbergeron.com/tags/ethereum/">ethereum</category>
+      
+      <category domain="https://chrisbergeron.com/tags/debris/">debris</category>
+      
+      <category domain="https://chrisbergeron.com/tags/art/">art</category>
+      
+      
+      <comments>https://chrisbergeron.com/2021/03/14/Debris-Art:-Art-with-Blockchain-Provenance/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Fixing Bitcoin Armory on macOS Catalina 10.15</title>
@@ -889,9 +936,9 @@
       <category domain="https://chrisbergeron.com/categories/blog/">blog</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/systemd/">systemd</category>
-      
       <category domain="https://chrisbergeron.com/tags/hexo/">hexo</category>
+      
+      <category domain="https://chrisbergeron.com/tags/systemd/">systemd</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/#disqus_thread</comments>
@@ -918,9 +965,9 @@
       <category domain="https://chrisbergeron.com/categories/blog/">blog</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/systemd/">systemd</category>
-      
       <category domain="https://chrisbergeron.com/tags/hexo/">hexo</category>
+      
+      <category domain="https://chrisbergeron.com/tags/systemd/">systemd</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/07/nzbget_systemd_unit_file/#disqus_thread</comments>
@@ -941,13 +988,13 @@
       <category domain="https://chrisbergeron.com/categories/carputer/">carputer</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
-      
-      <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
-      
       <category domain="https://chrisbergeron.com/tags/comma-ai/">comma.ai</category>
       
       <category domain="https://chrisbergeron.com/tags/panda/">panda</category>
+      
+      <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
+      
+      <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/06/comma_panda/#disqus_thread</comments>
@@ -1109,9 +1156,9 @@
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
-      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
-      
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
+      
+      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
       
       <comments>https://chrisbergeron.com/2007/07/11/dashpc_carputer/#disqus_thread</comments>
@@ -1140,9 +1187,9 @@
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
-      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
-      
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
+      
+      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
       <category domain="https://chrisbergeron.com/tags/dashboard-linux/">dashboard linux</category>
       
