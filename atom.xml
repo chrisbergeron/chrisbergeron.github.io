@@ -155,21 +155,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://chrisbergeron.com/2021/01/21/formatting-markdown/"/>
-    <id>https://chrisbergeron.com/2021/01/21/formatting-markdown/</id>
-    <published>2021-01-21T20:57:11.723Z</published>
-    <updated>2021-02-27T07:13:16.519Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Markdown is a convenient HTML-focused shorthand syntax for formatting content such as documentation and blog articles, but it lacks basic features for image formatting, such as alignment and sizing.&lt;br&gt;This post presents a variety of ways to format images with Markdown, from brute force to proprietary syntax extensions, unwise hacks, and everything in between.&lt;br&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Fixing Hexo Not Generating Files</title>
     <link href="https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/"/>
     <id>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</id>
