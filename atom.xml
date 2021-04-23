@@ -154,11 +154,11 @@
     <link href="https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/"/>
     <id>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</id>
     <published>2021-01-31T03:25:11.000Z</published>
-    <updated>2021-04-23T16:37:22.501Z</updated>
+    <updated>2021-04-23T17:25:12.403Z</updated>
     
     
     <summary type="html">&lt;p&gt;Watch local broadcast TV on Plex without an antenna.&lt;/p&gt;
-&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/assets/Locast-Plex---Local-TV-on-Plex/locast-logo.85557c57.svg&quot; width=&quot;128&quot;&gt;&lt;br&gt;&lt;/center&gt;
+&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/assets/Locast-Plex---Local-TV-on-Plex/locast-plex-cb.jpg&quot; width=&quot;600&quot;&gt;&lt;br&gt;&lt;/center&gt;
 
 &lt;h3 id=&quot;What-is-it&quot;&gt;&lt;a href=&quot;#What-is-it&quot; class=&quot;headerlink&quot; title=&quot;What is it?&quot;&gt;&lt;/a&gt;What is it?&lt;/h3&gt;&lt;p&gt;Locast is a free service that receives over the air (OTA) broadcast television signals and encodes and legally distributes them digitally across the internet.  Using the program &lt;code&gt;locast2plex&lt;/code&gt; you can receive this digital content and send it to a Plex Media Server.  Plex will allow you to record, time-shift and save this content.  It works exactly like a Cablebox / DVR.&lt;/p&gt;</summary>
     
