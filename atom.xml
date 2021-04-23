@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2021-04-22T18:25:16.879Z</updated>
+  <updated>2021-04-23T16:50:21.886Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -21,11 +21,12 @@
     <link href="https://chrisbergeron.com/2021/04/22/Cheapest-Days-Calendar/"/>
     <id>https://chrisbergeron.com/2021/04/22/Cheapest-Days-Calendar/</id>
     <published>2021-04-22T16:41:44.000Z</published>
-    <updated>2021-04-22T18:25:16.879Z</updated>
+    <updated>2021-04-23T16:50:21.886Z</updated>
     
     
-    <summary type="html">&lt;p&gt;Are you looking for a calendar that lets you know what days of the week are cheapest to shop?  If so, look no further.&lt;br&gt;&lt;img src=&quot;https://chrisbergeron.com/2021/04/22/Cheapest-Days-Calendar/cheapest-days-calendar.webp&quot; alt=&quot;Cheapest Days of the Week Calendar&quot;&gt;&lt;/p&gt;
-&lt;p&gt;I created a calendar for anyone looking to save a few dollars on common purchases.  The data for this calendar comes from this &lt;a href=&quot;https://www.rd.com/list/cheapest-days-of-the-week-to-do-anything/&quot;&gt;Reader’s Digest post&lt;/a&gt;.  Please check it out if you want to know the reasoning behind the timing.  If you know of other days that I should add - comment below!&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;Are you looking for a calendar that lets you know what days of the week are cheapest to shop?  If so, look no further.&lt;center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://chrisbergeron.com/2021/04/22/Cheapest-Days-Calendar/cheapest-days-calendar.webp&quot; alt=&quot;Cheapest Days of the Week Calendar&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/center&gt;I created a calendar for anyone looking to save a few dollars on common purchases.  The data for this calendar comes from this &lt;a href=&quot;https://www.rd.com/list/cheapest-days-of-the-week-to-do-anything/&quot;&gt;Reader’s Digest post&lt;/a&gt;.  Please check it out if you want to know the reasoning behind the timing.  If you know of other days that I should add - comment below!&lt;br&gt;</summary>
     
     
     
@@ -73,7 +74,7 @@
     <link href="https://chrisbergeron.com/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/"/>
     <id>https://chrisbergeron.com/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/</id>
     <published>2021-03-17T05:18:19.000Z</published>
-    <updated>2021-03-17T15:23:28.169Z</updated>
+    <updated>2021-04-23T16:36:03.633Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;center&gt;&lt;a href=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql-1-small.webp&quot; alt=&quot;Apple Silicon - M1&quot; title=&quot;Apple Silicon M1 Logo&quot;&gt;&lt;br&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;This guide will walk you through installing and configuring nginx, PHP and Mysql optimized for MacOS Big Sur on Apple Silicon - M1 Arm processors.&lt;/p&gt;</summary>
@@ -98,7 +99,7 @@
     <link href="https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/"/>
     <id>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/</id>
     <published>2021-03-14T16:27:56.000Z</published>
-    <updated>2021-03-15T05:37:35.701Z</updated>
+    <updated>2021-04-23T16:49:09.891Z</updated>
     
     
     <summary type="html">&lt;p&gt;I was working on my latest project - &lt;a href=&quot;https://debris-art.com&quot;&gt;Debris Art&lt;/a&gt; when NFT Blockchain Digital Ownership hit the news.  I instantly realized the potential impact and decided to mint some of my works in the space.&lt;/p&gt;
@@ -153,21 +154,13 @@
     <link href="https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/"/>
     <id>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</id>
     <published>2021-01-31T03:25:11.000Z</published>
-    <updated>2021-02-27T16:38:59.356Z</updated>
+    <updated>2021-04-23T16:37:22.501Z</updated>
     
     
     <summary type="html">&lt;p&gt;Watch local broadcast TV on Plex without an antenna.&lt;/p&gt;
 &lt;center&gt;&lt;br&gt;&lt;img src=&quot;/assets/Locast-Plex---Local-TV-on-Plex/locast-logo.85557c57.svg&quot; width=&quot;128&quot;&gt;&lt;br&gt;&lt;/center&gt;
 
-&lt;h3 id=&quot;What-is-it&quot;&gt;&lt;a href=&quot;#What-is-it&quot; class=&quot;headerlink&quot; title=&quot;What is it?&quot;&gt;&lt;/a&gt;What is it?&lt;/h3&gt;&lt;p&gt;Locast is a free service that receives over the air (OTA) broadcast television signals and encodes and legally distributes them digitally across the internet.  Using the program &lt;code&gt;locast2plex&lt;/code&gt; you can receive this digital content and send it to a Plex Media Server.  Plex will allow you to record, time-shift and save this content.  It works exactly like a Cablebox / DVR.&lt;/p&gt;
-&lt;h3 id=&quot;Setup&quot;&gt;&lt;a href=&quot;#Setup&quot; class=&quot;headerlink&quot; title=&quot;Setup&quot;&gt;&lt;/a&gt;Setup&lt;/h3&gt;&lt;p&gt;The overall steps are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a free locast.org account&lt;/li&gt;
-&lt;li&gt;Download locast2plex to a Raspberry Pi or similar Linux computer&lt;/li&gt;
-&lt;li&gt;Configure Plex to use the locast2plex software&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Download locast2plex from this git repo:&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/tgorgdotcom/locast2plex.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Change ownership to your user&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;chown -R pi:pi locast&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;python3 main.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+&lt;h3 id=&quot;What-is-it&quot;&gt;&lt;a href=&quot;#What-is-it&quot; class=&quot;headerlink&quot; title=&quot;What is it?&quot;&gt;&lt;/a&gt;What is it?&lt;/h3&gt;&lt;p&gt;Locast is a free service that receives over the air (OTA) broadcast television signals and encodes and legally distributes them digitally across the internet.  Using the program &lt;code&gt;locast2plex&lt;/code&gt; you can receive this digital content and send it to a Plex Media Server.  Plex will allow you to record, time-shift and save this content.  It works exactly like a Cablebox / DVR.&lt;/p&gt;</summary>
     
     
     
@@ -183,7 +176,7 @@
     <link href="https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/"/>
     <id>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</id>
     <published>2020-12-24T23:36:08.000Z</published>
-    <updated>2020-12-25T01:30:55.271Z</updated>
+    <updated>2021-04-23T16:55:16.890Z</updated>
     
     
     <summary type="html">&lt;p&gt;If you’re having trouble with Hexo not generating files, check for &lt;strong&gt;broken symbolic links&lt;/strong&gt; in the &lt;code&gt;source&lt;/code&gt; directory tree:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;find ./ -&lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt; l -&lt;span class=&quot;built_in&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt; ! -e &amp;#123;&amp;#125; \; -&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;</summary>
@@ -246,7 +239,7 @@
     <link href="https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/"/>
     <id>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</id>
     <published>2020-11-20T05:11:25.000Z</published>
-    <updated>2020-12-08T16:55:30.354Z</updated>
+    <updated>2021-04-23T16:59:44.740Z</updated>
     
     
     <summary type="html">&lt;p&gt;I recently purchased an &lt;a href=&quot;https://www.amazon.com/gp/product/B07Q5XRMLD/ref=ppx_yo_dt_b_asin_image_o01_s00?ie=UTF8%26psc=1&quot;&gt;Mcombo 7040 Lift Chair&lt;/a&gt; for my elderly grandfather.  Prior to purchasing the chair my Grandfather had some questions so I figured I would have a look at the manual for answers.  Surprised that I couldn’t find one, I decided to post it here.&lt;br&gt;</summary>
@@ -323,7 +316,7 @@
     <link href="https://chrisbergeron.com/2020/03/07/diy_das_part1/"/>
     <id>https://chrisbergeron.com/2020/03/07/diy_das_part1/</id>
     <published>2020-03-07T20:10:25.000Z</published>
-    <updated>2020-10-21T17:53:39.498Z</updated>
+    <updated>2021-04-23T16:32:04.172Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1552194286/icons/supermicro_836a_chassis_enfq7x.png&quot; alt=&quot;Supermicro 836A&quot;&gt;&lt;/p&gt;
@@ -471,11 +464,22 @@
     <link href="https://chrisbergeron.com/2018/09/13/pfsense_grafana/"/>
     <id>https://chrisbergeron.com/2018/09/13/pfsense_grafana/</id>
     <published>2018-09-13T18:01:00.000Z</published>
-    <updated>2020-10-21T17:34:59.303Z</updated>
+    <updated>2021-04-23T16:54:38.541Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Using-Grafana-with-pfSense&quot;&gt;&lt;a href=&quot;#Using-Grafana-with-pfSense&quot; class=&quot;headerlink&quot; title=&quot;Using Grafana with pfSense&quot;&gt;&lt;/a&gt;Using Grafana with pfSense&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1536946941/icons/Screenshots/Screen_Shot_2018-09-14_at_1.41.52_PM_feqbkf.png&quot; alt=&quot;Grafana Dashboard&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Update: 2018/09/13&lt;br&gt;pfSense has a plugin for telegraf which can be installed from the gui.  I recommend this method rather than what I figured out below.  I’m leaving these notes for manual installation reference.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+&lt;ins class=&quot;adsbygoogle&quot;
+     style=&quot;display:block; text-align:center;&quot;
+     data-ad-layout=&quot;in-article&quot;
+     data-ad-format=&quot;fluid&quot;
+     data-ad-client=&quot;ca-pub-2336374166717359&quot;
+     data-ad-slot=&quot;9989366977&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+     (adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;
+
 &lt;p&gt;2017/12/09&lt;br&gt;I put this guide together using information from various other blogs.  This is current as of December 2017 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of your influxdb data source and your username and password.&lt;/p&gt;
 &lt;p&gt;The data flow is as follows:&lt;center&gt;&lt;pre style=&#39;color:#000000;background:#f1f0f0;&#39;&gt;&lt;span style=&#39;color:#40015a; &#39;&gt;pfSense&lt;/span&gt; &lt;span style=&#39;color:#e60000; &#39;&gt;-&lt;/span&gt;&amp;gt; Telegraf (gather metrics) &lt;span style=&#39;color:#e60000; &#39;&gt;-&lt;/span&gt;&amp;gt; InfluxDB (store metrics) &lt;span style=&#39;color:#e60000; &#39;&gt;-&lt;/span&gt;&amp;gt; Grafana (render graphs)&lt;/pre&gt;&lt;/center&gt;&lt;/p&gt;</summary>
     
@@ -527,7 +531,7 @@
     <link href="https://chrisbergeron.com/2018/06/21/pihole_api/"/>
     <id>https://chrisbergeron.com/2018/06/21/pihole_api/</id>
     <published>2018-06-21T05:13:25.000Z</published>
-    <updated>2018-10-28T21:32:33.000Z</updated>
+    <updated>2021-04-23T16:57:54.465Z</updated>
     
     
     <summary type="html">&lt;p&gt;I couldn’t find any quick references about accessing the Pihole API so I created this page.&lt;/p&gt;
@@ -598,7 +602,7 @@
     <link href="https://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/"/>
     <id>https://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</id>
     <published>2018-06-04T22:19:00.000Z</published>
-    <updated>2020-11-16T20:34:36.578Z</updated>
+    <updated>2021-04-23T16:56:02.760Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;Using pfsense for WAN Redundancy with Cellular LTE/4G&lt;/strong&gt; &lt;/p&gt;
@@ -652,7 +656,7 @@
     <link href="https://chrisbergeron.com/2018/02/19/quieting_dell_r710/"/>
     <id>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</id>
     <published>2018-02-19T20:10:25.000Z</published>
-    <updated>2018-10-27T19:02:12.000Z</updated>
+    <updated>2021-04-23T16:52:26.538Z</updated>
     
     
     <summary type="html">&lt;p&gt;I have a Dell R710 rev. II that I use in my home office lab (homelab) running ESXi 6.5.  The R710 sits in my office where we work from home.  Normally the hum of the R710 fans isn’t terribly bothersome - the 5 fans it houses run at around 3,800 RPM each.  The noise is definitely noticeable so I did a little bit of digging into ways I could quiet it down.  After looking into replacing the fans with quieter ones I found that I could override the system control of the fans and silence them that way.  While I have to monitor the onboard temperatures more closely when disabled, I’ve found little downside to doing so when I’m in there.  Here’s how to do it:&lt;/p&gt;

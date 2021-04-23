@@ -2,9 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</loc>
+    
+    <lastmod>2021-04-23T16:59:44.740Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/06/21/pihole_api/</loc>
+    
+    <lastmod>2021-04-23T16:57:54.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
+    
+    <lastmod>2021-04-23T16:56:02.760Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</loc>
+    
+    <lastmod>2021-04-23T16:55:16.890Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/09/13/pfsense_grafana/</loc>
+    
+    <lastmod>2021-04-23T16:54:38.541Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</loc>
+    
+    <lastmod>2021-04-23T16:52:26.538Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2021/04/22/Cheapest-Days-Calendar/</loc>
     
-    <lastmod>2021-04-22T18:25:16.879Z</lastmod>
+    <lastmod>2021-04-23T16:50:21.886Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%25C9%2599%25C9%25B9%25CA%25A4%25C9%2599%25C9%25B9%25C9%2591n/</loc>
+    
+    <lastmod>2021-04-23T16:49:09.891Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</loc>
+    
+    <lastmod>2021-04-23T16:37:22.501Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/</loc>
+    
+    <lastmod>2021-04-23T16:36:03.633Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2020/03/07/diy_das_part1/</loc>
+    
+    <lastmod>2021-04-23T16:32:04.172Z</lastmod>
     
   </url>
   
@@ -12,20 +82,6 @@
     <loc>https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/</loc>
     
     <lastmod>2021-04-21T04:19:31.885Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/</loc>
-    
-    <lastmod>2021-03-17T15:23:28.169Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%25C9%2599%25C9%25B9%25CA%25A4%25C9%2599%25C9%25B9%25C9%2591n/</loc>
-    
-    <lastmod>2021-03-15T05:37:35.701Z</lastmod>
     
   </url>
   
@@ -51,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</loc>
-    
-    <lastmod>2021-02-27T16:38:59.356Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2018/10/27/monitorr/</loc>
     
     <lastmod>2021-02-08T02:59:33.062Z</lastmod>
@@ -72,13 +121,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</loc>
-    
-    <lastmod>2020-12-25T01:30:55.271Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2018/11/10/grafana_dashboards/</loc>
     
     <lastmod>2020-12-08T17:04:41.512Z</lastmod>
@@ -89,13 +131,6 @@
     <loc>https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote/</loc>
     
     <lastmod>2020-12-08T16:59:26.054Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</loc>
-    
-    <lastmod>2020-12-08T16:55:30.354Z</lastmod>
     
   </url>
   
@@ -121,13 +156,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</loc>
-    
-    <lastmod>2020-11-16T20:34:36.578Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2020/03/13/cloudinary_bash/</loc>
     
     <lastmod>2020-10-21T17:55:46.184Z</lastmod>
@@ -135,23 +163,9 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2020/03/07/diy_das_part1/</loc>
-    
-    <lastmod>2020-10-21T17:53:39.498Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/</loc>
     
     <lastmod>2020-10-21T17:45:59.233Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2018/09/13/pfsense_grafana/</loc>
-    
-    <lastmod>2020-10-21T17:34:59.303Z</lastmod>
     
   </url>
   
@@ -247,23 +261,9 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2018/06/21/pihole_api/</loc>
-    
-    <lastmod>2018-10-28T21:32:33.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2017/11/10/alexa_car/</loc>
     
     <lastmod>2018-10-28T21:31:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</loc>
-    
-    <lastmod>2018-10-27T19:02:12.000Z</lastmod>
     
   </url>
   
