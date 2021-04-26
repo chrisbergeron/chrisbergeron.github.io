@@ -89,13 +89,13 @@
       <category domain="https://chrisbergeron.com/categories/Apple/">Apple</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
-      
       <category domain="https://chrisbergeron.com/tags/M1-nginx/">M1 - nginx</category>
       
       <category domain="https://chrisbergeron.com/tags/Apple-Silicon-php/">Apple Silicon - php</category>
       
       <category domain="https://chrisbergeron.com/tags/Big-Sur-mysql/">Big Sur - mysql</category>
+      
+      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
       
       
       <comments>https://chrisbergeron.com/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/#disqus_thread</comments>
@@ -148,11 +148,11 @@
       <category domain="https://chrisbergeron.com/categories/macos/">macos</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
+      
       <category domain="https://chrisbergeron.com/tags/bitcoin/">bitcoin</category>
       
       <category domain="https://chrisbergeron.com/tags/armory/">armory</category>
-      
-      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
       
       <category domain="https://chrisbergeron.com/tags/cryptocurrency/">cryptocurrency</category>
       
@@ -292,13 +292,13 @@
       <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/php/">php</category>
+      
       <category domain="https://chrisbergeron.com/tags/cloudinary/">cloudinary</category>
       
       <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
       
       <category domain="https://chrisbergeron.com/tags/curl/">curl</category>
-      
-      <category domain="https://chrisbergeron.com/tags/php/">php</category>
       
       
       <comments>https://chrisbergeron.com/2020/03/13/cloudinary_bash/#disqus_thread</comments>
@@ -322,8 +322,6 @@
       
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
       
-      <category domain="https://chrisbergeron.com/tags/php/">php</category>
-      
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
       <category domain="https://chrisbergeron.com/tags/annotations/">annotations</category>
@@ -331,6 +329,8 @@
       <category domain="https://chrisbergeron.com/tags/influxdb/">influxdb</category>
       
       <category domain="https://chrisbergeron.com/tags/webhooks/">webhooks</category>
+      
+      <category domain="https://chrisbergeron.com/tags/php/">php</category>
       
       
       <comments>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/#disqus_thread</comments>

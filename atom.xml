@@ -84,13 +84,13 @@
     <category term="Apple" scheme="https://chrisbergeron.com/categories/Apple/"/>
     
     
-    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
-    
     <category term="M1 - nginx" scheme="https://chrisbergeron.com/tags/M1-nginx/"/>
     
     <category term="Apple Silicon - php" scheme="https://chrisbergeron.com/tags/Apple-Silicon-php/"/>
     
     <category term="Big Sur - mysql" scheme="https://chrisbergeron.com/tags/Big-Sur-mysql/"/>
+    
+    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
     
   </entry>
   
@@ -127,7 +127,7 @@
     <link href="https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/"/>
     <id>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</id>
     <published>2021-02-27T02:25:10.000Z</published>
-    <updated>2021-03-15T05:21:52.045Z</updated>
+    <updated>2021-03-15T05:21:52.000Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/assets/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/armory-title-cb.png&quot; alt=&quot;Bitcoin Armory&quot; title=&quot;Bitcoin Armory&quot;&gt;&lt;br&gt;&lt;/center&gt;
@@ -139,11 +139,11 @@
     <category term="macos" scheme="https://chrisbergeron.com/categories/macos/"/>
     
     
+    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
+    
     <category term="bitcoin" scheme="https://chrisbergeron.com/tags/bitcoin/"/>
     
     <category term="armory" scheme="https://chrisbergeron.com/tags/armory/"/>
-    
-    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
     
     <category term="cryptocurrency" scheme="https://chrisbergeron.com/tags/cryptocurrency/"/>
     
@@ -195,7 +195,7 @@
     <link href="https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/"/>
     <id>https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/</id>
     <published>2020-12-24T21:13:25.000Z</published>
-    <updated>2020-12-25T01:39:59.772Z</updated>
+    <updated>2020-12-25T01:39:59.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;There are several existing resources that document strategies for migrating infrastructure to code.  This post is about my experiences based on the reality, the challenges and best practices.&lt;/p&gt;
@@ -217,7 +217,7 @@
     <link href="https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote/"/>
     <id>https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote/</id>
     <published>2020-11-29T23:35:11.000Z</published>
-    <updated>2020-12-08T16:59:26.054Z</updated>
+    <updated>2020-12-08T16:59:26.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote#Short-Version&quot;&gt;Click here if you want the short version&lt;/a&gt;&lt;/p&gt;
@@ -260,7 +260,7 @@
     <link href="https://chrisbergeron.com/2020/03/13/cloudinary_bash/"/>
     <id>https://chrisbergeron.com/2020/03/13/cloudinary_bash/</id>
     <published>2020-03-13T23:13:25.000Z</published>
-    <updated>2020-10-21T17:55:46.184Z</updated>
+    <updated>2020-10-21T17:55:46.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://cloudinary.com/&quot;&gt;Cloudinary&lt;/a&gt; is an amazing image hosting service that offers both a highly functional free tier in addition to a paid enterprise grade image hosting and transformation service.&lt;/p&gt;
@@ -271,13 +271,13 @@
     <category term="linux" scheme="https://chrisbergeron.com/categories/linux/"/>
     
     
+    <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
+    
     <category term="cloudinary" scheme="https://chrisbergeron.com/tags/cloudinary/"/>
     
     <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
     
     <category term="curl" scheme="https://chrisbergeron.com/tags/curl/"/>
-    
-    <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
     
   </entry>
   
@@ -286,7 +286,7 @@
     <link href="https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/"/>
     <id>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</id>
     <published>2020-03-08T23:13:25.000Z</published>
-    <updated>2021-03-14T17:45:30.129Z</updated>
+    <updated>2021-03-14T17:45:30.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;Grafana is a great tool for visualizing data.&lt;br&gt;&lt;img src=&quot;https://chrisbergeron.com/images/showcase_visualize.jpg&quot; alt=&quot;Grafana&quot;&gt;&lt;/p&gt;
@@ -299,8 +299,6 @@
     
     <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
-    <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
-    
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
     <category term="annotations" scheme="https://chrisbergeron.com/tags/annotations/"/>
@@ -308,6 +306,8 @@
     <category term="influxdb" scheme="https://chrisbergeron.com/tags/influxdb/"/>
     
     <category term="webhooks" scheme="https://chrisbergeron.com/tags/webhooks/"/>
+    
+    <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
     
   </entry>
   
@@ -367,7 +367,7 @@
     <link href="https://chrisbergeron.com/2019/02/07/disable_pihole_iphone/"/>
     <id>https://chrisbergeron.com/2019/02/07/disable_pihole_iphone/</id>
     <published>2019-02-08T01:46:25.000Z</published>
-    <updated>2020-10-21T16:50:21.918Z</updated>
+    <updated>2020-10-21T16:50:21.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;If you run a &lt;a href=&quot;https://pi-hole.net/&quot;&gt;pihole&lt;/a&gt; the odds are good that you’ve needed to disable it from time to time.  I wanted an easy way to disable my pihole(s) temporarily, so I wrote a simple shell script to do it for me.  I’m almost always on my Macbook, so this approach worked for a while.  I needed to disable it a few times while I was out of the room, so I figured I’d find an easier way to do it from my phone.&lt;br&gt;I already used an iOS app called &lt;a href=&quot;https://itunes.apple.com/us/app/launcher-with-multiple-widgets/id905099592?mt=8&quot;&gt;Launcher&lt;/a&gt; on my iphone, so integrating pihole api calls with it seemed like a no-brainer.  For convienience, it can be used from your lock screen without having to unlock your phone.&lt;/p&gt;
@@ -393,7 +393,7 @@
     <link href="https://chrisbergeron.com/2018/11/10/grafana_dashboards/"/>
     <id>https://chrisbergeron.com/2018/11/10/grafana_dashboards/</id>
     <published>2018-11-10T20:57:00.000Z</published>
-    <updated>2020-12-08T17:04:41.512Z</updated>
+    <updated>2020-12-08T17:04:41.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;Grafana is a really great tool for visualizing data.  In my homelab, I have obviously have a lot of data so what better than to use than the right tool for the job.  Below, you can find some screenshots of my dashboards.  I use a raspberry pi that just runs a full screen browser for viewing the dashboard slideshow in addition to a few other glance boards (DAKBoard, Monitorr, et al).&lt;/p&gt;
@@ -439,7 +439,7 @@
     <link href="https://chrisbergeron.com/2018/10/27/monitorr/"/>
     <id>https://chrisbergeron.com/2018/10/27/monitorr/</id>
     <published>2018-10-27T17:43:00.000Z</published>
-    <updated>2021-02-08T02:59:33.062Z</updated>
+    <updated>2021-02-08T02:59:33.000Z</updated>
     
     
       
@@ -680,7 +680,7 @@
     <link href="https://chrisbergeron.com/2017/12/29/pihole_update_dns/"/>
     <id>https://chrisbergeron.com/2017/12/29/pihole_update_dns/</id>
     <published>2017-12-29T14:46:25.000Z</published>
-    <updated>2020-12-08T15:32:33.864Z</updated>
+    <updated>2020-12-08T15:32:33.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;I wrote a very simple little playbook for updating my local DNS records for my piholes.  For me it’s easier than manually sshing onto each node and editing a file and restarting the service.  Here’s the playbook:&lt;br&gt;</summary>
@@ -770,7 +770,7 @@
     <link href="https://chrisbergeron.com/2017/10/29/high_performance_nzbget/"/>
     <id>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/</id>
     <published>2017-10-30T01:53:25.000Z</published>
-    <updated>2020-10-21T17:45:59.233Z</updated>
+    <updated>2020-10-21T17:45:59.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;I’m limited to about 80MB/s on downloads on my VPC at &lt;a href=&quot;https://m.do.co/c/efe82c337904&quot;&gt;Digital Ocean&lt;/a&gt;, but I run &lt;a href=&quot;https://nzbget.net/&quot;&gt;Nzbget&lt;/a&gt; for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted to see if I could parallelize this and download multiple files at the same.  I use Sonarr for searching usenet for freely distributable training videos which then sends them to NZBget for downloading.  Since Sonarr can send multiple files to nzbget which get queued up, I figured I can reduce the queue by downloading them at the same time.&lt;/p&gt;
@@ -1029,7 +1029,7 @@
     <link href="https://chrisbergeron.com/2008/01/20/interviewed_for_release_2.0_magazine/"/>
     <id>https://chrisbergeron.com/2008/01/20/interviewed_for_release_2.0_magazine/</id>
     <published>2008-01-20T23:53:00.000Z</published>
-    <updated>2020-12-08T16:54:26.111Z</updated>
+    <updated>2020-12-08T16:54:26.000Z</updated>
     
     
       
