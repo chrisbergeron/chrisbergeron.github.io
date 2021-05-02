@@ -15,8 +15,35 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Fri, 23 Apr 2021 16:50:21 GMT</pubDate>
+    <pubDate>Sun, 02 May 2021 04:44:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Running Chia Full Node on Apple Silicon M1</title>
+      <link>https://chrisbergeron.com/2021/05/01/Running-a-Chia-Full-Node-on-M1/</link>
+      <guid>https://chrisbergeron.com/2021/05/01/Running-a-Chia-Full-Node-on-M1/</guid>
+      <pubDate>Sun, 02 May 2021 03:20:03 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;Farming-and-Plotting&quot;&gt;&lt;a href=&quot;#Farming-and-Plotting&quot; class=&quot;headerlink&quot; title=&quot;Farming and Plotting&quot;&gt;&lt;/a&gt;Farming and Plotting&lt;/h3&gt;&lt;p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/05/01/Running-a-Chia-Full-Node-on-M1/chia-coin-sm.png&quot; alt=&quot; &quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;I recently started farming Chia cryptocurrency coins.  I run a computer &lt;a href=&quot;https://dev.chrisbergeron.com/categories/homelab/&quot;&gt;Homelab&lt;/a&gt; here at home.  Considering that I have hundreds of terrabytes of storage in my &lt;a href=&quot;/2020/03/07/diy_das_part1/&quot;&gt;Direct Attached Storage Array&lt;/a&gt; Chia seemed like a perfect coin to add to my portfolio.&lt;br&gt;</description>
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/Crypto/">Crypto</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
+      
+      <category domain="https://chrisbergeron.com/tags/chia/">chia</category>
+      
+      <category domain="https://chrisbergeron.com/tags/farming/">farming</category>
+      
+      <category domain="https://chrisbergeron.com/tags/plotting/">plotting</category>
+      
+      
+      <comments>https://chrisbergeron.com/2021/05/01/Running-a-Chia-Full-Node-on-M1/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Cheapest Days Calendar</title>
@@ -59,7 +86,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/crypto/">crypto</category>
+      <category domain="https://chrisbergeron.com/categories/Crypto/">Crypto</category>
       
       
       <category domain="https://chrisbergeron.com/tags/nft/">nft</category>
@@ -86,16 +113,24 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/Apple/">Apple</category>
+      <category domain="https://chrisbergeron.com/categories/Software/">Software</category>
       
-      
-      <category domain="https://chrisbergeron.com/tags/M1-nginx/">M1 - nginx</category>
-      
-      <category domain="https://chrisbergeron.com/tags/Apple-Silicon-php/">Apple Silicon - php</category>
-      
-      <category domain="https://chrisbergeron.com/tags/Big-Sur-mysql/">Big Sur - mysql</category>
       
       <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
+      
+      <category domain="https://chrisbergeron.com/tags/php/">php</category>
+      
+      <category domain="https://chrisbergeron.com/tags/mysql/">mysql</category>
+      
+      <category domain="https://chrisbergeron.com/tags/M1/">M1</category>
+      
+      <category domain="https://chrisbergeron.com/tags/nginx/">nginx</category>
+      
+      <category domain="https://chrisbergeron.com/tags/apple-silicon/">apple silicon</category>
+      
+      <category domain="https://chrisbergeron.com/tags/big-sur/">big sur</category>
+      
+      <category domain="https://chrisbergeron.com/tags/apple/">apple</category>
       
       
       <comments>https://chrisbergeron.com/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/#disqus_thread</comments>
@@ -114,7 +149,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/crypto/">crypto</category>
+      <category domain="https://chrisbergeron.com/categories/Crypto/">Crypto</category>
       
       
       <category domain="https://chrisbergeron.com/tags/nft/">nft</category>
@@ -145,7 +180,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/macos/">macos</category>
+      <category domain="https://chrisbergeron.com/categories/Crypto/">Crypto</category>
       
       
       <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
@@ -175,10 +210,16 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/plex-locast-live-tv/">plex, locast, live, tv</category>
+      <category domain="https://chrisbergeron.com/tags/plex/">plex</category>
+      
+      <category domain="https://chrisbergeron.com/tags/locast/">locast</category>
+      
+      <category domain="https://chrisbergeron.com/tags/live/">live</category>
+      
+      <category domain="https://chrisbergeron.com/tags/tv/">tv</category>
       
       
       <comments>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/#disqus_thread</comments>
@@ -196,7 +237,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/software/">software</category>
+      <category domain="https://chrisbergeron.com/categories/Software/">Software</category>
       
       
       <category domain="https://chrisbergeron.com/tags/hexo/">hexo</category>
@@ -218,7 +259,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/devops/">devops</category>
+      <category domain="https://chrisbergeron.com/categories/Devops/">Devops</category>
       
       
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
@@ -265,7 +306,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/home/">home</category>
+      <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
       
       
       <category domain="https://chrisbergeron.com/tags/elderly/">elderly</category>
@@ -284,13 +325,15 @@
       <pubDate>Fri, 13 Mar 2020 23:13:25 GMT</pubDate>
       
       <description>&lt;p&gt;&lt;a href=&quot;https://cloudinary.com/&quot;&gt;Cloudinary&lt;/a&gt; is an amazing image hosting service that offers both a highly functional free tier in addition to a paid enterprise grade image hosting and transformation service.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;In this tutorial I demonstrate a few simple bash shell scripts to interface with Cloudinary.&lt;/strong&gt;</description>
+&lt;p&gt;In this tutorial I demonstrate a few simple bash shell scripts to interface with Cloudinary.&lt;br&gt;</description>
       
       
       
       
-      <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
+      
+      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
       
       <category domain="https://chrisbergeron.com/tags/php/">php</category>
       
@@ -317,7 +360,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/grafana/">grafana</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
@@ -343,13 +386,16 @@
       <guid>https://chrisbergeron.com/2020/03/07/diy_das_part1/</guid>
       <pubDate>Sat, 07 Mar 2020 20:10:25 GMT</pubDate>
       
-      <description>&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1552194286/icons/supermicro_836a_chassis_enfq7x.png&quot; alt=&quot;Supermicro 836A&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Why-another-NAS-DAS-article&quot;&gt;&lt;a href=&quot;#Why-another-NAS-DAS-article&quot; class=&quot;headerlink&quot; title=&quot;Why another NAS/DAS article?&quot;&gt;&lt;/a&gt;Why another NAS/DAS article?&lt;hr noshade&gt;&lt;/h3&gt;&lt;p&gt;There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so I compiled the information that was useful for my specific 2019 build here.  The prices linked below are subject to market fluctuations and timing, so some of the components I found at a great price. Overall they should be roughly the same as what you can find.  Your mileage may vary.&lt;br&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;Updated for 2021: Great for Chia Farming and Plotting!!!&lt;/em&gt;&lt;/p&gt;
+&lt;center&gt;&lt;br&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1552194286/icons/supermicro_836a_chassis_enfq7x.png&quot; alt=&quot;Supermicro 836A&quot; width=400&gt;&lt;br&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt; I have several hundred terabytes that I’ve recently been putting to use to &lt;a href=&quot;/2021/05/01/Running-a-Chia-Full-Node-on-M1/&quot;&gt;Farm Chia Cryptocurrency&lt;/a&gt;.  I’ve updated this article were applicable.&lt;/p&gt;
+&lt;h2 id=&quot;Why-another-NAS-DAS-article&quot;&gt;&lt;a href=&quot;#Why-another-NAS-DAS-article&quot; class=&quot;headerlink&quot; title=&quot;Why another NAS/DAS article?&quot;&gt;&lt;/a&gt;Why another NAS/DAS article?&lt;/h2&gt;&lt;p&gt;There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so I compiled the information that was useful for my specific 2019 build here.  The prices linked below are subject to market fluctuations and timing, so some of the components I found at a great price. Overall they should be roughly the same as what you can find.  Your mileage may vary.&lt;br&gt;</description>
       
       
       
       
-      <category domain="https://chrisbergeron.com/categories/homelab/">homelab</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/supermicro/">supermicro</category>
@@ -359,6 +405,8 @@
       <category domain="https://chrisbergeron.com/tags/nas/">nas</category>
       
       <category domain="https://chrisbergeron.com/tags/sas/">sas</category>
+      
+      <category domain="https://chrisbergeron.com/tags/chia/">chia</category>
       
       
       <comments>https://chrisbergeron.com/2020/03/07/diy_das_part1/#disqus_thread</comments>
@@ -378,7 +426,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/dashboards/">dashboards</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
@@ -398,13 +446,12 @@
       <guid>https://chrisbergeron.com/2019/02/07/disable_pihole_iphone/</guid>
       <pubDate>Fri, 08 Feb 2019 01:46:25 GMT</pubDate>
       
-      <description>&lt;p&gt;If you run a &lt;a href=&quot;https://pi-hole.net/&quot;&gt;pihole&lt;/a&gt; the odds are good that you’ve needed to disable it from time to time.  I wanted an easy way to disable my pihole(s) temporarily, so I wrote a simple shell script to do it for me.  I’m almost always on my Macbook, so this approach worked for a while.  I needed to disable it a few times while I was out of the room, so I figured I’d find an easier way to do it from my phone.&lt;br&gt;I already used an iOS app called &lt;a href=&quot;https://itunes.apple.com/us/app/launcher-with-multiple-widgets/id905099592?mt=8&quot;&gt;Launcher&lt;/a&gt; on my iphone, so integrating pihole api calls with it seemed like a no-brainer.  For convienience, it can be used from your lock screen without having to unlock your phone.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1549595945/icons/launcher_widget_today_screen_mvaxki.png&quot; alt=&quot;Using the Launcher Widget to disable pihole&quot;&gt;&lt;br&gt;</description>
+      <description>&lt;p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1549595945/icons/launcher_widget_today_screen_mvaxki.png&quot; alt=&quot;Using the Launcher Widget to disable pihole&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;If you run a &lt;a href=&quot;https://pi-hole.net/&quot;&gt;pihole&lt;/a&gt; the odds are good that you’ve needed to disable it from time to time.  I wanted an easy way to disable my pihole(s) temporarily, so I wrote a simple shell script to do it for me.  I’m almost always on my Macbook, so this approach worked for a while.  I needed to disable it a few times while I was out of the room, so I figured I’d find an easier way to do it from my phone.&lt;br&gt;</description>
       
       
       
       
-      <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
       <category domain="https://chrisbergeron.com/tags/pihole/">pihole</category>
@@ -414,6 +461,8 @@
       <category domain="https://chrisbergeron.com/tags/iphone/">iphone</category>
       
       <category domain="https://chrisbergeron.com/tags/dnsmasq/">dnsmasq</category>
+      
+      <category domain="https://chrisbergeron.com/tags/api/">api</category>
       
       
       <comments>https://chrisbergeron.com/2019/02/07/disable_pihole_iphone/#disqus_thread</comments>
@@ -432,7 +481,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/homelab/">homelab</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
@@ -456,7 +505,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/dashboards/">dashboards</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
@@ -476,21 +525,21 @@
       <guid>https://chrisbergeron.com/2018/10/27/monitorr/</guid>
       <pubDate>Sat, 27 Oct 2018 17:43:00 GMT</pubDate>
       
-        
-        
-          
-          
-      <description>&lt;p&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1540662948/screenshots/q3uyxjw13yjo1enuwqnz.png&quot;&gt;&lt;img</description>
-          
-        
+      <description>&lt;center&gt;&lt;br&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1540662948/screenshots/q3uyxjw13yjo1enuwqnz.png&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1540663515/screenshots/ej5ehq72qnptdmpzbxsg.png&quot; alt=&quot;Monitorr&quot; title=&quot;Monitorr&quot;/&gt;&lt;/a&gt;&lt;/center&gt;
+
+&lt;p&gt;As part of my dashboard project (link coming soon) I was looking for a lightweight self hosted monitoring solution for my home network services.  I found Monitorr and decided it was a perfect fit for my needs.  It’s simple and it doesn’t have any frills, which is exactly what I wanted.&lt;br&gt;</description>
       
       
       
       
-      <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
+      
+      <category domain="https://chrisbergeron.com/tags/php/">php</category>
       
       <category domain="https://chrisbergeron.com/tags/monitorr/">monitorr</category>
+      
+      <category domain="https://chrisbergeron.com/tags/glimpse/">glimpse</category>
       
       
       <comments>https://chrisbergeron.com/2018/10/27/monitorr/#disqus_thread</comments>
@@ -522,7 +571,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/dashboards/">dashboards</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
@@ -552,16 +601,20 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/usenet/">usenet</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
       <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
       
+      <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
+      
       <category domain="https://chrisbergeron.com/tags/mariadb/">mariadb</category>
       
       <category domain="https://chrisbergeron.com/tags/mysql/">mysql</category>
+      
+      <category domain="https://chrisbergeron.com/tags/python/">python</category>
       
       
       <comments>https://chrisbergeron.com/2018/07/12/nzbget-mysql/#disqus_thread</comments>
@@ -582,7 +635,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/devops/">devops</category>
+      <category domain="https://chrisbergeron.com/categories/Software/">Software</category>
       
       
       <category domain="https://chrisbergeron.com/tags/pihole/">pihole</category>
@@ -607,7 +660,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/usenet/">usenet</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
@@ -633,7 +686,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
@@ -659,7 +712,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/networking/">networking</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/pfsense/">pfsense</category>
@@ -689,10 +742,12 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
+      
+      <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
@@ -715,7 +770,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/homelab/">homelab</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/dell/">dell</category>
@@ -740,7 +795,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/ansible/">ansible</category>
@@ -767,7 +822,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/dashboards/">dashboards</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
@@ -787,16 +842,19 @@
       <guid>https://chrisbergeron.com/2017/12/14/howtheyvoted/</guid>
       <pubDate>Thu, 14 Dec 2017 21:56:00 GMT</pubDate>
       
-      <description>&lt;p&gt;Credit: &lt;a href=&quot;https://www.reddit.com/user/truefalseequivalence&quot;&gt;truefalseequivalence @ reddit&lt;a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Internet-Freedom&quot;&gt;&lt;a href=&quot;#Internet-Freedom&quot; class=&quot;headerlink&quot; title=&quot;Internet Freedom&quot;&gt;&lt;/a&gt;Internet Freedom&lt;/h1&gt;&lt;h3 id=&quot;Senate-Vote-for-Net-Neutrality&quot;&gt;&lt;a href=&quot;#Senate-Vote-for-Net-Neutrality&quot; class=&quot;headerlink&quot; title=&quot;Senate Vote for Net Neutrality&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.govtrack.us/congress/votes/112-2011/s200&quot;&gt;Senate Vote for Net Neutrality&lt;/a&gt;&lt;/h3&gt;</description>
+      <description>&lt;p&gt;This is a list of how US Representatives voted on Net Neutrality in 2018:&lt;br&gt;Credit to reddit user &lt;a href=&quot;https://www.reddit.com/user/truefalseequivalence&quot;&gt;truefalseequivalence&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Senate-Vote-for-Net-Neutrality&quot;&gt;&lt;a href=&quot;#Senate-Vote-for-Net-Neutrality&quot; class=&quot;headerlink&quot; title=&quot;Senate Vote for Net Neutrality&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.govtrack.us/congress/votes/112-2011/s200&quot;&gt;Senate Vote for Net Neutrality&lt;/a&gt;&lt;/h3&gt;</description>
       
       
       
       
-      <category domain="https://chrisbergeron.com/categories/politics/">politics</category>
+      <category domain="https://chrisbergeron.com/categories/Politics/">Politics</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/democrats-republicans/">democrats, republicans</category>
+      <category domain="https://chrisbergeron.com/tags/democrats/">democrats</category>
+      
+      <category domain="https://chrisbergeron.com/tags/republicans/">republicans</category>
       
       
       <comments>https://chrisbergeron.com/2017/12/14/howtheyvoted/#disqus_thread</comments>
@@ -839,12 +897,22 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
+      
+      <category domain="https://chrisbergeron.com/tags/ansible/">ansible</category>
+      
+      <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
       <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
       
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
+      
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      
+      <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
+      
+      <category domain="https://chrisbergeron.com/tags/vault/">vault</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/#disqus_thread</comments>
@@ -868,7 +936,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
       <category domain="https://chrisbergeron.com/tags/showterm/">showterm</category>
@@ -891,7 +959,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/dashboards/">dashboards</category>
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
@@ -916,12 +984,26 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
+      
+      <category domain="https://chrisbergeron.com/tags/ansible/">ansible</category>
+      
+      <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
       <category domain="https://chrisbergeron.com/tags/sabnzbd/">sabnzbd</category>
+      
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      
+      <category domain="https://chrisbergeron.com/tags/terraform/">terraform</category>
+      
+      <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
+      
+      <category domain="https://chrisbergeron.com/tags/sonarr/">sonarr</category>
+      
+      <category domain="https://chrisbergeron.com/tags/haxproxy/">haxproxy</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/#disqus_thread</comments>
@@ -939,7 +1021,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
@@ -963,7 +1045,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
@@ -986,7 +1068,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/blog/">blog</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
       <category domain="https://chrisbergeron.com/tags/hexo/">hexo</category>
@@ -999,28 +1081,24 @@
     </item>
     
     <item>
-      <title>A systemD unit file for Hexo</title>
+      <title>A systemD unit file for NZBget</title>
       <link>https://chrisbergeron.com/2017/10/07/nzbget_systemd_unit_file/</link>
       <guid>https://chrisbergeron.com/2017/10/07/nzbget_systemd_unit_file/</guid>
       <pubDate>Sat, 07 Oct 2017 16:46:25 GMT</pubDate>
       
-        
-        
-          
-          
-      <description>&lt;p&gt;&lt;a href=&quot;https://nzbget.net&quot;&gt;Nzbget&lt;/a&gt; is a very fast Usenet downloader.  It didn’t include a SystemD Unit file, so I created</description>
-          
-        
+      <description>&lt;p&gt;&lt;a href=&quot;https://nzbget.net&quot;&gt;Nzbget&lt;/a&gt; is a very fast Usenet downloader.  It didn’t include a SystemD Unit file, so I created one:&lt;br&gt;</description>
       
       
       
       
-      <category domain="https://chrisbergeron.com/categories/blog/">blog</category>
+      <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
       <category domain="https://chrisbergeron.com/tags/hexo/">hexo</category>
       
       <category domain="https://chrisbergeron.com/tags/systemd/">systemd</category>
+      
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/07/nzbget_systemd_unit_file/#disqus_thread</comments>
@@ -1038,7 +1116,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/carputer/">carputer</category>
+      <category domain="https://chrisbergeron.com/categories/Telematics/">Telematics</category>
       
       
       <category domain="https://chrisbergeron.com/tags/comma-ai/">comma.ai</category>
@@ -1048,6 +1126,8 @@
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
+      
+      <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/06/comma_panda/#disqus_thread</comments>
@@ -1152,12 +1232,16 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/alternate-energy/">alternate energy</category>
+      <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
       
       
       <category domain="https://chrisbergeron.com/tags/ethanol/">ethanol</category>
       
       <category domain="https://chrisbergeron.com/tags/fuel/">fuel</category>
+      
+      <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
+      <category domain="https://chrisbergeron.com/tags/alternate-energy/">alternate energy</category>
       
       
       <comments>https://chrisbergeron.com/2007/08/07/ethanol_still/#disqus_thread</comments>
@@ -1175,12 +1259,16 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/alternate-energy/">alternate energy</category>
+      <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
       
       
       <category domain="https://chrisbergeron.com/tags/hypermiling/">hypermiling</category>
       
       <category domain="https://chrisbergeron.com/tags/aspire/">aspire</category>
+      
+      <category domain="https://chrisbergeron.com/tags/car/">car</category>
+      
+      <category domain="https://chrisbergeron.com/tags/alternate-energy/">alternate energy</category>
       
       
       <comments>https://chrisbergeron.com/2007/07/17/aspire_free_car/#disqus_thread</comments>
@@ -1204,7 +1292,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/carputer/">carputer</category>
+      <category domain="https://chrisbergeron.com/categories/Telematics/">Telematics</category>
       
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
@@ -1212,6 +1300,10 @@
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
+      
+      <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
+      <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       
       
       <comments>https://chrisbergeron.com/2007/07/11/dashpc_carputer/#disqus_thread</comments>
@@ -1235,7 +1327,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/carputer/">carputer</category>
+      <category domain="https://chrisbergeron.com/categories/Telematics/">Telematics</category>
       
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
@@ -1245,6 +1337,10 @@
       <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
       <category domain="https://chrisbergeron.com/tags/dashboard-linux/">dashboard linux</category>
+      
+      <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
+      <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       
       
       <comments>https://chrisbergeron.com/2005/05/18/dashboard_linux/#disqus_thread</comments>
