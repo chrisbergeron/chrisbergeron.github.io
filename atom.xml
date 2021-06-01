@@ -111,17 +111,17 @@
     
     <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
     
-    <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
-    
-    <category term="mysql" scheme="https://chrisbergeron.com/tags/mysql/"/>
-    
     <category term="M1" scheme="https://chrisbergeron.com/tags/M1/"/>
     
     <category term="nginx" scheme="https://chrisbergeron.com/tags/nginx/"/>
     
     <category term="apple silicon" scheme="https://chrisbergeron.com/tags/apple-silicon/"/>
     
+    <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
+    
     <category term="big sur" scheme="https://chrisbergeron.com/tags/big-sur/"/>
+    
+    <category term="mysql" scheme="https://chrisbergeron.com/tags/mysql/"/>
     
     <category term="apple" scheme="https://chrisbergeron.com/tags/apple/"/>
     
@@ -172,11 +172,11 @@
     <category term="Crypto" scheme="https://chrisbergeron.com/categories/Crypto/"/>
     
     
-    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
-    
     <category term="bitcoin" scheme="https://chrisbergeron.com/tags/bitcoin/"/>
     
     <category term="armory" scheme="https://chrisbergeron.com/tags/armory/"/>
+    
+    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
     
     <category term="cryptocurrency" scheme="https://chrisbergeron.com/tags/cryptocurrency/"/>
     
@@ -310,9 +310,9 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
-    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
-    
     <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
+    
+    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
     <category term="cloudinary" scheme="https://chrisbergeron.com/tags/cloudinary/"/>
     
@@ -338,6 +338,8 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
+    <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
+    
     <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
@@ -347,8 +349,6 @@
     <category term="influxdb" scheme="https://chrisbergeron.com/tags/influxdb/"/>
     
     <category term="webhooks" scheme="https://chrisbergeron.com/tags/webhooks/"/>
-    
-    <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
     
   </entry>
   
@@ -371,6 +371,8 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
+    <category term="chia" scheme="https://chrisbergeron.com/tags/chia/"/>
+    
     <category term="supermicro" scheme="https://chrisbergeron.com/tags/supermicro/"/>
     
     <category term="das" scheme="https://chrisbergeron.com/tags/das/"/>
@@ -378,8 +380,6 @@
     <category term="nas" scheme="https://chrisbergeron.com/tags/nas/"/>
     
     <category term="sas" scheme="https://chrisbergeron.com/tags/sas/"/>
-    
-    <category term="chia" scheme="https://chrisbergeron.com/tags/chia/"/>
     
   </entry>
   
@@ -473,11 +473,11 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
+    <category term="plex" scheme="https://chrisbergeron.com/tags/plex/"/>
+    
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
     <category term="influxdb" scheme="https://chrisbergeron.com/tags/influxdb/"/>
-    
-    <category term="plex" scheme="https://chrisbergeron.com/tags/plex/"/>
     
   </entry>
   
@@ -563,6 +563,8 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
+    <category term="mysql" scheme="https://chrisbergeron.com/tags/mysql/"/>
+    
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
     <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
@@ -570,8 +572,6 @@
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="mariadb" scheme="https://chrisbergeron.com/tags/mariadb/"/>
-    
-    <category term="mysql" scheme="https://chrisbergeron.com/tags/mysql/"/>
     
     <category term="python" scheme="https://chrisbergeron.com/tags/python/"/>
     
@@ -924,13 +924,13 @@
     
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
-    <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
-    
     <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
-    <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
-    
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
+    
+    <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
+    
+    <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
     
     <category term="sonarr" scheme="https://chrisbergeron.com/tags/sonarr/"/>
     
@@ -1127,9 +1127,9 @@
     
     <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
-    <category term="interview" scheme="https://chrisbergeron.com/tags/interview/"/>
-    
     <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
+    <category term="interview" scheme="https://chrisbergeron.com/tags/interview/"/>
     
   </entry>
   
@@ -1148,13 +1148,13 @@
     <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
     
     
-    <category term="ethanol" scheme="https://chrisbergeron.com/tags/ethanol/"/>
-    
-    <category term="fuel" scheme="https://chrisbergeron.com/tags/fuel/"/>
+    <category term="alternate energy" scheme="https://chrisbergeron.com/tags/alternate-energy/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
-    <category term="alternate energy" scheme="https://chrisbergeron.com/tags/alternate-energy/"/>
+    <category term="ethanol" scheme="https://chrisbergeron.com/tags/ethanol/"/>
+    
+    <category term="fuel" scheme="https://chrisbergeron.com/tags/fuel/"/>
     
   </entry>
   
@@ -1208,9 +1208,9 @@
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
-    
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
@@ -1221,14 +1221,14 @@
     <link href="https://chrisbergeron.com/2005/05/18/dashboard_linux/"/>
     <id>https://chrisbergeron.com/2005/05/18/dashboard_linux/</id>
     <published>2005-05-18T18:11:00.000Z</published>
-    <updated>2021-05-02T05:31:51.460Z</updated>
+    <updated>2021-05-03T07:01:44.285Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;In 1999 (many years ago), I had the crazy idea of putting a personal computer into my car. There were no frameworks or code bases</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/projects/dashboard_linux/dashpc_screenshot_smokey_blue.jpg&quot; width=&quot;180&quot; alt=&quot;Screenshot&quot;&gt;&lt;br&gt;In 1999 (many years ago),</summary>
         
       
     
@@ -1241,11 +1241,11 @@
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
+    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
     <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
     <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
-    
-    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     

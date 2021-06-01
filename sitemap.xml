@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2005/05/18/dashboard_linux/</loc>
+    
+    <lastmod>2021-05-03T07:01:44.285Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2017/12/14/howtheyvoted/</loc>
     
     <lastmod>2021-05-02T05:46:03.204Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>https://chrisbergeron.com/2019/02/07/disable_pihole_iphone/</loc>
     
     <lastmod>2021-05-02T05:31:57.085Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2005/05/18/dashboard_linux/</loc>
-    
-    <lastmod>2021-05-02T05:31:51.460Z</lastmod>
     
   </url>
   

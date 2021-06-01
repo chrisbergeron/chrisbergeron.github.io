@@ -118,17 +118,17 @@
       
       <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
       
-      <category domain="https://chrisbergeron.com/tags/php/">php</category>
-      
-      <category domain="https://chrisbergeron.com/tags/mysql/">mysql</category>
-      
       <category domain="https://chrisbergeron.com/tags/M1/">M1</category>
       
       <category domain="https://chrisbergeron.com/tags/nginx/">nginx</category>
       
       <category domain="https://chrisbergeron.com/tags/apple-silicon/">apple silicon</category>
       
+      <category domain="https://chrisbergeron.com/tags/php/">php</category>
+      
       <category domain="https://chrisbergeron.com/tags/big-sur/">big sur</category>
+      
+      <category domain="https://chrisbergeron.com/tags/mysql/">mysql</category>
       
       <category domain="https://chrisbergeron.com/tags/apple/">apple</category>
       
@@ -183,11 +183,11 @@
       <category domain="https://chrisbergeron.com/categories/Crypto/">Crypto</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
-      
       <category domain="https://chrisbergeron.com/tags/bitcoin/">bitcoin</category>
       
       <category domain="https://chrisbergeron.com/tags/armory/">armory</category>
+      
+      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
       
       <category domain="https://chrisbergeron.com/tags/cryptocurrency/">cryptocurrency</category>
       
@@ -333,9 +333,9 @@
       <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
-      
       <category domain="https://chrisbergeron.com/tags/php/">php</category>
+      
+      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
       
       <category domain="https://chrisbergeron.com/tags/cloudinary/">cloudinary</category>
       
@@ -363,6 +363,8 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/php/">php</category>
+      
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
@@ -372,8 +374,6 @@
       <category domain="https://chrisbergeron.com/tags/influxdb/">influxdb</category>
       
       <category domain="https://chrisbergeron.com/tags/webhooks/">webhooks</category>
-      
-      <category domain="https://chrisbergeron.com/tags/php/">php</category>
       
       
       <comments>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/#disqus_thread</comments>
@@ -398,6 +398,8 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/chia/">chia</category>
+      
       <category domain="https://chrisbergeron.com/tags/supermicro/">supermicro</category>
       
       <category domain="https://chrisbergeron.com/tags/das/">das</category>
@@ -405,8 +407,6 @@
       <category domain="https://chrisbergeron.com/tags/nas/">nas</category>
       
       <category domain="https://chrisbergeron.com/tags/sas/">sas</category>
-      
-      <category domain="https://chrisbergeron.com/tags/chia/">chia</category>
       
       
       <comments>https://chrisbergeron.com/2020/03/07/diy_das_part1/#disqus_thread</comments>
@@ -508,11 +508,11 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/plex/">plex</category>
+      
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
       <category domain="https://chrisbergeron.com/tags/influxdb/">influxdb</category>
-      
-      <category domain="https://chrisbergeron.com/tags/plex/">plex</category>
       
       
       <comments>https://chrisbergeron.com/2018/10/28/plex_dashboard/#disqus_thread</comments>
@@ -604,6 +604,8 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/mysql/">mysql</category>
+      
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
       <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
@@ -611,8 +613,6 @@
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
       <category domain="https://chrisbergeron.com/tags/mariadb/">mariadb</category>
-      
-      <category domain="https://chrisbergeron.com/tags/mysql/">mysql</category>
       
       <category domain="https://chrisbergeron.com/tags/python/">python</category>
       
@@ -993,13 +993,13 @@
       
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
-      <category domain="https://chrisbergeron.com/tags/sabnzbd/">sabnzbd</category>
-      
       <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
-      <category domain="https://chrisbergeron.com/tags/terraform/">terraform</category>
-      
       <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
+      
+      <category domain="https://chrisbergeron.com/tags/sabnzbd/">sabnzbd</category>
+      
+      <category domain="https://chrisbergeron.com/tags/terraform/">terraform</category>
       
       <category domain="https://chrisbergeron.com/tags/sonarr/">sonarr</category>
       
@@ -1212,9 +1212,9 @@
       
       <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
-      <category domain="https://chrisbergeron.com/tags/interview/">interview</category>
-      
       <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      
+      <category domain="https://chrisbergeron.com/tags/interview/">interview</category>
       
       
       <comments>https://chrisbergeron.com/2008/01/20/interviewed_for_release_2.0_magazine/#disqus_thread</comments>
@@ -1235,13 +1235,13 @@
       <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/ethanol/">ethanol</category>
-      
-      <category domain="https://chrisbergeron.com/tags/fuel/">fuel</category>
+      <category domain="https://chrisbergeron.com/tags/alternate-energy/">alternate energy</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
       
-      <category domain="https://chrisbergeron.com/tags/alternate-energy/">alternate energy</category>
+      <category domain="https://chrisbergeron.com/tags/ethanol/">ethanol</category>
+      
+      <category domain="https://chrisbergeron.com/tags/fuel/">fuel</category>
       
       
       <comments>https://chrisbergeron.com/2007/08/07/ethanol_still/#disqus_thread</comments>
@@ -1299,9 +1299,9 @@
       
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
-      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
-      
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
+      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       
@@ -1320,7 +1320,7 @@
         
           
           
-      <description>&lt;p&gt;In 1999 (many years ago), I had the crazy idea of putting a personal computer into my car. There were no frameworks or code bases</description>
+      <description>&lt;p&gt;&lt;img src=&quot;/images/projects/dashboard_linux/dashpc_screenshot_smokey_blue.jpg&quot; width=&quot;180&quot; alt=&quot;Screenshot&quot;&gt;&lt;br&gt;In 1999 (many years ago),</description>
           
         
       
@@ -1334,11 +1334,11 @@
       
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
+      <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
       <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
       <category domain="https://chrisbergeron.com/tags/dashboard-linux/">dashboard linux</category>
-      
-      <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
       
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       
