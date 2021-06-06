@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2021-05-02T04:44:57.597Z</updated>
+  <updated>2021-06-06T18:04:22.372Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Creating a Magic Mirror with a Raspberry Pi</title>
+    <link href="https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/"/>
+    <id>https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/</id>
+    <published>2021-06-06T03:56:42.000Z</published>
+    <updated>2021-06-06T18:04:22.372Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3-1-small.png&quot; alt=&quot;My Magic Mirror&quot; title=&quot;Magic Mirror&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;</summary>
+    
+    
+    
+    <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
+    
+    
+    <category term="magicmirror" scheme="https://chrisbergeron.com/tags/magicmirror/"/>
+    
+    <category term="pi" scheme="https://chrisbergeron.com/tags/pi/"/>
+    
+    <category term="raspberrypi" scheme="https://chrisbergeron.com/tags/raspberrypi/"/>
+    
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Making a Raspberry Pi Garage Door Opener</title>
+    <link href="https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/"/>
+    <id>https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/</id>
+    <published>2021-06-05T04:15:32.000Z</published>
+    <updated>2021-06-06T04:58:06.436Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Raspberry-Pi-Garage-Door-Opener/raspberry-pi-garage-door-opener-final.png&quot; alt=&quot;&quot; title=&quot;Raspberry Pi Garage Door Opener&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;A few years back I built a neat project I found online.  It was originally designed by Andrew Shillday.  You can find the &lt;a href=&quot;https://github.com/andrewshilliday/garage-door-controller&quot;&gt;code here&lt;/a&gt;. I decided that a Raspberry Pi Zero was sufficient, so I had to modify the pins used, but otherwise it was a fairly easy project.&lt;br&gt;</summary>
+    
+    
+    
+    <category term="Projects" scheme="https://chrisbergeron.com/categories/Projects/"/>
+    
+    
+    <category term="pi" scheme="https://chrisbergeron.com/tags/pi/"/>
+    
+    <category term="home" scheme="https://chrisbergeron.com/tags/home/"/>
+    
+    <category term="garage" scheme="https://chrisbergeron.com/tags/garage/"/>
+    
+  </entry>
   
   <entry>
     <title>Running Chia Full Node on Apple Silicon M1</title>
@@ -71,10 +119,12 @@
     <link href="https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/"/>
     <id>https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/</id>
     <published>2021-04-15T17:58:42.000Z</published>
-    <updated>2021-05-02T04:47:39.651Z</updated>
+    <updated>2021-06-06T04:35:32.085Z</updated>
     
     
-    <summary type="html">&lt;p&gt;NFTs have recently piqued my curiosity.  If you don’t know what an NFT is, it’s a Non-Fungible Token.  &lt;/p&gt;
+    <summary type="html">&lt;center&gt;&lt;br&gt;&lt;a href=&quot;https://etherscan.io/&quot;&gt;&lt;img src=&quot;/2021/04/15/Bidding-on-an-NFT-in-Ethereum/cb-ethereum.jpg&quot; alt=&quot;&quot; title=&quot;Ethereum Logo&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;/center&gt;
+
+&lt;p&gt;NFTs have recently piqued my curiosity.  If you don’t know what an NFT is, it’s a Non-Fungible Token.  &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Clear as mud right?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;There are many articles on the subject these days, so I’ll defer you to them if you want more background.&lt;/p&gt;
 &lt;p&gt;Anyway, to get exposure to the NFT market I decided to buy an NFT.  It didn’t matter what it was, I just wanted to experience the process.  More importantly, I wanted to see what it was like from a &lt;em&gt;consumer&lt;/em&gt; perspective.&lt;br&gt;</summary>
@@ -86,11 +136,11 @@
     
     <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
     
+    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
+    
     <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
     
     <category term="ethereum" scheme="https://chrisbergeron.com/tags/ethereum/"/>
-    
-    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
     
   </entry>
   
@@ -187,7 +237,7 @@
     <link href="https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/"/>
     <id>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</id>
     <published>2021-01-31T03:25:11.000Z</published>
-    <updated>2021-05-02T05:34:31.630Z</updated>
+    <updated>2021-06-05T04:45:43.312Z</updated>
     
     
     <summary type="html">&lt;p&gt;Watch local broadcast TV on Plex without an antenna.&lt;/p&gt;
@@ -199,6 +249,10 @@
     
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
+    
+    <category term="pi" scheme="https://chrisbergeron.com/tags/pi/"/>
+    
+    <category term="raspberrypi" scheme="https://chrisbergeron.com/tags/raspberrypi/"/>
     
     <category term="plex" scheme="https://chrisbergeron.com/tags/plex/"/>
     
@@ -312,13 +366,13 @@
     
     <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
     
-    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
-    
     <category term="cloudinary" scheme="https://chrisbergeron.com/tags/cloudinary/"/>
     
     <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
     
     <category term="curl" scheme="https://chrisbergeron.com/tags/curl/"/>
+    
+    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
   </entry>
   
@@ -357,11 +411,11 @@
     <link href="https://chrisbergeron.com/2020/03/07/diy_das_part1/"/>
     <id>https://chrisbergeron.com/2020/03/07/diy_das_part1/</id>
     <published>2020-03-07T20:10:25.000Z</published>
-    <updated>2021-05-02T04:48:58.652Z</updated>
+    <updated>2021-06-06T18:13:59.929Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;em&gt;Updated for 2021: Great for Chia Farming and Plotting!!!&lt;/em&gt;&lt;/p&gt;
-&lt;center&gt;&lt;br&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1552194286/icons/supermicro_836a_chassis_enfq7x.png&quot; alt=&quot;Supermicro 836A&quot; width=400&gt;&lt;br&gt;&lt;/center&gt;
+&lt;center&gt;&lt;br&gt;&lt;img src=&quot;das-internals-cb.001.png&quot; alt=&quot;DAS Internals&quot; width=600&gt;&lt;br&gt;&lt;/center&gt;
 
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt; I have several hundred terabytes that I’ve recently been putting to use to &lt;a href=&quot;/2021/05/01/Running-a-Chia-Full-Node-on-M1/&quot;&gt;Farm Chia Cryptocurrency&lt;/a&gt;.  I’ve updated this article were applicable.&lt;/p&gt;
 &lt;h2 id=&quot;Why-another-NAS-DAS-article&quot;&gt;&lt;a href=&quot;#Why-another-NAS-DAS-article&quot; class=&quot;headerlink&quot; title=&quot;Why another NAS/DAS article?&quot;&gt;&lt;/a&gt;Why another NAS/DAS article?&lt;/h2&gt;&lt;p&gt;There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so I compiled the information that was useful for my specific 2019 build here.  The prices linked below are subject to market fluctuations and timing, so some of the components I found at a great price. Overall they should be roughly the same as what you can find.  Your mileage may vary.&lt;br&gt;</summary>
@@ -370,6 +424,8 @@
     
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
+    
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
     <category term="chia" scheme="https://chrisbergeron.com/tags/chia/"/>
     
@@ -380,6 +436,8 @@
     <category term="nas" scheme="https://chrisbergeron.com/tags/nas/"/>
     
     <category term="sas" scheme="https://chrisbergeron.com/tags/sas/"/>
+    
+    <category term="jbod" scheme="https://chrisbergeron.com/tags/jbod/"/>
     
   </entry>
   
@@ -694,9 +752,9 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
-    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
-    
     <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
+    
+    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
@@ -837,6 +895,8 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
     <category term="ansible" scheme="https://chrisbergeron.com/tags/ansible/"/>
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
@@ -844,8 +904,6 @@
     <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
     
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
-    
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
     
@@ -918,13 +976,13 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
     <category term="ansible" scheme="https://chrisbergeron.com/tags/ansible/"/>
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
-    
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
     
@@ -953,9 +1011,9 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
-    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
-    
     <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
+    
+    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
   </entry>
   
@@ -1017,11 +1075,11 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
     <category term="hexo" scheme="https://chrisbergeron.com/tags/hexo/"/>
     
     <category term="systemd" scheme="https://chrisbergeron.com/tags/systemd/"/>
-    
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
   </entry>
   
@@ -1040,15 +1098,15 @@
     <category term="Telematics" scheme="https://chrisbergeron.com/categories/Telematics/"/>
     
     
-    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
-    
-    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
-    
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
+    
+    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
     
   </entry>
   
@@ -1123,11 +1181,11 @@
     <category term="Professional" scheme="https://chrisbergeron.com/categories/Professional/"/>
     
     
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
     <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
-    
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
     <category term="interview" scheme="https://chrisbergeron.com/tags/interview/"/>
     
@@ -1206,11 +1264,11 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
@@ -1239,13 +1297,13 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
-    <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
-    
-    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
     <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
+    <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
+    
     <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
+    
+    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     

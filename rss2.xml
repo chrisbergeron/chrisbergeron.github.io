@@ -15,8 +15,60 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Sun, 02 May 2021 04:44:57 GMT</pubDate>
+    <pubDate>Sun, 06 Jun 2021 18:04:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Creating a Magic Mirror with a Raspberry Pi</title>
+      <link>https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/</link>
+      <guid>https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/</guid>
+      <pubDate>Sun, 06 Jun 2021 03:56:42 GMT</pubDate>
+      
+      <description>&lt;p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3-1-small.png&quot; alt=&quot;My Magic Mirror&quot; title=&quot;Magic Mirror&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;</description>
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/magicmirror/">magicmirror</category>
+      
+      <category domain="https://chrisbergeron.com/tags/pi/">pi</category>
+      
+      <category domain="https://chrisbergeron.com/tags/raspberrypi/">raspberrypi</category>
+      
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      
+      
+      <comments>https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Making a Raspberry Pi Garage Door Opener</title>
+      <link>https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/</link>
+      <guid>https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/</guid>
+      <pubDate>Sat, 05 Jun 2021 04:15:32 GMT</pubDate>
+      
+      <description>&lt;p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Raspberry-Pi-Garage-Door-Opener/raspberry-pi-garage-door-opener-final.png&quot; alt=&quot;&quot; title=&quot;Raspberry Pi Garage Door Opener&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;A few years back I built a neat project I found online.  It was originally designed by Andrew Shillday.  You can find the &lt;a href=&quot;https://github.com/andrewshilliday/garage-door-controller&quot;&gt;code here&lt;/a&gt;. I decided that a Raspberry Pi Zero was sufficient, so I had to modify the pins used, but otherwise it was a fairly easy project.&lt;br&gt;</description>
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/Projects/">Projects</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/pi/">pi</category>
+      
+      <category domain="https://chrisbergeron.com/tags/home/">home</category>
+      
+      <category domain="https://chrisbergeron.com/tags/garage/">garage</category>
+      
+      
+      <comments>https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Running Chia Full Node on Apple Silicon M1</title>
@@ -78,7 +130,9 @@
       <guid>https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/</guid>
       <pubDate>Thu, 15 Apr 2021 17:58:42 GMT</pubDate>
       
-      <description>&lt;p&gt;NFTs have recently piqued my curiosity.  If you don’t know what an NFT is, it’s a Non-Fungible Token.  &lt;/p&gt;
+      <description>&lt;center&gt;&lt;br&gt;&lt;a href=&quot;https://etherscan.io/&quot;&gt;&lt;img src=&quot;/2021/04/15/Bidding-on-an-NFT-in-Ethereum/cb-ethereum.jpg&quot; alt=&quot;&quot; title=&quot;Ethereum Logo&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;/center&gt;
+
+&lt;p&gt;NFTs have recently piqued my curiosity.  If you don’t know what an NFT is, it’s a Non-Fungible Token.  &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Clear as mud right?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;There are many articles on the subject these days, so I’ll defer you to them if you want more background.&lt;/p&gt;
 &lt;p&gt;Anyway, to get exposure to the NFT market I decided to buy an NFT.  It didn’t matter what it was, I just wanted to experience the process.  More importantly, I wanted to see what it was like from a &lt;em&gt;consumer&lt;/em&gt; perspective.&lt;br&gt;</description>
@@ -91,11 +145,11 @@
       
       <category domain="https://chrisbergeron.com/tags/nft/">nft</category>
       
+      <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
+      
       <category domain="https://chrisbergeron.com/tags/blockchain/">blockchain</category>
       
       <category domain="https://chrisbergeron.com/tags/ethereum/">ethereum</category>
-      
-      <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
       
       
       <comments>https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/#disqus_thread</comments>
@@ -212,6 +266,10 @@
       
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
+      
+      <category domain="https://chrisbergeron.com/tags/pi/">pi</category>
+      
+      <category domain="https://chrisbergeron.com/tags/raspberrypi/">raspberrypi</category>
       
       <category domain="https://chrisbergeron.com/tags/plex/">plex</category>
       
@@ -335,13 +393,13 @@
       
       <category domain="https://chrisbergeron.com/tags/php/">php</category>
       
-      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
-      
       <category domain="https://chrisbergeron.com/tags/cloudinary/">cloudinary</category>
       
       <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
       
       <category domain="https://chrisbergeron.com/tags/curl/">curl</category>
+      
+      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
       
       
       <comments>https://chrisbergeron.com/2020/03/13/cloudinary_bash/#disqus_thread</comments>
@@ -387,7 +445,7 @@
       <pubDate>Sat, 07 Mar 2020 20:10:25 GMT</pubDate>
       
       <description>&lt;p&gt;&lt;em&gt;Updated for 2021: Great for Chia Farming and Plotting!!!&lt;/em&gt;&lt;/p&gt;
-&lt;center&gt;&lt;br&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1552194286/icons/supermicro_836a_chassis_enfq7x.png&quot; alt=&quot;Supermicro 836A&quot; width=400&gt;&lt;br&gt;&lt;/center&gt;
+&lt;center&gt;&lt;br&gt;&lt;img src=&quot;das-internals-cb.001.png&quot; alt=&quot;DAS Internals&quot; width=600&gt;&lt;br&gt;&lt;/center&gt;
 
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt; I have several hundred terabytes that I’ve recently been putting to use to &lt;a href=&quot;/2021/05/01/Running-a-Chia-Full-Node-on-M1/&quot;&gt;Farm Chia Cryptocurrency&lt;/a&gt;.  I’ve updated this article were applicable.&lt;/p&gt;
 &lt;h2 id=&quot;Why-another-NAS-DAS-article&quot;&gt;&lt;a href=&quot;#Why-another-NAS-DAS-article&quot; class=&quot;headerlink&quot; title=&quot;Why another NAS/DAS article?&quot;&gt;&lt;/a&gt;Why another NAS/DAS article?&lt;/h2&gt;&lt;p&gt;There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so I compiled the information that was useful for my specific 2019 build here.  The prices linked below are subject to market fluctuations and timing, so some of the components I found at a great price. Overall they should be roughly the same as what you can find.  Your mileage may vary.&lt;br&gt;</description>
@@ -398,6 +456,8 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      
       <category domain="https://chrisbergeron.com/tags/chia/">chia</category>
       
       <category domain="https://chrisbergeron.com/tags/supermicro/">supermicro</category>
@@ -407,6 +467,8 @@
       <category domain="https://chrisbergeron.com/tags/nas/">nas</category>
       
       <category domain="https://chrisbergeron.com/tags/sas/">sas</category>
+      
+      <category domain="https://chrisbergeron.com/tags/jbod/">jbod</category>
       
       
       <comments>https://chrisbergeron.com/2020/03/07/diy_das_part1/#disqus_thread</comments>
@@ -745,9 +807,9 @@
       <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
-      
       <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
+      
+      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
@@ -900,6 +962,8 @@
       <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      
       <category domain="https://chrisbergeron.com/tags/ansible/">ansible</category>
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
@@ -907,8 +971,6 @@
       <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
       
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
-      
-      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
       
@@ -987,13 +1049,13 @@
       <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      
       <category domain="https://chrisbergeron.com/tags/ansible/">ansible</category>
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
-      
-      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
       
@@ -1024,9 +1086,9 @@
       <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
-      
       <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
+      
+      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/07/sysinfo/#disqus_thread</comments>
@@ -1094,11 +1156,11 @@
       <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      
       <category domain="https://chrisbergeron.com/tags/hexo/">hexo</category>
       
       <category domain="https://chrisbergeron.com/tags/systemd/">systemd</category>
-      
-      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/07/nzbget_systemd_unit_file/#disqus_thread</comments>
@@ -1119,15 +1181,15 @@
       <category domain="https://chrisbergeron.com/categories/Telematics/">Telematics</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/comma-ai/">comma.ai</category>
-      
-      <category domain="https://chrisbergeron.com/tags/panda/">panda</category>
-      
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
+      <category domain="https://chrisbergeron.com/tags/comma-ai/">comma.ai</category>
+      
+      <category domain="https://chrisbergeron.com/tags/panda/">panda</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/06/comma_panda/#disqus_thread</comments>
@@ -1208,11 +1270,11 @@
       <category domain="https://chrisbergeron.com/categories/Professional/">Professional</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
       <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
-      
-      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       <category domain="https://chrisbergeron.com/tags/interview/">interview</category>
       
@@ -1297,11 +1359,11 @@
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
+      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
+      
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
-      
-      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       
@@ -1332,13 +1394,13 @@
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
-      <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
-      
-      <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
-      
       <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
+      <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
+      
       <category domain="https://chrisbergeron.com/tags/dashboard-linux/">dashboard linux</category>
+      
+      <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
       
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       
