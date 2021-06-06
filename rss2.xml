@@ -15,8 +15,33 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Sun, 06 Jun 2021 18:04:22 GMT</pubDate>
+    <pubDate>Sun, 06 Jun 2021 22:48:20 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>New website - launch.chrisbergeron.com</title>
+      <link>https://chrisbergeron.com/2021/06/06/New-website-launch-chrisbergeron-com/</link>
+      <guid>https://chrisbergeron.com/2021/06/06/New-website-launch-chrisbergeron-com/</guid>
+      <pubDate>Sun, 06 Jun 2021 21:50:58 GMT</pubDate>
+      
+      <description>&lt;center&gt;&lt;br&gt;&lt;img src=&quot;https://dev.chrisbergeron.com/2021/06/06/New-website-launch-chrisbergeron-com/launch-website-cb.png&quot; alt=&quot;Next Rocket Launch&quot; title=&quot;Next Rocket Launch&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;I wanted a quick, lightweight way to view rocket launches from Florida’s Space Coast - Kennedy Space Center but everything I found online was bloated.  So, I create a simple website and Progressive Web App (PWA) so I could just check it on my phone.&lt;br&gt;</description>
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/launch/">launch</category>
+      
+      <category domain="https://chrisbergeron.com/tags/rocket/">rocket</category>
+      
+      <category domain="https://chrisbergeron.com/tags/spacecoast/">spacecoast</category>
+      
+      
+      <comments>https://chrisbergeron.com/2021/06/06/New-website-launch-chrisbergeron-com/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Creating a Magic Mirror with a Raspberry Pi</title>
@@ -359,7 +384,7 @@
       <guid>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</guid>
       <pubDate>Fri, 20 Nov 2020 05:11:25 GMT</pubDate>
       
-      <description>&lt;p&gt;I recently purchased an &lt;a href=&quot;https://www.amazon.com/gp/product/B07Q5XRMLD/ref=ppx_yo_dt_b_asin_image_o01_s00?ie=UTF8%26psc=1&quot;&gt;Mcombo 7040 Lift Chair&lt;/a&gt; for my elderly grandfather.  Prior to purchasing the chair my Grandfather had some questions so I figured I would have a look at the manual for answers.  Surprised that I couldn’t find one, I decided to post it here.&lt;br&gt;</description>
+      <description>&lt;p&gt;I recently purchased an &lt;a href=&quot;https://www.amazon.com/gp/product/B07Q5XRMLD/ref=ppx_yo_dt_b_asin_image_o01_s00?ie=UTF8%26psc=1&quot;&gt;Mcombo 7040 Lift Chair&lt;/a&gt; for my elderly grandfather.  Prior to purchasing the chair my Grandfather had some questions so I figured I would have a look at the manual for answers.  Surprised that I couldn’t find one, I thought I’d share it here along with my thoughts about the chair.&lt;br&gt;</description>
       
       
       
