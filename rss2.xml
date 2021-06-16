@@ -3,12 +3,12 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Chris Bergeron | Tech Blog</title>
+    <title>Chris Bergeron Tech Blog</title>
     <link>https://chrisbergeron.com/</link>
     
     <image>
-      <url>https://chrisbergeron.com/icon.png</url>
-      <title>Chris Bergeron | Tech Blog</title>
+      <url>https://chrisbergeron.com/apple-touch-icon.png</url>
+      <title>Chris Bergeron Tech Blog</title>
       <link>https://chrisbergeron.com/</link>
     </image>
     
