@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</loc>
+    
+    <lastmod>2021-06-18T21:39:40.322Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2021/05/01/Running-a-Chia-Full-Node-on-M1/</loc>
+    
+    <lastmod>2021-06-18T21:39:22.087Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%25C9%2599%25C9%25B9%25CA%25A4%25C9%2599%25C9%25B9%25C9%2591n/</loc>
+    
+    <lastmod>2021-06-18T21:39:03.653Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/</loc>
     
-    <lastmod>2021-06-18T17:53:58.878Z</lastmod>
+    <lastmod>2021-06-18T21:20:50.655Z</lastmod>
     
   </url>
   
@@ -131,13 +152,6 @@
     <loc>https://chrisbergeron.com/2007/07/11/dashpc_carputer/</loc>
     
     <lastmod>2021-05-02T05:31:45.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</loc>
-    
-    <lastmod>2021-05-02T05:31:06.879Z</lastmod>
     
   </url>
   
@@ -313,20 +327,6 @@
     <loc>https://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
     
     <lastmod>2021-05-02T04:46:16.691Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2021/05/01/Running-a-Chia-Full-Node-on-M1/</loc>
-    
-    <lastmod>2021-05-02T04:44:57.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%25C9%2599%25C9%25B9%25CA%25A4%25C9%2599%25C9%25B9%25C9%2591n/</loc>
-    
-    <lastmod>2021-05-02T04:44:52.487Z</lastmod>
     
   </url>
   
