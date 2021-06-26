@@ -259,7 +259,8 @@
       <guid>https://chrisbergeron.com/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/</guid>
       <pubDate>Wed, 17 Mar 2021 05:18:19 GMT</pubDate>
       
-      <description>&lt;p&gt;&lt;center&gt;&lt;a href=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql-1-small.webp&quot; alt=&quot;Apple Silicon - M1&quot; title=&quot;Apple Silicon M1 Logo&quot;&gt;&lt;br&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;This guide will walk you through installing and configuring nginx, PHP and Mysql optimized for MacOS Big Sur on Apple Silicon - M1 Arm processors.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;center&gt;&lt;a href=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql-1-small.webp&quot; alt=&quot;Apple Silicon - M1&quot; title=&quot;Apple Silicon M1 Logo&quot;&gt;&lt;br&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;This guide will walk you through installing and configuring nginx, PHP and Mysql optimized for MacOS Big Sur on Apple Silicon - M1 Arm processors.&lt;/p&gt;
+&lt;p&gt;*Note:  Most of this content originated from &lt;a href=&quot;https://kevdees.com/macos-11-big-sur-nginx-setup-multiple-php-versions/&quot;&gt;this post&lt;/a&gt;. Here, I’ve pared it down and fixed the relevant content.  Credit goes to the original author: Kevin Dese.&lt;/p&gt;</description>
       
       
       
