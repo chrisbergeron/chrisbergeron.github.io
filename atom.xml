@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2021-06-17T03:53:44.030Z</updated>
+  <updated>2021-07-02T04:13:58.611Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="https://chrisbergeron.com/2021/06/16/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2/"/>
     <id>https://chrisbergeron.com/2021/06/16/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2/</id>
     <published>2021-06-17T02:05:34.000Z</published>
-    <updated>2021-06-17T03:53:44.030Z</updated>
+    <updated>2021-07-02T04:13:58.611Z</updated>
     
     
-    <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;https://chrisbergeron.com/2021/06/16/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2-1-small.png&quot; alt=&quot;Pushover on macOS&quot; title=&quot;Pushover Desktop?&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;At home I run a lot of gadgets.  A mix of computer servers, IoT devices and various &lt;a href=&quot;/2021/06/05/Raspberry-Pi-Garage-Door-Opener/&quot;&gt;Raspberry Pi projects&lt;/a&gt; that I’ve built.  I always want to be aware of what’s happening with the home, so I’ve been using a notification app called Pushover.  It’s a nice notification utility that can send messages to your phone or tablet, in addition to your desktop &lt;em&gt;browser&lt;/em&gt;.  The keyword here is &lt;strong&gt;browser&lt;/strong&gt;.&lt;br&gt;</summary>
+    <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/16/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2.webp&quot; alt=&quot;Pushover on macOS&quot; title=&quot;Pushover Desktop?&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;At home I run a lot of gadgets.  A mix of computer servers, IoT devices and various &lt;a href=&quot;/2021/06/05/Raspberry-Pi-Garage-Door-Opener/&quot;&gt;Raspberry Pi projects&lt;/a&gt; that I’ve built.  I always want to be aware of what’s happening with the home, so I’ve been using a notification app called Pushover.  It’s a nice notification utility that can send messages to your phone or tablet, in addition to your desktop &lt;em&gt;browser&lt;/em&gt;.  The keyword here is &lt;strong&gt;browser&lt;/strong&gt;.&lt;br&gt;</summary>
     
     
     
@@ -33,9 +33,9 @@
     
     <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
     
-    <category term="ios" scheme="https://chrisbergeron.com/tags/ios/"/>
-    
     <category term="ipad" scheme="https://chrisbergeron.com/tags/ipad/"/>
+    
+    <category term="ios" scheme="https://chrisbergeron.com/tags/ios/"/>
     
     <category term="pushover" scheme="https://chrisbergeron.com/tags/pushover/"/>
     
@@ -52,7 +52,7 @@
     <link href="https://chrisbergeron.com/2021/06/13/New-CB-Brand-Logo/"/>
     <id>https://chrisbergeron.com/2021/06/13/New-CB-Brand-Logo/</id>
     <published>2021-06-13T04:15:28.000Z</published>
-    <updated>2021-06-13T04:34:12.735Z</updated>
+    <updated>2021-07-02T04:19:52.834Z</updated>
     
     
       
@@ -155,10 +155,10 @@
     <link href="https://chrisbergeron.com/2021/05/01/Running-a-Chia-Full-Node-on-M1/"/>
     <id>https://chrisbergeron.com/2021/05/01/Running-a-Chia-Full-Node-on-M1/</id>
     <published>2021-05-02T03:20:03.000Z</published>
-    <updated>2021-06-18T21:39:22.087Z</updated>
+    <updated>2021-07-02T04:31:27.896Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;Farming-and-Plotting&quot;&gt;&lt;a href=&quot;#Farming-and-Plotting&quot; class=&quot;headerlink&quot; title=&quot;Farming and Plotting&quot;&gt;&lt;/a&gt;Farming and Plotting&lt;/h3&gt;&lt;p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/05/01/Running-a-Chia-Full-Node-on-M1/chia-coin-sm.png&quot; alt=&quot; &quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;I recently started farming Chia cryptocurrency coins.  I run a computer &lt;a href=&quot;https://dev.chrisbergeron.com/categories/homelab/&quot;&gt;Homelab&lt;/a&gt; here at home.  Considering that I have hundreds of terrabytes of storage in my &lt;a href=&quot;/2020/03/07/diy_das_part1/&quot;&gt;Direct Attached Storage Array&lt;/a&gt; Chia seemed like a perfect coin to add to my portfolio.&lt;br&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;Farming-and-Plotting&quot;&gt;&lt;a href=&quot;#Farming-and-Plotting&quot; class=&quot;headerlink&quot; title=&quot;Farming and Plotting&quot;&gt;&lt;/a&gt;Farming and Plotting&lt;/h3&gt;&lt;p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/05/01/Running-a-Chia-Full-Node-on-M1/chia-coin-sm.png&quot; alt=&quot; &quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;I recently started farming Chia cryptocurrency coins.  I run a computer &lt;a href=&quot;/categories/homelab/&quot;&gt;Homelab&lt;/a&gt; here at home.  Considering that I have hundreds of terrabytes of storage in my &lt;a href=&quot;/2020/03/07/diy_das_part1/&quot;&gt;Direct Attached Storage Array&lt;/a&gt; Chia seemed like a perfect coin to add to my portfolio.&lt;br&gt;</summary>
     
     
     
@@ -176,36 +176,11 @@
   </entry>
   
   <entry>
-    <title>Cheapest Days Calendar</title>
-    <link href="https://chrisbergeron.com/2021/04/22/Cheapest-Days-Calendar/"/>
-    <id>https://chrisbergeron.com/2021/04/22/Cheapest-Days-Calendar/</id>
-    <published>2021-04-22T16:41:44.000Z</published>
-    <updated>2021-04-23T16:50:21.886Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Are you looking for a calendar that lets you know what days of the week are cheapest to shop?  If so, look no further.&lt;center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://chrisbergeron.com/2021/04/22/Cheapest-Days-Calendar/cheapest-days-calendar.webp&quot; alt=&quot;Cheapest Days of the Week Calendar&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/center&gt;I created a calendar for anyone looking to save a few dollars on common purchases.  The data for this calendar comes from this &lt;a href=&quot;https://www.rd.com/list/cheapest-days-of-the-week-to-do-anything/&quot;&gt;Reader’s Digest post&lt;/a&gt;.  Please check it out if you want to know the reasoning behind the timing.  If you know of other days that I should add - comment below!&lt;br&gt;</summary>
-    
-    
-    
-    <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
-    
-    
-    <category term="frugal" scheme="https://chrisbergeron.com/tags/frugal/"/>
-    
-    <category term="calendar" scheme="https://chrisbergeron.com/tags/calendar/"/>
-    
-    <category term="ics" scheme="https://chrisbergeron.com/tags/ics/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Observations on buying on an NFT on the Ethereum Blockchain</title>
     <link href="https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/"/>
     <id>https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/</id>
     <published>2021-04-15T17:58:42.000Z</published>
-    <updated>2021-06-18T21:20:50.655Z</updated>
+    <updated>2021-07-02T04:31:55.879Z</updated>
     
     
     <summary type="html">&lt;!--center&gt;
@@ -240,11 +215,11 @@
     <link href="https://chrisbergeron.com/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/"/>
     <id>https://chrisbergeron.com/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/</id>
     <published>2021-03-17T05:18:19.000Z</published>
-    <updated>2021-06-26T18:48:40.678Z</updated>
+    <updated>2021-06-26T18:52:09.245Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;center&gt;&lt;a href=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql-1-small.webp&quot; alt=&quot;Apple Silicon - M1&quot; title=&quot;Apple Silicon M1 Logo&quot;&gt;&lt;br&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;This guide will walk you through installing and configuring nginx, PHP and Mysql optimized for MacOS Big Sur on Apple Silicon - M1 Arm processors.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note:  Most of this content originated from &lt;a href=&quot;https://kevdees.com/macos-11-big-sur-nginx-setup-multiple-php-versions/&quot;&gt;this post&lt;/a&gt;. Here, I’ve pared it down and fixed the relevant content.  Credit goes to the original author: Kevin Dese.&lt;/em&gt;&lt;/p&gt;</summary>
+&lt;p&gt;&lt;em&gt;Note:  Most of this content originated from &lt;a href=&quot;https://kevdees.com/macos-11-big-sur-nginx-setup-multiple-php-versions/&quot;&gt;this post&lt;/a&gt;. Here, I’ve pared it down and fixed the relevant content.  Credit goes to the original author: Kevin Dees.&lt;/em&gt;&lt;/p&gt;</summary>
     
     
     
@@ -274,7 +249,7 @@
     <link href="https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/"/>
     <id>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/</id>
     <published>2021-03-14T16:27:56.000Z</published>
-    <updated>2021-06-18T21:39:03.653Z</updated>
+    <updated>2021-07-02T04:32:23.405Z</updated>
     
     
     <summary type="html">&lt;p&gt;I was working on my latest project - &lt;a href=&quot;https://debris-art.com&quot;&gt;Debris Art&lt;/a&gt; when NFT Blockchain Digital Ownership hit the news.  I instantly realized the potential impact and decided to mint some of my works in the space.&lt;/p&gt;
@@ -503,11 +478,11 @@
     <link href="https://chrisbergeron.com/2020/03/07/diy_das_part1/"/>
     <id>https://chrisbergeron.com/2020/03/07/diy_das_part1/</id>
     <published>2020-03-07T20:10:25.000Z</published>
-    <updated>2021-06-18T06:11:20.718Z</updated>
+    <updated>2021-07-02T04:23:28.498Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;em&gt;Updated for 2021: Great for Chia Farming and Plotting!!!&lt;/em&gt;&lt;/p&gt;
-&lt;center&gt;&lt;br&gt;&lt;img src=&quot;https://chrisbergeron.com/2020/03/07/diy_das_part1/das-internals-cb.001.png&quot; alt=&quot;DAS Internals&quot; width=600&gt;&lt;br&gt;&lt;/center&gt;
+&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2020/03/07/diy_das_part1/das-internals-cb.001.png&quot; alt=&quot;DAS Internals&quot; width=600&gt;&lt;br&gt;&lt;/center&gt;
 
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt; I have several hundred terabytes that I’ve recently been putting to use to &lt;a href=&quot;/2021/05/01/Running-a-Chia-Full-Node-on-M1/&quot;&gt;Farm Chia Cryptocurrency&lt;/a&gt;.  I’ve updated this article were applicable.&lt;/p&gt;
 &lt;h2 id=&quot;Why-another-NAS-DAS-article&quot;&gt;&lt;a href=&quot;#Why-another-NAS-DAS-article&quot; class=&quot;headerlink&quot; title=&quot;Why another NAS/DAS article?&quot;&gt;&lt;/a&gt;Why another NAS/DAS article?&lt;/h2&gt;&lt;p&gt;There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so I compiled the information that was useful for my specific 2019 build here.  The prices linked below are subject to market fluctuations and timing, so some of the components I found at a great price. Overall they should be roughly the same as what you can find.  Your mileage may vary.&lt;br&gt;</summary>
@@ -530,6 +505,31 @@
     <category term="sas" scheme="https://chrisbergeron.com/tags/sas/"/>
     
     <category term="jbod" scheme="https://chrisbergeron.com/tags/jbod/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cheapest Days Calendar</title>
+    <link href="https://chrisbergeron.com/2019/04/22/Cheapest-Days-Calendar/"/>
+    <id>https://chrisbergeron.com/2019/04/22/Cheapest-Days-Calendar/</id>
+    <published>2019-04-22T16:41:44.000Z</published>
+    <updated>2021-06-30T21:42:00.787Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Are you looking for a calendar that lets you know what days of the week are cheapest to shop?  If so, look no further.&lt;center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://chrisbergeron.com/2021/04/22/Cheapest-Days-Calendar/cheapest-days-calendar.webp&quot; alt=&quot;Cheapest Days of the Week Calendar&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/center&gt;I created a calendar for anyone looking to save a few dollars on common purchases.  The data for this calendar comes from this &lt;a href=&quot;https://www.rd.com/list/cheapest-days-of-the-week-to-do-anything/&quot;&gt;Reader’s Digest post&lt;/a&gt;.  Please check it out if you want to know the reasoning behind the timing.  If you know of other days that I should add - comment below!&lt;br&gt;</summary>
+    
+    
+    
+    <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
+    
+    
+    <category term="frugal" scheme="https://chrisbergeron.com/tags/frugal/"/>
+    
+    <category term="calendar" scheme="https://chrisbergeron.com/tags/calendar/"/>
+    
+    <category term="ics" scheme="https://chrisbergeron.com/tags/ics/"/>
     
   </entry>
   
@@ -573,9 +573,9 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
-    <category term="pihole" scheme="https://chrisbergeron.com/tags/pihole/"/>
-    
     <category term="ios" scheme="https://chrisbergeron.com/tags/ios/"/>
+    
+    <category term="pihole" scheme="https://chrisbergeron.com/tags/pihole/"/>
     
     <category term="iphone" scheme="https://chrisbergeron.com/tags/iphone/"/>
     
@@ -717,9 +717,9 @@
     
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
-    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
-    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
+    
+    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
     
     <category term="mariadb" scheme="https://chrisbergeron.com/tags/mariadb/"/>
     
@@ -993,11 +993,11 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
-    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
-    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
+    
+    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
     
     <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
     
@@ -1074,13 +1074,13 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
-    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
-    
-    <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
-    
     <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
     
+    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
+    
     <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
+    
+    <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
     
     <category term="sonarr" scheme="https://chrisbergeron.com/tags/sonarr/"/>
     
@@ -1190,15 +1190,15 @@
     <category term="Telematics" scheme="https://chrisbergeron.com/categories/Telematics/"/>
     
     
+    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
+    
+    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
+    
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
-    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
-    
-    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
     
   </entry>
   
@@ -1356,11 +1356,11 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
-    
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
@@ -1389,15 +1389,15 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
-    
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
-    
-    <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
+    
+    <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
     
   </entry>
   
