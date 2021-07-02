@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2021-07-02T04:13:58.611Z</updated>
+  <updated>2021-07-02T04:12:52.143Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://chrisbergeron.com/2021/06/16/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2/"/>
     <id>https://chrisbergeron.com/2021/06/16/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2/</id>
     <published>2021-06-17T02:05:34.000Z</published>
-    <updated>2021-07-02T04:13:58.611Z</updated>
+    <updated>2021-07-02T04:12:52.143Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/16/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2.webp&quot; alt=&quot;Pushover on macOS&quot; title=&quot;Pushover Desktop?&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;At home I run a lot of gadgets.  A mix of computer servers, IoT devices and various &lt;a href=&quot;/2021/06/05/Raspberry-Pi-Garage-Door-Opener/&quot;&gt;Raspberry Pi projects&lt;/a&gt; that I’ve built.  I always want to be aware of what’s happening with the home, so I’ve been using a notification app called Pushover.  It’s a nice notification utility that can send messages to your phone or tablet, in addition to your desktop &lt;em&gt;browser&lt;/em&gt;.  The keyword here is &lt;strong&gt;browser&lt;/strong&gt;.&lt;br&gt;</summary>
@@ -33,9 +33,9 @@
     
     <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
     
-    <category term="ipad" scheme="https://chrisbergeron.com/tags/ipad/"/>
-    
     <category term="ios" scheme="https://chrisbergeron.com/tags/ios/"/>
+    
+    <category term="ipad" scheme="https://chrisbergeron.com/tags/ipad/"/>
     
     <category term="pushover" scheme="https://chrisbergeron.com/tags/pushover/"/>
     
@@ -84,10 +84,10 @@
     <link href="https://chrisbergeron.com/2021/06/06/New-website-launch-chrisbergeron-com/"/>
     <id>https://chrisbergeron.com/2021/06/06/New-website-launch-chrisbergeron-com/</id>
     <published>2021-06-06T21:50:58.000Z</published>
-    <updated>2021-07-02T04:37:21.705Z</updated>
+    <updated>2021-06-11T21:21:56.550Z</updated>
     
     
-    <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/06/New-website-launch-chrisbergeron-com/launch-website-cb.webp&quot; alt=&quot;Next Rocket Launch&quot; title=&quot;Next Rocket Launch&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;I wanted a quick, lightweight way to view rocket launches from Florida’s Space Coast - Kennedy Space Center but everything I found online was bloated.  So, I create a simple website and Progressive Web App (PWA) so I could just check it on my phone.&lt;br&gt;</summary>
+    <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;https://chrisbergeron.com/2021/06/06/New-website-launch-chrisbergeron-com/launch-website-cb.png&quot; alt=&quot;Next Rocket Launch&quot; title=&quot;Next Rocket Launch&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;I wanted a quick, lightweight way to view rocket launches from Florida’s Space Coast - Kennedy Space Center but everything I found online was bloated.  So, I create a simple website and Progressive Web App (PWA) so I could just check it on my phone.&lt;br&gt;</summary>
     
     
     
@@ -107,10 +107,10 @@
     <link href="https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/"/>
     <id>https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/</id>
     <published>2021-06-06T03:56:42.000Z</published>
-    <updated>2021-07-02T04:50:06.142Z</updated>
+    <updated>2021-06-18T02:09:50.718Z</updated>
     
     
-    <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/cb-magicmirror.webp&quot; alt=&quot;My Magic Mirror&quot; title=&quot;Magic Mirror&quot;&gt;&lt;br&gt;&lt;/center&gt;</summary>
+    <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/cb-magicmirror.png&quot; alt=&quot;My Magic Mirror&quot; title=&quot;Magic Mirror&quot;&gt;&lt;br&gt;&lt;/center&gt;</summary>
     
     
     
@@ -132,10 +132,10 @@
     <link href="https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/"/>
     <id>https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/</id>
     <published>2021-06-05T04:15:32.000Z</published>
-    <updated>2021-07-02T04:57:37.978Z</updated>
+    <updated>2021-06-06T23:50:16.218Z</updated>
     
     
-    <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Raspberry-Pi-Garage-Door-Opener/raspberry-pi-garage-door-opener-final.webp&quot; alt=&quot;&quot; title=&quot;Raspberry Pi Garage Door Opener&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;A few years back I built a neat project I found online.  It was originally designed by Andrew Shillday.  You can find the &lt;a href=&quot;https://github.com/andrewshilliday/garage-door-controller&quot;&gt;code here&lt;/a&gt;. I decided that a Raspberry Pi Zero was sufficient, so I had to modify the pins used, but otherwise it was a fairly easy project.&lt;br&gt;</summary>
+    <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Raspberry-Pi-Garage-Door-Opener/raspberry-pi-garage-door-opener-final.png&quot; alt=&quot;&quot; title=&quot;Raspberry Pi Garage Door Opener&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;A few years back I built a neat project I found online.  It was originally designed by Andrew Shillday.  You can find the &lt;a href=&quot;https://github.com/andrewshilliday/garage-door-controller&quot;&gt;code here&lt;/a&gt;. I decided that a Raspberry Pi Zero was sufficient, so I had to modify the pins used, but otherwise it was a fairly easy project.&lt;br&gt;</summary>
     
     
     
@@ -155,10 +155,10 @@
     <link href="https://chrisbergeron.com/2021/05/01/Running-a-Chia-Full-Node-on-M1/"/>
     <id>https://chrisbergeron.com/2021/05/01/Running-a-Chia-Full-Node-on-M1/</id>
     <published>2021-05-02T03:20:03.000Z</published>
-    <updated>2021-07-02T04:59:40.786Z</updated>
+    <updated>2021-06-18T21:39:22.087Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;Farming-and-Plotting&quot;&gt;&lt;a href=&quot;#Farming-and-Plotting&quot; class=&quot;headerlink&quot; title=&quot;Farming and Plotting&quot;&gt;&lt;/a&gt;Farming and Plotting&lt;/h3&gt;&lt;p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/05/01/Running-a-Chia-Full-Node-on-M1/chia-coin-sm.webp&quot; alt=&quot; &quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;I recently started farming Chia cryptocurrency coins.  I run a computer &lt;a href=&quot;/categories/homelab/&quot;&gt;Homelab&lt;/a&gt; here at home.  Considering that I have hundreds of terrabytes of storage in my &lt;a href=&quot;/2020/03/07/diy_das_part1/&quot;&gt;Direct Attached Storage Array&lt;/a&gt; Chia seemed like a perfect coin to add to my portfolio.&lt;br&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;Farming-and-Plotting&quot;&gt;&lt;a href=&quot;#Farming-and-Plotting&quot; class=&quot;headerlink&quot; title=&quot;Farming and Plotting&quot;&gt;&lt;/a&gt;Farming and Plotting&lt;/h3&gt;&lt;p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/05/01/Running-a-Chia-Full-Node-on-M1/chia-coin-sm.png&quot; alt=&quot; &quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;I recently started farming Chia cryptocurrency coins.  I run a computer &lt;a href=&quot;https://dev.chrisbergeron.com/categories/homelab/&quot;&gt;Homelab&lt;/a&gt; here at home.  Considering that I have hundreds of terrabytes of storage in my &lt;a href=&quot;/2020/03/07/diy_das_part1/&quot;&gt;Direct Attached Storage Array&lt;/a&gt; Chia seemed like a perfect coin to add to my portfolio.&lt;br&gt;</summary>
     
     
     
@@ -180,7 +180,7 @@
     <link href="https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/"/>
     <id>https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/</id>
     <published>2021-04-15T17:58:42.000Z</published>
-    <updated>2021-07-02T04:31:55.879Z</updated>
+    <updated>2021-06-18T21:20:50.655Z</updated>
     
     
     <summary type="html">&lt;!--center&gt;
@@ -249,7 +249,7 @@
     <link href="https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/"/>
     <id>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/</id>
     <published>2021-03-14T16:27:56.000Z</published>
-    <updated>2021-07-02T04:32:23.405Z</updated>
+    <updated>2021-06-18T21:39:03.653Z</updated>
     
     
     <summary type="html">&lt;p&gt;I was working on my latest project - &lt;a href=&quot;https://debris-art.com&quot;&gt;Debris Art&lt;/a&gt; when NFT Blockchain Digital Ownership hit the news.  I instantly realized the potential impact and decided to mint some of my works in the space.&lt;/p&gt;
@@ -277,7 +277,7 @@
     <link href="https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/"/>
     <id>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</id>
     <published>2021-02-27T02:25:10.000Z</published>
-    <updated>2021-07-02T04:33:41.140Z</updated>
+    <updated>2021-06-18T21:39:40.322Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/assets/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/armory-title-cb.png&quot; alt=&quot;Bitcoin Armory&quot; title=&quot;Bitcoin Armory&quot;&gt;&lt;br&gt;&lt;/center&gt;
@@ -478,11 +478,11 @@
     <link href="https://chrisbergeron.com/2020/03/07/diy_das_part1/"/>
     <id>https://chrisbergeron.com/2020/03/07/diy_das_part1/</id>
     <published>2020-03-07T20:10:25.000Z</published>
-    <updated>2021-07-02T04:23:28.498Z</updated>
+    <updated>2021-06-18T06:11:20.718Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;em&gt;Updated for 2021: Great for Chia Farming and Plotting!!!&lt;/em&gt;&lt;/p&gt;
-&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2020/03/07/diy_das_part1/das-internals-cb.001.png&quot; alt=&quot;DAS Internals&quot; width=600&gt;&lt;br&gt;&lt;/center&gt;
+&lt;center&gt;&lt;br&gt;&lt;img src=&quot;https://chrisbergeron.com/2020/03/07/diy_das_part1/das-internals-cb.001.png&quot; alt=&quot;DAS Internals&quot; width=600&gt;&lt;br&gt;&lt;/center&gt;
 
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt; I have several hundred terabytes that I’ve recently been putting to use to &lt;a href=&quot;/2021/05/01/Running-a-Chia-Full-Node-on-M1/&quot;&gt;Farm Chia Cryptocurrency&lt;/a&gt;.  I’ve updated this article were applicable.&lt;/p&gt;
 &lt;h2 id=&quot;Why-another-NAS-DAS-article&quot;&gt;&lt;a href=&quot;#Why-another-NAS-DAS-article&quot; class=&quot;headerlink&quot; title=&quot;Why another NAS/DAS article?&quot;&gt;&lt;/a&gt;Why another NAS/DAS article?&lt;/h2&gt;&lt;p&gt;There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so I compiled the information that was useful for my specific 2019 build here.  The prices linked below are subject to market fluctuations and timing, so some of the components I found at a great price. Overall they should be roughly the same as what you can find.  Your mileage may vary.&lt;br&gt;</summary>
@@ -573,9 +573,9 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
-    <category term="ios" scheme="https://chrisbergeron.com/tags/ios/"/>
-    
     <category term="pihole" scheme="https://chrisbergeron.com/tags/pihole/"/>
+    
+    <category term="ios" scheme="https://chrisbergeron.com/tags/ios/"/>
     
     <category term="iphone" scheme="https://chrisbergeron.com/tags/iphone/"/>
     
@@ -717,9 +717,9 @@
     
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
-    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
-    
     <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
+    
+    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="mariadb" scheme="https://chrisbergeron.com/tags/mariadb/"/>
     
@@ -993,11 +993,11 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
+    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
+    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
-    
-    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
     
     <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
     
@@ -1074,13 +1074,13 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
-    <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
-    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
-    <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
-    
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
+    
+    <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
+    
+    <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
     
     <category term="sonarr" scheme="https://chrisbergeron.com/tags/sonarr/"/>
     
@@ -1190,15 +1190,15 @@
     <category term="Telematics" scheme="https://chrisbergeron.com/categories/Telematics/"/>
     
     
-    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
-    
-    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
-    
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
+    
+    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
     
   </entry>
   
@@ -1356,11 +1356,11 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
@@ -1389,15 +1389,15 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
+    
+    <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
-    
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
-    
-    <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
     
   </entry>
   
