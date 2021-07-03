@@ -15,8 +15,38 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Sat, 03 Jul 2021 01:18:20 GMT</pubDate>
+    <pubDate>Sat, 03 Jul 2021 18:31:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>AiGenArt, AI Generated Art - Saturn</title>
+      <link>https://chrisbergeron.com/2021/07/03/AiGenArt-AI-Generated-Art-Saturn/</link>
+      <guid>https://chrisbergeron.com/2021/07/03/AiGenArt-AI-Generated-Art-Saturn/</guid>
+      <pubDate>Sat, 03 Jul 2021 16:38:39 GMT</pubDate>
+      
+      <description>&lt;p&gt;Saturn. This is an interesting piece.  The keywords I used for this creation were ‘saturn’ and ‘smoke’.&lt;/p&gt;
+&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/07/03/AiGenArt-AI-Generated-Art-Saturn/AiGenArt-AI-Generated-Art-Saturn-3.webp&quot; alt=&quot;Saturn - AI Generated Art&quot; title=&quot;AI Generated Art&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;It began with a mostly blank frame / canvas.  The machine learning and training model set out to discover Saturn and generate accordingly.  As the piece evolved (video below), I started to notice what appear to be rigid, unnatural lines take shape.  It turns out that the machine found Saturn to be not only a planet, but also a car manufacturer!  The result is an interesting collision of abstraction as only a computer could reason.  Here is how the piece took form.&lt;br&gt;</description>
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/AI/">AI</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/debris/">debris</category>
+      
+      <category domain="https://chrisbergeron.com/tags/art/">art</category>
+      
+      <category domain="https://chrisbergeron.com/tags/ai/">ai</category>
+      
+      <category domain="https://chrisbergeron.com/tags/aigen/">aigen</category>
+      
+      <category domain="https://chrisbergeron.com/tags/aigenart/">aigenart</category>
+      
+      
+      <comments>https://chrisbergeron.com/2021/07/03/AiGenArt-AI-Generated-Art-Saturn/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Generating Art with VQGAN+CLIP AI</title>
@@ -29,7 +59,7 @@
       
       
       
-      <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
+      <category domain="https://chrisbergeron.com/categories/AI/">AI</category>
       
       
       <category domain="https://chrisbergeron.com/tags/debris/">debris</category>

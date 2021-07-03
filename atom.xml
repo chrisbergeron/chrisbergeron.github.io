@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2021-07-03T01:18:20.510Z</updated>
+  <updated>2021-07-03T18:31:40.294Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -17,18 +17,46 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AiGenArt, AI Generated Art - Saturn</title>
+    <link href="https://chrisbergeron.com/2021/07/03/AiGenArt-AI-Generated-Art-Saturn/"/>
+    <id>https://chrisbergeron.com/2021/07/03/AiGenArt-AI-Generated-Art-Saturn/</id>
+    <published>2021-07-03T16:38:39.000Z</published>
+    <updated>2021-07-03T18:31:40.294Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Saturn. This is an interesting piece.  The keywords I used for this creation were ‘saturn’ and ‘smoke’.&lt;/p&gt;
+&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/07/03/AiGenArt-AI-Generated-Art-Saturn/AiGenArt-AI-Generated-Art-Saturn-3.webp&quot; alt=&quot;Saturn - AI Generated Art&quot; title=&quot;AI Generated Art&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;It began with a mostly blank frame / canvas.  The machine learning and training model set out to discover Saturn and generate accordingly.  As the piece evolved (video below), I started to notice what appear to be rigid, unnatural lines take shape.  It turns out that the machine found Saturn to be not only a planet, but also a car manufacturer!  The result is an interesting collision of abstraction as only a computer could reason.  Here is how the piece took form.&lt;br&gt;</summary>
+    
+    
+    
+    <category term="AI" scheme="https://chrisbergeron.com/categories/AI/"/>
+    
+    
+    <category term="debris" scheme="https://chrisbergeron.com/tags/debris/"/>
+    
+    <category term="art" scheme="https://chrisbergeron.com/tags/art/"/>
+    
+    <category term="ai" scheme="https://chrisbergeron.com/tags/ai/"/>
+    
+    <category term="aigen" scheme="https://chrisbergeron.com/tags/aigen/"/>
+    
+    <category term="aigenart" scheme="https://chrisbergeron.com/tags/aigenart/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Generating Art with VQGAN+CLIP AI</title>
     <link href="https://chrisbergeron.com/2021/07/02/Generating-Art-with-VQGAN-CLIP-AI/"/>
     <id>https://chrisbergeron.com/2021/07/02/Generating-Art-with-VQGAN-CLIP-AI/</id>
     <published>2021-07-03T00:33:43.000Z</published>
-    <updated>2021-07-03T01:18:20.510Z</updated>
+    <updated>2021-07-03T18:36:59.947Z</updated>
     
     
     <summary type="html">&lt;p&gt;I’ve been playing around with OpenGAN, TensorFlow, torch and a few other goodies lately.  Adding CLIP to the mix gives me the ability to use common phrases to guide the AI to creating works.  It’s fascinating to see what is generated based on the training models used.  Some are surprisingly good and others, well, I’ll let you be the judge.  Here are a few of the pieces along with the phrases that generated them:&lt;br&gt;</summary>
     
     
     
-    <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
+    <category term="AI" scheme="https://chrisbergeron.com/categories/AI/"/>
     
     
     <category term="debris" scheme="https://chrisbergeron.com/tags/debris/"/>
