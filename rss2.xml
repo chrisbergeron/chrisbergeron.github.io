@@ -15,8 +15,37 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Fri, 02 Jul 2021 05:38:03 GMT</pubDate>
+    <pubDate>Sat, 03 Jul 2021 01:18:20 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Generating Art with VQGAN+CLIP AI</title>
+      <link>https://chrisbergeron.com/2021/07/02/Generating-Art-with-VQGAN-CLIP-AI/</link>
+      <guid>https://chrisbergeron.com/2021/07/02/Generating-Art-with-VQGAN-CLIP-AI/</guid>
+      <pubDate>Sat, 03 Jul 2021 00:33:43 GMT</pubDate>
+      
+      <description>&lt;p&gt;I’ve been playing around with OpenGAN, TensorFlow, torch and a few other goodies lately.  Adding CLIP to the mix gives me the ability to use common phrases to guide the AI to creating works.  It’s fascinating to see what is generated based on the training models used.  Some are surprisingly good and others, well, I’ll let you be the judge.  Here are a few of the pieces along with the phrases that generated them:&lt;br&gt;</description>
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/debris/">debris</category>
+      
+      <category domain="https://chrisbergeron.com/tags/art/">art</category>
+      
+      <category domain="https://chrisbergeron.com/tags/ai/">ai</category>
+      
+      <category domain="https://chrisbergeron.com/tags/gan/">gan</category>
+      
+      <category domain="https://chrisbergeron.com/tags/clip/">clip</category>
+      
+      
+      <comments>https://chrisbergeron.com/2021/07/02/Generating-Art-with-VQGAN-CLIP-AI/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Pushover Desktop? Yes, on Apple Silicon.</title>
