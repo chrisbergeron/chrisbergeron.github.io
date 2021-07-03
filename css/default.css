@@ -12423,8 +12423,7 @@ a.tag:hover {
 }
 
 .title em, .subtitle em, .title span, .subtitle span {
-	color: #2A77C6;
-  font-weight: inherit;
+	font-weight: inherit;
 }
 
 .title sub, .subtitle sub {
@@ -17435,10 +17434,11 @@ body > .section {
 
 .link-muted {
 	color: inherit;
+  color: rgb(245, 245, 245);
 }
 
 .link-muted:hover {
-	color: rgb(153, 182, 230) !important;
+  color: rgb(42, 119, 198) !important;
 }
 
 .image.is-7by3 {
