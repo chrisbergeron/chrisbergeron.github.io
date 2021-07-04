@@ -10794,6 +10794,7 @@ article.media .image img {
   height: 100%;
 }
 article.media .title {
+  color: #2a77c6;
   margin-bottom: 0.25em;
 }
 article.media .media-content {
@@ -10932,6 +10933,7 @@ a.article-nav-next span {
 }
 .navbar-main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  background-color: #d1e5f2;
 }
 .navbar-main .navbar-menu,
 .navbar-main .navbar-start,
