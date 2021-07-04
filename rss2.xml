@@ -15,8 +15,39 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Sat, 03 Jul 2021 22:10:34 GMT</pubDate>
+    <pubDate>Sun, 04 Jul 2021 19:48:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Person is not a known valid target type for the publisher property.</title>
+      <link>https://chrisbergeron.com/2021/07/04/Person-is-not-a-known-valid-target-type-for-the-publisher-property/</link>
+      <guid>https://chrisbergeron.com/2021/07/04/Person-is-not-a-known-valid-target-type-for-the-publisher-property/</guid>
+      <pubDate>Sun, 04 Jul 2021 19:25:27 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;It’s not just you.  If you’ve received this error the odds are pretty good this component of your schema is correct and your validator</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/Web/">Web</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/google/">google</category>
+      
+      <category domain="https://chrisbergeron.com/tags/validator/">validator</category>
+      
+      <category domain="https://chrisbergeron.com/tags/schema-org/">schema.org</category>
+      
+      
+      <comments>https://chrisbergeron.com/2021/07/04/Person-is-not-a-known-valid-target-type-for-the-publisher-property/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>AiGenArt, AI Generated Art - Saturn</title>
