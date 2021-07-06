@@ -61,15 +61,15 @@
     <category term="AI" scheme="https://chrisbergeron.com/categories/AI/"/>
     
     
+    <category term="debris" scheme="https://chrisbergeron.com/tags/debris/"/>
+    
+    <category term="art" scheme="https://chrisbergeron.com/tags/art/"/>
+    
     <category term="ai" scheme="https://chrisbergeron.com/tags/ai/"/>
     
     <category term="aigen" scheme="https://chrisbergeron.com/tags/aigen/"/>
     
     <category term="aigenart" scheme="https://chrisbergeron.com/tags/aigenart/"/>
-    
-    <category term="debris" scheme="https://chrisbergeron.com/tags/debris/"/>
-    
-    <category term="art" scheme="https://chrisbergeron.com/tags/art/"/>
     
   </entry>
   
@@ -88,11 +88,11 @@
     <category term="AI" scheme="https://chrisbergeron.com/categories/AI/"/>
     
     
-    <category term="ai" scheme="https://chrisbergeron.com/tags/ai/"/>
-    
     <category term="debris" scheme="https://chrisbergeron.com/tags/debris/"/>
     
     <category term="art" scheme="https://chrisbergeron.com/tags/art/"/>
+    
+    <category term="ai" scheme="https://chrisbergeron.com/tags/ai/"/>
     
     <category term="gan" scheme="https://chrisbergeron.com/tags/gan/"/>
     
@@ -276,11 +276,11 @@
     
     <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
     
-    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
-    
     <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
     
     <category term="ethereum" scheme="https://chrisbergeron.com/tags/ethereum/"/>
+    
+    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
     
     <category term="opensea" scheme="https://chrisbergeron.com/tags/opensea/"/>
     
@@ -338,15 +338,15 @@
     <category term="Crypto" scheme="https://chrisbergeron.com/categories/Crypto/"/>
     
     
-    <category term="debris" scheme="https://chrisbergeron.com/tags/debris/"/>
-    
-    <category term="art" scheme="https://chrisbergeron.com/tags/art/"/>
-    
     <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
     
     <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
     
     <category term="ethereum" scheme="https://chrisbergeron.com/tags/ethereum/"/>
+    
+    <category term="debris" scheme="https://chrisbergeron.com/tags/debris/"/>
+    
+    <category term="art" scheme="https://chrisbergeron.com/tags/art/"/>
     
   </entry>
   
@@ -1245,9 +1245,9 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
-    <category term="hexo" scheme="https://chrisbergeron.com/tags/hexo/"/>
-    
     <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
+    <category term="hexo" scheme="https://chrisbergeron.com/tags/hexo/"/>
     
     <category term="systemd" scheme="https://chrisbergeron.com/tags/systemd/"/>
     
@@ -1268,15 +1268,15 @@
     <category term="Telematics" scheme="https://chrisbergeron.com/categories/Telematics/"/>
     
     
-    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
-    
-    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
-    
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
+    
+    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
     
   </entry>
   
@@ -1434,11 +1434,11 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
@@ -1467,13 +1467,13 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
-    <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
-    
-    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
     <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
+    <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
+    
     <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
+    
+    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
