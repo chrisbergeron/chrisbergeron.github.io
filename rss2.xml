@@ -295,11 +295,11 @@
       
       <category domain="https://chrisbergeron.com/tags/nft/">nft</category>
       
-      <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
-      
       <category domain="https://chrisbergeron.com/tags/blockchain/">blockchain</category>
       
       <category domain="https://chrisbergeron.com/tags/ethereum/">ethereum</category>
+      
+      <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
       
       <category domain="https://chrisbergeron.com/tags/opensea/">opensea</category>
       
@@ -548,13 +548,13 @@
       
       <category domain="https://chrisbergeron.com/tags/php/">php</category>
       
+      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
+      
       <category domain="https://chrisbergeron.com/tags/cloudinary/">cloudinary</category>
       
       <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
       
       <category domain="https://chrisbergeron.com/tags/curl/">curl</category>
-      
-      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
       
       
       <comments>https://chrisbergeron.com/2020/03/13/cloudinary_bash/#disqus_thread</comments>
@@ -989,9 +989,9 @@
       <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
-      
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
+      
+      <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
@@ -1069,11 +1069,11 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/pihole/">pihole</category>
-      
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
       <category domain="https://chrisbergeron.com/tags/influxdb/">influxdb</category>
+      
+      <category domain="https://chrisbergeron.com/tags/pihole/">pihole</category>
       
       
       <comments>https://chrisbergeron.com/2017/12/28/pihole_dashboard/#disqus_thread</comments>
@@ -1268,9 +1268,9 @@
       <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
-      
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
+      
+      <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/07/sysinfo/#disqus_thread</comments>
@@ -1580,11 +1580,11 @@
       
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
-      <category domain="https://chrisbergeron.com/tags/dashboard-linux/">dashboard linux</category>
-      
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
       
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
+      
+      <category domain="https://chrisbergeron.com/tags/dashboard-linux/">dashboard linux</category>
       
       
       <comments>https://chrisbergeron.com/2005/05/18/dashboard_linux/#disqus_thread</comments>

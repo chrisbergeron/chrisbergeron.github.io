@@ -276,11 +276,11 @@
     
     <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
     
-    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
-    
     <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
     
     <category term="ethereum" scheme="https://chrisbergeron.com/tags/ethereum/"/>
+    
+    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
     
     <category term="opensea" scheme="https://chrisbergeron.com/tags/opensea/"/>
     
@@ -511,13 +511,13 @@
     
     <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
     
+    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
+    
     <category term="cloudinary" scheme="https://chrisbergeron.com/tags/cloudinary/"/>
     
     <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
     
     <category term="curl" scheme="https://chrisbergeron.com/tags/curl/"/>
-    
-    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
   </entry>
   
@@ -922,9 +922,9 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
-    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
-    
     <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
+    
+    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
@@ -996,11 +996,11 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
-    <category term="pihole" scheme="https://chrisbergeron.com/tags/pihole/"/>
-    
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
     <category term="influxdb" scheme="https://chrisbergeron.com/tags/influxdb/"/>
+    
+    <category term="pihole" scheme="https://chrisbergeron.com/tags/pihole/"/>
     
   </entry>
   
@@ -1181,9 +1181,9 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
-    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
-    
     <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
+    
+    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
     
   </entry>
   
@@ -1471,11 +1471,11 @@
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
-    <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
-    
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
+    
+    <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
     
   </entry>
   
