@@ -30,8 +30,9 @@
 	</style>
 	<title>Chris Bergeron's Resume</title>
 	<meta description="Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.">
-	<meta name="description" content="Educated and industry respected IT professional with over 25 years of experience in the technology industry.">
 	<meta property="og:type" content="website">
+	<meta property="og:title" content="Chris Bergeron Resume">
+	<meta name="description" content="Educated and industry respected IT professional with over 25 years of experience in the technology industry.">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Chris Bergeron&#39;s Resume">
 	<meta property="og:url" content="https://chrisbergeron.com/resume/index.html">
@@ -42,7 +43,7 @@
 	<meta property="article:author" content="Chris Bergeron">
 	<meta property="article:published_time" content="2020-11-21T02:10:14.200Z">
 	<meta property="article:modified_time" content="2021-06-21T02:10:14.200Z">
-	<meta property="article:tag" content="devops, consultant, AI Art, Chris Bergeron">
+	<meta property="article:tag" content="devops, consultant, AI Art">
 	<meta property="twitter:card" content="summary">
 	<meta property="twitter:image" content="https://chrisbergeron.com/images/apple-touch-icon.png">
 	<meta property="twitter:creator" content="@bergeron">
@@ -55,10 +56,20 @@
     <!-- link href="light-theme.css" rel="stylesheet" id="theme-link" -->
 	<!-- link rel="stylesheet" href="styles.dark.css" -->
 	<!--link rel="stylesheet" href="styles.pure.css" id="theme-link"-->
-	<link rel="stylesheet" href="styles.dark2.css" media="(prefers-color-scheme: dark)" id="theme-link">
+	<link rel="stylesheet" href="styles.dark.css" media="(prefers-color-scheme: dark)" id="theme-link">
 	<link rel="stylesheet" href="styles.pure.css" media="(prefers-color-scheme: light)" id="theme-link">
 
 	<!-- Theme styles END -->
+	<style type="text/css">
+	.fancybox-margin {
+		margin-right: 12px;
+	}
+	</style>
+	<style type="text/css">
+	.fancybox-margin {
+		margin-right: 12px;
+	}
+	</style>
 </head>
 
 <body>
@@ -455,7 +466,75 @@
 		</div>
 	</div>
 
+<script>
+	// Select the button
+	const btn = document.querySelector(".btn-toggle");
 
+	// Select the stylesheet <link>
+	const theme = document.querySelector("#theme-link");
+
+	// Listen for a click on the button
+	btn.addEventListener("click", function() {
+	// If the current URL contains "ligh-theme.css"
+	if (theme.getAttribute("href") == "styles.pure.css") {
+		theme.href = "styles.dark.css";
+	} else {
+		theme.href = "styles.pure.css";
+	}
+	});
+	</script>
+
+
+
+	<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+	<!--[if lt IE 9]>
+		<script src="/metronic/assets/plugins/respond.min.js"></script>
+	<![endif]-->
+	<script id="twitter-wjs" src="./CB Interactive Resume_files/widgets.js"></script>
+	<script async="" src="./CB Interactive Resume_files/analytics.js"></script>
+	<script async="" src="./CB Interactive Resume_files/st.js"></script>
+	<script async="" src="./CB Interactive Resume_files/analytics.js"></script>
+	<script async="" src="./CB Interactive Resume_files/st.js"></script>
+	<script src="./CB Interactive Resume_files/jquery.min.js"></script>
+	<script src="./CB Interactive Resume_files/jquery-migrate.min.js"></script>
+	<script src="./CB Interactive Resume_files/bootstrap.min.js"></script>
+	<script src="./CB Interactive Resume_files/back-to-top.js"></script>
+	<script src="./CB Interactive Resume_files/owl.carousel.min.js"></script>
+	<script src="./CB Interactive Resume_files/layout.js"></script>
+	<script src="./CB Interactive Resume_files/wow.min.js"></script>
+	<script src="./CB Interactive Resume_files/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function() {
+		Layout.init();
+		Layout.initOWL();
+		Layout.initTwitter();
+		Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+		Layout.initNavScrolling();
+		new WOW().init();
+	});
+	</script>
+	<!-- END CORE PLUGINS -->
+
+
+	<!-- BEGIN INTEGRATIONS -->
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+	ga('create', 'UA-120870295-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+	<!-- END INTEGRATIONS -->
 
 
 	<!-- BEGIN FOOTER -->
@@ -485,23 +564,6 @@
 	</div>
 	<!-- END FOOTER -->
 
-	<script>
-		// Select the button
-		const btn = document.querySelector(".btn-toggle");
-		// Select the stylesheet <link>
-		const theme = document.querySelector("#theme-link");
-		// Listen for a click on the button
-		btn.addEventListener("click", function() {
-		// If the current URL contains "ligh-theme.css"
-		if (theme.getAttribute("href") == "styles.pure.css") {
-			theme.href = "styles.dark2.css";
-		} else {
-			theme.href = "styles.pure.css";
-		}
-		});
-	</script>
-
-
 	<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
 	<!--[if lt IE 9]>
 		<script src="/metronic/assets/plugins/respond.min.js"></script>
@@ -526,6 +588,30 @@
 	});
 	</script>
 	<!-- END CORE PLUGINS -->
+
+	<!-- BEGIN INTEGRATIONS -->
+	<script type="text/javascript">
+	(function(w, d, t, u, n, s, e) {
+		w['SwiftypeObject'] = n;
+		w[n] = w[n] || function() {
+			(w[n].q = w[n].q || []).push(arguments);
+		};
+		s = d.createElement(t);
+		e = d.getElementsByTagName(t)[0];
+		s.async = 1;
+		s.src = u;
+		e.parentNode.insertBefore(s, e);
+	})(window, document, 'script', '//s.swiftypecdn.com/install/v2/st.js', '_st');
+	_st('install', 'iFPwcrS1XbcPzxdZnM5Z', '2.0.0');
+	</script>
+	<script id="dsq-count-scr" src="./CB Interactive Resume_files/count.js" async=""></script>
+	<noscript>Please enable JavaScript to view the <a target="_blank" href="https://disqus.com/?ref_noscript" rel="nofollow noopener">comments powered by Disqus.</a></noscript>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMF8Q5V" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- END INTEGRATIONS -->
 
 	<div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 10px; right: 10px; opacity: 0; cursor: pointer;"><img src="./CB Interactive Resume_files/up.png" style="width:40px; height:40px"></div>
 	<!--iframe scrolling="no" frameborder="0" allowtransparency="true" src="./CB Interactive Resume_files/widget_iframe.96fd96193cc66c3e11d4c5e4c7c7ec97.html" title="Twitter settings iframe" style="display: none;"></iframe>
