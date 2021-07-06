@@ -795,9 +795,9 @@
     
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
-    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
-    
     <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
+    
+    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="mariadb" scheme="https://chrisbergeron.com/tags/mariadb/"/>
     
@@ -1071,11 +1071,11 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
+    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
+    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
-    
-    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
     
     <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
     
@@ -1152,13 +1152,13 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
-    <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
-    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
-    <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
-    
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
+    
+    <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
+    
+    <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
     
     <category term="sonarr" scheme="https://chrisbergeron.com/tags/sonarr/"/>
     
@@ -1245,9 +1245,9 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
-    
     <category term="hexo" scheme="https://chrisbergeron.com/tags/hexo/"/>
+    
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
     <category term="systemd" scheme="https://chrisbergeron.com/tags/systemd/"/>
     
@@ -1376,9 +1376,9 @@
     <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
     
     
-    <category term="alternate energy" scheme="https://chrisbergeron.com/tags/alternate-energy/"/>
-    
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+    <category term="alternate energy" scheme="https://chrisbergeron.com/tags/alternate-energy/"/>
     
     <category term="ethanol" scheme="https://chrisbergeron.com/tags/ethanol/"/>
     

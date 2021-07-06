@@ -852,9 +852,9 @@
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
-      <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
-      
       <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
+      
+      <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
       <category domain="https://chrisbergeron.com/tags/mariadb/">mariadb</category>
       
@@ -1150,11 +1150,11 @@
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
+      <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
+      
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
       <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
-      
-      <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
       
       <category domain="https://chrisbergeron.com/tags/vault/">vault</category>
       
@@ -1237,13 +1237,13 @@
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
-      <category domain="https://chrisbergeron.com/tags/sabnzbd/">sabnzbd</category>
-      
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
-      <category domain="https://chrisbergeron.com/tags/terraform/">terraform</category>
-      
       <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
+      
+      <category domain="https://chrisbergeron.com/tags/sabnzbd/">sabnzbd</category>
+      
+      <category domain="https://chrisbergeron.com/tags/terraform/">terraform</category>
       
       <category domain="https://chrisbergeron.com/tags/sonarr/">sonarr</category>
       
@@ -1338,9 +1338,9 @@
       <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
-      
       <category domain="https://chrisbergeron.com/tags/hexo/">hexo</category>
+      
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       <category domain="https://chrisbergeron.com/tags/systemd/">systemd</category>
       
@@ -1479,9 +1479,9 @@
       <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/alternate-energy/">alternate energy</category>
-      
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
+      <category domain="https://chrisbergeron.com/tags/alternate-energy/">alternate energy</category>
       
       <category domain="https://chrisbergeron.com/tags/ethanol/">ethanol</category>
       
