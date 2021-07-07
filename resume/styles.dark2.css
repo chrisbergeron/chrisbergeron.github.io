@@ -64,7 +64,7 @@ html { filter: contrast(100%) brightness(100%) saturate(100%); }
   .pre-header .list-inline li { display: block; border: none; margin-bottom: 10px; padding: 0px; }
 }@media (max-width: 320px) {
   .site-logo { margin-right: 0px; }
-}a { color: rgb(153, 191, 230); }a:hover { color: rgb(245, 245, 200); }.header-navigation ul > li > a:focus, .header-navigation ul > li > a:hover { color: rgb(153, 191, 230); }.content-page a:hover { color: rgb(245, 245, 200); }.testimonials-v1 span.testimonials-name { color: rgb(153, 191, 230); }::selection { color: rgb(255, 255, 255); background: rgb(47, 117, 188); }.testimonials-v1 .left-btn:hover { background-color: rgb(47, 117, 188); }.testimonials-v1 .right-btn:hover { background-color: rgb(47, 117, 188); }.header .mobi-toggler:hover { background-color: rgb(41, 118, 163); border-color: rgb(41, 118, 163); }@media (max-width: 1024px) {
+}a { color: rgb(153, 191, 230); }a:hover { color: rgb(245, 245, 200); }.header-navigation ul > li > a:focus, .header-navigation ul > li > a:hover { color: rgb(153, 191, 230); }.content-page a:hover { color: rgb(245, 245, 200); }.testimonials-v1 span.testimonials-name { color: rgb(42, 119, 198); }::selection { color: rgb(255, 255, 255); background: rgb(47, 117, 188); }.testimonials-v1 .left-btn:hover { background-color: rgb(47, 117, 188); }.testimonials-v1 .right-btn:hover { background-color: rgb(47, 117, 188); }.header .mobi-toggler:hover { background-color: rgb(41, 118, 163); border-color: rgb(41, 118, 163); }@media (max-width: 1024px) {
   .header .header-navigation li > a:hover { color: rgb(245, 245, 200) !important; }
 }body { width: 100%; }.content-page { margin-right: 0px !important; }@media (max-width: 480px) {
   .pre-header .list-inline li { margin-bottom: 2px; }
