@@ -51,6 +51,10 @@
 	<link rel="icon" href="/images/favicon.ico">
 	<link rel="icon" type="image/x-icon" href="https://chrisbergeron.com/favicon.ico">
 	<link rel="shortcut icon" type="image/x-icon" href="https://chrisbergeron.com/favicon.ico">
+
+    <!-- link href="light-theme.css" rel="stylesheet" id="theme-link" -->
+	<!-- link rel="stylesheet" href="styles.dark.css" -->
+	<!--link rel="stylesheet" href="styles.pure.css" id="theme-link"-->
 	<link rel="stylesheet" href="styles.dark2.css" media="(prefers-color-scheme: dark)" id="theme-link">
 	<link rel="stylesheet" href="styles.pure.css" media="(prefers-color-scheme: light)" id="theme-link">
 
@@ -413,20 +417,16 @@
 
 							<!-- BEGIN SKILLS -->
 							<div class="col-md-5 testimonials-v1">
-								<h3 class="block">TOP SKILLS</h3>
-								<span>Linux 95%</span>
+								<h3 class="block">TOP SKILLS</h3> <span>Linux 95%</span>
 								<div class="progress">
 									<div role="progressbar" class="progress-bar" style="width: 95%;" aria-label="Linux"></div>
-								</div> 
-								<span>Automation 80%</span>
-								<div class="progress">
-									<div role="progressbar" class="progress-bar" style="width: 80%;" aria-label="Automation"></div>
-								</div>
-								<span>Soft Skills 75%</span>
+								</div> <span>Soft Skills 75%</span>
 								<div class="progress">
 									<div role="progressbar" class="progress-bar" style="width: 75%;" aria-label="Soft Skills"></div>
-								</div>
-								<span>Programming 50%</span>
+								</div> <span>Automation 80%</span>
+								<div class="progress">
+									<div role="progressbar" class="progress-bar" style="width: 80%;" aria-label="Automation"></div>
+								</div> <span>Programming 50%</span>
 								<div class="progress">
 									<div role="progressbar" class="progress-bar" style="width: 50%;" aria-label="Programming"></div>
 								</div>
@@ -498,7 +498,7 @@
 	<script src="./CB Interactive Resume_files/back-to-top.js"></script>
 	<script src="./CB Interactive Resume_files/owl.carousel.min.js"></script>
 	<script src="./CB Interactive Resume_files/layout.js"></script>
-	<!--script src="./CB Interactive Resume_files/wow.min.js"></script-->
+	<script src="./CB Interactive Resume_files/wow.min.js"></script>
 	<link rel="stylesheet" href="./CB Interactive Resume_files/jquery.fancybox.css">
 	<script src="./CB Interactive Resume_files/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript">
