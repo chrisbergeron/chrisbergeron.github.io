@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/about/index.html</loc>
+    
+    <lastmod>2021-07-08T05:56:08.526Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2021/07/04/Person-is-not-a-known-valid-target-type-for-the-publisher-property/</loc>
     
     <lastmod>2021-07-04T19:48:53.388Z</lastmod>
@@ -117,13 +124,6 @@
     <loc>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</loc>
     
     <lastmod>2021-06-05T04:45:43.312Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/about/index.html</loc>
-    
-    <lastmod>2021-06-01T20:55:46.948Z</lastmod>
     
   </url>
   
