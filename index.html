@@ -36,7 +36,6 @@
 	<link rel="icon" type="image/png" href="/images/icons/apple-touch-icon-114.png">
 	<meta name="description" content="An online technology journal with how-to articles, projects and examples.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-	<meta>
 
 	<meta name="application-name" content="Chris Bergeron&#039;s Tech Blog">
 	<meta name="msapplication-TileImage" content="/images/favicon.ico">
@@ -59,17 +58,19 @@
 	
 	<link rel="alternate" href="/" title="Chris Bergeron Tech Blog" type="application/atom+xml">
 	<link rel="icon" href="/images/favicon.ico">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro">
+	<!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"-->
+  <link rel="stylesheet" href="css/fontawesome-all.css">
+  <link rel="stylesheet" href="css/atom-one-dark.css">
+	<link rel="stylesheet" href="css/source-code-pro.css">
+	<!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"-->
+	<!--link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"-->
 	<link rel="stylesheet" href="/css/default.css">
-	<!--!-->
-	<!--!-->
-	<!--!-->
-	<!--!-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+	<!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"-->
+	<!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"-->
+  <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"-->
+  <link rel="stylesheet" href="css/lightgallery.min.css">
+	<link rel="stylesheet" href="css/justifiedGallery.min.css">
 
 </head>
 
@@ -514,7 +515,7 @@
 	<!--!-->
 	<!--!-->
 	<!--!-->
-	<script src="/js/main.js" defer></script>
+	<script src="/js/main.js" async></script>
 	<div class="searchbox">
 		<div class="searchbox-container">
 			<div class="searchbox-header">
@@ -524,7 +525,7 @@
 			<div class="searchbox-body"></div>
 		</div>
 	</div>
-	<script src="/js/insight.js" defer></script>
+	<script src="/js/insight.js"></script>
 	<script>
 	document.addEventListener('DOMContentLoaded', function() {
 		loadInsight({
