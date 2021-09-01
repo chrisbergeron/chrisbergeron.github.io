@@ -336,7 +336,7 @@
     <link href="https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/"/>
     <id>https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/</id>
     <published>2021-04-15T17:58:42.000Z</published>
-    <updated>2021-08-06T20:39:54.585Z</updated>
+    <updated>2021-09-01T21:11:48.084Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;a href=&quot;https://etherscan.io/&quot;&gt;&lt;img src=&quot;/2021/04/15/Bidding-on-an-NFT-in-Ethereum/cb-ethereum.jpg&quot; alt=&quot;&quot; title=&quot;Ethereum Logo&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;/center&gt;
@@ -403,7 +403,7 @@
     <link href="https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/"/>
     <id>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/</id>
     <published>2021-03-14T16:27:56.000Z</published>
-    <updated>2021-08-17T03:02:34.742Z</updated>
+    <updated>2021-09-01T21:15:07.423Z</updated>
     
     
     <summary type="html">&lt;p&gt;I was working on my latest project - &lt;a href=&quot;https://debris-art.com&quot;&gt;Debris Art&lt;/a&gt; when NFT Blockchain Digital Ownership hit the news.  I instantly realized the potential impact and decided to mint some of my works in the space.&lt;/p&gt;
@@ -420,6 +420,8 @@
     
     <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
     
+    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
+    
     <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
     
     <category term="ethereum" scheme="https://chrisbergeron.com/tags/ethereum/"/>
@@ -431,7 +433,7 @@
     <link href="https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/"/>
     <id>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</id>
     <published>2021-02-27T02:25:10.000Z</published>
-    <updated>2021-07-02T05:09:08.937Z</updated>
+    <updated>2021-09-01T21:13:10.574Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/assets/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/armory-title-cb.webp&quot; alt=&quot;Bitcoin Armory&quot; title=&quot;Bitcoin Armory&quot;&gt;&lt;br&gt;&lt;/center&gt;
@@ -443,13 +445,13 @@
     <category term="Crypto" scheme="https://chrisbergeron.com/categories/Crypto/"/>
     
     
+    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
+    
     <category term="bitcoin" scheme="https://chrisbergeron.com/tags/bitcoin/"/>
     
     <category term="armory" scheme="https://chrisbergeron.com/tags/armory/"/>
     
     <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
-    
-    <category term="cryptocurrency" scheme="https://chrisbergeron.com/tags/cryptocurrency/"/>
     
   </entry>
   
