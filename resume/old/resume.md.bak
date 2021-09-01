@@ -1,0 +1,114 @@
+---
+title: Chris Bergeron's Resume
+date: 2020/10/20 11:13:25
+tags:
+  - Professional
+thumbnail: /images/tech/bash.png
+---
+## SUMMARY
+IT Professional with over 25 years of experience including: Cloud, Infrastructure, Virtualization, Systems Administration, Network and DB Administration. Seeking an organization where I can contribute by building new infrastructure and optimizing existing infrastructure, preferably with a career path to a leadership role.
+## EXPERIENCE
+Senior Linux Infrastructure Engineer (DevOps)
+RentPath	May 2017 – August 2019, Atlanta, GA
+• Performed complete migration of on-prem VMWare ESXi  to Azure Cloud Infrastructure (multi region) via Terraform.
+• Created complete suite of Grafana dashboards for metrics analysis.
+• Wrote PHP backend webhooks for various integrations (Catchpoint, Slack, Pingdom).
+• Managed day to day operations to maintain the Production Operations infrastructure.
+• Performed DNS and CDN cutovers from CDNetworks / Dynect to Cloudflare.
+• Performed deployment of application code to Production environments
+• Collaborated  with application developers, database admins on troubleshooting and optimizing the infrastructure.
+
+Linux DevOps Engineer
+Ionic Security	June 2016 – March 2017, Atlanta, GA
+• Responsible for the entire Production Operations environment in a team structure.
+• Performed deployment of application code to all environments: Production, QA, Development, Preview.
+• Crafted execution tickets for deployments based on release train / roadmap timelines and change management.
+• Collaborated with app developers, database admins on troubleshooting and improving the infrastructure.
+• Managed day to day operations to maintain the Production Operations infrastructure.
+• Wrote Ansible deployment playbooks for provisioning and infrastructure tuning.
+• Worked with the Security Operations Center (SOC) to ensure rapid deployment of security patches.
+• Created Emergency Change Control (ECC) tickets.
+• Managed VPCs in AWS and GCE clouds.
+• Resolved Jira (tickets) from any departments requiring the assistance of Production Operations.
+
+Senior Linux Systems Administrator 3
+Cogeco Peer 1 Hosting	September 2009 – July 2015, Atlanta, GA
+• Promoted to this position in Jun of 2012.
+• I am the final escalation point for complex, non-routine technical challenges to our external customers.
+• Collaborate closely with SAN, backbone networking and network engineering teams (NOC / NOE).
+• Build Redhat Clusters (NFS and Mysql), Mulitpath zoning, SAN / DAS HA storage.
+• Work with data center team on configuration management / automation (Kickstart, Windows / Linux builds).
+• Maintain internal Yum repositories via RHN subscription.
+• Manage Hosted Exchange customer product.
+• Train Tier 2 / 3 Engineers in providing customer support, create documentation and training decks.
+• Monitor the CDN environment (caching nodes).
+• Deploy "one off" products / projects when required.
+
+Director of IT
+Access Payment Solutions	June 2005 – December 2007, Atlanta, GA
+• Designed and implemented the order entry database system, shipping system, accounting database, and created PHP Order Entry system.
+• Introduced virtualized servers (using VMWare ESX Server 2) into development and production environments.
+• Saved the company hundreds of thousands of dollars annually by re-negotiating long distance call center rates.
+• Migrated the entire IT infrastructure from a few 2,000 sq. ft. office suites, into a 50,000 sq. ft building (replete with 300kW Generator, CRACs, FM-200 Fire Suppression, IDFs, MDFs, etc).
+• Collaborated with Architects, Contractors, Consultants and Vendors during build-out phase of new facility.
+• Collaborated with Operations Managers pertaining to meeting building compliance (building code compliance, technology requisition, Sarbanes-Oxley (SOX) to ensure compliance.
+• Oversaw Systems (core infrastructure, customer facing sites, etc).
+• Built core corporate database (Mysql) and PHP web interfaces for all departments.
+• Installed and configured core LTSP network boot infrastructure for sales agent workstations.
+• Configured all trunks, DNIS/DIDs, hunt groups, extensions and related telephony equipment.
+## SKILLS
+Cloud / VPC:
+Linux:
+Containerization:
+Virtualization / Hypervisors:
+Provisioning /Config Management:
+Databases:
+Programming Languages / Scripting:
+Continuous Integration / Continuous Deployment (CI/CD):
+Webservers:
+Security / Authorization:
+Monitoring / Logging:
+Large Datasets /Message Queues / Memory Caches:
+Change Control / Ticketing:
+High Availability:
+Network Troubleshooting:
+## EDUCATION / CERTIFICATIONS
+Computer Science
+Florida State University • Tallahassee, FL • 1999
+
+Associate’s Degree
+Eastern Florida State College • Melbourne, FL • 1996
+
+VMWare Data Center Virtualization (VCA)
+Credential ID 12075300-9E0A-AF0178626040
+
+VMWare Sales Professional (VSP)
+Certification number provided upon request
+## PUBLICATIONS AND MEDIA
+Release 2.0 Magazine	Geek My Ride December 2007 Issue • Interviewed	By Auri Rahimzadeh • Featured
+“Open For Business”, Dec 2007 Issue	Wiley & Sons; ISBN 0-7645-7876-6
+Car PC Hacks	Slashdot.org By Damien Stolarz • Featured	https://dashpc.com • Front paged
+O'Reilly; ISBN 0-596-00871-6	April 2004, December 2002, December 2001
+## PROJECTS / MISC
+---
+
+
+SCRATCH
+-------
+DNS / VOIP / Other:	Amazon Web Services AWS EC2 S3, Microsoft Azure, Google GCP GCE, Digital Ocean
+RedHat Enterprise Linux (RHEL / CentOS 8,7,6), Ubuntu, Debian, Linux From Scratch (LFS)  5.1
+Docker Swarm, LXC, Virtuozzo
+VMWare ESXi 6.5u3, 5.5, 4
+Terraform, Ansible, Puppet, AWX, Ansible Tower, Foreman
+Mysql / MariaDB Replication and HA, Influx, Prometheus, Postgres, Cassandra
+Bash, PHP, Javascript, C, Python
+Jenkins, Travis CI
+nginx, Apache, lighttpd
+LDAP, Active Directory, FreeIPA IPA, SSH, OpenSSL, Vault (Ansible and Hashicorp), SSO, SAML, OAUTH2, RADIUS, SEIM, IDS, firewalld, iptables, MFA
+Grafana, Nagios, AlertManager, CheckMK, Elasticsearch, Logstash, Kibana, syslog, Graphite
+Elasticsearch (ELK Stack), Apache Kafka, RabbitMQ, Redis, memcached
+Git, Github, Gitlab, Subversion, CVS, Jira, RT
+Load Balancing (L2 and L7), Active/Passive Failover, Clustering (NFS, Percona Mysql, etc)
+tcpdump, Wireshark, snort, Tripwire IDS
+Tomcat, bind, dnsmasq, consul, SIP, IAX2
+SCRATCH
