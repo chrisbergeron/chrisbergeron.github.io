@@ -15,7 +15,7 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Wed, 01 Sep 2021 21:23:27 GMT</pubDate>
+    <pubDate>Thu, 02 Sep 2021 14:33:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -63,8 +63,6 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
-      
       <category domain="https://chrisbergeron.com/tags/raid/">raid</category>
       
       <category domain="https://chrisbergeron.com/tags/das/">das</category>
@@ -74,6 +72,8 @@
       <category domain="https://chrisbergeron.com/tags/aVolusion/">aVolusion</category>
       
       <category domain="https://chrisbergeron.com/tags/nvme/">nvme</category>
+      
+      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
       
       
       <comments>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/#disqus_thread</comments>
@@ -476,11 +476,11 @@
       
       <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
       
+      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
+      
       <category domain="https://chrisbergeron.com/tags/bitcoin/">bitcoin</category>
       
       <category domain="https://chrisbergeron.com/tags/armory/">armory</category>
-      
-      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
       
       
       <comments>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/#disqus_thread</comments>
@@ -1476,15 +1476,15 @@
       <category domain="https://chrisbergeron.com/categories/Telematics/">Telematics</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/comma-ai/">comma.ai</category>
+      
+      <category domain="https://chrisbergeron.com/tags/panda/">panda</category>
+      
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
-      
-      <category domain="https://chrisbergeron.com/tags/comma-ai/">comma.ai</category>
-      
-      <category domain="https://chrisbergeron.com/tags/panda/">panda</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/06/comma_panda/#disqus_thread</comments>
@@ -1654,11 +1654,11 @@
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
-      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
-      
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
+      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       
@@ -1689,15 +1689,15 @@
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
-      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
-      
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
-      
-      <category domain="https://chrisbergeron.com/tags/dashboard-linux/">dashboard linux</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
       
+      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
+      
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
+      
+      <category domain="https://chrisbergeron.com/tags/dashboard-linux/">dashboard linux</category>
       
       
       <comments>https://chrisbergeron.com/2005/05/18/dashboard_linux/#disqus_thread</comments>
