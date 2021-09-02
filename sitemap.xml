@@ -2,6 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</loc>
+    
+    <lastmod>2021-09-02T21:26:38.121Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2008/01/21/metalcasting_furnace/</loc>
+    
+    <lastmod>2021-09-02T21:25:23.276Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</loc>
+    
+    <lastmod>2021-09-02T21:24:50.370Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</loc>
+    
+    <lastmod>2021-09-02T21:24:20.228Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2007/07/17/aspire_free_car/</loc>
+    
+    <lastmod>2021-09-02T21:23:52.827Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2005/05/18/dashboard_linux/</loc>
+    
+    <lastmod>2021-09-02T21:23:17.372Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</loc>
+    
+    <lastmod>2021-09-02T21:21:30.300Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2020/03/13/cloudinary_bash/</loc>
+    
+    <lastmod>2021-09-02T21:20:54.131Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
+    
+    <lastmod>2021-09-02T21:20:23.677Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote/</loc>
+    
+    <lastmod>2021-09-02T16:09:06.669Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</loc>
+    
+    <lastmod>2021-09-02T15:15:02.665Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/</loc>
     
     <lastmod>2021-09-02T14:33:46.337Z</lastmod>
@@ -65,13 +142,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</loc>
-    
-    <lastmod>2021-08-24T00:30:04.136Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2019/02/19/Plex-What-s-Playing-Plugin-for-BitBar/</loc>
     
     <lastmod>2021-08-22T22:37:54.160Z</lastmod>
@@ -82,13 +152,6 @@
     <loc>https://chrisbergeron.com/neat/index.html</loc>
     
     <lastmod>2021-08-22T02:05:08.824Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</loc>
-    
-    <lastmod>2021-08-20T20:16:41.219Z</lastmod>
     
   </url>
   
@@ -205,27 +268,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</loc>
-    
-    <lastmod>2021-06-07T00:28:01.052Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</loc>
-    
-    <lastmod>2021-06-05T04:45:43.312Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2005/05/18/dashboard_linux/</loc>
-    
-    <lastmod>2021-05-03T07:01:44.285Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2017/12/14/howtheyvoted/</loc>
     
     <lastmod>2021-05-02T05:46:03.204Z</lastmod>
@@ -268,23 +310,9 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2007/07/17/aspire_free_car/</loc>
-    
-    <lastmod>2021-05-02T05:29:36.434Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2018/10/27/monitorr/</loc>
     
     <lastmod>2021-05-02T05:28:24.022Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2020/03/13/cloudinary_bash/</loc>
-    
-    <lastmod>2021-05-02T05:25:18.345Z</lastmod>
     
   </url>
   
@@ -303,23 +331,9 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</loc>
-    
-    <lastmod>2021-05-02T05:08:39.766Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2017/10/07/inxi/</loc>
     
     <lastmod>2021-05-02T05:07:51.016Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
-    
-    <lastmod>2021-05-02T05:07:44.752Z</lastmod>
     
   </url>
   
@@ -422,13 +436,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote/</loc>
-    
-    <lastmod>2020-12-08T16:59:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/json.json</loc>
     
     <lastmod>2020-11-17T00:44:24.000Z</lastmod>
@@ -446,13 +453,6 @@
     <loc>https://chrisbergeron.com/2008/08/24/homebrew_generator/</loc>
     
     <lastmod>2018-10-28T21:52:03.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2008/01/21/metalcasting_furnace/</loc>
-    
-    <lastmod>2018-10-28T21:49:29.000Z</lastmod>
     
   </url>
   
