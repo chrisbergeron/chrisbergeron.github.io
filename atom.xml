@@ -352,11 +352,11 @@
     
     <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
     
+    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
+    
     <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
     
     <category term="ethereum" scheme="https://chrisbergeron.com/tags/ethereum/"/>
-    
-    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
     
     <category term="opensea" scheme="https://chrisbergeron.com/tags/opensea/"/>
     
@@ -420,11 +420,11 @@
     
     <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
     
+    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
+    
     <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
     
     <category term="ethereum" scheme="https://chrisbergeron.com/tags/ethereum/"/>
-    
-    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
     
   </entry>
   
@@ -445,9 +445,9 @@
     <category term="Crypto" scheme="https://chrisbergeron.com/categories/Crypto/"/>
     
     
-    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
-    
     <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
+    
+    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
     
     <category term="bitcoin" scheme="https://chrisbergeron.com/tags/bitcoin/"/>
     
@@ -927,9 +927,9 @@
     
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
-    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
-    
     <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
+    
+    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="mariadb" scheme="https://chrisbergeron.com/tags/mariadb/"/>
     
@@ -1203,11 +1203,11 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
+    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
+    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
-    
-    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
     
     <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
     
@@ -1284,13 +1284,13 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
-    <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
-    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
-    <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
-    
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
+    
+    <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
+    
+    <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
     
     <category term="sonarr" scheme="https://chrisbergeron.com/tags/sonarr/"/>
     
