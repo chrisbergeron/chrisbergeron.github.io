@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://chrisbergeron.com/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/</loc>
+    <loc>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</loc>
     
-    <lastmod>2021-09-03T18:26:28.959Z</lastmod>
+    <lastmod>2021-09-03T18:59:44.801Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</loc>
+    <loc>https://chrisbergeron.com/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/</loc>
     
-    <lastmod>2021-09-03T14:40:18.665Z</lastmod>
+    <lastmod>2021-09-03T18:26:28.959Z</lastmod>
     
   </url>
   
@@ -471,14 +471,14 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/categories/index.html</loc>
+    <loc>https://chrisbergeron.com/tags/index.html</loc>
     
     <lastmod>2017-10-06T23:06:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/tags/index.html</loc>
+    <loc>https://chrisbergeron.com/categories/index.html</loc>
     
     <lastmod>2017-10-06T23:06:40.000Z</lastmod>
     
