@@ -33,11 +33,11 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
-      
       <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       <category domain="https://chrisbergeron.com/tags/thunderbolt4/">thunderbolt4</category>
+      
+      <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
       
       <category domain="https://chrisbergeron.com/tags/gigabyte/">gigabyte</category>
       
@@ -49,12 +49,12 @@
     </item>
     
     <item>
-      <title>Fast RAID-0 DAS Using Two Thunderbolt 4 Enclosures</title>
+      <title>Fast RAID-0 DAS Using Two Thunderbolt 3 Enclosures</title>
       <link>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</link>
       <guid>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</guid>
       <pubDate>Wed, 11 Aug 2021 14:46:52 GMT</pubDate>
       
-      <description>&lt;p&gt;In this post I’m demonstrating how to create a high-speed macos volume using 2 Thunderbolt ports and NVMe enclosures.  This solution uses RAID-0 (striping) so the failure threshold is more than twice that of a normal standalone disk.  This example is for demonstration purposes and could be useful for video editing scratch space, rendering, large photo sessions or similar uses.  Obviously, good backups (RAID is not a backup) or a more reliable storage tier is recommended for daily use.&lt;/p&gt;
+      <description>&lt;p&gt;In this post I’m demonstrating how to create a high-speed macos volume using quantity 2 Thunderbolt ports and NVMe enclosures.  This solution uses RAID-0 (striping) so the failure threshold is more than twice that of a normal standalone disk.  This example is for demonstration purposes and could be useful for video editing scratch space, rendering, large photo sessions or similar uses.  Obviously, good backups (RAID is not a backup) or a more reliable storage tier is recommended for daily use.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/raid-0-nvme-thunderbolt-benchmark-1b-cb.png&quot; alt=&quot;Thunderbolt 4 Benchmark: 2.22 GBs write, 3.74 GBs read&quot; title=&quot;Screenshot of a benchmark tool displaying 2,221 Megabytes per second writing and 3,741 Megabytes reading.&quot;&gt;&lt;/p&gt;</description>
       
       
@@ -63,17 +63,17 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
+      
+      <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
+      
       <category domain="https://chrisbergeron.com/tags/raid/">raid</category>
       
       <category domain="https://chrisbergeron.com/tags/das/">das</category>
       
-      <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
-      
       <category domain="https://chrisbergeron.com/tags/aVolusion/">aVolusion</category>
       
       <category domain="https://chrisbergeron.com/tags/nvme/">nvme</category>
-      
-      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
       
       
       <comments>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/#disqus_thread</comments>
@@ -86,7 +86,7 @@
       <guid>https://chrisbergeron.com/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/</guid>
       <pubDate>Mon, 26 Jul 2021 01:58:08 GMT</pubDate>
       
-      <description>&lt;p&gt;&lt;img src=&quot;/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/thunderbolt-4-3.jpg&quot; alt=&quot;Thunderbolt 4&quot; title=&quot;Image of Thunderbolt 4 Cable&quot;&gt;&lt;/p&gt;
+      <description>&lt;!-- ![Thunderbolt 4](/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/thunderbolt-4-3.jpg &quot;Image of Thunderbolt 4 Cable&quot;) --&gt;
 &lt;p&gt;In this post I discuss how you can upgrade a NAS Server by adding Thunderbolt 3 for lightning fast connectivity at 20 or 40Gbps.  This particular implementation is specific to an Apple Mac Mini M1 and a &lt;a href=&quot;https://chrisbergeron.com/2020/03/07/diy_das_part1/&quot;&gt;Linux NAS server&lt;/a&gt; on an older Supermicro X10SRL-F motherboard, but the principles should be the same on similar architectures and operating systems.&lt;/p&gt;</description>
       
       
@@ -95,13 +95,13 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/das/">das</category>
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
       
-      <category domain="https://chrisbergeron.com/tags/nvme/">nvme</category>
+      <category domain="https://chrisbergeron.com/tags/das/">das</category>
       
-      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/tags/nvme/">nvme</category>
       
       <category domain="https://chrisbergeron.com/tags/big-sur/">big sur</category>
       
@@ -375,11 +375,11 @@
       
       <category domain="https://chrisbergeron.com/tags/nft/">nft</category>
       
+      <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
+      
       <category domain="https://chrisbergeron.com/tags/blockchain/">blockchain</category>
       
       <category domain="https://chrisbergeron.com/tags/ethereum/">ethereum</category>
-      
-      <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
       
       <category domain="https://chrisbergeron.com/tags/opensea/">opensea</category>
       
@@ -441,17 +441,17 @@
       <category domain="https://chrisbergeron.com/categories/Crypto/">Crypto</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/debris/">debris</category>
-      
-      <category domain="https://chrisbergeron.com/tags/art/">art</category>
-      
       <category domain="https://chrisbergeron.com/tags/nft/">nft</category>
+      
+      <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
       
       <category domain="https://chrisbergeron.com/tags/blockchain/">blockchain</category>
       
       <category domain="https://chrisbergeron.com/tags/ethereum/">ethereum</category>
       
-      <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
+      <category domain="https://chrisbergeron.com/tags/debris/">debris</category>
+      
+      <category domain="https://chrisbergeron.com/tags/art/">art</category>
       
       
       <comments>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/#disqus_thread</comments>
@@ -476,11 +476,11 @@
       
       <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
       
-      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
-      
       <category domain="https://chrisbergeron.com/tags/bitcoin/">bitcoin</category>
       
       <category domain="https://chrisbergeron.com/tags/armory/">armory</category>
+      
+      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
       
       
       <comments>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/#disqus_thread</comments>
@@ -659,13 +659,13 @@
       
       <category domain="https://chrisbergeron.com/tags/php/">php</category>
       
+      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
+      
       <category domain="https://chrisbergeron.com/tags/cloudinary/">cloudinary</category>
       
       <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
       
       <category domain="https://chrisbergeron.com/tags/curl/">curl</category>
-      
-      <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
       
       
       <comments>https://chrisbergeron.com/2020/03/13/cloudinary_bash/#disqus_thread</comments>
@@ -725,11 +725,11 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/das/">das</category>
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
       
-      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/tags/das/">das</category>
       
       <category domain="https://chrisbergeron.com/tags/nas/">nas</category>
       
@@ -992,9 +992,9 @@
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
-      <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
-      
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
+      
+      <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
       
       <category domain="https://chrisbergeron.com/tags/mariadb/">mariadb</category>
       
@@ -1129,9 +1129,9 @@
       <category domain="https://chrisbergeron.com/categories/Linux/">Linux</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
-      
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
+      
+      <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
@@ -1209,11 +1209,11 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/pihole/">pihole</category>
-      
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
       <category domain="https://chrisbergeron.com/tags/influxdb/">influxdb</category>
+      
+      <category domain="https://chrisbergeron.com/tags/pihole/">pihole</category>
       
       
       <comments>https://chrisbergeron.com/2017/12/28/pihole_dashboard/#disqus_thread</comments>
@@ -1290,11 +1290,11 @@
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
-      <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
-      
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
       <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
+      
+      <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
       
       <category domain="https://chrisbergeron.com/tags/vault/">vault</category>
       
@@ -1377,13 +1377,13 @@
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
-      <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
-      
-      <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
-      
       <category domain="https://chrisbergeron.com/tags/sabnzbd/">sabnzbd</category>
       
+      <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
+      
       <category domain="https://chrisbergeron.com/tags/terraform/">terraform</category>
+      
+      <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
       
       <category domain="https://chrisbergeron.com/tags/sonarr/">sonarr</category>
       
@@ -1476,15 +1476,15 @@
       <category domain="https://chrisbergeron.com/categories/Telematics/">Telematics</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/comma-ai/">comma.ai</category>
-      
-      <category domain="https://chrisbergeron.com/tags/panda/">panda</category>
-      
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
+      <category domain="https://chrisbergeron.com/tags/comma-ai/">comma.ai</category>
+      
+      <category domain="https://chrisbergeron.com/tags/panda/">panda</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/06/comma_panda/#disqus_thread</comments>
@@ -1654,11 +1654,11 @@
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
+      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
+      
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
-      
-      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       
@@ -1689,11 +1689,11 @@
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
+      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
+      
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
-      
-      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       

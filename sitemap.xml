@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/</loc>
+    
+    <lastmod>2021-09-03T18:26:28.959Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</loc>
     
-    <lastmod>2021-09-02T21:26:38.121Z</lastmod>
+    <lastmod>2021-09-03T14:40:18.665Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/Projects/index.html</loc>
+    
+    <lastmod>2021-09-02T23:08:23.722Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/about/index.html</loc>
+    
+    <lastmod>2021-09-02T23:07:08.668Z</lastmod>
     
   </url>
   
@@ -93,13 +114,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/</loc>
-    
-    <lastmod>2021-09-02T00:48:35.952Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%25C9%2599%25C9%25B9%25CA%25A4%25C9%2599%25C9%25B9%25C9%2591n/</loc>
     
     <lastmod>2021-09-01T21:15:07.423Z</lastmod>
@@ -110,20 +124,6 @@
     <loc>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</loc>
     
     <lastmod>2021-09-01T21:13:10.574Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/Projects/index.html</loc>
-    
-    <lastmod>2021-09-01T19:20:47.881Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/about/index.html</loc>
-    
-    <lastmod>2021-09-01T19:20:40.075Z</lastmod>
     
   </url>
   

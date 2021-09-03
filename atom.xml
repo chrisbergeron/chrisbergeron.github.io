@@ -32,11 +32,11 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
-    <category term="thunderbolt" scheme="https://chrisbergeron.com/tags/thunderbolt/"/>
-    
     <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
     <category term="thunderbolt4" scheme="https://chrisbergeron.com/tags/thunderbolt4/"/>
+    
+    <category term="thunderbolt" scheme="https://chrisbergeron.com/tags/thunderbolt/"/>
     
     <category term="gigabyte" scheme="https://chrisbergeron.com/tags/gigabyte/"/>
     
@@ -45,14 +45,14 @@
   </entry>
   
   <entry>
-    <title>Fast RAID-0 DAS Using Two Thunderbolt 4 Enclosures</title>
+    <title>Fast RAID-0 DAS Using Two Thunderbolt 3 Enclosures</title>
     <link href="https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/"/>
     <id>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</id>
     <published>2021-08-11T14:46:52.000Z</published>
-    <updated>2021-09-02T21:26:38.121Z</updated>
+    <updated>2021-09-03T14:40:18.665Z</updated>
     
     
-    <summary type="html">&lt;p&gt;In this post I’m demonstrating how to create a high-speed macos volume using 2 Thunderbolt ports and NVMe enclosures.  This solution uses RAID-0 (striping) so the failure threshold is more than twice that of a normal standalone disk.  This example is for demonstration purposes and could be useful for video editing scratch space, rendering, large photo sessions or similar uses.  Obviously, good backups (RAID is not a backup) or a more reliable storage tier is recommended for daily use.&lt;/p&gt;
+    <summary type="html">&lt;p&gt;In this post I’m demonstrating how to create a high-speed macos volume using quantity 2 Thunderbolt ports and NVMe enclosures.  This solution uses RAID-0 (striping) so the failure threshold is more than twice that of a normal standalone disk.  This example is for demonstration purposes and could be useful for video editing scratch space, rendering, large photo sessions or similar uses.  Obviously, good backups (RAID is not a backup) or a more reliable storage tier is recommended for daily use.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/raid-0-nvme-thunderbolt-benchmark-1b-cb.png&quot; alt=&quot;Thunderbolt 4 Benchmark: 2.22 GBs write, 3.74 GBs read&quot; title=&quot;Screenshot of a benchmark tool displaying 2,221 Megabytes per second writing and 3,741 Megabytes reading.&quot;&gt;&lt;/p&gt;</summary>
     
     
@@ -60,17 +60,17 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
+    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
+    
+    <category term="thunderbolt" scheme="https://chrisbergeron.com/tags/thunderbolt/"/>
+    
     <category term="raid" scheme="https://chrisbergeron.com/tags/raid/"/>
     
     <category term="das" scheme="https://chrisbergeron.com/tags/das/"/>
     
-    <category term="thunderbolt" scheme="https://chrisbergeron.com/tags/thunderbolt/"/>
-    
     <category term="aVolusion" scheme="https://chrisbergeron.com/tags/aVolusion/"/>
     
     <category term="nvme" scheme="https://chrisbergeron.com/tags/nvme/"/>
-    
-    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
     
   </entry>
   
@@ -79,10 +79,10 @@
     <link href="https://chrisbergeron.com/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/"/>
     <id>https://chrisbergeron.com/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/</id>
     <published>2021-07-26T01:58:08.000Z</published>
-    <updated>2021-09-02T00:48:35.952Z</updated>
+    <updated>2021-09-03T18:26:28.959Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/thunderbolt-4-3.jpg&quot; alt=&quot;Thunderbolt 4&quot; title=&quot;Image of Thunderbolt 4 Cable&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;!-- ![Thunderbolt 4](/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/thunderbolt-4-3.jpg &quot;Image of Thunderbolt 4 Cable&quot;) --&gt;
 &lt;p&gt;In this post I discuss how you can upgrade a NAS Server by adding Thunderbolt 3 for lightning fast connectivity at 20 or 40Gbps.  This particular implementation is specific to an Apple Mac Mini M1 and a &lt;a href=&quot;https://chrisbergeron.com/2020/03/07/diy_das_part1/&quot;&gt;Linux NAS server&lt;/a&gt; on an older Supermicro X10SRL-F motherboard, but the principles should be the same on similar architectures and operating systems.&lt;/p&gt;</summary>
     
     
@@ -90,13 +90,13 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
-    <category term="das" scheme="https://chrisbergeron.com/tags/das/"/>
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
     <category term="thunderbolt" scheme="https://chrisbergeron.com/tags/thunderbolt/"/>
     
-    <category term="nvme" scheme="https://chrisbergeron.com/tags/nvme/"/>
+    <category term="das" scheme="https://chrisbergeron.com/tags/das/"/>
     
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    <category term="nvme" scheme="https://chrisbergeron.com/tags/nvme/"/>
     
     <category term="big sur" scheme="https://chrisbergeron.com/tags/big-sur/"/>
     
@@ -352,11 +352,11 @@
     
     <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
     
+    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
+    
     <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
     
     <category term="ethereum" scheme="https://chrisbergeron.com/tags/ethereum/"/>
-    
-    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
     
     <category term="opensea" scheme="https://chrisbergeron.com/tags/opensea/"/>
     
@@ -414,17 +414,17 @@
     <category term="Crypto" scheme="https://chrisbergeron.com/categories/Crypto/"/>
     
     
-    <category term="debris" scheme="https://chrisbergeron.com/tags/debris/"/>
-    
-    <category term="art" scheme="https://chrisbergeron.com/tags/art/"/>
-    
     <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
+    
+    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
     
     <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
     
     <category term="ethereum" scheme="https://chrisbergeron.com/tags/ethereum/"/>
     
-    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
+    <category term="debris" scheme="https://chrisbergeron.com/tags/debris/"/>
+    
+    <category term="art" scheme="https://chrisbergeron.com/tags/art/"/>
     
   </entry>
   
@@ -447,11 +447,11 @@
     
     <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
     
-    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
-    
     <category term="bitcoin" scheme="https://chrisbergeron.com/tags/bitcoin/"/>
     
     <category term="armory" scheme="https://chrisbergeron.com/tags/armory/"/>
+    
+    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
     
   </entry>
   
@@ -616,13 +616,13 @@
     
     <category term="php" scheme="https://chrisbergeron.com/tags/php/"/>
     
+    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
+    
     <category term="cloudinary" scheme="https://chrisbergeron.com/tags/cloudinary/"/>
     
     <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
     
     <category term="curl" scheme="https://chrisbergeron.com/tags/curl/"/>
-    
-    <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
   </entry>
   
@@ -678,11 +678,11 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
-    <category term="das" scheme="https://chrisbergeron.com/tags/das/"/>
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
     <category term="thunderbolt" scheme="https://chrisbergeron.com/tags/thunderbolt/"/>
     
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    <category term="das" scheme="https://chrisbergeron.com/tags/das/"/>
     
     <category term="nas" scheme="https://chrisbergeron.com/tags/nas/"/>
     
@@ -927,9 +927,9 @@
     
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
-    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
-    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
+    
+    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
     
     <category term="mariadb" scheme="https://chrisbergeron.com/tags/mariadb/"/>
     
@@ -1054,9 +1054,9 @@
     <category term="Linux" scheme="https://chrisbergeron.com/categories/Linux/"/>
     
     
-    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
-    
     <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
+    
+    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
@@ -1128,11 +1128,11 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
-    <category term="pihole" scheme="https://chrisbergeron.com/tags/pihole/"/>
-    
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
     <category term="influxdb" scheme="https://chrisbergeron.com/tags/influxdb/"/>
+    
+    <category term="pihole" scheme="https://chrisbergeron.com/tags/pihole/"/>
     
   </entry>
   
@@ -1203,11 +1203,11 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
-    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
-    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
+    
+    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
     
     <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
     
@@ -1284,13 +1284,13 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
-    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
-    
-    <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
-    
     <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
     
+    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
+    
     <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
+    
+    <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
     
     <category term="sonarr" scheme="https://chrisbergeron.com/tags/sonarr/"/>
     
@@ -1375,15 +1375,15 @@
     <category term="Telematics" scheme="https://chrisbergeron.com/categories/Telematics/"/>
     
     
-    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
-    
-    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
-    
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
+    
+    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
     
   </entry>
   
@@ -1541,11 +1541,11 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
@@ -1574,11 +1574,11 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
