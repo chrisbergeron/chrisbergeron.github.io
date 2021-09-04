@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2021/09/03/about/</loc>
+    
+    <lastmod>2021-09-03T22:52:57.426Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/about/index.html</loc>
     
-    <lastmod>2021-09-03T19:09:35.653Z</lastmod>
+    <lastmod>2021-09-03T22:20:41.964Z</lastmod>
     
   </url>
   
@@ -471,14 +478,14 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/categories/index.html</loc>
+    <loc>https://chrisbergeron.com/tags/index.html</loc>
     
     <lastmod>2017-10-06T23:06:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/tags/index.html</loc>
+    <loc>https://chrisbergeron.com/categories/index.html</loc>
     
     <lastmod>2017-10-06T23:06:40.000Z</lastmod>
     

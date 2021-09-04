@@ -15,8 +15,31 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Thu, 02 Sep 2021 14:33:46 GMT</pubDate>
+    <pubDate>Fri, 03 Sep 2021 22:52:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title></title>
+      <link>https://chrisbergeron.com/2021/09/03/about/</link>
+      <guid>https://chrisbergeron.com/2021/09/03/about/</guid>
+      <pubDate>Fri, 03 Sep 2021 21:45:21 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;Chris-Bergeron’s-Tech-Blog&quot;&gt;&lt;a href=&quot;#Chris-Bergeron’s-Tech-Blog&quot; class=&quot;headerlink&quot; title=&quot;Chris Bergeron’s Tech Blog&quot;&gt;&lt;/a&gt;Chris</description>
+          
+        
+      
+      
+      
+      
+      
+      
+      <comments>https://chrisbergeron.com/2021/09/03/about/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card</title>
@@ -33,15 +56,15 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
       
       <category domain="https://chrisbergeron.com/tags/thunderbolt4/">thunderbolt4</category>
-      
-      <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
       
       <category domain="https://chrisbergeron.com/tags/gigabyte/">gigabyte</category>
       
       <category domain="https://chrisbergeron.com/tags/maple-ridge/">maple ridge</category>
+      
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       
       <comments>https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/#disqus_thread</comments>
@@ -63,17 +86,17 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
-      
-      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
-      
       <category domain="https://chrisbergeron.com/tags/raid/">raid</category>
       
       <category domain="https://chrisbergeron.com/tags/das/">das</category>
       
+      <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
+      
       <category domain="https://chrisbergeron.com/tags/aVolusion/">aVolusion</category>
       
       <category domain="https://chrisbergeron.com/tags/nvme/">nvme</category>
+      
+      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
       
       
       <comments>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/#disqus_thread</comments>
@@ -95,17 +118,17 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/tags/das/">das</category>
       
       <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
+      
+      <category domain="https://chrisbergeron.com/tags/nvme/">nvme</category>
+      
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       <category domain="https://chrisbergeron.com/tags/big-sur/">big sur</category>
       
       <category domain="https://chrisbergeron.com/tags/apple/">apple</category>
-      
-      <category domain="https://chrisbergeron.com/tags/das/">das</category>
-      
-      <category domain="https://chrisbergeron.com/tags/nvme/">nvme</category>
       
       <category domain="https://chrisbergeron.com/tags/tbt3/">tbt3</category>
       
@@ -317,11 +340,11 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/magicmirror/">magicmirror</category>
-      
       <category domain="https://chrisbergeron.com/tags/pi/">pi</category>
       
       <category domain="https://chrisbergeron.com/tags/raspberrypi/">raspberrypi</category>
+      
+      <category domain="https://chrisbergeron.com/tags/magicmirror/">magicmirror</category>
       
       <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
@@ -441,6 +464,10 @@
       <category domain="https://chrisbergeron.com/categories/Crypto/">Crypto</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/debris/">debris</category>
+      
+      <category domain="https://chrisbergeron.com/tags/art/">art</category>
+      
       <category domain="https://chrisbergeron.com/tags/nft/">nft</category>
       
       <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
@@ -448,10 +475,6 @@
       <category domain="https://chrisbergeron.com/tags/blockchain/">blockchain</category>
       
       <category domain="https://chrisbergeron.com/tags/ethereum/">ethereum</category>
-      
-      <category domain="https://chrisbergeron.com/tags/debris/">debris</category>
-      
-      <category domain="https://chrisbergeron.com/tags/art/">art</category>
       
       
       <comments>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/#disqus_thread</comments>
@@ -476,11 +499,11 @@
       
       <category domain="https://chrisbergeron.com/tags/crypto/">crypto</category>
       
+      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
+      
       <category domain="https://chrisbergeron.com/tags/bitcoin/">bitcoin</category>
       
       <category domain="https://chrisbergeron.com/tags/armory/">armory</category>
-      
-      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
       
       
       <comments>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/#disqus_thread</comments>
@@ -504,10 +527,6 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/pi/">pi</category>
-      
-      <category domain="https://chrisbergeron.com/tags/raspberrypi/">raspberrypi</category>
-      
       <category domain="https://chrisbergeron.com/tags/plex/">plex</category>
       
       <category domain="https://chrisbergeron.com/tags/locast/">locast</category>
@@ -515,6 +534,10 @@
       <category domain="https://chrisbergeron.com/tags/live/">live</category>
       
       <category domain="https://chrisbergeron.com/tags/tv/">tv</category>
+      
+      <category domain="https://chrisbergeron.com/tags/pi/">pi</category>
+      
+      <category domain="https://chrisbergeron.com/tags/raspberrypi/">raspberrypi</category>
       
       
       <comments>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/#disqus_thread</comments>
@@ -693,9 +716,9 @@
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
-      <category domain="https://chrisbergeron.com/tags/influxdb/">influxdb</category>
-      
       <category domain="https://chrisbergeron.com/tags/annotations/">annotations</category>
+      
+      <category domain="https://chrisbergeron.com/tags/influxdb/">influxdb</category>
       
       <category domain="https://chrisbergeron.com/tags/webhooks/">webhooks</category>
       
@@ -725,11 +748,11 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
+      <category domain="https://chrisbergeron.com/tags/das/">das</category>
       
       <category domain="https://chrisbergeron.com/tags/thunderbolt/">thunderbolt</category>
       
-      <category domain="https://chrisbergeron.com/tags/das/">das</category>
+      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
       <category domain="https://chrisbergeron.com/tags/nas/">nas</category>
       
@@ -992,9 +1015,9 @@
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
-      <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
-      
       <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
+      
+      <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
       <category domain="https://chrisbergeron.com/tags/mariadb/">mariadb</category>
       
@@ -1209,11 +1232,11 @@
       <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
       
       
-      <category domain="https://chrisbergeron.com/tags/pihole/">pihole</category>
-      
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
       <category domain="https://chrisbergeron.com/tags/influxdb/">influxdb</category>
+      
+      <category domain="https://chrisbergeron.com/tags/pihole/">pihole</category>
       
       
       <comments>https://chrisbergeron.com/2017/12/28/pihole_dashboard/#disqus_thread</comments>
@@ -1290,11 +1313,11 @@
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
+      <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
+      
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
       <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
-      
-      <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
       
       <category domain="https://chrisbergeron.com/tags/vault/">vault</category>
       
@@ -1377,13 +1400,13 @@
       
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
-      <category domain="https://chrisbergeron.com/tags/sabnzbd/">sabnzbd</category>
-      
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
-      <category domain="https://chrisbergeron.com/tags/terraform/">terraform</category>
-      
       <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
+      
+      <category domain="https://chrisbergeron.com/tags/sabnzbd/">sabnzbd</category>
+      
+      <category domain="https://chrisbergeron.com/tags/terraform/">terraform</category>
       
       <category domain="https://chrisbergeron.com/tags/sonarr/">sonarr</category>
       
@@ -1476,15 +1499,15 @@
       <category domain="https://chrisbergeron.com/categories/Telematics/">Telematics</category>
       
       
+      <category domain="https://chrisbergeron.com/tags/comma-ai/">comma.ai</category>
+      
+      <category domain="https://chrisbergeron.com/tags/panda/">panda</category>
+      
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
-      
-      <category domain="https://chrisbergeron.com/tags/comma-ai/">comma.ai</category>
-      
-      <category domain="https://chrisbergeron.com/tags/panda/">panda</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/06/comma_panda/#disqus_thread</comments>
@@ -1654,11 +1677,11 @@
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
-      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
-      
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
+      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       
@@ -1689,11 +1712,11 @@
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
-      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
-      
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
+      <category domain="https://chrisbergeron.com/tags/dashwerks/">dashwerks</category>
       
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       
