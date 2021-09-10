@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2021-09-03T22:52:57.426Z</updated>
+  <updated>2021-09-07T14:26:31.951Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://chrisbergeron.com/2021/09/03/about/"/>
     <id>https://chrisbergeron.com/2021/09/03/about/</id>
     <published>2021-09-03T21:45:21.000Z</published>
-    <updated>2021-09-03T22:52:57.426Z</updated>
+    <updated>2021-09-07T14:26:31.951Z</updated>
     
     
       
@@ -1405,6 +1405,35 @@
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Upgrading Honda Insight IMA Battery</title>
+    <link href="https://chrisbergeron.com/2014/07/04/Upgrading-Honda-Insight-IMA-Battery/"/>
+    <id>https://chrisbergeron.com/2014/07/04/Upgrading-Honda-Insight-IMA-Battery/</id>
+    <published>2014-07-04T18:53:42.000Z</published>
+    <updated>2021-09-10T22:01:14.694Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2014/07/04/Upgrading-Honda-Insight-IMA-Battery/Upgrading-Honda-Insight-IMA-Battery-6-small.png&quot; alt=&quot;Honda Insight MIMA battery 144v DC&quot; title=&quot;Photo of a 2000 Honda Insight MIMA battery.&quot;&gt;&lt;br&gt;A few months ago while driving my commuter car - a 2000 Honda Insight, I received the &lt;em&gt;dreaded&lt;/em&gt; &lt;strong&gt;IMA&lt;/strong&gt; light.  For those that don’t drive this car, the IMA light indicates that the main hybrid vehicle battery is failing at capacity.  In Georgia, this light means you will not pass State emissions which is a requirement.  Additionally, you lose a tremendous amount of power, which is kind of the point of the electric motor.&lt;br&gt;</summary>
+    
+    
+    
+    <category term="Projects" scheme="https://chrisbergeron.com/categories/Projects/"/>
+    
+    
+    <category term="electronics" scheme="https://chrisbergeron.com/tags/electronics/"/>
+    
+    <category term="car" scheme="https://chrisbergeron.com/tags/car/"/>
+    
+    <category term="honda" scheme="https://chrisbergeron.com/tags/honda/"/>
+    
+    <category term="insight" scheme="https://chrisbergeron.com/tags/insight/"/>
+    
+    <category term="mima" scheme="https://chrisbergeron.com/tags/mima/"/>
+    
+    <category term="ima" scheme="https://chrisbergeron.com/tags/ima/"/>
     
   </entry>
   
