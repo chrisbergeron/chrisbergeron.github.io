@@ -70,7 +70,7 @@
     <link href="https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/"/>
     <id>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</id>
     <published>2021-08-11T14:46:52.000Z</published>
-    <updated>2021-09-03T18:59:44.801Z</updated>
+    <updated>2021-09-11T22:37:05.107Z</updated>
     
     
     <summary type="html">&lt;p&gt;In this post I’m demonstrating how to create a high-speed macos volume using quantity 2 Thunderbolt ports and NVMe enclosures.  This solution uses RAID-0 (striping) so the failure threshold is more than twice that of a normal standalone disk.  This example is for demonstration purposes and could be useful for video editing scratch space, rendering, large photo sessions or similar uses.  Obviously, good backups (RAID is not a backup) or a more reliable storage tier is recommended for daily use.&lt;/p&gt;
@@ -481,7 +481,7 @@
     <link href="https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/"/>
     <id>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</id>
     <published>2021-01-31T03:25:11.000Z</published>
-    <updated>2021-09-02T21:24:50.370Z</updated>
+    <updated>2021-09-11T22:37:10.738Z</updated>
     
     
     <summary type="html">&lt;p&gt;Watch local broadcast TV on Plex without an antenna.&lt;/p&gt;
@@ -554,7 +554,7 @@
     <link href="https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/"/>
     <id>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</id>
     <published>2020-12-04T17:07:39.000Z</published>
-    <updated>2021-09-10T22:30:24.465Z</updated>
+    <updated>2021-09-11T22:37:16.530Z</updated>
     
     
       
@@ -624,7 +624,7 @@
     <link href="https://chrisbergeron.com/2020/03/13/cloudinary_bash/"/>
     <id>https://chrisbergeron.com/2020/03/13/cloudinary_bash/</id>
     <published>2020-03-13T23:13:25.000Z</published>
-    <updated>2021-09-02T21:20:54.131Z</updated>
+    <updated>2021-09-11T22:37:33.697Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://cloudinary.com/&quot;&gt;Cloudinary&lt;/a&gt; is an amazing image hosting service that offers both a highly functional free tier in addition to a paid enterprise grade image hosting and transformation service.&lt;/p&gt;
@@ -652,7 +652,7 @@
     <link href="https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/"/>
     <id>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</id>
     <published>2020-03-08T23:13:25.000Z</published>
-    <updated>2021-09-02T21:24:20.228Z</updated>
+    <updated>2021-09-11T22:37:40.312Z</updated>
     
     
     <summary type="html">&lt;p&gt;Grafana is a great tool for visualizing data.&lt;br&gt;&lt;img src=&quot;https://chrisbergeron.com/images/showcase_visualize.jpg&quot; alt=&quot;Grafana&quot;&gt;&lt;/p&gt;
@@ -1012,7 +1012,7 @@
     <link href="https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/"/>
     <id>https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</id>
     <published>2018-06-08T23:13:25.000Z</published>
-    <updated>2021-09-02T21:20:23.677Z</updated>
+    <updated>2021-09-11T22:37:21.720Z</updated>
     
     
     <summary type="html">&lt;p&gt;Ansible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or Puppet.  This is because Ansible doesn’t have an agent that listens (although it can) on a host and uses a different type of deployment methodology that is based on SSH.  This post isn’t about the pros and cons of each tool, but rather about ways to improve upon Ansible’s default configuration values.  By default Ansible ships with very conservative default values.  This is smart in my opinion because it offers greater compatibility out-of-the-box.  Here I highlight some safe adjustments that can be made to the default configuration for improved performance (speed!)&lt;/p&gt;
@@ -1469,10 +1469,11 @@
     <link href="https://chrisbergeron.com/2008/01/21/metalcasting_furnace/"/>
     <id>https://chrisbergeron.com/2008/01/21/metalcasting_furnace/</id>
     <published>2008-01-21T23:52:00.000Z</published>
-    <updated>2021-09-02T21:25:23.276Z</updated>
+    <updated>2021-09-11T20:59:21.729Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;p&gt;On this page I highlight how I built my metal casting furnace.  It&amp;#8217;s a propane furnace capable of melting metals at up to 1,300 degrees F (&amp;deg;F).  There are 2 major assemblies:  The furnace housing and the burner.  The housing is composed of a combination of fireclay, sand and cement; equally mixed in thirds.&lt;br /&gt;&lt;br&gt;&lt;img src=&quot;/images/projects/furnace/DSC00772-1024x686.jpg&quot; alt=&quot;An aluminum bar turning into liquid&quot;&gt;&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;On this page I highlight how I built my metal casting furnace.  It’s a propane furnace capable of melting metals at up to 1,300 degrees F (&amp;deg;F).  There are 2 major assemblies:  The furnace housing and the burner.  The housing is composed of a combination of fireclay, sand and cement; equally mixed in thirds.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/projects/furnace/DSC00772-1024x686.jpg&quot; alt=&quot;An aluminum bar turning into liquid&quot;&gt;&lt;br&gt;</summary>
     
     
     
@@ -1548,7 +1549,7 @@
     <link href="https://chrisbergeron.com/2007/07/17/aspire_free_car/"/>
     <id>https://chrisbergeron.com/2007/07/17/aspire_free_car/</id>
     <published>2007-07-17T18:46:25.000Z</published>
-    <updated>2021-09-02T21:23:52.827Z</updated>
+    <updated>2021-09-11T22:37:28.729Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;The-stage-is-set&quot;&gt;&lt;a href=&quot;#The-stage-is-set&quot; class=&quot;headerlink&quot; title=&quot;The stage is set:&quot;&gt;&lt;/a&gt;The stage is set:&lt;/h2&gt;&lt;p&gt;I drive my VW Jetta exactly 50 miles a day to and from work. When gas prices started going up in the Summer of 2006, I decided to figure out exactly how much fuel was costing me &lt;em&gt;each workday&lt;/em&gt;.  So, one morning on the way to work, I stopped at the gas station nearest my home. I filled my tank and reset my trip counter to zero. I recorded the price per gallon ($3 something a gallon!). Then, I drove directly to work, worked, and drove back to the same gas station. I pulled up to the same pump I filled up at that morning. I took note of how many miles I had driven, and sure enough it read almost exactly 50 miles. Next, I refilled my gas tank. It cost me $7. &lt;strong&gt;&lt;em&gt;I had burned $7 dollars worth of fuel just going to work and back!&lt;/em&gt;&lt;/strong&gt; That came as quite a shock. I knew gas prices were high, but I never thought that I was spending that much each day. $3 a Gallon?!? Somethings gotta give! After doing some homework on the web (fueleconomy.gov), et al., I decided to buy a much more fuel efficient car (and a soon to be FREE CAR).&lt;br&gt;</summary>
@@ -1606,7 +1607,7 @@
     <link href="https://chrisbergeron.com/2005/05/18/dashboard_linux/"/>
     <id>https://chrisbergeron.com/2005/05/18/dashboard_linux/</id>
     <published>2005-05-18T18:11:00.000Z</published>
-    <updated>2021-09-02T21:23:17.372Z</updated>
+    <updated>2021-09-11T22:37:46.904Z</updated>
     
     
       
