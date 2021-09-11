@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/Projects/index.html</loc>
+    
+    <lastmod>2021-09-11T13:47:22.638Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2014/07/04/Upgrading-Honda-Insight-IMA-Battery/</loc>
+    
+    <lastmod>2021-09-10T23:43:17.621Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/about/index.html</loc>
     
     <lastmod>2021-09-10T22:35:09.914Z</lastmod>
@@ -12,20 +26,6 @@
     <loc>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</loc>
     
     <lastmod>2021-09-10T22:30:24.465Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2014/07/04/Upgrading-Honda-Insight-IMA-Battery/</loc>
-    
-    <lastmod>2021-09-10T22:01:14.694Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/Projects/index.html</loc>
-    
-    <lastmod>2021-09-10T20:06:51.787Z</lastmod>
     
   </url>
   
