@@ -628,7 +628,7 @@
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://cloudinary.com/&quot;&gt;Cloudinary&lt;/a&gt; is an amazing image hosting service that offers both a highly functional free tier in addition to a paid enterprise grade image hosting and transformation service.&lt;/p&gt;
-&lt;p&gt;In this tutorial I demonstrate a few simple bash shell scripts to interface with Cloudinary.&lt;br&gt;</summary>
+&lt;p&gt;In this tutorial I demonstrate a few simple bash shell scripts to interface with Cloudinary.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -656,7 +656,7 @@
     
     
     <summary type="html">&lt;p&gt;Grafana is a great tool for visualizing data.&lt;br&gt;&lt;img src=&quot;https://chrisbergeron.com/images/showcase_visualize.jpg&quot; alt=&quot;Grafana&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;In this tutorial I’ll be putting annotations, or comments on points of interest overlayed on top of graph panels.&lt;/strong&gt;</summary>
+&lt;p&gt;&lt;strong&gt;In this tutorial I’ll be putting annotations, or comments on points of interest overlayed on top of graph panels.&lt;/strong&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1016,7 +1016,7 @@
     
     
     <summary type="html">&lt;p&gt;Ansible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or Puppet.  This is because Ansible doesn’t have an agent that listens (although it can) on a host and uses a different type of deployment methodology that is based on SSH.  This post isn’t about the pros and cons of each tool, but rather about ways to improve upon Ansible’s default configuration values.  By default Ansible ships with very conservative default values.  This is smart in my opinion because it offers greater compatibility out-of-the-box.  Here I highlight some safe adjustments that can be made to the default configuration for improved performance (speed!)&lt;/p&gt;
-&lt;h3 id=&quot;Real-World-Playbook-Test&quot;&gt;&lt;a href=&quot;#Real-World-Playbook-Test&quot; class=&quot;headerlink&quot; title=&quot;Real World Playbook Test&quot;&gt;&lt;/a&gt;Real World Playbook Test&lt;/h3&gt;&lt;p&gt;For this test I’m using a real-world playbook that I use in my homelab when provisioning a new CentOS VM.  It configures some basic things (hostname, ssh keys, etc), installs common packages/utilities and tunes some OS configurations.&lt;br&gt;</summary>
+&lt;h3 id=&quot;Real-World-Playbook-Test&quot;&gt;&lt;a href=&quot;#Real-World-Playbook-Test&quot; class=&quot;headerlink&quot; title=&quot;Real World Playbook Test&quot;&gt;&lt;/a&gt;Real World Playbook Test&lt;/h3&gt;&lt;p&gt;For this test I’m using a real-world playbook that I use in my homelab when provisioning a new CentOS VM.  It configures some basic things (hostname, ssh keys, etc), installs common packages/utilities and tunes some OS configurations.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1472,8 +1472,8 @@
     <updated>2021-09-11T20:59:21.729Z</updated>
     
     
-    <summary type="html">&lt;p&gt;On this page I highlight how I built my metal casting furnace.  It’s a propane furnace capable of melting metals at up to 1,300 degrees F (&amp;deg;F).  There are 2 major assemblies:  The furnace housing and the burner.  The housing is composed of a combination of fireclay, sand and cement; equally mixed in thirds.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/projects/furnace/DSC00772-1024x686.jpg&quot; alt=&quot;An aluminum bar turning into liquid&quot;&gt;&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;On this page I highlight how I built my metal casting furnace.  It’s a propane furnace capable of melting metals at up to 1,300 degrees F (°F).  There are 2 major assemblies:  The furnace housing and the burner.  The housing is composed of a combination of fireclay, sand and cement; equally mixed in thirds.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/projects/furnace/DSC00772-1024x686.jpg&quot; alt=&quot;An aluminum bar turning into liquid&quot;&gt;&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1552,7 +1552,7 @@
     <updated>2021-09-11T22:37:28.729Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;The-stage-is-set&quot;&gt;&lt;a href=&quot;#The-stage-is-set&quot; class=&quot;headerlink&quot; title=&quot;The stage is set:&quot;&gt;&lt;/a&gt;The stage is set:&lt;/h2&gt;&lt;p&gt;I drive my VW Jetta exactly 50 miles a day to and from work. When gas prices started going up in the Summer of 2006, I decided to figure out exactly how much fuel was costing me &lt;em&gt;each workday&lt;/em&gt;.  So, one morning on the way to work, I stopped at the gas station nearest my home. I filled my tank and reset my trip counter to zero. I recorded the price per gallon ($3 something a gallon!). Then, I drove directly to work, worked, and drove back to the same gas station. I pulled up to the same pump I filled up at that morning. I took note of how many miles I had driven, and sure enough it read almost exactly 50 miles. Next, I refilled my gas tank. It cost me $7. &lt;strong&gt;&lt;em&gt;I had burned $7 dollars worth of fuel just going to work and back!&lt;/em&gt;&lt;/strong&gt; That came as quite a shock. I knew gas prices were high, but I never thought that I was spending that much each day. $3 a Gallon?!? Somethings gotta give! After doing some homework on the web (fueleconomy.gov), et al., I decided to buy a much more fuel efficient car (and a soon to be FREE CAR).&lt;br&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;The-stage-is-set&quot;&gt;&lt;a href=&quot;#The-stage-is-set&quot; class=&quot;headerlink&quot; title=&quot;The stage is set:&quot;&gt;&lt;/a&gt;The stage is set:&lt;/h2&gt;&lt;p&gt;I drive my VW Jetta exactly 50 miles a day to and from work. When gas prices started going up in the Summer of 2006, I decided to figure out exactly how much fuel was costing me &lt;em&gt;each workday&lt;/em&gt;.  So, one morning on the way to work, I stopped at the gas station nearest my home. I filled my tank and reset my trip counter to zero. I recorded the price per gallon ($3 something a gallon!). Then, I drove directly to work, worked, and drove back to the same gas station. I pulled up to the same pump I filled up at that morning. I took note of how many miles I had driven, and sure enough it read almost exactly 50 miles. Next, I refilled my gas tank. It cost me $7. &lt;strong&gt;&lt;em&gt;I had burned $7 dollars worth of fuel just going to work and back!&lt;/em&gt;&lt;/strong&gt; That came as quite a shock. I knew gas prices were high, but I never thought that I was spending that much each day. $3 a Gallon?!? Somethings gotta give! After doing some homework on the web (fueleconomy.gov), et al., I decided to buy a much more fuel efficient car (and a soon to be FREE CAR).&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
