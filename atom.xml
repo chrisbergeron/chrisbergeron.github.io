@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2021-09-13T02:43:50.309Z</updated>
+  <updated>2021-09-02T14:33:46.337Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="https://chrisbergeron.com/2021/09/03/about/"/>
-    <id>https://chrisbergeron.com/2021/09/03/about/</id>
-    <published>2021-09-03T21:45:21.000Z</published>
-    <updated>2021-09-13T02:43:50.309Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Chris-Bergeron’s-Tech-Blog&quot;&gt;&lt;a href=&quot;#Chris-Bergeron’s-Tech-Blog&quot; class=&quot;headerlink&quot; title=&quot;Chris Bergeron’s Tech Blog&quot;&gt;&lt;/a&gt;Chris</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card</title>
@@ -1634,6 +1613,27 @@
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
     <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://chrisbergeron.com/2001/01/01/about/"/>
+    <id>https://chrisbergeron.com/2001/01/01/about/</id>
+    <published>2001-01-01T22:45:21.000Z</published>
+    <updated>2021-09-13T02:44:52.762Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Chris-Bergeron’s-Tech-Blog&quot;&gt;&lt;a href=&quot;#Chris-Bergeron’s-Tech-Blog&quot; class=&quot;headerlink&quot; title=&quot;Chris Bergeron’s Tech Blog&quot;&gt;&lt;/a&gt;Chris</summary>
+        
+      
+    
+    
+    
     
   </entry>
   
