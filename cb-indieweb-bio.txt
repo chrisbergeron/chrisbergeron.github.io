@@ -1,0 +1,199 @@
+= Chris Bergeron = 
+== Introduction ==
+Hello.  I'm Chris. I've been on the internet since at least 1995 when HTML was the "thing". PHP is my primary web-based programming language, though I'm trying to sharpen my JavaScript skills to better break all the things. 
+
+
+== Websites ==
+I use a [[multi-site_indieweb|multi-site strategy]]. My primary site ([http://boffosocko.com BoffoSocko.com]) is powered by [[WordPress]] while I also (poorly) maintain a secondary self-hosted [http://stream.boffosocko.com/ "social stream"] powered by [[Known]]. I'm also running two other [[WordPress]] installs [http://boffosocko.com/publishing Boffo Socko Publishing] and [http://www.boffosockobooks.com Boffo Socko Books] that are indieweb compatible in various stages. I also have experience with [[Drupal]] and a few other PHP-based [[CMS|CMSes]]. 
+
+Beginning in late 2019/early 2020 I started tinkering with some wikis including [[MediaWiki]] (https://wiki.chrisaldrich.net/) and [[TiddlyWiki]] (http://tw.boffosocko.com) both of which can do [[RelMeAuth]] and accept Webmention via [[webmention.io]].
+
+I have an open [[Known]] instance at [http://known.boffosocko.com known.boffosocko.com]that Indieweb users are welcome to [http://known.boffosocko.com/account/register create an account] on to try out. (One may need to ping me to test out an account as I sometimes close off sign ups to prevent spam.) This may be particularly useful for either newcomers to HWC or IndieWebCamps who need something to play around with or kick the tires on. It has [[OAuth]] enabled, so users could potentially [[POSSE]] to from their own Known instance, which I've done in the past.
+
+==== IndieWeb Wiki ====
+If you want to add a [[sparkline]] like the following for {{chrisaldrich}}, just copy/paste: <code><nowiki>{{chrisaldrich}}</nowiki></code> into the page where you would like it to appear. (To set up your own, see: [[Template:sparkline#How_to_make_a_small_h-card_template|How to make a small h-card template]]. For more details see also [[wikify#Wikify_yourself]].) 
+
+I'm not the most advanced wiki user in the community, but I'm always happy to help anyone who would like to learn how to [[wikify]] themselves or do various things on the wiki--catch me in [[discuss|chat]].
+
+__TOC__
+== Working On ==
+* [[Planning#North_America_East_.28Online.29|Planning IWC East 2020]]
+* Helping to co-host online Homebrew Website Clubs and facilitate [[2020/Pop-ups|pop-up sessions]].
+** [[2020/Pop-up/Sessions#Domain_of_One.27s_Own_LMS|Domain of One's Own LMS Pop-up session]]
+** [[2020/Pop-up/Sessions#Gardens_.26_Streams_II| Gardens and Streams Pop-up session]]
+** [[2020/Pop-up/Sessions#IndieWeb_Friendly_WordPress_Themes| IndieWeb Friendly WordPress Themes Pop-up session]]
+** [[2020/Pop-up/Sessions#Getting_Started_with_WordPress|Getting Started with WordPress Pop-up sessions]]
+
+* Sporadically co-hosting [http://boffosocko.com/category/podcast/ An Indieweb Podcast] with {{GWG}}
+
+* [http://boffosocko.com/2017/10/20/indieweb-the-book/ Writing a book/manual] on the IndieWeb and getting set up using [[WordPress]]. It will be geared toward [[Generations|Gen2+]] users.
+
+* Research to make a Micropub client for [[Hypothesis]]
+
+* Write post to encourage smaller social media silos to support Micropub
+
+
+== Itches ==
+=== Community ===
+* Improve and integrate the [[Quick Start]] page
+
+* Update https://en.wikipedia.org/wiki/Mention_(blogging) with details from [[Webmentions]]
+
+* Spend more time in the [[WordPress]] community, particularly to do outreach for Indieweb concept
+** Regularly attending WordPress Pasadena and Santa Clarita Valley Meetups
+
+* Begin [[Planning#Los_Angeles|planning]] IndieWebCamp LA 202X (post-pandemic)??
+
+* Spread concept of [[Indieweb for Education|IndieWeb into Academe]] as a means of communication and syndication of ideas (whether by [[academic samizdat|samizdat]] or not) 
+
+* [[Independent Publisher]] tweak: https://github.com/raamdev/independent-publisher/issues/256
+
+* WordPress plugin for Noter Live code https://github.com/kevinmarks/noterlive/pull/14#event-942297151
+
+* Fix div issue in 2016 theme https://github.com/WordPress/twentysixteen/issues/470
+
+
+=== WordPress ===
+* Upgrade to the most recent version of Post Kinds Plugin
+** Theme templates for Post-Kinds Plugin
+*** [https://github.com/dshanske/indieweb-post-kinds/tree/e6d151b0cfa7ff1a3f9d6c97f8615e712c6e1836/includes/views Original plugin location]
+*** [https://github.com/ngm/doublepress/tree/master/kind_views Doubleloop's examples] which uses [https://twig.sensiolabs.org/ twig template engine]
+
+* 2020-07-25 Work on trouble-shooting issue with IndieAuth/Micropub
+
+* Build a WordPress-based aggregation hub or pre-print server using Webmention
+
+* Improve the JavaScript for my bookmarklets for PostKinds plugin based on IndieWeb bookmarklets and PressForward Bookmarklets
+
+* Add an alternate linkblog (archive page view) from bookmarks, reads, watches, and listens...
+** Anders Noren has some interesting examples of this in his [https://wordpress.org/themes/mcluhan/ McLuhan theme]
+** This might also make an interesting set up for a custom [[now]] page
+
+* Reading through microformats2 spec and contemplating updating current theme to support it better
+** Fix [http://indiewebify.me/validate-h-entry/ h-entry] on posts--some data is missing; in particular figure out a way to add tag: img class="u-photo" src="…" / to the photo on individual posts to get photo into h-entry. Also wrap category and tag portions with tag: a class="p-category" href="…"  … /a  to get categories in as well.
+
+* Improve recipe support and microformats for WordPress
+** [https://github.com/dshanske/indieweb-post-kinds/issues/57 Add recipe support to Post Kinds]?
+** Tweak shortcode for recipes so they support mf2 by default (there are a few small bugs left)
+
+* Continue playing around with Ozh plugin to own all past Twitter data and be able to display.
+
+* Check out [https://github.com/petermolnar/wp-peoplemention WP Peoplemention]
+
+* [https://snarfed.org/functions.php.txt Functions.php] code to look at.
+
+* Look into accessability (a11y) [https://github.com/briandeconinck/ncsu-a11y-helper]
+
+* Make a decision on [[AMP]], cf [https://www.alexkras.com/how-to-disable-amp-on-wordpress/ 1]
+
+
+=== Known ===
+* Fix my install which has been broken for too long
+
+* Spend some time helping out on documentation for the platform (and self-hosters) and integrating plugins
+
+* Update self-hosted [[Known]] site and play around with internals
+
+* Play around with other [http://docs.withknown.com/en/latest/plugins/community/ community plugins]
+
+
+== Finished ==
+* Check out [[IndieMark]] for additional ideas of things to add to my site
+* Added h-card to site (previously only had mf1 hcard)
+* Set up an IndieWebCamp outpost with regular HWC meetings in Los Angeles
+** [https://indieweb.org/events/2016-07-27-homebrew-website-club First meeting on 7/27/16]
+* Introduced IndieWeb concepts at DrupalCampLA at UC Irvine in 2015
+* Added proper User setup on IndieWebCamp.com; created redirect from older/more awkward one
+* Finally figured out how to properly add a [[Template:sparkline]] so my name/photo popup in groups and discussions like so {{chrisaldrich}}.
+* Learned more about [[wikifying]] and added myself to list of [[IRC_People]]
+* Taking over IndieWebCamp LA 2016 planning from Shaners
+* Set up multi-user Known installation that anyone can sign up for and participate in (expecially for HWC meetings and IndieWeb Camps for which users need a "playground")
+
+=== WordPress ===
+* Add a more extensive [[h-card]] on my site
+* Updated to more modern responsive theme that is as IndieWeb compatible as possible
+* Set up [[Micropub]] endpoint and [[ownyourgram]] to publish photos to my own site.
+* Updated [https://github.com/pfefferle/wordpress-indieweb-press-this IndieWeb Press This] on WordPress site; made some suggestions on GitHub for changes
+* 3/25/16 Finished setting up my first [[podcast]] feed by uploading [[audio]] files to [http://www.boffosockobooks.com Boffo Socko Books].
+* Configure [https://wordpress.org/plugins/social-networks-auto-poster-facebook-twitter-g/ SNAP] and compare it with current set up which simply uses JetPack publicize
+** Added in mid-March '16 and seems to work well, particularly with [https://github.com/dshanske/syndication-links Syndication Links]
+*** Tumblr certainly has far better support in SNAP than Jetpack
+*** Twitter seems roughly equivalent
+*** Nice that SNAP allows easy secondary posting later on
+*** Facebook will require some tweaking and formatting, but seems workable and has more flexibility
+*** Still using JetPack for G+ as it requires paid SNAP pro version; SNAP pro only works without 2-factor authentication turned on.
+* Given that [[Bridgy]] seems to be giving [[webmentions]] for my Twitter @username and assigning them to the homepage of my domain, figure out a way to "archive" these comments into a category other than "approved" (so they don't show up on the homepage), or spam or trash (where they'd be automatically deleted/purged.) See https://codex.wordpress.org/Comments_Screen 
+** For the moment, I'm assigning them to http://boffosocko.com/twitter-mentions/ (perhaps there's a better answer down the road); created 301 redirect to /mentions in 8/16
+* 5/16/16 Streamlined micropub PESOS of Instagram and made modifications to site to allow Bridgy to import comments/likes.
+* 5/17/16 Set up PESOS of checkins via [[OwnYourCheckin]]
+* Late June: Added Hypothes.is support and plugin for keeping notes.
+* 6/16: Finished PESOS of all Instagram data so that I own the entirety of what's in that silo.
+* Early July: fixed issues with Instagram PESOS and finalized workflow
+* Attended WordCamp OC in early July '16
+* Registered for WordCamp LA and submitted IndieWeb session proposal
+* 7/14/16 Added documentation to Syndication Links
+* 7/19/16 This week got the [https://github.com/Automattic/jetpack/issues/4399 sharedaddy JetPack "like" functionality] to filter out of syndicated copies to Tumblr.
+* 7/20/16 Added mf2 support for [[recipe]] via [https://github.com/chrisaldrich/jetpack/pull/1/commits/f914ebe3bd573d1d6d42c5b7752bf26c41448a3b JetPack code] which I hope will be [https://github.com/Automattic/jetpack/issues/4470 included in the future].
+7/29/16: [http://boffosocko.com/2016/07/29/web-based-push-notifications-with-pushpad/ Added] web-based [[push notifications]] for future post updates
+* 8/20/16: I've been using POSSE for Tumblr for quite a while now, but I finished importing and displaying of all past Tumblr data, prior to POSSE efforts.
+* 12/18/16: [http://boffosocko.com/2016/12/18/rss-feeds-a-follow-up-on-my-indieweb-commitment-2017/ Figure out] how to better segregate content on site and make subsections of it more easily subscribe-able 
+** See also https://indieweb.org/publics#IndieWeb_Thoughts
+* December (?) 2016: Fix custom code so that auto-posting from [[ownyourgram]] or other services like Woodwind doesn't automatically syndicate out to Facebook, Twitter, et al. via Jetpack in WordPress. This [http://jetpack.me/2013/10/15/ever-accidentally-publicize-a-post-that-you-didnt/ Jetpack] functions.php snippet should work, but I'm having problems with it not triggering things anyway. I suspect it's the e-content microformat not closing early enough in my theme. - Essentially created a functions.php filter that prevents posts to particular categories from auto-emailing and changed my syndication workflow subtly.
+* December 2016: Started posting more [[listen]], [[watch]] posts and occasional [[jams]] after reconfiguring a work-in-progress set of bookmarklets for Post Kinds plugin
+* 12/31/16: Find better integrated reader to go with WordPress. Play around more with IndieWeb feed readers [[Woodwind]] (as [[Monocle]] "died"), [[WhisperFollow]], and [[PressForward]]. Decided in [http://boffosocko.com/2016/12/31/pressforward-as-an-indieweb-wordpress-based-rss-feed-reader-pocketinstapaper-replacement/ December 2016] to use PressForward as my daily tool.
+* Check out Bridgy Publish functionality either in [https://github.com/dshanske/bridgy-publish repo] or [https://wordpress.org/plugins/bridgy-publish/ WordPress.org]
+* 1/17: Added [https://wordpress.org/plugins/simple-location/ Simple Location] plugin to display maps and location information which moves me closer to better supporting [[checkins]] (6/9/16 {{GWG}} said he will be coming back to this shortly; he revamped in December 2016.)
+
+* 2017-01-26 Fix issue of [[backfeed]] of Instagram account to WordPress (from 12/18/16)
+
+* 2017-05-02 Circle back around on emoji issue relating to semantic linkbacks: https://github.com/pfefferle/wordpress-webmention/issues/97 
+
+* 2017-06-03 Bookmark type https://github.com/pfefferle/wordpress-semantic-linkbacks/issues/77#issuecomment-276188484
+
+* Early 2018 (fixed via plugin update) Comment walker for better separation of likes, comments, etc.
+** [https://gist.github.com/miklb/f86ece1431283f1220e2735449678724 Example from miklb] has a facepile for likes
+** [https://github.com/pfefferle/wordpress-semantic-linkbacks/tree/seperate-comments-by-type semantic linkbacks branch for separating comments by type]
+* Find a better way in WordPress to sort/differentiate between likes, comments, pingbacks, potentially using a facepile set up. {{GWG}} has [https://david.shanske.com/projects/indieweb/semantic-comments/ Semantic Comments] which may do this. He's also made a note that in addition to [https://github.com/dshanske/semantic-comments Github Semantic Comments] some of the relevant code lives in his theme [https://github.com/dshanske/mf2_s mf2_s]; [[Independent Publisher]] theme on GitHub (circa 5/15/16) has a custom comments.php that does an excellent job of doing this.
+
+* Get [https://github.com/dshanske/syndication-links/issues/29 Syndication Links to look more like Jetpack plugins]
+
+* Fix syndicated to issue: https://github.com/dshanske/syndication-links/issues/32
+
+* 2019-12-30 Switching Themes from 2016 to 2015 on WordPress and adding better Microformats markup
+** see: https://boffosocko.com/research/indieweb/indieweb-twenty-fifteen-wordpress-theme/
+
+* 2020-07-23 Set up plugin to allow [[live streaming]] on my site
+
+=== Known ===
+* Set up a self-hosted [[Known]] site 
+* Set up [[Woodwind]] and configured for use with [[Known]] - wrote about [http://stream.boffosocko.com/2016/configuring-the-indieweb-rss-reader-woodwind-for-withknown configuring action urls for use with Known]
+* Configure [https://play.google.com/store/apps/details?id=net.daverix.urlforward URL forward app] to better integrate IndieWeb experience on Android mobile platform
+** Played around for a bit and wrote [http://stream.boffosocko.com/2016/sharing-from-the-indieweb-on-mobile-android-with-apps-and post on URL Forward and competitor] - still has to be better way for using mobile and indieweb
+* Updated to Known 0.9.2 on 4/30/16
+* Configured Recipes and Reviews and finally got them working
+* Added github support for [[Known]] with [https://github.com/mapkyca/KnownGithub KnownGithub]
+* 3/17 Added food/drink support via plugin
+* Play with [https://github.com/egoexpress/known-shortprofile Short Profile plugin]
+
+
+== Projects ==
+CEO and publisher of [http://www.boffosockobooks.com Boffo Socko Books], a publishing company attempting to disrupt the status quo.
+
+
+[[Category:WordPress_Examples]]
+
+== See Also ==
+* clean up [[WordPress_with_Bridgy]]
+
+
+== Contributions ==
+[[Special:Contributions/Boffosocko.com|See my contributions to the wiki.]]
+
+
+<noinclude>
+== Backlinks ==
+Pages on the IndieWeb wiki that link back to this userpage or my [[sparkline]] ({{chrisaldrich}}) to indicate my examples, participation in events, or mentions of me: 
+<small><div style="column-count:4;-moz-column-count:3;-webkit-column-count:4">
+{{Special:WhatLinksHere/User:Boffosocko.com|limit=1000}}
+</div></small>
+</noinclude>
