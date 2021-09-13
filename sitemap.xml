@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2021/09/03/about/</loc>
+    
+    <lastmod>2021-09-13T02:22:08.695Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2005/05/18/dashboard_linux/</loc>
     
     <lastmod>2021-09-11T22:37:46.904Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>https://chrisbergeron.com/about/index.html</loc>
     
     <lastmod>2021-09-10T22:35:09.914Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2021/09/03/about/</loc>
-    
-    <lastmod>2021-09-07T14:26:31.951Z</lastmod>
     
   </url>
   
