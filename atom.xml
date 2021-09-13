@@ -1491,7 +1491,7 @@
     <link href="https://chrisbergeron.com/2008/01/21/metalcasting_furnace/"/>
     <id>https://chrisbergeron.com/2008/01/21/metalcasting_furnace/</id>
     <published>2008-01-21T23:52:00.000Z</published>
-    <updated>2021-09-11T20:59:21.729Z</updated>
+    <updated>2021-09-13T20:25:13.711Z</updated>
     
     
     <summary type="html">&lt;p&gt;On this page I highlight how I built my metal casting furnace.  It’s a propane furnace capable of melting metals at up to 1,300 degrees F (°F).  There are 2 major assemblies:  The furnace housing and the burner.  The housing is composed of a combination of fireclay, sand and cement; equally mixed in thirds.&lt;/p&gt;
@@ -1656,6 +1656,32 @@
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
     <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DashPC Startup and Shutdown Controller</title>
+    <link href="https://chrisbergeron.com/2004/09/13/DashPC-Startup-and-Shutdown-Controller/"/>
+    <id>https://chrisbergeron.com/2004/09/13/DashPC-Startup-and-Shutdown-Controller/</id>
+    <published>2004-09-13T20:15:01.000Z</published>
+    <updated>2021-09-13T20:36:38.748Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;This is an electronic circuit that I designed, built and brought to market.  This page is here for posterity.  The contents are from the original product page.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2004/09/13/DashPC-Startup-and-Shutdown-Controller/dssc_rev1_v2.jpg&quot; alt=&quot;DashPC Startup and Shutdown Controller&quot; title=&quot;A picture of an electronic circuitboard.&quot;&gt;&lt;br&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Professional" scheme="https://chrisbergeron.com/categories/Professional/"/>
+    
+    
+    <category term="electronics" scheme="https://chrisbergeron.com/tags/electronics/"/>
+    
+    <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
+    
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
+    <category term="dssc" scheme="https://chrisbergeron.com/tags/dssc/"/>
     
   </entry>
   
