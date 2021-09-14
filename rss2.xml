@@ -49,37 +49,6 @@
     </item>
     
     <item>
-      <title>Controlling iRobot Roomba from the command line</title>
-      <link>https://chrisbergeron.com/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/</link>
-      <guid>https://chrisbergeron.com/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/</guid>
-      <pubDate>Sat, 14 Aug 2021 13:40:20 GMT</pubDate>
-      
-      <description>&lt;p&gt;If you’re a heavy command line (cli) user in Macos, Linux or WSL, you may it convenient to easily start or stop your robot from it’s cleaning cycle.  In this post I’ll you fellow keyboard jockeys how to control and even view your robot as is cleans.&lt;/p&gt;
-&lt;!--   /2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/   --&gt;
-&lt;p&gt;&lt;img src=&quot;/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/irobot-skin-cb-1.png&quot; alt=&quot;There&#39;s more than one way to skin a robot&quot; title=&quot;An iRobot Roomba robot vacuum in a blue skin&quot;&gt;&lt;/p&gt;</description>
-      
-      
-      
-      
-      <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
-      
-      
-      <category domain="https://chrisbergeron.com/tags/macos/">macos</category>
-      
-      <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
-      
-      <category domain="https://chrisbergeron.com/tags/irobot/">irobot</category>
-      
-      <category domain="https://chrisbergeron.com/tags/roomba/">roomba</category>
-      
-      <category domain="https://chrisbergeron.com/tags/cli/">cli</category>
-      
-      
-      <comments>https://chrisbergeron.com/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>Fast RAID-0 DAS Using Two Thunderbolt 3 Enclosures</title>
       <link>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</link>
       <guid>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</guid>

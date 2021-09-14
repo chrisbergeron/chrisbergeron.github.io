@@ -45,35 +45,6 @@
   </entry>
   
   <entry>
-    <title>Controlling iRobot Roomba from the command line</title>
-    <link href="https://chrisbergeron.com/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/"/>
-    <id>https://chrisbergeron.com/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/</id>
-    <published>2021-08-14T13:40:20.000Z</published>
-    <updated>2021-09-13T21:10:14.073Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;If you’re a heavy command line (cli) user in Macos, Linux or WSL, you may it convenient to easily start or stop your robot from it’s cleaning cycle.  In this post I’ll you fellow keyboard jockeys how to control and even view your robot as is cleans.&lt;/p&gt;
-&lt;!--   /2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/   --&gt;
-&lt;p&gt;&lt;img src=&quot;/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/irobot-skin-cb-1.png&quot; alt=&quot;There&#39;s more than one way to skin a robot&quot; title=&quot;An iRobot Roomba robot vacuum in a blue skin&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
-    
-    
-    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
-    
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
-    
-    <category term="irobot" scheme="https://chrisbergeron.com/tags/irobot/"/>
-    
-    <category term="roomba" scheme="https://chrisbergeron.com/tags/roomba/"/>
-    
-    <category term="cli" scheme="https://chrisbergeron.com/tags/cli/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Fast RAID-0 DAS Using Two Thunderbolt 3 Enclosures</title>
     <link href="https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/"/>
     <id>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</id>
