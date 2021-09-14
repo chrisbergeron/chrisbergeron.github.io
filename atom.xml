@@ -45,6 +45,35 @@
   </entry>
   
   <entry>
+    <title>Controlling iRobot Roomba from the command line</title>
+    <link href="https://chrisbergeron.com/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/"/>
+    <id>https://chrisbergeron.com/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/</id>
+    <published>2021-08-14T13:40:20.000Z</published>
+    <updated>2021-09-13T21:10:14.073Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;If you’re a heavy command line (cli) user in Macos, Linux or WSL, you may it convenient to easily start or stop your robot from it’s cleaning cycle.  In this post I’ll you fellow keyboard jockeys how to control and even view your robot as is cleans.&lt;/p&gt;
+&lt;!--   /2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/   --&gt;
+&lt;p&gt;&lt;img src=&quot;/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/irobot-skin-cb-1.png&quot; alt=&quot;There&#39;s more than one way to skin a robot&quot; title=&quot;An iRobot Roomba robot vacuum in a blue skin&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
+    
+    
+    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
+    
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
+    <category term="irobot" scheme="https://chrisbergeron.com/tags/irobot/"/>
+    
+    <category term="roomba" scheme="https://chrisbergeron.com/tags/roomba/"/>
+    
+    <category term="cli" scheme="https://chrisbergeron.com/tags/cli/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Fast RAID-0 DAS Using Two Thunderbolt 3 Enclosures</title>
     <link href="https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/"/>
     <id>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</id>
@@ -533,16 +562,11 @@
     <link href="https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/"/>
     <id>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</id>
     <published>2020-12-04T17:07:39.000Z</published>
-    <updated>2021-09-11T22:37:16.530Z</updated>
+    <updated>2021-09-13T21:35:59.951Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/Projects/MMM-NextRocketLaunch-1-cb.jpg&quot; alt=&quot;MMM-NextRocketLaunch MagicMirror Module&quot; title=&quot;Screenshot of MagicMirror Next</summary>
-        
-      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/Projects/MMM-NextRocketLaunch-1-cb.jpg&quot; alt=&quot;MMM-NextRocketLaunch MagicMirror Module&quot; title=&quot;Screenshot of MagicMirror Next Rocket Launch Module&quot;&gt;&lt;/p&gt;
+&lt;p&gt;This is a Magic Mirror Module that displays the Next Rocket Launch from Earth.  The data comes from the excellent Launch Library 2 API provided by &lt;a href=&quot;https://thespacedevs.com/llapi&quot;&gt;thespacedevs&lt;/a&gt;.  This is the Launch Library 2 &lt;a href=&quot;https://launchlibrary.net/docs/1.4/api.html&quot;&gt;Documentation&lt;/a&gt;.&lt;br&gt;&lt;!--![NextRocketLaunch Module](https://chrisbergeron.com/assets/My-NextRocketLaunch-MagicMirror-Module/mmm-next-rocket-launch.png &quot;Screenshot of MagicMirror Next Rocket Launch Module&quot;)--&gt;&lt;br&gt;&lt;/p&gt;</summary>
     
     
     

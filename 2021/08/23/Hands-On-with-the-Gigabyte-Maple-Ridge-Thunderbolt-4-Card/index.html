@@ -1,85 +1,611 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><link rel="bookmark" type="image/x-icon" href="/images/icons/logo-apple-icon.png"><link rel="shortcut icon" href="/images/icons/logo-apple-icon.png"><link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/images/icons/favicon.ico"><link rel="apple-touch-icon" type="image/png" sizes="16x16" href="/images/icons/apple-touch-icon-16.png"><link rel="apple-touch-icon" type="image/png" sizes="29x29" href="/images/icons/apple-touch-icon-29.png"><link rel="apple-touch-icon" type="image/png" sizes="32x32" href="/images/icons/apple-touch-icon-32.png"><link rel="apple-touch-icon" type="image/png" sizes="40x40" href="/images/icons/apple-touch-icon-40.png"><link rel="apple-touch-icon" type="image/png" sizes="50x50" href="/images/icons/apple-touch-icon-50.png"><link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/images/icons/apple-touch-icon-57.png"><link rel="apple-touch-icon" type="image/png" sizes="58x58" href="/images/icons/apple-touch-icon-58.png"><link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/images/icons/apple-touch-icon-60.png"><link rel="apple-touch-icon" type="image/png" sizes="64x64" href="/images/icons/apple-touch-icon-64.png"><link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/images/icons/apple-touch-icon-72.png"><link rel="apple-touch-icon" type="image/png" sizes="76x76" href="/images/icons/apple-touch-icon-76.png"><link rel="apple-touch-icon" type="image/png" sizes="80x80" href="/images/icons/apple-touch-icon-80.png"><link rel="apple-touch-icon" type="image/png" sizes="87x87" href="/images/icons/apple-touch-icon-87.png"><link rel="apple-touch-icon" type="image/png" sizes="100x100" href="/images/icons/apple-touch-icon-100.png"><link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/images/icons/apple-touch-icon-114.png"><link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/images/icons/apple-touch-icon-120.png"><link rel="apple-touch-icon" type="image/png" sizes="128x128" href="/images/icons/apple-touch-icon-128.png"><link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/images/icons/apple-touch-icon-144.png"><link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/images/icons/apple-touch-icon-152.png"><link rel="apple-touch-icon" type="image/png" sizes="167x167" href="/images/icons/apple-touch-icon-167.png"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/images/icons/apple-touch-icon-180.png"><link rel="apple-touch-icon" type="image/png" sizes="256x256" href="/images/icons/apple-touch-icon-256.png"><link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/images/icons/apple-touch-icon-512.png"><link rel="apple-touch-icon" type="image/png" sizes="1024x1024" href="/images/icons/apple-touch-icon-1024.png"><link rel="icon" type="image/png" href="/images/icons/apple-touch-icon-114.png"><meta name="description" content="An online technology journal with how-to articles, projects and examples."><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><meta><script src="/mc.js"></script><title>Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card - Chris Bergeron Tech Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Chris Bergerons Tech Blog"><meta name="msapplication-TileImage" content="/images/favicon.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Chris Bergerons Tech Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="I’ve been exploring Thunderbolt quite a bit lately.  As a follow up to my post about using Thunderbolt in a NAS, I recently bought a Gigabyte Maple Ridge Thunderbolt 4 add on card.  I’ve captured a fe"><meta property="og:type" content="article"><meta property="og:title" content="Chris Bergeron Tech Blog"><meta property="og:url" content="https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/"><meta property="og:site_name" content="Chris Bergerons Tech Blog"><meta property="og:description" content="I’ve been exploring Thunderbolt quite a bit lately.  As a follow up to my post about using Thunderbolt in a NAS, I recently bought a Gigabyte Maple Ridge Thunderbolt 4 add on card.  I’ve captured a fe"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://chrisbergeron.com/images/cb-cover.jpg"><meta property="article:published_time" content="2021-08-23T18:22:20.000Z"><meta property="article:modified_time" content="2021-09-02T14:33:46.337Z"><meta property="article:author" content="Chris Bergeron"><meta property="article:tag" content="thunderbolt"><meta property="article:tag" content="thunderbolt4"><meta property="article:tag" content="gigabyte"><meta property="article:tag" content="maple ridge"><meta property="article:tag" content="linux"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://chrisbergeron.com/images/cb-cover.jpg"><meta property="twitter:creator" content="@bergeron"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://chrisbergeron.com"},"headline":"Chris Bergeron Tech Blog","image":[],"datePublished":"2021-08-23T18:22:20.000Z","dateModified":"2021-09-02T14:33:46.337Z","author":{"@type":"Person","name":"Chris Bergeron"},"description":"I’ve been exploring Thunderbolt quite a bit lately.  As a follow up to my post about using Thunderbolt in a NAS, I recently bought a Gigabyte Maple Ridge Thunderbolt 4 add on card.  I’ve captured a fe"}</script><link rel="canonical" href="https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/"><link rel="alternate" href="/" title="Chris Bergeron Tech Blog" type="application/atom+xml"><link rel="icon" href="/images/favicon.ico"><link rel="stylesheet" href="/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="/css/source-code-pro.css"><link rel="stylesheet" href="/css/default.dark.css" media="(prefers-color-scheme: dark)" id="theme-link"><link rel="stylesheet" href="/css/default.light.css" media="(prefers-color-scheme: light)" id="theme-link"><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-5MJNLK80PN" async></script><script>window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-    
-        gtag('config', 'G-5MJNLK80PN');</script><!--!--><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0">
-<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/logo.png" alt="Chris Bergeron Tech Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="RSS Feed" href="https://chrisbergeron.com/rss2.xml"><i class="fa fa-rss fa-1x"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Contents" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/cb-cover-Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card.webp" alt="Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-08-23T18:22:20.000Z" title="2021-08-23T18:22:20.000Z">08-23-2021</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-09-02T14:33:46.337Z" title="2021-09-02T14:33:46.337Z">09-02-2021</time></span><span class="level-item"><a class="link-muted" href="/categories/Homelab/">Homelab</a></span></div></div><h1 class="title is-3 is-size-4-mobile">Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card</h1><div class="content"><p>I’ve been exploring Thunderbolt quite a bit lately.  As a follow up to my post about <a href="/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/">using Thunderbolt in a NAS</a>, I recently bought a Gigabyte Maple Ridge Thunderbolt 4 add on card.  I’ve captured a few thoughts, observations and pics here.</p>
-<h1 id="Gigabyte-GC-Maple-Ridge"><a href="#Gigabyte-GC-Maple-Ridge" class="headerlink" title="Gigabyte GC-Maple Ridge"></a><a target="_blank" rel="noopener" href="https://www.gigabyte.com/Motherboard/GC-MAPLE-RIDGE-rev-10#kf">Gigabyte GC-Maple Ridge</a></h1><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/gigabyte-gc---maple-ridge-IMG_9158-cb.png" alt="GC-Maple Ridge Thunderbolt 4 Add-on Card" title="Picture of Gigabyte brand GC-Maple Ridge Thunderbolt 4 add on card"></p>
-<span id="more"></span>
-<h1 id="Observations"><a href="#Observations" class="headerlink" title="Observations"></a>Observations</h1><h2 id="Physical-Characteristics"><a href="#Physical-Characteristics" class="headerlink" title="Physical Characteristics"></a>Physical Characteristics</h2><p>The first thing I noticed about this card is that it’s nearly identical to it’s cousin, the Thunderbolt 3 Titan Ridge Card:</p>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="gigabyte-gc---maple-ridge-titan-ridge-cb.jpg" alt="GC-Maple Ridge" title="Picture of two Gigabyte Ridge series Thunderbolt cards side by side"></p>
-<p>The actual form factor is identical, including the etching on the PCI brackets.  Under the aluminum shroud, however, lay obvious differences.  Most relevant among them is the <a target="_blank" rel="noopener" href="https://ark.intel.com/content/www/us/en/ark/products/193684/intel-jhl8540-thunderbolt-4-controller.html" title="Link to datasheet of Intel JHL8540 microchip.">Intel Thunderbolt&trade; JHL8540 Controller</a>  IC:</p>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="JHL8540-Thunderbolt4-Controller-cb.jpg" alt="JHL8540 Thunderbolt 4 Controller" title="Close up picture of JHL8540 Thunderbolt Controller Chip"></p>
-<p>Additionally, the addition of a 100 Watt power delivery controller (<em>I think</em>):</p>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="maple-ridge-100-watt-power-delivery-controller-cb.jpg" alt="100 Watt power delivery controller" title="Close up picture of a chip labeled 100W"></p>
-<p>I did not need to short the pins on the TB_HEADER that I did <a href="/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/#Adding-a-Thunderbolt-4-PCIe-Add-on-Card">in my previous post</a> for the Titan Ridge card.  I simply inserted the card into the server and booted it up.  I haven’t made any BIOS changes either.  I wanted to visually inspect the pinouts before shorting the pins, hence why I took pictures and removed the cover plate (shroud).</p>
-<p>I’m going to install the connector with the pins shorted (ground tied?) to see if anything changes with regards to capability or recognized features.</p>
-<h2 id="Operating-System-Support-Linux"><a href="#Operating-System-Support-Linux" class="headerlink" title="Operating System Support (Linux)"></a>Operating System Support (Linux)</h2><p>In Linux (Centos 7) the device was recognized as seen by the output from <code>lspci</code>:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">02:00.0 PCI bridge: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] (rev 02)</span><br><span class="line">03:00.0 PCI bridge: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] (rev 02)</span><br><span class="line">03:01.0 PCI bridge: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] (rev 02)</span><br><span class="line">03:02.0 PCI bridge: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] (rev 02)</span><br><span class="line">03:03.0 PCI bridge: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] (rev 02)</span><br><span class="line">04:00.0 USB controller: Intel Corporation Thunderbolt 4 NHI [Maple Ridge 4C 2020]</span><br><span class="line">06:00.0 USB controller: Intel Corporation Thunderbolt 4 USB Controller [Maple Ridge 4C 2020]</span><br></pre></td></tr></table></figure>
-<p>Since this card is Thunderbolt 4, it uses the thunderbolt and xhci_hcd kernel modules for the <strong>USB4 Host Controller.</strong> </p>
-<p><code>04:00.0 USB controller: Intel Corporation Thunderbolt 4 NHI [Maple Ridge 4C 2020] (prog-if 40 [USB4 Host Interface])</code><br><code>06:00.0 USB controller: Intel Corporation Thunderbolt 4 USB Controller [Maple Ridge 4C 2020] (prog-if 30 [XHCI])</code></p>
-<p>I’ll explore that further and document it eventually.</p>
-<p>Here’s another pci tree view (<code>lspci -tv</code>):</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\-[0000:00]-+-00.0  Intel Corporation Xeon E7 v3/Xeon E5 v3/Core i7 DMI2</span><br><span class="line">	+-01.1-[02-07]----00.0-[03-07]--+-00.0-[04]----00.0  Intel Corporation Thunderbolt 4 NHI [Maple Ridge 4C 2020]</span><br><span class="line">	|                               +-01.0-[05]--</span><br><span class="line">	|                               +-02.0-[06]----00.0  Intel Corporation Thunderbolt 4 USB Controller [Maple Ridge 4C 2020]</span><br><span class="line">	|                               \-03.0-[07]--</span><br></pre></td></tr></table></figure>
-<p>Verbose output (<code>lspci -vvv</code>) can be <a href="lspci-vvv-thunderbolt4-maple-ridge.txt">viewed here.</a></p>
-<p>Here is the system device tree:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[user@nas-04:/sys/bus/thunderbolt] $ tree</span><br><span class="line">.</span><br><span class="line">├── devices</span><br><span class="line">│   ├── 0-0 -&gt; ../../../devices/pci0000:00/0000:00:01.1/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0/0-0</span><br><span class="line">│   ├── 0-1 -&gt; ../../../devices/pci0000:00/0000:00:01.1/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0/0-0/0-1</span><br><span class="line">│   ├── 0-1.0 -&gt; ../../../devices/pci0000:00/0000:00:01.1/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0/0-0/0-1/0-1.0</span><br><span class="line">│   └── domain0 -&gt; ../../../devices/pci0000:00/0000:00:01.1/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0</span><br><span class="line">├── drivers</span><br><span class="line">│   └── thunderbolt-net</span><br><span class="line">│       ├── 0-1.0 -&gt; ../../../../devices/pci0000:00/0000:00:01.1/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0/0-0/0-1/0-1.0</span><br><span class="line">│       ├── <span class="built_in">bind</span></span><br><span class="line">│       ├── module -&gt; ../../../../module/thunderbolt_net</span><br><span class="line">│       ├── uevent</span><br><span class="line">│       └── unbind</span><br><span class="line">├── drivers_autoprobe</span><br><span class="line">├── drivers_probe</span><br><span class="line">└── uevent</span><br></pre></td></tr></table></figure>
-<p>I grabbed a dump of the nvm firmware at <code>/sys/bus/thunderbolt/devices/0-0/nvm_active0</code> using <code>dd</code>.  I parsed it through various tools (<code>od</code>, <code>strings</code>, <code>binwalk</code>) but didn’t see anything notable.  I also looked at it visually with <code>mc</code> just for grins.</p>
-<p>Here’s some other miscellaneous output:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-0 <span class="comment"># cat nvm_version</span></span><br><span class="line">28.0</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-0 <span class="comment"># cat vendor_name</span></span><br><span class="line">GIGABYTE</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-0 <span class="comment"># cat generation</span></span><br><span class="line">4</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-0 <span class="comment"># cat device_name</span></span><br><span class="line">GC-MAPLE RIDGE</span><br></pre></td></tr></table></figure>
-<p>I expect that since Centos 7 with Linux Kernel latest (at the time of this writing: <code>5.13.4-1.el7.elrepo.x86_64</code>) discovered the device, it should work in most Linux distributions with a newer linux kernel and fresh userspace tools.</p>
-<h1 id="Benchmarks"><a href="#Benchmarks" class="headerlink" title="Benchmarks"></a>Benchmarks</h1><h2 id="Networking-Capability"><a href="#Networking-Capability" class="headerlink" title="Networking Capability"></a>Networking Capability</h2><p>I still only see about <strong>16.8</strong> Gigabit/sec when using the Thunderbolt4 network interface:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">root@nas-04:~ <span class="comment"># iperf3 -c 10.10.10.2</span></span><br><span class="line">Connecting to host 10.10.10.2, port 5201</span><br><span class="line">[  4] <span class="built_in">local</span> 10.10.10.4 port 34898 connected to 10.10.10.2 port 5201</span><br><span class="line">[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd</span><br><span class="line">[  4]   0.00-1.00   sec  1.91 GBytes  16.4 Gbits/sec    0   3.76 MBytes</span><br><span class="line">[  4]   1.00-2.00   sec  1.94 GBytes  16.7 Gbits/sec    0   3.76 MBytes</span><br><span class="line">[  4]   2.00-3.00   sec  1.95 GBytes  16.8 Gbits/sec    0   3.76 MBytes</span><br><span class="line">[  4]   3.00-4.00   sec  1.94 GBytes  16.7 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   4.00-5.00   sec  1.95 GBytes  16.8 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   5.00-6.00   sec  1.95 GBytes  16.8 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   6.00-7.00   sec  1.95 GBytes  16.7 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   7.00-8.00   sec  1.95 GBytes  16.8 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   8.00-9.00   sec  1.94 GBytes  16.7 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   9.00-10.00  sec  1.95 GBytes  16.8 Gbits/sec    0   3.94 MBytes</span><br><span class="line">- - - - - - - - - - - - - - - - - - - - - - - - -</span><br><span class="line">[ ID] Interval           Transfer     Bandwidth       Retr</span><br><span class="line">[  4]   0.00-10.00  sec  19.4 GBytes  16.7 Gbits/sec    0             sender</span><br><span class="line">[  4]   0.00-10.00  sec  19.4 GBytes  16.7 Gbits/sec                  receiver</span><br><span class="line"></span><br><span class="line">iperf Done.</span><br></pre></td></tr></table></figure>
-<p>I do see twice the number of lanes as compared to the Thunderbolt 3 card (<strong>I think</strong>):</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-3 <span class="comment"># cat rx_lanes</span></span><br><span class="line">2</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-3 <span class="comment"># cat tx_lanes</span></span><br><span class="line">2</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-3 <span class="comment"># cat rx_speed</span></span><br><span class="line">20.0 Gb/s</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-3 <span class="comment"># cat tx_speed</span></span><br><span class="line">20.0 Gb/s</span><br></pre></td></tr></table></figure>
-<p>The PCIe limitation of 4 lanes is likely the reason for this.</p>
-<h2 id="Direct-Attached-Storage"><a href="#Direct-Attached-Storage" class="headerlink" title="Direct Attached Storage"></a>Direct Attached Storage</h2><p>Unfortunately, I don’t have a benchmark for this yet.  If you’re interested in Thunderbolt 3, you can see some <a href="/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/">insane benchmarks using RAID-0 over here.</a> I’ve connected the one of the same <a href="/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/#The-aVolusion-Enclosure">aVolution Thunderbolt 3 disks</a> to the controller using an active Thunderbolt 4 cable, but it doesn’t enumerate.  I haven’t explored it beyond just seeing the outcome of plug-n-play.  No dmesg output, nada.  I’ll follow up on this and post an update later.</p>
-<h1 id="Additional-Pictures"><a href="#Additional-Pictures" class="headerlink" title="Additional Pictures"></a>Additional Pictures</h1><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="gigabyte-maple-ridge-thunderbolt4-boxed-cb.jpg" alt="Maple Ridge Controller Boxed" title="Picture of a product box"></p>
-<!-- /Users/cbergeron/Documents/Blog/chrisbergeron.github.io/source/_posts/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/ -->
-</div><div class="article-licensing box"><div class="licensing-title"><p>Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card</p><p><a href="https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/">https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Chris Bergeron</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>08-23-2021</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>09-02-2021</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/thunderbolt/">thunderbolt</a><a class="link-muted mr-2" rel="tag" href="/tags/thunderbolt4/">thunderbolt4</a><a class="link-muted mr-2" rel="tag" href="/tags/gigabyte/">gigabyte</a><a class="link-muted mr-2" rel="tag" href="/tags/maple-ridge/">maple ridge</a><a class="link-muted mr-2" rel="tag" href="/tags/linux/">linux</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support me with</h3><div class="buttons is-centered"><a class="button donate" href="https://www.buymeacoffee.com/cbergeron" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="patreon"><span class="icon is-small"><i class="fab fa-patreon"></i></span><span>Patreon</span></a><a class="button donate" data-type="paypal" onclick="document.getElementById(&#039;paypal-donate-form&#039;).submit()"><span class="icon is-small"><i class="fab fa-paypal"></i></span><span>Paypal</span></a><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener" id="paypal-donate-form"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="cbergeron@gmail.com"><input type="hidden" name="currency_code" value="USD"></form></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/"><span class="level-item">Fast RAID-0 DAS Using Two Thunderbolt 3 Enclosures</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><script src="https://utteranc.es/client.js" repo="chrisbergeron/chrisbergeron" issue-term="title" theme="preferred-color-scheme" crossorigin="anonymous" async></script></div></div></div><!--!--><div class="column column-right is-4-tablet is-4-desktop is-4-widescreen  order-3 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Contents</h3><ul class="menu-list"><li><a class="level is-mobile" href="#Gigabyte-GC-Maple-Ridge"><span class="level-left"><span class="level-item">1</span><span class="level-item">Gigabyte GC-Maple Ridge</span></span></a></li><li><a class="level is-mobile" href="#Observations"><span class="level-left"><span class="level-item">2</span><span class="level-item">Observations</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Physical-Characteristics"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">Physical Characteristics</span></span></a></li><li><a class="level is-mobile" href="#Operating-System-Support-Linux"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">Operating System Support (Linux)</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Benchmarks"><span class="level-left"><span class="level-item">3</span><span class="level-item">Benchmarks</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Networking-Capability"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">Networking Capability</span></span></a></li><li><a class="level is-mobile" href="#Direct-Attached-Storage"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">Direct Attached Storage</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Additional-Pictures"><span class="level-left"><span class="level-item">4</span><span class="level-item">Additional Pictures</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for more great content</h3><form action="https://chrisbergeron.us6.list-manage.com/subscribe/post?u=adaa13382eeaddeabadbb90bf&amp;id=73e551a962" method="post" id="mc-embedded-subscribe-form" target="_blank" name="mc-embedded-subscribe-form"><input type="hidden" value="ChrisBergeron" name="uri"><input type="hidden" name="loc" value="en_US"><input type="hidden" name="u" value="adaa13382eeaddeabadbb90bf"><input type="hidden" name="id" value="73e551a962"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" type="email" name="MERGE0" id="MERGE0" autocapitalize="off" autocorrect="off" size="25" value="" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div><p class="help">Chris Bergerons Tech Blog</p></form></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://holdingco.com" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">The Holding Company</span></span><span class="level-right"><span class="level-item tag">holdingco.com</span></span></a></li><li><a class="level is-mobile" href="https://debris-art.com" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Debris Art</span></span><span class="level-right"><span class="level-item tag">debris-art.com</span></span></a></li><li><a class="level is-mobile" href="https://metacrypt.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">MΞTΛcrypt</span></span><span class="level-right"><span class="level-item tag">metacrypt.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><figure class="media-left"><a class="image" href="/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/thunderbolt-tbt-icon.png" alt="Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card"></a></figure><div class="media-content"><p class="date"><time dateTime="2021-08-23T18:22:20.000Z">08-23-2021</time></p><p class="title"><a href="/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/">Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card</a></p><p class="categories"><a href="/categories/Homelab/">Homelab</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/thunderbolt-tbt-icon.png" alt="Fast RAID-0 DAS Using Two Thunderbolt 3 Enclosures"></a></figure><div class="media-content"><p class="date"><time dateTime="2021-08-11T14:46:52.000Z">08-11-2021</time></p><p class="title"><a href="/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/">Fast RAID-0 DAS Using Two Thunderbolt 3 Enclosures</a></p><p class="categories"><a href="/categories/Homelab/">Homelab</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/thunderbolt-tbt-icon.png" alt="Ultra fast Thunderbolt NAS with Apple M1 and Linux"></a></figure><div class="media-content"><p class="date"><time dateTime="2021-07-26T01:58:08.000Z">07-25-2021</time></p><p class="title"><a href="/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/">Ultra fast Thunderbolt NAS with Apple M1 and Linux</a></p><p class="categories"><a href="/categories/Homelab/">Homelab</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2021/07/04/Person-is-not-a-known-valid-target-type-for-the-publisher-property/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/google.png" alt="Person is not a known valid target type for the publisher property."></a></figure><div class="media-content"><p class="date"><time dateTime="2021-07-04T19:25:27.000Z">07-04-2021</time></p><p class="title"><a href="/2021/07/04/Person-is-not-a-known-valid-target-type-for-the-publisher-property/">Person is not a known valid target type for the publisher property.</a></p><p class="categories"><a href="/categories/Web/">Web</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2021/07/03/AiGenArt-AI-Generated-Art-Saturn/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/tensorflow.png" alt="AiGenArt, AI Generated Art - Saturn"></a></figure><div class="media-content"><p class="date"><time dateTime="2021-07-03T16:38:39.000Z">07-03-2021</time></p><p class="title"><a href="/2021/07/03/AiGenArt-AI-Generated-Art-Saturn/">AiGenArt, AI Generated Art - Saturn</a></p><p class="categories"><a href="/categories/AI/">AI</a></p></div></article></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/AI/"><span class="level-start"><span class="level-item">AI</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Crypto/"><span class="level-start"><span class="level-item">Crypto</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Devops/"><span class="level-start"><span class="level-item">Devops</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Home/"><span class="level-start"><span class="level-item">Home</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/categories/Homelab/"><span class="level-start"><span class="level-item">Homelab</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile" href="/categories/Linux/"><span class="level-start"><span class="level-item">Linux</span></span><span class="level-end"><span class="level-item tag">11</span></span></a></li><li><a class="level is-mobile" href="/categories/Politics/"><span class="level-start"><span class="level-item">Politics</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Professional/"><span class="level-start"><span class="level-item">Professional</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Projects/"><span class="level-start"><span class="level-item">Projects</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/categories/Software/"><span class="level-start"><span class="level-item">Software</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/categories/Telematics/"><span class="level-start"><span class="level-item">Telematics</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Web/"><span class="level-start"><span class="level-item">Web</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/logo.png" alt="Chris Bergeron Tech Blog" height="28" width="288"></a><p class="is-size-7"><span>&copy; 2021 Chris Bergeron</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="RSS" href="https://chrisbergeron.com/atom.xml"><i class="fa fa-rss fa-1x"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="GitHub" href="https://github.com/chrisbergeron/"><i class="fab fa-github"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Medium" href="https://c-bergeron.medium.com/"><i class="fab fa-medium"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Ethereum" href="ethereum://0xA44E17eA422A0D7AA97C6F805E37b1aBB934171d"><i class="fab fa-ethereum"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
-            article: {
-                highlight: {
-                    clipboard: true,
-                    fold: 'unfolded'
-                }
-            }
-        };</script><script src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
-      window.cookieconsent.initialise({
-        type: "info",
-        theme: "edgeless",
-        static: false,
-        position: "bottom-left",
-        content: {
-          message: "This website uses cookies to improve your experience.",
-          dismiss: "Got it!",
-          allow: "Allow cookies",
-          deny: "Decline",
-          link: "Learn more",
-          policy: "Cookie Policy",
-          href: "https://www.cookiesandyou.com/",
-        },
-        palette: {
-          popup: {
-            background: "#edeff5",
-            text: "#838391"
-          },
-          button: {
-            background: "#4b81e8"
-          },
-        },
-      });
-    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
-            if (typeof $.fn.lightGallery === 'function') {
-                $('.article').lightGallery({ selector: '.gallery-item' });
-            }
-            if (typeof $.fn.justifiedGallery === 'function') {
-                if ($('.justified-gallery > p > .gallery-item').length) {
-                    $('.justified-gallery > p > .gallery-item').unwrap();
-                }
-                $('.justified-gallery').justifiedGallery();
-            }
-        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
-            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
-        });</script><script>!function(r){var o=Array.prototype.slice.call(document.querySelectorAll("[data-original]"));function t(){for(var t=0;t<o.length;t++)!function(t){var e,i,n,l;i=o[t],n=i.getBoundingClientRect(),l=r.innerWidth||document.documentElement.clientWidth,i=r.innerHeight||document.documentElement.clientHeight,(100<=n.top||100<=n.left||n.top<0&&100<=n.top+n.height||n.left<0&&100<=n.left+n.width)&&n.top<=i&&n.left<=l&&(e=o[t],i=function(){o.splice(t,1)},n=e.getAttribute("data-original"),"yes"!==e.getAttribute("data-init")&&(l=e.getAttribute("data-isbg"),n=n.replace(/^https?:/,""),l?e.style.backgroundImage=n:e.setAttribute("src",n),e.setAttribute("data-init","yes"),i&&i()))}(t)}t(),r.addEventListener("scroll",t)}(this);</script></body></html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="bookmark" type="image/x-icon" href="/images/icons/logo-apple-icon.png">
+	<link rel="shortcut icon" href="/images/icons/logo-apple-icon.png">
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/images/icons/favicon.ico">
+	<link rel="apple-touch-icon" type="image/png" sizes="16x16" href="/images/icons/apple-touch-icon-16.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="29x29" href="/images/icons/apple-touch-icon-29.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="32x32" href="/images/icons/apple-touch-icon-32.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="40x40" href="/images/icons/apple-touch-icon-40.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="50x50" href="/images/icons/apple-touch-icon-50.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/images/icons/apple-touch-icon-57.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="58x58" href="/images/icons/apple-touch-icon-58.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/images/icons/apple-touch-icon-60.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="64x64" href="/images/icons/apple-touch-icon-64.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/images/icons/apple-touch-icon-72.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="/images/icons/apple-touch-icon-76.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="80x80" href="/images/icons/apple-touch-icon-80.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="87x87" href="/images/icons/apple-touch-icon-87.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="100x100" href="/images/icons/apple-touch-icon-100.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/images/icons/apple-touch-icon-114.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/images/icons/apple-touch-icon-120.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="128x128" href="/images/icons/apple-touch-icon-128.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/images/icons/apple-touch-icon-144.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/images/icons/apple-touch-icon-152.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="167x167" href="/images/icons/apple-touch-icon-167.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/images/icons/apple-touch-icon-180.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="256x256" href="/images/icons/apple-touch-icon-256.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/images/icons/apple-touch-icon-512.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="1024x1024" href="/images/icons/apple-touch-icon-1024.png">
+	<link rel="icon" type="image/png" href="/images/icons/apple-touch-icon-114.png">
+	<meta name="description" content="An online technology journal with how-to articles, projects and examples.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta>
+	<script src="/mc.js"></script>
+	<title>Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card - Chris Bergeron Tech Blog</title>
+	<link rel="manifest" href="/manifest.json">
+	<meta name="application-name" content="Chris Bergerons Tech Blog">
+	<meta name="msapplication-TileImage" content="/images/favicon.ico">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Chris Bergerons Tech Blog">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="description" content="I’ve been exploring Thunderbolt quite a bit lately.  As a follow up to my post about using Thunderbolt in a NAS, I recently bought a Gigabyte Maple Ridge Thunderbolt 4 add on card.  I’ve captured a fe">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Chris Bergeron Tech Blog">
+	<meta property="og:url" content="https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/">
+	<meta property="og:site_name" content="Chris Bergerons Tech Blog">
+	<meta property="og:description" content="I’ve been exploring Thunderbolt quite a bit lately.  As a follow up to my post about using Thunderbolt in a NAS, I recently bought a Gigabyte Maple Ridge Thunderbolt 4 add on card.  I’ve captured a fe">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:image" content="https://chrisbergeron.com/images/cb-cover.jpg">
+	<meta property="article:published_time" content="2021-08-23T18:22:20.000Z">
+	<meta property="article:modified_time" content="2021-09-02T14:33:46.337Z">
+	<meta property="article:author" content="Chris Bergeron">
+	<meta property="article:tag" content="thunderbolt">
+	<meta property="article:tag" content="thunderbolt4">
+	<meta property="article:tag" content="gigabyte">
+	<meta property="article:tag" content="maple ridge">
+	<meta property="article:tag" content="linux">
+	<meta property="twitter:card" content="summary">
+	<meta property="twitter:image" content="https://chrisbergeron.com/images/cb-cover.jpg">
+	<meta property="twitter:creator" content="@bergeron">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://chrisbergeron.com"},"headline":"Chris Bergeron Tech Blog","image":[],"datePublished":"2021-08-23T18:22:20.000Z","dateModified":"2021-09-02T14:33:46.337Z","author":{"@type":"Person","name":"Chris Bergeron"},"description":"I’ve been exploring Thunderbolt quite a bit lately. As a follow up to my post about using Thunderbolt in a NAS, I recently bought a Gigabyte Maple Ridge Thunderbolt 4 add on card. I’ve captured a fe"}</script>
+	<link rel="canonical" href="https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/">
+	<link rel="alternate" href="/" title="Chris Bergeron Tech Blog" type="application/atom+xml">
+	<link rel="icon" href="/images/favicon.ico">
+	<link rel="stylesheet" href="/css/all.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+	<link rel="stylesheet" href="/css/source-code-pro.css">
+	<link rel="stylesheet" href="/css/default.dark.css" media="(prefers-color-scheme: dark)" id="theme-link">
+	<link rel="stylesheet" href="/css/default.light.css" media="(prefers-color-scheme: light)" id="theme-link">
+	<!--!-->
+	<!--!-->
+	<!--!-->
+	<!--!-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+	<script src="https://www.googletagmanager.com/gtag/js?id=G-5MJNLK80PN" async></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+	gtag('config', 'G-5MJNLK80PN');
+	</script>
+	<!--!-->
+	<!--!-->
+	<!--!-->
+	<meta name="generator" content="Hexo 5.4.0">
+	<style>
+	.github-emoji {
+		position: relative;
+		display: inline-block;
+		width: 1.2em;
+		min-height: 1.2em;
+		overflow: hidden;
+		vertical-align: top;
+		color: transparent;
+	}
+	
+	.github-emoji > span {
+		position: relative;
+		z-index: 10;
+	}
+	
+	.github-emoji img,
+	.github-emoji .fancybox {
+		margin: 0 !important;
+		padding: 0 !important;
+		border: none !important;
+		outline: none !important;
+		text-decoration: none !important;
+		user-select: none !important;
+		cursor: auto !important;
+	}
+	
+	.github-emoji img {
+		height: 1.2em !important;
+		width: 1.2em !important;
+		position: absolute !important;
+		left: 50% !important;
+		top: 50% !important;
+		transform: translate(-50%, -50%) !important;
+		user-select: none !important;
+		cursor: auto !important;
+	}
+	
+	.github-emoji-fallback {
+		color: inherit;
+	}
+	
+	.github-emoji-fallback img {
+		opacity: 0 !important;
+	}
+	</style>
+</head>
+
+<body class="is-2-column">
+	<nav class="navbar navbar-main">
+		<div class="container">
+			<div class="navbar-brand justify-content-center">
+				<a class="navbar-item navbar-logo" href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/logo.png" alt="Chris Bergeron Tech Blog" height="28"></a>
+			</div>
+			<div class="navbar-menu">
+				<div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div>
+				<div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="RSS Feed" href="https://chrisbergeron.com/rss2.xml"><i class="fa fa-rss fa-1x"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Contents" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div>
+			</div>
+		</div>
+	</nav>
+	<section class="section">
+		<div class="container">
+			<div class="columns">
+				<div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen">
+					<div class="card">
+						<div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/cb-cover-Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card.webp" alt="Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card"></span></div>
+						<article class="card-content article" role="article">
+
+
+
+
+
+							<div class="article-meta is-size-7 is-uppercase level is-mobile">
+
+              <div class="h-card p-author" style="display:none">
+                <img class="u-photo" src="https://chrisbergeron.com/images/chrisbergeron.png" alt="Chris Bergeron" />
+                <a class="p-name u-url" href="https://chrisbergeron.com" rel="author">Chris Bergeron</a>
+              </div>
+              <a class="u-url u-uid" href="https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/" style="display:none;">https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/</a>
+
+								<div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-08-23T18:22:20.000Z" title="2021-08-23T18:22:20.000Z">08-23-2021</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-09-02T14:33:46.337Z" title="2021-09-02T14:33:46.337Z">09-02-2021</time></span><span class="level-item"><a class="link-muted" href="/categories/Homelab/">Homelab</a></span></div>
+							</div>
+							<h1 class="title is-3 is-size-4-mobile">Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card</h1>
+							<div class="content">
+								<p>I’ve been exploring Thunderbolt quite a bit lately. As a follow up to my post about <a href="/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/">using Thunderbolt in a NAS</a>, I recently bought a Gigabyte Maple Ridge Thunderbolt 4 add on card. I’ve captured a few thoughts, observations and pics here.</p>
+								<h1 id="Gigabyte-GC-Maple-Ridge"><a href="#Gigabyte-GC-Maple-Ridge" class="headerlink" title="Gigabyte GC-Maple Ridge"></a><a target="_blank" rel="noopener" href="https://www.gigabyte.com/Motherboard/GC-MAPLE-RIDGE-rev-10#kf">Gigabyte GC-Maple Ridge</a></h1>
+								<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/gigabyte-gc---maple-ridge-IMG_9158-cb.png" alt="GC-Maple Ridge Thunderbolt 4 Add-on Card" title="Picture of Gigabyte brand GC-Maple Ridge Thunderbolt 4 add on card"></p> <span id="more"></span>
+								<h1 id="Observations"><a href="#Observations" class="headerlink" title="Observations"></a>Observations</h1>
+								<h2 id="Physical-Characteristics"><a href="#Physical-Characteristics" class="headerlink" title="Physical Characteristics"></a>Physical Characteristics</h2>
+								<p>The first thing I noticed about this card is that it’s nearly identical to it’s cousin, the Thunderbolt 3 Titan Ridge Card:</p>
+								<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="gigabyte-gc---maple-ridge-titan-ridge-cb.jpg" alt="GC-Maple Ridge" title="Picture of two Gigabyte Ridge series Thunderbolt cards side by side"></p>
+								<p>The actual form factor is identical, including the etching on the PCI brackets. Under the aluminum shroud, however, lay obvious differences. Most relevant among them is the <a target="_blank" rel="noopener" href="https://ark.intel.com/content/www/us/en/ark/products/193684/intel-jhl8540-thunderbolt-4-controller.html" title="Link to datasheet of Intel JHL8540 microchip.">Intel Thunderbolt&trade; JHL8540 Controller</a> IC:</p>
+								<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="JHL8540-Thunderbolt4-Controller-cb.jpg" alt="JHL8540 Thunderbolt 4 Controller" title="Close up picture of JHL8540 Thunderbolt Controller Chip"></p>
+								<p>Additionally, the addition of a 100 Watt power delivery controller (<em>I think</em>):</p>
+								<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="maple-ridge-100-watt-power-delivery-controller-cb.jpg" alt="100 Watt power delivery controller" title="Close up picture of a chip labeled 100W"></p>
+								<p>I did not need to short the pins on the TB_HEADER that I did <a href="/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/#Adding-a-Thunderbolt-4-PCIe-Add-on-Card">in my previous post</a> for the Titan Ridge card. I simply inserted the card into the server and booted it up. I haven’t made any BIOS changes either. I wanted to visually inspect the pinouts before shorting the pins, hence why I took pictures and removed the cover plate (shroud).</p>
+								<p>I’m going to install the connector with the pins shorted (ground tied?) to see if anything changes with regards to capability or recognized features.</p>
+								<h2 id="Operating-System-Support-Linux"><a href="#Operating-System-Support-Linux" class="headerlink" title="Operating System Support (Linux)"></a>Operating System Support (Linux)</h2>
+								<p>In Linux (Centos 7) the device was recognized as seen by the output from <code>lspci</code>:</p>
+								<figure class="highlight bash">
+									<table>
+										<tr>
+											<td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td>
+											<td class="code"><pre><span class="line">02:00.0 PCI bridge: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] (rev 02)</span><br><span class="line">03:00.0 PCI bridge: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] (rev 02)</span><br><span class="line">03:01.0 PCI bridge: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] (rev 02)</span><br><span class="line">03:02.0 PCI bridge: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] (rev 02)</span><br><span class="line">03:03.0 PCI bridge: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] (rev 02)</span><br><span class="line">04:00.0 USB controller: Intel Corporation Thunderbolt 4 NHI [Maple Ridge 4C 2020]</span><br><span class="line">06:00.0 USB controller: Intel Corporation Thunderbolt 4 USB Controller [Maple Ridge 4C 2020]</span><br></pre></td>
+										</tr>
+									</table>
+								</figure>
+								<p>Since this card is Thunderbolt 4, it uses the thunderbolt and xhci_hcd kernel modules for the <strong>USB4 Host Controller.</strong> </p>
+								<p><code>04:00.0 USB controller: Intel Corporation Thunderbolt 4 NHI [Maple Ridge 4C 2020] (prog-if 40 [USB4 Host Interface])</code>
+									<br><code>06:00.0 USB controller: Intel Corporation Thunderbolt 4 USB Controller [Maple Ridge 4C 2020] (prog-if 30 [XHCI])</code></p>
+								<p>I’ll explore that further and document it eventually.</p>
+								<p>Here’s another pci tree view (<code>lspci -tv</code>):</p>
+								<figure class="highlight bash">
+									<table>
+										<tr>
+											<td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td>
+											<td class="code"><pre><span class="line">\-[0000:00]-+-00.0  Intel Corporation Xeon E7 v3/Xeon E5 v3/Core i7 DMI2</span><br><span class="line">	+-01.1-[02-07]----00.0-[03-07]--+-00.0-[04]----00.0  Intel Corporation Thunderbolt 4 NHI [Maple Ridge 4C 2020]</span><br><span class="line">	|                               +-01.0-[05]--</span><br><span class="line">	|                               +-02.0-[06]----00.0  Intel Corporation Thunderbolt 4 USB Controller [Maple Ridge 4C 2020]</span><br><span class="line">	|                               \-03.0-[07]--</span><br></pre></td>
+										</tr>
+									</table>
+								</figure>
+								<p>Verbose output (<code>lspci -vvv</code>) can be <a href="lspci-vvv-thunderbolt4-maple-ridge.txt">viewed here.</a></p>
+								<p>Here is the system device tree:</p>
+								<figure class="highlight bash">
+									<table>
+										<tr>
+											<td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td>
+											<td class="code"><pre><span class="line">[user@nas-04:/sys/bus/thunderbolt] $ tree</span><br><span class="line">.</span><br><span class="line">├── devices</span><br><span class="line">│   ├── 0-0 -&gt; ../../../devices/pci0000:00/0000:00:01.1/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0/0-0</span><br><span class="line">│   ├── 0-1 -&gt; ../../../devices/pci0000:00/0000:00:01.1/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0/0-0/0-1</span><br><span class="line">│   ├── 0-1.0 -&gt; ../../../devices/pci0000:00/0000:00:01.1/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0/0-0/0-1/0-1.0</span><br><span class="line">│   └── domain0 -&gt; ../../../devices/pci0000:00/0000:00:01.1/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0</span><br><span class="line">├── drivers</span><br><span class="line">│   └── thunderbolt-net</span><br><span class="line">│       ├── 0-1.0 -&gt; ../../../../devices/pci0000:00/0000:00:01.1/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0/0-0/0-1/0-1.0</span><br><span class="line">│       ├── <span class="built_in">bind</span></span><br><span class="line">│       ├── module -&gt; ../../../../module/thunderbolt_net</span><br><span class="line">│       ├── uevent</span><br><span class="line">│       └── unbind</span><br><span class="line">├── drivers_autoprobe</span><br><span class="line">├── drivers_probe</span><br><span class="line">└── uevent</span><br></pre></td>
+										</tr>
+									</table>
+								</figure>
+								<p>I grabbed a dump of the nvm firmware at <code>/sys/bus/thunderbolt/devices/0-0/nvm_active0</code> using <code>dd</code>. I parsed it through various tools (<code>od</code>, <code>strings</code>, <code>binwalk</code>) but didn’t see anything notable. I also looked at it visually with <code>mc</code> just for grins.</p>
+								<p>Here’s some other miscellaneous output:</p>
+								<figure class="highlight bash">
+									<table>
+										<tr>
+											<td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td>
+											<td class="code"><pre><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-0 <span class="comment"># cat nvm_version</span></span><br><span class="line">28.0</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-0 <span class="comment"># cat vendor_name</span></span><br><span class="line">GIGABYTE</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-0 <span class="comment"># cat generation</span></span><br><span class="line">4</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-0 <span class="comment"># cat device_name</span></span><br><span class="line">GC-MAPLE RIDGE</span><br></pre></td>
+										</tr>
+									</table>
+								</figure>
+								<p>I expect that since Centos 7 with Linux Kernel latest (at the time of this writing: <code>5.13.4-1.el7.elrepo.x86_64</code>) discovered the device, it should work in most Linux distributions with a newer linux kernel and fresh userspace tools.</p>
+								<h1 id="Benchmarks"><a href="#Benchmarks" class="headerlink" title="Benchmarks"></a>Benchmarks</h1>
+								<h2 id="Networking-Capability"><a href="#Networking-Capability" class="headerlink" title="Networking Capability"></a>Networking Capability</h2>
+								<p>I still only see about <strong>16.8</strong> Gigabit/sec when using the Thunderbolt4 network interface:</p>
+								<figure class="highlight bash">
+									<table>
+										<tr>
+											<td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td>
+											<td class="code"><pre><span class="line">root@nas-04:~ <span class="comment"># iperf3 -c 10.10.10.2</span></span><br><span class="line">Connecting to host 10.10.10.2, port 5201</span><br><span class="line">[  4] <span class="built_in">local</span> 10.10.10.4 port 34898 connected to 10.10.10.2 port 5201</span><br><span class="line">[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd</span><br><span class="line">[  4]   0.00-1.00   sec  1.91 GBytes  16.4 Gbits/sec    0   3.76 MBytes</span><br><span class="line">[  4]   1.00-2.00   sec  1.94 GBytes  16.7 Gbits/sec    0   3.76 MBytes</span><br><span class="line">[  4]   2.00-3.00   sec  1.95 GBytes  16.8 Gbits/sec    0   3.76 MBytes</span><br><span class="line">[  4]   3.00-4.00   sec  1.94 GBytes  16.7 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   4.00-5.00   sec  1.95 GBytes  16.8 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   5.00-6.00   sec  1.95 GBytes  16.8 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   6.00-7.00   sec  1.95 GBytes  16.7 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   7.00-8.00   sec  1.95 GBytes  16.8 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   8.00-9.00   sec  1.94 GBytes  16.7 Gbits/sec    0   3.94 MBytes</span><br><span class="line">[  4]   9.00-10.00  sec  1.95 GBytes  16.8 Gbits/sec    0   3.94 MBytes</span><br><span class="line">- - - - - - - - - - - - - - - - - - - - - - - - -</span><br><span class="line">[ ID] Interval           Transfer     Bandwidth       Retr</span><br><span class="line">[  4]   0.00-10.00  sec  19.4 GBytes  16.7 Gbits/sec    0             sender</span><br><span class="line">[  4]   0.00-10.00  sec  19.4 GBytes  16.7 Gbits/sec                  receiver</span><br><span class="line"></span><br><span class="line">iperf Done.</span><br></pre></td>
+										</tr>
+									</table>
+								</figure>
+								<p>I do see twice the number of lanes as compared to the Thunderbolt 3 card (<strong>I think</strong>):</p>
+								<figure class="highlight bash">
+									<table>
+										<tr>
+											<td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td>
+											<td class="code"><pre><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-3 <span class="comment"># cat rx_lanes</span></span><br><span class="line">2</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-3 <span class="comment"># cat tx_lanes</span></span><br><span class="line">2</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-3 <span class="comment"># cat rx_speed</span></span><br><span class="line">20.0 Gb/s</span><br><span class="line"></span><br><span class="line">root@nas-04:/sys/bus/thunderbolt/devices/0-3 <span class="comment"># cat tx_speed</span></span><br><span class="line">20.0 Gb/s</span><br></pre></td>
+										</tr>
+									</table>
+								</figure>
+								<p>The PCIe limitation of 4 lanes is likely the reason for this.</p>
+								<h2 id="Direct-Attached-Storage"><a href="#Direct-Attached-Storage" class="headerlink" title="Direct Attached Storage"></a>Direct Attached Storage</h2>
+								<p>Unfortunately, I don’t have a benchmark for this yet. If you’re interested in Thunderbolt 3, you can see some <a href="/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/">insane benchmarks using RAID-0 over here.</a> I’ve connected the one of the same <a href="/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/#The-aVolusion-Enclosure">aVolution Thunderbolt 3 disks</a> to the controller using an active Thunderbolt 4 cable, but it doesn’t enumerate. I haven’t explored it beyond just seeing the outcome of plug-n-play. No dmesg output, nada. I’ll follow up on this and post an update later.</p>
+								<h1 id="Additional-Pictures"><a href="#Additional-Pictures" class="headerlink" title="Additional Pictures"></a>Additional Pictures</h1>
+								<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="gigabyte-maple-ridge-thunderbolt4-boxed-cb.jpg" alt="Maple Ridge Controller Boxed" title="Picture of a product box"></p>
+								<!-- /Users/cbergeron/Documents/Blog/chrisbergeron.github.io/source/_posts/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/ -->
+							</div>
+							<div class="article-licensing box">
+								<div class="licensing-title">
+									<p>Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card</p>
+									<p><a href="https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/">https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/</a></p>
+								</div>
+								<div class="licensing-meta level is-mobile">
+									<div class="level-left">
+										<div class="level-item is-narrow">
+											<div>
+												<h6>Author</h6>
+												<p>Chris Bergeron</p>
+											</div>
+										</div>
+										<div class="level-item is-narrow">
+											<div>
+												<h6>Posted on</h6>
+												<p>08-23-2021</p>
+											</div>
+										</div>
+										<div class="level-item is-narrow">
+											<div>
+												<h6>Updated on</h6>
+												<p>09-02-2021</p>
+											</div>
+										</div>
+										<div class="level-item is-narrow">
+											<div>
+												<h6>Licensed under</h6>
+												<p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/thunderbolt/">thunderbolt</a><a class="link-muted mr-2" rel="tag" href="/tags/thunderbolt4/">thunderbolt4</a><a class="link-muted mr-2" rel="tag" href="/tags/gigabyte/">gigabyte</a><a class="link-muted mr-2" rel="tag" href="/tags/maple-ridge/">maple ridge</a><a class="link-muted mr-2" rel="tag" href="/tags/linux/">linux</a></div>
+							<!--!-->
+						</article>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<h3 class="menu-label has-text-centered">Like this article? Support me with</h3>
+							<div class="buttons is-centered"><a class="button donate" href="https://www.buymeacoffee.com/cbergeron" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="patreon"><span class="icon is-small"><i class="fab fa-patreon"></i></span><span>Patreon</span></a><a class="button donate" data-type="paypal" onclick="document.getElementById(&#039;paypal-donate-form&#039;).submit()"><span class="icon is-small"><i class="fab fa-paypal"></i></span><span>Paypal</span></a>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener" id="paypal-donate-form">
+									<input type="hidden" name="cmd" value="_donations">
+									<input type="hidden" name="business" value="cbergeron@gmail.com">
+									<input type="hidden" name="currency_code" value="USD">
+								</form>
+							</div>
+						</div>
+					</div>
+					<nav class="post-navigation mt-4 level is-mobile">
+						<div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/"><span class="level-item">Controlling iRobot Roomba from the command line</span><i class="level-item fas fa-chevron-right"></i></a></div>
+					</nav>
+					<div class="card">
+						<div class="card-content">
+							<h3 class="title is-5">Comments</h3>
+							<script src="https://utteranc.es/client.js" repo="chrisbergeron/chrisbergeron" issue-term="title" theme="preferred-color-scheme" crossorigin="anonymous" async></script>
+						</div>
+					</div>
+				</div>
+				<!--!-->
+				<div class="column column-right is-4-tablet is-4-desktop is-4-widescreen  order-3 is-sticky">
+					<div class="card widget" id="toc" data-type="toc">
+						<div class="card-content">
+							<div class="menu">
+								<h3 class="menu-label">Contents</h3>
+								<ul class="menu-list">
+									<li><a class="level is-mobile" href="#Gigabyte-GC-Maple-Ridge"><span class="level-left"><span class="level-item">1</span><span class="level-item">Gigabyte GC-Maple Ridge</span></span></a></li>
+									<li><a class="level is-mobile" href="#Observations"><span class="level-left"><span class="level-item">2</span><span class="level-item">Observations</span></span></a>
+										<ul class="menu-list">
+											<li><a class="level is-mobile" href="#Physical-Characteristics"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">Physical Characteristics</span></span></a></li>
+											<li><a class="level is-mobile" href="#Operating-System-Support-Linux"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">Operating System Support (Linux)</span></span></a></li>
+										</ul>
+									</li>
+									<li><a class="level is-mobile" href="#Benchmarks"><span class="level-left"><span class="level-item">3</span><span class="level-item">Benchmarks</span></span></a>
+										<ul class="menu-list">
+											<li><a class="level is-mobile" href="#Networking-Capability"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">Networking Capability</span></span></a></li>
+											<li><a class="level is-mobile" href="#Direct-Attached-Storage"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">Direct Attached Storage</span></span></a></li>
+										</ul>
+									</li>
+									<li><a class="level is-mobile" href="#Additional-Pictures"><span class="level-left"><span class="level-item">4</span><span class="level-item">Additional Pictures</span></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<style>
+						#toc .menu-list > li > a.is-active + .menu-list {
+							display: block;
+						}
+						
+						#toc .menu-list > li > a + .menu-list {
+							display: none;
+						}
+						</style>
+						<script src="/js/toc.js" defer></script>
+					</div>
+					<div class="card widget" data-type="subscribe-email">
+						<div class="card-content">
+							<div class="menu">
+								<h3 class="menu-label">Subscribe for more great content</h3>
+								<form action="https://chrisbergeron.us6.list-manage.com/subscribe/post?u=adaa13382eeaddeabadbb90bf&amp;id=73e551a962" method="post" id="mc-embedded-subscribe-form" target="_blank" name="mc-embedded-subscribe-form">
+									<input type="hidden" value="ChrisBergeron" name="uri">
+									<input type="hidden" name="loc" value="en_US">
+									<input type="hidden" name="u" value="adaa13382eeaddeabadbb90bf">
+									<input type="hidden" name="id" value="73e551a962">
+									<div class="field has-addons">
+										<div class="control has-icons-left is-expanded">
+											<input class="input" type="email" name="MERGE0" id="MERGE0" autocapitalize="off" autocorrect="off" size="25" value="" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div>
+										<div class="control">
+											<input class="button" type="submit" value="Subscribe">
+										</div>
+									</div>
+									<p class="help">Chris Bergerons Tech Blog</p>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="card widget" data-type="links">
+						<div class="card-content">
+							<div class="menu">
+								<h3 class="menu-label">Links</h3>
+								<ul class="menu-list">
+									<li><a class="level is-mobile" href="https://holdingco.com" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">The Holding Company</span></span><span class="level-right"><span class="level-item tag">holdingco.com</span></span></a></li>
+									<li><a class="level is-mobile" href="https://debris-art.com" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Debris Art</span></span><span class="level-right"><span class="level-item tag">debris-art.com</span></span></a></li>
+									<li><a class="level is-mobile" href="https://metacrypt.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">MΞTΛcrypt</span></span><span class="level-right"><span class="level-item tag">metacrypt.io</span></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card widget" data-type="recent-posts">
+						<div class="card-content">
+							<h3 class="menu-label">Recents</h3>
+							<article class="media">
+								<figure class="media-left">
+									<a class="image" href="/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/thunderbolt-tbt-icon.png" alt="Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card"></a>
+								</figure>
+								<div class="media-content">
+									<p class="date">
+										<time dateTime="2021-08-23T18:22:20.000Z">08-23-2021</time>
+									</p>
+									<p class="title"><a href="/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/">Hands On with the Gigabyte Maple Ridge Thunderbolt 4 Card</a></p>
+									<p class="categories"><a href="/categories/Homelab/">Homelab</a></p>
+								</div>
+							</article>
+							<article class="media">
+								<figure class="media-left">
+									<a class="image" href="/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/irobot.png" alt="Controlling iRobot Roomba from the command line"></a>
+								</figure>
+								<div class="media-content">
+									<p class="date">
+										<time dateTime="2021-08-14T13:40:20.000Z">08-14-2021</time>
+									</p>
+									<p class="title"><a href="/2021/08/14/Controlling-iRobot-Roomba-from-the-command-line/">Controlling iRobot Roomba from the command line</a></p>
+									<p class="categories"><a href="/categories/Home/">Home</a></p>
+								</div>
+							</article>
+							<article class="media">
+								<figure class="media-left">
+									<a class="image" href="/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/thunderbolt-tbt-icon.png" alt="Fast RAID-0 DAS Using Two Thunderbolt 3 Enclosures"></a>
+								</figure>
+								<div class="media-content">
+									<p class="date">
+										<time dateTime="2021-08-11T14:46:52.000Z">08-11-2021</time>
+									</p>
+									<p class="title"><a href="/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/">Fast RAID-0 DAS Using Two Thunderbolt 3 Enclosures</a></p>
+									<p class="categories"><a href="/categories/Homelab/">Homelab</a></p>
+								</div>
+							</article>
+							<article class="media">
+								<figure class="media-left">
+									<a class="image" href="/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/thunderbolt-tbt-icon.png" alt="Ultra fast Thunderbolt NAS with Apple M1 and Linux"></a>
+								</figure>
+								<div class="media-content">
+									<p class="date">
+										<time dateTime="2021-07-26T01:58:08.000Z">07-25-2021</time>
+									</p>
+									<p class="title"><a href="/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/">Ultra fast Thunderbolt NAS with Apple M1 and Linux</a></p>
+									<p class="categories"><a href="/categories/Homelab/">Homelab</a></p>
+								</div>
+							</article>
+							<article class="media">
+								<figure class="media-left">
+									<a class="image" href="/2021/07/04/Person-is-not-a-known-valid-target-type-for-the-publisher-property/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/google.png" alt="Person is not a known valid target type for the publisher property."></a>
+								</figure>
+								<div class="media-content">
+									<p class="date">
+										<time dateTime="2021-07-04T19:25:27.000Z">07-04-2021</time>
+									</p>
+									<p class="title"><a href="/2021/07/04/Person-is-not-a-known-valid-target-type-for-the-publisher-property/">Person is not a known valid target type for the publisher property.</a></p>
+									<p class="categories"><a href="/categories/Web/">Web</a></p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="card widget" data-type="categories">
+						<div class="card-content">
+							<div class="menu">
+								<h3 class="menu-label">Categories</h3>
+								<ul class="menu-list">
+									<li><a class="level is-mobile" href="/categories/AI/"><span class="level-start"><span class="level-item">AI</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li>
+									<li><a class="level is-mobile" href="/categories/Crypto/"><span class="level-start"><span class="level-item">Crypto</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li>
+									<li><a class="level is-mobile" href="/categories/Devops/"><span class="level-start"><span class="level-item">Devops</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li>
+									<li><a class="level is-mobile" href="/categories/Home/"><span class="level-start"><span class="level-item">Home</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li>
+									<li><a class="level is-mobile" href="/categories/Homelab/"><span class="level-start"><span class="level-item">Homelab</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li>
+									<li><a class="level is-mobile" href="/categories/Linux/"><span class="level-start"><span class="level-item">Linux</span></span><span class="level-end"><span class="level-item tag">11</span></span></a></li>
+									<li><a class="level is-mobile" href="/categories/Politics/"><span class="level-start"><span class="level-item">Politics</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li>
+									<li><a class="level is-mobile" href="/categories/Professional/"><span class="level-start"><span class="level-item">Professional</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li>
+									<li><a class="level is-mobile" href="/categories/Projects/"><span class="level-start"><span class="level-item">Projects</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li>
+									<li><a class="level is-mobile" href="/categories/Software/"><span class="level-start"><span class="level-item">Software</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li>
+									<li><a class="level is-mobile" href="/categories/Telematics/"><span class="level-start"><span class="level-item">Telematics</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li>
+									<li><a class="level is-mobile" href="/categories/Web/"><span class="level-start"><span class="level-item">Web</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="level">
+				<div class="level-start">
+					<a class="footer-logo is-block mb-2" href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsBAMAAACLU5NGAAAAHlBMVEVHcExZWVnU1NSbm5toaGiAgIC1tbXv7+8/Pz8ZGRkzrvrZAAAAAXRSTlMAQObYZgAAAxRJREFUeNrt2M1T00AYx/HQt1x56Iscg4UZj40tVG+GFvFIhaLHVqb1WgbwXgfHcvfQ/LfublJwU3CGKWaifj8zfckzmdlfN/uS1HEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+jLclkq/qE7f1MxgoqxPrrL2JGhzyxllr9ciLHnvnSkoOB/uLuSsfTJ5hXzTkLTiem3pLjyXAjlVilQETKqtmS+pSqbt/XlbtYV+rQjH1d308p1lA645580LFOx74cOU5eKntnEtzG6nVGUpmY+rhV8VOJlZOaegvK6hJ91l82dNC2WhtkEUt35VAG+tvAcX1JJVZBGubIi/tO5dMZVcDbWKYD1VugfoBTTCfWUF8e1VgjLlfVxTyMBtIilqf7dD2u59KJ5ZfNuJc30eGaqJ5pLE5YvBxHhYnr6cTq1czUl2d6hdhVs1L13ODeWHE9nVhxK/qjrlcIUR3m3Rsrrqcdq6TWhedbGYkVbCwuop7/emwVHohVSDPW3ZD3a9GQLz4w5KO6m/YCYfrtXBaz0k/GiuopLRCXpg+GMomuzlBUf9RM88lYUT2l5bQk5fjNr5rtWvfTwNp8FiPKT2Xz6Wueakxv1Q1deTsODlSIKzUlRzJainWlt+ryn45leNGNTc2JbmyqOyqE29OV4lIsU2+nFMu56El0l1cPOoOS2QH17d5yLFWvvHTMfpA5rtq0M6ikb3Gy5zLasLPUUWoEur5ZfrPkvLqnbvb3s3b9zOStepmbhKMgfqIEAAAAAPwLXof2X1P52bX91OfP3ttP992OfcJOv20d55p7Kz/658NwbhVe3czWrRTT6bV1wna3e2Sl6PePrRPqzWZj1ViFMAytH/9xfvP11+PidDq1Tmh1u9Y/Dvl+v2/1zlmz2V411loy1rvZ/PGxvKeOVbynt77bY21zc5KIdWhd5WRv1Z8gVi4Mf1iFF7O5PXSm02/JsdX47di6aDYHK8/EbbHHZ+6k4yQmWiM50ZzEELdnpjv+xAIHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI/2Ez8QiNuDAFljAAAAAElFTkSuQmCC" data-original="/images/logo.png" alt="Chris Bergeron Tech Blog" height="28" width="288"></a>
+					<p class="is-size-7"><span>&copy; 2021 Chris Bergeron</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p>
+				</div>
+				<div class="level-end">
+					<div class="field has-addons">
+						<p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="RSS" href="https://chrisbergeron.com/atom.xml"><i class="fa fa-rss fa-1x"></i></a></p>
+						<p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="GitHub" href="https://github.com/chrisbergeron/"><i class="fab fa-github"></i></a></p>
+						<p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Medium" href="https://c-bergeron.medium.com/"><i class="fab fa-medium"></i></a></p>
+						<p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Ethereum" href="ethereum://0xA44E17eA422A0D7AA97C6F805E37b1aBB934171d"><i class="fab fa-ethereum"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script>
+	<script>
+	moment.locale("en");
+	</script>
+	<script>
+	var IcarusThemeSettings = {
+		article: {
+			highlight: {
+				clipboard: true,
+				fold: 'unfolded'
+			}
+		}
+	};
+	</script>
+	<script src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a>
+	<script src="/js/back_to_top.js" defer></script>
+	<!--!-->
+	<!--!-->
+	<!--!-->
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script>
+	<script>
+	window.addEventListener("load", () => {
+		window.cookieconsent.initialise({
+			type: "info",
+			theme: "edgeless",
+			static: false,
+			position: "bottom-left",
+			content: {
+				message: "This website uses cookies to improve your experience.",
+				dismiss: "Got it!",
+				allow: "Allow cookies",
+				deny: "Decline",
+				link: "Learn more",
+				policy: "Cookie Policy",
+				href: "https://www.cookiesandyou.com/",
+			},
+			palette: {
+				popup: {
+					background: "#edeff5",
+					text: "#838391"
+				},
+				button: {
+					background: "#4b81e8"
+				},
+			},
+		});
+	});
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+	<script>
+	window.addEventListener("load", () => {
+		if(typeof $.fn.lightGallery === 'function') {
+			$('.article').lightGallery({
+				selector: '.gallery-item'
+			});
+		}
+		if(typeof $.fn.justifiedGallery === 'function') {
+			if($('.justified-gallery > p > .gallery-item').length) {
+				$('.justified-gallery > p > .gallery-item').unwrap();
+			}
+			$('.justified-gallery').justifiedGallery();
+		}
+	});
+	</script>
+	<!--!-->
+	<!--!-->
+	<!--!-->
+	<!--!-->
+	<script src="/js/main.js" defer></script>
+	<div class="searchbox">
+		<div class="searchbox-container">
+			<div class="searchbox-header">
+				<div class="searchbox-input-container">
+					<input class="searchbox-input" type="text" placeholder="Type something...">
+				</div><a class="searchbox-close" href="javascript:;">×</a></div>
+			<div class="searchbox-body"></div>
+		</div>
+	</div>
+	<script src="/js/insight.js" defer></script>
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		loadInsight({
+			"contentUrl": "/content.json"
+		}, {
+			"hint": "Type something...",
+			"untitled": "(Untitled)",
+			"posts": "Posts",
+			"pages": "Pages",
+			"categories": "Categories",
+			"tags": "Tags"
+		});
+	});
+	</script>
+	<script>
+	! function(r) {
+		var o = Array.prototype.slice.call(document.querySelectorAll("[data-original]"));
+
+		function t() {
+			for(var t = 0; t < o.length; t++) ! function(t) {
+				var e, i, n, l;
+				i = o[t], n = i.getBoundingClientRect(), l = r.innerWidth || document.documentElement.clientWidth, i = r.innerHeight || document.documentElement.clientHeight, (100 <= n.top || 100 <= n.left || n.top < 0 && 100 <= n.top + n.height || n.left < 0 && 100 <= n.left + n.width) && n.top <= i && n.left <= l && (e = o[t], i = function() {
+					o.splice(t, 1)
+				}, n = e.getAttribute("data-original"), "yes" !== e.getAttribute("data-init") && (l = e.getAttribute("data-isbg"), n = n.replace(/^https?:/, ""), l ? e.style.backgroundImage = n : e.setAttribute("src", n), e.setAttribute("data-init", "yes"), i && i()))
+			}(t)
+		}
+		t(), r.addEventListener("scroll", t)
+	}(this);
+	</script>
+</body>
+
+</html>
