@@ -66,7 +66,7 @@
 	padding-left: 0;
 }
 
-.fa-ul>li {
+.fa-ul&gt;li {
 	position: relative;
 }
 
@@ -995,7 +995,7 @@ html {
 	padding-left: 0;
 }
 
-.fa-ul>li {
+.fa-ul&gt;li {
 	position: relative;
 }
 
@@ -2868,7 +2868,7 @@ a.has-text-info:focus,a.has-text-info:hover {
 		display: flex;
 	}
 
-	.level>.level-item:not(.is-narrow) {
+	.level&gt;.level-item:not(.is-narrow) {
 		flex-grow: 1;
 	}
 }
@@ -3217,11 +3217,11 @@ a.list-item {
 	color: #fff;
 }
 
-.navbar.is-dark .navbar-brand .navbar-link,.navbar.is-dark .navbar-brand>.navbar-item {
+.navbar.is-dark .navbar-brand .navbar-link,.navbar.is-dark .navbar-brand&gt;.navbar-item {
 	color: #fff;
 }
 
-.navbar.is-dark .navbar-brand .navbar-link.is-active,.navbar.is-dark .navbar-brand .navbar-link:focus,.navbar.is-dark .navbar-brand .navbar-link:hover,.navbar.is-dark .navbar-brand>a.navbar-item.is-active,.navbar.is-dark .navbar-brand>a.navbar-item:focus,.navbar.is-dark .navbar-brand>a.navbar-item:hover {
+.navbar.is-dark .navbar-brand .navbar-link.is-active,.navbar.is-dark .navbar-brand .navbar-link:focus,.navbar.is-dark .navbar-brand .navbar-link:hover,.navbar.is-dark .navbar-brand&gt;a.navbar-item.is-active,.navbar.is-dark .navbar-brand&gt;a.navbar-item:focus,.navbar.is-dark .navbar-brand&gt;a.navbar-item:hover {
 	background-color: #292929;
 	color: #fff;
 }
@@ -3231,11 +3231,11 @@ a.list-item {
 }
 
 @media screen and (min-width:1288px) {
-	.navbar.is-dark .navbar-end .navbar-link,.navbar.is-dark .navbar-end>.navbar-item,.navbar.is-dark .navbar-start .navbar-link,.navbar.is-dark .navbar-start>.navbar-item {
+	.navbar.is-dark .navbar-end .navbar-link,.navbar.is-dark .navbar-end&gt;.navbar-item,.navbar.is-dark .navbar-start .navbar-link,.navbar.is-dark .navbar-start&gt;.navbar-item {
 		color: #fff;
 	}
 
-	.navbar.is-dark .navbar-end .navbar-link.is-active,.navbar.is-dark .navbar-end .navbar-link:focus,.navbar.is-dark .navbar-end .navbar-link:hover,.navbar.is-dark .navbar-end>a.navbar-item.is-active,.navbar.is-dark .navbar-end>a.navbar-item:focus,.navbar.is-dark .navbar-end>a.navbar-item:hover,.navbar.is-dark .navbar-start .navbar-link.is-active,.navbar.is-dark .navbar-start .navbar-link:focus,.navbar.is-dark .navbar-start .navbar-link:hover,.navbar.is-dark .navbar-start>a.navbar-item.is-active,.navbar.is-dark .navbar-start>a.navbar-item:focus,.navbar.is-dark .navbar-start>a.navbar-item:hover {
+	.navbar.is-dark .navbar-end .navbar-link.is-active,.navbar.is-dark .navbar-end .navbar-link:focus,.navbar.is-dark .navbar-end .navbar-link:hover,.navbar.is-dark .navbar-end&gt;a.navbar-item.is-active,.navbar.is-dark .navbar-end&gt;a.navbar-item:focus,.navbar.is-dark .navbar-end&gt;a.navbar-item:hover,.navbar.is-dark .navbar-start .navbar-link.is-active,.navbar.is-dark .navbar-start .navbar-link:focus,.navbar.is-dark .navbar-start .navbar-link:hover,.navbar.is-dark .navbar-start&gt;a.navbar-item.is-active,.navbar.is-dark .navbar-start&gt;a.navbar-item:focus,.navbar.is-dark .navbar-start&gt;a.navbar-item:hover {
 		background-color: #292929;
 		color: #fff;
 	}
@@ -3250,11 +3250,11 @@ a.list-item {
 	color: #fff;
 }
 
-.navbar.is-primary .navbar-brand .navbar-link,.navbar.is-primary .navbar-brand>.navbar-item {
+.navbar.is-primary .navbar-brand .navbar-link,.navbar.is-primary .navbar-brand&gt;.navbar-item {
 	color: #fff;
 }
 
-.navbar.is-primary .navbar-brand .navbar-link.is-active,.navbar.is-primary .navbar-brand .navbar-link:focus,.navbar.is-primary .navbar-brand .navbar-link:hover,.navbar.is-primary .navbar-brand>a.navbar-item.is-active,.navbar.is-primary .navbar-brand>a.navbar-item:focus,.navbar.is-primary .navbar-brand>a.navbar-item:hover {
+.navbar.is-primary .navbar-brand .navbar-link.is-active,.navbar.is-primary .navbar-brand .navbar-link:focus,.navbar.is-primary .navbar-brand .navbar-link:hover,.navbar.is-primary .navbar-brand&gt;a.navbar-item.is-active,.navbar.is-primary .navbar-brand&gt;a.navbar-item:focus,.navbar.is-primary .navbar-brand&gt;a.navbar-item:hover {
 	background-color: #3169c4;
 	color: #fff;
 }
@@ -3264,11 +3264,11 @@ a.list-item {
 }
 
 @media screen and (min-width:1288px) {
-	.navbar.is-primary .navbar-end .navbar-link,.navbar.is-primary .navbar-end>.navbar-item,.navbar.is-primary .navbar-start .navbar-link,.navbar.is-primary .navbar-start>.navbar-item {
+	.navbar.is-primary .navbar-end .navbar-link,.navbar.is-primary .navbar-end&gt;.navbar-item,.navbar.is-primary .navbar-start .navbar-link,.navbar.is-primary .navbar-start&gt;.navbar-item {
 		color: #fff;
 	}
 
-	.navbar.is-primary .navbar-end .navbar-link.is-active,.navbar.is-primary .navbar-end .navbar-link:focus,.navbar.is-primary .navbar-end .navbar-link:hover,.navbar.is-primary .navbar-end>a.navbar-item.is-active,.navbar.is-primary .navbar-end>a.navbar-item:focus,.navbar.is-primary .navbar-end>a.navbar-item:hover,.navbar.is-primary .navbar-start .navbar-link.is-active,.navbar.is-primary .navbar-start .navbar-link:focus,.navbar.is-primary .navbar-start .navbar-link:hover,.navbar.is-primary .navbar-start>a.navbar-item.is-active,.navbar.is-primary .navbar-start>a.navbar-item:focus,.navbar.is-primary .navbar-start>a.navbar-item:hover {
+	.navbar.is-primary .navbar-end .navbar-link.is-active,.navbar.is-primary .navbar-end .navbar-link:focus,.navbar.is-primary .navbar-end .navbar-link:hover,.navbar.is-primary .navbar-end&gt;a.navbar-item.is-active,.navbar.is-primary .navbar-end&gt;a.navbar-item:focus,.navbar.is-primary .navbar-end&gt;a.navbar-item:hover,.navbar.is-primary .navbar-start .navbar-link.is-active,.navbar.is-primary .navbar-start .navbar-link:focus,.navbar.is-primary .navbar-start .navbar-link:hover,.navbar.is-primary .navbar-start&gt;a.navbar-item.is-active,.navbar.is-primary .navbar-start&gt;a.navbar-item:focus,.navbar.is-primary .navbar-start&gt;a.navbar-item:hover {
 		background-color: #3169c4;
 		color: #fff;
 	}
@@ -3283,11 +3283,11 @@ a.list-item {
 	color: #fff;
 }
 
-.navbar.is-link .navbar-brand .navbar-link,.navbar.is-link .navbar-brand>.navbar-item {
+.navbar.is-link .navbar-brand .navbar-link,.navbar.is-link .navbar-brand&gt;.navbar-item {
 	color: #fff;
 }
 
-.navbar.is-link .navbar-brand .navbar-link.is-active,.navbar.is-link .navbar-brand .navbar-link:focus,.navbar.is-link .navbar-brand .navbar-link:hover,.navbar.is-link .navbar-brand>a.navbar-item.is-active,.navbar.is-link .navbar-brand>a.navbar-item:focus,.navbar.is-link .navbar-brand>a.navbar-item:hover {
+.navbar.is-link .navbar-brand .navbar-link.is-active,.navbar.is-link .navbar-brand .navbar-link:focus,.navbar.is-link .navbar-brand .navbar-link:hover,.navbar.is-link .navbar-brand&gt;a.navbar-item.is-active,.navbar.is-link .navbar-brand&gt;a.navbar-item:focus,.navbar.is-link .navbar-brand&gt;a.navbar-item:hover {
 	background-color: #3169c4;
 	color: #fff;
 }
@@ -3297,11 +3297,11 @@ a.list-item {
 }
 
 @media screen and (min-width:1288px) {
-	.navbar.is-link .navbar-end .navbar-link,.navbar.is-link .navbar-end>.navbar-item,.navbar.is-link .navbar-start .navbar-link,.navbar.is-link .navbar-start>.navbar-item {
+	.navbar.is-link .navbar-end .navbar-link,.navbar.is-link .navbar-end&gt;.navbar-item,.navbar.is-link .navbar-start .navbar-link,.navbar.is-link .navbar-start&gt;.navbar-item {
 		color: #fff;
 	}
 
-	.navbar.is-link .navbar-end .navbar-link.is-active,.navbar.is-link .navbar-end .navbar-link:focus,.navbar.is-link .navbar-end .navbar-link:hover,.navbar.is-link .navbar-end>a.navbar-item.is-active,.navbar.is-link .navbar-end>a.navbar-item:focus,.navbar.is-link .navbar-end>a.navbar-item:hover,.navbar.is-link .navbar-start .navbar-link.is-active,.navbar.is-link .navbar-start .navbar-link:focus,.navbar.is-link .navbar-start .navbar-link:hover,.navbar.is-link .navbar-start>a.navbar-item.is-active,.navbar.is-link .navbar-start>a.navbar-item:focus,.navbar.is-link .navbar-start>a.navbar-item:hover {
+	.navbar.is-link .navbar-end .navbar-link.is-active,.navbar.is-link .navbar-end .navbar-link:focus,.navbar.is-link .navbar-end .navbar-link:hover,.navbar.is-link .navbar-end&gt;a.navbar-item.is-active,.navbar.is-link .navbar-end&gt;a.navbar-item:focus,.navbar.is-link .navbar-end&gt;a.navbar-item:hover,.navbar.is-link .navbar-start .navbar-link.is-active,.navbar.is-link .navbar-start .navbar-link:focus,.navbar.is-link .navbar-start .navbar-link:hover,.navbar.is-link .navbar-start&gt;a.navbar-item.is-active,.navbar.is-link .navbar-start&gt;a.navbar-item:focus,.navbar.is-link .navbar-start&gt;a.navbar-item:hover {
 		background-color: #3169c4;
 		color: #fff;
 	}
@@ -3316,11 +3316,11 @@ a.list-item {
 	color: #fff;
 }
 
-.navbar.is-info .navbar-brand .navbar-link,.navbar.is-info .navbar-brand>.navbar-item {
+.navbar.is-info .navbar-brand .navbar-link,.navbar.is-info .navbar-brand&gt;.navbar-item {
 	color: #fff;
 }
 
-.navbar.is-info .navbar-brand .navbar-link.is-active,.navbar.is-info .navbar-brand .navbar-link:focus,.navbar.is-info .navbar-brand .navbar-link:hover,.navbar.is-info .navbar-brand>a.navbar-item.is-active,.navbar.is-info .navbar-brand>a.navbar-item:focus,.navbar.is-info .navbar-brand>a.navbar-item:hover {
+.navbar.is-info .navbar-brand .navbar-link.is-active,.navbar.is-info .navbar-brand .navbar-link:focus,.navbar.is-info .navbar-brand .navbar-link:hover,.navbar.is-info .navbar-brand&gt;a.navbar-item.is-active,.navbar.is-info .navbar-brand&gt;a.navbar-item:focus,.navbar.is-info .navbar-brand&gt;a.navbar-item:hover {
 	background-color: #3189c4;
 	color: #fff;
 }
@@ -3330,11 +3330,11 @@ a.list-item {
 }
 
 @media screen and (min-width:1288px) {
-	.navbar.is-info .navbar-end .navbar-link,.navbar.is-info .navbar-end>.navbar-item,.navbar.is-info .navbar-start .navbar-link,.navbar.is-info .navbar-start>.navbar-item {
+	.navbar.is-info .navbar-end .navbar-link,.navbar.is-info .navbar-end&gt;.navbar-item,.navbar.is-info .navbar-start .navbar-link,.navbar.is-info .navbar-start&gt;.navbar-item {
 		color: #fff;
 	}
 
-	.navbar.is-info .navbar-end .navbar-link.is-active,.navbar.is-info .navbar-end .navbar-link:focus,.navbar.is-info .navbar-end .navbar-link:hover,.navbar.is-info .navbar-end>a.navbar-item.is-active,.navbar.is-info .navbar-end>a.navbar-item:focus,.navbar.is-info .navbar-end>a.navbar-item:hover,.navbar.is-info .navbar-start .navbar-link.is-active,.navbar.is-info .navbar-start .navbar-link:focus,.navbar.is-info .navbar-start .navbar-link:hover,.navbar.is-info .navbar-start>a.navbar-item.is-active,.navbar.is-info .navbar-start>a.navbar-item:focus,.navbar.is-info .navbar-start>a.navbar-item:hover {
+	.navbar.is-info .navbar-end .navbar-link.is-active,.navbar.is-info .navbar-end .navbar-link:focus,.navbar.is-info .navbar-end .navbar-link:hover,.navbar.is-info .navbar-end&gt;a.navbar-item.is-active,.navbar.is-info .navbar-end&gt;a.navbar-item:focus,.navbar.is-info .navbar-end&gt;a.navbar-item:hover,.navbar.is-info .navbar-start .navbar-link.is-active,.navbar.is-info .navbar-start .navbar-link:focus,.navbar.is-info .navbar-start .navbar-link:hover,.navbar.is-info .navbar-start&gt;a.navbar-item.is-active,.navbar.is-info .navbar-start&gt;a.navbar-item:focus,.navbar.is-info .navbar-start&gt;a.navbar-item:hover {
 		background-color: #3189c4;
 		color: #fff;
 	}
@@ -3344,7 +3344,7 @@ a.list-item {
 	}
 }
 
-.navbar>.container {
+.navbar&gt;.container {
 	align-items: stretch;
 	display: flex;
 	min-height: 3.25rem;
@@ -3442,7 +3442,7 @@ body.has-navbar-fixed-bottom,html.has-navbar-fixed-bottom {
 }
 
 @media screen and (max-width:1287px) {
-	.navbar>.container {
+	.navbar&gt;.container {
 		display: block;
 	}
 
@@ -3532,11 +3532,11 @@ body.has-navbar-fixed-bottom,html.has-navbar-fixed-bottom {
 		margin-left: auto;
 	}
 
-	.container>.navbar .navbar-brand,.navbar>.container .navbar-brand {
+	.container&gt;.navbar .navbar-brand,.navbar&gt;.container .navbar-brand {
 		margin-left: -.75rem;
 	}
 
-	.container>.navbar .navbar-menu,.navbar>.container .navbar-menu {
+	.container&gt;.navbar .navbar-menu,.navbar&gt;.container .navbar-menu {
 		margin-right: -.75rem;
 	}
 
@@ -5294,16 +5294,16 @@ a.tag:hover {
 	justify-content: flex-start;
 }
 
-.field.is-grouped>.control {
+.field.is-grouped&gt;.control {
 	flex-shrink: 0;
 }
 
-.field.is-grouped>.control:not(:last-child) {
+.field.is-grouped&gt;.control:not(:last-child) {
 	margin-bottom: 0;
 	margin-right: .75rem;
 }
 
-.field.is-grouped>.control.is-expanded {
+.field.is-grouped&gt;.control.is-expanded {
 	flex-grow: 1;
 	flex-shrink: 1;
 }
@@ -5320,7 +5320,7 @@ a.tag:hover {
 	flex-wrap: wrap;
 }
 
-.field.is-grouped.is-grouped-multiline>.control:last-child,.field.is-grouped.is-grouped-multiline>.control:not(:last-child) {
+.field.is-grouped.is-grouped-multiline&gt;.control:last-child,.field.is-grouped.is-grouped-multiline&gt;.control:not(:last-child) {
 	margin-bottom: .75rem;
 }
 
@@ -5379,15 +5379,15 @@ a.tag:hover {
 		margin-bottom: 0;
 	}
 
-	.field-body>.field {
+	.field-body&gt;.field {
 		flex-shrink: 1;
 	}
 
-	.field-body>.field:not(.is-narrow) {
+	.field-body&gt;.field:not(.is-narrow) {
 		flex-grow: 1;
 	}
 
-	.field-body>.field:not(:last-child) {
+	.field-body&gt;.field:not(:last-child) {
 		margin-right: .75rem;
 	}
 }
@@ -5448,76 +5448,76 @@ a.tag:hover {
 	padding: .75rem;
 }
 
-.columns.is-mobile>.column.is-narrow {
+.columns.is-mobile&gt;.column.is-narrow {
 	flex: 0 0 auto;
 }
 
-.columns.is-mobile>.column.is-full {
+.columns.is-mobile&gt;.column.is-full {
 	flex: 0 0 auto;
 	width: 100%;
 }
 
-.columns.is-mobile>.column.is-0 {
+.columns.is-mobile&gt;.column.is-0 {
 	flex: 0 0 auto;
 	width: 0%;
 }
 
-.columns.is-mobile>.column.is-1 {
+.columns.is-mobile&gt;.column.is-1 {
 	flex: 0 0 auto;
 	width: 8.33333%;
 }
 
-.columns.is-mobile>.column.is-2 {
+.columns.is-mobile&gt;.column.is-2 {
 	flex: 0 0 auto;
 	width: 16.6667%;
 }
 
-.columns.is-mobile>.column.is-3 {
+.columns.is-mobile&gt;.column.is-3 {
 	flex: 0 0 auto;
 	width: 25%;
 }
 
-.columns.is-mobile>.column.is-4 {
+.columns.is-mobile&gt;.column.is-4 {
 	flex: 0 0 auto;
 	width: 33.3333%;
 }
 
-.columns.is-mobile>.column.is-5 {
+.columns.is-mobile&gt;.column.is-5 {
 	flex: 0 0 auto;
 	width: 41.6667%;
 }
 
-.columns.is-mobile>.column.is-6 {
+.columns.is-mobile&gt;.column.is-6 {
 	flex: 0 0 auto;
 	width: 50%;
 }
 
-.columns.is-mobile>.column.is-7 {
+.columns.is-mobile&gt;.column.is-7 {
 	flex: 0 0 auto;
 	width: 58.3333%;
 }
 
-.columns.is-mobile>.column.is-8 {
+.columns.is-mobile&gt;.column.is-8 {
 	flex: 0 0 auto;
 	width: 66.6667%;
 }
 
-.columns.is-mobile>.column.is-9 {
+.columns.is-mobile&gt;.column.is-9 {
 	flex: 0 0 auto;
 	width: 75%;
 }
 
-.columns.is-mobile>.column.is-10 {
+.columns.is-mobile&gt;.column.is-10 {
 	flex: 0 0 auto;
 	width: 83.3333%;
 }
 
-.columns.is-mobile>.column.is-11 {
+.columns.is-mobile&gt;.column.is-11 {
 	flex: 0 0 auto;
 	width: 91.6667%;
 }
 
-.columns.is-mobile>.column.is-12 {
+.columns.is-mobile&gt;.column.is-12 {
 	flex: 0 0 auto;
 	width: 100%;
 }
@@ -6531,7 +6531,7 @@ body {
 	flex-direction: column;
 }
 
-body>.section {
+body&gt;.section {
 	flex-grow: 1;
 }
 
@@ -7886,7 +7886,7 @@ figure.highlight .number,figure.highlight .section,figure.highlight .tag,figure.
 	overflow: hidden;
 }
 
-.justified-gallery>a,.justified-gallery>div,.justified-gallery>figure {
+.justified-gallery&gt;a,.justified-gallery&gt;div,.justified-gallery&gt;figure {
 	position: absolute;
 	display: inline-block;
 	overflow: hidden;
@@ -7895,7 +7895,7 @@ figure.highlight .number,figure.highlight .section,figure.highlight .tag,figure.
 	padding: 0;
 }
 
-.justified-gallery>a>a>img,.justified-gallery>a>img,.justified-gallery>div>a>img,.justified-gallery>div>img,.justified-gallery>figure>a>img,.justified-gallery>figure>img {
+.justified-gallery&gt;a&gt;a&gt;img,.justified-gallery&gt;a&gt;img,.justified-gallery&gt;div&gt;a&gt;img,.justified-gallery&gt;div&gt;img,.justified-gallery&gt;figure&gt;a&gt;img,.justified-gallery&gt;figure&gt;img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -8111,7 +8111,7 @@ figure.highlight .number,figure.highlight .section,figure.highlight .tag,figure.
 	overflow: hidden;
 }
 
-.justified-gallery>a,.justified-gallery>div,.justified-gallery>figure {
+.justified-gallery&gt;a,.justified-gallery&gt;div,.justified-gallery&gt;figure {
 	position: absolute;
 	display: inline-block;
 	overflow: hidden;
@@ -8121,7 +8121,7 @@ figure.highlight .number,figure.highlight .section,figure.highlight .tag,figure.
 	padding: 0;
 }
 
-.justified-gallery>a>a>img,.justified-gallery>a>img,.justified-gallery>div>a>img,.justified-gallery>div>img,.justified-gallery>figure>a>img,.justified-gallery>figure>img {
+.justified-gallery&gt;a&gt;a&gt;img,.justified-gallery&gt;a&gt;img,.justified-gallery&gt;div&gt;a&gt;img,.justified-gallery&gt;div&gt;img,.justified-gallery&gt;figure&gt;a&gt;img,.justified-gallery&gt;figure&gt;img {
 	position: absolute;
 	top: 50%;
 	left: 50%;

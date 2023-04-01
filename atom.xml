@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2022-06-25T15:31:47.834Z</updated>
+  <updated>2023-04-01T13:10:48.049Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title></title>
-    <link href="https://chrisbergeron.com/2022/06/25/renewing-an-80s-server-cabinet/"/>
-    <id>https://chrisbergeron.com/2022/06/25/renewing-an-80s-server-cabinet/</id>
-    <published>2022-06-25T15:31:47.807Z</published>
-    <updated>2022-06-25T15:31:47.834Z</updated>
+    <link href="https://chrisbergeron.com/2023/04/01/renewing-an-80s-server-cabinet/"/>
+    <id>https://chrisbergeron.com/2023/04/01/renewing-an-80s-server-cabinet/</id>
+    <published>2023-04-01T13:10:48.049Z</published>
+    <updated>2023-04-01T13:10:48.049Z</updated>
     
     
     
@@ -34,7 +34,7 @@
     <link href="https://chrisbergeron.com/2022/05/29/Own-Yourself-You-Are-Your-Brand/"/>
     <id>https://chrisbergeron.com/2022/05/29/Own-Yourself-You-Are-Your-Brand/</id>
     <published>2022-05-29T17:28:27.000Z</published>
-    <updated>2022-06-06T17:26:03.075Z</updated>
+    <updated>2023-04-01T13:10:47.981Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;What’s-in-a-Name&quot;&gt;&lt;a href=&quot;#What’s-in-a-Name&quot; class=&quot;headerlink&quot; title=&quot;What’s in a Name?&quot;&gt;&lt;/a&gt;What’s in a Name?&lt;/h2&gt;&lt;p&gt;The crux of this article centers around personal branding in the field of tech.  Whether it’s work, play or social, having an online persona has become the new normal.  Online personas have grown from bleeding-edge gamers, content creators, vloggers and bloggers - to traditional soccer moms with recipe groups.  The internet continues to connect &lt;em&gt;everyone&lt;/em&gt; and as online trust and validation become more societially valuable, so too does the way you present yourself.&lt;/p&gt;
@@ -52,11 +52,36 @@
   </entry>
   
   <entry>
+    <title>Dynamic SSH ports with Hashicorp Vault TOTP</title>
+    <link href="https://chrisbergeron.com/2022/01/30/Dynamic-SSH-ports-with-Hashicorp-Vault-TOTP/"/>
+    <id>https://chrisbergeron.com/2022/01/30/Dynamic-SSH-ports-with-Hashicorp-Vault-TOTP/</id>
+    <published>2022-01-30T14:33:12.000Z</published>
+    <updated>2023-04-01T16:20:34.749Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;In this post I’m demonstrating how you could use Hashicorp’s Vault TOTP generator and an authenticator to connect to a dynamic ssh port.  This is mostly a proof of concept and not a production grade solution, so use at your own risk.&lt;/p&gt;
+&lt;p&gt;What’s TOTP?  It’s a Time-based One Time Password.  TBOTP is probably too ugly of an acronym to have gained widespread use.  I don’t know, I didn’t coin it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;¯\_(ツ)_/¯&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
+    
+    
+    <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
+    
+    <category term="totp" scheme="https://chrisbergeron.com/tags/totp/"/>
+    
+    <category term="ssh" scheme="https://chrisbergeron.com/tags/ssh/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Monitoring Uptime Status with Github Actions</title>
     <link href="https://chrisbergeron.com/2022/01/08/Monitoring-Uptime-Status-with-Github-Actions/"/>
     <id>https://chrisbergeron.com/2022/01/08/Monitoring-Uptime-Status-with-Github-Actions/</id>
     <published>2022-01-08T21:40:44.000Z</published>
-    <updated>2022-05-30T00:13:40.154Z</updated>
+    <updated>2023-04-01T13:10:47.966Z</updated>
     
     
     <summary type="html">&lt;p&gt;I was searching github for some uptime monitoring apps when I stumbled across a github actions based uptime and status page.  &lt;/p&gt;
@@ -81,7 +106,7 @@
     <link href="https://chrisbergeron.com/2022/01/08/Time-Tracking-with-a-Disney-Infinity-USB-NFC-Reader/"/>
     <id>https://chrisbergeron.com/2022/01/08/Time-Tracking-with-a-Disney-Infinity-USB-NFC-Reader/</id>
     <published>2022-01-08T15:20:07.000Z</published>
-    <updated>2022-02-10T02:05:28.606Z</updated>
+    <updated>2023-04-01T13:10:48.045Z</updated>
     
     
     <summary type="html">&lt;p&gt;While browsing my local thrift store, I stumbled upon a little gadget that I decided to repurpose:&lt;/p&gt;
@@ -107,7 +132,7 @@
     <link href="https://chrisbergeron.com/2022/01/08/Controlling-iRobot-Roomba-from-the-command-line/"/>
     <id>https://chrisbergeron.com/2022/01/08/Controlling-iRobot-Roomba-from-the-command-line/</id>
     <published>2022-01-08T14:40:20.000Z</published>
-    <updated>2022-01-08T14:36:36.336Z</updated>
+    <updated>2023-04-01T13:10:47.909Z</updated>
     
     
     <summary type="html">&lt;p&gt;If you’re a heavy command line (cli) user in Macos, Linux or WSL, you may it convenient to easily start or stop your robot from it’s cleaning cycle.  In this post I’ll you fellow keyboard jockeys how to control and even view your robot as is cleans.&lt;/p&gt;
@@ -118,17 +143,17 @@
     <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
     
     
-    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
-    
-    <category term="magicmirror" scheme="https://chrisbergeron.com/tags/magicmirror/"/>
-    
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
-    
     <category term="irobot" scheme="https://chrisbergeron.com/tags/irobot/"/>
     
     <category term="roomba" scheme="https://chrisbergeron.com/tags/roomba/"/>
     
     <category term="cli" scheme="https://chrisbergeron.com/tags/cli/"/>
+    
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
+    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
+    
+    <category term="magicmirror" scheme="https://chrisbergeron.com/tags/magicmirror/"/>
     
     <category term="dorita" scheme="https://chrisbergeron.com/tags/dorita/"/>
     
@@ -141,7 +166,7 @@
     <link href="https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/"/>
     <id>https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/</id>
     <published>2021-08-23T18:22:20.000Z</published>
-    <updated>2021-09-02T14:33:46.337Z</updated>
+    <updated>2022-07-01T19:14:05.384Z</updated>
     
     
     <summary type="html">&lt;p&gt;I’ve been exploring Thunderbolt quite a bit lately.  As a follow up to my post about &lt;a href=&quot;/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/&quot;&gt;using Thunderbolt in a NAS&lt;/a&gt;, I recently bought a Gigabyte Maple Ridge Thunderbolt 4 add on card.  I’ve captured a few thoughts, observations and pics here.&lt;/p&gt;
@@ -152,6 +177,8 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
     <category term="thunderbolt" scheme="https://chrisbergeron.com/tags/thunderbolt/"/>
     
     <category term="thunderbolt4" scheme="https://chrisbergeron.com/tags/thunderbolt4/"/>
@@ -160,8 +187,6 @@
     
     <category term="maple ridge" scheme="https://chrisbergeron.com/tags/maple-ridge/"/>
     
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
-    
   </entry>
   
   <entry>
@@ -169,7 +194,7 @@
     <link href="https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/"/>
     <id>https://chrisbergeron.com/2021/08/11/Fast-RAID-0-DAS-Using-Multiple-Thunderbolt-4-Busses/</id>
     <published>2021-08-11T14:46:52.000Z</published>
-    <updated>2021-09-11T22:37:05.107Z</updated>
+    <updated>2022-07-01T19:14:05.204Z</updated>
     
     
     <summary type="html">&lt;p&gt;In this post I’m demonstrating how to create a high-speed macos volume using quantity 2 Thunderbolt ports and NVMe enclosures.  This solution uses RAID-0 (striping) so the failure threshold is more than twice that of a normal standalone disk.  This example is for demonstration purposes and could be useful for video editing scratch space, rendering, large photo sessions or similar uses.  Obviously, good backups (RAID is not a backup) or a more reliable storage tier is recommended for daily use.&lt;/p&gt;
@@ -179,6 +204,8 @@
     
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
+    
+    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
     
     <category term="raid" scheme="https://chrisbergeron.com/tags/raid/"/>
     
@@ -190,8 +217,6 @@
     
     <category term="nvme" scheme="https://chrisbergeron.com/tags/nvme/"/>
     
-    <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
-    
   </entry>
   
   <entry>
@@ -199,24 +224,23 @@
     <link href="https://chrisbergeron.com/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/"/>
     <id>https://chrisbergeron.com/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/</id>
     <published>2021-07-26T01:58:08.000Z</published>
-    <updated>2021-09-03T18:26:28.959Z</updated>
+    <updated>2022-07-01T19:14:06.140Z</updated>
     
     
-    <summary type="html">&lt;!-- ![Thunderbolt 4](/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/thunderbolt-4-3.jpg &quot;Image of Thunderbolt 4 Cable&quot;) --&gt;
-&lt;p&gt;In this post I discuss how you can upgrade a NAS Server by adding Thunderbolt 3 for lightning fast connectivity at 20 or 40Gbps.  This particular implementation is specific to an Apple Mac Mini M1 and a &lt;a href=&quot;https://chrisbergeron.com/2020/03/07/diy_das_part1/&quot;&gt;Linux NAS server&lt;/a&gt; on an older Supermicro X10SRL-F motherboard, but the principles should be the same on similar architectures and operating systems.&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;In this post I discuss how you can upgrade a NAS Server by adding Thunderbolt 3 for lightning fast connectivity at 20 or 40Gbps.  This particular implementation is specific to an Apple Mac Mini M1 and a &lt;a href=&quot;https://chrisbergeron.com/2020/03/07/diy_das_part1/&quot;&gt;Linux NAS server&lt;/a&gt; on an older Supermicro X10SRL-F motherboard, but the principles should be the same on similar architectures and operating systems.&lt;/p&gt;</summary>
     
     
     
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
     <category term="das" scheme="https://chrisbergeron.com/tags/das/"/>
     
     <category term="thunderbolt" scheme="https://chrisbergeron.com/tags/thunderbolt/"/>
     
     <category term="nvme" scheme="https://chrisbergeron.com/tags/nvme/"/>
-    
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
     <category term="big sur" scheme="https://chrisbergeron.com/tags/big-sur/"/>
     
@@ -239,7 +263,7 @@
     <link href="https://chrisbergeron.com/2021/07/04/Person-is-not-a-known-valid-target-type-for-the-publisher-property/"/>
     <id>https://chrisbergeron.com/2021/07/04/Person-is-not-a-known-valid-target-type-for-the-publisher-property/</id>
     <published>2021-07-04T19:25:27.000Z</published>
-    <updated>2021-08-06T04:08:31.356Z</updated>
+    <updated>2021-08-06T04:08:31.000Z</updated>
     
     
       
@@ -268,7 +292,7 @@
     <link href="https://chrisbergeron.com/2021/07/03/AiGenArt-AI-Generated-Art-Saturn/"/>
     <id>https://chrisbergeron.com/2021/07/03/AiGenArt-AI-Generated-Art-Saturn/</id>
     <published>2021-07-03T16:38:39.000Z</published>
-    <updated>2021-08-06T04:44:00.898Z</updated>
+    <updated>2021-08-06T04:44:00.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;Saturn. This is an interesting piece.  The keywords I used for this creation were ‘saturn’ and ‘smoke’.&lt;/p&gt;
@@ -296,10 +320,10 @@
     <link href="https://chrisbergeron.com/2021/07/02/Generating-Art-with-VQGAN-CLIP-AI/"/>
     <id>https://chrisbergeron.com/2021/07/02/Generating-Art-with-VQGAN-CLIP-AI/</id>
     <published>2021-07-03T00:33:43.000Z</published>
-    <updated>2021-08-06T04:09:20.251Z</updated>
+    <updated>2021-08-06T04:09:20.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;I’ve been playing around with OpenGAN, TensorFlow, torch and a few other goodies lately.  Adding CLIP to the mix gives me the ability to use common phrases to guide the AI to creating works.  It’s fascinating to see what is generated based on the training models used.  Some are surprisingly good and others, well, I’ll let you be the judge.  Here are a few of the pieces along with the phrases that generated them:&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;I’ve been playing around with OpenGAN, TensorFlow, torch and a few other goodies lately.  Adding CLIP to the mix gives me the ability to use common phrases to guide the AI to creating works.  It’s fascinating to see what is generated based on the training models used.  Some are surprisingly good and others, well, I’ll let you be the judge.  Here are a few of the pieces along with the phrases that generated them:&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -323,11 +347,10 @@
     <link href="https://chrisbergeron.com/2021/06/16/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2/"/>
     <id>https://chrisbergeron.com/2021/06/16/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2/</id>
     <published>2021-06-17T02:05:34.000Z</published>
-    <updated>2021-08-17T02:28:37.149Z</updated>
+    <updated>2021-08-17T02:28:37.000Z</updated>
     
     
-    <summary type="html">&lt;!--center--&gt;
-&lt;p&gt;&lt;img src=&quot;/2021/06/16/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2.png&quot; alt=&quot;Pushover on macOS&quot; title=&quot;Pushover Desktop?&quot;&gt;&lt;br&gt;&lt;!--/center--&gt;&lt;br&gt;At home I run a lot of gadgets.  A mix of computer servers, IoT devices and various &lt;a href=&quot;/2021/06/05/Raspberry-Pi-Garage-Door-Opener/&quot;&gt;Raspberry Pi projects&lt;/a&gt; that I’ve built.  I always want to be aware of what’s happening with the home, so I’ve been using a notification app called Pushover.  It’s a nice notification utility that can send messages to your phone or tablet, in addition to your desktop &lt;em&gt;browser&lt;/em&gt;.  The keyword here is &lt;strong&gt;browser&lt;/strong&gt;.&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/06/16/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2/Pushover-Desktop-Yes-on-Apple-Silicon-M1-M2.png&quot; alt=&quot;Pushover on macOS&quot; title=&quot;Pushover Desktop?&quot;&gt;&lt;br&gt;&lt;!--/center--&gt;&lt;br&gt;At home I run a lot of gadgets.  A mix of computer servers, IoT devices and various &lt;a href=&quot;/2021/06/05/Raspberry-Pi-Garage-Door-Opener/&quot;&gt;Raspberry Pi projects&lt;/a&gt; that I’ve built.  I always want to be aware of what’s happening with the home, so I’ve been using a notification app called Pushover.  It’s a nice notification utility that can send messages to your phone or tablet, in addition to your desktop &lt;em&gt;browser&lt;/em&gt;.  The keyword here is &lt;strong&gt;browser&lt;/strong&gt;.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -355,7 +378,7 @@
     <link href="https://chrisbergeron.com/2021/06/13/New-CB-Brand-Logo/"/>
     <id>https://chrisbergeron.com/2021/06/13/New-CB-Brand-Logo/</id>
     <published>2021-06-13T04:15:28.000Z</published>
-    <updated>2022-05-31T03:34:31.591Z</updated>
+    <updated>2023-04-01T13:10:47.978Z</updated>
     
     
       
@@ -385,7 +408,7 @@
     <link href="https://chrisbergeron.com/2021/06/06/New-website-launch-chrisbergeron-com/"/>
     <id>https://chrisbergeron.com/2021/06/06/New-website-launch-chrisbergeron-com/</id>
     <published>2021-06-06T21:50:58.000Z</published>
-    <updated>2021-08-06T04:14:58.466Z</updated>
+    <updated>2021-08-06T04:14:58.000Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/06/New-website-launch-chrisbergeron-com/launch-website-cb.png&quot; alt=&quot;Next Rocket Launch&quot; title=&quot;Next Rocket Launch&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;I wanted a quick, lightweight way to view rocket launches from Florida’s Space Coast - Kennedy Space Center but everything I found online was bloated.  So, I create a simple website and Progressive Web App (PWA) so I could just check it on my phone.&lt;br&gt;</summary>
@@ -408,7 +431,7 @@
     <link href="https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/"/>
     <id>https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/</id>
     <published>2021-06-06T03:56:42.000Z</published>
-    <updated>2021-08-06T04:34:28.531Z</updated>
+    <updated>2021-08-06T04:34:28.000Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/cb-magicmirror.jpg&quot; alt=&quot;My Magic Mirror&quot; title=&quot;Magic Mirror&quot;&gt;&lt;br&gt;&lt;/center&gt;</summary>
@@ -420,11 +443,11 @@
     
     <category term="pi" scheme="https://chrisbergeron.com/tags/pi/"/>
     
-    <category term="raspberrypi" scheme="https://chrisbergeron.com/tags/raspberrypi/"/>
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
     <category term="magicmirror" scheme="https://chrisbergeron.com/tags/magicmirror/"/>
     
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    <category term="raspberrypi" scheme="https://chrisbergeron.com/tags/raspberrypi/"/>
     
   </entry>
   
@@ -433,7 +456,7 @@
     <link href="https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/"/>
     <id>https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/</id>
     <published>2021-06-05T04:15:32.000Z</published>
-    <updated>2021-08-06T04:35:54.465Z</updated>
+    <updated>2021-08-06T04:35:54.000Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Raspberry-Pi-Garage-Door-Opener/raspberry-pi-garage-door-opener-final.png&quot; alt=&quot;&quot; title=&quot;Raspberry Pi Garage Door Opener&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;A few years back I built a neat project I found online.  It was originally designed by Andrew Shillday.  You can find the &lt;a href=&quot;https://github.com/andrewshilliday/garage-door-controller&quot;&gt;code here&lt;/a&gt;. I decided that a Raspberry Pi Zero was sufficient, so I had to modify the pins used, but otherwise it was a fairly easy project.&lt;br&gt;</summary>
@@ -456,7 +479,7 @@
     <link href="https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/"/>
     <id>https://chrisbergeron.com/2021/04/15/Bidding-on-an-NFT-in-Ethereum/</id>
     <published>2021-04-15T17:58:42.000Z</published>
-    <updated>2021-09-02T00:48:54.529Z</updated>
+    <updated>2022-07-01T19:14:04.875Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;a href=&quot;https://etherscan.io/&quot;&gt;&lt;img src=&quot;/2021/04/15/Bidding-on-an-NFT-in-Ethereum/cb-ethereum.jpg&quot; alt=&quot;&quot; title=&quot;Ethereum Logo&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;/center&gt;
@@ -470,9 +493,9 @@
     <category term="Crypto" scheme="https://chrisbergeron.com/categories/Crypto/"/>
     
     
-    <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
-    
     <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
+    
+    <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
     
     <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
     
@@ -489,10 +512,10 @@
     <link href="https://chrisbergeron.com/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/"/>
     <id>https://chrisbergeron.com/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/</id>
     <published>2021-03-17T05:18:19.000Z</published>
-    <updated>2021-06-26T18:52:09.245Z</updated>
+    <updated>2021-06-26T18:52:09.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;center&gt;&lt;a href=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql-1-small.webp&quot; alt=&quot;Apple Silicon - M1&quot; title=&quot;Apple Silicon M1 Logo&quot;&gt;&lt;br&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;This guide will walk you through installing and configuring nginx, PHP and Mysql optimized for MacOS Big Sur on Apple Silicon - M1 Arm processors.&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;/p&gt;&lt;center&gt;&lt;a href=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2021/03/17/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql/MacOS-11-Big-Sur-Nginx-PHP-and-Mysql-1-small.webp&quot; alt=&quot;Apple Silicon - M1&quot; title=&quot;Apple Silicon M1 Logo&quot;&gt;&lt;br&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;This guide will walk you through installing and configuring nginx, PHP and Mysql optimized for MacOS Big Sur on Apple Silicon - M1 Arm processors.&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note:  Most of this content originated from &lt;a href=&quot;https://kevdees.com/macos-11-big-sur-nginx-setup-multiple-php-versions/&quot;&gt;this post&lt;/a&gt;. Here, I’ve pared it down and fixed the relevant content.  Credit goes to the original author: Kevin Dees.&lt;/em&gt;&lt;/p&gt;</summary>
     
     
@@ -523,7 +546,7 @@
     <link href="https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/"/>
     <id>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%C9%99%C9%B9%CA%A4%C9%99%C9%B9%C9%91n/</id>
     <published>2021-03-14T16:27:56.000Z</published>
-    <updated>2021-09-01T21:15:07.423Z</updated>
+    <updated>2022-07-01T19:14:05.167Z</updated>
     
     
     <summary type="html">&lt;p&gt;I was working on my latest project - &lt;a href=&quot;https://debris-art.com&quot;&gt;Debris Art&lt;/a&gt; when NFT Blockchain Digital Ownership hit the news.  I instantly realized the potential impact and decided to mint some of my works in the space.&lt;/p&gt;
@@ -534,13 +557,13 @@
     <category term="Crypto" scheme="https://chrisbergeron.com/categories/Crypto/"/>
     
     
+    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
+    
     <category term="debris" scheme="https://chrisbergeron.com/tags/debris/"/>
     
     <category term="art" scheme="https://chrisbergeron.com/tags/art/"/>
     
     <category term="nft" scheme="https://chrisbergeron.com/tags/nft/"/>
-    
-    <category term="crypto" scheme="https://chrisbergeron.com/tags/crypto/"/>
     
     <category term="blockchain" scheme="https://chrisbergeron.com/tags/blockchain/"/>
     
@@ -553,12 +576,12 @@
     <link href="https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/"/>
     <id>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</id>
     <published>2021-02-27T02:25:10.000Z</published>
-    <updated>2021-09-01T21:13:10.574Z</updated>
+    <updated>2022-07-01T19:14:05.204Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/assets/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/armory-title-cb.webp&quot; alt=&quot;Bitcoin Armory&quot; title=&quot;Bitcoin Armory&quot;&gt;&lt;br&gt;&lt;/center&gt;
 
-&lt;p&gt;The recent surge in crypto prices brought my old Bitcoin stash back to mind.  I decided to load up an old digital wallet to check it for consistency, but when I tried to load it, the software, Bitcoin Armory, wouldn’t run.  I’m running macOS Catalina 10.15.7, so I figured something changed during my miscellaneous software updates or upgrade from Mojave to Catalina.&lt;br&gt;</summary>
+&lt;p&gt;The recent surge in crypto prices brought my old Bitcoin stash back to mind.  I decided to load up an old digital wallet to check it for consistency, but when I tried to load it, the software, Bitcoin Armory, wouldn’t run.  I’m running macOS Catalina 10.15.7, so I figured something changed during my miscellaneous software updates or upgrade from Mojave to Catalina.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -580,7 +603,7 @@
     <link href="https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/"/>
     <id>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</id>
     <published>2021-01-31T03:25:11.000Z</published>
-    <updated>2021-09-11T22:37:10.738Z</updated>
+    <updated>2022-07-01T19:14:06.110Z</updated>
     
     
     <summary type="html">&lt;p&gt;Watch local broadcast TV on Plex without an antenna.&lt;/p&gt;
@@ -593,6 +616,10 @@
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
+    <category term="pi" scheme="https://chrisbergeron.com/tags/pi/"/>
+    
+    <category term="raspberrypi" scheme="https://chrisbergeron.com/tags/raspberrypi/"/>
+    
     <category term="plex" scheme="https://chrisbergeron.com/tags/plex/"/>
     
     <category term="locast" scheme="https://chrisbergeron.com/tags/locast/"/>
@@ -601,10 +628,6 @@
     
     <category term="tv" scheme="https://chrisbergeron.com/tags/tv/"/>
     
-    <category term="pi" scheme="https://chrisbergeron.com/tags/pi/"/>
-    
-    <category term="raspberrypi" scheme="https://chrisbergeron.com/tags/raspberrypi/"/>
-    
   </entry>
   
   <entry>
@@ -612,10 +635,10 @@
     <link href="https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/"/>
     <id>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</id>
     <published>2020-12-24T23:36:08.000Z</published>
-    <updated>2021-05-02T04:48:05.131Z</updated>
+    <updated>2021-05-02T04:48:05.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;If you’re having trouble with Hexo not generating files, check for &lt;strong&gt;broken symbolic links&lt;/strong&gt; in the &lt;code&gt;source&lt;/code&gt; directory tree:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;find ./ -&lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt; l -&lt;span class=&quot;built_in&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt; ! -e &amp;#123;&amp;#125; \; -&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;If you’re having trouble with Hexo not generating files, check for &lt;strong&gt;broken symbolic links&lt;/strong&gt; in the &lt;code&gt;source&lt;/code&gt; directory tree:&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;find ./ -&lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt; l -&lt;span class=&quot;built_in&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt; ! -e {} \; -&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;</summary>
     
     
     
@@ -631,11 +654,11 @@
     <link href="https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/"/>
     <id>https://chrisbergeron.com/2020/12/24/migrating_to_infrastructure_as_code/</id>
     <published>2020-12-24T21:13:25.000Z</published>
-    <updated>2021-05-02T05:01:02.476Z</updated>
+    <updated>2021-05-02T05:01:02.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;There are several existing resources that document strategies for migrating infrastructure to code.  This post is about my experiences based on the reality, the challenges and best practices.&lt;/p&gt;
-&lt;h3 id=&quot;The-Setting&quot;&gt;&lt;a href=&quot;#The-Setting&quot; class=&quot;headerlink&quot; title=&quot;The Setting&quot;&gt;&lt;/a&gt;The Setting&lt;/h3&gt;&lt;p&gt;You’re in charge of the infrastructure that the entire organization relies upon.  Your product is a 24/7 web application, service or destination.  The internet property is secure and five nines of uptime is expected.  During a meeting with Sr. Leadership, a directive comes down:  &lt;em&gt;“We’re moving to the cloud”&lt;/em&gt;.&lt;br&gt;</summary>
+&lt;h3 id=&quot;The-Setting&quot;&gt;&lt;a href=&quot;#The-Setting&quot; class=&quot;headerlink&quot; title=&quot;The Setting&quot;&gt;&lt;/a&gt;The Setting&lt;/h3&gt;&lt;p&gt;You’re in charge of the infrastructure that the entire organization relies upon.  Your product is a 24/7 web application, service or destination.  The internet property is secure and five nines of uptime is expected.  During a meeting with Sr. Leadership, a directive comes down:  &lt;em&gt;“We’re moving to the cloud”&lt;/em&gt;.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -653,7 +676,7 @@
     <link href="https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/"/>
     <id>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</id>
     <published>2020-12-04T17:07:39.000Z</published>
-    <updated>2021-09-13T21:35:59.951Z</updated>
+    <updated>2022-07-01T19:14:06.114Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/Projects/MMM-NextRocketLaunch-1-cb.jpg&quot; alt=&quot;MMM-NextRocketLaunch MagicMirror Module&quot; title=&quot;Screenshot of MagicMirror Next Rocket Launch Module&quot;&gt;&lt;/p&gt;
@@ -675,11 +698,11 @@
     <link href="https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote/"/>
     <id>https://chrisbergeron.com/2020/11/29/Disassembling-a-DirecTV-RC-Remote/</id>
     <published>2020-11-29T23:35:11.000Z</published>
-    <updated>2021-09-02T16:09:06.669Z</updated>
+    <updated>2022-07-01T19:14:05.168Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/2020/11/29/Disassembling-a-DirecTV-RC-Remote/IMG_6804-6-small.webp&quot; alt=&quot;Opening Directv Remote&quot; title=&quot;Photo of a Directv remote disassembled.&quot;&gt;&lt;/p&gt;
-&lt;p&gt;While visiting with family, I came across an old DirecTV remote that wasn’t working entirely.  Some buttons wouldn’t register even after replacing the batteries, so I figured a quick cleaning was in order.  I snapped a few pictures of the disassembly so they might be useful to others (you).&lt;br&gt;</summary>
+&lt;p&gt;While visiting with family, I came across an old DirecTV remote that wasn’t working entirely.  Some buttons wouldn’t register even after replacing the batteries, so I figured a quick cleaning was in order.  I snapped a few pictures of the disassembly so they might be useful to others (you).&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -697,7 +720,7 @@
     <link href="https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/"/>
     <id>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</id>
     <published>2020-11-20T05:11:25.000Z</published>
-    <updated>2023-04-01T04:20:10.733Z</updated>
+    <updated>2023-04-01T13:10:48.047Z</updated>
     
     
     <summary type="html">&lt;p&gt;I recently purchased an &lt;a href=&quot;https://amzn.to/3ZwO1vy&quot;&gt;Mcombo 7040 Lift Chair&lt;/a&gt; for my elderly grandfather.  Prior to purchasing the chair my Grandfather had some questions so I figured I would have a look at the manual for answers.  Surprised that I couldn’t find one, I thought I’d share it here along with my thoughts about the chair.&lt;br&gt;&lt;/p&gt;</summary>
@@ -718,7 +741,7 @@
     <link href="https://chrisbergeron.com/2020/03/13/cloudinary_bash/"/>
     <id>https://chrisbergeron.com/2020/03/13/cloudinary_bash/</id>
     <published>2020-03-13T23:13:25.000Z</published>
-    <updated>2021-09-11T22:37:33.697Z</updated>
+    <updated>2022-07-01T19:14:06.302Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://cloudinary.com/&quot;&gt;Cloudinary&lt;/a&gt; is an amazing image hosting service that offers both a highly functional free tier in addition to a paid enterprise grade image hosting and transformation service.&lt;/p&gt;
@@ -746,7 +769,7 @@
     <link href="https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/"/>
     <id>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</id>
     <published>2020-03-08T23:13:25.000Z</published>
-    <updated>2021-09-11T22:37:40.312Z</updated>
+    <updated>2022-07-01T19:14:06.302Z</updated>
     
     
     <summary type="html">&lt;p&gt;Grafana is a great tool for visualizing data.&lt;br&gt;&lt;img src=&quot;https://chrisbergeron.com/images/showcase_visualize.jpg&quot; alt=&quot;Grafana&quot;&gt;&lt;/p&gt;
@@ -776,7 +799,7 @@
     <link href="https://chrisbergeron.com/2020/03/07/diy_das_part1/"/>
     <id>https://chrisbergeron.com/2020/03/07/diy_das_part1/</id>
     <published>2020-03-07T20:10:25.000Z</published>
-    <updated>2021-08-14T03:16:37.077Z</updated>
+    <updated>2021-08-14T03:16:37.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;em&gt;Updated for 2021 !!!&lt;/em&gt;&lt;/p&gt;
@@ -786,18 +809,18 @@
 
 &lt;!--img src=&quot;/2020/03/07/diy_das_part1/das-internals-cb.001.jpg&quot; data-src=&quot;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7&quot; alt=&quot;DAS Architecture&quot; width=&quot;800&quot; height=&quot;450&quot; --&gt;
 &lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; I’ve recently added a &lt;a href=&quot;/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/&quot;&gt;Thunderbolt 3 PCIe card for easy 40 Gbps connectivity.&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Why-another-NAS-DAS-article&quot;&gt;&lt;a href=&quot;#Why-another-NAS-DAS-article&quot; class=&quot;headerlink&quot; title=&quot;Why another NAS/DAS article?&quot;&gt;&lt;/a&gt;Why another NAS/DAS article?&lt;/h1&gt;&lt;p&gt;There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so I compiled the information that was useful for my specific 2019 build here.  The prices linked below are subject to market fluctuations and timing, so some of the components I found at a great price. Overall they should be roughly the same as what you can find.  Your mileage may vary.&lt;br&gt;</summary>
+&lt;h1 id=&quot;Why-another-NAS-DAS-article&quot;&gt;&lt;a href=&quot;#Why-another-NAS-DAS-article&quot; class=&quot;headerlink&quot; title=&quot;Why another NAS/DAS article?&quot;&gt;&lt;/a&gt;Why another NAS/DAS article?&lt;/h1&gt;&lt;p&gt;There are a lot resources online for building your own DIY DAS.  A lot of them contain good information but none of them were comprehensive for the DAS I wanted to build so I compiled the information that was useful for my specific 2019 build here.  The prices linked below are subject to market fluctuations and timing, so some of the components I found at a great price. Overall they should be roughly the same as what you can find.  Your mileage may vary.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
     <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
     
     
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
     <category term="das" scheme="https://chrisbergeron.com/tags/das/"/>
     
     <category term="thunderbolt" scheme="https://chrisbergeron.com/tags/thunderbolt/"/>
-    
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
     <category term="nas" scheme="https://chrisbergeron.com/tags/nas/"/>
     
@@ -814,12 +837,12 @@
     <link href="https://chrisbergeron.com/2019/04/22/Cheapest-Days-Calendar/"/>
     <id>https://chrisbergeron.com/2019/04/22/Cheapest-Days-Calendar/</id>
     <published>2019-04-22T16:41:44.000Z</published>
-    <updated>2021-06-30T21:42:00.787Z</updated>
+    <updated>2021-06-30T21:42:00.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;Are you looking for a calendar that lets you know what days of the week are cheapest to shop?  If so, look no further.&lt;center&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;Are you looking for a calendar that lets you know what days of the week are cheapest to shop?  If so, look no further.&lt;/p&gt;&lt;center&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://chrisbergeron.com/2021/04/22/Cheapest-Days-Calendar/cheapest-days-calendar.webp&quot; alt=&quot;Cheapest Days of the Week Calendar&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/center&gt;I created a calendar for anyone looking to save a few dollars on common purchases.  The data for this calendar comes from this &lt;a href=&quot;https://www.rd.com/list/cheapest-days-of-the-week-to-do-anything/&quot;&gt;Reader’s Digest post&lt;/a&gt;.  Please check it out if you want to know the reasoning behind the timing.  If you know of other days that I should add - comment below!&lt;br&gt;</summary>
+&lt;p&gt;&lt;/p&gt;&lt;/center&gt;I created a calendar for anyone looking to save a few dollars on common purchases.  The data for this calendar comes from this &lt;a href=&quot;https://www.rd.com/list/cheapest-days-of-the-week-to-do-anything/&quot;&gt;Reader’s Digest post&lt;/a&gt;.  Please check it out if you want to know the reasoning behind the timing.  If you know of other days that I should add - comment below!&lt;br&gt;</summary>
     
     
     
@@ -839,12 +862,12 @@
     <link href="https://chrisbergeron.com/2019/02/26/deluge_dashboard/"/>
     <id>https://chrisbergeron.com/2019/02/26/deluge_dashboard/</id>
     <published>2019-02-26T05:08:00.000Z</published>
-    <updated>2021-05-02T05:06:33.980Z</updated>
+    <updated>2021-05-02T05:06:33.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;Tonight I was introduced to a &lt;a href=&quot;https://github.com/tobbez/deluge_exporter&quot;&gt;Deluge exporter&lt;/a&gt; for &lt;a href=&quot;https://prometheus.io&quot;&gt;Prometheus&lt;/a&gt; so I figured I’d whip up a quick dashboard for visualizing the metrics.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1551153412/screenshots/amkeucb9bhfveijastbd.png&quot; alt=&quot;Deluge Dashboard&quot;&gt;&lt;br&gt;Deluge Dashboard is a very simple way to display &lt;a href=&quot;https://deluge-torrent.org/&quot;&gt;Deluge&lt;/a&gt; torrent metrics.  It uses the deluge exporter to populate a Prometheus data source.  The panels in this dashboard can be copied into more comprehensive dashboards for a single pane of glass view of your network transfers or it can be used as a standalone glanceboard.&lt;/p&gt;
-&lt;p&gt;You can install the dashboard from the &lt;a href=&quot;https://grafana.com/dashboards/9846&quot;&gt;Grafana website&lt;/a&gt; or from my &lt;a href=&quot;https://github.com/chrisbergeron/deluge-grafana&quot;&gt;repo&lt;/a&gt;.&lt;br&gt;</summary>
+&lt;p&gt;You can install the dashboard from the &lt;a href=&quot;https://grafana.com/dashboards/9846&quot;&gt;Grafana website&lt;/a&gt; or from my &lt;a href=&quot;https://github.com/chrisbergeron/deluge-grafana&quot;&gt;repo&lt;/a&gt;.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -864,11 +887,11 @@
     <link href="https://chrisbergeron.com/2019/02/19/Plex-What-s-Playing-Plugin-for-BitBar/"/>
     <id>https://chrisbergeron.com/2019/02/19/Plex-What-s-Playing-Plugin-for-BitBar/</id>
     <published>2019-02-20T03:44:11.000Z</published>
-    <updated>2021-08-22T22:37:54.160Z</updated>
+    <updated>2022-07-01T19:14:06.116Z</updated>
     
     
     <summary type="html">&lt;p&gt;This is a &lt;a href=&quot;https://getbitbar.com&quot;&gt;Bitbar&lt;/a&gt; plugin that I wrote that shows you what’s currently playing on your &lt;a href=&quot;https://plex.tv&quot;&gt;Plex&lt;/a&gt; Media server.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1550632374/screenshots/vzykubr9r445oxar6aa4.png&quot; alt=&quot;BitBar Plex&quot;&gt;&lt;br&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1550632374/screenshots/vzykubr9r445oxar6aa4.png&quot; alt=&quot;BitBar Plex&quot;&gt;&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -888,10 +911,10 @@
     <link href="https://chrisbergeron.com/2019/02/07/disable_pihole_iphone/"/>
     <id>https://chrisbergeron.com/2019/02/07/disable_pihole_iphone/</id>
     <published>2019-02-08T01:46:25.000Z</published>
-    <updated>2021-05-02T05:31:57.085Z</updated>
+    <updated>2021-05-02T05:31:57.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1549595945/icons/launcher_widget_today_screen_mvaxki.png&quot; alt=&quot;Using the Launcher Widget to disable pihole&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;If you run a &lt;a href=&quot;https://pi-hole.net/&quot;&gt;pihole&lt;/a&gt; the odds are good that you’ve needed to disable it from time to time.  I wanted an easy way to disable my pihole(s) temporarily, so I wrote a simple shell script to do it for me.  I’m almost always on my Macbook, so this approach worked for a while.  I needed to disable it a few times while I was out of the room, so I figured I’d find an easier way to do it from my phone.&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;/p&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1549595945/icons/launcher_widget_today_screen_mvaxki.png&quot; alt=&quot;Using the Launcher Widget to disable pihole&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;If you run a &lt;a href=&quot;https://pi-hole.net/&quot;&gt;pihole&lt;/a&gt; the odds are good that you’ve needed to disable it from time to time.  I wanted an easy way to disable my pihole(s) temporarily, so I wrote a simple shell script to do it for me.  I’m almost always on my Macbook, so this approach worked for a while.  I needed to disable it a few times while I was out of the room, so I figured I’d find an easier way to do it from my phone.&lt;br&gt;</summary>
     
     
     
@@ -915,11 +938,11 @@
     <link href="https://chrisbergeron.com/2018/11/10/grafana_dashboards/"/>
     <id>https://chrisbergeron.com/2018/11/10/grafana_dashboards/</id>
     <published>2018-11-10T20:57:00.000Z</published>
-    <updated>2021-05-02T04:59:18.049Z</updated>
+    <updated>2021-05-02T04:59:18.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;Grafana is a really great tool for visualizing data.  In my homelab, I have obviously have a lot of data so what better than to use than the right tool for the job.  Below, you can find some screenshots of my dashboards.  I use a raspberry pi that just runs a full screen browser for viewing the dashboard slideshow in addition to a few other glance boards (DAKBoard, Monitorr, et al).&lt;/p&gt;
-&lt;table&gt;&lt;br&gt;  &lt;tr&gt;&lt;br&gt;    &lt;td&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1541879171/Dashboards/VMWare%20Cluster%20Health.png&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/c_thumb,w_200,g_face/v1541879171/Dashboards/VMWare%20Cluster%20Health.png&quot; width=&quot;200&quot; alt=&quot;VMWare Cluster Health Dashboard&quot;&gt;&lt;/a&gt;&lt;br&gt;    &lt;/td&gt;&lt;br&gt;    &lt;td&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1541879169/Dashboards/ESXI%20Datastores.png&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/c_thumb,w_200,g_face/v1541879169/Dashboards/ESXI%20Datastores.png&quot; width=&quot;200&quot; alt=&quot;ESXi Datastores Overview&quot;&gt;&lt;/a&gt;&lt;br&gt;    &lt;/td&gt;&lt;br&gt;  &lt;/tr&gt;&lt;br&gt;&lt;/table&gt;&lt;br&gt;&lt;strong&gt;Here’s the Gallery&lt;/strong&gt;</summary>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;table&gt;  &lt;tbody&gt;&lt;tr&gt;    &lt;td&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1541879171/Dashboards/VMWare%20Cluster%20Health.png&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/c_thumb,w_200,g_face/v1541879171/Dashboards/VMWare%20Cluster%20Health.png&quot; width=&quot;200&quot; alt=&quot;VMWare Cluster Health Dashboard&quot;&gt;&lt;/a&gt;&lt;br&gt;    &lt;/td&gt;    &lt;td&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1541879169/Dashboards/ESXI%20Datastores.png&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/c_thumb,w_200,g_face/v1541879169/Dashboards/ESXI%20Datastores.png&quot; width=&quot;200&quot; alt=&quot;ESXi Datastores Overview&quot;&gt;&lt;/a&gt;&lt;br&gt;    &lt;/td&gt;  &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br&gt;&lt;strong&gt;Here’s the Gallery&lt;/strong&gt;</summary>
     
     
     
@@ -937,11 +960,11 @@
     <link href="https://chrisbergeron.com/2018/10/28/plex_dashboard/"/>
     <id>https://chrisbergeron.com/2018/10/28/plex_dashboard/</id>
     <published>2018-10-28T20:22:00.000Z</published>
-    <updated>2021-05-02T05:02:55.042Z</updated>
+    <updated>2021-05-02T05:02:55.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1541880608/Dashboards/Plex%20Overview.png&quot; alt=&quot;Plex Dashboard&quot;&gt;&lt;/p&gt;
-&lt;p&gt;I made a Grafana Dashboard for my Plex system at home.  I feed various system telemetry into an influx database as the data source and &lt;a href=&quot;https://github.com/barrycarey/Plex-Data-Collector-For-InfluxDB&quot;&gt;Plex-Data-Collector&lt;/a&gt; for inserting the data from plex.  Additionally, I wrote a python script for injecting logs from &lt;a href=&quot;/2018/07/12/nzbget-mysql/&quot;&gt;NZBGet into mysql&lt;/a&gt;.  I then use Grafana to display the graphs.  I really love Grafana and I’ve created several &lt;a href=&quot;/categories/dashboards/&quot;&gt;dashboards&lt;/a&gt;:&lt;br&gt;</summary>
+&lt;p&gt;I made a Grafana Dashboard for my Plex system at home.  I feed various system telemetry into an influx database as the data source and &lt;a href=&quot;https://github.com/barrycarey/Plex-Data-Collector-For-InfluxDB&quot;&gt;Plex-Data-Collector&lt;/a&gt; for inserting the data from plex.  Additionally, I wrote a python script for injecting logs from &lt;a href=&quot;/2018/07/12/nzbget-mysql/&quot;&gt;NZBGet into mysql&lt;/a&gt;.  I then use Grafana to display the graphs.  I really love Grafana and I’ve created several &lt;a href=&quot;/categories/dashboards/&quot;&gt;dashboards&lt;/a&gt;:&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -961,12 +984,12 @@
     <link href="https://chrisbergeron.com/2018/10/27/monitorr/"/>
     <id>https://chrisbergeron.com/2018/10/27/monitorr/</id>
     <published>2018-10-27T17:43:00.000Z</published>
-    <updated>2021-05-02T05:28:24.022Z</updated>
+    <updated>2021-05-02T05:28:24.000Z</updated>
     
     
-    <summary type="html">&lt;center&gt;&lt;br&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1540662948/screenshots/q3uyxjw13yjo1enuwqnz.png&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1540663515/screenshots/ej5ehq72qnptdmpzbxsg.png&quot; alt=&quot;Monitorr&quot; title=&quot;Monitorr&quot;/&gt;&lt;/a&gt;&lt;/center&gt;
+    <summary type="html">&lt;center&gt;&lt;br&gt;&lt;a href=&quot;https://res.cloudinary.com/cyberge/image/upload/v1540662948/screenshots/q3uyxjw13yjo1enuwqnz.png&quot;&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1540663515/screenshots/ej5ehq72qnptdmpzbxsg.png&quot; alt=&quot;Monitorr&quot; title=&quot;Monitorr&quot;&gt;&lt;/a&gt;&lt;/center&gt;
 
-&lt;p&gt;As part of my dashboard project (link coming soon) I was looking for a lightweight self hosted monitoring solution for my home network services.  I found Monitorr and decided it was a perfect fit for my needs.  It’s simple and it doesn’t have any frills, which is exactly what I wanted.&lt;br&gt;</summary>
+&lt;p&gt;As part of my dashboard project (link coming soon) I was looking for a lightweight self hosted monitoring solution for my home network services.  I found Monitorr and decided it was a perfect fit for my needs.  It’s simple and it doesn’t have any frills, which is exactly what I wanted.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -986,24 +1009,19 @@
     <link href="https://chrisbergeron.com/2018/09/13/pfsense_grafana/"/>
     <id>https://chrisbergeron.com/2018/09/13/pfsense_grafana/</id>
     <published>2018-09-13T18:01:00.000Z</published>
-    <updated>2021-05-02T05:06:10.747Z</updated>
+    <updated>2021-05-02T05:06:10.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Using-Grafana-with-pfSense&quot;&gt;&lt;a href=&quot;#Using-Grafana-with-pfSense&quot; class=&quot;headerlink&quot; title=&quot;Using Grafana with pfSense&quot;&gt;&lt;/a&gt;Using Grafana with pfSense&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1536946941/icons/Screenshots/Screen_Shot_2018-09-14_at_1.41.52_PM_feqbkf.png&quot; alt=&quot;Grafana Dashboard&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Update: 2018/09/13&lt;br&gt;pfSense has a plugin for telegraf which can be installed from the gui.  I recommend this method rather than what I figured out below.  I’m leaving these notes for manual installation reference.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
-&lt;ins class=&quot;adsbygoogle&quot;
-     style=&quot;display:block; text-align:center;&quot;
-     data-ad-layout=&quot;in-article&quot;
-     data-ad-format=&quot;fluid&quot;
-     data-ad-client=&quot;ca-pub-2336374166717359&quot;
-     data-ad-slot=&quot;9989366977&quot;&gt;&lt;/ins&gt;
+&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-2336374166717359&quot; data-ad-slot=&quot;9989366977&quot;&gt;&lt;/ins&gt;
 &lt;script&gt;
      (adsbygoogle = window.adsbygoogle || []).push({});
 &lt;/script&gt;
 
 &lt;p&gt;2017/12/09&lt;br&gt;I put this guide together using information from various other blogs.  This is current as of December 2017 and using pfSense 2.4.2.  For this tutorial, you’ll need your IP or hostname of your influxdb data source and your username and password.&lt;/p&gt;
-&lt;p&gt;The data flow is as follows:&lt;center&gt;&lt;pre style=&#39;color:#000000;background:#f1f0f0;&#39;&gt;&lt;span style=&#39;color:#40015a; &#39;&gt;pfSense&lt;/span&gt; &lt;span style=&#39;color:#e60000; &#39;&gt;-&lt;/span&gt;&amp;gt; Telegraf (gather metrics) &lt;span style=&#39;color:#e60000; &#39;&gt;-&lt;/span&gt;&amp;gt; InfluxDB (store metrics) &lt;span style=&#39;color:#e60000; &#39;&gt;-&lt;/span&gt;&amp;gt; Grafana (render graphs)&lt;/pre&gt;&lt;/center&gt;&lt;/p&gt;</summary>
+&lt;p&gt;The data flow is as follows:&lt;/p&gt;&lt;center&gt;&lt;pre style=&quot;color:#000000;background:#f1f0f0;&quot;&gt;&lt;span style=&quot;color:#40015a; &quot;&gt;pfSense&lt;/span&gt; &lt;span style=&quot;color:#e60000; &quot;&gt;-&lt;/span&gt;&amp;gt; Telegraf (gather metrics) &lt;span style=&quot;color:#e60000; &quot;&gt;-&lt;/span&gt;&amp;gt; InfluxDB (store metrics) &lt;span style=&quot;color:#e60000; &quot;&gt;-&lt;/span&gt;&amp;gt; Grafana (render graphs)&lt;/pre&gt;&lt;/center&gt;&lt;p&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1025,7 +1043,7 @@
     <link href="https://chrisbergeron.com/2018/07/12/nzbget-mysql/"/>
     <id>https://chrisbergeron.com/2018/07/12/nzbget-mysql/</id>
     <published>2018-07-13T00:11:00.000Z</published>
-    <updated>2022-06-25T15:03:46.458Z</updated>
+    <updated>2023-04-01T13:10:48.048Z</updated>
     
     
     <summary type="html">&lt;p&gt;I wrote a simple plugin for NZBGet that inserts download history into a MySQL database.  Having my download list in a database makes operations on the data easier than groking text logs.&lt;/p&gt;
@@ -1058,7 +1076,7 @@
     <link href="https://chrisbergeron.com/2018/06/21/pihole_api/"/>
     <id>https://chrisbergeron.com/2018/06/21/pihole_api/</id>
     <published>2018-06-21T05:13:25.000Z</published>
-    <updated>2021-09-22T02:25:07.841Z</updated>
+    <updated>2022-07-01T19:14:06.304Z</updated>
     
     
     <summary type="html">&lt;p&gt;I couldn’t find any quick references about accessing the Pihole API so I created this page.&lt;/p&gt;
@@ -1082,12 +1100,12 @@
     <link href="https://chrisbergeron.com/2018/06/11/nzbget_elasticsearch_script/"/>
     <id>https://chrisbergeron.com/2018/06/11/nzbget_elasticsearch_script/</id>
     <published>2018-06-11T23:11:00.000Z</published>
-    <updated>2021-08-17T02:57:28.491Z</updated>
+    <updated>2021-08-17T02:57:28.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;I wrote a simple plugin for NZBGet that inserts download history into an ElasticSearch cluster (or node).  It uses API calls rather than parsing filesystem logs.  I wanted a quick way to just insert the data so I created this script.&lt;/p&gt;
 &lt;p&gt;Simply copy the &lt;code&gt;ESLog.py&lt;/code&gt; script into your NZBGet/scripts directory.  In NZBGet, select settings and set the hostname of your ElasticSearch instance.&lt;/p&gt;
-&lt;p&gt;You can download the plugin on &lt;a href=&quot;https://github.com/chrisbergeron/nzbget-elasticsearch&quot;&gt;github&lt;/a&gt;&lt;br&gt;</summary>
+&lt;p&gt;You can download the plugin on &lt;a href=&quot;https://github.com/chrisbergeron/nzbget-elasticsearch&quot;&gt;github&lt;/a&gt;&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1107,7 +1125,7 @@
     <link href="https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/"/>
     <id>https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</id>
     <published>2018-06-08T23:13:25.000Z</published>
-    <updated>2021-09-11T22:37:21.720Z</updated>
+    <updated>2022-07-01T19:14:06.301Z</updated>
     
     
     <summary type="html">&lt;p&gt;Ansible is a great tool for configuration management but because of the way it’s designed a common complaint is that it’s not as fast as other tools like Salt, Chef or Puppet.  This is because Ansible doesn’t have an agent that listens (although it can) on a host and uses a different type of deployment methodology that is based on SSH.  This post isn’t about the pros and cons of each tool, but rather about ways to improve upon Ansible’s default configuration values.  By default Ansible ships with very conservative default values.  This is smart in my opinion because it offers greater compatibility out-of-the-box.  Here I highlight some safe adjustments that can be made to the default configuration for improved performance (speed!)&lt;/p&gt;
@@ -1129,13 +1147,13 @@
     <link href="https://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/"/>
     <id>https://chrisbergeron.com/2018/06/04/pfsense_4g_lte_cellular_modem_wan_backup/</id>
     <published>2018-06-04T22:19:00.000Z</published>
-    <updated>2021-05-02T04:47:57.525Z</updated>
+    <updated>2021-05-02T04:47:57.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;Using pfsense for WAN Redundancy with Cellular LTE/4G&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;I work from home a lot and I need reliable internet connectivity to workplace.  As a result, I decided to implement a failover WAN connection into my firewall.  I use &lt;a href=&quot;https://pfsense.org&quot;&gt;pfSense&lt;/a&gt; as my firewall which combines power and flexibility with ease of configuration.&lt;/p&gt;
 &lt;h2 id=&quot;The-Hardware-NetGear-LB2120-LTE-Modem&quot;&gt;&lt;a href=&quot;#The-Hardware-NetGear-LB2120-LTE-Modem&quot; class=&quot;headerlink&quot; title=&quot;The Hardware: NetGear LB2120 LTE Modem&quot;&gt;&lt;/a&gt;The Hardware: NetGear LB2120 LTE Modem&lt;/h2&gt;&lt;p&gt;While researching options, I decided on the Netgear LB2120 4G LTE modem since it has Gigabit port(s) and can be used with external antennae.  &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/netgear-lb2120-modem.jpg&quot; width=&quot;600&quot; alt=&quot;Netgear LB2120&quot;&gt;&lt;br&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;/images/netgear-lb2120-modem.jpg&quot; width=&quot;600&quot; alt=&quot;Netgear LB2120&quot;&gt;&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1157,13 +1175,13 @@
     <link href="https://chrisbergeron.com/2018/05/04/diy_dynamic_dns_digital_ocean/"/>
     <id>https://chrisbergeron.com/2018/05/04/diy_dynamic_dns_digital_ocean/</id>
     <published>2018-05-04T05:06:25.000Z</published>
-    <updated>2021-05-02T05:14:28.873Z</updated>
+    <updated>2021-05-02T05:14:28.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;This is a quick tutorial about setting up a simple shell script that runs periodically to update a DNS record on the internet with the IP address of your network.  If you’ve ever wanted to have &lt;code&gt;myhome.mydomain.com&lt;/code&gt; always updated with your home IP address, this is one way you can do it.  There are paid and free services that offer this functionality, but I choose to use this method because it gives me ultimate flexibility over my domain.&lt;br&gt;This tutorial assumes you have your own Top Level Domain (TLD) and that you’ve configured it to use Digital Ocean as the authoritative DNS for it. Here, I’ll use “example.com” as the top level domain.&lt;/p&gt;
 &lt;h2 id=&quot;Generate-a-Personal-Access-Token&quot;&gt;&lt;a href=&quot;#Generate-a-Personal-Access-Token&quot; class=&quot;headerlink&quot; title=&quot;Generate a Personal Access Token&quot;&gt;&lt;/a&gt;Generate a Personal Access Token&lt;/h2&gt;&lt;p&gt;Log in to Digital Ocean and click on &lt;code&gt;API&lt;/code&gt; from the top Menu.  Click the &lt;code&gt;Generate New Token&lt;/code&gt; button and give it a name.  The name is not parsed, it’s just for your own reference.  I like to give it something descriptive to my application.  For this example, I’ll use &lt;code&gt;MyDNS&lt;/code&gt;.  Be sure to check the box next to &lt;code&gt;Write&lt;/code&gt; so we can update the records using this API Key.&lt;/p&gt;
 &lt;p&gt;Once you have the API Key, save it somewhere for reference.  It’s one of the 3 variables we’ll need to update in the update_do_dns.sh script.&lt;/p&gt;
-&lt;p&gt;The API Key will look something like this:&lt;br&gt;&lt;code&gt;fe3aeda96b7wer8wer1e6bb5erae528sdf3a6120dfrf7e492bwer6343fsdf&lt;/code&gt;&lt;br&gt;</summary>
+&lt;p&gt;The API Key will look something like this:&lt;br&gt;&lt;code&gt;fe3aeda96b7wer8wer1e6bb5erae528sdf3a6120dfrf7e492bwer6343fsdf&lt;/code&gt;&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1185,10 +1203,10 @@
     <link href="https://chrisbergeron.com/2018/02/19/quieting_dell_r710/"/>
     <id>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</id>
     <published>2018-02-19T20:10:25.000Z</published>
-    <updated>2021-05-02T04:48:11.618Z</updated>
+    <updated>2023-04-01T13:10:48.049Z</updated>
     
     
-    <summary type="html">&lt;p&gt;I have a Dell R710 rev. II that I use in my home office lab (homelab) running ESXi 6.5.  The R710 sits in my office where we work from home.  Normally the hum of the R710 fans isn’t terribly bothersome - the 5 fans it houses run at around 3,800 RPM each.  The noise is definitely noticeable so I did a little bit of digging into ways I could quiet it down.  After looking into replacing the fans with quieter ones I found that I could override the system control of the fans and silence them that way.  While I have to monitor the onboard temperatures more closely when disabled, I’ve found little downside to doing so when I’m in there.  Here’s how to do it:&lt;/p&gt;
+    <summary type="html">&lt;p&gt;I have a Dell R710 rev. II that I use in my home office lab &lt;a href=&quot;https://chrisbergeron.com/categories/homelab/&quot;&gt;homelab&lt;/a&gt; running ESXi 6.5.  The R710 sits in my office where we work from home.  Normally the hum of the R710 fans isn’t terribly bothersome - the 5 fans it houses run at around 3,800 RPM each.  The noise is definitely noticeable so I did a little bit of digging into ways I could quiet it down.  After looking into replacing the fans with quieter ones I found that I could override the system control of the fans and silence them that way.  While I have to monitor the onboard temperatures more closely when disabled, I’ve found little downside to doing so when I’m in there.  Here’s how to do it:&lt;/p&gt;
 &lt;p&gt;The commands used below assume default username / password of root / calvin.  Hopefully you’ve changed the default password so substitute yours where applicable.&lt;/p&gt;</summary>
     
     
@@ -1209,7 +1227,7 @@
     <link href="https://chrisbergeron.com/2017/12/29/pihole_update_dns/"/>
     <id>https://chrisbergeron.com/2017/12/29/pihole_update_dns/</id>
     <published>2017-12-29T14:46:25.000Z</published>
-    <updated>2021-09-22T02:25:47.607Z</updated>
+    <updated>2022-07-01T19:14:06.304Z</updated>
     
     
     <summary type="html">&lt;p&gt;I wrote a very simple little playbook for updating my local DNS records for my piholes.  For me it’s easier than manually sshing onto each node and editing a file and restarting the service.  Here’s the playbook:&lt;br&gt;&lt;/p&gt;</summary>
@@ -1234,7 +1252,7 @@
     <link href="https://chrisbergeron.com/2017/12/28/pihole_dashboard/"/>
     <id>https://chrisbergeron.com/2017/12/28/pihole_dashboard/</id>
     <published>2017-12-28T21:50:00.000Z</published>
-    <updated>2021-09-22T02:25:32.015Z</updated>
+    <updated>2022-07-01T19:14:06.304Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Pihole-Grafana-InfluxDB-Dashboard&quot;&gt;&lt;a href=&quot;#Pihole-Grafana-InfluxDB-Dashboard&quot; class=&quot;headerlink&quot; title=&quot;Pihole + Grafana + InfluxDB Dashboard&quot;&gt;&lt;/a&gt;Pihole + Grafana + InfluxDB Dashboard&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/pihole_dashboard.png&quot; alt=&quot;Grafana Dashboard&quot;&gt;&lt;br&gt;I wanted to add the metrics from my ad-blocker, the great &lt;a href=&quot;https://pi-hole.net&quot;&gt;Pihole&lt;/a&gt; to my executive dashboard.  To create the dashboard I used &lt;a href=&quot;https://grafana.com/&quot;&gt;Grafana&lt;/a&gt; to display the graphs and &lt;a href=&quot;https://www.influxdata.com/&quot;&gt;InfluxDB&lt;/a&gt; a the time-series backend database.  I use a simple python script to get the metrics from pihole and record them in influxdb.&lt;br&gt;Grafana makes it easy to render them into a user friendly dashboard.&lt;/p&gt;
@@ -1259,12 +1277,12 @@
     <link href="https://chrisbergeron.com/2017/12/14/howtheyvoted/"/>
     <id>https://chrisbergeron.com/2017/12/14/howtheyvoted/</id>
     <published>2017-12-14T21:56:00.000Z</published>
-    <updated>2021-05-02T05:46:03.204Z</updated>
+    <updated>2021-05-02T05:46:03.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;This is a list of how US Representatives voted on Net Neutrality in 2018:&lt;br&gt;Credit to reddit user &lt;a href=&quot;https://www.reddit.com/user/truefalseequivalence&quot;&gt;truefalseequivalence&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Senate-Vote-for-Net-Neutrality&quot;&gt;&lt;a href=&quot;#Senate-Vote-for-Net-Neutrality&quot; class=&quot;headerlink&quot; title=&quot;Senate Vote for Net Neutrality&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.govtrack.us/congress/votes/112-2011/s200&quot;&gt;Senate Vote for Net Neutrality&lt;/a&gt;&lt;/h3&gt;</summary>
+&lt;p&gt;&lt;/p&gt;&lt;center&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Senate-Vote-for-Net-Neutrality&quot;&gt;&lt;a href=&quot;#Senate-Vote-for-Net-Neutrality&quot; class=&quot;headerlink&quot; title=&quot;Senate Vote for Net Neutrality&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.govtrack.us/congress/votes/112-2011/s200&quot;&gt;Senate Vote for Net Neutrality&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;</summary>
     
     
     
@@ -1285,8 +1303,8 @@
     <updated>2018-10-28T21:31:00.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;p&gt;Since Alexa for Car is becoming available on Dec. 5th, 2018,  I thought I would throw some pictures up of my Alexa installation before it was productized.  It was novel at the time.  I used a Verizon LTE Jetpack for cellular connectivity.  I simply feed the audio into the Auxillary port in the car and tether wirelessly to the LTE modem. This is far from a noteworth project, it’s just something I did for fun and proof of concept.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1540749280/icons/IMG_2293_unmqcz.jpg&quot; alt=&quot;Perfect fit&quot;&gt;&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;/p&gt;&lt;p&gt;Since Alexa for Car is becoming available on Dec. 5th, 2018,  I thought I would throw some pictures up of my Alexa installation before it was productized.  It was novel at the time.  I used a Verizon LTE Jetpack for cellular connectivity.  I simply feed the audio into the Auxillary port in the car and tether wirelessly to the LTE modem. This is far from a noteworth project, it’s just something I did for fun and proof of concept.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/cyberge/image/upload/v1540749280/icons/IMG_2293_unmqcz.jpg&quot; alt=&quot;Perfect fit&quot;&gt;&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1304,11 +1322,11 @@
     <link href="https://chrisbergeron.com/2017/10/29/high_performance_nzbget/"/>
     <id>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/</id>
     <published>2017-10-30T01:53:25.000Z</published>
-    <updated>2021-05-02T05:39:17.248Z</updated>
+    <updated>2021-05-02T05:39:17.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;I’m limited to about 80MB/s on downloads on my VPC at &lt;a href=&quot;https://m.do.co/c/efe82c337904&quot;&gt;Digital Ocean&lt;/a&gt;, but I run &lt;a href=&quot;https://nzbget.net/&quot;&gt;Nzbget&lt;/a&gt; for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted to see if I could parallelize this and download multiple files at the same.  I use Sonarr for searching usenet for freely distributable training videos which then sends them to NZBget for downloading.  Since Sonarr can send multiple files to nzbget which get queued up, I figured I can reduce the queue by downloading them at the same time.&lt;/p&gt;
-&lt;p&gt;Using &lt;a href=&quot;https://www.ansible.com&quot;&gt;Ansible&lt;/a&gt; and &lt;a href=&quot;https://terraform.io&quot;&gt;Terraform&lt;/a&gt; (devops automation tools), I can spin up VPC on demand, provision them, configure them as nzbget download nodes and then destroy the instances when complete.&lt;br&gt;</summary>
+&lt;p&gt;Using &lt;a href=&quot;https://www.ansible.com&quot;&gt;Ansible&lt;/a&gt; and &lt;a href=&quot;https://terraform.io&quot;&gt;Terraform&lt;/a&gt; (devops automation tools), I can spin up VPC on demand, provision them, configure them as nzbget download nodes and then destroy the instances when complete.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1316,6 +1334,8 @@
     
     
     <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
+    <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
     
     <category term="ansible" scheme="https://chrisbergeron.com/tags/ansible/"/>
     
@@ -1327,8 +1347,6 @@
     
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
     
-    <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
-    
   </entry>
   
   <entry>
@@ -1336,7 +1354,7 @@
     <link href="https://chrisbergeron.com/2017/10/08/showterm/"/>
     <id>https://chrisbergeron.com/2017/10/08/showterm/</id>
     <published>2017-10-08T20:39:00.000Z</published>
-    <updated>2021-05-02T05:03:45.553Z</updated>
+    <updated>2021-05-02T05:03:45.000Z</updated>
     
     
       
@@ -1361,12 +1379,12 @@
     <link href="https://chrisbergeron.com/2017/10/08/grafana_dashboard/"/>
     <id>https://chrisbergeron.com/2017/10/08/grafana_dashboard/</id>
     <published>2017-10-08T17:19:00.000Z</published>
-    <updated>2021-05-02T04:59:13.747Z</updated>
+    <updated>2021-05-02T04:59:13.000Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;Grafana-InfluxDB-scripts-Awesome&quot;&gt;&lt;a href=&quot;#Grafana-InfluxDB-scripts-Awesome&quot; class=&quot;headerlink&quot; title=&quot;Grafana + InfluxDB + scripts = Awesome&quot;&gt;&lt;/a&gt;Grafana + InfluxDB + scripts = Awesome&lt;/h3&gt;&lt;p&gt;I have many interests and some of them have metrics that are useful or fun to watch.  For example, I have investment in Bitcoin so it’s nice to be able to keep an eye on it periodically.&lt;br&gt;I decided to create a graphical “at a glance” dashboard for myself.  I chose Grafana as the user interface / front end and InfluxDB a the time-series backend database to store the metrics.  I use various scripts and applets to populate the data into Influx and Grafana makes it easy to&lt;br&gt;render them into a user friendly dashboard.&lt;/p&gt;
 &lt;p&gt;Some of the metrics I monitor are &lt;a href=&quot;https://pi-hole.net&quot;&gt;Pihole&lt;/a&gt; stats, the price of bitcoin, how many IPs get banned from my webservers and my network throughput.&lt;/p&gt;
-&lt;h3 id=&quot;Here’s-my-dashboard&quot;&gt;&lt;a href=&quot;#Here’s-my-dashboard&quot; class=&quot;headerlink&quot; title=&quot;Here’s my dashboard:&quot;&gt;&lt;/a&gt;Here’s my dashboard:&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/images/grafana_dashboard1.png&quot; alt=&quot;Grafana Dashboard&quot;&gt;&lt;br&gt;</summary>
+&lt;h3 id=&quot;Here’s-my-dashboard&quot;&gt;&lt;a href=&quot;#Here’s-my-dashboard&quot; class=&quot;headerlink&quot; title=&quot;Here’s my dashboard:&quot;&gt;&lt;/a&gt;Here’s my dashboard:&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/images/grafana_dashboard1.png&quot; alt=&quot;Grafana Dashboard&quot;&gt;&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1384,12 +1402,12 @@
     <link href="https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/"/>
     <id>https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/</id>
     <published>2017-10-08T16:46:25.000Z</published>
-    <updated>2021-05-02T05:38:39.793Z</updated>
+    <updated>2021-05-02T05:38:39.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;I’m limited to about 40MB/s on downloads on my VPC at Digital Ocean, but I run &lt;a href=&quot;https://sabnzbd.org/&quot;&gt;Sabnzbd&lt;/a&gt; for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted to see if I could parallelize this and download multiple files at the same.  I use Sonarr for searching usenet for freely distributable training videos which then sends them to SABnzbd for downloading.  Since Sonarr can send multiple files to sabnzbd which get queued up, I figured I can reduce the queue by downloading them at the same time.&lt;/p&gt;
 &lt;p&gt;Using Ansible and Terraform (devops automation tools), I can spin up VPC on demand, provision them, configure them as sabnzbd download nodes and then destroy the instances when complete.&lt;/p&gt;
-&lt;p&gt;The instances all run the same sabnzbd config and the instances use haproxy for round-robin distribution.  I will probably change this to &lt;a href=&quot;https://www.consul.io/&quot;&gt;Consul&lt;/a&gt;, but I just wanted something quick so I used a basic haproxy config.&lt;br&gt;</summary>
+&lt;p&gt;The instances all run the same sabnzbd config and the instances use haproxy for round-robin distribution.  I will probably change this to &lt;a href=&quot;https://www.consul.io/&quot;&gt;Consul&lt;/a&gt;, but I just wanted something quick so I used a basic haproxy config.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1421,10 +1439,10 @@
     <link href="https://chrisbergeron.com/2017/10/07/sysinfo/"/>
     <id>https://chrisbergeron.com/2017/10/07/sysinfo/</id>
     <published>2017-10-08T00:46:25.000Z</published>
-    <updated>2021-08-03T19:13:51.713Z</updated>
+    <updated>2021-08-03T19:13:51.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;I put together a quick bash shell script to view system info at a glance.  I know there are existing tools for this like &lt;a href=&quot;https://smxi.org/docs/inxi.htm&quot;&gt;inxi&lt;/a&gt;, but I wanted to put something together I can copypasta.  This is specific to RHEL, Centos and Sci Linux but it can be easily adapted for other distros.&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;I put together a quick bash shell script to view system info at a glance.  I know there are existing tools for this like &lt;a href=&quot;https://smxi.org/docs/inxi.htm&quot;&gt;inxi&lt;/a&gt;, but I wanted to put something together I can copypasta.  This is specific to RHEL, Centos and Sci Linux but it can be easily adapted for other distros.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1440,7 +1458,7 @@
     <link href="https://chrisbergeron.com/2017/10/07/inxi/"/>
     <id>https://chrisbergeron.com/2017/10/07/inxi/</id>
     <published>2017-10-07T18:46:25.000Z</published>
-    <updated>2021-05-02T05:07:51.016Z</updated>
+    <updated>2021-05-02T05:07:51.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Inxi&quot;&gt;&lt;a href=&quot;#Inxi&quot; class=&quot;headerlink&quot; title=&quot;Inxi&quot;&gt;&lt;/a&gt;Inxi&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://smxi.org/docs/inxi.htm&quot;&gt;inxi&lt;/a&gt; is a super handy system info utility.  These days I typically work with ephemeral instances / microservers, so I just dispose of infrastructure that flakes out.  Occassionally I’ll need to see what’s up with a box so I’ve put together some common invocations of inxi below for reference:&lt;/p&gt;
@@ -1462,10 +1480,10 @@
     <link href="https://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/"/>
     <id>https://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</id>
     <published>2017-10-07T16:46:25.000Z</published>
-    <updated>2021-05-02T04:46:16.691Z</updated>
+    <updated>2021-05-02T04:46:16.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt; is a simple, lightweight node blog framework. It didn’t include a SystemD Unit file, so I created one:&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt; is a simple, lightweight node blog framework. It didn’t include a SystemD Unit file, so I created one:&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1483,21 +1501,21 @@
     <link href="https://chrisbergeron.com/2017/10/06/comma_panda/"/>
     <id>https://chrisbergeron.com/2017/10/06/comma_panda/</id>
     <published>2017-10-07T00:46:25.000Z</published>
-    <updated>2021-05-02T05:11:12.389Z</updated>
+    <updated>2021-05-02T05:11:12.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;Comma is shipping the &lt;a href=&quot;https://comma.ai&quot;&gt;Panda&lt;/a&gt; interface again.  I received mine last week.  It’s a wifi enabled OBDII interface.  The Panda is more than just a reader though.  It decodes and enables writing to the Media canbus.  It’s going to make for some fun projects.  Using &lt;a href=&quot;https://community.comma.ai/cabana/?demo=1&quot;&gt;Cabana&lt;/a&gt; I should be able to create a Database file of the Kia Optima’s CANbus protocol.&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;Comma is shipping the &lt;a href=&quot;https://comma.ai&quot;&gt;Panda&lt;/a&gt; interface again.  I received mine last week.  It’s a wifi enabled OBDII interface.  The Panda is more than just a reader though.  It decodes and enables writing to the Media canbus.  It’s going to make for some fun projects.  Using &lt;a href=&quot;https://community.comma.ai/cabana/?demo=1&quot;&gt;Cabana&lt;/a&gt; I should be able to create a Database file of the Kia Optima’s CANbus protocol.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
     <category term="Telematics" scheme="https://chrisbergeron.com/categories/Telematics/"/>
     
     
+    <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
+    
     <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
     
     <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
-    
-    <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
@@ -1510,10 +1528,10 @@
     <link href="https://chrisbergeron.com/2014/07/04/Upgrading-Honda-Insight-IMA-Battery/"/>
     <id>https://chrisbergeron.com/2014/07/04/Upgrading-Honda-Insight-IMA-Battery/</id>
     <published>2014-07-04T18:53:42.000Z</published>
-    <updated>2021-09-10T23:43:17.621Z</updated>
+    <updated>2022-07-01T19:14:06.156Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2014/07/04/Upgrading-Honda-Insight-IMA-Battery/Upgrading-Honda-Insight-IMA-Battery-6-small.png&quot; alt=&quot;Honda Insight MIMA battery 144v DC&quot; title=&quot;Photo of a 2000 Honda Insight MIMA battery.&quot;&gt;&lt;br&gt;A few months ago while driving my commuter car - a 2000 Honda Insight, I received the &lt;em&gt;dreaded&lt;/em&gt; &lt;strong&gt;IMA&lt;/strong&gt; light.  For those that don’t drive this car, the IMA light indicates that the main hybrid vehicle battery is failing at capacity.  In Georgia, this light means you will not pass State emissions which is a requirement.  Additionally, you lose a tremendous amount of power, which is kind of the point of the electric motor.&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2014/07/04/Upgrading-Honda-Insight-IMA-Battery/Upgrading-Honda-Insight-IMA-Battery-6-small.png&quot; alt=&quot;Honda Insight MIMA battery 144v DC&quot; title=&quot;Photo of a 2000 Honda Insight MIMA battery.&quot;&gt;&lt;br&gt;A few months ago while driving my commuter car - a 2000 Honda Insight, I received the &lt;em&gt;dreaded&lt;/em&gt; &lt;strong&gt;IMA&lt;/strong&gt; light.  For those that don’t drive this car, the IMA light indicates that the main hybrid vehicle battery is failing at capacity.  In Georgia, this light means you will not pass State emissions which is a requirement.  Additionally, you lose a tremendous amount of power, which is kind of the point of the electric motor.&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -1539,7 +1557,7 @@
     <link href="https://chrisbergeron.com/2011/09/13/DIY-Homemade-Bed/"/>
     <id>https://chrisbergeron.com/2011/09/13/DIY-Homemade-Bed/</id>
     <published>2011-09-13T16:59:11.000Z</published>
-    <updated>2021-09-13T19:50:24.107Z</updated>
+    <updated>2022-07-01T19:14:04.879Z</updated>
     
     
     <summary type="html">&lt;p&gt;Yep. I made my bed.  Well I make my bed every day, but over a weekend I built my master bed.  It’s a very simple design.&lt;/p&gt;</summary>
@@ -1560,7 +1578,7 @@
     <link href="https://chrisbergeron.com/2009/09/13/Hacking-an-Overhead-Projector/"/>
     <id>https://chrisbergeron.com/2009/09/13/Hacking-an-Overhead-Projector/</id>
     <published>2009-09-13T16:21:42.000Z</published>
-    <updated>2021-09-13T16:49:46.952Z</updated>
+    <updated>2022-07-01T19:14:05.223Z</updated>
     
     
     <summary type="html">&lt;p&gt;I found an overhead projector at my local thrift store and decided to make a project out of it.&lt;/p&gt;
@@ -1582,7 +1600,7 @@
     <link href="https://chrisbergeron.com/2008/08/24/homebrew_generator/"/>
     <id>https://chrisbergeron.com/2008/08/24/homebrew_generator/</id>
     <published>2008-08-24T18:00:30.000Z</published>
-    <updated>2022-02-25T21:28:45.227Z</updated>
+    <updated>2023-04-01T13:10:48.046Z</updated>
     
     
       
@@ -1609,7 +1627,7 @@
     <link href="https://chrisbergeron.com/2008/01/21/metalcasting_furnace/"/>
     <id>https://chrisbergeron.com/2008/01/21/metalcasting_furnace/</id>
     <published>2008-01-21T23:52:00.000Z</published>
-    <updated>2021-09-13T20:25:13.711Z</updated>
+    <updated>2022-07-01T19:14:06.303Z</updated>
     
     
     <summary type="html">&lt;p&gt;On this page I highlight how I built my metal casting furnace.  It’s a propane furnace capable of melting metals at up to 1,300 degrees F (°F).  There are 2 major assemblies:  The furnace housing and the burner.  The housing is composed of a combination of fireclay, sand and cement; equally mixed in thirds.&lt;/p&gt;
@@ -1633,7 +1651,7 @@
     <link href="https://chrisbergeron.com/2008/01/20/interviewed_for_release_2.0_magazine/"/>
     <id>https://chrisbergeron.com/2008/01/20/interviewed_for_release_2.0_magazine/</id>
     <published>2008-01-20T23:53:00.000Z</published>
-    <updated>2021-08-07T06:52:42.085Z</updated>
+    <updated>2021-08-07T06:52:42.000Z</updated>
     
     
       
@@ -1651,9 +1669,9 @@
     
     <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
-    <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
-    
     <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
+    <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
     <category term="interview" scheme="https://chrisbergeron.com/tags/interview/"/>
     
@@ -1664,19 +1682,19 @@
     <link href="https://chrisbergeron.com/2007/08/07/ethanol_still/"/>
     <id>https://chrisbergeron.com/2007/08/07/ethanol_still/</id>
     <published>2007-08-08T00:46:25.000Z</published>
-    <updated>2021-05-02T05:30:10.134Z</updated>
+    <updated>2021-05-02T05:30:10.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;A few years ago, when gas prices were exorbitant, I started to build my own Ethanol Still. In light of the global energy crisis, I figured that being able to produce my own fuel was a useful endeavor. Creating ethanol fuel requires distilling corn (or other vegetables/fruits) and extracting its potential liquid energy. I did some research on the web and discovered the &lt;a href=&quot;http://running_on_alcohol.tripod.com/id2.html&quot;&gt;Charles 803&lt;/a&gt;.&lt;br&gt;I bought plans and began building the still. I’ve put this project on hold for now but perhaps one day I’ll complete it. Until then, here are some pictures of the project:&lt;br&gt;</summary>
+    <summary type="html">&lt;p&gt;A few years ago, when gas prices were exorbitant, I started to build my own Ethanol Still. In light of the global energy crisis, I figured that being able to produce my own fuel was a useful endeavor. Creating ethanol fuel requires distilling corn (or other vegetables/fruits) and extracting its potential liquid energy. I did some research on the web and discovered the &lt;a href=&quot;http://running_on_alcohol.tripod.com/id2.html&quot;&gt;Charles 803&lt;/a&gt;.&lt;br&gt;I bought plans and began building the still. I’ve put this project on hold for now but perhaps one day I’ll complete it. Until then, here are some pictures of the project:&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
     <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
     
     
-    <category term="alternate energy" scheme="https://chrisbergeron.com/tags/alternate-energy/"/>
-    
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+    <category term="alternate energy" scheme="https://chrisbergeron.com/tags/alternate-energy/"/>
     
     <category term="ethanol" scheme="https://chrisbergeron.com/tags/ethanol/"/>
     
@@ -1689,7 +1707,7 @@
     <link href="https://chrisbergeron.com/2007/07/17/aspire_free_car/"/>
     <id>https://chrisbergeron.com/2007/07/17/aspire_free_car/</id>
     <published>2007-07-17T18:46:25.000Z</published>
-    <updated>2021-09-11T22:37:28.729Z</updated>
+    <updated>2022-07-01T19:14:06.301Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;The-stage-is-set&quot;&gt;&lt;a href=&quot;#The-stage-is-set&quot; class=&quot;headerlink&quot; title=&quot;The stage is set:&quot;&gt;&lt;/a&gt;The stage is set:&lt;/h2&gt;&lt;p&gt;I drive my VW Jetta exactly 50 miles a day to and from work. When gas prices started going up in the Summer of 2006, I decided to figure out exactly how much fuel was costing me &lt;em&gt;each workday&lt;/em&gt;.  So, one morning on the way to work, I stopped at the gas station nearest my home. I filled my tank and reset my trip counter to zero. I recorded the price per gallon ($3 something a gallon!). Then, I drove directly to work, worked, and drove back to the same gas station. I pulled up to the same pump I filled up at that morning. I took note of how many miles I had driven, and sure enough it read almost exactly 50 miles. Next, I refilled my gas tank. It cost me $7. &lt;strong&gt;&lt;em&gt;I had burned $7 dollars worth of fuel just going to work and back!&lt;/em&gt;&lt;/strong&gt; That came as quite a shock. I knew gas prices were high, but I never thought that I was spending that much each day. $3 a Gallon?!? Somethings gotta give! After doing some homework on the web (fueleconomy.gov), et al., I decided to buy a much more fuel efficient car (and a soon to be FREE CAR).&lt;br&gt;&lt;/p&gt;</summary>
@@ -1699,11 +1717,11 @@
     <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
     
     
+    <category term="car" scheme="https://chrisbergeron.com/tags/car/"/>
+    
     <category term="hypermiling" scheme="https://chrisbergeron.com/tags/hypermiling/"/>
     
     <category term="aspire" scheme="https://chrisbergeron.com/tags/aspire/"/>
-    
-    <category term="car" scheme="https://chrisbergeron.com/tags/car/"/>
     
     <category term="alternate energy" scheme="https://chrisbergeron.com/tags/alternate-energy/"/>
     
@@ -1714,7 +1732,7 @@
     <link href="https://chrisbergeron.com/2007/07/11/dashpc_carputer/"/>
     <id>https://chrisbergeron.com/2007/07/11/dashpc_carputer/</id>
     <published>2007-07-12T00:11:00.000Z</published>
-    <updated>2021-05-02T05:31:45.725Z</updated>
+    <updated>2021-05-02T05:31:45.000Z</updated>
     
     
       
@@ -1730,13 +1748,13 @@
     <category term="Telematics" scheme="https://chrisbergeron.com/categories/Telematics/"/>
     
     
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
@@ -1747,7 +1765,7 @@
     <link href="https://chrisbergeron.com/2005/05/18/dashboard_linux/"/>
     <id>https://chrisbergeron.com/2005/05/18/dashboard_linux/</id>
     <published>2005-05-18T18:11:00.000Z</published>
-    <updated>2021-09-11T22:37:46.904Z</updated>
+    <updated>2022-07-01T19:14:06.303Z</updated>
     
     
       
@@ -1763,17 +1781,17 @@
     <category term="Telematics" scheme="https://chrisbergeron.com/categories/Telematics/"/>
     
     
+    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
-    <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
-    
-    <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
     
   </entry>
   
@@ -1782,7 +1800,7 @@
     <link href="https://chrisbergeron.com/2004/09/13/DashPC-Startup-and-Shutdown-Controller/"/>
     <id>https://chrisbergeron.com/2004/09/13/DashPC-Startup-and-Shutdown-Controller/</id>
     <published>2004-09-13T20:15:01.000Z</published>
-    <updated>2021-09-13T20:36:38.748Z</updated>
+    <updated>2022-07-01T19:14:05.164Z</updated>
     
     
     <summary type="html">&lt;p&gt;This is an electronic circuit that I designed, built and brought to market.  This page is here for posterity.  The contents are from the original product page.&lt;/p&gt;
@@ -1795,9 +1813,9 @@
     
     <category term="electronics" scheme="https://chrisbergeron.com/tags/electronics/"/>
     
-    <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
-    
     <category term="dashwerks" scheme="https://chrisbergeron.com/tags/dashwerks/"/>
+    
+    <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
     <category term="dssc" scheme="https://chrisbergeron.com/tags/dssc/"/>
     
@@ -1808,7 +1826,7 @@
     <link href="https://chrisbergeron.com/2001/01/01/about/"/>
     <id>https://chrisbergeron.com/2001/01/01/about/</id>
     <published>2001-01-01T22:45:21.000Z</published>
-    <updated>2021-09-13T02:44:52.762Z</updated>
+    <updated>2022-07-01T19:14:06.300Z</updated>
     
     
       
