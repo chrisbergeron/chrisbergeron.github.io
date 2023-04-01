@@ -15,8 +15,35 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Sat, 01 Apr 2023 02:57:08 GMT</pubDate>
+    <pubDate>Sat, 01 Apr 2023 19:39:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Dynamic SSH ports with Hashicorp Vault TOTP</title>
+      <link>https://chrisbergeron.com/2023/04/01/Dynamic-SSH-ports-with-Hashicorp-Vault-TOTP/</link>
+      <guid>https://chrisbergeron.com/2023/04/01/Dynamic-SSH-ports-with-Hashicorp-Vault-TOTP/</guid>
+      <pubDate>Sat, 01 Apr 2023 13:33:12 GMT</pubDate>
+      
+      <description>&lt;p&gt;In this post I’m demonstrating how you could use Hashicorp’s Vault TOTP generator and an authenticator to connect to a dynamic ssh port.  This is mostly a proof of concept and not a production grade solution, so use at your own risk.&lt;/p&gt;
+&lt;p&gt;What’s TOTP?  It’s a Time-based One Time Password.  TBOTP is probably too ugly of an acronym to have gained widespread use.  I don’t know, I didn’t coin it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;¯\_(ツ)_/¯&lt;/strong&gt;&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
+      
+      
+      <category domain="https://chrisbergeron.com/tags/vault/">vault</category>
+      
+      <category domain="https://chrisbergeron.com/tags/totp/">totp</category>
+      
+      <category domain="https://chrisbergeron.com/tags/ssh/">ssh</category>
+      
+      
+      <comments>https://chrisbergeron.com/2023/04/01/Dynamic-SSH-ports-with-Hashicorp-Vault-TOTP/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title></title>
