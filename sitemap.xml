@@ -2,30 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://chrisbergeron.com/2023/04/01/Dynamic-SSH-ports-with-Hashicorp-Vault-TOTP/</loc>
+    <loc>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</loc>
     
-    <lastmod>2023-04-01T19:39:49.604Z</lastmod>
+    <lastmod>2023-04-01T20:35:07.180Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2023/04/01/renewing-an-80s-server-cabinet/</loc>
+    
+    <lastmod>2023-04-01T20:35:07.180Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</loc>
     
-    <lastmod>2023-04-01T16:06:29.714Z</lastmod>
+    <lastmod>2023-04-01T20:35:07.179Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/07/12/nzbget-mysql/</loc>
+    
+    <lastmod>2023-04-01T20:35:07.179Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2008/08/24/homebrew_generator/</loc>
+    
+    <lastmod>2023-04-01T20:35:07.178Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2022/01/08/Time-Tracking-with-a-Disney-Infinity-USB-NFC-Reader/</loc>
+    
+    <lastmod>2023-04-01T20:35:07.177Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://chrisbergeron.com/2022/05/29/Own-Yourself-You-Are-Your-Brand/</loc>
     
-    <lastmod>2023-04-01T16:06:29.713Z</lastmod>
+    <lastmod>2023-04-01T20:35:07.154Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</loc>
+    <loc>https://chrisbergeron.com/2021/06/13/New-CB-Brand-Logo/</loc>
     
-    <lastmod>2023-04-01T13:20:40.175Z</lastmod>
+    <lastmod>2023-04-01T20:35:07.153Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2022/01/08/Monitoring-Uptime-Status-with-Github-Actions/</loc>
+    
+    <lastmod>2023-04-01T20:35:07.150Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2022/01/08/Controlling-iRobot-Roomba-from-the-command-line/</loc>
+    
+    <lastmod>2023-04-01T20:35:07.124Z</lastmod>
     
   </url>
   
@@ -107,13 +149,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2017/12/28/pihole_dashboard/</loc>
-    
-    <lastmod>2023-04-01T02:57:08.504Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2018/10/28/plex_dashboard/</loc>
     
     <lastmod>2023-04-01T02:57:08.504Z</lastmod>
@@ -121,14 +156,14 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2017/12/29/pihole_update_dns/</loc>
+    <loc>https://chrisbergeron.com/2017/12/28/pihole_dashboard/</loc>
     
     <lastmod>2023-04-01T02:57:08.504Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2023/03/31/renewing-an-80s-server-cabinet/</loc>
+    <loc>https://chrisbergeron.com/2017/12/29/pihole_update_dns/</loc>
     
     <lastmod>2023-04-01T02:57:08.504Z</lastmod>
     
@@ -170,13 +205,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2018/07/12/nzbget-mysql/</loc>
-    
-    <lastmod>2023-04-01T02:57:08.502Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2018/06/11/nzbget_elasticsearch_script/</loc>
     
     <lastmod>2023-04-01T02:57:08.502Z</lastmod>
@@ -198,7 +226,7 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/</loc>
+    <loc>https://chrisbergeron.com/2017/12/14/howtheyvoted/</loc>
     
     <lastmod>2023-04-01T02:57:08.468Z</lastmod>
     
@@ -212,21 +240,14 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2008/08/24/homebrew_generator/</loc>
-    
-    <lastmod>2023-04-01T02:57:08.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2017/12/14/howtheyvoted/</loc>
-    
-    <lastmod>2023-04-01T02:57:08.468Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2008/01/20/interviewed_for_release_2.0_magazine/</loc>
+    
+    <lastmod>2023-04-01T02:57:08.468Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/</loc>
     
     <lastmod>2023-04-01T02:57:08.468Z</lastmod>
     
@@ -240,7 +261,7 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2018/11/10/grafana_dashboards/</loc>
+    <loc>https://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
     
     <lastmod>2023-04-01T02:57:08.467Z</lastmod>
     
@@ -254,7 +275,7 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
+    <loc>https://chrisbergeron.com/2018/11/10/grafana_dashboards/</loc>
     
     <lastmod>2023-04-01T02:57:08.467Z</lastmod>
     
@@ -264,13 +285,6 @@
     <loc>https://chrisbergeron.com/2018/05/04/diy_dynamic_dns_digital_ocean/</loc>
     
     <lastmod>2023-04-01T02:57:08.466Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2019/02/26/deluge_dashboard/</loc>
-    
-    <lastmod>2023-04-01T02:57:05.987Z</lastmod>
     
   </url>
   
@@ -289,6 +303,20 @@
   </url>
   
   <url>
+    <loc>https://chrisbergeron.com/2019/02/26/deluge_dashboard/</loc>
+    
+    <lastmod>2023-04-01T02:57:05.987Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2005/05/18/dashboard_linux/</loc>
+    
+    <lastmod>2023-04-01T02:57:05.986Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2017/10/06/comma_panda/</loc>
     
     <lastmod>2023-04-01T02:57:05.986Z</lastmod>
@@ -297,13 +325,6 @@
   
   <url>
     <loc>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</loc>
-    
-    <lastmod>2023-04-01T02:57:05.986Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2005/05/18/dashboard_linux/</loc>
     
     <lastmod>2023-04-01T02:57:05.986Z</lastmod>
     
@@ -324,14 +345,14 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2017/11/10/alexa_car/</loc>
+    <loc>https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
     
     <lastmod>2023-04-01T02:57:05.984Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
+    <loc>https://chrisbergeron.com/2017/11/10/alexa_car/</loc>
     
     <lastmod>2023-04-01T02:57:05.984Z</lastmod>
     
@@ -362,13 +383,6 @@
     <loc>https://chrisbergeron.com/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/</loc>
     
     <lastmod>2023-04-01T02:57:04.771Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2022/01/08/Time-Tracking-with-a-Disney-Infinity-USB-NFC-Reader/</loc>
-    
-    <lastmod>2023-04-01T02:57:04.767Z</lastmod>
     
   </url>
   
@@ -408,23 +422,9 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2021/06/13/New-CB-Brand-Logo/</loc>
-    
-    <lastmod>2023-04-01T02:57:03.833Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2020/12/04/My-NextRocketLaunch-MagicMirror-Module/</loc>
     
     <lastmod>2023-04-01T02:57:03.833Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2022/01/08/Monitoring-Uptime-Status-with-Github-Actions/</loc>
-    
-    <lastmod>2023-04-01T02:57:03.828Z</lastmod>
     
   </url>
   
@@ -464,14 +464,14 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</loc>
+    <loc>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</loc>
     
     <lastmod>2023-04-01T02:57:02.241Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</loc>
+    <loc>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</loc>
     
     <lastmod>2023-04-01T02:57:02.241Z</lastmod>
     
@@ -516,13 +516,6 @@
     <loc>https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/</loc>
     
     <lastmod>2023-04-01T02:57:01.388Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2022/01/08/Controlling-iRobot-Roomba-from-the-command-line/</loc>
-    
-    <lastmod>2023-04-01T02:57:01.379Z</lastmod>
     
   </url>
   

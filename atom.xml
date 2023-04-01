@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2023-04-01T19:39:49.604Z</updated>
+  <updated>2023-04-01T20:35:07.180Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -17,36 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Dynamic SSH ports with Hashicorp Vault TOTP</title>
-    <link href="https://chrisbergeron.com/2023/04/01/Dynamic-SSH-ports-with-Hashicorp-Vault-TOTP/"/>
-    <id>https://chrisbergeron.com/2023/04/01/Dynamic-SSH-ports-with-Hashicorp-Vault-TOTP/</id>
-    <published>2023-04-01T13:33:12.000Z</published>
-    <updated>2023-04-01T19:39:49.604Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;In this post I’m demonstrating how you could use Hashicorp’s Vault TOTP generator and an authenticator to connect to a dynamic ssh port.  This is mostly a proof of concept and not a production grade solution, so use at your own risk.&lt;/p&gt;
-&lt;p&gt;What’s TOTP?  It’s a Time-based One Time Password.  TBOTP is probably too ugly of an acronym to have gained widespread use.  I don’t know, I didn’t coin it.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;¯\_(ツ)_/¯&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
-    
-    
-    <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
-    
-    <category term="totp" scheme="https://chrisbergeron.com/tags/totp/"/>
-    
-    <category term="ssh" scheme="https://chrisbergeron.com/tags/ssh/"/>
-    
-  </entry>
-  
-  <entry>
     <title></title>
-    <link href="https://chrisbergeron.com/2023/03/31/renewing-an-80s-server-cabinet/"/>
-    <id>https://chrisbergeron.com/2023/03/31/renewing-an-80s-server-cabinet/</id>
-    <published>2023-04-01T02:57:08.504Z</published>
-    <updated>2023-04-01T02:57:08.504Z</updated>
+    <link href="https://chrisbergeron.com/2023/04/01/renewing-an-80s-server-cabinet/"/>
+    <id>https://chrisbergeron.com/2023/04/01/renewing-an-80s-server-cabinet/</id>
+    <published>2023-04-01T20:35:07.180Z</published>
+    <updated>2023-04-01T20:35:07.180Z</updated>
     
     
     
@@ -59,7 +34,7 @@
     <link href="https://chrisbergeron.com/2022/05/29/Own-Yourself-You-Are-Your-Brand/"/>
     <id>https://chrisbergeron.com/2022/05/29/Own-Yourself-You-Are-Your-Brand/</id>
     <published>2022-05-29T17:28:27.000Z</published>
-    <updated>2023-04-01T16:06:29.713Z</updated>
+    <updated>2023-04-01T20:35:07.154Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;What’s-in-a-Name&quot;&gt;&lt;a href=&quot;#What’s-in-a-Name&quot; class=&quot;headerlink&quot; title=&quot;What’s in a Name?&quot;&gt;&lt;/a&gt;What’s in a Name?&lt;/h2&gt;&lt;p&gt;The crux of this article centers around personal branding in the field of tech.  Whether it’s work, play or social, having an online persona has become the new normal.  Online personas have grown from bleeding-edge gamers, content creators, vloggers and bloggers - to traditional soccer moms with recipe groups.  The internet continues to connect &lt;em&gt;everyone&lt;/em&gt; and as online trust and validation become more societially valuable, so too does the way you present yourself.&lt;/p&gt;
@@ -81,7 +56,7 @@
     <link href="https://chrisbergeron.com/2022/01/08/Monitoring-Uptime-Status-with-Github-Actions/"/>
     <id>https://chrisbergeron.com/2022/01/08/Monitoring-Uptime-Status-with-Github-Actions/</id>
     <published>2022-01-08T21:40:44.000Z</published>
-    <updated>2023-04-01T02:57:03.828Z</updated>
+    <updated>2023-04-01T20:35:07.150Z</updated>
     
     
     <summary type="html">&lt;p&gt;I was searching github for some uptime monitoring apps when I stumbled across a github actions based uptime and status page.  &lt;/p&gt;
@@ -106,7 +81,7 @@
     <link href="https://chrisbergeron.com/2022/01/08/Time-Tracking-with-a-Disney-Infinity-USB-NFC-Reader/"/>
     <id>https://chrisbergeron.com/2022/01/08/Time-Tracking-with-a-Disney-Infinity-USB-NFC-Reader/</id>
     <published>2022-01-08T15:20:07.000Z</published>
-    <updated>2023-04-01T02:57:04.767Z</updated>
+    <updated>2023-04-01T20:35:07.177Z</updated>
     
     
     <summary type="html">&lt;p&gt;While browsing my local thrift store, I stumbled upon a little gadget that I decided to repurpose:&lt;/p&gt;
@@ -132,7 +107,7 @@
     <link href="https://chrisbergeron.com/2022/01/08/Controlling-iRobot-Roomba-from-the-command-line/"/>
     <id>https://chrisbergeron.com/2022/01/08/Controlling-iRobot-Roomba-from-the-command-line/</id>
     <published>2022-01-08T14:40:20.000Z</published>
-    <updated>2023-04-01T02:57:01.379Z</updated>
+    <updated>2023-04-01T20:35:07.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;If you’re a heavy command line (cli) user in Macos, Linux or WSL, you may it convenient to easily start or stop your robot from it’s cleaning cycle.  In this post I’ll you fellow keyboard jockeys how to control and even view your robot as is cleans.&lt;/p&gt;
@@ -143,17 +118,17 @@
     <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
     
     
-    <category term="magicmirror" scheme="https://chrisbergeron.com/tags/magicmirror/"/>
-    
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
-    
     <category term="irobot" scheme="https://chrisbergeron.com/tags/irobot/"/>
     
     <category term="roomba" scheme="https://chrisbergeron.com/tags/roomba/"/>
     
     <category term="cli" scheme="https://chrisbergeron.com/tags/cli/"/>
     
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
     <category term="macos" scheme="https://chrisbergeron.com/tags/macos/"/>
+    
+    <category term="magicmirror" scheme="https://chrisbergeron.com/tags/magicmirror/"/>
     
     <category term="dorita" scheme="https://chrisbergeron.com/tags/dorita/"/>
     
@@ -378,7 +353,7 @@
     <link href="https://chrisbergeron.com/2021/06/13/New-CB-Brand-Logo/"/>
     <id>https://chrisbergeron.com/2021/06/13/New-CB-Brand-Logo/</id>
     <published>2021-06-13T04:15:28.000Z</published>
-    <updated>2023-04-01T02:57:03.833Z</updated>
+    <updated>2023-04-01T20:35:07.153Z</updated>
     
     
       
@@ -443,11 +418,11 @@
     
     <category term="pi" scheme="https://chrisbergeron.com/tags/pi/"/>
     
+    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
+    
     <category term="magicmirror" scheme="https://chrisbergeron.com/tags/magicmirror/"/>
     
     <category term="raspberrypi" scheme="https://chrisbergeron.com/tags/raspberrypi/"/>
-    
-    <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
   </entry>
   
@@ -720,7 +695,7 @@
     <link href="https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/"/>
     <id>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</id>
     <published>2020-11-20T05:11:25.000Z</published>
-    <updated>2023-04-01T16:06:29.714Z</updated>
+    <updated>2023-04-01T20:35:07.179Z</updated>
     
     
     <summary type="html">&lt;p&gt;I recently purchased an &lt;a href=&quot;https://amzn.to/3ZwO1vy&quot;&gt;Mcombo 7040 Lift Chair&lt;/a&gt; for my elderly grandfather.  Prior to purchasing the chair my Grandfather had some questions so I figured I would have a look at the manual for answers.  Surprised that I couldn’t find one, I thought I’d share it here along with my thoughts about the chair.&lt;br&gt;&lt;/p&gt;</summary>
@@ -756,9 +731,9 @@
     
     <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
-    <category term="cloudinary" scheme="https://chrisbergeron.com/tags/cloudinary/"/>
-    
     <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
+    
+    <category term="cloudinary" scheme="https://chrisbergeron.com/tags/cloudinary/"/>
     
     <category term="curl" scheme="https://chrisbergeron.com/tags/curl/"/>
     
@@ -1043,7 +1018,7 @@
     <link href="https://chrisbergeron.com/2018/07/12/nzbget-mysql/"/>
     <id>https://chrisbergeron.com/2018/07/12/nzbget-mysql/</id>
     <published>2018-07-13T00:11:00.000Z</published>
-    <updated>2023-04-01T02:57:08.502Z</updated>
+    <updated>2023-04-01T20:35:07.179Z</updated>
     
     
     <summary type="html">&lt;p&gt;I wrote a simple plugin for NZBGet that inserts download history into a MySQL database.  Having my download list in a database makes operations on the data easier than groking text logs.&lt;/p&gt;
@@ -1061,9 +1036,9 @@
     
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
-    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
-    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
+    
+    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
     
     <category term="mariadb" scheme="https://chrisbergeron.com/tags/mariadb/"/>
     
@@ -1190,11 +1165,11 @@
     
     <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
-    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
-    
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
     <category term="dns" scheme="https://chrisbergeron.com/tags/dns/"/>
+    
+    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
     
   </entry>
   
@@ -1203,7 +1178,7 @@
     <link href="https://chrisbergeron.com/2018/02/19/quieting_dell_r710/"/>
     <id>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</id>
     <published>2018-02-19T20:10:25.000Z</published>
-    <updated>2023-04-01T13:20:40.175Z</updated>
+    <updated>2023-04-01T20:35:07.180Z</updated>
     
     
     <summary type="html">&lt;p&gt;I have a Dell R710 rev. II that I use in my home office lab &lt;a href=&quot;https://chrisbergeron.com/categories/homelab/&quot;&gt;homelab&lt;/a&gt; running ESXi 6.5.  The R710 sits in my office where we work from home.  Normally the hum of the R710 fans isn’t terribly bothersome - the 5 fans it houses run at around 3,800 RPM each.  The noise is definitely noticeable so I did a little bit of digging into ways I could quiet it down.  After looking into replacing the fans with quieter ones I found that I could override the system control of the fans and silence them that way.  While I have to monitor the onboard temperatures more closely when disabled, I’ve found little downside to doing so when I’m in there.  Here’s how to do it:&lt;/p&gt;
@@ -1339,11 +1314,11 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
-    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
-    
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
+    
+    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
     
     <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
     
@@ -1420,13 +1395,13 @@
     
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
-    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
-    
-    <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
-    
     <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
     
+    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
+    
     <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
+    
+    <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
     
     <category term="sonarr" scheme="https://chrisbergeron.com/tags/sonarr/"/>
     
@@ -1513,13 +1488,13 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
-    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
-    
-    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
-    
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+    <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
+    
+    <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
     
   </entry>
   
@@ -1600,7 +1575,7 @@
     <link href="https://chrisbergeron.com/2008/08/24/homebrew_generator/"/>
     <id>https://chrisbergeron.com/2008/08/24/homebrew_generator/</id>
     <published>2008-08-24T18:00:30.000Z</published>
-    <updated>2023-04-01T02:57:08.468Z</updated>
+    <updated>2023-04-01T20:35:07.178Z</updated>
     
     
       
@@ -1692,9 +1667,9 @@
     <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
     
     
-    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
     <category term="alternate energy" scheme="https://chrisbergeron.com/tags/alternate-energy/"/>
+    
+    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
     <category term="ethanol" scheme="https://chrisbergeron.com/tags/ethanol/"/>
     
@@ -1787,9 +1762,9 @@
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
-    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
     <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
+    
+    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
