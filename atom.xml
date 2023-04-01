@@ -34,7 +34,7 @@
     <link href="https://chrisbergeron.com/2022/05/29/Own-Yourself-You-Are-Your-Brand/"/>
     <id>https://chrisbergeron.com/2022/05/29/Own-Yourself-You-Are-Your-Brand/</id>
     <published>2022-05-29T17:28:27.000Z</published>
-    <updated>2022-07-01T20:14:55.284Z</updated>
+    <updated>2022-06-06T17:26:03.075Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;What’s-in-a-Name&quot;&gt;&lt;a href=&quot;#What’s-in-a-Name&quot; class=&quot;headerlink&quot; title=&quot;What’s in a Name?&quot;&gt;&lt;/a&gt;What’s in a Name?&lt;/h2&gt;&lt;p&gt;The crux of this article centers around personal branding in the field of tech.  Whether it’s work, play or social, having an online persona has become the new normal.  Online personas have grown from bleeding-edge gamers, content creators, vloggers and bloggers - to traditional soccer moms with recipe groups.  The internet continues to connect &lt;em&gt;everyone&lt;/em&gt; and as online trust and validation become more societially valuable, so too does the way you present yourself.&lt;/p&gt;
@@ -697,7 +697,7 @@
     <link href="https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/"/>
     <id>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</id>
     <published>2020-11-20T05:11:25.000Z</published>
-    <updated>2023-04-01T02:35:14.775Z</updated>
+    <updated>2023-04-01T04:20:10.733Z</updated>
     
     
     <summary type="html">&lt;p&gt;I recently purchased an &lt;a href=&quot;https://amzn.to/3ZwO1vy&quot;&gt;Mcombo 7040 Lift Chair&lt;/a&gt; for my elderly grandfather.  Prior to purchasing the chair my Grandfather had some questions so I figured I would have a look at the manual for answers.  Surprised that I couldn’t find one, I thought I’d share it here along with my thoughts about the chair.&lt;br&gt;&lt;/p&gt;</summary>
@@ -1185,10 +1185,10 @@
     <link href="https://chrisbergeron.com/2018/02/19/quieting_dell_r710/"/>
     <id>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</id>
     <published>2018-02-19T20:10:25.000Z</published>
-    <updated>2022-07-01T20:54:30.715Z</updated>
+    <updated>2021-05-02T04:48:11.618Z</updated>
     
     
-    <summary type="html">&lt;p&gt;I have a Dell R710 rev. II that I use in my home office lab &lt;a href=&quot;https://chrisbergeron.com/categories/homelab/&quot;&gt;homelab&lt;/a&gt; running ESXi 6.5.  The R710 sits in my office where we work from home.  Normally the hum of the R710 fans isn’t terribly bothersome - the 5 fans it houses run at around 3,800 RPM each.  The noise is definitely noticeable so I did a little bit of digging into ways I could quiet it down.  After looking into replacing the fans with quieter ones I found that I could override the system control of the fans and silence them that way.  While I have to monitor the onboard temperatures more closely when disabled, I’ve found little downside to doing so when I’m in there.  Here’s how to do it:&lt;/p&gt;
+    <summary type="html">&lt;p&gt;I have a Dell R710 rev. II that I use in my home office lab (homelab) running ESXi 6.5.  The R710 sits in my office where we work from home.  Normally the hum of the R710 fans isn’t terribly bothersome - the 5 fans it houses run at around 3,800 RPM each.  The noise is definitely noticeable so I did a little bit of digging into ways I could quiet it down.  After looking into replacing the fans with quieter ones I found that I could override the system control of the fans and silence them that way.  While I have to monitor the onboard temperatures more closely when disabled, I’ve found little downside to doing so when I’m in there.  Here’s how to do it:&lt;/p&gt;
 &lt;p&gt;The commands used below assume default username / password of root / calvin.  Hopefully you’ve changed the default password so substitute yours where applicable.&lt;/p&gt;</summary>
     
     
