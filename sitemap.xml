@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2022/05/29/Own-Yourself-You-Are-Your-Brand/</loc>
+    
+    <lastmod>2023-04-02T04:33:34.326Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2023/04/01/Dynamic-SSH-ports-with-Hashicorp-Vault-TOTP/</loc>
+    
+    <lastmod>2023-04-02T04:33:08.260Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2022/01/08/Time-Tracking-with-a-Disney-Infinity-USB-NFC-Reader/</loc>
+    
+    <lastmod>2023-04-02T04:32:49.903Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</loc>
     
     <lastmod>2023-04-01T20:35:07.180Z</lastmod>
@@ -33,20 +54,6 @@
     <loc>https://chrisbergeron.com/2008/08/24/homebrew_generator/</loc>
     
     <lastmod>2023-04-01T20:35:07.178Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2022/01/08/Time-Tracking-with-a-Disney-Infinity-USB-NFC-Reader/</loc>
-    
-    <lastmod>2023-04-01T20:35:07.177Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2022/05/29/Own-Yourself-You-Are-Your-Brand/</loc>
-    
-    <lastmod>2023-04-01T20:35:07.154Z</lastmod>
     
   </url>
   
