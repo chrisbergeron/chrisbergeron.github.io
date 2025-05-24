@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2023-05-28T04:41:50.142Z</updated>
+  <updated>2023-05-28T04:49:38.576Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Troubleshooting Consul systemd on Raspberry Pi</title>
-    <link href="https://chrisbergeron.com/2023/05/27/Troubleshooting-Consul-systemd-on-Raspberry-Pi/"/>
-    <id>https://chrisbergeron.com/2023/05/27/Troubleshooting-Consul-systemd-on-Raspberry-Pi/</id>
-    <published>2023-05-28T03:53:19.000Z</published>
-    <updated>2023-05-28T04:41:50.142Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;I run a Hashistack on my homelab and I’ve had a startup issue with &lt;code&gt;Consul&lt;/code&gt; on one of my Raspberry Pis.  The systemd unit file is correct and I was able to start the service manually with &lt;code&gt;systemctl start consul&lt;/code&gt; without issue.  However, &lt;code&gt;consul&lt;/code&gt; just would not start successfully on boot.  I finally had some time to work on the issue tonight and the fix was actually quite simple.  Troubleshooting consul is rarely simple, but working with a simple systemd startup script shouldn’t be that bad.  Here’s what happened…&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/2023/05/27/Troubleshooting-Consul-systemd-on-Raspberry-Pi/Argon_ONE_M_2_Raspberry_Pi.png&quot; alt=&quot;Argon One&quot; title=&quot;Argon One Raspberry Pi Case&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Homelab" scheme="https://chrisbergeron.com/categories/Homelab/"/>
-    
-    
-    <category term="pi" scheme="https://chrisbergeron.com/tags/pi/"/>
-    
-    <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
-    
-    <category term="hashicorp" scheme="https://chrisbergeron.com/tags/hashicorp/"/>
-    
-    <category term="systemd" scheme="https://chrisbergeron.com/tags/systemd/"/>
-    
-  </entry>
   
   <entry>
     <title>Dynamic SSH ports with Hashicorp Vault TOTP</title>

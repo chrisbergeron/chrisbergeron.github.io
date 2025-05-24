@@ -15,36 +15,8 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Sun, 28 May 2023 04:41:50 GMT</pubDate>
+    <pubDate>Sun, 28 May 2023 04:49:38 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>Troubleshooting Consul systemd on Raspberry Pi</title>
-      <link>https://chrisbergeron.com/2023/05/27/Troubleshooting-Consul-systemd-on-Raspberry-Pi/</link>
-      <guid>https://chrisbergeron.com/2023/05/27/Troubleshooting-Consul-systemd-on-Raspberry-Pi/</guid>
-      <pubDate>Sun, 28 May 2023 03:53:19 GMT</pubDate>
-      
-      <description>&lt;p&gt;I run a Hashistack on my homelab and I’ve had a startup issue with &lt;code&gt;Consul&lt;/code&gt; on one of my Raspberry Pis.  The systemd unit file is correct and I was able to start the service manually with &lt;code&gt;systemctl start consul&lt;/code&gt; without issue.  However, &lt;code&gt;consul&lt;/code&gt; just would not start successfully on boot.  I finally had some time to work on the issue tonight and the fix was actually quite simple.  Troubleshooting consul is rarely simple, but working with a simple systemd startup script shouldn’t be that bad.  Here’s what happened…&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/2023/05/27/Troubleshooting-Consul-systemd-on-Raspberry-Pi/Argon_ONE_M_2_Raspberry_Pi.png&quot; alt=&quot;Argon One&quot; title=&quot;Argon One Raspberry Pi Case&quot;&gt;&lt;/p&gt;</description>
-      
-      
-      
-      
-      <category domain="https://chrisbergeron.com/categories/Homelab/">Homelab</category>
-      
-      
-      <category domain="https://chrisbergeron.com/tags/pi/">pi</category>
-      
-      <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
-      
-      <category domain="https://chrisbergeron.com/tags/hashicorp/">hashicorp</category>
-      
-      <category domain="https://chrisbergeron.com/tags/systemd/">systemd</category>
-      
-      
-      <comments>https://chrisbergeron.com/2023/05/27/Troubleshooting-Consul-systemd-on-Raspberry-Pi/#disqus_thread</comments>
-      
-    </item>
     
     <item>
       <title>Dynamic SSH ports with Hashicorp Vault TOTP</title>
