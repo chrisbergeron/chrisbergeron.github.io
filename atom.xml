@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2023-04-01T20:35:07.180Z</updated>
+  <updated>2023-04-02T03:55:27.262Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title></title>
     <link href="https://chrisbergeron.com/2023/04/01/renewing-an-80s-server-cabinet/"/>
     <id>https://chrisbergeron.com/2023/04/01/renewing-an-80s-server-cabinet/</id>
-    <published>2023-04-01T20:35:07.180Z</published>
-    <updated>2023-04-01T20:35:07.180Z</updated>
+    <published>2023-04-02T03:55:27.262Z</published>
+    <updated>2023-04-02T03:55:27.262Z</updated>
     
     
     
@@ -81,7 +81,7 @@
     <link href="https://chrisbergeron.com/2022/01/08/Monitoring-Uptime-Status-with-Github-Actions/"/>
     <id>https://chrisbergeron.com/2022/01/08/Monitoring-Uptime-Status-with-Github-Actions/</id>
     <published>2022-01-08T21:40:44.000Z</published>
-    <updated>2023-04-01T20:35:07.150Z</updated>
+    <updated>2023-04-02T03:55:27.258Z</updated>
     
     
     <summary type="html">&lt;p&gt;I was searching github for some uptime monitoring apps when I stumbled across a github actions based uptime and status page.  &lt;/p&gt;
@@ -132,7 +132,7 @@
     <link href="https://chrisbergeron.com/2022/01/08/Controlling-iRobot-Roomba-from-the-command-line/"/>
     <id>https://chrisbergeron.com/2022/01/08/Controlling-iRobot-Roomba-from-the-command-line/</id>
     <published>2022-01-08T14:40:20.000Z</published>
-    <updated>2023-04-01T20:35:07.124Z</updated>
+    <updated>2025-11-19T03:09:55.692Z</updated>
     
     
     <summary type="html">&lt;p&gt;If you’re a heavy command line (cli) user in Macos, Linux or WSL, you may it convenient to easily start or stop your robot from it’s cleaning cycle.  In this post I’ll you fellow keyboard jockeys how to control and even view your robot as is cleans.&lt;/p&gt;
@@ -378,7 +378,7 @@
     <link href="https://chrisbergeron.com/2021/06/13/New-CB-Brand-Logo/"/>
     <id>https://chrisbergeron.com/2021/06/13/New-CB-Brand-Logo/</id>
     <published>2021-06-13T04:15:28.000Z</published>
-    <updated>2023-04-01T20:35:07.153Z</updated>
+    <updated>2023-04-02T03:55:27.260Z</updated>
     
     
       
@@ -431,7 +431,7 @@
     <link href="https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/"/>
     <id>https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/</id>
     <published>2021-06-06T03:56:42.000Z</published>
-    <updated>2023-04-01T02:57:01.388Z</updated>
+    <updated>2025-11-19T03:09:55.692Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/cb-magicmirror.jpg&quot; alt=&quot;My Magic Mirror&quot; title=&quot;Magic Mirror&quot;&gt;&lt;br&gt;&lt;/center&gt;</summary>
@@ -456,7 +456,7 @@
     <link href="https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/"/>
     <id>https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/</id>
     <published>2021-06-05T04:15:32.000Z</published>
-    <updated>2023-04-01T02:57:03.979Z</updated>
+    <updated>2025-11-19T03:09:55.692Z</updated>
     
     
     <summary type="html">&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/2021/06/05/Raspberry-Pi-Garage-Door-Opener/raspberry-pi-garage-door-opener-final.png&quot; alt=&quot;&quot; title=&quot;Raspberry Pi Garage Door Opener&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;A few years back I built a neat project I found online.  It was originally designed by Andrew Shillday.  You can find the &lt;a href=&quot;https://github.com/andrewshilliday/garage-door-controller&quot;&gt;code here&lt;/a&gt;. I decided that a Raspberry Pi Zero was sufficient, so I had to modify the pins used, but otherwise it was a fairly easy project.&lt;br&gt;</summary>
@@ -603,7 +603,7 @@
     <link href="https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/"/>
     <id>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</id>
     <published>2021-01-31T03:25:11.000Z</published>
-    <updated>2023-04-01T02:57:03.825Z</updated>
+    <updated>2025-11-19T03:09:55.692Z</updated>
     
     
     <summary type="html">&lt;p&gt;Watch local broadcast TV on Plex without an antenna.&lt;/p&gt;
@@ -720,7 +720,7 @@
     <link href="https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/"/>
     <id>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</id>
     <published>2020-11-20T05:11:25.000Z</published>
-    <updated>2023-04-01T20:35:07.179Z</updated>
+    <updated>2023-04-02T03:55:27.261Z</updated>
     
     
     <summary type="html">&lt;p&gt;I recently purchased an &lt;a href=&quot;https://amzn.to/3ZwO1vy&quot;&gt;Mcombo 7040 Lift Chair&lt;/a&gt; for my elderly grandfather.  Prior to purchasing the chair my Grandfather had some questions so I figured I would have a look at the manual for answers.  Surprised that I couldn’t find one, I thought I’d share it here along with my thoughts about the chair.&lt;br&gt;&lt;/p&gt;</summary>
@@ -756,9 +756,9 @@
     
     <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
-    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
-    
     <category term="cloudinary" scheme="https://chrisbergeron.com/tags/cloudinary/"/>
+    
+    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
     
     <category term="curl" scheme="https://chrisbergeron.com/tags/curl/"/>
     
@@ -1043,7 +1043,7 @@
     <link href="https://chrisbergeron.com/2018/07/12/nzbget-mysql/"/>
     <id>https://chrisbergeron.com/2018/07/12/nzbget-mysql/</id>
     <published>2018-07-13T00:11:00.000Z</published>
-    <updated>2023-04-01T20:35:07.179Z</updated>
+    <updated>2023-04-02T03:55:27.262Z</updated>
     
     
     <summary type="html">&lt;p&gt;I wrote a simple plugin for NZBGet that inserts download history into a MySQL database.  Having my download list in a database makes operations on the data easier than groking text logs.&lt;/p&gt;
@@ -1061,9 +1061,9 @@
     
     <category term="grafana" scheme="https://chrisbergeron.com/tags/grafana/"/>
     
-    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
-    
     <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
+    
+    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="mariadb" scheme="https://chrisbergeron.com/tags/mariadb/"/>
     
@@ -1190,11 +1190,11 @@
     
     <category term="devops" scheme="https://chrisbergeron.com/tags/devops/"/>
     
+    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
+    
     <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
     
     <category term="dns" scheme="https://chrisbergeron.com/tags/dns/"/>
-    
-    <category term="bash" scheme="https://chrisbergeron.com/tags/bash/"/>
     
   </entry>
   
@@ -1203,7 +1203,7 @@
     <link href="https://chrisbergeron.com/2018/02/19/quieting_dell_r710/"/>
     <id>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</id>
     <published>2018-02-19T20:10:25.000Z</published>
-    <updated>2023-04-01T20:35:07.180Z</updated>
+    <updated>2023-04-02T03:55:27.262Z</updated>
     
     
     <summary type="html">&lt;p&gt;I have a Dell R710 rev. II that I use in my home office lab &lt;a href=&quot;https://chrisbergeron.com/categories/homelab/&quot;&gt;homelab&lt;/a&gt; running ESXi 6.5.  The R710 sits in my office where we work from home.  Normally the hum of the R710 fans isn’t terribly bothersome - the 5 fans it houses run at around 3,800 RPM each.  The noise is definitely noticeable so I did a little bit of digging into ways I could quiet it down.  After looking into replacing the fans with quieter ones I found that I could override the system control of the fans and silence them that way.  While I have to monitor the onboard temperatures more closely when disabled, I’ve found little downside to doing so when I’m in there.  Here’s how to do it:&lt;/p&gt;
@@ -1322,7 +1322,7 @@
     <link href="https://chrisbergeron.com/2017/10/29/high_performance_nzbget/"/>
     <id>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/</id>
     <published>2017-10-30T01:53:25.000Z</published>
-    <updated>2023-04-01T02:57:08.468Z</updated>
+    <updated>2025-11-19T03:09:55.693Z</updated>
     
     
     <summary type="html">&lt;p&gt;I’m limited to about 80MB/s on downloads on my VPC at &lt;a href=&quot;https://m.do.co/c/efe82c337904&quot;&gt;Digital Ocean&lt;/a&gt;, but I run &lt;a href=&quot;https://nzbget.net/&quot;&gt;Nzbget&lt;/a&gt; for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted to see if I could parallelize this and download multiple files at the same.  I use Sonarr for searching usenet for freely distributable training videos which then sends them to NZBget for downloading.  Since Sonarr can send multiple files to nzbget which get queued up, I figured I can reduce the queue by downloading them at the same time.&lt;/p&gt;
@@ -1335,17 +1335,15 @@
     
     <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
+    <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
+    
     <category term="ansible" scheme="https://chrisbergeron.com/tags/ansible/"/>
     
-    <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
+    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
     
     <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
     
     <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
-    
-    <category term="nzbget" scheme="https://chrisbergeron.com/tags/nzbget/"/>
-    
-    <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
     
   </entry>
   
@@ -1402,7 +1400,7 @@
     <link href="https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/"/>
     <id>https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/</id>
     <published>2017-10-08T16:46:25.000Z</published>
-    <updated>2023-04-01T02:57:08.468Z</updated>
+    <updated>2025-11-19T03:09:55.693Z</updated>
     
     
     <summary type="html">&lt;p&gt;I’m limited to about 40MB/s on downloads on my VPC at Digital Ocean, but I run &lt;a href=&quot;https://sabnzbd.org/&quot;&gt;Sabnzbd&lt;/a&gt; for downloading large files from usenet.  It doesn’t take long to download at all, but out of curiosity I wanted to see if I could parallelize this and download multiple files at the same.  I use Sonarr for searching usenet for freely distributable training videos which then sends them to SABnzbd for downloading.  Since Sonarr can send multiple files to sabnzbd which get queued up, I figured I can reduce the queue by downloading them at the same time.&lt;/p&gt;
@@ -1418,15 +1416,13 @@
     
     <category term="ansible" scheme="https://chrisbergeron.com/tags/ansible/"/>
     
-    <category term="digital ocean" scheme="https://chrisbergeron.com/tags/digital-ocean/"/>
+    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
+    
+    <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
     
     <category term="sabnzbd" scheme="https://chrisbergeron.com/tags/sabnzbd/"/>
     
-    <category term="usenet" scheme="https://chrisbergeron.com/tags/usenet/"/>
-    
     <category term="terraform" scheme="https://chrisbergeron.com/tags/terraform/"/>
-    
-    <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
     
     <category term="sonarr" scheme="https://chrisbergeron.com/tags/sonarr/"/>
     
@@ -1513,13 +1509,13 @@
     
     <category term="dashpc" scheme="https://chrisbergeron.com/tags/dashpc/"/>
     
-    <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
-    
-    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
-    
     <category term="comma.ai" scheme="https://chrisbergeron.com/tags/comma-ai/"/>
     
     <category term="panda" scheme="https://chrisbergeron.com/tags/panda/"/>
+    
+    <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
+    
+    <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
   </entry>
   
@@ -1557,7 +1553,7 @@
     <link href="https://chrisbergeron.com/2011/09/13/DIY-Homemade-Bed/"/>
     <id>https://chrisbergeron.com/2011/09/13/DIY-Homemade-Bed/</id>
     <published>2011-09-13T16:59:11.000Z</published>
-    <updated>2023-04-01T02:57:01.462Z</updated>
+    <updated>2025-11-19T03:09:55.692Z</updated>
     
     
     <summary type="html">&lt;p&gt;Yep. I made my bed.  Well I make my bed every day, but over a weekend I built my master bed.  It’s a very simple design.&lt;/p&gt;</summary>
@@ -1600,7 +1596,7 @@
     <link href="https://chrisbergeron.com/2008/08/24/homebrew_generator/"/>
     <id>https://chrisbergeron.com/2008/08/24/homebrew_generator/</id>
     <published>2008-08-24T18:00:30.000Z</published>
-    <updated>2023-04-01T20:35:07.178Z</updated>
+    <updated>2025-11-19T03:09:55.693Z</updated>
     
     
       
@@ -1617,8 +1613,6 @@
     
     
     <category term="generator" scheme="https://chrisbergeron.com/tags/generator/"/>
-    
-    <category term="home improvement" scheme="https://chrisbergeron.com/tags/home-improvement/"/>
     
   </entry>
   
@@ -1682,7 +1676,7 @@
     <link href="https://chrisbergeron.com/2007/08/07/ethanol_still/"/>
     <id>https://chrisbergeron.com/2007/08/07/ethanol_still/</id>
     <published>2007-08-08T00:46:25.000Z</published>
-    <updated>2023-04-01T02:57:08.467Z</updated>
+    <updated>2025-11-19T03:09:55.693Z</updated>
     
     
     <summary type="html">&lt;p&gt;A few years ago, when gas prices were exorbitant, I started to build my own Ethanol Still. In light of the global energy crisis, I figured that being able to produce my own fuel was a useful endeavor. Creating ethanol fuel requires distilling corn (or other vegetables/fruits) and extracting its potential liquid energy. I did some research on the web and discovered the &lt;a href=&quot;http://running_on_alcohol.tripod.com/id2.html&quot;&gt;Charles 803&lt;/a&gt;.&lt;br&gt;I bought plans and began building the still. I’ve put this project on hold for now but perhaps one day I’ll complete it. Until then, here are some pictures of the project:&lt;br&gt;&lt;/p&gt;</summary>
@@ -1691,8 +1685,6 @@
     
     <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
     
-    
-    <category term="alternate energy" scheme="https://chrisbergeron.com/tags/alternate-energy/"/>
     
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
     
@@ -1787,9 +1779,9 @@
     
     <category term="carputer" scheme="https://chrisbergeron.com/tags/carputer/"/>
     
-    <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
-    
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+    <category term="dashboard linux" scheme="https://chrisbergeron.com/tags/dashboard-linux/"/>
     
     <category term="cars" scheme="https://chrisbergeron.com/tags/cars/"/>
     
@@ -1800,7 +1792,7 @@
     <link href="https://chrisbergeron.com/2004/09/13/DashPC-Startup-and-Shutdown-Controller/"/>
     <id>https://chrisbergeron.com/2004/09/13/DashPC-Startup-and-Shutdown-Controller/</id>
     <published>2004-09-13T20:15:01.000Z</published>
-    <updated>2023-04-01T02:57:01.918Z</updated>
+    <updated>2025-11-19T03:09:55.692Z</updated>
     
     
     <summary type="html">&lt;p&gt;This is an electronic circuit that I designed, built and brought to market.  This page is here for posterity.  The contents are from the original product page.&lt;/p&gt;

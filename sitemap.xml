@@ -2,6 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/2007/08/07/ethanol_still/</loc>
+    
+    <lastmod>2025-11-19T03:09:55.693Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/</loc>
+    
+    <lastmod>2025-11-19T03:09:55.693Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
+    
+    <lastmod>2025-11-19T03:09:55.693Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2008/08/24/homebrew_generator/</loc>
+    
+    <lastmod>2025-11-19T03:09:55.693Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2022/01/08/Controlling-iRobot-Roomba-from-the-command-line/</loc>
+    
+    <lastmod>2025-11-19T03:09:55.692Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2011/09/13/DIY-Homemade-Bed/</loc>
+    
+    <lastmod>2025-11-19T03:09:55.692Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/</loc>
+    
+    <lastmod>2025-11-19T03:09:55.692Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2004/09/13/DashPC-Startup-and-Shutdown-Controller/</loc>
+    
+    <lastmod>2025-11-19T03:09:55.692Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</loc>
+    
+    <lastmod>2025-11-19T03:09:55.692Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/</loc>
+    
+    <lastmod>2025-11-19T03:09:55.692Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/about.html</loc>
+    
+    <lastmod>2025-11-13T22:22:07.244Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2022/05/29/Own-Yourself-You-Are-Your-Brand/</loc>
     
     <lastmod>2023-04-02T04:33:34.326Z</lastmod>
@@ -23,58 +100,44 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</loc>
+    <loc>https://chrisbergeron.com/2018/07/12/nzbget-mysql/</loc>
     
-    <lastmod>2023-04-01T20:35:07.180Z</lastmod>
+    <lastmod>2023-04-02T03:55:27.262Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://chrisbergeron.com/2023/04/01/renewing-an-80s-server-cabinet/</loc>
     
-    <lastmod>2023-04-01T20:35:07.180Z</lastmod>
+    <lastmod>2023-04-02T03:55:27.262Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2018/02/19/quieting_dell_r710/</loc>
+    
+    <lastmod>2023-04-02T03:55:27.262Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://chrisbergeron.com/2020/11/20/mcombo-lift-chair/</loc>
     
-    <lastmod>2023-04-01T20:35:07.179Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2018/07/12/nzbget-mysql/</loc>
-    
-    <lastmod>2023-04-01T20:35:07.179Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2008/08/24/homebrew_generator/</loc>
-    
-    <lastmod>2023-04-01T20:35:07.178Z</lastmod>
+    <lastmod>2023-04-02T03:55:27.261Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://chrisbergeron.com/2021/06/13/New-CB-Brand-Logo/</loc>
     
-    <lastmod>2023-04-01T20:35:07.153Z</lastmod>
+    <lastmod>2023-04-02T03:55:27.260Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://chrisbergeron.com/2022/01/08/Monitoring-Uptime-Status-with-Github-Actions/</loc>
     
-    <lastmod>2023-04-01T20:35:07.150Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2022/01/08/Controlling-iRobot-Roomba-from-the-command-line/</loc>
-    
-    <lastmod>2023-04-01T20:35:07.124Z</lastmod>
+    <lastmod>2023-04-02T03:55:27.258Z</lastmod>
     
   </url>
   
@@ -142,13 +205,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2017/10/08/showterm/</loc>
-    
-    <lastmod>2023-04-01T02:57:08.505Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2017/10/07/sysinfo/</loc>
     
     <lastmod>2023-04-01T02:57:08.505Z</lastmod>
@@ -156,7 +212,14 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2018/10/28/plex_dashboard/</loc>
+    <loc>https://chrisbergeron.com/2017/10/08/showterm/</loc>
+    
+    <lastmod>2023-04-01T02:57:08.505Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/12/29/pihole_update_dns/</loc>
     
     <lastmod>2023-04-01T02:57:08.504Z</lastmod>
     
@@ -170,7 +233,7 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2017/12/29/pihole_update_dns/</loc>
+    <loc>https://chrisbergeron.com/2018/10/28/plex_dashboard/</loc>
     
     <lastmod>2023-04-01T02:57:08.504Z</lastmod>
     
@@ -240,37 +303,9 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2017/10/08/high_performance_sabnzbd/</loc>
-    
-    <lastmod>2023-04-01T02:57:08.468Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2008/01/20/interviewed_for_release_2.0_magazine/</loc>
     
     <lastmod>2023-04-01T02:57:08.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/</loc>
-    
-    <lastmod>2023-04-01T02:57:08.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2007/08/07/ethanol_still/</loc>
-    
-    <lastmod>2023-04-01T02:57:08.467Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
-    
-    <lastmod>2023-04-01T02:57:08.467Z</lastmod>
     
   </url>
   
@@ -283,6 +318,13 @@
   
   <url>
     <loc>https://chrisbergeron.com/2018/11/10/grafana_dashboards/</loc>
+    
+    <lastmod>2023-04-01T02:57:08.467Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2017/10/07/hexo_systemd_unit_file/</loc>
     
     <lastmod>2023-04-01T02:57:08.467Z</lastmod>
     
@@ -317,13 +359,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2005/05/18/dashboard_linux/</loc>
-    
-    <lastmod>2023-04-01T02:57:05.986Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2017/10/06/comma_panda/</loc>
     
     <lastmod>2023-04-01T02:57:05.986Z</lastmod>
@@ -332,6 +367,13 @@
   
   <url>
     <loc>https://chrisbergeron.com/2020/03/08/creating_grafana_annotations_with_webhooks/</loc>
+    
+    <lastmod>2023-04-01T02:57:05.986Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chrisbergeron.com/2005/05/18/dashboard_linux/</loc>
     
     <lastmod>2023-04-01T02:57:05.986Z</lastmod>
     
@@ -352,14 +394,14 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
+    <loc>https://chrisbergeron.com/2017/11/10/alexa_car/</loc>
     
     <lastmod>2023-04-01T02:57:05.984Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2017/11/10/alexa_car/</loc>
+    <loc>https://chrisbergeron.com/2018/06/08/ansible_performance_tuning/</loc>
     
     <lastmod>2023-04-01T02:57:05.984Z</lastmod>
     
@@ -390,13 +432,6 @@
     <loc>https://chrisbergeron.com/2021/07/25/Ultra-fast-Thunderbolt-NAS-with-Apple-M1-and-Linux/</loc>
     
     <lastmod>2023-04-01T02:57:04.771Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2021/06/05/Raspberry-Pi-Garage-Door-Opener/</loc>
-    
-    <lastmod>2023-04-01T02:57:03.979Z</lastmod>
     
   </url>
   
@@ -443,13 +478,6 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2021/01/30/Locast-Plex---Local-TV-on-Plex/</loc>
-    
-    <lastmod>2023-04-01T02:57:03.825Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://chrisbergeron.com/2021/08/23/Hands-On-with-the-Gigabyte-Maple-Ridge-Thunderbolt-4-Card/</loc>
     
     <lastmod>2023-04-01T02:57:02.560Z</lastmod>
@@ -471,14 +499,14 @@
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</loc>
+    <loc>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</loc>
     
     <lastmod>2023-04-01T02:57:02.241Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chrisbergeron.com/2021/02/26/Fixing-Bitcoin-Armory-on-macOS-Catalina-10.15/</loc>
+    <loc>https://chrisbergeron.com/2020/12/24/Fixing-Hexo-Not-Generating-Files/</loc>
     
     <lastmod>2023-04-01T02:57:02.241Z</lastmod>
     
@@ -502,27 +530,6 @@
     <loc>https://chrisbergeron.com/2021/03/14/Debris-Art-with-Blockchain-Provenance-by-B%25C9%2599%25C9%25B9%25CA%25A4%25C9%2599%25C9%25B9%25C9%2591n/</loc>
     
     <lastmod>2023-04-01T02:57:01.922Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2004/09/13/DashPC-Startup-and-Shutdown-Controller/</loc>
-    
-    <lastmod>2023-04-01T02:57:01.918Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2011/09/13/DIY-Homemade-Bed/</loc>
-    
-    <lastmod>2023-04-01T02:57:01.462Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chrisbergeron.com/2021/06/05/Creating-a-Magic-Mirror-with-a-Raspberry-Pi-3/</loc>
-    
-    <lastmod>2023-04-01T02:57:01.388Z</lastmod>
     
   </url>
   

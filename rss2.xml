@@ -15,14 +15,14 @@
     <atom:link href="https://chrisbergeron.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Educated and industry respected IT professional with over 25 years of experience in the technology industry. My experience is practical, useful and documented.</description>
-    <pubDate>Sat, 01 Apr 2023 20:35:07 GMT</pubDate>
+    <pubDate>Sun, 02 Apr 2023 03:55:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title></title>
       <link>https://chrisbergeron.com/2023/04/01/renewing-an-80s-server-cabinet/</link>
       <guid>https://chrisbergeron.com/2023/04/01/renewing-an-80s-server-cabinet/</guid>
-      <pubDate>Sat, 01 Apr 2023 20:35:07 GMT</pubDate>
+      <pubDate>Sun, 02 Apr 2023 03:55:27 GMT</pubDate>
       
       
       
@@ -811,9 +811,9 @@
       
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
       
-      <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
-      
       <category domain="https://chrisbergeron.com/tags/cloudinary/">cloudinary</category>
+      
+      <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
       
       <category domain="https://chrisbergeron.com/tags/curl/">curl</category>
       
@@ -1138,9 +1138,9 @@
       
       <category domain="https://chrisbergeron.com/tags/grafana/">grafana</category>
       
-      <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
-      
       <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
+      
+      <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
       <category domain="https://chrisbergeron.com/tags/mariadb/">mariadb</category>
       
@@ -1277,11 +1277,11 @@
       
       <category domain="https://chrisbergeron.com/tags/devops/">devops</category>
       
+      <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
+      
       <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
       
       <category domain="https://chrisbergeron.com/tags/dns/">dns</category>
-      
-      <category domain="https://chrisbergeron.com/tags/bash/">bash</category>
       
       
       <comments>https://chrisbergeron.com/2018/05/04/diy_dynamic_dns_digital_ocean/#disqus_thread</comments>
@@ -1434,17 +1434,15 @@
       
       <category domain="https://chrisbergeron.com/tags/linux/">linux</category>
       
+      <category domain="https://chrisbergeron.com/tags/vault/">vault</category>
+      
       <category domain="https://chrisbergeron.com/tags/ansible/">ansible</category>
       
-      <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
+      <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
       
       <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
       
       <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
-      
-      <category domain="https://chrisbergeron.com/tags/nzbget/">nzbget</category>
-      
-      <category domain="https://chrisbergeron.com/tags/vault/">vault</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/29/high_performance_nzbget/#disqus_thread</comments>
@@ -1523,15 +1521,13 @@
       
       <category domain="https://chrisbergeron.com/tags/ansible/">ansible</category>
       
-      <category domain="https://chrisbergeron.com/tags/digital-ocean/">digital ocean</category>
+      <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
+      
+      <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
       
       <category domain="https://chrisbergeron.com/tags/sabnzbd/">sabnzbd</category>
       
-      <category domain="https://chrisbergeron.com/tags/usenet/">usenet</category>
-      
       <category domain="https://chrisbergeron.com/tags/terraform/">terraform</category>
-      
-      <category domain="https://chrisbergeron.com/tags/consul/">consul</category>
       
       <category domain="https://chrisbergeron.com/tags/sonarr/">sonarr</category>
       
@@ -1626,13 +1622,13 @@
       
       <category domain="https://chrisbergeron.com/tags/dashpc/">dashpc</category>
       
-      <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
-      
-      <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
-      
       <category domain="https://chrisbergeron.com/tags/comma-ai/">comma.ai</category>
       
       <category domain="https://chrisbergeron.com/tags/panda/">panda</category>
+      
+      <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
+      
+      <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
       
       
       <comments>https://chrisbergeron.com/2017/10/06/comma_panda/#disqus_thread</comments>
@@ -1739,8 +1735,6 @@
       
       <category domain="https://chrisbergeron.com/tags/generator/">generator</category>
       
-      <category domain="https://chrisbergeron.com/tags/home-improvement/">home improvement</category>
-      
       
       <comments>https://chrisbergeron.com/2008/08/24/homebrew_generator/#disqus_thread</comments>
       
@@ -1818,8 +1812,6 @@
       
       <category domain="https://chrisbergeron.com/categories/Home/">Home</category>
       
-      
-      <category domain="https://chrisbergeron.com/tags/alternate-energy/">alternate energy</category>
       
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
       
@@ -1920,9 +1912,9 @@
       
       <category domain="https://chrisbergeron.com/tags/carputer/">carputer</category>
       
-      <category domain="https://chrisbergeron.com/tags/dashboard-linux/">dashboard linux</category>
-      
       <category domain="https://chrisbergeron.com/tags/projects/">projects</category>
+      
+      <category domain="https://chrisbergeron.com/tags/dashboard-linux/">dashboard linux</category>
       
       <category domain="https://chrisbergeron.com/tags/cars/">cars</category>
       
