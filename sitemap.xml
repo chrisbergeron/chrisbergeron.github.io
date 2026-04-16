@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chrisbergeron.com/SKILLS.html</loc>
+    
+    <lastmod>2026-04-16T20:08:43.387Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chrisbergeron.com/2023/05/27/Troubleshooting-Consul-systemd-on-Raspberry-Pi/</loc>
     
     <lastmod>2025-11-26T20:23:29.906Z</lastmod>
