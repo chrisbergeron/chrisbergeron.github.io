@@ -1,0 +1,9 @@
+# /.well-known/* rewrites — Netlify's build isn't shipping the dot-dir for
+# this site; serve identical content from root-level paths via 200 rewrites.
+# Preserves the /.well-known/* URL surface for ARD/keybase/age consumers.
+/.well-known/ai-catalog.json  /ai-catalog.json  200
+/.well-known/age.pub          /age.pub          200
+/.well-known/keybase.txt      /keybase.txt      200
+
+# Historical catchall — anything else that doesn't match a real file goes home.
+/*    https://chrisbergeron.com/:splat   301
