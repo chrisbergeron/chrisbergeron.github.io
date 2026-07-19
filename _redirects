@@ -1,0 +1,15 @@
+# projects.chrisbergeron.com — serve the /projects page at the subdomain root.
+# Host-scoped + forced (200!) so only this subdomain root is rewritten;
+# assets and all other paths still resolve normally from the same deploy.
+https://projects.chrisbergeron.com/  /projects/index.html  200!
+http://projects.chrisbergeron.com/   /projects/index.html  200!
+
+# /.well-known/* rewrites — Netlify's build isn't shipping the dot-dir for
+# this site; serve identical content from root-level paths via 200 rewrites.
+# Preserves the /.well-known/* URL surface for ARD/keybase/age consumers.
+/.well-known/ai-catalog.json  /ai-catalog.json  200
+/.well-known/age.pub          /age.pub          200
+/.well-known/keybase.txt      /keybase.txt      200
+
+# Historical catchall — anything else that does not match a real file goes home.
+/*    https://chrisbergeron.com/:splat   301
