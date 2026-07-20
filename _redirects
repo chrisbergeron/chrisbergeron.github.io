@@ -4,6 +4,10 @@
 https://projects.chrisbergeron.com/  /projects/index.html  200!
 http://projects.chrisbergeron.com/   /projects/index.html  200!
 
+# about-me.chrisbergeron.com — same pattern, serves the /about page.
+https://about-me.chrisbergeron.com/  /about/index.html  200!
+http://about-me.chrisbergeron.com/   /about/index.html  200!
+
 # /.well-known/* rewrites — Netlify's build isn't shipping the dot-dir for
 # this site; serve identical content from root-level paths via 200 rewrites.
 # Preserves the /.well-known/* URL surface for ARD/keybase/age consumers.
