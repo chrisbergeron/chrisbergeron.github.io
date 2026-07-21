@@ -1,0 +1,14 @@
+# Deployed to public/netlify.toml by cb-hexo-postprocess-max.sh so Netlify
+# (site c7d5995f, builds from chrisbergeron/chrisbergeron.github.io@preview)
+# picks it up. Path-level redirects otherwise live in source/_redirects.
+
+# Bundle the /api/subscribe email-capture function (HC-1135).
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Serve the agent-conventional singular path
+[[redirects]]
+  from = "/SKILL.md"
+  to = "/SKILLS.md"
+  status = 301
