@@ -4,9 +4,13 @@
 https://projects.chrisbergeron.com/  /projects/index.html  200!
 http://projects.chrisbergeron.com/   /projects/index.html  200!
 
-# about-me.chrisbergeron.com — same pattern, serves the /about page.
-https://about-me.chrisbergeron.com/  /about/index.html  200!
-http://about-me.chrisbergeron.com/   /about/index.html  200!
+# about. / about-me. — 301 to the canonical about page on the apex so search
+# and answer engines see a single URL (HC-1172). Forced (301!) because "/"
+# otherwise matches the real index.html and the redirect would never fire.
+https://about.chrisbergeron.com/     https://chrisbergeron.com/about/  301!
+http://about.chrisbergeron.com/      https://chrisbergeron.com/about/  301!
+https://about-me.chrisbergeron.com/  https://chrisbergeron.com/about/  301!
+http://about-me.chrisbergeron.com/   https://chrisbergeron.com/about/  301!
 
 # /.well-known/* rewrites — Netlify's build isn't shipping the dot-dir for
 # this site; serve identical content from root-level paths via 200 rewrites.
