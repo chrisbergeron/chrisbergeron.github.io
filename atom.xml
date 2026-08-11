@@ -6,7 +6,7 @@
   <link href="https://chrisbergeron.com/atom.xml" rel="self"/>
   
   <link href="https://chrisbergeron.com/"/>
-  <updated>2026-07-11T19:36:19.858Z</updated>
+  <updated>2026-08-11T15:00:16.897Z</updated>
   <id>https://chrisbergeron.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Why AI agents need verified identity</title>
+    <link href="https://chrisbergeron.com/2026/08/11/why_ai_agents_need_verified_identity/"/>
+    <id>https://chrisbergeron.com/2026/08/11/why_ai_agents_need_verified_identity/</id>
+    <published>2026-08-11T14:57:41.776Z</published>
+    <updated>2026-08-11T15:00:16.897Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;I-paid-9-to-own-my-name-on-the-internet-forever&quot;&gt;&lt;a href=&quot;#I-paid-9-to-own-my-name-on-the-internet-forever&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="blog" scheme="https://chrisbergeron.com/tags/blog/"/>
+    
+    <category term="launch" scheme="https://chrisbergeron.com/tags/launch/"/>
+    
+    <category term="outline" scheme="https://chrisbergeron.com/tags/outline/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -1361,9 +1388,9 @@
     
     <category term="linux" scheme="https://chrisbergeron.com/tags/linux/"/>
     
-    <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
-    
     <category term="vault" scheme="https://chrisbergeron.com/tags/vault/"/>
+    
+    <category term="consul" scheme="https://chrisbergeron.com/tags/consul/"/>
     
     <category term="ansible" scheme="https://chrisbergeron.com/tags/ansible/"/>
     
@@ -1718,9 +1745,9 @@
     <category term="Home" scheme="https://chrisbergeron.com/categories/Home/"/>
     
     
-    <category term="alternate energy" scheme="https://chrisbergeron.com/tags/alternate-energy/"/>
-    
     <category term="projects" scheme="https://chrisbergeron.com/tags/projects/"/>
+    
+    <category term="alternate energy" scheme="https://chrisbergeron.com/tags/alternate-energy/"/>
     
     <category term="ethanol" scheme="https://chrisbergeron.com/tags/ethanol/"/>
     
