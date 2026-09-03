@@ -18,5 +18,6 @@ http://about-me.chrisbergeron.com/   /about/index.html  200!
 # Email-capture endpoint (HC-1135) — must precede the catchall below.
 /api/subscribe  /.netlify/functions/subscribe  200
 
-# Historical catchall — anything else that does not match a real file goes home.
-/*    https://chrisbergeron.com/:splat   301
+# No catchall: missing paths must return an honest 404 (HC-1495). The old
+# `/* https://chrisbergeron.com/:splat 301` self-looped every missing file
+# (:splat preserves the path) and shadowed netlify.toml's /SKILL.md rule.
