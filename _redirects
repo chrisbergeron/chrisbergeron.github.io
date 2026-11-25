@@ -5,5 +5,9 @@
 /.well-known/age.pub          /age.pub          200
 /.well-known/keybase.txt      /keybase.txt      200
 
+# /p/* — public file share proxied from the pub-share S3 bucket (p-up CLI).
+# Must precede the catchall. Filenames with spaces arrive URL-encoded.
+/p/*  https://pub-chrisbergeron-com.s3.us-east-2.amazonaws.com/:splat  200
+
 # Historical catchall — anything else that doesn't match a real file goes home.
 /*    https://chrisbergeron.com/:splat   301
